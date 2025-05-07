@@ -5,3 +5,5 @@ build*/
 riscv/
 riscv64/
 riscv32/
+html/
+*.log
