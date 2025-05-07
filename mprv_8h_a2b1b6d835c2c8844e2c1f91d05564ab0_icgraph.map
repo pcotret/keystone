@@ -1,5 +1,11 @@
 <map id="copy1_from_sm" name="copy1_from_sm">
-<area shape="rect" id="Node000001" title="Copy 1 byte from secure monitor memory to destination." alt="" coords="160,5,273,31"/>
-<area shape="rect" id="Node000002" href="$mprv_8h.html#abaee4f68f49b38ad12b28d96429aed14" title="Copy memory from secure monitor to external destination." alt="" coords="5,5,112,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,21,112,21,112,16,144,16"/>
+<area shape="rect" id="Node000001" title="Copy 1 byte from secure monitor memory to destination." alt="" coords="706,5,819,31"/>
+<area shape="rect" id="Node000002" href="$mprv_8h.html#abaee4f68f49b38ad12b28d96429aed14" title="Copy memory from secure monitor to external destination." alt="" coords="551,5,658,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="690,21,658,21,658,16,690,16"/>
+<area shape="rect" id="Node000003" href="$enclave_8c.html#afe2ad969586dcd444ba558dfd7a7fa2b" title="Copies report data from the SM to enclave memory." alt="" coords="363,5,503,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="536,21,504,21,504,16,536,16"/>
+<area shape="rect" id="Node000004" href="$enclave_8c.html#aebd517e0dc5b95b13e9489e28f3e1f87" title="Generate an attestation report for the enclave." alt="" coords="209,5,315,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="348,21,315,21,315,16,348,16"/>
+<area shape="rect" id="Node000005" href="$sm-sbi_8c.html#a7d8927c735eda0a43706f79aa47c2ce9" title="Generate an attestation report for the enclave." alt="" coords="5,5,161,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="193,21,161,21,161,16,193,16"/>
 </map>

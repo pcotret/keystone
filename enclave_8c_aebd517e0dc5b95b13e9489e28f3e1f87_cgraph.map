@@ -1,0 +1,23 @@
+<map id="attest_enclave" name="attest_enclave">
+<area shape="rect" id="Node000001" title="Generate an attestation report for the enclave." alt="" coords="5,141,112,167"/>
+<area shape="rect" id="Node000002" href="$enclave_8c.html#a930200740510b15321777ac2aff5229d" title="Copies data from inside enclave memory to the SM." alt="" coords="164,92,296,118"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,138,167,120,169,125,107,143"/>
+<area shape="rect" id="Node000007" href="$enclave_8c.html#afe2ad969586dcd444ba558dfd7a7fa2b" title="Copies report data from the SM to enclave memory." alt="" coords="160,165,300,191"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="113,159,145,164,144,169,112,164"/>
+<area shape="rect" id="Node000003" href="$mprv_8h.html#ae0bef1269f94b4c27b713f69a377ffe2" title="Copy memory from external source into secure monitor." alt="" coords="356,80,447,106"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="296,98,340,94,340,100,297,103"/>
+<area shape="rect" id="Node000004" href="$mprv_8h.html#a53f5a0e19f13a7399184f311c3bdb4ad" title="Copy 1 byte to secure monitor memory." alt="" coords="525,5,624,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="425,77,501,40,515,34,517,39,503,45,428,82"/>
+<area shape="rect" id="Node000005" href="$mprv_8h.html#acddc4090683a0336f5097327b2c2c25e" title="Copy one full mprv_block to SM." alt="" coords="510,55,639,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="447,84,494,77,495,82,448,89"/>
+<area shape="rect" id="Node000006" href="$mprv_8h.html#abb62a4e1355be650277cf2afe34415c7" title="Copy one register&#45;sized word to SM." alt="" coords="511,104,638,130"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="448,96,497,103,496,109,447,102"/>
+<area shape="rect" id="Node000008" href="$mprv_8h.html#abaee4f68f49b38ad12b28d96429aed14" title="Copy memory from secure monitor to external destination." alt="" coords="348,184,454,210"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="301,183,333,187,332,192,300,188"/>
+<area shape="rect" id="Node000009" href="$mprv_8h.html#a2b1b6d835c2c8844e2c1f91d05564ab0" title="Copy 1 byte from secure monitor memory to destination." alt="" coords="518,153,631,179"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="454,185,502,176,503,182,455,190"/>
+<area shape="rect" id="Node000010" href="$mprv_8h.html#ad38f4e13942b781d6911ec49b69e1415" title="Copy one full mprv_block from SM." alt="" coords="502,203,647,228"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="455,200,487,203,487,209,454,205"/>
+<area shape="rect" id="Node000011" href="$mprv_8h.html#a10df97499cb600ebc66a08f60a265740" title="Copy one register&#45;sized word from SM." alt="" coords="504,252,645,278"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="432,208,503,238,518,244,516,249,501,243,430,213"/>
+</map>

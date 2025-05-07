@@ -1,0 +1,27 @@
+<map id="sbi_sm_create_enclave" name="sbi_sm_create_enclave">
+<area shape="rect" id="Node000001" title="Create a new enclave." alt="" coords="5,155,164,180"/>
+<area shape="rect" id="Node000002" href="$enclave_8c.html#a462420f809082acd04431ba4bc2d04cb" title="Copy user&#45;provided enclave creation arguments." alt="" coords="212,92,387,118"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,151,237,120,239,125,132,157"/>
+<area shape="rect" id="Node000007" href="$enclave_8c.html#acc219d9a95270fbbaabbb4f4491791f0" title="Create a new enclave." alt="" coords="245,179,354,204"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="165,174,230,181,229,186,164,179"/>
+<area shape="rect" id="Node000003" href="$mprv_8h.html#ae0bef1269f94b4c27b713f69a377ffe2" title="Copy memory from external source into secure monitor." alt="" coords="474,55,565,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="379,89,458,75,459,80,380,94"/>
+<area shape="rect" id="Node000004" href="$mprv_8h.html#a53f5a0e19f13a7399184f311c3bdb4ad" title="Copy 1 byte to secure monitor memory." alt="" coords="668,5,766,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="565,54,652,32,653,37,566,59"/>
+<area shape="rect" id="Node000005" href="$mprv_8h.html#acddc4090683a0336f5097327b2c2c25e" title="Copy one full mprv_block to SM." alt="" coords="652,55,782,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="566,65,637,65,637,70,566,70"/>
+<area shape="rect" id="Node000006" href="$mprv_8h.html#abb62a4e1355be650277cf2afe34415c7" title="Copy one register&#45;sized word to SM." alt="" coords="654,104,780,130"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="566,76,649,97,647,102,565,81"/>
+<area shape="rect" id="Node000008" href="$enclave_8c.html#ab600bcd1b23c10b5946cf3026adf8161" title="Clears untrusted memory by zeroing it out." alt="" coords="441,104,598,130"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="333,176,434,138,454,132,456,137,436,143,335,181"/>
+<area shape="rect" id="Node000009" href="$enclave_8c.html#ad65542157dfe5b3d4f0bbc0bb934bb07" title="Allocates a free enclave ID." alt="" coords="468,153,571,179"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="354,183,452,171,453,176,355,188"/>
+<area shape="rect" id="Node000010" href="$enclave_8c.html#a039194423098d86ad1e36969de6e0dc2" title="Frees a previously allocated enclave ID." alt="" coords="471,203,569,228"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="355,195,455,206,455,211,354,200"/>
+<area shape="rect" id="Node000011" href="$fu540__internal_8c.html#a079aafebfa02ea8e5f124709d8519617" title="Perform platform&#45;specific actions during enclave creation." alt="" coords="438,276,601,302"/>
+<area shape="poly" id="edge10_Node000007_Node000011" title=" " alt="" coords="332,202,476,267,473,272,329,207"/>
+<area shape="rect" id="Node000012" href="$fu540__internal_8c.html#ad8a55b5de551b6fd77d703e8ae775695" title="Perform platform&#45;specific cleanup during enclave destruction." alt="" coords="435,349,604,375"/>
+<area shape="poly" id="edge12_Node000007_Node000012" title=" " alt="" coords="315,203,366,253,437,312,480,339,477,344,433,316,363,257,311,207"/>
+<area shape="poly" id="edge11_Node000011_Node000011" title=" " alt="" coords="487,277,480,267,484,258,498,251,520,249,544,252,556,259,554,264,542,257,520,255,499,257,488,261,485,267,491,274"/>
+<area shape="poly" id="edge13_Node000012_Node000012" title=" " alt="" coords="487,350,480,341,484,331,498,325,520,323,544,325,556,332,554,337,542,330,520,328,499,330,488,335,485,340,491,347"/>
+</map>

@@ -8,6 +8,7 @@ var dir_cfc62cafa00a1d6cf885ee8883644d45 =
     [ "sha3", "dir_65750ff6dc5295b026d3deb2faa0e81f.html", "dir_65750ff6dc5295b026d3deb2faa0e81f" ],
     [ "cpu.h", "cpu_8h.html", "cpu_8h" ],
     [ "crypto.h", "crypto_8h.html", "crypto_8h" ],
+    [ "enclave.c", "enclave_8c.html", "enclave_8c" ],
     [ "enclave.h", "enclave_8h.html", "enclave_8h" ],
     [ "ipi.h", "ipi_8h.html", "ipi_8h" ],
     [ "mprv.h", "mprv_8h.html", "mprv_8h" ],

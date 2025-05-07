@@ -1,0 +1,8 @@
+<map id="exit_enclave" name="exit_enclave">
+<area shape="rect" id="Node000001" title="Exit the enclave and return to the host." alt="" coords="5,37,99,63"/>
+<area shape="rect" id="Node000002" href="$enclave_8c.html#a6a75079cb21b11b4718db28006b1b401" title="Performs context switch from the enclave back to the host." alt="" coords="147,37,305,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,47,131,47,131,52,99,52"/>
+<area shape="rect" id="Node000003" href="$fu540__internal_8c.html#a4ebdf8d20fd54fc07239454de2428365" title="Perform platform&#45;specific actions after switching out of an enclave." alt="" coords="353,29,499,70"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="305,47,337,47,337,52,305,52"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="388,29,386,19,392,10,406,5,426,3,448,5,461,11,459,16,447,10,426,8,407,10,396,15,391,20,393,28"/>
+</map>

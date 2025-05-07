@@ -1,8 +1,12 @@
 <map id="platform_destroy_enclave" name="platform_destroy_enclave">
-<area shape="rect" id="Node000001" title="Perform platform&#45;specific cleanup during enclave destruction." alt="" coords="169,31,338,56"/>
-<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="286,18,275,12,253,9,233,11,223,16,220,21,226,29,221,32,215,22,219,12,232,6,253,4,276,7,288,13"/>
-<area shape="rect" id="Node000002" href="$enclave_8c.html#acc219d9a95270fbbaabbb4f4491791f0" title="Create a new enclave." alt="" coords="8,5,118,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,33,118,28,118,23,153,27"/>
-<area shape="rect" id="Node000003" href="$enclave_8c.html#a80edf4241ec69a638b52b43e39c5e314" title="Destroy an existing enclave." alt="" coords="5,55,121,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,59,122,63,121,58,153,53"/>
+<area shape="rect" id="Node000001" title="Perform platform&#45;specific cleanup during enclave destruction." alt="" coords="381,31,550,56"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="498,18,487,12,466,9,446,11,435,16,433,21,438,29,434,32,427,22,431,12,444,6,466,4,489,7,501,13"/>
+<area shape="rect" id="Node000002" href="$enclave_8c.html#acc219d9a95270fbbaabbb4f4491791f0" title="Create a new enclave." alt="" coords="221,5,330,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="365,33,330,28,331,23,366,27"/>
+<area shape="rect" id="Node000004" href="$enclave_8c.html#a80edf4241ec69a638b52b43e39c5e314" title="Destroy an existing enclave." alt="" coords="218,55,333,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="366,59,334,63,333,58,365,53"/>
+<area shape="rect" id="Node000003" href="$sm-sbi_8c.html#a9cc9b5f94930fc8e512a3d4366a906a5" title="Create a new enclave." alt="" coords="8,5,167,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="205,21,167,21,167,16,205,16"/>
+<area shape="rect" id="Node000005" href="$keystone-sbi_8c.html#ab43a71e8188b8cfeb8bca7d92c37960f" title="Destroy an existing enclave." alt="" coords="5,55,170,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="202,70,170,70,170,65,202,65"/>
 </map>

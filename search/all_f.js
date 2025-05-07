@@ -13,7 +13,7 @@ var searchData=
   ['regs_10',['regs',['../structregs.html',1,'']]],
   ['regs_2eh_11',['regs.h',['../regs_8h.html',1,'']]],
   ['report_12',['report',['../structreport.html',1,'']]],
-  ['resume_5fenclave_13',['resume_enclave',['../enclave_8h.html#adea50bfac43a7eefd85f6a0a0d2b8d5d',1,'enclave.c']]],
+  ['resume_5fenclave_13',['resume_enclave',['../enclave_8c.html#adea50bfac43a7eefd85f6a0a0d2b8d5d',1,'resume_enclave(struct sbi_trap_regs *regs, enclave_id eid):&#160;enclave.c'],['../enclave_8h.html#adea50bfac43a7eefd85f6a0a0d2b8d5d',1,'resume_enclave(struct sbi_trap_regs *regs, enclave_id eid):&#160;enclave.c']]],
   ['rid_14',['rid',['../structsbi__pmp__ipi__info.html#ac118ff724201a5c7404e79651f7520a7',1,'sbi_pmp_ipi_info']]],
   ['riscv64_2eh_15',['riscv64.h',['../riscv64_8h.html',1,'']]],
   ['riscv_5fpglevel_5fbits_16',['RISCV_PGLEVEL_BITS',['../page_8h.html#a5b4a8552fe2a1616b125ecc55a064e73',1,'page.h']]],
@@ -24,7 +24,7 @@ var searchData=
   ['riscv_5fpgtable_5fhighest_5fbit_21',['RISCV_PGTABLE_HIGHEST_BIT',['../page_8h.html#a36d92f5eedb9e08ad9ae5a344583c444',1,'page.h']]],
   ['rt_5felf_2eh_22',['rt_elf.h',['../rt__elf_8h.html',1,'']]],
   ['rt_5futil_2eh_23',['rt_util.h',['../rt__util_8h.html',1,'']]],
-  ['run_5fenclave_24',['run_enclave',['../enclave_8h.html#ae4dda0294501e10fb583acd0447402f3',1,'enclave.c']]],
+  ['run_5fenclave_24',['run_enclave',['../enclave_8c.html#ae4dda0294501e10fb583acd0447402f3',1,'run_enclave(struct sbi_trap_regs *regs, enclave_id eid):&#160;enclave.c'],['../enclave_8h.html#ae4dda0294501e10fb583acd0447402f3',1,'run_enclave(struct sbi_trap_regs *regs, enclave_id eid):&#160;enclave.c']]],
   ['running_25',['RUNNING',['../enclave_8h.html#ad243be806b52597f338face25a816217a1061be6c3fb88d32829cba6f6b2be304',1,'enclave.h']]],
   ['running_20tests_26',['Running Tests',['../group__cmocka__exec.html',1,'']]]
 ];

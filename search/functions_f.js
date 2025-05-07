@@ -32,7 +32,7 @@ var searchData=
   ['sm_5fsign_29',['sm_sign',['../sm_8h.html#af26a570276311fba224bb0d8126798f8',1,'sm.c']]],
   ['snprintf_30',['snprintf',['../printf_8h.html#a212e2f1c2162f8a24b156191be16b6cd',1,'printf.c']]],
   ['sprintf_31',['sprintf',['../printf_8h.html#a07bb8b97d4180b8f8b67de90890bafdf',1,'printf.c']]],
-  ['stop_5fenclave_32',['stop_enclave',['../enclave_8h.html#af13e39038864cf309ab05c5ec34561e6',1,'enclave.c']]],
+  ['stop_5fenclave_32',['stop_enclave',['../enclave_8c.html#af13e39038864cf309ab05c5ec34561e6',1,'stop_enclave(struct sbi_trap_regs *regs, uint64_t request, enclave_id eid):&#160;enclave.c'],['../enclave_8h.html#af13e39038864cf309ab05c5ec34561e6',1,'stop_enclave(struct sbi_trap_regs *regs, uint64_t request, enclave_id eid):&#160;enclave.c']]],
   ['swap_5fprev_5fmepc_33',['swap_prev_mepc',['../thread_8h.html#a679b102c3fdf7a40f3648894db6acbe7',1,'thread.c']]],
   ['swap_5fprev_5fmstatus_34',['swap_prev_mstatus',['../thread_8h.html#ad1c5fa93893261a4316ff678ca80d00c',1,'thread.c']]],
   ['swap_5fprev_5fsmode_5fcsrs_35',['swap_prev_smode_csrs',['../thread_8h.html#a6fcee5bffc90e0826a6a9131d3b410c0',1,'thread.c']]],

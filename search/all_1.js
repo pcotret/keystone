@@ -13,6 +13,6 @@ var searchData=
   ['assert_20macros_10',['Assert Macros',['../group__cmocka__asserts.html',1,'']]],
   ['assertions_11',['Standard Assertions',['../group__cmocka__mock__assert.html',1,'']]],
   ['attest_5fdata_5fmaxlen_12',['ATTEST_DATA_MAXLEN',['../enclave_8h.html#af64a9d5d20f94768757e084bdf0d23b7',1,'enclave.h']]],
-  ['attest_5fenclave_13',['attest_enclave',['../enclave_8h.html#a58fc83f00a9a446c9494aa629dc7ddd3',1,'enclave.c']]],
+  ['attest_5fenclave_13',['attest_enclave',['../enclave_8c.html#aebd517e0dc5b95b13e9489e28f3e1f87',1,'attest_enclave(uintptr_t report_ptr, uintptr_t data, uintptr_t size, enclave_id eid):&#160;enclave.c'],['../enclave_8h.html#a58fc83f00a9a446c9494aa629dc7ddd3',1,'attest_enclave(uintptr_t report, uintptr_t data, uintptr_t size, enclave_id eid):&#160;enclave.c']]],
   ['auxvec_2eh_14',['auxvec.h',['../auxvec_8h.html',1,'']]]
 ];

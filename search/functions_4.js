@@ -96,11 +96,13 @@ var searchData=
   ['elf_5fnewfile_5fmaybe_5funsafe_93',['elf_newFile_maybe_unsafe',['../loader_2elf_8h.html#a34a84a8ca483afa40d9df0edb49e4f42',1,'elf.c']]],
   ['elf_5fvaddrinprogramheader_94',['elf_vaddrInProgramHeader',['../loader_2elf_8h.html#a1c90c443c9fba9e81853155a3570f6f0',1,'elf.c']]],
   ['elf_5fvtopprogramheader_95',['elf_vtopProgramHeader',['../loader_2elf_8h.html#a1cb7891a95c0c9ec8df524db3fb64593',1,'elf.c']]],
-  ['enclave_5fidr_5falloc_96',['enclave_idr_alloc',['../keystone-enclave_8c.html#ab5c16d7035ad239196f95f3ff043a653',1,'enclave_idr_alloc(struct enclave *enclave):&#160;keystone-enclave.c'],['../keystone_8h.html#ab5c16d7035ad239196f95f3ff043a653',1,'enclave_idr_alloc(struct enclave *enclave):&#160;keystone-enclave.c']]],
-  ['enclave_5fidr_5fremove_97',['enclave_idr_remove',['../keystone-enclave_8c.html#a6d2343acb63d9f6369825ee37bdbddca',1,'enclave_idr_remove(unsigned int ueid):&#160;keystone-enclave.c'],['../keystone_8h.html#a6d2343acb63d9f6369825ee37bdbddca',1,'enclave_idr_remove(unsigned int ueid):&#160;keystone-enclave.c']]],
-  ['enclave_5finit_5fmetadata_98',['enclave_init_metadata',['../enclave_8h.html#a635924ab96178f9738670070d0107f20',1,'enclave.c']]],
-  ['epm_5fdestroy_99',['epm_destroy',['../keystone_8h.html#a9518464e8dab260580c85c225337752c',1,'keystone-page.c']]],
-  ['epm_5finit_100',['epm_init',['../keystone_8h.html#a6892e4dbc204898abf7b68db4d756c33',1,'keystone-page.c']]],
-  ['epm_5fva_5fto_5fpa_101',['epm_va_to_pa',['../keystone_8h.html#a9f89bd8deb71a46005cd44351c1af173',1,'keystone.h']]],
-  ['exit_5fenclave_102',['exit_enclave',['../enclave_8h.html#a15eefb30de1bdabdffb68e8ee40ad619',1,'enclave.c']]]
+  ['encl_5falloc_5feid_96',['encl_alloc_eid',['../enclave_8c.html#ad65542157dfe5b3d4f0bbc0bb934bb07',1,'enclave.c']]],
+  ['encl_5ffree_5feid_97',['encl_free_eid',['../enclave_8c.html#a039194423098d86ad1e36969de6e0dc2',1,'enclave.c']]],
+  ['enclave_5fidr_5falloc_98',['enclave_idr_alloc',['../keystone-enclave_8c.html#ab5c16d7035ad239196f95f3ff043a653',1,'enclave_idr_alloc(struct enclave *enclave):&#160;keystone-enclave.c'],['../keystone_8h.html#ab5c16d7035ad239196f95f3ff043a653',1,'enclave_idr_alloc(struct enclave *enclave):&#160;keystone-enclave.c']]],
+  ['enclave_5fidr_5fremove_99',['enclave_idr_remove',['../keystone-enclave_8c.html#a6d2343acb63d9f6369825ee37bdbddca',1,'enclave_idr_remove(unsigned int ueid):&#160;keystone-enclave.c'],['../keystone_8h.html#a6d2343acb63d9f6369825ee37bdbddca',1,'enclave_idr_remove(unsigned int ueid):&#160;keystone-enclave.c']]],
+  ['enclave_5finit_5fmetadata_100',['enclave_init_metadata',['../enclave_8c.html#a635924ab96178f9738670070d0107f20',1,'enclave_init_metadata(void):&#160;enclave.c'],['../enclave_8h.html#a635924ab96178f9738670070d0107f20',1,'enclave_init_metadata(void):&#160;enclave.c']]],
+  ['epm_5fdestroy_101',['epm_destroy',['../keystone_8h.html#a9518464e8dab260580c85c225337752c',1,'keystone-page.c']]],
+  ['epm_5finit_102',['epm_init',['../keystone_8h.html#a6892e4dbc204898abf7b68db4d756c33',1,'keystone-page.c']]],
+  ['epm_5fva_5fto_5fpa_103',['epm_va_to_pa',['../keystone_8h.html#a9f89bd8deb71a46005cd44351c1af173',1,'keystone.h']]],
+  ['exit_5fenclave_104',['exit_enclave',['../enclave_8c.html#a15eefb30de1bdabdffb68e8ee40ad619',1,'exit_enclave(struct sbi_trap_regs *regs, enclave_id eid):&#160;enclave.c'],['../enclave_8h.html#a15eefb30de1bdabdffb68e8ee40ad619',1,'exit_enclave(struct sbi_trap_regs *regs, enclave_id eid):&#160;enclave.c']]]
 ];

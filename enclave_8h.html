@@ -158,21 +158,25 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="enclave_8h__dep__incl.png" border="0" usemap="#asm_2src_2enclave_8hdep" alt=""/></div>
 <map name="asm_2src_2enclave_8hdep" id="asm_2src_2enclave_8hdep">
-<area shape="rect" title="Enclave management interface and metadata structures for the Keystone security monitor." alt="" coords="291,5,411,31"/>
-<area shape="rect" href="cpu_8h.html" title="CPU context management for enclaves." alt="" coords="39,79,135,105"/>
-<area shape="poly" title=" " alt="" coords="293,38,133,81,131,76,291,33"/>
-<area shape="rect" href="platform-hook_8h.html" title="Platform&#45;specific hooks for enclave lifecycle management." alt="" coords="159,79,314,105"/>
-<area shape="poly" title=" " alt="" coords="320,42,257,81,254,76,317,37"/>
-<area shape="rect" href="fu540__internal_8c_source.html" title=" " alt="" coords="223,153,375,193"/>
-<area shape="poly" title=" " alt="" coords="346,46,328,106,310,153,305,152,323,104,341,45"/>
-<area shape="rect" href="multimem_8h_source.html" title=" " alt="" coords="416,160,593,186"/>
-<area shape="poly" title=" " alt="" coords="372,41,429,103,491,158,488,162,425,107,369,45"/>
-<area shape="rect" href="plugins_8h_source.html" title=" " alt="" coords="440,79,601,105"/>
-<area shape="poly" title=" " alt="" coords="395,35,492,76,490,81,393,40"/>
+<area shape="rect" title="Enclave management interface and metadata structures for the Keystone security monitor." alt="" coords="358,5,478,31"/>
+<area shape="rect" href="cpu_8h.html" title="CPU context management for enclaves." alt="" coords="112,79,209,105"/>
+<area shape="poly" title=" " alt="" coords="360,38,205,81,203,76,359,33"/>
+<area shape="rect" href="enclave_8c.html" title="Enclave management and context switching for the Keystone Security Monitor." alt="" coords="192,160,313,186"/>
+<area shape="poly" title=" " alt="" coords="344,37,305,54,273,81,262,100,256,122,254,160,249,160,251,121,257,98,269,77,302,50,342,32"/>
+<area shape="rect" href="platform-hook_8h.html" title="Platform&#45;specific hooks for enclave lifecycle management." alt="" coords="283,79,438,105"/>
+<area shape="poly" title=" " alt="" coords="401,45,372,80,368,77,397,41"/>
+<area shape="rect" href="fu540__internal_8c_source.html" title=" " alt="" coords="360,153,513,193"/>
+<area shape="poly" title=" " alt="" coords="437,43,452,78,454,118,446,153,441,152,448,118,447,80,432,45"/>
+<area shape="rect" href="multimem_8h_source.html" title=" " alt="" coords="549,160,726,186"/>
+<area shape="poly" title=" " alt="" coords="449,38,622,158,619,162,446,42"/>
+<area shape="rect" href="plugins_8h_source.html" title=" " alt="" coords="564,79,725,105"/>
+<area shape="poly" title=" " alt="" coords="471,34,606,76,605,81,470,39"/>
+<area shape="poly" title=" " alt="" coords="187,113,240,158,236,162,184,117"/>
 <area shape="rect" href="sm-sbi-opensbi_8c.html" title="Keystone Enclave SBI handler implementation." alt="" coords="5,160,169,186"/>
-<area shape="poly" title=" " alt="" coords="90,120,90,160,84,160,84,120"/>
-<area shape="poly" title=" " alt="" coords="257,115,286,151,281,154,253,118"/>
-<area shape="poly" title=" " alt="" coords="517,120,509,160,504,159,512,119"/>
+<area shape="poly" title=" " alt="" coords="141,118,100,161,96,158,137,114"/>
+<area shape="poly" title=" " alt="" coords="333,116,270,162,267,157,330,112"/>
+<area shape="poly" title=" " alt="" coords="384,114,419,150,416,154,381,118"/>
+<area shape="poly" title=" " alt="" coords="645,120,641,160,636,159,639,120"/>
 </map>
 </div>
 </div>
@@ -402,6 +406,44 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>enclave_init_metadata
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, error code otherwise. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="enclave_8h_a58fc83f00a9a446c9494aa629dc7ddd3_cgraph.png" border="0" usemap="#aenclave_8h_a58fc83f00a9a446c9494aa629dc7ddd3_cgraph" alt=""/></div>
+<map name="aenclave_8h_a58fc83f00a9a446c9494aa629dc7ddd3_cgraph" id="aenclave_8h_a58fc83f00a9a446c9494aa629dc7ddd3_cgraph">
+<area shape="rect" title="Generate an attestation report for the enclave." alt="" coords="5,141,112,167"/>
+<area shape="rect" href="enclave_8c.html#a930200740510b15321777ac2aff5229d" title="Copies data from inside enclave memory to the SM." alt="" coords="164,92,296,118"/>
+<area shape="poly" title=" " alt="" coords="105,138,167,120,169,125,107,143"/>
+<area shape="rect" href="enclave_8c.html#afe2ad969586dcd444ba558dfd7a7fa2b" title="Copies report data from the SM to enclave memory." alt="" coords="160,165,300,191"/>
+<area shape="poly" title=" " alt="" coords="113,159,145,164,144,169,112,164"/>
+<area shape="rect" href="mprv_8h.html#ae0bef1269f94b4c27b713f69a377ffe2" title="Copy memory from external source into secure monitor." alt="" coords="356,80,447,106"/>
+<area shape="poly" title=" " alt="" coords="296,98,340,94,340,100,297,103"/>
+<area shape="rect" href="mprv_8h.html#a53f5a0e19f13a7399184f311c3bdb4ad" title="Copy 1 byte to secure monitor memory." alt="" coords="525,5,624,31"/>
+<area shape="poly" title=" " alt="" coords="425,77,501,40,515,34,517,39,503,45,428,82"/>
+<area shape="rect" href="mprv_8h.html#acddc4090683a0336f5097327b2c2c25e" title="Copy one full mprv_block to SM." alt="" coords="510,55,639,80"/>
+<area shape="poly" title=" " alt="" coords="447,84,494,77,495,82,448,89"/>
+<area shape="rect" href="mprv_8h.html#abb62a4e1355be650277cf2afe34415c7" title="Copy one register&#45;sized word to SM." alt="" coords="511,104,638,130"/>
+<area shape="poly" title=" " alt="" coords="448,96,497,103,496,109,447,102"/>
+<area shape="rect" href="mprv_8h.html#abaee4f68f49b38ad12b28d96429aed14" title="Copy memory from secure monitor to external destination." alt="" coords="348,184,454,210"/>
+<area shape="poly" title=" " alt="" coords="301,183,333,187,332,192,300,188"/>
+<area shape="rect" href="mprv_8h.html#a2b1b6d835c2c8844e2c1f91d05564ab0" title="Copy 1 byte from secure monitor memory to destination." alt="" coords="518,153,631,179"/>
+<area shape="poly" title=" " alt="" coords="454,185,502,176,503,182,455,190"/>
+<area shape="rect" href="mprv_8h.html#ad38f4e13942b781d6911ec49b69e1415" title="Copy one full mprv_block from SM." alt="" coords="502,203,647,228"/>
+<area shape="poly" title=" " alt="" coords="455,200,487,203,487,209,454,205"/>
+<area shape="rect" href="mprv_8h.html#a10df97499cb600ebc66a08f60a265740" title="Copy one register&#45;sized word from SM." alt="" coords="504,252,645,278"/>
+<area shape="poly" title=" " alt="" coords="432,208,503,238,518,244,516,249,501,243,430,213"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="enclave_8h_a58fc83f00a9a446c9494aa629dc7ddd3_icgraph.png" border="0" usemap="#aenclave_8h_a58fc83f00a9a446c9494aa629dc7ddd3_icgraph" alt=""/></div>
+<map name="aenclave_8h_a58fc83f00a9a446c9494aa629dc7ddd3_icgraph" id="aenclave_8h_a58fc83f00a9a446c9494aa629dc7ddd3_icgraph">
+<area shape="rect" title="Generate an attestation report for the enclave." alt="" coords="209,5,315,31"/>
+<area shape="rect" href="sm-sbi_8c.html#a7d8927c735eda0a43706f79aa47c2ce9" title="Generate an attestation report for the enclave." alt="" coords="5,5,161,31"/>
+<area shape="poly" title=" " alt="" coords="193,21,161,21,161,16,193,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -456,6 +498,16 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="319,78,375,96,374,101,317,84"/>
 </map>
 </div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="enclave_8h_a462420f809082acd04431ba4bc2d04cb_icgraph.png" border="0" usemap="#aenclave_8h_a462420f809082acd04431ba4bc2d04cb_icgraph" alt=""/></div>
+<map name="aenclave_8h_a462420f809082acd04431ba4bc2d04cb_icgraph" id="aenclave_8h_a462420f809082acd04431ba4bc2d04cb_icgraph">
+<area shape="rect" title="Copy user&#45;provided enclave creation arguments." alt="" coords="212,5,387,31"/>
+<area shape="rect" href="sm-sbi_8c.html#a9cc9b5f94930fc8e512a3d4366a906a5" title="Create a new enclave." alt="" coords="5,5,164,31"/>
+<area shape="poly" title=" " alt="" coords="196,21,164,21,164,16,196,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -499,13 +551,29 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="enclave_8h_ae5091dc7c998554d97bf949ec7af8ab8_cgraph.png" border="0" usemap="#aenclave_8h_ae5091dc7c998554d97bf949ec7af8ab8_cgraph" alt=""/></div>
 <map name="aenclave_8h_ae5091dc7c998554d97bf949ec7af8ab8_cgraph" id="aenclave_8h_ae5091dc7c998554d97bf949ec7af8ab8_cgraph">
-<area shape="rect" title="Create a new enclave." alt="" coords="5,67,115,92"/>
-<area shape="rect" href="fu540__internal_8c.html#a079aafebfa02ea8e5f124709d8519617" title="Perform platform&#45;specific actions during enclave creation." alt="" coords="166,29,329,55"/>
-<area shape="poly" title=" " alt="" coords="115,66,164,56,165,61,116,71"/>
-<area shape="rect" href="fu540__internal_8c.html#ad8a55b5de551b6fd77d703e8ae775695" title="Perform platform&#45;specific cleanup during enclave destruction." alt="" coords="163,103,332,128"/>
-<area shape="poly" title=" " alt="" coords="116,87,162,96,161,102,115,93"/>
-<area shape="poly" title=" " alt="" coords="216,30,210,21,213,11,226,5,247,3,270,5,282,12,279,16,268,10,247,8,228,10,217,15,215,20,220,27"/>
-<area shape="poly" title=" " alt="" coords="216,104,210,94,213,84,226,78,247,76,270,79,282,85,279,90,268,84,247,81,228,83,217,88,215,93,220,101"/>
+<area shape="rect" title="Create a new enclave." alt="" coords="5,104,115,130"/>
+<area shape="rect" href="enclave_8c.html#ab600bcd1b23c10b5946cf3026adf8161" title="Clears untrusted memory by zeroing it out." alt="" coords="169,5,326,31"/>
+<area shape="poly" title=" " alt="" coords="74,101,112,71,161,40,174,34,176,39,164,45,115,75,78,105"/>
+<area shape="rect" href="enclave_8c.html#ad65542157dfe5b3d4f0bbc0bb934bb07" title="Allocates a free enclave ID." alt="" coords="196,55,299,80"/>
+<area shape="poly" title=" " alt="" coords="111,101,180,82,182,87,112,106"/>
+<area shape="rect" href="enclave_8c.html#a039194423098d86ad1e36969de6e0dc2" title="Frees a previously allocated enclave ID." alt="" coords="198,104,297,130"/>
+<area shape="poly" title=" " alt="" coords="115,114,183,114,183,120,115,120"/>
+<area shape="rect" href="fu540__internal_8c.html#a079aafebfa02ea8e5f124709d8519617" title="Perform platform&#45;specific actions during enclave creation." alt="" coords="166,177,329,203"/>
+<area shape="poly" title=" " alt="" coords="96,128,199,169,197,174,94,133"/>
+<area shape="rect" href="fu540__internal_8c.html#ad8a55b5de551b6fd77d703e8ae775695" title="Perform platform&#45;specific cleanup during enclave destruction." alt="" coords="163,251,332,276"/>
+<area shape="poly" title=" " alt="" coords="75,128,113,168,164,213,207,241,204,245,161,218,109,172,71,132"/>
+<area shape="poly" title=" " alt="" coords="216,178,210,169,213,159,226,153,247,151,270,153,282,160,279,164,268,158,247,156,228,158,217,163,215,168,220,175"/>
+<area shape="poly" title=" " alt="" coords="216,252,210,242,213,232,226,226,247,224,270,227,282,233,279,238,268,232,247,229,228,231,217,236,215,241,220,249"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="enclave_8h_ae5091dc7c998554d97bf949ec7af8ab8_icgraph.png" border="0" usemap="#aenclave_8h_ae5091dc7c998554d97bf949ec7af8ab8_icgraph" alt=""/></div>
+<map name="aenclave_8h_ae5091dc7c998554d97bf949ec7af8ab8_icgraph" id="aenclave_8h_ae5091dc7c998554d97bf949ec7af8ab8_icgraph">
+<area shape="rect" title="Create a new enclave." alt="" coords="212,5,321,31"/>
+<area shape="rect" href="sm-sbi_8c.html#a9cc9b5f94930fc8e512a3d4366a906a5" title="Create a new enclave." alt="" coords="5,5,164,31"/>
+<area shape="poly" title=" " alt="" coords="196,21,164,21,164,16,196,16"/>
 </map>
 </div>
 
@@ -540,10 +608,24 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="enclave_8h_a80edf4241ec69a638b52b43e39c5e314_cgraph.png" border="0" usemap="#aenclave_8h_a80edf4241ec69a638b52b43e39c5e314_cgraph" alt=""/></div>
 <map name="aenclave_8h_a80edf4241ec69a638b52b43e39c5e314_cgraph" id="aenclave_8h_a80edf4241ec69a638b52b43e39c5e314_cgraph">
-<area shape="rect" title="Destroy an existing enclave." alt="" coords="5,29,121,55"/>
-<area shape="rect" href="fu540__internal_8c.html#ad8a55b5de551b6fd77d703e8ae775695" title="Perform platform&#45;specific cleanup during enclave destruction." alt="" coords="169,29,338,55"/>
-<area shape="poly" title=" " alt="" coords="121,40,153,40,153,45,121,45"/>
-<area shape="poly" title=" " alt="" coords="221,30,215,21,219,11,232,5,253,3,276,5,288,12,286,16,275,10,253,8,233,10,223,15,220,20,226,27"/>
+<area shape="rect" title="Destroy an existing enclave." alt="" coords="5,63,121,88"/>
+<area shape="rect" href="enclave_8c.html#a039194423098d86ad1e36969de6e0dc2" title="Frees a previously allocated enclave ID." alt="" coords="204,5,303,31"/>
+<area shape="poly" title=" " alt="" coords="107,60,168,41,192,33,194,39,169,46,109,65"/>
+<area shape="rect" href="enclave_8c.html#ad55361b293626106b01e1253d2a264f8" title="Get index of an enclave region by type." alt="" coords="187,55,320,96"/>
+<area shape="poly" title=" " alt="" coords="121,73,171,73,171,78,121,78"/>
+<area shape="rect" href="fu540__internal_8c.html#ad8a55b5de551b6fd77d703e8ae775695" title="Perform platform&#45;specific cleanup during enclave destruction." alt="" coords="169,144,338,170"/>
+<area shape="poly" title=" " alt="" coords="96,86,208,135,206,140,94,91"/>
+<area shape="poly" title=" " alt="" coords="221,145,215,135,219,126,232,120,253,117,276,120,288,126,286,131,275,125,253,123,233,125,223,129,220,135,226,142"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="enclave_8h_a80edf4241ec69a638b52b43e39c5e314_icgraph.png" border="0" usemap="#aenclave_8h_a80edf4241ec69a638b52b43e39c5e314_icgraph" alt=""/></div>
+<map name="aenclave_8h_a80edf4241ec69a638b52b43e39c5e314_icgraph" id="aenclave_8h_a80edf4241ec69a638b52b43e39c5e314_icgraph">
+<area shape="rect" title="Destroy an existing enclave." alt="" coords="218,5,333,31"/>
+<area shape="rect" href="keystone-sbi_8c.html#ab43a71e8188b8cfeb8bca7d92c37960f" title="Destroy an existing enclave." alt="" coords="5,5,170,31"/>
+<area shape="poly" title=" " alt="" coords="202,21,170,21,170,16,202,16"/>
 </map>
 </div>
 
@@ -584,6 +666,29 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, error code otherwise. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="enclave_8h_a15eefb30de1bdabdffb68e8ee40ad619_cgraph.png" border="0" usemap="#aenclave_8h_a15eefb30de1bdabdffb68e8ee40ad619_cgraph" alt=""/></div>
+<map name="aenclave_8h_a15eefb30de1bdabdffb68e8ee40ad619_cgraph" id="aenclave_8h_a15eefb30de1bdabdffb68e8ee40ad619_cgraph">
+<area shape="rect" title="Exit the enclave and return to the host." alt="" coords="5,37,99,63"/>
+<area shape="rect" href="enclave_8c.html#a6a75079cb21b11b4718db28006b1b401" title="Performs context switch from the enclave back to the host." alt="" coords="147,37,305,63"/>
+<area shape="poly" title=" " alt="" coords="99,47,131,47,131,52,99,52"/>
+<area shape="rect" href="fu540__internal_8c.html#a4ebdf8d20fd54fc07239454de2428365" title="Perform platform&#45;specific actions after switching out of an enclave." alt="" coords="353,29,499,70"/>
+<area shape="poly" title=" " alt="" coords="305,47,337,47,337,52,305,52"/>
+<area shape="poly" title=" " alt="" coords="388,29,386,19,392,10,406,5,426,3,448,5,461,11,459,16,447,10,426,8,407,10,396,15,391,20,393,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="enclave_8h_a15eefb30de1bdabdffb68e8ee40ad619_icgraph.png" border="0" usemap="#aenclave_8h_a15eefb30de1bdabdffb68e8ee40ad619_icgraph" alt=""/></div>
+<map name="aenclave_8h_a15eefb30de1bdabdffb68e8ee40ad619_icgraph" id="aenclave_8h_a15eefb30de1bdabdffb68e8ee40ad619_icgraph">
+<area shape="rect" title="Exit the enclave and return to the host." alt="" coords="196,5,289,31"/>
+<area shape="rect" href="sm-sbi_8c.html#a94c826649284ece55b50a55f7b620932" title="Exit from the currently running enclave." alt="" coords="5,5,148,31"/>
+<area shape="poly" title=" " alt="" coords="180,21,148,21,148,16,180,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -660,6 +765,18 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Index of region or -1 if not found. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="enclave_8h_ad55361b293626106b01e1253d2a264f8_icgraph.png" border="0" usemap="#aenclave_8h_ad55361b293626106b01e1253d2a264f8_icgraph" alt=""/></div>
+<map name="aenclave_8h_ad55361b293626106b01e1253d2a264f8_icgraph" id="aenclave_8h_ad55361b293626106b01e1253d2a264f8_icgraph">
+<area shape="rect" title="Get index of an enclave region by type." alt="" coords="381,5,514,46"/>
+<area shape="rect" href="enclave_8c.html#a80edf4241ec69a638b52b43e39c5e314" title="Destroy an existing enclave." alt="" coords="218,13,333,39"/>
+<area shape="poly" title=" " alt="" coords="365,28,333,28,333,23,365,23"/>
+<area shape="rect" href="keystone-sbi_8c.html#ab43a71e8188b8cfeb8bca7d92c37960f" title="Destroy an existing enclave." alt="" coords="5,13,170,39"/>
+<area shape="poly" title=" " alt="" coords="202,28,170,28,170,23,202,23"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -750,6 +867,16 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, error code otherwise. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="enclave_8h_ab327377ec7b88af17850f0a902577d10_icgraph.png" border="0" usemap="#aenclave_8h_ab327377ec7b88af17850f0a902577d10_icgraph" alt=""/></div>
+<map name="aenclave_8h_ab327377ec7b88af17850f0a902577d10_icgraph" id="aenclave_8h_ab327377ec7b88af17850f0a902577d10_icgraph">
+<area shape="rect" title="Derive and return the sealing key for the enclave." alt="" coords="217,5,331,31"/>
+<area shape="rect" href="sm-sbi_8c.html#acf290270e30b7c0dc7f080dd63146e4a" title="Retrieve a sealing key bound to the enclave identity." alt="" coords="5,5,169,31"/>
+<area shape="poly" title=" " alt="" coords="201,21,169,21,169,16,201,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -788,6 +915,29 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, error code otherwise. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="enclave_8h_adea50bfac43a7eefd85f6a0a0d2b8d5d_cgraph.png" border="0" usemap="#aenclave_8h_adea50bfac43a7eefd85f6a0a0d2b8d5d_cgraph" alt=""/></div>
+<map name="aenclave_8h_adea50bfac43a7eefd85f6a0a0d2b8d5d_cgraph" id="aenclave_8h_adea50bfac43a7eefd85f6a0a0d2b8d5d_cgraph">
+<area shape="rect" title="Resume execution of a stopped enclave." alt="" coords="5,37,122,63"/>
+<area shape="rect" href="enclave_8c.html#a4560aa6a1eaa110f567349695c0b805b" title="Performs context switch from host to the specified enclave." alt="" coords="170,37,348,63"/>
+<area shape="poly" title=" " alt="" coords="122,47,154,47,154,52,122,52"/>
+<area shape="rect" href="fu540__internal_8c.html#a53411d26e8386002dda41cf97f7b23da" title="Perform platform&#45;specific actions before switching into an enclave." alt="" coords="396,29,527,70"/>
+<area shape="poly" title=" " alt="" coords="349,47,381,47,381,52,349,52"/>
+<area shape="poly" title=" " alt="" coords="423,29,421,19,428,10,441,5,462,3,484,5,497,11,495,16,482,10,462,8,442,10,431,15,426,20,428,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="enclave_8h_adea50bfac43a7eefd85f6a0a0d2b8d5d_icgraph.png" border="0" usemap="#aenclave_8h_adea50bfac43a7eefd85f6a0a0d2b8d5d_icgraph" alt=""/></div>
+<map name="aenclave_8h_adea50bfac43a7eefd85f6a0a0d2b8d5d_icgraph" id="aenclave_8h_adea50bfac43a7eefd85f6a0a0d2b8d5d_icgraph">
+<area shape="rect" title="Resume execution of a stopped enclave." alt="" coords="219,5,335,31"/>
+<area shape="rect" href="sm-sbi_8c.html#aa85273969bc3e13bc70ee80b9b12ed7f" title="Resume execution of a previously stopped enclave." alt="" coords="5,5,171,31"/>
+<area shape="poly" title=" " alt="" coords="203,21,171,21,171,16,203,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -826,6 +976,29 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, error code otherwise. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="enclave_8h_ae4dda0294501e10fb583acd0447402f3_cgraph.png" border="0" usemap="#aenclave_8h_ae4dda0294501e10fb583acd0447402f3_cgraph" alt=""/></div>
+<map name="aenclave_8h_ae4dda0294501e10fb583acd0447402f3_cgraph" id="aenclave_8h_ae4dda0294501e10fb583acd0447402f3_cgraph">
+<area shape="rect" title="Run an enclave." alt="" coords="5,37,97,63"/>
+<area shape="rect" href="enclave_8c.html#a4560aa6a1eaa110f567349695c0b805b" title="Performs context switch from host to the specified enclave." alt="" coords="145,37,323,63"/>
+<area shape="poly" title=" " alt="" coords="97,47,129,47,129,52,97,52"/>
+<area shape="rect" href="fu540__internal_8c.html#a53411d26e8386002dda41cf97f7b23da" title="Perform platform&#45;specific actions before switching into an enclave." alt="" coords="371,29,502,70"/>
+<area shape="poly" title=" " alt="" coords="324,47,356,47,356,52,324,52"/>
+<area shape="poly" title=" " alt="" coords="398,29,396,19,403,10,416,5,437,3,459,5,472,11,470,16,457,10,437,8,417,10,406,15,401,20,403,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="enclave_8h_ae4dda0294501e10fb583acd0447402f3_icgraph.png" border="0" usemap="#aenclave_8h_ae4dda0294501e10fb583acd0447402f3_icgraph" alt=""/></div>
+<map name="aenclave_8h_ae4dda0294501e10fb583acd0447402f3_icgraph" id="aenclave_8h_ae4dda0294501e10fb583acd0447402f3_icgraph">
+<area shape="rect" title="Run an enclave." alt="" coords="194,5,285,31"/>
+<area shape="rect" href="sm-sbi_8c.html#a1b2f9ce43f2c06c43890c1872bc79513" title="Run an enclave." alt="" coords="5,5,146,31"/>
+<area shape="poly" title=" " alt="" coords="178,21,146,21,146,16,178,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -931,6 +1104,29 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, error code otherwise. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="enclave_8h_af13e39038864cf309ab05c5ec34561e6_cgraph.png" border="0" usemap="#aenclave_8h_af13e39038864cf309ab05c5ec34561e6_cgraph" alt=""/></div>
+<map name="aenclave_8h_af13e39038864cf309ab05c5ec34561e6_cgraph" id="aenclave_8h_af13e39038864cf309ab05c5ec34561e6_cgraph">
+<area shape="rect" title="Stop enclave execution voluntarily." alt="" coords="5,37,104,63"/>
+<area shape="rect" href="enclave_8c.html#a6a75079cb21b11b4718db28006b1b401" title="Performs context switch from the enclave back to the host." alt="" coords="152,37,310,63"/>
+<area shape="poly" title=" " alt="" coords="104,47,136,47,136,52,104,52"/>
+<area shape="rect" href="fu540__internal_8c.html#a4ebdf8d20fd54fc07239454de2428365" title="Perform platform&#45;specific actions after switching out of an enclave." alt="" coords="358,29,504,70"/>
+<area shape="poly" title=" " alt="" coords="310,47,342,47,342,52,310,52"/>
+<area shape="poly" title=" " alt="" coords="393,29,391,19,397,10,411,5,431,3,453,5,466,11,464,16,452,10,431,8,412,10,401,15,396,20,398,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="enclave_8h_af13e39038864cf309ab05c5ec34561e6_icgraph.png" border="0" usemap="#aenclave_8h_af13e39038864cf309ab05c5ec34561e6_icgraph" alt=""/></div>
+<map name="aenclave_8h_af13e39038864cf309ab05c5ec34561e6_icgraph" id="aenclave_8h_af13e39038864cf309ab05c5ec34561e6_icgraph">
+<area shape="rect" title="Stop enclave execution voluntarily." alt="" coords="201,5,299,31"/>
+<area shape="rect" href="sm-sbi_8c.html#a5bb919b6cbf24bf3c2a588eb19ee0e93" title="Stop execution of the current enclave." alt="" coords="5,5,153,31"/>
+<area shape="poly" title=" " alt="" coords="185,21,153,21,153,16,185,16"/>
+</map>
+</div>
 
 </div>
 </div>

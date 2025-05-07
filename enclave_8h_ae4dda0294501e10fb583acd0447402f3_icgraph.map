@@ -1,0 +1,5 @@
+<map id="run_enclave" name="run_enclave">
+<area shape="rect" id="Node000001" title="Run an enclave." alt="" coords="194,5,285,31"/>
+<area shape="rect" id="Node000002" href="$sm-sbi_8c.html#a1b2f9ce43f2c06c43890c1872bc79513" title="Run an enclave." alt="" coords="5,5,146,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,21,146,21,146,16,178,16"/>
+</map>

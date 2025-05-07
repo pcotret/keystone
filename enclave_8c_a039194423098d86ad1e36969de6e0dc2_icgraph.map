@@ -1,0 +1,11 @@
+<map id="encl_free_eid" name="encl_free_eid">
+<area shape="rect" id="Node000001" title="Frees a previously allocated enclave ID." alt="" coords="381,31,479,56"/>
+<area shape="rect" id="Node000002" href="$enclave_8c.html#acc219d9a95270fbbaabbb4f4491791f0" title="Create a new enclave." alt="" coords="221,5,330,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="365,36,330,30,331,24,366,30"/>
+<area shape="rect" id="Node000004" href="$enclave_8c.html#a80edf4241ec69a638b52b43e39c5e314" title="Destroy an existing enclave." alt="" coords="218,55,333,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="366,56,334,61,333,56,365,51"/>
+<area shape="rect" id="Node000003" href="$sm-sbi_8c.html#a9cc9b5f94930fc8e512a3d4366a906a5" title="Create a new enclave." alt="" coords="8,5,167,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="205,21,167,21,167,16,205,16"/>
+<area shape="rect" id="Node000005" href="$keystone-sbi_8c.html#ab43a71e8188b8cfeb8bca7d92c37960f" title="Destroy an existing enclave." alt="" coords="5,55,170,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="202,70,170,70,170,65,202,65"/>
+</map>

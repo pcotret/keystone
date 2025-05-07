@@ -1,0 +1,12 @@
+<map id="sbi_sm_destroy_enclave" name="sbi_sm_destroy_enclave">
+<area shape="rect" id="Node000001" title="Destroy an existing enclave." alt="" coords="5,63,170,88"/>
+<area shape="rect" id="Node000002" href="$enclave_8c.html#a80edf4241ec69a638b52b43e39c5e314" title="Destroy an existing enclave." alt="" coords="218,63,333,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,73,202,73,202,78,170,78"/>
+<area shape="rect" id="Node000003" href="$enclave_8c.html#a039194423098d86ad1e36969de6e0dc2" title="Frees a previously allocated enclave ID." alt="" coords="417,5,515,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="320,60,380,41,405,33,406,39,382,46,321,65"/>
+<area shape="rect" id="Node000004" href="$enclave_8c.html#ad55361b293626106b01e1253d2a264f8" title="Get index of an enclave region by type." alt="" coords="399,55,532,96"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="333,73,383,73,383,78,333,78"/>
+<area shape="rect" id="Node000005" href="$fu540__internal_8c.html#ad8a55b5de551b6fd77d703e8ae775695" title="Perform platform&#45;specific cleanup during enclave destruction." alt="" coords="381,144,550,170"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="309,86,420,135,418,140,307,91"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="434,145,427,135,431,126,444,120,466,117,489,120,501,126,498,131,487,125,466,123,446,125,435,129,433,135,438,142"/>
+</map>

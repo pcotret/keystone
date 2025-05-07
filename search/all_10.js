@@ -78,7 +78,7 @@ var searchData=
   ['sstatus_75',['sstatus',['../structcsrs.html#ade120c60da2d1efc9b05a912dd2695fd',1,'csrs']]],
   ['standard_20assertions_76',['Standard Assertions',['../group__cmocka__mock__assert.html',1,'']]],
   ['state_77',['state',['../structenclave.html#a692a614191592bee1e4d51a228c72049',1,'enclave']]],
-  ['stop_5fenclave_78',['stop_enclave',['../enclave_8h.html#af13e39038864cf309ab05c5ec34561e6',1,'enclave.c']]],
+  ['stop_5fenclave_78',['stop_enclave',['../enclave_8h.html#af13e39038864cf309ab05c5ec34561e6',1,'stop_enclave(struct sbi_trap_regs *regs, uint64_t request, enclave_id eid):&#160;enclave.c'],['../enclave_8c.html#af13e39038864cf309ab05c5ec34561e6',1,'stop_enclave(struct sbi_trap_regs *regs, uint64_t request, enclave_id eid):&#160;enclave.c']]],
   ['stopped_79',['STOPPED',['../enclave_8h.html#ad243be806b52597f338face25a816217a948b2aee15f52b421fa4770c47bcfe8c',1,'enclave.h']]],
   ['string_2eh_80',['string.h',['../string_8h.html',1,'']]],
   ['stvec_81',['stvec',['../structcsrs.html#a0906f0c0f46510fb243a9dd22d0c202a',1,'csrs']]],
