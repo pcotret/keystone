@@ -263,7 +263,7 @@ $(document).ready(function(){initNavTree('mm_2page__swap_8c_source.html',''); in
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>pswap_hash(uint8_t* hash, <span class="keywordtype">void</span>* page_addr, uint64_t pageout_ctr) {</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="preprocessor">#ifdef USE_PAGE_HASH</span></div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  <a class="code hl_struct" href="struct_s_h_a256___c_t_x.html">SHA256_CTX</a> hasher;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  <a class="code hl_struct" href="structSHA256__CTX.html">SHA256_CTX</a> hasher;</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  sha256_init(&amp;hasher);</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  sha256_update(&amp;hasher, page_addr, RISCV_PAGE_SIZE);</div>
@@ -316,7 +316,7 @@ $(document).ready(function(){initNavTree('mm_2page__swap_8c_source.html',''); in
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>}</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="astruct_s_h_a256___c_t_x_html"><div class="ttname"><a href="struct_s_h_a256___c_t_x.html">SHA256_CTX</a></div><div class="ttdef"><b>Definition</b> sha256.h:22</div></div>
+<div class="ttc" id="astructSHA256__CTX_html"><div class="ttname"><a href="structSHA256__CTX.html">SHA256_CTX</a></div><div class="ttdef"><b>Definition</b> sha256.h:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

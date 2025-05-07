@@ -808,7 +808,7 @@ $(document).ready(function(){initNavTree('cmocka_8h_source.html',''); initResiza
 <div class="line"><a id="l01819" name="l01819"></a><span class="lineno"> 1819</span><span class="preprocessor">#define run_group_tests(tests) _run_group_tests(tests, sizeof(tests) / sizeof((tests)[0]))</span></div>
 <div class="line"><a id="l01820" name="l01820"></a><span class="lineno"> 1820</span> </div>
 <div class="line"><a id="l01821" name="l01821"></a><span class="lineno"> 1821</span><span class="preprocessor">#ifdef DOXYGEN</span></div>
-<div class="line"><a id="l01878" name="l01878"></a><span class="lineno"> 1878</span><span class="keywordtype">int</span> cmocka_run_group_tests(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="struct_c_m_unit_test.html">CMUnitTest</a> group_tests[],</div>
+<div class="line"><a id="l01878" name="l01878"></a><span class="lineno"> 1878</span><span class="keywordtype">int</span> cmocka_run_group_tests(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="structCMUnitTest.html">CMUnitTest</a> group_tests[],</div>
 <div class="line"><a id="l01879" name="l01879"></a><span class="lineno"> 1879</span>                           CMFixtureFunction group_setup,</div>
 <div class="line"><a id="l01880" name="l01880"></a><span class="lineno"> 1880</span>                           CMFixtureFunction group_teardown);</div>
 <div class="line"><a id="l01881" name="l01881"></a><span class="lineno"> 1881</span><span class="preprocessor">#else</span></div>
@@ -818,7 +818,7 @@ $(document).ready(function(){initNavTree('cmocka_8h_source.html',''); initResiza
 <div class="line"><a id="l01885" name="l01885"></a><span class="lineno"> 1885</span> </div>
 <div class="line"><a id="l01886" name="l01886"></a><span class="lineno"> 1886</span><span class="preprocessor">#ifdef DOXYGEN</span></div>
 <div class="line"><a id="l01946" name="l01946"></a><span class="lineno"> 1946</span><span class="keywordtype">int</span> cmocka_run_group_tests_name(<span class="keyword">const</span> <span class="keywordtype">char</span> *group_name,</div>
-<div class="line"><a id="l01947" name="l01947"></a><span class="lineno"> 1947</span>                                <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="struct_c_m_unit_test.html">CMUnitTest</a> group_tests[],</div>
+<div class="line"><a id="l01947" name="l01947"></a><span class="lineno"> 1947</span>                                <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="structCMUnitTest.html">CMUnitTest</a> group_tests[],</div>
 <div class="line"><a id="l01948" name="l01948"></a><span class="lineno"> 1948</span>                                CMFixtureFunction group_setup,</div>
 <div class="line"><a id="l01949" name="l01949"></a><span class="lineno"> 1949</span>                                CMFixtureFunction group_teardown);</div>
 <div class="line"><a id="l01950" name="l01950"></a><span class="lineno"> 1950</span><span class="preprocessor">#else</span></div>
@@ -903,20 +903,20 @@ $(document).ready(function(){initNavTree('cmocka_8h_source.html',''); initResiza
 <div class="line"><a id="l02183" name="l02183"></a><span class="lineno"> 2183</span><span class="comment"> * possible to specify NULL function pointers.</span></div>
 <div class="line"><a id="l02184" name="l02184"></a><span class="lineno"> 2184</span><span class="comment"> */</span></div>
 <div class="foldopen" id="foldopen02185" data-start="{" data-end="};">
-<div class="line"><a id="l02185" name="l02185"></a><span class="lineno"><a class="line" href="struct_unit_test.html"> 2185</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_unit_test.html">UnitTest</a> {</div>
+<div class="line"><a id="l02185" name="l02185"></a><span class="lineno"><a class="line" href="structUnitTest.html"> 2185</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structUnitTest.html">UnitTest</a> {</div>
 <div class="line"><a id="l02186" name="l02186"></a><span class="lineno"> 2186</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* name;</div>
 <div class="line"><a id="l02187" name="l02187"></a><span class="lineno"> 2187</span>    UnitTestFunction function;</div>
 <div class="line"><a id="l02188" name="l02188"></a><span class="lineno"> 2188</span>    UnitTestFunctionType function_type;</div>
-<div class="line"><a id="l02189" name="l02189"></a><span class="lineno"> 2189</span>} <a class="code hl_struct" href="struct_unit_test.html">UnitTest</a>;</div>
+<div class="line"><a id="l02189" name="l02189"></a><span class="lineno"> 2189</span>} <a class="code hl_struct" href="structUnitTest.html">UnitTest</a>;</div>
 </div>
 <div class="line"><a id="l02190" name="l02190"></a><span class="lineno"> 2190</span> </div>
 <div class="foldopen" id="foldopen02191" data-start="{" data-end="};">
-<div class="line"><a id="l02191" name="l02191"></a><span class="lineno"><a class="line" href="struct_group_test.html"> 2191</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_group_test.html">GroupTest</a> {</div>
+<div class="line"><a id="l02191" name="l02191"></a><span class="lineno"><a class="line" href="structGroupTest.html"> 2191</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structGroupTest.html">GroupTest</a> {</div>
 <div class="line"><a id="l02192" name="l02192"></a><span class="lineno"> 2192</span>    UnitTestFunction setup;</div>
 <div class="line"><a id="l02193" name="l02193"></a><span class="lineno"> 2193</span>    UnitTestFunction teardown;</div>
-<div class="line"><a id="l02194" name="l02194"></a><span class="lineno"> 2194</span>    <span class="keyword">const</span> <a class="code hl_struct" href="struct_unit_test.html">UnitTest</a> *tests;</div>
+<div class="line"><a id="l02194" name="l02194"></a><span class="lineno"> 2194</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structUnitTest.html">UnitTest</a> *tests;</div>
 <div class="line"><a id="l02195" name="l02195"></a><span class="lineno"> 2195</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> number_of_tests;</div>
-<div class="line"><a id="l02196" name="l02196"></a><span class="lineno"> 2196</span>} <a class="code hl_struct" href="struct_group_test.html">GroupTest</a>;</div>
+<div class="line"><a id="l02196" name="l02196"></a><span class="lineno"> 2196</span>} <a class="code hl_struct" href="structGroupTest.html">GroupTest</a>;</div>
 </div>
 <div class="line"><a id="l02197" name="l02197"></a><span class="lineno"> 2197</span> </div>
 <div class="line"><a id="l02198" name="l02198"></a><span class="lineno"> 2198</span><span class="comment">/* Function prototype for test functions. */</span></div>
@@ -926,7 +926,7 @@ $(document).ready(function(){initNavTree('cmocka_8h_source.html',''); initResiza
 <div class="line"><a id="l02202" name="l02202"></a><span class="lineno"> 2202</span><span class="keyword">typedef</span> int (*CMFixtureFunction)(<span class="keywordtype">void</span> **state);</div>
 <div class="line"><a id="l02203" name="l02203"></a><span class="lineno"> 2203</span> </div>
 <div class="foldopen" id="foldopen02204" data-start="{" data-end="};">
-<div class="line"><a id="l02204" name="l02204"></a><span class="lineno"><a class="line" href="struct_c_m_unit_test.html"> 2204</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_c_m_unit_test.html">CMUnitTest</a> {</div>
+<div class="line"><a id="l02204" name="l02204"></a><span class="lineno"><a class="line" href="structCMUnitTest.html"> 2204</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structCMUnitTest.html">CMUnitTest</a> {</div>
 <div class="line"><a id="l02205" name="l02205"></a><span class="lineno"> 2205</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *name;</div>
 <div class="line"><a id="l02206" name="l02206"></a><span class="lineno"> 2206</span>    CMUnitTestFunction test_func;</div>
 <div class="line"><a id="l02207" name="l02207"></a><span class="lineno"> 2207</span>    CMFixtureFunction setup_func;</div>
@@ -937,20 +937,20 @@ $(document).ready(function(){initNavTree('cmocka_8h_source.html',''); initResiza
 <div class="line"><a id="l02211" name="l02211"></a><span class="lineno"> 2211</span> </div>
 <div class="line"><a id="l02212" name="l02212"></a><span class="lineno"> 2212</span><span class="comment">/* Location within some source code. */</span></div>
 <div class="foldopen" id="foldopen02213" data-start="{" data-end="};">
-<div class="line"><a id="l02213" name="l02213"></a><span class="lineno"><a class="line" href="struct_source_location.html"> 2213</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_source_location.html">SourceLocation</a> {</div>
+<div class="line"><a id="l02213" name="l02213"></a><span class="lineno"><a class="line" href="structSourceLocation.html"> 2213</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structSourceLocation.html">SourceLocation</a> {</div>
 <div class="line"><a id="l02214" name="l02214"></a><span class="lineno"> 2214</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* file;</div>
 <div class="line"><a id="l02215" name="l02215"></a><span class="lineno"> 2215</span>    <span class="keywordtype">int</span> line;</div>
-<div class="line"><a id="l02216" name="l02216"></a><span class="lineno"> 2216</span>} <a class="code hl_struct" href="struct_source_location.html">SourceLocation</a>;</div>
+<div class="line"><a id="l02216" name="l02216"></a><span class="lineno"> 2216</span>} <a class="code hl_struct" href="structSourceLocation.html">SourceLocation</a>;</div>
 </div>
 <div class="line"><a id="l02217" name="l02217"></a><span class="lineno"> 2217</span> </div>
 <div class="line"><a id="l02218" name="l02218"></a><span class="lineno"> 2218</span><span class="comment">/* Event that&#39;s called to check a parameter value. */</span></div>
 <div class="foldopen" id="foldopen02219" data-start="{" data-end="};">
-<div class="line"><a id="l02219" name="l02219"></a><span class="lineno"><a class="line" href="struct_check_parameter_event.html"> 2219</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_check_parameter_event.html">CheckParameterEvent</a> {</div>
-<div class="line"><a id="l02220" name="l02220"></a><span class="lineno"> 2220</span>    <a class="code hl_struct" href="struct_source_location.html">SourceLocation</a> location;</div>
+<div class="line"><a id="l02219" name="l02219"></a><span class="lineno"><a class="line" href="structCheckParameterEvent.html"> 2219</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structCheckParameterEvent.html">CheckParameterEvent</a> {</div>
+<div class="line"><a id="l02220" name="l02220"></a><span class="lineno"> 2220</span>    <a class="code hl_struct" href="structSourceLocation.html">SourceLocation</a> location;</div>
 <div class="line"><a id="l02221" name="l02221"></a><span class="lineno"> 2221</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *parameter_name;</div>
 <div class="line"><a id="l02222" name="l02222"></a><span class="lineno"> 2222</span>    CheckParameterValue check_value;</div>
 <div class="line"><a id="l02223" name="l02223"></a><span class="lineno"> 2223</span>    LargestIntegralType check_value_data;</div>
-<div class="line"><a id="l02224" name="l02224"></a><span class="lineno"> 2224</span>} <a class="code hl_struct" href="struct_check_parameter_event.html">CheckParameterEvent</a>;</div>
+<div class="line"><a id="l02224" name="l02224"></a><span class="lineno"> 2224</span>} <a class="code hl_struct" href="structCheckParameterEvent.html">CheckParameterEvent</a>;</div>
 </div>
 <div class="line"><a id="l02225" name="l02225"></a><span class="lineno"> 2225</span> </div>
 <div class="line"><a id="l02226" name="l02226"></a><span class="lineno"> 2226</span><span class="comment">/* Used by expect_assert_failure() and mock_assert(). */</span></div>
@@ -975,7 +975,7 @@ $(document).ready(function(){initNavTree('cmocka_8h_source.html',''); initResiza
 <div class="line"><a id="l02245" name="l02245"></a><span class="lineno"> 2245</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> function, <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> parameter,</div>
 <div class="line"><a id="l02246" name="l02246"></a><span class="lineno"> 2246</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> file, <span class="keyword">const</span> <span class="keywordtype">int</span> line,</div>
 <div class="line"><a id="l02247" name="l02247"></a><span class="lineno"> 2247</span>    <span class="keyword">const</span> CheckParameterValue check_function,</div>
-<div class="line"><a id="l02248" name="l02248"></a><span class="lineno"> 2248</span>    <span class="keyword">const</span> LargestIntegralType check_data, <a class="code hl_struct" href="struct_check_parameter_event.html">CheckParameterEvent</a> * <span class="keyword">const</span> event,</div>
+<div class="line"><a id="l02248" name="l02248"></a><span class="lineno"> 2248</span>    <span class="keyword">const</span> LargestIntegralType check_data, <a class="code hl_struct" href="structCheckParameterEvent.html">CheckParameterEvent</a> * <span class="keyword">const</span> event,</div>
 <div class="line"><a id="l02249" name="l02249"></a><span class="lineno"> 2249</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> count);</div>
 <div class="line"><a id="l02250" name="l02250"></a><span class="lineno"> 2250</span> </div>
 <div class="line"><a id="l02251" name="l02251"></a><span class="lineno"> 2251</span><span class="keywordtype">void</span> _expect_in_set(</div>
@@ -1100,14 +1100,14 @@ $(document).ready(function(){initNavTree('cmocka_8h_source.html',''); initResiza
 <div class="line"><a id="l02370" name="l02370"></a><span class="lineno"> 2370</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> function_name, <span class="keyword">const</span> UnitTestFunction Function,</div>
 <div class="line"><a id="l02371" name="l02371"></a><span class="lineno"> 2371</span>    <span class="keywordtype">void</span> ** <span class="keyword">const</span> <span class="keyword">volatile</span> state, <span class="keyword">const</span> UnitTestFunctionType function_type,</div>
 <div class="line"><a id="l02372" name="l02372"></a><span class="lineno"> 2372</span>    <span class="keyword">const</span> <span class="keywordtype">void</span>* <span class="keyword">const</span> heap_check_point);</div>
-<div class="line"><a id="l02373" name="l02373"></a><span class="lineno"> 2373</span>CMOCKA_DEPRECATED <span class="keywordtype">int</span> _run_tests(<span class="keyword">const</span> <a class="code hl_struct" href="struct_unit_test.html">UnitTest</a> * <span class="keyword">const</span> tests,</div>
+<div class="line"><a id="l02373" name="l02373"></a><span class="lineno"> 2373</span>CMOCKA_DEPRECATED <span class="keywordtype">int</span> _run_tests(<span class="keyword">const</span> <a class="code hl_struct" href="structUnitTest.html">UnitTest</a> * <span class="keyword">const</span> tests,</div>
 <div class="line"><a id="l02374" name="l02374"></a><span class="lineno"> 2374</span>                                 <span class="keyword">const</span> <span class="keywordtype">size_t</span> number_of_tests);</div>
-<div class="line"><a id="l02375" name="l02375"></a><span class="lineno"> 2375</span>CMOCKA_DEPRECATED <span class="keywordtype">int</span> _run_group_tests(<span class="keyword">const</span> <a class="code hl_struct" href="struct_unit_test.html">UnitTest</a> * <span class="keyword">const</span> tests,</div>
+<div class="line"><a id="l02375" name="l02375"></a><span class="lineno"> 2375</span>CMOCKA_DEPRECATED <span class="keywordtype">int</span> _run_group_tests(<span class="keyword">const</span> <a class="code hl_struct" href="structUnitTest.html">UnitTest</a> * <span class="keyword">const</span> tests,</div>
 <div class="line"><a id="l02376" name="l02376"></a><span class="lineno"> 2376</span>                                       <span class="keyword">const</span> <span class="keywordtype">size_t</span> number_of_tests);</div>
 <div class="line"><a id="l02377" name="l02377"></a><span class="lineno"> 2377</span> </div>
 <div class="line"><a id="l02378" name="l02378"></a><span class="lineno"> 2378</span><span class="comment">/* Test runner */</span></div>
 <div class="line"><a id="l02379" name="l02379"></a><span class="lineno"> 2379</span><span class="keywordtype">int</span> _cmocka_run_group_tests(<span class="keyword">const</span> <span class="keywordtype">char</span> *group_name,</div>
-<div class="line"><a id="l02380" name="l02380"></a><span class="lineno"> 2380</span>                            <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="struct_c_m_unit_test.html">CMUnitTest</a> * <span class="keyword">const</span> tests,</div>
+<div class="line"><a id="l02380" name="l02380"></a><span class="lineno"> 2380</span>                            <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="structCMUnitTest.html">CMUnitTest</a> * <span class="keyword">const</span> tests,</div>
 <div class="line"><a id="l02381" name="l02381"></a><span class="lineno"> 2381</span>                            <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_tests,</div>
 <div class="line"><a id="l02382" name="l02382"></a><span class="lineno"> 2382</span>                            CMFixtureFunction group_setup,</div>
 <div class="line"><a id="l02383" name="l02383"></a><span class="lineno"> 2383</span>                            CMFixtureFunction group_teardown);</div>
@@ -1137,11 +1137,11 @@ $(document).ready(function(){initNavTree('cmocka_8h_source.html',''); initResiza
 <div class="ttc" id="agroup__cmocka_html_gac3994cdf617401dee7b0923503621072"><div class="ttname"><a href="group__cmocka.html#gac3994cdf617401dee7b0923503621072">cmocka_set_skip_filter</a></div><div class="ttdeci">void cmocka_set_skip_filter(const char *pattern)</div><div class="ttdoc">Set a pattern to skip tests matching the pattern.</div><div class="ttdef"><b>Definition</b> cmocka.c:2808</div></div>
 <div class="ttc" id="agroup__cmocka_html_gad5006b3adbbe8962a57579f1d182a3b8"><div class="ttname"><a href="group__cmocka.html#gad5006b3adbbe8962a57579f1d182a3b8">cmocka_set_test_filter</a></div><div class="ttdeci">void cmocka_set_test_filter(const char *pattern)</div><div class="ttdoc">Set a pattern to only run the test matching the pattern.</div><div class="ttdef"><b>Definition</b> cmocka.c:2803</div></div>
 <div class="ttc" id="agroup__cmocka_html_gae3764f4f38d067fe9c5faf034c07debd"><div class="ttname"><a href="group__cmocka.html#gae3764f4f38d067fe9c5faf034c07debd">cmocka_set_message_output</a></div><div class="ttdeci">void cmocka_set_message_output(enum cm_message_output output)</div><div class="ttdoc">Function to set the output format for a test.</div><div class="ttdef"><b>Definition</b> cmocka.c:2798</div></div>
-<div class="ttc" id="astruct_c_m_unit_test_html"><div class="ttname"><a href="struct_c_m_unit_test.html">CMUnitTest</a></div><div class="ttdef"><b>Definition</b> cmocka.h:2204</div></div>
-<div class="ttc" id="astruct_check_parameter_event_html"><div class="ttname"><a href="struct_check_parameter_event.html">CheckParameterEvent</a></div><div class="ttdef"><b>Definition</b> cmocka.h:2219</div></div>
-<div class="ttc" id="astruct_group_test_html"><div class="ttname"><a href="struct_group_test.html">GroupTest</a></div><div class="ttdef"><b>Definition</b> cmocka.h:2191</div></div>
-<div class="ttc" id="astruct_source_location_html"><div class="ttname"><a href="struct_source_location.html">SourceLocation</a></div><div class="ttdef"><b>Definition</b> cmocka.h:2213</div></div>
-<div class="ttc" id="astruct_unit_test_html"><div class="ttname"><a href="struct_unit_test.html">UnitTest</a></div><div class="ttdef"><b>Definition</b> cmocka.h:2185</div></div>
+<div class="ttc" id="astructCMUnitTest_html"><div class="ttname"><a href="structCMUnitTest.html">CMUnitTest</a></div><div class="ttdef"><b>Definition</b> cmocka.h:2204</div></div>
+<div class="ttc" id="astructCheckParameterEvent_html"><div class="ttname"><a href="structCheckParameterEvent.html">CheckParameterEvent</a></div><div class="ttdef"><b>Definition</b> cmocka.h:2219</div></div>
+<div class="ttc" id="astructGroupTest_html"><div class="ttname"><a href="structGroupTest.html">GroupTest</a></div><div class="ttdef"><b>Definition</b> cmocka.h:2191</div></div>
+<div class="ttc" id="astructSourceLocation_html"><div class="ttname"><a href="structSourceLocation.html">SourceLocation</a></div><div class="ttdef"><b>Definition</b> cmocka.h:2213</div></div>
+<div class="ttc" id="astructUnitTest_html"><div class="ttname"><a href="structUnitTest.html">UnitTest</a></div><div class="ttdef"><b>Definition</b> cmocka.h:2185</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

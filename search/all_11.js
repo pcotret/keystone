@@ -5,7 +5,7 @@ var searchData=
   ['test_5fbit_2',['TEST_BIT',['../pmp_8h.html#a7fbb6db83f3e5a653ab1889d1a16135e',1,'pmp.h']]],
   ['test_5fsegv_3',['test_segv',['../structtest__segv.html',1,'']]],
   ['tests_4',['Running Tests',['../group__cmocka__exec.html',1,'']]],
-  ['teststate_5',['TestState',['../struct_test_state.html',1,'']]],
+  ['teststate_5',['TestState',['../structTestState.html',1,'']]],
   ['the_20cmocka_20api_6',['The CMocka API',['../group__cmocka.html',1,'']]],
   ['thread_2eh_7',['thread.h',['../thread_8h.html',1,'']]],
   ['thread_5fstate_8',['thread_state',['../structthread__state.html',1,'']]],

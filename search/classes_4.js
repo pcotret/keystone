@@ -5,5 +5,5 @@ var searchData=
   ['ge_5fp2_2',['ge_p2',['../structge__p2.html',1,'']]],
   ['ge_5fp3_3',['ge_p3',['../structge__p3.html',1,'']]],
   ['ge_5fprecomp_4',['ge_precomp',['../structge__precomp.html',1,'']]],
-  ['grouptest_5',['GroupTest',['../struct_group_test.html',1,'']]]
+  ['grouptest_5',['GroupTest',['../structGroupTest.html',1,'']]]
 ];

@@ -1,8 +1,8 @@
 var searchData=
 [
   ['macros_0',['Assert Macros',['../group__cmocka__asserts.html',1,'']]],
-  ['mallocblockinfo_1',['MallocBlockInfo',['../union_malloc_block_info.html',1,'']]],
-  ['mallocblockinfodata_2',['MallocBlockInfoData',['../struct_malloc_block_info_data.html',1,'']]],
+  ['mallocblockinfo_1',['MallocBlockInfo',['../unionMallocBlockInfo.html',1,'']]],
+  ['mallocblockinfodata_2',['MallocBlockInfoData',['../structMallocBlockInfoData.html',1,'']]],
   ['max_5fencl_5fthreads_3',['MAX_ENCL_THREADS',['../enclave_8h.html#a3dbee6ad38bd13b753367c3994b9a1ec',1,'enclave.h']]],
   ['mdsize_4',['MDSIZE',['../crypto_8h.html#afbf2d1e171a818d02d910169f5ee0619',1,'crypto.h']]],
   ['memory_20allocation_5',['Dynamic Memory Allocation',['../group__cmocka__alloc.html',1,'']]],

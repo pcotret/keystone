@@ -31,7 +31,7 @@ var searchData=
   ['send_5fand_5fsync_5fpmp_5fipi_28',['send_and_sync_pmp_ipi',['../ipi_8h.html#abc107365426502ce0f3ac18e919f69c7',1,'ipi.c']]],
   ['sepc_29',['sepc',['../structcsrs.html#a4e447b5f59e923c4094197d7bd165418',1,'csrs']]],
   ['set_5fbit_30',['SET_BIT',['../pmp_8h.html#a1d7099cf95d0736847ff245275b47baa',1,'pmp.h']]],
-  ['sha256_5fctx_31',['SHA256_CTX',['../struct_s_h_a256___c_t_x.html',1,'']]],
+  ['sha256_5fctx_31',['SHA256_CTX',['../structSHA256__CTX.html',1,'']]],
   ['sha3_5fctx_5ft_32',['sha3_ctx_t',['../structsha3__ctx__t.html',1,'']]],
   ['sideleg_33',['sideleg',['../structcsrs.html#a58e3f04b3b26905681ff0f2c25abfd7c',1,'csrs']]],
   ['sie_34',['sie',['../structcsrs.html#ae5da4be95005201c1b572e824cc663b6',1,'csrs']]],
@@ -55,7 +55,7 @@ var searchData=
   ['sm_5fretrieve_5fpubkey_52',['sm_retrieve_pubkey',['../sm_8h.html#a01e119578626c1a2746e2b30b88d86a8',1,'sm.h']]],
   ['sm_5fsign_53',['sm_sign',['../sm_8h.html#af26a570276311fba224bb0d8126798f8',1,'sm.c']]],
   ['sm_5fsignature_54',['sm_signature',['../crypto_8h.html#a4cd749ff8e561a962c56d447fafcfb8a',1,'sm.c']]],
-  ['sourcelocation_55',['SourceLocation',['../struct_source_location.html',1,'']]],
+  ['sourcelocation_55',['SourceLocation',['../structSourceLocation.html',1,'']]],
   ['sp_56',['sp',['../structctx.html#aa5d896d0c320120202fffb8e25ab0973',1,'ctx']]],
   ['sscratch_57',['sscratch',['../structcsrs.html#a62fe7f2a048b2b303b06cc69b9629222',1,'csrs']]],
   ['sstatus_58',['sstatus',['../structcsrs.html#ade120c60da2d1efc9b05a912dd2695fd',1,'csrs']]],
@@ -70,6 +70,6 @@ var searchData=
   ['swap_5fprev_5fstate_67',['swap_prev_state',['../thread_8h.html#aca8bc6fe74de2b5686e143427136464d',1,'thread.c']]],
   ['switch_5fvector_5fenclave_68',['switch_vector_enclave',['../thread_8h.html#a648fcc7f1473f8d7f6136d87d43f7542',1,'thread.c']]],
   ['switch_5fvector_5fhost_69',['switch_vector_host',['../thread_8h.html#a92709939fa0461dc7e3b7b78945170c2',1,'thread.c']]],
-  ['symbolmapvalue_70',['SymbolMapValue',['../struct_symbol_map_value.html',1,'']]],
-  ['symbolvalue_71',['SymbolValue',['../struct_symbol_value.html',1,'']]]
+  ['symbolmapvalue_70',['SymbolMapValue',['../structSymbolMapValue.html',1,'']]],
+  ['symbolvalue_71',['SymbolValue',['../structSymbolValue.html',1,'']]]
 ];

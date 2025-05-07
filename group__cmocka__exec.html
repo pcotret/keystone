@@ -169,7 +169,7 @@ Macros</h2></td></tr>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
-<div class="line">    <span class="keyword">const</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_c_m_unit_test.html">CMUnitTest</a> tests[] = {</div>
+<div class="line">    <span class="keyword">const</span> <span class="keyword">struct </span><a class="code hl_struct" href="structCMUnitTest.html">CMUnitTest</a> tests[] = {</div>
 <div class="line">        <a class="code hl_define" href="group__cmocka__exec.html#ga562719c550b5ce277aab6b0371f7f34f">cmocka_unit_test</a>(Test0),</div>
 <div class="line">        <a class="code hl_define" href="group__cmocka__exec.html#ga562719c550b5ce277aab6b0371f7f34f">cmocka_unit_test</a>(Test1),</div>
 <div class="line">    };</div>
@@ -177,7 +177,7 @@ Macros</h2></td></tr>
 <div class="line">    <span class="keywordflow">return</span> cmocka_run_group_tests(tests, NULL, NULL);</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup__cmocka__exec_html_ga562719c550b5ce277aab6b0371f7f34f"><div class="ttname"><a href="group__cmocka__exec.html#ga562719c550b5ce277aab6b0371f7f34f">cmocka_unit_test</a></div><div class="ttdeci">#define cmocka_unit_test(f)</div><div class="ttdef"><b>Definition</b> cmocka.h:1786</div></div>
-<div class="ttc" id="astruct_c_m_unit_test_html"><div class="ttname"><a href="struct_c_m_unit_test.html">CMUnitTest</a></div><div class="ttdef"><b>Definition</b> cmocka.h:2204</div></div>
+<div class="ttc" id="astructCMUnitTest_html"><div class="ttname"><a href="structCMUnitTest.html">CMUnitTest</a></div><div class="ttdef"><b>Definition</b> cmocka.h:2204</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga562719c550b5ce277aab6b0371f7f34f" name="ga562719c550b5ce277aab6b0371f7f34f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga562719c550b5ce277aab6b0371f7f34f">&#9670;&#160;</a></span>cmocka_unit_test</h2>
@@ -194,7 +194,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initializes a <a class="el" href="struct_c_m_unit_test.html">CMUnitTest</a> structure. </p>
+<p>Initializes a <a class="el" href="structCMUnitTest.html">CMUnitTest</a> structure. </p>
 
 </div>
 </div>
@@ -223,7 +223,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initialize a <a class="el" href="struct_c_m_unit_test.html">CMUnitTest</a> structure with given initial state. It will be passed to test function as an argument later. It can be used when test state does not need special initialization or was initialized already. </p><dl class="section note"><dt>Note</dt><dd>If the group setup function initialized the state already, it won't be overridden by the initial state defined here. </dd></dl>
+<p>Initialize a <a class="el" href="structCMUnitTest.html">CMUnitTest</a> structure with given initial state. It will be passed to test function as an argument later. It can be used when test state does not need special initialization or was initialized already. </p><dl class="section note"><dt>Note</dt><dd>If the group setup function initialized the state already, it won't be overridden by the initial state defined here. </dd></dl>
 
 </div>
 </div>
@@ -264,7 +264,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initialize a <a class="el" href="struct_c_m_unit_test.html">CMUnitTest</a> structure with given initial state, setup and teardown function. Any of these values can be NULL. Initial state is passed later to setup function, or directly to test if none was given. </p><dl class="section note"><dt>Note</dt><dd>If the group setup function initialized the state already, it won't be overridden by the initial state defined here. </dd></dl>
+<p>Initialize a <a class="el" href="structCMUnitTest.html">CMUnitTest</a> structure with given initial state, setup and teardown function. Any of these values can be NULL. Initial state is passed later to setup function, or directly to test if none was given. </p><dl class="section note"><dt>Note</dt><dd>If the group setup function initialized the state already, it won't be overridden by the initial state defined here. </dd></dl>
 
 </div>
 </div>
@@ -293,7 +293,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initializes a <a class="el" href="struct_c_m_unit_test.html">CMUnitTest</a> structure with a setup function. </p>
+<p>Initializes a <a class="el" href="structCMUnitTest.html">CMUnitTest</a> structure with a setup function. </p>
 
 </div>
 </div>
@@ -328,7 +328,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initialize an array of <a class="el" href="struct_c_m_unit_test.html">CMUnitTest</a> structures with a setup function for a test and a teardown function. Either setup or teardown can be NULL. </p>
+<p>Initialize an array of <a class="el" href="structCMUnitTest.html">CMUnitTest</a> structures with a setup function for a test and a teardown function. Either setup or teardown can be NULL. </p>
 
 </div>
 </div>
@@ -357,7 +357,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initializes a <a class="el" href="struct_c_m_unit_test.html">CMUnitTest</a> structure with a teardown function. </p>
+<p>Initializes a <a class="el" href="structCMUnitTest.html">CMUnitTest</a> structure with a teardown function. </p>
 
 </div>
 </div>
@@ -408,7 +408,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initializes a <a class="el" href="struct_unit_test.html">UnitTest</a> structure for a group setup function.</p>
+<p>Initializes a <a class="el" href="structUnitTest.html">UnitTest</a> structure for a group setup function.</p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>This function was deprecated in favor of cmocka_run_group_tests </dd></dl>
 
 </div>
@@ -428,7 +428,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initializes a <a class="el" href="struct_unit_test.html">UnitTest</a> structure for a group teardown function.</p>
+<p>Initializes a <a class="el" href="structUnitTest.html">UnitTest</a> structure for a group teardown function.</p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>This function was deprecated in favor of cmocka_run_group_tests </dd></dl>
 
 </div>
@@ -448,7 +448,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initializes a <a class="el" href="struct_unit_test.html">UnitTest</a> structure.</p>
+<p>Initializes a <a class="el" href="structUnitTest.html">UnitTest</a> structure.</p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>This function was deprecated in favor of cmocka_unit_test </dd></dl>
 
 </div>
@@ -481,7 +481,7 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    _unit_test_setup(test, setup), \</div>
 <div class="line">    unit_test(test), \</div>
 <div class="line">    _unit_test_teardown(test, _unit_test_dummy)</div>
-</div><!-- fragment --><p>Initializes a <a class="el" href="struct_unit_test.html">UnitTest</a> structure with a setup function.</p>
+</div><!-- fragment --><p>Initializes a <a class="el" href="structUnitTest.html">UnitTest</a> structure with a setup function.</p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>This function was deprecated in favor of cmocka_unit_test_setup </dd></dl>
 
 </div>
@@ -520,7 +520,7 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    _unit_test_setup(test, setup), \</div>
 <div class="line">    unit_test(test), \</div>
 <div class="line">    _unit_test_teardown(test, teardown)</div>
-</div><!-- fragment --><p>Initialize an array of <a class="el" href="struct_unit_test.html">UnitTest</a> structures with a setup function for a test and a teardown function. Either setup or teardown can be NULL.</p>
+</div><!-- fragment --><p>Initialize an array of <a class="el" href="structUnitTest.html">UnitTest</a> structures with a setup function for a test and a teardown function. Either setup or teardown can be NULL.</p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>This function was deprecated in favor of cmocka_unit_test_setup_teardown </dd></dl>
 
 </div>
@@ -553,7 +553,7 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    _unit_test_setup(test, _unit_test_dummy), \</div>
 <div class="line">    unit_test(test), \</div>
 <div class="line">    _unit_test_teardown(test, teardown)</div>
-</div><!-- fragment --><p>Initializes a <a class="el" href="struct_unit_test.html">UnitTest</a> structure with a teardown function.</p>
+</div><!-- fragment --><p>Initializes a <a class="el" href="structUnitTest.html">UnitTest</a> structure with a teardown function.</p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>This function was deprecated in favor of cmocka_unit_test_teardown </dd></dl>
 
 </div>

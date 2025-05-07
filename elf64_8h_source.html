@@ -124,9 +124,9 @@ $(document).ready(function(){initNavTree('elf64_8h_source.html',''); initResizab
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordflow">return</span> <a class="code hl_struct" href="structelf.html">elf</a>-&gt;elfClass == ELFCLASS64;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_struct" href="struct_elf64___ehdr.html">Elf64_Ehdr</a></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_struct" href="structElf64__Ehdr.html">Elf64_Ehdr</a></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>elf64_getHeader(<a class="code hl_struct" href="structelf.html">elf_t</a>* <a class="code hl_struct" href="structelf.html">elf</a>) {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordflow">return</span> *(<a class="code hl_struct" href="struct_elf64___ehdr.html">Elf64_Ehdr</a>*)<a class="code hl_struct" href="structelf.html">elf</a>-&gt;elfFile;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordflow">return</span> *(<a class="code hl_struct" href="structElf64__Ehdr.html">Elf64_Ehdr</a>*)<a class="code hl_struct" href="structelf.html">elf</a>-&gt;elfFile;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">static</span> <span class="keyword">inline</span> uintptr_t</div>
@@ -134,14 +134,14 @@ $(document).ready(function(){initNavTree('elf64_8h_source.html',''); initResizab
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordflow">return</span> elf64_getHeader(file).e_entry;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_struct" href="struct_elf64___phdr.html">Elf64_Phdr</a>*</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_struct" href="structElf64__Phdr.html">Elf64_Phdr</a>*</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>elf64_getProgramHeaderTable(<a class="code hl_struct" href="structelf.html">elf_t</a>* file) {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordflow">return</span> (<a class="code hl_struct" href="struct_elf64___phdr.html">Elf64_Phdr</a>*)((uint8_t*)file-&gt;elfFile + elf64_getHeader(file).e_phoff);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordflow">return</span> (<a class="code hl_struct" href="structElf64__Phdr.html">Elf64_Phdr</a>*)((uint8_t*)file-&gt;elfFile + elf64_getHeader(file).e_phoff);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_struct" href="struct_elf64___shdr.html">Elf64_Shdr</a>*</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_struct" href="structElf64__Shdr.html">Elf64_Shdr</a>*</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>elf64_getSectionTable(<a class="code hl_struct" href="structelf.html">elf_t</a>* file) {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordflow">return</span> (<a class="code hl_struct" href="struct_elf64___shdr.html">Elf64_Shdr</a>*)((uint8_t*)file-&gt;elfFile + elf64_getHeader(file).e_shoff);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordflow">return</span> (<a class="code hl_struct" href="structElf64__Shdr.html">Elf64_Shdr</a>*)((uint8_t*)file-&gt;elfFile + elf64_getHeader(file).e_shoff);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">size_t</span></div>
@@ -250,9 +250,9 @@ $(document).ready(function(){initNavTree('elf64_8h_source.html',''); initResizab
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>elf64_getProgramHeaderAlign(<a class="code hl_struct" href="structelf.html">elf_t</a>* file, <span class="keywordtype">size_t</span> ph) {</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  <span class="keywordflow">return</span> elf64_getProgramHeaderTable(file)[ph].p_align;</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>}</div>
-<div class="ttc" id="astruct_elf64___ehdr_html"><div class="ttname"><a href="struct_elf64___ehdr.html">Elf64_Ehdr</a></div><div class="ttdef"><b>Definition</b> elf.h:54</div></div>
-<div class="ttc" id="astruct_elf64___phdr_html"><div class="ttname"><a href="struct_elf64___phdr.html">Elf64_Phdr</a></div><div class="ttdef"><b>Definition</b> elf.h:581</div></div>
-<div class="ttc" id="astruct_elf64___shdr_html"><div class="ttname"><a href="struct_elf64___shdr.html">Elf64_Shdr</a></div><div class="ttdef"><b>Definition</b> elf.h:339</div></div>
+<div class="ttc" id="astructElf64__Ehdr_html"><div class="ttname"><a href="structElf64__Ehdr.html">Elf64_Ehdr</a></div><div class="ttdef"><b>Definition</b> elf.h:54</div></div>
+<div class="ttc" id="astructElf64__Phdr_html"><div class="ttname"><a href="structElf64__Phdr.html">Elf64_Phdr</a></div><div class="ttdef"><b>Definition</b> elf.h:581</div></div>
+<div class="ttc" id="astructElf64__Shdr_html"><div class="ttname"><a href="structElf64__Shdr.html">Elf64_Shdr</a></div><div class="ttdef"><b>Definition</b> elf.h:339</div></div>
 <div class="ttc" id="astructelf_html"><div class="ttname"><a href="structelf.html">elf</a></div><div class="ttdef"><b>Definition</b> elf.h:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

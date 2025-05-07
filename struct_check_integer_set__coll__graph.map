@@ -1,7 +1,0 @@
-<map id="CheckIntegerSet" name="CheckIntegerSet">
-<area shape="rect" id="Node000001" title=" " alt="" coords="22,183,140,208"/>
-<area shape="rect" id="Node000002" href="$struct_check_parameter_event.html" title=" " alt="" coords="5,94,157,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,135,84,182,78,182,78,135"/>
-<area shape="rect" id="Node000003" href="$struct_source_location.html" title=" " alt="" coords="25,5,137,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="84,47,84,94,78,94,78,47"/>
-</map>

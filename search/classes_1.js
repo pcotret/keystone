@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['databaseconnection_0',['DatabaseConnection',['../struct_database_connection.html',1,'']]]
+  ['databaseconnection_0',['DatabaseConnection',['../structDatabaseConnection.html',1,'']]]
 ];
