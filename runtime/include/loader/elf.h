@@ -1,3 +1,11 @@
+/**
+ * @file elf.h
+ * @brief Definitions and structures for handling ELF (Executable and Linkable Format) files.
+ *
+ * This header provides data structures and enumerations used for parsing and
+ * manipulating ELF binaries, including their class (32/64-bit), file size, and
+ * address types.
+ */
 /*
  * Copyright (c) 1999-2004 University of New South Wales
  *
@@ -11,14 +19,33 @@
 #include <stddef.h>
 #include <stdint.h>
 
+/**
+ * @struct elf
+ * @brief Represents an ELF file in memory.
+ */
 struct elf {
-  void* elfFile;
-  size_t elfSize;
-  unsigned char elfClass; /* 32-bit or 64-bit */
+  void* elfFile;          /**< Pointer to the ELF file in memory */
+  size_t elfSize;         /**< Size of the ELF file in bytes */
+  unsigned char elfClass; /**< ELF class: 32-bit or 64-bit */
 };
+/**
+ * @typedef elf_t
+ * @brief Typedef for the struct elf.
+ */
 typedef struct elf elf_t;
 
-enum elf_addr_type { VIRTUAL, PHYSICAL };
+/**
+ * @enum elf_addr_type
+ * @brief Address type for ELF operations (virtual or physical).
+ */
+enum elf_addr_type {
+  VIRTUAL,  /**< Use virtual addresses */
+  PHYSICAL  /**< Use physical addresses */
+};
+/**
+ * @typedef elf_addr_type_t
+ * @brief Typedef for the enum elf_addr_type.
+ */
 typedef enum elf_addr_type elf_addr_type_t;
 
 /* ELF header functions */
@@ -143,7 +170,7 @@ elf_getSectionStringTableIndex(elf_t* elf);
  * Get a string table section of an ELF file.
  *
  * @param elfFile Pointer to a valid ELF structure.
- * @param string_section The section number of the string table.
+ * @param string_segment Index of the string table section to retrieve.
  *
  * \return The string table, or NULL if the section is not a string table.
  */

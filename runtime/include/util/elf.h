@@ -1,3 +1,10 @@
+/**
+ * @file elf.h
+ * @brief Definitions and structures for ELF (Executable and Linkable Format) files.
+ *
+ * This header defines the ELF32 and ELF64 structures and constants used to
+ * interpret ELF binary formats for 32-bit and 64-bit architectures.
+ */
 #ifndef _ELF_H
 #define _ELF_H
 
