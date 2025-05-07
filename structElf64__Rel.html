@@ -96,16 +96,53 @@ $(document).ready(function(){initNavTree('structElf64__Rel.html',''); initResiza
   <div class="headertitle"><div class="title">Elf64_Rel Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>ELF64 Relocation Entry (without addend)  
+ <a href="structElf64__Rel.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="util_2elf_8h_source.html">elf.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af719169bd59569a885bf9d5df794b951" id="r_af719169bd59569a885bf9d5df794b951"><td class="memItemLeft" align="right" valign="top"><a id="af719169bd59569a885bf9d5df794b951" name="af719169bd59569a885bf9d5df794b951"></a>
-Elf64_Addr&#160;</td><td class="memItemRight" valign="bottom"><b>r_offset</b></td></tr>
+<tr class="memitem:af719169bd59569a885bf9d5df794b951" id="r_af719169bd59569a885bf9d5df794b951"><td class="memItemLeft" align="right" valign="top"><a class="el" href="util_2elf_8h.html#aeed51d08e3a950d637f8ec1f0cd4ef65">Elf64_Addr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structElf64__Rel.html#af719169bd59569a885bf9d5df794b951">r_offset</a></td></tr>
 <tr class="separator:af719169bd59569a885bf9d5df794b951"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a775740962c9bd1e3f956bd8bffca173b" id="r_a775740962c9bd1e3f956bd8bffca173b"><td class="memItemLeft" align="right" valign="top"><a id="a775740962c9bd1e3f956bd8bffca173b" name="a775740962c9bd1e3f956bd8bffca173b"></a>
-Elf64_Xword&#160;</td><td class="memItemRight" valign="bottom"><b>r_info</b></td></tr>
+<tr class="memitem:a775740962c9bd1e3f956bd8bffca173b" id="r_a775740962c9bd1e3f956bd8bffca173b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="util_2elf_8h.html#a5447a48a3dae0bd24f606415268c6fe4">Elf64_Xword</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structElf64__Rel.html#a775740962c9bd1e3f956bd8bffca173b">r_info</a></td></tr>
 <tr class="separator:a775740962c9bd1e3f956bd8bffca173b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>ELF64 Relocation Entry (without addend) </p>
+<p>Describes a relocation to be applied to an ELF64 file. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a775740962c9bd1e3f956bd8bffca173b" name="a775740962c9bd1e3f956bd8bffca173b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a775740962c9bd1e3f956bd8bffca173b">&#9670;&#160;</a></span>r_info</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="util_2elf_8h.html#a5447a48a3dae0bd24f606415268c6fe4">Elf64_Xword</a> Elf64_Rel::r_info</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Symbol table index and type of relocation </p>
+
+</div>
+</div>
+<a id="af719169bd59569a885bf9d5df794b951" name="af719169bd59569a885bf9d5df794b951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af719169bd59569a885bf9d5df794b951">&#9670;&#160;</a></span>r_offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="util_2elf_8h.html#aeed51d08e3a950d637f8ec1f0cd4ef65">Elf64_Addr</a> Elf64_Rel::r_offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Location to apply the relocation action </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>runtime/include/util/<a class="el" href="util_2elf_8h_source.html">elf.h</a></li>
 </ul>

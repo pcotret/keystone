@@ -117,9 +117,9 @@ Collaboration diagram for enclave:</div>
 <area shape="poly" title=" " alt="" coords="219,46,193,95,189,92,214,44"/>
 <area shape="rect" href="structplatform__enclave__data.html" title=" " alt="" coords="255,94,408,120"/>
 <area shape="poly" title=" " alt="" coords="334,135,334,182,329,182,329,135"/>
-<area shape="rect" href="structutm.html" title=" " alt="" coords="431,94,475,120"/>
+<area shape="rect" href="structutm.html" title="Untrusted Memory (UTM) region descriptor." alt="" coords="431,94,475,120"/>
 <area shape="poly" title=" " alt="" coords="426,131,350,184,347,180,422,126"/>
-<area shape="rect" href="structepm.html" title=" " alt="" coords="499,94,545,120"/>
+<area shape="rect" href="structepm.html" title="Enclave Private Memory (EPM) region descriptor." alt="" coords="499,94,545,120"/>
 <area shape="poly" title=" " alt="" coords="490,130,430,161,366,186,364,181,428,156,488,125"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -166,25 +166,98 @@ struct <a class="el" href="structthread__state.html">thread_state</a>&#160;</td>
 struct <a class="el" href="structplatform__enclave__data.html">platform_enclave_data</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ped</b></td></tr>
 <tr class="memdesc:ab29294babfbb71f2cad73718d838f7f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-specific enclave data. <br /></td></tr>
 <tr class="separator:ab29294babfbb71f2cad73718d838f7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e26eca8ba1d3a21fa5c7c219343f7cc" id="r_a8e26eca8ba1d3a21fa5c7c219343f7cc"><td class="memItemLeft" align="right" valign="top"><a id="a8e26eca8ba1d3a21fa5c7c219343f7cc" name="a8e26eca8ba1d3a21fa5c7c219343f7cc"></a>
-unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>eid</b></td></tr>
+<tr class="memitem:a8e26eca8ba1d3a21fa5c7c219343f7cc" id="r_a8e26eca8ba1d3a21fa5c7c219343f7cc"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structenclave.html#a8e26eca8ba1d3a21fa5c7c219343f7cc">eid</a></td></tr>
 <tr class="separator:a8e26eca8ba1d3a21fa5c7c219343f7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18e4420d98c3e075a935a58ccc70d6ed" id="r_a18e4420d98c3e075a935a58ccc70d6ed"><td class="memItemLeft" align="right" valign="top"><a id="a18e4420d98c3e075a935a58ccc70d6ed" name="a18e4420d98c3e075a935a58ccc70d6ed"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>close_on_pexit</b></td></tr>
+<tr class="memitem:a18e4420d98c3e075a935a58ccc70d6ed" id="r_a18e4420d98c3e075a935a58ccc70d6ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structenclave.html#a18e4420d98c3e075a935a58ccc70d6ed">close_on_pexit</a></td></tr>
 <tr class="separator:a18e4420d98c3e075a935a58ccc70d6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac7a3d792a3e1d01d36c6eaa5ee71953" id="r_aac7a3d792a3e1d01d36c6eaa5ee71953"><td class="memItemLeft" align="right" valign="top"><a id="aac7a3d792a3e1d01d36c6eaa5ee71953" name="aac7a3d792a3e1d01d36c6eaa5ee71953"></a>
-struct <a class="el" href="structutm.html">utm</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>utm</b></td></tr>
+<tr class="memitem:aac7a3d792a3e1d01d36c6eaa5ee71953" id="r_aac7a3d792a3e1d01d36c6eaa5ee71953"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structutm.html">utm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structenclave.html#aac7a3d792a3e1d01d36c6eaa5ee71953">utm</a></td></tr>
 <tr class="separator:aac7a3d792a3e1d01d36c6eaa5ee71953"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bc03df499d969a152c8709ba919a9ef" id="r_a5bc03df499d969a152c8709ba919a9ef"><td class="memItemLeft" align="right" valign="top"><a id="a5bc03df499d969a152c8709ba919a9ef" name="a5bc03df499d969a152c8709ba919a9ef"></a>
-struct <a class="el" href="structepm.html">epm</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>epm</b></td></tr>
+<tr class="memitem:a5bc03df499d969a152c8709ba919a9ef" id="r_a5bc03df499d969a152c8709ba919a9ef"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structepm.html">epm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structenclave.html#a5bc03df499d969a152c8709ba919a9ef">epm</a></td></tr>
 <tr class="separator:a5bc03df499d969a152c8709ba919a9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8d2a35fc83ca8db230ae2784be3c87e" id="r_ae8d2a35fc83ca8db230ae2784be3c87e"><td class="memItemLeft" align="right" valign="top"><a id="ae8d2a35fc83ca8db230ae2784be3c87e" name="ae8d2a35fc83ca8db230ae2784be3c87e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_init</b></td></tr>
+<tr class="memitem:ae8d2a35fc83ca8db230ae2784be3c87e" id="r_ae8d2a35fc83ca8db230ae2784be3c87e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structenclave.html#ae8d2a35fc83ca8db230ae2784be3c87e">is_init</a></td></tr>
 <tr class="separator:ae8d2a35fc83ca8db230ae2784be3c87e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Metadata structure for an enclave. </p>
-</div><hr/>The documentation for this struct was generated from the following files:<ul>
+<p>Enclave metadata structure.</p>
+<p>Holds metadata and memory mappings for a single enclave instance. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a18e4420d98c3e075a935a58ccc70d6ed" name="a18e4420d98c3e075a935a58ccc70d6ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18e4420d98c3e075a935a58ccc70d6ed">&#9670;&#160;</a></span>close_on_pexit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int enclave::close_on_pexit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flag indicating whether to close the enclave when the parent exits. </p>
+
+</div>
+</div>
+<a id="a8e26eca8ba1d3a21fa5c7c219343f7cc" name="a8e26eca8ba1d3a21fa5c7c219343f7cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e26eca8ba1d3a21fa5c7c219343f7cc">&#9670;&#160;</a></span>eid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long enclave::eid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enclave ID (EID), uniquely identifies the enclave. </p>
+
+</div>
+</div>
+<a id="a5bc03df499d969a152c8709ba919a9ef" name="a5bc03df499d969a152c8709ba919a9ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bc03df499d969a152c8709ba919a9ef">&#9670;&#160;</a></span>epm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structepm.html">epm</a>* enclave::epm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pointer to associated private enclave memory (EPM). </p>
+
+</div>
+</div>
+<a id="ae8d2a35fc83ca8db230ae2784be3c87e" name="ae8d2a35fc83ca8db230ae2784be3c87e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8d2a35fc83ca8db230ae2784be3c87e">&#9670;&#160;</a></span>is_init</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool enclave::is_init</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>True if the enclave has been successfully initialized. </p>
+
+</div>
+</div>
+<a id="aac7a3d792a3e1d01d36c6eaa5ee71953" name="aac7a3d792a3e1d01d36c6eaa5ee71953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac7a3d792a3e1d01d36c6eaa5ee71953">&#9670;&#160;</a></span>utm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structutm.html">utm</a>* enclave::utm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pointer to associated untrusted memory (UTM). </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>sm/src/<a class="el" href="enclave_8h_source.html">enclave.h</a></li>
 <li>linux-keystone-driver/<a class="el" href="keystone_8h_source.html">keystone.h</a></li>
 </ul>

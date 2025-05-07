@@ -96,16 +96,53 @@ $(document).ready(function(){initNavTree('structElf64__Verdaux.html',''); initRe
   <div class="headertitle"><div class="title">Elf64_Verdaux Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>ELF64 Version Definition Auxiliary Entry.  
+ <a href="structElf64__Verdaux.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="util_2elf_8h_source.html">elf.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a76ef57da3e7a6f477d867b378dd976ce" id="r_a76ef57da3e7a6f477d867b378dd976ce"><td class="memItemLeft" align="right" valign="top"><a id="a76ef57da3e7a6f477d867b378dd976ce" name="a76ef57da3e7a6f477d867b378dd976ce"></a>
-Elf64_Word&#160;</td><td class="memItemRight" valign="bottom"><b>vda_name</b></td></tr>
+<tr class="memitem:a76ef57da3e7a6f477d867b378dd976ce" id="r_a76ef57da3e7a6f477d867b378dd976ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="util_2elf_8h.html#aa3aa1920ed115b7ef7e99716fece4401">Elf64_Word</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structElf64__Verdaux.html#a76ef57da3e7a6f477d867b378dd976ce">vda_name</a></td></tr>
 <tr class="separator:a76ef57da3e7a6f477d867b378dd976ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a550488ec793293fb872d8ec696faf9ff" id="r_a550488ec793293fb872d8ec696faf9ff"><td class="memItemLeft" align="right" valign="top"><a id="a550488ec793293fb872d8ec696faf9ff" name="a550488ec793293fb872d8ec696faf9ff"></a>
-Elf64_Word&#160;</td><td class="memItemRight" valign="bottom"><b>vda_next</b></td></tr>
+<tr class="memitem:a550488ec793293fb872d8ec696faf9ff" id="r_a550488ec793293fb872d8ec696faf9ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="util_2elf_8h.html#aa3aa1920ed115b7ef7e99716fece4401">Elf64_Word</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structElf64__Verdaux.html#a550488ec793293fb872d8ec696faf9ff">vda_next</a></td></tr>
 <tr class="separator:a550488ec793293fb872d8ec696faf9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>ELF64 Version Definition Auxiliary Entry. </p>
+<p>Represents an auxiliary entry associated with a version definition in ELF64 files. This entry typically contains the name of the version and a pointer to the next auxiliary entry. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a76ef57da3e7a6f477d867b378dd976ce" name="a76ef57da3e7a6f477d867b378dd976ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76ef57da3e7a6f477d867b378dd976ce">&#9670;&#160;</a></span>vda_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="util_2elf_8h.html#aa3aa1920ed115b7ef7e99716fece4401">Elf64_Word</a> Elf64_Verdaux::vda_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Offset to the version name string </p>
+
+</div>
+</div>
+<a id="a550488ec793293fb872d8ec696faf9ff" name="a550488ec793293fb872d8ec696faf9ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a550488ec793293fb872d8ec696faf9ff">&#9670;&#160;</a></span>vda_next</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="util_2elf_8h.html#aa3aa1920ed115b7ef7e99716fece4401">Elf64_Word</a> Elf64_Verdaux::vda_next</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Offset to the next <a class="el" href="structElf64__Verdaux.html" title="ELF64 Version Definition Auxiliary Entry.">Elf64_Verdaux</a> entry, or 0 if no more entries </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>runtime/include/util/<a class="el" href="util_2elf_8h_source.html">elf.h</a></li>
 </ul>

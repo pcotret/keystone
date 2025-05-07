@@ -96,106 +96,563 @@ $(document).ready(function(){initNavTree('structregs.html',''); initResizable();
   <div class="headertitle"><div class="title">regs Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Structure that holds the register values for a RISC-V execution context.  
+ <a href="structregs.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="regs_8h_source.html">regs.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a747edabfebd211ce2c6bdc2dd92664c4" id="r_a747edabfebd211ce2c6bdc2dd92664c4"><td class="memItemLeft" align="right" valign="top"><a id="a747edabfebd211ce2c6bdc2dd92664c4" name="a747edabfebd211ce2c6bdc2dd92664c4"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>sepc</b></td></tr>
+<tr class="memitem:a747edabfebd211ce2c6bdc2dd92664c4" id="r_a747edabfebd211ce2c6bdc2dd92664c4"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a747edabfebd211ce2c6bdc2dd92664c4">sepc</a></td></tr>
 <tr class="separator:a747edabfebd211ce2c6bdc2dd92664c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b813fbee789280eb63b0b3efba07cf6" id="r_a9b813fbee789280eb63b0b3efba07cf6"><td class="memItemLeft" align="right" valign="top"><a id="a9b813fbee789280eb63b0b3efba07cf6" name="a9b813fbee789280eb63b0b3efba07cf6"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>ra</b></td></tr>
+<tr class="memitem:a9b813fbee789280eb63b0b3efba07cf6" id="r_a9b813fbee789280eb63b0b3efba07cf6"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a9b813fbee789280eb63b0b3efba07cf6">ra</a></td></tr>
 <tr class="separator:a9b813fbee789280eb63b0b3efba07cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad32677617619029ac8f5723d8bd4ff70" id="r_ad32677617619029ac8f5723d8bd4ff70"><td class="memItemLeft" align="right" valign="top"><a id="ad32677617619029ac8f5723d8bd4ff70" name="ad32677617619029ac8f5723d8bd4ff70"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>sp</b></td></tr>
+<tr class="memitem:ad32677617619029ac8f5723d8bd4ff70" id="r_ad32677617619029ac8f5723d8bd4ff70"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#ad32677617619029ac8f5723d8bd4ff70">sp</a></td></tr>
 <tr class="separator:ad32677617619029ac8f5723d8bd4ff70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9b41a826773655d3a29020d6d3c3453" id="r_ad9b41a826773655d3a29020d6d3c3453"><td class="memItemLeft" align="right" valign="top"><a id="ad9b41a826773655d3a29020d6d3c3453" name="ad9b41a826773655d3a29020d6d3c3453"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>gp</b></td></tr>
+<tr class="memitem:ad9b41a826773655d3a29020d6d3c3453" id="r_ad9b41a826773655d3a29020d6d3c3453"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#ad9b41a826773655d3a29020d6d3c3453">gp</a></td></tr>
 <tr class="separator:ad9b41a826773655d3a29020d6d3c3453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5113c962aaa68d969dc8e85d453cb991" id="r_a5113c962aaa68d969dc8e85d453cb991"><td class="memItemLeft" align="right" valign="top"><a id="a5113c962aaa68d969dc8e85d453cb991" name="a5113c962aaa68d969dc8e85d453cb991"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>tp</b></td></tr>
+<tr class="memitem:a5113c962aaa68d969dc8e85d453cb991" id="r_a5113c962aaa68d969dc8e85d453cb991"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a5113c962aaa68d969dc8e85d453cb991">tp</a></td></tr>
 <tr class="separator:a5113c962aaa68d969dc8e85d453cb991"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a113113431137bcf677772d73dcdd9ec8" id="r_a113113431137bcf677772d73dcdd9ec8"><td class="memItemLeft" align="right" valign="top"><a id="a113113431137bcf677772d73dcdd9ec8" name="a113113431137bcf677772d73dcdd9ec8"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>t0</b></td></tr>
+<tr class="memitem:a113113431137bcf677772d73dcdd9ec8" id="r_a113113431137bcf677772d73dcdd9ec8"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a113113431137bcf677772d73dcdd9ec8">t0</a></td></tr>
 <tr class="separator:a113113431137bcf677772d73dcdd9ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6b6e9059b8fda767ff49a5747b6b69a" id="r_ae6b6e9059b8fda767ff49a5747b6b69a"><td class="memItemLeft" align="right" valign="top"><a id="ae6b6e9059b8fda767ff49a5747b6b69a" name="ae6b6e9059b8fda767ff49a5747b6b69a"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>t1</b></td></tr>
+<tr class="memitem:ae6b6e9059b8fda767ff49a5747b6b69a" id="r_ae6b6e9059b8fda767ff49a5747b6b69a"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#ae6b6e9059b8fda767ff49a5747b6b69a">t1</a></td></tr>
 <tr class="separator:ae6b6e9059b8fda767ff49a5747b6b69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a485a0fc4f72aed5d1d33174297f6080d" id="r_a485a0fc4f72aed5d1d33174297f6080d"><td class="memItemLeft" align="right" valign="top"><a id="a485a0fc4f72aed5d1d33174297f6080d" name="a485a0fc4f72aed5d1d33174297f6080d"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>t2</b></td></tr>
+<tr class="memitem:a485a0fc4f72aed5d1d33174297f6080d" id="r_a485a0fc4f72aed5d1d33174297f6080d"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a485a0fc4f72aed5d1d33174297f6080d">t2</a></td></tr>
 <tr class="separator:a485a0fc4f72aed5d1d33174297f6080d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2236713a1c3d3215637c7ad6bdbcb46f" id="r_a2236713a1c3d3215637c7ad6bdbcb46f"><td class="memItemLeft" align="right" valign="top"><a id="a2236713a1c3d3215637c7ad6bdbcb46f" name="a2236713a1c3d3215637c7ad6bdbcb46f"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>s0</b></td></tr>
+<tr class="memitem:a2236713a1c3d3215637c7ad6bdbcb46f" id="r_a2236713a1c3d3215637c7ad6bdbcb46f"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a2236713a1c3d3215637c7ad6bdbcb46f">s0</a></td></tr>
 <tr class="separator:a2236713a1c3d3215637c7ad6bdbcb46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a130ffed71dd322c6ed4d7977cc7779a2" id="r_a130ffed71dd322c6ed4d7977cc7779a2"><td class="memItemLeft" align="right" valign="top"><a id="a130ffed71dd322c6ed4d7977cc7779a2" name="a130ffed71dd322c6ed4d7977cc7779a2"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>s1</b></td></tr>
+<tr class="memitem:a130ffed71dd322c6ed4d7977cc7779a2" id="r_a130ffed71dd322c6ed4d7977cc7779a2"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a130ffed71dd322c6ed4d7977cc7779a2">s1</a></td></tr>
 <tr class="separator:a130ffed71dd322c6ed4d7977cc7779a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac212006261fae69ea2378834c78ed2e9" id="r_ac212006261fae69ea2378834c78ed2e9"><td class="memItemLeft" align="right" valign="top"><a id="ac212006261fae69ea2378834c78ed2e9" name="ac212006261fae69ea2378834c78ed2e9"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>a0</b></td></tr>
+<tr class="memitem:ac212006261fae69ea2378834c78ed2e9" id="r_ac212006261fae69ea2378834c78ed2e9"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#ac212006261fae69ea2378834c78ed2e9">a0</a></td></tr>
 <tr class="separator:ac212006261fae69ea2378834c78ed2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0074e2fd580ad7bd89ce38ce840d8bff" id="r_a0074e2fd580ad7bd89ce38ce840d8bff"><td class="memItemLeft" align="right" valign="top"><a id="a0074e2fd580ad7bd89ce38ce840d8bff" name="a0074e2fd580ad7bd89ce38ce840d8bff"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>a1</b></td></tr>
+<tr class="memitem:a0074e2fd580ad7bd89ce38ce840d8bff" id="r_a0074e2fd580ad7bd89ce38ce840d8bff"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a0074e2fd580ad7bd89ce38ce840d8bff">a1</a></td></tr>
 <tr class="separator:a0074e2fd580ad7bd89ce38ce840d8bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a676499dad40d47ccaa435a7ce109ae6c" id="r_a676499dad40d47ccaa435a7ce109ae6c"><td class="memItemLeft" align="right" valign="top"><a id="a676499dad40d47ccaa435a7ce109ae6c" name="a676499dad40d47ccaa435a7ce109ae6c"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>a2</b></td></tr>
+<tr class="memitem:a676499dad40d47ccaa435a7ce109ae6c" id="r_a676499dad40d47ccaa435a7ce109ae6c"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a676499dad40d47ccaa435a7ce109ae6c">a2</a></td></tr>
 <tr class="separator:a676499dad40d47ccaa435a7ce109ae6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9591d7386a7c9789e38bf2e567a8d389" id="r_a9591d7386a7c9789e38bf2e567a8d389"><td class="memItemLeft" align="right" valign="top"><a id="a9591d7386a7c9789e38bf2e567a8d389" name="a9591d7386a7c9789e38bf2e567a8d389"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>a3</b></td></tr>
+<tr class="memitem:a9591d7386a7c9789e38bf2e567a8d389" id="r_a9591d7386a7c9789e38bf2e567a8d389"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a9591d7386a7c9789e38bf2e567a8d389">a3</a></td></tr>
 <tr class="separator:a9591d7386a7c9789e38bf2e567a8d389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dbcc0f3ec61cae7fead17546818e680" id="r_a0dbcc0f3ec61cae7fead17546818e680"><td class="memItemLeft" align="right" valign="top"><a id="a0dbcc0f3ec61cae7fead17546818e680" name="a0dbcc0f3ec61cae7fead17546818e680"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>a4</b></td></tr>
+<tr class="memitem:a0dbcc0f3ec61cae7fead17546818e680" id="r_a0dbcc0f3ec61cae7fead17546818e680"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a0dbcc0f3ec61cae7fead17546818e680">a4</a></td></tr>
 <tr class="separator:a0dbcc0f3ec61cae7fead17546818e680"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3133f636c5407567c265212f8a2a2afc" id="r_a3133f636c5407567c265212f8a2a2afc"><td class="memItemLeft" align="right" valign="top"><a id="a3133f636c5407567c265212f8a2a2afc" name="a3133f636c5407567c265212f8a2a2afc"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>a5</b></td></tr>
+<tr class="memitem:a3133f636c5407567c265212f8a2a2afc" id="r_a3133f636c5407567c265212f8a2a2afc"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a3133f636c5407567c265212f8a2a2afc">a5</a></td></tr>
 <tr class="separator:a3133f636c5407567c265212f8a2a2afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35825927a308e9e853231b59a771d33a" id="r_a35825927a308e9e853231b59a771d33a"><td class="memItemLeft" align="right" valign="top"><a id="a35825927a308e9e853231b59a771d33a" name="a35825927a308e9e853231b59a771d33a"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>a6</b></td></tr>
+<tr class="memitem:a35825927a308e9e853231b59a771d33a" id="r_a35825927a308e9e853231b59a771d33a"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a35825927a308e9e853231b59a771d33a">a6</a></td></tr>
 <tr class="separator:a35825927a308e9e853231b59a771d33a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1efe5b49ce0b7df46251402df44df4e6" id="r_a1efe5b49ce0b7df46251402df44df4e6"><td class="memItemLeft" align="right" valign="top"><a id="a1efe5b49ce0b7df46251402df44df4e6" name="a1efe5b49ce0b7df46251402df44df4e6"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>a7</b></td></tr>
+<tr class="memitem:a1efe5b49ce0b7df46251402df44df4e6" id="r_a1efe5b49ce0b7df46251402df44df4e6"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a1efe5b49ce0b7df46251402df44df4e6">a7</a></td></tr>
 <tr class="separator:a1efe5b49ce0b7df46251402df44df4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2ed9be924c2053be7ea3933ebaa1158" id="r_ac2ed9be924c2053be7ea3933ebaa1158"><td class="memItemLeft" align="right" valign="top"><a id="ac2ed9be924c2053be7ea3933ebaa1158" name="ac2ed9be924c2053be7ea3933ebaa1158"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>s2</b></td></tr>
+<tr class="memitem:ac2ed9be924c2053be7ea3933ebaa1158" id="r_ac2ed9be924c2053be7ea3933ebaa1158"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#ac2ed9be924c2053be7ea3933ebaa1158">s2</a></td></tr>
 <tr class="separator:ac2ed9be924c2053be7ea3933ebaa1158"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1315e5abee340d7aab492e533f6f8988" id="r_a1315e5abee340d7aab492e533f6f8988"><td class="memItemLeft" align="right" valign="top"><a id="a1315e5abee340d7aab492e533f6f8988" name="a1315e5abee340d7aab492e533f6f8988"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>s3</b></td></tr>
+<tr class="memitem:a1315e5abee340d7aab492e533f6f8988" id="r_a1315e5abee340d7aab492e533f6f8988"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a1315e5abee340d7aab492e533f6f8988">s3</a></td></tr>
 <tr class="separator:a1315e5abee340d7aab492e533f6f8988"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ee8d69c252f79b54fffbb8533980455" id="r_a6ee8d69c252f79b54fffbb8533980455"><td class="memItemLeft" align="right" valign="top"><a id="a6ee8d69c252f79b54fffbb8533980455" name="a6ee8d69c252f79b54fffbb8533980455"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>s4</b></td></tr>
+<tr class="memitem:a6ee8d69c252f79b54fffbb8533980455" id="r_a6ee8d69c252f79b54fffbb8533980455"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a6ee8d69c252f79b54fffbb8533980455">s4</a></td></tr>
 <tr class="separator:a6ee8d69c252f79b54fffbb8533980455"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a161c8f3496b1d6e125d691d203632434" id="r_a161c8f3496b1d6e125d691d203632434"><td class="memItemLeft" align="right" valign="top"><a id="a161c8f3496b1d6e125d691d203632434" name="a161c8f3496b1d6e125d691d203632434"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>s5</b></td></tr>
+<tr class="memitem:a161c8f3496b1d6e125d691d203632434" id="r_a161c8f3496b1d6e125d691d203632434"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a161c8f3496b1d6e125d691d203632434">s5</a></td></tr>
 <tr class="separator:a161c8f3496b1d6e125d691d203632434"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39dcb1001fa44be641410001089d7707" id="r_a39dcb1001fa44be641410001089d7707"><td class="memItemLeft" align="right" valign="top"><a id="a39dcb1001fa44be641410001089d7707" name="a39dcb1001fa44be641410001089d7707"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>s6</b></td></tr>
+<tr class="memitem:a39dcb1001fa44be641410001089d7707" id="r_a39dcb1001fa44be641410001089d7707"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a39dcb1001fa44be641410001089d7707">s6</a></td></tr>
 <tr class="separator:a39dcb1001fa44be641410001089d7707"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f6c31f200c086ce1c2ce58a8cf89f9e" id="r_a0f6c31f200c086ce1c2ce58a8cf89f9e"><td class="memItemLeft" align="right" valign="top"><a id="a0f6c31f200c086ce1c2ce58a8cf89f9e" name="a0f6c31f200c086ce1c2ce58a8cf89f9e"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>s7</b></td></tr>
+<tr class="memitem:a0f6c31f200c086ce1c2ce58a8cf89f9e" id="r_a0f6c31f200c086ce1c2ce58a8cf89f9e"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a0f6c31f200c086ce1c2ce58a8cf89f9e">s7</a></td></tr>
 <tr class="separator:a0f6c31f200c086ce1c2ce58a8cf89f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e4c8ffe4597549ea2e437a63d15af97" id="r_a6e4c8ffe4597549ea2e437a63d15af97"><td class="memItemLeft" align="right" valign="top"><a id="a6e4c8ffe4597549ea2e437a63d15af97" name="a6e4c8ffe4597549ea2e437a63d15af97"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>s8</b></td></tr>
+<tr class="memitem:a6e4c8ffe4597549ea2e437a63d15af97" id="r_a6e4c8ffe4597549ea2e437a63d15af97"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a6e4c8ffe4597549ea2e437a63d15af97">s8</a></td></tr>
 <tr class="separator:a6e4c8ffe4597549ea2e437a63d15af97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe2eadae9baee1eb903b40e1395dec10" id="r_afe2eadae9baee1eb903b40e1395dec10"><td class="memItemLeft" align="right" valign="top"><a id="afe2eadae9baee1eb903b40e1395dec10" name="afe2eadae9baee1eb903b40e1395dec10"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>s9</b></td></tr>
+<tr class="memitem:afe2eadae9baee1eb903b40e1395dec10" id="r_afe2eadae9baee1eb903b40e1395dec10"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#afe2eadae9baee1eb903b40e1395dec10">s9</a></td></tr>
 <tr class="separator:afe2eadae9baee1eb903b40e1395dec10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af34feaded7362b5dcf1143c3aa9b5db2" id="r_af34feaded7362b5dcf1143c3aa9b5db2"><td class="memItemLeft" align="right" valign="top"><a id="af34feaded7362b5dcf1143c3aa9b5db2" name="af34feaded7362b5dcf1143c3aa9b5db2"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>s10</b></td></tr>
+<tr class="memitem:af34feaded7362b5dcf1143c3aa9b5db2" id="r_af34feaded7362b5dcf1143c3aa9b5db2"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#af34feaded7362b5dcf1143c3aa9b5db2">s10</a></td></tr>
 <tr class="separator:af34feaded7362b5dcf1143c3aa9b5db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b4216fd97f3b310ba0015716e74d94a" id="r_a8b4216fd97f3b310ba0015716e74d94a"><td class="memItemLeft" align="right" valign="top"><a id="a8b4216fd97f3b310ba0015716e74d94a" name="a8b4216fd97f3b310ba0015716e74d94a"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>s11</b></td></tr>
+<tr class="memitem:a8b4216fd97f3b310ba0015716e74d94a" id="r_a8b4216fd97f3b310ba0015716e74d94a"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a8b4216fd97f3b310ba0015716e74d94a">s11</a></td></tr>
 <tr class="separator:a8b4216fd97f3b310ba0015716e74d94a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed66ab20e0a599665f4592dc00e0235a" id="r_aed66ab20e0a599665f4592dc00e0235a"><td class="memItemLeft" align="right" valign="top"><a id="aed66ab20e0a599665f4592dc00e0235a" name="aed66ab20e0a599665f4592dc00e0235a"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>t3</b></td></tr>
+<tr class="memitem:aed66ab20e0a599665f4592dc00e0235a" id="r_aed66ab20e0a599665f4592dc00e0235a"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#aed66ab20e0a599665f4592dc00e0235a">t3</a></td></tr>
 <tr class="separator:aed66ab20e0a599665f4592dc00e0235a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ca9f1bfc21f8a4fca519a480f57a422" id="r_a4ca9f1bfc21f8a4fca519a480f57a422"><td class="memItemLeft" align="right" valign="top"><a id="a4ca9f1bfc21f8a4fca519a480f57a422" name="a4ca9f1bfc21f8a4fca519a480f57a422"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>t4</b></td></tr>
+<tr class="memitem:a4ca9f1bfc21f8a4fca519a480f57a422" id="r_a4ca9f1bfc21f8a4fca519a480f57a422"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a4ca9f1bfc21f8a4fca519a480f57a422">t4</a></td></tr>
 <tr class="separator:a4ca9f1bfc21f8a4fca519a480f57a422"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a81993ee11d11ec81c8edf141445ace" id="r_a7a81993ee11d11ec81c8edf141445ace"><td class="memItemLeft" align="right" valign="top"><a id="a7a81993ee11d11ec81c8edf141445ace" name="a7a81993ee11d11ec81c8edf141445ace"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>t5</b></td></tr>
+<tr class="memitem:a7a81993ee11d11ec81c8edf141445ace" id="r_a7a81993ee11d11ec81c8edf141445ace"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a7a81993ee11d11ec81c8edf141445ace">t5</a></td></tr>
 <tr class="separator:a7a81993ee11d11ec81c8edf141445ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ca2d9ac441b7c40558e1079ec6b3c9f" id="r_a4ca2d9ac441b7c40558e1079ec6b3c9f"><td class="memItemLeft" align="right" valign="top"><a id="a4ca2d9ac441b7c40558e1079ec6b3c9f" name="a4ca2d9ac441b7c40558e1079ec6b3c9f"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>t6</b></td></tr>
+<tr class="memitem:a4ca2d9ac441b7c40558e1079ec6b3c9f" id="r_a4ca2d9ac441b7c40558e1079ec6b3c9f"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregs.html#a4ca2d9ac441b7c40558e1079ec6b3c9f">t6</a></td></tr>
 <tr class="separator:a4ca2d9ac441b7c40558e1079ec6b3c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Structure that holds the register values for a RISC-V execution context. </p>
+<p>This structure represents the general-purpose registers for the RISC-V architecture, as well as special registers like the <code>sepc</code> (Supervisor Exception Program Counter), which is used to store the program counter at the time of an exception. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac212006261fae69ea2378834c78ed2e9" name="ac212006261fae69ea2378834c78ed2e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac212006261fae69ea2378834c78ed2e9">&#9670;&#160;</a></span>a0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::a0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Argument registers </p>
+
+</div>
+</div>
+<a id="a0074e2fd580ad7bd89ce38ce840d8bff" name="a0074e2fd580ad7bd89ce38ce840d8bff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0074e2fd580ad7bd89ce38ce840d8bff">&#9670;&#160;</a></span>a1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::a1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Argument registers </p>
+
+</div>
+</div>
+<a id="a676499dad40d47ccaa435a7ce109ae6c" name="a676499dad40d47ccaa435a7ce109ae6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a676499dad40d47ccaa435a7ce109ae6c">&#9670;&#160;</a></span>a2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::a2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Argument registers </p>
+
+</div>
+</div>
+<a id="a9591d7386a7c9789e38bf2e567a8d389" name="a9591d7386a7c9789e38bf2e567a8d389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9591d7386a7c9789e38bf2e567a8d389">&#9670;&#160;</a></span>a3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::a3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Argument registers </p>
+
+</div>
+</div>
+<a id="a0dbcc0f3ec61cae7fead17546818e680" name="a0dbcc0f3ec61cae7fead17546818e680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dbcc0f3ec61cae7fead17546818e680">&#9670;&#160;</a></span>a4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::a4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Argument registers </p>
+
+</div>
+</div>
+<a id="a3133f636c5407567c265212f8a2a2afc" name="a3133f636c5407567c265212f8a2a2afc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3133f636c5407567c265212f8a2a2afc">&#9670;&#160;</a></span>a5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::a5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Argument registers </p>
+
+</div>
+</div>
+<a id="a35825927a308e9e853231b59a771d33a" name="a35825927a308e9e853231b59a771d33a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35825927a308e9e853231b59a771d33a">&#9670;&#160;</a></span>a6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::a6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Argument registers </p>
+
+</div>
+</div>
+<a id="a1efe5b49ce0b7df46251402df44df4e6" name="a1efe5b49ce0b7df46251402df44df4e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1efe5b49ce0b7df46251402df44df4e6">&#9670;&#160;</a></span>a7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::a7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Argument registers </p>
+
+</div>
+</div>
+<a id="ad9b41a826773655d3a29020d6d3c3453" name="ad9b41a826773655d3a29020d6d3c3453"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9b41a826773655d3a29020d6d3c3453">&#9670;&#160;</a></span>gp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::gp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Global pointer </p>
+
+</div>
+</div>
+<a id="a9b813fbee789280eb63b0b3efba07cf6" name="a9b813fbee789280eb63b0b3efba07cf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b813fbee789280eb63b0b3efba07cf6">&#9670;&#160;</a></span>ra</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::ra</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return address register </p>
+
+</div>
+</div>
+<a id="a2236713a1c3d3215637c7ad6bdbcb46f" name="a2236713a1c3d3215637c7ad6bdbcb46f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2236713a1c3d3215637c7ad6bdbcb46f">&#9670;&#160;</a></span>s0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::s0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Saved register </p>
+
+</div>
+</div>
+<a id="a130ffed71dd322c6ed4d7977cc7779a2" name="a130ffed71dd322c6ed4d7977cc7779a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a130ffed71dd322c6ed4d7977cc7779a2">&#9670;&#160;</a></span>s1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::s1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Saved register </p>
+
+</div>
+</div>
+<a id="af34feaded7362b5dcf1143c3aa9b5db2" name="af34feaded7362b5dcf1143c3aa9b5db2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af34feaded7362b5dcf1143c3aa9b5db2">&#9670;&#160;</a></span>s10</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::s10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Saved register </p>
+
+</div>
+</div>
+<a id="a8b4216fd97f3b310ba0015716e74d94a" name="a8b4216fd97f3b310ba0015716e74d94a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b4216fd97f3b310ba0015716e74d94a">&#9670;&#160;</a></span>s11</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::s11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Saved register </p>
+
+</div>
+</div>
+<a id="ac2ed9be924c2053be7ea3933ebaa1158" name="ac2ed9be924c2053be7ea3933ebaa1158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2ed9be924c2053be7ea3933ebaa1158">&#9670;&#160;</a></span>s2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::s2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Saved register </p>
+
+</div>
+</div>
+<a id="a1315e5abee340d7aab492e533f6f8988" name="a1315e5abee340d7aab492e533f6f8988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1315e5abee340d7aab492e533f6f8988">&#9670;&#160;</a></span>s3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::s3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Saved register </p>
+
+</div>
+</div>
+<a id="a6ee8d69c252f79b54fffbb8533980455" name="a6ee8d69c252f79b54fffbb8533980455"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ee8d69c252f79b54fffbb8533980455">&#9670;&#160;</a></span>s4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::s4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Saved register </p>
+
+</div>
+</div>
+<a id="a161c8f3496b1d6e125d691d203632434" name="a161c8f3496b1d6e125d691d203632434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a161c8f3496b1d6e125d691d203632434">&#9670;&#160;</a></span>s5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::s5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Saved register </p>
+
+</div>
+</div>
+<a id="a39dcb1001fa44be641410001089d7707" name="a39dcb1001fa44be641410001089d7707"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39dcb1001fa44be641410001089d7707">&#9670;&#160;</a></span>s6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::s6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Saved register </p>
+
+</div>
+</div>
+<a id="a0f6c31f200c086ce1c2ce58a8cf89f9e" name="a0f6c31f200c086ce1c2ce58a8cf89f9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f6c31f200c086ce1c2ce58a8cf89f9e">&#9670;&#160;</a></span>s7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::s7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Saved register </p>
+
+</div>
+</div>
+<a id="a6e4c8ffe4597549ea2e437a63d15af97" name="a6e4c8ffe4597549ea2e437a63d15af97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e4c8ffe4597549ea2e437a63d15af97">&#9670;&#160;</a></span>s8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::s8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Saved register </p>
+
+</div>
+</div>
+<a id="afe2eadae9baee1eb903b40e1395dec10" name="afe2eadae9baee1eb903b40e1395dec10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe2eadae9baee1eb903b40e1395dec10">&#9670;&#160;</a></span>s9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::s9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Saved register </p>
+
+</div>
+</div>
+<a id="a747edabfebd211ce2c6bdc2dd92664c4" name="a747edabfebd211ce2c6bdc2dd92664c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a747edabfebd211ce2c6bdc2dd92664c4">&#9670;&#160;</a></span>sepc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::sepc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Supervisor Exception Program Counter (SEPC) </p>
+
+</div>
+</div>
+<a id="ad32677617619029ac8f5723d8bd4ff70" name="ad32677617619029ac8f5723d8bd4ff70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad32677617619029ac8f5723d8bd4ff70">&#9670;&#160;</a></span>sp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::sp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stack pointer </p>
+
+</div>
+</div>
+<a id="a113113431137bcf677772d73dcdd9ec8" name="a113113431137bcf677772d73dcdd9ec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a113113431137bcf677772d73dcdd9ec8">&#9670;&#160;</a></span>t0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::t0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Temporary registers </p>
+
+</div>
+</div>
+<a id="ae6b6e9059b8fda767ff49a5747b6b69a" name="ae6b6e9059b8fda767ff49a5747b6b69a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b6e9059b8fda767ff49a5747b6b69a">&#9670;&#160;</a></span>t1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::t1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Temporary registers </p>
+
+</div>
+</div>
+<a id="a485a0fc4f72aed5d1d33174297f6080d" name="a485a0fc4f72aed5d1d33174297f6080d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a485a0fc4f72aed5d1d33174297f6080d">&#9670;&#160;</a></span>t2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::t2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Temporary registers </p>
+
+</div>
+</div>
+<a id="aed66ab20e0a599665f4592dc00e0235a" name="aed66ab20e0a599665f4592dc00e0235a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed66ab20e0a599665f4592dc00e0235a">&#9670;&#160;</a></span>t3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::t3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Temporary registers </p>
+
+</div>
+</div>
+<a id="a4ca9f1bfc21f8a4fca519a480f57a422" name="a4ca9f1bfc21f8a4fca519a480f57a422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ca9f1bfc21f8a4fca519a480f57a422">&#9670;&#160;</a></span>t4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::t4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Temporary registers </p>
+
+</div>
+</div>
+<a id="a7a81993ee11d11ec81c8edf141445ace" name="a7a81993ee11d11ec81c8edf141445ace"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a81993ee11d11ec81c8edf141445ace">&#9670;&#160;</a></span>t5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::t5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Temporary registers </p>
+
+</div>
+</div>
+<a id="a4ca2d9ac441b7c40558e1079ec6b3c9f" name="a4ca2d9ac441b7c40558e1079ec6b3c9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ca2d9ac441b7c40558e1079ec6b3c9f">&#9670;&#160;</a></span>t6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::t6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Temporary registers </p>
+
+</div>
+</div>
+<a id="a5113c962aaa68d969dc8e85d453cb991" name="a5113c962aaa68d969dc8e85d453cb991"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5113c962aaa68d969dc8e85d453cb991">&#9670;&#160;</a></span>tp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t regs::tp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Thread pointer </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>runtime/include/util/<a class="el" href="regs_8h_source.html">regs.h</a></li>
 </ul>
