@@ -1,0 +1,5 @@
+<map id="sm/src/sm&#45;sbi&#45;opensbi.h" name="sm/src/sm&#45;sbi&#45;opensbi.h">
+<area shape="rect" id="Node000001" title="Security Monitor SBI interface to OpenSBI." alt="" coords="5,5,169,31"/>
+<area shape="rect" id="Node000002" href="$sm-sbi-opensbi_8c.html" title="Keystone Enclave SBI handler implementation." alt="" coords="5,79,169,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,46,90,79,84,79,84,46"/>
+</map>

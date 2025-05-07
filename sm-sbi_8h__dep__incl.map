@@ -1,28 +1,33 @@
 <map id="sm/src/sm&#45;sbi.h" name="sm/src/sm&#45;sbi.h">
-<area shape="rect" id="Node000001" title="SBI interface for Keystone Security Monitor." alt="" coords="537,5,651,31"/>
-<area shape="rect" id="Node000002" href="$fu540__internal_8c_source.html" title=" " alt="" coords="409,374,561,414"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="626,38,653,61,680,90,700,125,706,144,709,164,709,241,705,267,695,290,679,311,659,329,612,357,562,376,560,371,610,352,656,324,675,307,690,287,700,265,703,240,703,164,701,145,696,127,676,93,650,65,623,42"/>
-<area shape="rect" id="Node000003" href="$sm_8h.html" title="Security Monitor (SM) interface." alt="" coords="435,79,529,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="564,42,503,81,500,76,561,37"/>
-<area shape="poly" id="edge12_Node000003_Node000002" title=" " alt="" coords="521,111,546,128,569,151,596,188,613,220,623,255,633,299,636,313,632,327,618,344,601,358,563,378,560,373,598,354,615,340,628,324,630,313,627,301,618,256,608,222,592,191,565,154,543,133,518,115"/>
-<area shape="rect" id="Node000004" href="$cpu_8h.html" title="CPU context management for enclaves." alt="" coords="522,300,618,326"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="514,113,532,130,547,151,562,192,570,234,573,299,568,300,565,235,557,193,542,154,528,134,510,116"/>
-<area shape="rect" id="Node000005" href="$enclave_8h.html" title="Enclave management interface and metadata structures for the Keystone security monitor." alt="" coords="310,226,430,252"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="458,117,421,154,396,193,378,227,373,225,391,191,417,151,454,113"/>
-<area shape="rect" id="Node000008" href="$plugins_8h_source.html" title=" " alt="" coords="5,300,167,326"/>
-<area shape="poly" id="edge13_Node000003_Node000008" title=" " alt="" coords="448,115,109,302,106,297,446,110"/>
-<area shape="rect" id="Node000009" href="$pmp_8h.html" title="Physical Memory Protection (PMP) management interface." alt="" coords="432,153,532,178"/>
-<area shape="poly" id="edge14_Node000003_Node000009" title=" " alt="" coords="476,120,478,152,472,152,471,120"/>
-<area shape="poly" id="edge8_Node000005_Node000002" title=" " alt="" coords="328,261,305,275,287,290,278,307,279,315,283,324,308,349,340,367,374,379,409,386,408,391,373,384,337,372,305,354,278,327,273,317,273,306,283,287,302,271,325,257"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="419,255,537,297,535,302,417,260"/>
-<area shape="rect" id="Node000006" href="$platform-hook_8h.html" title="Platform&#45;specific hooks for enclave lifecycle management." alt="" coords="293,300,447,326"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="373,267,373,300,367,300,367,267"/>
-<area shape="rect" id="Node000007" href="$multimem_8h_source.html" title=" " alt="" coords="57,381,235,407"/>
-<area shape="poly" id="edge9_Node000005_Node000007" title=" " alt="" coords="336,262,271,302,162,383,159,379,269,298,334,258"/>
-<area shape="poly" id="edge10_Node000005_Node000008" title=" " alt="" coords="308,259,135,302,134,297,306,254"/>
-<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="401,332,458,371,455,375,398,337"/>
-<area shape="poly" id="edge11_Node000008_Node000007" title=" " alt="" coords="106,336,139,379,135,382,102,340"/>
-<area shape="poly" id="edge16_Node000009_Node000002" title=" " alt="" coords="485,194,487,373,482,373,480,194"/>
-<area shape="poly" id="edge17_Node000009_Node000003" title=" " alt="" coords="488,137,486,105,492,105,493,137"/>
-<area shape="poly" id="edge15_Node000009_Node000005" title=" " alt="" coords="452,189,391,228,388,223,449,185"/>
+<area shape="rect" id="Node000001" title="SBI interface for Keystone Security Monitor." alt="" coords="407,5,521,31"/>
+<area shape="rect" id="Node000002" href="$fu540__internal_8c_source.html" title=" " alt="" coords="30,374,183,414"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="392,30,277,47,150,74,94,92,49,114,19,138,11,151,8,164,8,240,16,280,35,316,60,347,85,371,81,375,56,351,31,319,11,282,3,241,3,164,6,149,15,134,46,109,92,87,149,69,276,41,391,25"/>
+<area shape="rect" id="Node000003" href="$sm-sbi-opensbi_8c.html" title="Keystone Enclave SBI handler implementation." alt="" coords="688,381,851,407"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="537,29,632,49,733,79,778,97,814,117,839,139,846,151,848,164,848,241,841,284,823,324,801,358,782,382,778,379,797,355,818,322,836,282,843,240,843,164,841,153,835,142,811,121,776,101,732,84,631,55,536,34"/>
+<area shape="rect" id="Node000004" href="$sm_8h.html" title="Security Monitor (SM) interface." alt="" coords="417,79,511,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="467,46,467,79,461,79,461,46"/>
+<area shape="poly" id="edge14_Node000004_Node000002" title=" " alt="" coords="412,113,302,158,241,190,184,228,143,260,129,277,116,301,107,339,107,373,102,373,102,338,111,299,125,274,140,256,181,224,239,185,300,153,410,108"/>
+<area shape="poly" id="edge21_Node000004_Node000003" title=" " alt="" coords="507,109,563,138,629,180,695,234,725,265,750,299,761,320,767,342,772,381,767,381,762,343,756,322,746,301,721,268,691,238,626,184,560,143,505,114"/>
+<area shape="rect" id="Node000005" href="$cpu_8h.html" title="CPU context management for enclaves." alt="" coords="611,300,707,326"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="486,114,650,298,646,301,482,118"/>
+<area shape="rect" id="Node000006" href="$enclave_8h.html" title="Enclave management interface and metadata structures for the Keystone security monitor." alt="" coords="327,226,447,252"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="462,120,454,149,441,180,422,207,402,228,398,224,418,203,436,177,449,148,457,119"/>
+<area shape="rect" id="Node000009" href="$plugins_8h_source.html" title=" " alt="" coords="425,300,586,326"/>
+<area shape="poly" id="edge15_Node000004_Node000009" title=" " alt="" coords="472,119,506,299,500,300,466,120"/>
+<area shape="rect" id="Node000010" href="$pmp_8h.html" title="Physical Memory Protection (PMP) management interface." alt="" coords="326,153,426,178"/>
+<area shape="poly" id="edge16_Node000004_Node000010" title=" " alt="" coords="432,116,385,154,382,150,428,112"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="689,333,754,378,751,383,686,337"/>
+<area shape="poly" id="edge10_Node000006_Node000002" title=" " alt="" coords="373,266,347,298,312,328,249,360,184,380,182,375,247,355,309,323,343,294,369,263"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="448,254,613,297,612,302,447,259"/>
+<area shape="rect" id="Node000007" href="$platform-hook_8h.html" title="Platform&#45;specific hooks for enclave lifecycle management." alt="" coords="144,300,299,326"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="346,261,251,302,248,297,344,256"/>
+<area shape="rect" id="Node000008" href="$multimem_8h_source.html" title=" " alt="" coords="357,381,534,407"/>
+<area shape="poly" id="edge11_Node000006_Node000008" title=" " alt="" coords="396,266,414,325,441,379,436,382,410,327,391,267"/>
+<area shape="poly" id="edge12_Node000006_Node000009" title=" " alt="" coords="421,258,486,297,484,302,418,263"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="193,337,136,375,133,371,190,332"/>
+<area shape="poly" id="edge13_Node000009_Node000008" title=" " alt="" coords="489,340,457,382,452,379,485,336"/>
+<area shape="poly" id="edge18_Node000010_Node000002" title=" " alt="" coords="319,186,273,204,223,229,175,261,134,302,124,319,117,338,110,374,105,373,112,336,119,316,130,298,172,257,221,224,271,199,317,181"/>
+<area shape="poly" id="edge19_Node000010_Node000003" title=" " alt="" coords="442,176,505,191,579,216,653,251,688,273,720,298,738,318,752,340,768,380,763,382,747,343,734,321,717,302,685,277,651,256,577,221,504,197,441,181"/>
+<area shape="poly" id="edge20_Node000010_Node000004" title=" " alt="" coords="408,141,455,103,458,107,412,145"/>
+<area shape="poly" id="edge17_Node000010_Node000006" title=" " alt="" coords="383,193,388,225,382,226,377,194"/>
 </map>

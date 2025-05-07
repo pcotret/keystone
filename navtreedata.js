@@ -54,7 +54,7 @@ var NAVTREEINDEX =
 [
 "aes_8c.html",
 "loader_2elf_8h.html#a1cb7891a95c0c9ec8df524db3fb64593",
-"structElf64__Rela.html"
+"structElf64__Phdr.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,15 +1,17 @@
 <map id="sm/src/enclave.h" name="sm/src/enclave.h">
-<area shape="rect" id="Node000001" title="Enclave management interface and metadata structures for the Keystone security monitor." alt="" coords="257,5,378,31"/>
-<area shape="rect" id="Node000002" href="$cpu_8h.html" title="CPU context management for enclaves." alt="" coords="5,79,102,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,38,99,81,98,76,258,33"/>
-<area shape="rect" id="Node000003" href="$platform-hook_8h.html" title="Platform&#45;specific hooks for enclave lifecycle management." alt="" coords="126,79,280,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="286,42,224,81,221,76,284,37"/>
-<area shape="rect" id="Node000004" href="$fu540__internal_8c_source.html" title=" " alt="" coords="173,153,326,193"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="314,47,295,106,266,154,261,151,290,104,309,45"/>
-<area shape="rect" id="Node000005" href="$multimem_8h_source.html" title=" " alt="" coords="374,160,552,186"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="339,41,395,103,452,158,448,162,392,107,335,44"/>
-<area shape="rect" id="Node000006" href="$plugins_8h_source.html" title=" " alt="" coords="406,79,568,105"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="361,35,459,76,457,81,359,40"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="220,117,240,151,236,154,215,120"/>
-<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="481,120,469,160,464,159,476,119"/>
+<area shape="rect" id="Node000001" title="Enclave management interface and metadata structures for the Keystone security monitor." alt="" coords="291,5,411,31"/>
+<area shape="rect" id="Node000002" href="$cpu_8h.html" title="CPU context management for enclaves." alt="" coords="39,79,135,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="293,38,133,81,131,76,291,33"/>
+<area shape="rect" id="Node000004" href="$platform-hook_8h.html" title="Platform&#45;specific hooks for enclave lifecycle management." alt="" coords="159,79,314,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="320,42,257,81,254,76,317,37"/>
+<area shape="rect" id="Node000005" href="$fu540__internal_8c_source.html" title=" " alt="" coords="223,153,375,193"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="346,46,328,106,310,153,305,152,323,104,341,45"/>
+<area shape="rect" id="Node000006" href="$multimem_8h_source.html" title=" " alt="" coords="416,160,593,186"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="372,41,429,103,491,158,488,162,425,107,369,45"/>
+<area shape="rect" id="Node000007" href="$plugins_8h_source.html" title=" " alt="" coords="440,79,601,105"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="395,35,492,76,490,81,393,40"/>
+<area shape="rect" id="Node000003" href="$sm-sbi-opensbi_8c.html" title="Keystone Enclave SBI handler implementation." alt="" coords="5,160,169,186"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,120,90,160,84,160,84,120"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="257,115,286,151,281,154,253,118"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="517,120,509,160,504,159,512,119"/>
 </map>
