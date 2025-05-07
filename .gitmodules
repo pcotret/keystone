@@ -13,3 +13,6 @@
 [submodule "scripts/ci/utils/relay_ft245r"]
 	path = scripts/ci/utils/relay_ft245r
 	url = https://github.com/vpatron/relay_ft245r
+[submodule "doxygen-awesome-css"]
+	path = doxygen-awesome-css
+	url = https://github.com/jothepro/doxygen-awesome-css.git
