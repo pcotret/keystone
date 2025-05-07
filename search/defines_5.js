@@ -1,10 +1,25 @@
 var searchData=
 [
-  ['sbi_5fpmp_5fipi_5finfo_5fsize_0',['SBI_PMP_IPI_INFO_SIZE',['../ipi_8h.html#aea513c3effd5e5c7b315a90189ddffd3',1,'ipi.h']]],
-  ['sbi_5fpmp_5fipi_5ftype_5fset_1',['SBI_PMP_IPI_TYPE_SET',['../ipi_8h.html#afec497eda02eaad77f26e646352b2557',1,'ipi.h']]],
-  ['sbi_5fpmp_5fipi_5ftype_5funset_2',['SBI_PMP_IPI_TYPE_UNSET',['../ipi_8h.html#a37431c0df24aa56fddb9dbda904fa38a',1,'ipi.h']]],
-  ['sealing_5fkey_5fsize_3',['SEALING_KEY_SIZE',['../enclave_8h.html#a50e87acd083c1eba8f40b20e1399972f',1,'enclave.h']]],
-  ['set_5fbit_4',['SET_BIT',['../pmp_8h.html#a1d7099cf95d0736847ff245275b47baa',1,'pmp.h']]],
-  ['signature_5fsize_5',['SIGNATURE_SIZE',['../crypto_8h.html#a4ccb2bce0e19deec8833fcb1d367e30d',1,'crypto.h']]],
-  ['sm_5fassert_6',['sm_assert',['../sm__assert_8h.html#a286fcb9ae39f2d33ba34e241e16f5b23',1,'sm_assert.h']]]
+  ['pmp_5fall_5fperm_0',['PMP_ALL_PERM',['../pmp_8h.html#a25a985c82e74ba5aabfa5030079544e7',1,'pmp.h']]],
+  ['pmp_5ferror_1',['PMP_ERROR',['../pmp_8h.html#a3ce82d1fc86d061d2a99032e8d869d31',1,'pmp.h']]],
+  ['pmp_5fno_5fperm_2',['PMP_NO_PERM',['../pmp_8h.html#ade790be7d7bb8ae983d762730a74eccd',1,'pmp.h']]],
+  ['pmp_5fset_3',['PMP_SET',['../pmp_8h.html#a24f6d46ac6d16b1dcc11301d5dd2300a',1,'pmp.h']]],
+  ['pmp_5funset_4',['PMP_UNSET',['../pmp_8h.html#a8e1a8954ffa3e565ce06a1b14ef48737',1,'pmp.h']]],
+  ['private_5fkey_5fsize_5',['PRIVATE_KEY_SIZE',['../crypto_8h.html#a971c495688882f99d0386ec821c6a572',1,'crypto.h']]],
+  ['prv_5fh_6',['PRV_H',['../riscv64_8h.html#af11d40d5f172d3095bf39a23ba714552',1,'riscv64.h']]],
+  ['prv_5fm_7',['PRV_M',['../riscv64_8h.html#afee966c8a48cb4075680eb0cc08ab32e',1,'riscv64.h']]],
+  ['prv_5fs_8',['PRV_S',['../riscv64_8h.html#a3131c9addf7b5ecc1da9f7b0eff9815d',1,'riscv64.h']]],
+  ['prv_5fu_9',['PRV_U',['../riscv64_8h.html#a0584431e22db30065abffb94459477c4',1,'riscv64.h']]],
+  ['pte_5fa_10',['pte_a',['../page_8h.html#af2d908a8af1d94a6aaf803ab40fe0951',1,'PTE_A:&#160;page.h'],['../riscv64_8h.html#af2d908a8af1d94a6aaf803ab40fe0951',1,'PTE_A:&#160;riscv64.h']]],
+  ['pte_5fd_11',['pte_d',['../page_8h.html#ae80b38f12787d02087c4575c48c36d88',1,'PTE_D:&#160;page.h'],['../riscv64_8h.html#ae80b38f12787d02087c4575c48c36d88',1,'PTE_D:&#160;riscv64.h']]],
+  ['pte_5fg_12',['pte_g',['../page_8h.html#a50cfccabb1927e67c7a0e3b90e8b0635',1,'PTE_G:&#160;page.h'],['../riscv64_8h.html#a50cfccabb1927e67c7a0e3b90e8b0635',1,'PTE_G:&#160;riscv64.h']]],
+  ['pte_5fppn_5fshift_13',['pte_ppn_shift',['../page_8h.html#a5b5b713a1ec901153c786686d5962574',1,'PTE_PPN_SHIFT:&#160;page.h'],['../riscv64_8h.html#a5b5b713a1ec901153c786686d5962574',1,'PTE_PPN_SHIFT:&#160;riscv64.h']]],
+  ['pte_5fr_14',['pte_r',['../page_8h.html#a3a188134a2cbd69e161521fb169ecd08',1,'PTE_R:&#160;page.h'],['../riscv64_8h.html#a3a188134a2cbd69e161521fb169ecd08',1,'PTE_R:&#160;riscv64.h']]],
+  ['pte_5fsoft_15',['pte_soft',['../page_8h.html#a8e71d0b15291edc78a3240cc667f9ad8',1,'PTE_SOFT:&#160;page.h'],['../riscv64_8h.html#a8e71d0b15291edc78a3240cc667f9ad8',1,'PTE_SOFT:&#160;riscv64.h']]],
+  ['pte_5ftable_16',['PTE_TABLE',['../riscv64_8h.html#aa0a707cf44e82dc9efa94304582586a6',1,'riscv64.h']]],
+  ['pte_5fu_17',['pte_u',['../page_8h.html#adced9836a1dc98d72849361e6ab03cda',1,'PTE_U:&#160;page.h'],['../riscv64_8h.html#adced9836a1dc98d72849361e6ab03cda',1,'PTE_U:&#160;riscv64.h']]],
+  ['pte_5fv_18',['pte_v',['../page_8h.html#a9a3c738182007bee471e44aae04c386f',1,'PTE_V:&#160;page.h'],['../riscv64_8h.html#a9a3c738182007bee471e44aae04c386f',1,'PTE_V:&#160;riscv64.h']]],
+  ['pte_5fw_19',['pte_w',['../page_8h.html#a058fcbcc3e1eab2c09c68b3e5221c545',1,'PTE_W:&#160;page.h'],['../riscv64_8h.html#a058fcbcc3e1eab2c09c68b3e5221c545',1,'PTE_W:&#160;riscv64.h']]],
+  ['pte_5fx_20',['pte_x',['../page_8h.html#ae20c834a93867eedc88007621c74ad55',1,'PTE_X:&#160;page.h'],['../riscv64_8h.html#ae20c834a93867eedc88007621c74ad55',1,'PTE_X:&#160;riscv64.h']]],
+  ['public_5fkey_5fsize_21',['PUBLIC_KEY_SIZE',['../crypto_8h.html#aaff5ff96341a022e23eba53e487042e5',1,'crypto.h']]]
 ];

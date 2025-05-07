@@ -1,0 +1,7 @@
+<map id="thread_state" name="thread_state">
+<area shape="rect" id="Node000001" title="Enclave thread state." alt="" coords="27,94,121,120"/>
+<area shape="rect" id="Node000002" href="$structcsrs.html" title="Supervisor Control and Status Registers (CSRs)." alt="" coords="5,5,52,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="28,46,32,69,41,81,54,91,50,96,38,85,27,71,22,47"/>
+<area shape="rect" id="Node000003" href="$structctx.html" title="Thread context." alt="" coords="100,5,138,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="108,46,82,95,78,92,103,44"/>
+</map>

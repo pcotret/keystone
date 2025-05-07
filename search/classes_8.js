@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['sbi_5fpmp_5fipi_5finfo_0',['sbi_pmp_ipi_info',['../structsbi__pmp__ipi__info.html',1,'']]],
-  ['sealing_5fkey_1',['sealing_key',['../structsealing__key.html',1,'']]],
-  ['sha3_5fctx_5ft_2',['sha3_ctx_t',['../structsha3__ctx__t.html',1,'']]],
-  ['sm_5freport_3',['sm_report',['../structsm__report.html',1,'']]]
+  ['mallocblockinfo_0',['MallocBlockInfo',['../union_malloc_block_info.html',1,'']]],
+  ['mallocblockinfodata_1',['MallocBlockInfoData',['../struct_malloc_block_info_data.html',1,'']]],
+  ['merk_5fstats_5fs_2',['merk_stats_s',['../structmerk__stats__s.html',1,'']]],
+  ['mprv_5fblock_3',['mprv_block',['../structmprv__block.html',1,'']]]
 ];

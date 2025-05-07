@@ -1,30 +1,5 @@
 var searchData=
 [
-  ['sbi_5fpmp_5fipi_5finit_0',['sbi_pmp_ipi_init',['../ipi_8h.html#a2f36521831ca8e53b451fd6e7e64f177',1,'ipi.h']]],
-  ['sbi_5fpmp_5fipi_5flocal_5fupdate_1',['sbi_pmp_ipi_local_update',['../ipi_8h.html#afc6d0460080de0b4a9bc129759766dca',1,'ipi.c']]],
-  ['sbi_5fpmp_5fipi_5frequest_2',['sbi_pmp_ipi_request',['../ipi_8h.html#ae573e71a92dfebad04f0bf481faef26a',1,'ipi.h']]],
-  ['sbi_5fsm_5fattest_5fenclave_3',['sbi_sm_attest_enclave',['../sm-sbi_8h.html#a7d8927c735eda0a43706f79aa47c2ce9',1,'sm-sbi.c']]],
-  ['sbi_5fsm_5fcall_5fplugin_4',['sbi_sm_call_plugin',['../sm-sbi_8h.html#a2b257990b36eb85b6de2cc6c6664aa31',1,'sm-sbi.c']]],
-  ['sbi_5fsm_5fcreate_5fenclave_5',['sbi_sm_create_enclave',['../sm-sbi_8h.html#ad5bcde8a91d05fd51a58320044d6c6c3',1,'sm-sbi.c']]],
-  ['sbi_5fsm_5fdestroy_5fenclave_6',['sbi_sm_destroy_enclave',['../sm-sbi_8h.html#a3c5f675da8fd238509b4d2c05bfc7ddd',1,'sm-sbi.c']]],
-  ['sbi_5fsm_5fexit_5fenclave_7',['sbi_sm_exit_enclave',['../sm-sbi_8h.html#a94c826649284ece55b50a55f7b620932',1,'sm-sbi.c']]],
-  ['sbi_5fsm_5fget_5fsealing_5fkey_8',['sbi_sm_get_sealing_key',['../sm-sbi_8h.html#a26a6fdedf6ac110abe00e0099d23f394',1,'sm-sbi.c']]],
-  ['sbi_5fsm_5frandom_9',['sbi_sm_random',['../sm-sbi_8h.html#a6b4513e300cd2ec8e8551e4f707ca7a9',1,'sm-sbi.c']]],
-  ['sbi_5fsm_5fresume_5fenclave_10',['sbi_sm_resume_enclave',['../sm-sbi_8h.html#aa85273969bc3e13bc70ee80b9b12ed7f',1,'sm-sbi.c']]],
-  ['sbi_5fsm_5frun_5fenclave_11',['sbi_sm_run_enclave',['../sm-sbi_8h.html#a1b2f9ce43f2c06c43890c1872bc79513',1,'sm-sbi.c']]],
-  ['sbi_5fsm_5fstop_5fenclave_12',['sbi_sm_stop_enclave',['../sm-sbi_8h.html#a5bb919b6cbf24bf3c2a588eb19ee0e93',1,'sm-sbi.c']]],
-  ['sbi_5ftrap_5fhandler_5fkeystone_5fenclave_13',['sbi_trap_handler_keystone_enclave',['../enclave_8h.html#a14827ac37b1a7554b6b927bd85c5ae45',1,'sbi_trap_hack.c']]],
-  ['send_5fand_5fsync_5fpmp_5fipi_14',['send_and_sync_pmp_ipi',['../ipi_8h.html#abc107365426502ce0f3ac18e919f69c7',1,'ipi.c']]],
-  ['sign_15',['sign',['../crypto_8h.html#a6eeb90c70668b685cc796dab2151a6f3',1,'crypto.c']]],
-  ['sm_5fderive_5fsealing_5fkey_16',['sm_derive_sealing_key',['../sm_8h.html#ab26f3284f854e3b116a89a2b0f319a59',1,'sm.c']]],
-  ['sm_5finit_17',['sm_init',['../sm_8h.html#a9c2cd24e275b1bd0f99d3103281fcda1',1,'sm.c']]],
-  ['sm_5fretrieve_5fpubkey_18',['sm_retrieve_pubkey',['../sm_8h.html#a01e119578626c1a2746e2b30b88d86a8',1,'sm.h']]],
-  ['sm_5fsign_19',['sm_sign',['../sm_8h.html#af26a570276311fba224bb0d8126798f8',1,'sm.c']]],
-  ['stop_5fenclave_20',['stop_enclave',['../enclave_8h.html#af13e39038864cf309ab05c5ec34561e6',1,'enclave.c']]],
-  ['swap_5fprev_5fmepc_21',['swap_prev_mepc',['../thread_8h.html#a679b102c3fdf7a40f3648894db6acbe7',1,'thread.c']]],
-  ['swap_5fprev_5fmstatus_22',['swap_prev_mstatus',['../thread_8h.html#ad1c5fa93893261a4316ff678ca80d00c',1,'thread.c']]],
-  ['swap_5fprev_5fsmode_5fcsrs_23',['swap_prev_smode_csrs',['../thread_8h.html#a6fcee5bffc90e0826a6a9131d3b410c0',1,'thread.c']]],
-  ['swap_5fprev_5fstate_24',['swap_prev_state',['../thread_8h.html#aca8bc6fe74de2b5686e143427136464d',1,'thread.c']]],
-  ['switch_5fvector_5fenclave_25',['switch_vector_enclave',['../thread_8h.html#a648fcc7f1473f8d7f6136d87d43f7542',1,'thread.c']]],
-  ['switch_5fvector_5fhost_26',['switch_vector_host',['../thread_8h.html#a92709939fa0461dc7e3b7b78945170c2',1,'thread.c']]]
+  ['resume_5fenclave_0',['resume_enclave',['../enclave_8h.html#adea50bfac43a7eefd85f6a0a0d2b8d5d',1,'enclave.c']]],
+  ['run_5fenclave_1',['run_enclave',['../enclave_8h.html#ae4dda0294501e10fb583acd0447402f3',1,'enclave.c']]]
 ];

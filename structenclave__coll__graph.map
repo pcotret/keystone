@@ -1,0 +1,17 @@
+<map id="enclave" name="enclave">
+<area shape="rect" id="Node000001" title="Metadata structure for an enclave." alt="" coords="298,183,365,208"/>
+<area shape="rect" id="Node000002" href="$structenclave__region.html" title="Metadata about a memory region assigned to an enclave." alt="" coords="5,94,114,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,123,201,156,298,183,297,188,199,161,104,128"/>
+<area shape="rect" id="Node000003" href="$structthread__state.html" title="Enclave thread state." alt="" coords="138,94,232,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="220,125,312,180,309,184,217,130"/>
+<area shape="rect" id="Node000004" href="$structcsrs.html" title="Supervisor Control and Status Registers (CSRs)." alt="" coords="116,5,163,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="139,46,143,69,152,81,165,91,161,96,149,85,138,71,133,47"/>
+<area shape="rect" id="Node000005" href="$structctx.html" title="Thread context." alt="" coords="211,5,249,31"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="219,46,193,95,189,92,214,44"/>
+<area shape="rect" id="Node000006" href="$structplatform__enclave__data.html" title=" " alt="" coords="255,94,408,120"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="334,135,334,182,329,182,329,135"/>
+<area shape="rect" id="Node000007" href="$structutm.html" title=" " alt="" coords="431,94,475,120"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="426,131,350,184,347,180,422,126"/>
+<area shape="rect" id="Node000008" href="$structepm.html" title=" " alt="" coords="499,94,545,120"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="490,130,430,161,366,186,364,181,428,156,488,125"/>
+</map>

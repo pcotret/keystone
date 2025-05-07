@@ -1,5 +1,12 @@
 var searchData=
 [
-  ['va_5fbits_0',['VA_BITS',['../page_8h.html#ab39e56cc2a00d128e49fae5f9c80f076',1,'page.h']]],
-  ['validate_5fand_5fhash_5fenclave_1',['validate_and_hash_enclave',['../enclave_8h.html#a0b5539e3f49aa66c1f4cebdc6569c62d',1,'attest.c']]]
+  ['unit_5ftest_0',['unit_test',['../group__cmocka__exec.html#gaf79fe61343efe7cdeb5bbb12a5577cb3',1,'cmocka.h']]],
+  ['unit_5ftest_5fsetup_1',['unit_test_setup',['../group__cmocka__exec.html#gaf005639a9b71cced47ce4708e53912d9',1,'cmocka.h']]],
+  ['unit_5ftest_5fsetup_5fteardown_2',['unit_test_setup_teardown',['../group__cmocka__exec.html#gaee80106db018434c00df4ba235415b26',1,'cmocka.h']]],
+  ['unit_5ftest_5fteardown_3',['unit_test_teardown',['../group__cmocka__exec.html#ga3fe0f3c69fb85843701876937b7217f4',1,'cmocka.h']]],
+  ['unittest_4',['UnitTest',['../struct_unit_test.html',1,'']]],
+  ['unset_5fbit_5',['UNSET_BIT',['../pmp_8h.html#ad4565cb84d8e6e03ddcb0412327e2321',1,'pmp.h']]],
+  ['utm_6',['utm',['../structutm.html',1,'']]],
+  ['utm_5fdestroy_7',['utm_destroy',['../keystone_8h.html#a395abb5a07e84ea023d2c356e6254e1c',1,'keystone-page.c']]],
+  ['utm_5finit_8',['utm_init',['../keystone_8h.html#ad1b8c2c2e4fb99672359904999ae7d7a',1,'keystone-page.c']]]
 ];

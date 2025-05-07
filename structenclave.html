@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Keystone Doxygen: enclave Struct Reference</title>
+<title>Keystone Doxygen documentation: enclave Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Keystone Doxygen
+   <div id="projectname">Keystone Doxygen documentation
    </div>
   </td>
  </tr>
@@ -101,6 +101,28 @@ $(document).ready(function(){initNavTree('structenclave.html',''); initResizable
  <a href="structenclave.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="enclave_8h_source.html">enclave.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for enclave:</div>
+<div class="dyncontent">
+<div class="center"><img src="structenclave__coll__graph.png" border="0" usemap="#aenclave_coll__map" alt="Collaboration graph"/></div>
+<map name="aenclave_coll__map" id="aenclave_coll__map">
+<area shape="rect" title="Metadata structure for an enclave." alt="" coords="298,183,365,208"/>
+<area shape="rect" href="structenclave__region.html" title="Metadata about a memory region assigned to an enclave." alt="" coords="5,94,114,120"/>
+<area shape="poly" title=" " alt="" coords="106,123,201,156,298,183,297,188,199,161,104,128"/>
+<area shape="rect" href="structthread__state.html" title="Enclave thread state." alt="" coords="138,94,232,120"/>
+<area shape="poly" title=" " alt="" coords="220,125,312,180,309,184,217,130"/>
+<area shape="rect" href="structcsrs.html" title="Supervisor Control and Status Registers (CSRs)." alt="" coords="116,5,163,31"/>
+<area shape="poly" title=" " alt="" coords="139,46,143,69,152,81,165,91,161,96,149,85,138,71,133,47"/>
+<area shape="rect" href="structctx.html" title="Thread context." alt="" coords="211,5,249,31"/>
+<area shape="poly" title=" " alt="" coords="219,46,193,95,189,92,214,44"/>
+<area shape="rect" href="structplatform__enclave__data.html" title=" " alt="" coords="255,94,408,120"/>
+<area shape="poly" title=" " alt="" coords="334,135,334,182,329,182,329,135"/>
+<area shape="rect" href="structutm.html" title=" " alt="" coords="431,94,475,120"/>
+<area shape="poly" title=" " alt="" coords="426,131,350,184,347,180,422,126"/>
+<area shape="rect" href="structepm.html" title=" " alt="" coords="499,94,545,120"/>
+<area shape="poly" title=" " alt="" coords="490,130,430,161,366,186,364,181,428,156,488,125"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -144,11 +166,27 @@ struct <a class="el" href="structthread__state.html">thread_state</a>&#160;</td>
 struct <a class="el" href="structplatform__enclave__data.html">platform_enclave_data</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ped</b></td></tr>
 <tr class="memdesc:ab29294babfbb71f2cad73718d838f7f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-specific enclave data. <br /></td></tr>
 <tr class="separator:ab29294babfbb71f2cad73718d838f7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e26eca8ba1d3a21fa5c7c219343f7cc" id="r_a8e26eca8ba1d3a21fa5c7c219343f7cc"><td class="memItemLeft" align="right" valign="top"><a id="a8e26eca8ba1d3a21fa5c7c219343f7cc" name="a8e26eca8ba1d3a21fa5c7c219343f7cc"></a>
+unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>eid</b></td></tr>
+<tr class="separator:a8e26eca8ba1d3a21fa5c7c219343f7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18e4420d98c3e075a935a58ccc70d6ed" id="r_a18e4420d98c3e075a935a58ccc70d6ed"><td class="memItemLeft" align="right" valign="top"><a id="a18e4420d98c3e075a935a58ccc70d6ed" name="a18e4420d98c3e075a935a58ccc70d6ed"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>close_on_pexit</b></td></tr>
+<tr class="separator:a18e4420d98c3e075a935a58ccc70d6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac7a3d792a3e1d01d36c6eaa5ee71953" id="r_aac7a3d792a3e1d01d36c6eaa5ee71953"><td class="memItemLeft" align="right" valign="top"><a id="aac7a3d792a3e1d01d36c6eaa5ee71953" name="aac7a3d792a3e1d01d36c6eaa5ee71953"></a>
+struct <a class="el" href="structutm.html">utm</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>utm</b></td></tr>
+<tr class="separator:aac7a3d792a3e1d01d36c6eaa5ee71953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bc03df499d969a152c8709ba919a9ef" id="r_a5bc03df499d969a152c8709ba919a9ef"><td class="memItemLeft" align="right" valign="top"><a id="a5bc03df499d969a152c8709ba919a9ef" name="a5bc03df499d969a152c8709ba919a9ef"></a>
+struct <a class="el" href="structepm.html">epm</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>epm</b></td></tr>
+<tr class="separator:a5bc03df499d969a152c8709ba919a9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d2a35fc83ca8db230ae2784be3c87e" id="r_ae8d2a35fc83ca8db230ae2784be3c87e"><td class="memItemLeft" align="right" valign="top"><a id="ae8d2a35fc83ca8db230ae2784be3c87e" name="ae8d2a35fc83ca8db230ae2784be3c87e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_init</b></td></tr>
+<tr class="separator:ae8d2a35fc83ca8db230ae2784be3c87e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Metadata structure for an enclave. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><hr/>The documentation for this struct was generated from the following files:<ul>
 <li>sm/src/<a class="el" href="enclave_8h_source.html">enclave.h</a></li>
+<li>linux-keystone-driver/<a class="el" href="keystone_8h_source.html">keystone.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

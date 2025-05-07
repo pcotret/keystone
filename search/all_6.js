@@ -5,9 +5,13 @@ var searchData=
   ['ge_5fp2_2',['ge_p2',['../structge__p2.html',1,'']]],
   ['ge_5fp3_3',['ge_p3',['../structge__p3.html',1,'']]],
   ['ge_5fprecomp_4',['ge_precomp',['../structge__precomp.html',1,'']]],
-  ['get_5fenclave_5fregion_5fbase_5',['get_enclave_region_base',['../enclave_8h.html#a994f303b6a3235021b899b58796197df',1,'enclave.c']]],
-  ['get_5fenclave_5fregion_5findex_6',['get_enclave_region_index',['../enclave_8h.html#ad55361b293626106b01e1253d2a264f8',1,'enclave.c']]],
-  ['get_5fenclave_5fregion_5fsize_7',['get_enclave_region_size',['../enclave_8h.html#a3de5d7fbd2182fe2a1fefaada22470f4',1,'enclave.c']]],
-  ['get_5fsealing_5fkey_8',['get_sealing_key',['../enclave_8h.html#ab327377ec7b88af17850f0a902577d10',1,'enclave.c']]],
-  ['gp_9',['gp',['../structctx.html#a00792acf424797300375407d69e0ff6a',1,'ctx']]]
+  ['get_5fenclave_5fby_5fid_5',['get_enclave_by_id',['../keystone_8h.html#a362a27baf57b040f6907b583e77ffc9b',1,'keystone-enclave.c']]],
+  ['get_5fenclave_5fregion_5fbase_6',['get_enclave_region_base',['../enclave_8h.html#a994f303b6a3235021b899b58796197df',1,'enclave.c']]],
+  ['get_5fenclave_5fregion_5findex_7',['get_enclave_region_index',['../enclave_8h.html#ad55361b293626106b01e1253d2a264f8',1,'enclave.c']]],
+  ['get_5fenclave_5fregion_5fsize_8',['get_enclave_region_size',['../enclave_8h.html#a3de5d7fbd2182fe2a1fefaada22470f4',1,'enclave.c']]],
+  ['get_5fsealing_5fkey_9',['get_sealing_key',['../enclave_8h.html#ab327377ec7b88af17850f0a902577d10',1,'enclave.c']]],
+  ['gp_10',['gp',['../structctx.html#a00792acf424797300375407d69e0ff6a',1,'ctx']]],
+  ['group_5ftest_5fsetup_11',['group_test_setup',['../group__cmocka__exec.html#ga246dbcbb338e4becbfef009b2bb14b78',1,'cmocka.h']]],
+  ['group_5ftest_5fteardown_12',['group_test_teardown',['../group__cmocka__exec.html#ga03159d4169e85cb92bb0eba97cfcf18d',1,'cmocka.h']]],
+  ['grouptest_13',['GroupTest',['../struct_group_test.html',1,'']]]
 ];

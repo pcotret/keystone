@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Keystone Doxygen: sm/src/thread.h File Reference</title>
+<title>Keystone Doxygen documentation: sm/src/thread.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Keystone Doxygen
+   <div id="projectname">Keystone Doxygen documentation
    </div>
   </td>
  </tr>
@@ -102,6 +102,40 @@ $(document).ready(function(){initNavTree('thread_8h.html',''); initResizable(); 
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;sbi/sbi_types.h&gt;</code><br />
 <code>#include &lt;sbi/sbi_trap.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for thread.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="thread_8h__incl.png" border="0" usemap="#asm_2src_2thread_8h" alt=""/></div>
+<map name="asm_2src_2thread_8h" id="asm_2src_2thread_8h">
+<area shape="rect" title="Thread management and context switching for enclaves." alt="" coords="66,5,177,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,113,105"/>
+<area shape="poly" title=" " alt="" coords="113,33,82,69,78,65,109,29"/>
+<area shape="rect" title=" " alt="" coords="137,79,235,105"/>
+<area shape="poly" title=" " alt="" coords="134,29,167,66,163,69,130,33"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="thread_8h__dep__incl.png" border="0" usemap="#asm_2src_2thread_8hdep" alt=""/></div>
+<map name="asm_2src_2thread_8hdep" id="asm_2src_2thread_8hdep">
+<area shape="rect" title="Thread management and context switching for enclaves." alt="" coords="262,5,373,31"/>
+<area shape="rect" href="enclave_8h.html" title="Enclave management interface and metadata structures for the Keystone security monitor." alt="" coords="257,79,378,105"/>
+<area shape="poly" title=" " alt="" coords="320,46,320,79,315,79,315,46"/>
+<area shape="rect" href="cpu_8h.html" title="CPU context management for enclaves." alt="" coords="5,153,102,178"/>
+<area shape="poly" title=" " alt="" coords="259,112,99,155,98,149,258,106"/>
+<area shape="rect" href="platform-hook_8h.html" title="Platform&#45;specific hooks for enclave lifecycle management." alt="" coords="126,153,280,178"/>
+<area shape="poly" title=" " alt="" coords="286,116,224,154,221,150,284,111"/>
+<area shape="rect" href="fu540__internal_8c_source.html" title=" " alt="" coords="173,226,326,267"/>
+<area shape="poly" title=" " alt="" coords="314,120,295,179,266,228,261,225,290,177,309,119"/>
+<area shape="rect" href="multimem_8h_source.html" title=" " alt="" coords="374,234,552,260"/>
+<area shape="poly" title=" " alt="" coords="339,114,395,176,452,231,448,235,392,180,335,118"/>
+<area shape="rect" href="plugins_8h_source.html" title=" " alt="" coords="406,153,568,178"/>
+<area shape="poly" title=" " alt="" coords="361,109,459,150,457,155,359,114"/>
+<area shape="poly" title=" " alt="" coords="220,191,240,225,236,227,215,193"/>
+<area shape="poly" title=" " alt="" coords="481,194,469,234,464,233,476,192"/>
+</map>
+</div>
 </div>
 <p><a href="thread_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -119,13 +153,13 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aca8bc6fe74de2b5686e143427136464d" id="r_aca8bc6fe74de2b5686e143427136464d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#aca8bc6fe74de2b5686e143427136464d">swap_prev_state</a> (struct <a class="el" href="structthread__state.html">thread_state</a> *state, struct sbi_trap_regs *regs, int return_on_resume)</td></tr>
+<tr class="memitem:aca8bc6fe74de2b5686e143427136464d" id="r_aca8bc6fe74de2b5686e143427136464d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#aca8bc6fe74de2b5686e143427136464d">swap_prev_state</a> (struct <a class="el" href="structthread__state.html">thread_state</a> *state, struct sbi_trap_regs *<a class="el" href="structregs.html">regs</a>, int return_on_resume)</td></tr>
 <tr class="memdesc:aca8bc6fe74de2b5686e143427136464d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap the previous and current thread states.  <br /></td></tr>
 <tr class="separator:aca8bc6fe74de2b5686e143427136464d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a679b102c3fdf7a40f3648894db6acbe7" id="r_a679b102c3fdf7a40f3648894db6acbe7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a679b102c3fdf7a40f3648894db6acbe7">swap_prev_mepc</a> (struct <a class="el" href="structthread__state.html">thread_state</a> *state, struct sbi_trap_regs *regs, uintptr_t mepc)</td></tr>
+<tr class="memitem:a679b102c3fdf7a40f3648894db6acbe7" id="r_a679b102c3fdf7a40f3648894db6acbe7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a679b102c3fdf7a40f3648894db6acbe7">swap_prev_mepc</a> (struct <a class="el" href="structthread__state.html">thread_state</a> *state, struct sbi_trap_regs *<a class="el" href="structregs.html">regs</a>, uintptr_t mepc)</td></tr>
 <tr class="memdesc:a679b102c3fdf7a40f3648894db6acbe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap the previous machine exception program counter (mepc).  <br /></td></tr>
 <tr class="separator:a679b102c3fdf7a40f3648894db6acbe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1c5fa93893261a4316ff678ca80d00c" id="r_ad1c5fa93893261a4316ff678ca80d00c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ad1c5fa93893261a4316ff678ca80d00c">swap_prev_mstatus</a> (struct <a class="el" href="structthread__state.html">thread_state</a> *state, struct sbi_trap_regs *regs, uintptr_t mstatus)</td></tr>
+<tr class="memitem:ad1c5fa93893261a4316ff678ca80d00c" id="r_ad1c5fa93893261a4316ff678ca80d00c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ad1c5fa93893261a4316ff678ca80d00c">swap_prev_mstatus</a> (struct <a class="el" href="structthread__state.html">thread_state</a> *state, struct sbi_trap_regs *<a class="el" href="structregs.html">regs</a>, uintptr_t mstatus)</td></tr>
 <tr class="memdesc:ad1c5fa93893261a4316ff678ca80d00c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap the previous machine status register (mstatus).  <br /></td></tr>
 <tr class="separator:ad1c5fa93893261a4316ff678ca80d00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fcee5bffc90e0826a6a9131d3b410c0" id="r_a6fcee5bffc90e0826a6a9131d3b410c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a6fcee5bffc90e0826a6a9131d3b410c0">swap_prev_smode_csrs</a> (struct <a class="el" href="structthread__state.html">thread_state</a> *thread)</td></tr>

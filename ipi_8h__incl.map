@@ -1,0 +1,9 @@
+<map id="sm/src/ipi.h" name="sm/src/ipi.h">
+<area shape="rect" id="Node000001" title="PMP IPI (Physical Memory Protection Inter&#45;Processor Interrupts) support for Keystone." alt="" coords="170,5,259,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,125,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,34,105,74,103,70,188,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="149,79,280,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,31,217,63,212,63,212,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="304,79,394,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="238,29,314,69,312,74,236,34"/>
+</map>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['random_0',['random',['../structrandom.html',1,'']]],
-  ['report_1',['report',['../structreport.html',1,'']]]
+  ['listnode_0',['ListNode',['../struct_list_node.html',1,'']]]
 ];

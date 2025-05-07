@@ -1,0 +1,7 @@
+<map id="report" name="report">
+<area shape="rect" id="Node000001" title="Combined report structure (enclave + SM)." alt="" coords="90,94,144,120"/>
+<area shape="rect" id="Node000002" href="$structenclave__report.html" title="Enclave attestation report structure." alt="" coords="5,5,112,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,42,111,92,107,95,73,45"/>
+<area shape="rect" id="Node000003" href="$structsm__report.html" title="Security Monitor (SM) report structure." alt="" coords="136,5,216,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,46,147,72,129,96,125,92,143,68,159,43"/>
+</map>

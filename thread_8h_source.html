@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Keystone Doxygen: sm/src/thread.h Source File</title>
+<title>Keystone Doxygen documentation: sm/src/thread.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Keystone Doxygen
+   <div id="projectname">Keystone Doxygen documentation
    </div>
   </td>
  </tr>
@@ -181,10 +181,10 @@ $(document).ready(function(){initNavTree('thread_8h_source.html',''); initResiza
 </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">/* swap previous and current thread states */</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="keywordtype">void</span> <a class="code hl_function" href="thread_8h.html#aca8bc6fe74de2b5686e143427136464d">swap_prev_state</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structthread__state.html">thread_state</a>* state, <span class="keyword">struct</span> sbi_trap_regs* regs, <span class="keywordtype">int</span> return_on_resume);</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="keywordtype">void</span> <a class="code hl_function" href="thread_8h.html#a679b102c3fdf7a40f3648894db6acbe7">swap_prev_mepc</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structthread__state.html">thread_state</a>* state, <span class="keyword">struct</span> sbi_trap_regs* regs, uintptr_t mepc);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="keywordtype">void</span> <a class="code hl_function" href="thread_8h.html#aca8bc6fe74de2b5686e143427136464d">swap_prev_state</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structthread__state.html">thread_state</a>* state, <span class="keyword">struct</span> sbi_trap_regs* <a class="code hl_struct" href="structregs.html">regs</a>, <span class="keywordtype">int</span> return_on_resume);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="keywordtype">void</span> <a class="code hl_function" href="thread_8h.html#a679b102c3fdf7a40f3648894db6acbe7">swap_prev_mepc</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structthread__state.html">thread_state</a>* state, <span class="keyword">struct</span> sbi_trap_regs* <a class="code hl_struct" href="structregs.html">regs</a>, uintptr_t mepc);</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="keywordtype">void</span> <a class="code hl_function" href="thread_8h.html#ad1c5fa93893261a4316ff678ca80d00c">swap_prev_mstatus</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structthread__state.html">thread_state</a>* state, <span class="keyword">struct</span> sbi_trap_regs* regs, uintptr_t mstatus);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="keywordtype">void</span> <a class="code hl_function" href="thread_8h.html#ad1c5fa93893261a4316ff678ca80d00c">swap_prev_mstatus</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structthread__state.html">thread_state</a>* state, <span class="keyword">struct</span> sbi_trap_regs* <a class="code hl_struct" href="structregs.html">regs</a>, uintptr_t mstatus);</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="keywordtype">void</span> <a class="code hl_function" href="thread_8h.html#a6fcee5bffc90e0826a6a9131d3b410c0">swap_prev_smode_csrs</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structthread__state.html">thread_state</a>* thread);</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="keywordtype">void</span> <a class="code hl_function" href="thread_8h.html#a648fcc7f1473f8d7f6136d87d43f7542">switch_vector_enclave</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
@@ -220,6 +220,7 @@ $(document).ready(function(){initNavTree('thread_8h_source.html',''); initResiza
 <div class="ttc" id="astructctx_html_a99585884d1382913a9e72695390b7306"><div class="ttname"><a href="structctx.html#a99585884d1382913a9e72695390b7306">ctx::s2</a></div><div class="ttdeci">uintptr_t s2</div><div class="ttdef"><b>Definition</b> thread.h:42</div></div>
 <div class="ttc" id="astructctx_html_aa5d896d0c320120202fffb8e25ab0973"><div class="ttname"><a href="structctx.html#aa5d896d0c320120202fffb8e25ab0973">ctx::sp</a></div><div class="ttdeci">uintptr_t sp</div><div class="ttdef"><b>Definition</b> thread.h:26</div></div>
 <div class="ttc" id="astructctx_html_afa6a1ee7be87aa3bba081a5be3d1332e"><div class="ttname"><a href="structctx.html#afa6a1ee7be87aa3bba081a5be3d1332e">ctx::s0</a></div><div class="ttdeci">uintptr_t s0</div><div class="ttdef"><b>Definition</b> thread.h:32</div></div>
+<div class="ttc" id="astructregs_html"><div class="ttname"><a href="structregs.html">regs</a></div><div class="ttdef"><b>Definition</b> regs.h:10</div></div>
 <div class="ttc" id="astructthread__state_html"><div class="ttname"><a href="structthread__state.html">thread_state</a></div><div class="ttdoc">Enclave thread state.</div><div class="ttdef"><b>Definition</b> thread.h:95</div></div>
 <div class="ttc" id="astructthread__state_html_a2c684fd28400424d88a44917128beff6"><div class="ttname"><a href="structthread__state.html#a2c684fd28400424d88a44917128beff6">thread_state::prev_csrs</a></div><div class="ttdeci">struct csrs prev_csrs</div><div class="ttdef"><b>Definition</b> thread.h:99</div></div>
 <div class="ttc" id="astructthread__state_html_a32f03d325ce0215848c643ba35ae82c7"><div class="ttname"><a href="structthread__state.html#a32f03d325ce0215848c643ba35ae82c7">thread_state::prev_state</a></div><div class="ttdeci">struct ctx prev_state</div><div class="ttdef"><b>Definition</b> thread.h:100</div></div>

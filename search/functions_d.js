@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['validate_5fand_5fhash_5fenclave_0',['validate_and_hash_enclave',['../enclave_8h.html#a0b5539e3f49aa66c1f4cebdc6569c62d',1,'attest.c']]]
+  ['trap_5fvector_5fenclave_0',['trap_vector_enclave',['../thread_8h.html#a22e307929312ad228ae7857031ac7a61',1,'thread.h']]]
 ];

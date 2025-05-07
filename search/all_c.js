@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['osm_5fpmp_5fset_0',['osm_pmp_set',['../sm_8h.html#a83c1d95e0a11045651b2464bde124157',1,'sm.c']]]
+  ['n_5fthread_0',['n_thread',['../structenclave.html#a84fb4056dfca359ac6663076162a8133',1,'enclave']]]
 ];
