@@ -1,5 +1,5 @@
 <map id="get_enclave_by_id" name="get_enclave_by_id">
-<area shape="rect" id="Node000001" title="Look up an enclave by its UID." alt="" coords="176,31,304,56"/>
+<area shape="rect" id="Node000001" title="Get the physical address of an enclave&#39;s EPM." alt="" coords="176,31,304,56"/>
 <area shape="rect" id="Node000002" href="$keystone_8c.html#a6744ed9121da8eadf28d48dbc5bd7269" title="Memory mapping function for the Keystone device." alt="" coords="8,5,125,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,35,125,29,125,24,161,29"/>
 <area shape="rect" id="Node000003" href="$keystone-ioctl_8c.html#afe870736e84fdd466dba51ec71ebd6dd" title="Release function for the Keystone device." alt="" coords="5,55,128,80"/>

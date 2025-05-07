@@ -165,16 +165,16 @@ Functions</h2></td></tr>
 <tr class="memdesc:a33f87ed11e05daae83697341e1752b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an enclave and free all associated resources.  <br /></td></tr>
 <tr class="separator:a33f87ed11e05daae83697341e1752b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49dc4e494236d0b4313f258726f7eb1d" id="r_a49dc4e494236d0b4313f258726f7eb1d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structenclave.html">enclave</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keystone-enclave_8c.html#a49dc4e494236d0b4313f258726f7eb1d">create_enclave</a> (unsigned long min_pages)</td></tr>
-<tr class="memdesc:a49dc4e494236d0b4313f258726f7eb1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and initialize a new enclave.  <br /></td></tr>
+<tr class="memdesc:a49dc4e494236d0b4313f258726f7eb1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new enclave.  <br /></td></tr>
 <tr class="separator:a49dc4e494236d0b4313f258726f7eb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5c16d7035ad239196f95f3ff043a653" id="r_ab5c16d7035ad239196f95f3ff043a653"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keystone-enclave_8c.html#ab5c16d7035ad239196f95f3ff043a653">enclave_idr_alloc</a> (struct <a class="el" href="structenclave.html">enclave</a> *<a class="el" href="structenclave.html">enclave</a>)</td></tr>
-<tr class="memdesc:ab5c16d7035ad239196f95f3ff043a653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a unique enclave ID and register it in the IDR.  <br /></td></tr>
+<tr class="memdesc:ab5c16d7035ad239196f95f3ff043a653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate an ID for the enclave in the IDR.  <br /></td></tr>
 <tr class="separator:ab5c16d7035ad239196f95f3ff043a653"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d2343acb63d9f6369825ee37bdbddca" id="r_a6d2343acb63d9f6369825ee37bdbddca"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structenclave.html">enclave</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keystone-enclave_8c.html#a6d2343acb63d9f6369825ee37bdbddca">enclave_idr_remove</a> (unsigned int ueid)</td></tr>
-<tr class="memdesc:a6d2343acb63d9f6369825ee37bdbddca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove and return an enclave from the IDR.  <br /></td></tr>
+<tr class="memdesc:a6d2343acb63d9f6369825ee37bdbddca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an enclave from the IDR by its ID.  <br /></td></tr>
 <tr class="separator:a6d2343acb63d9f6369825ee37bdbddca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a362a27baf57b040f6907b583e77ffc9b" id="r_a362a27baf57b040f6907b583e77ffc9b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structenclave.html">enclave</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keystone-enclave_8c.html#a362a27baf57b040f6907b583e77ffc9b">get_enclave_by_id</a> (unsigned int ueid)</td></tr>
-<tr class="memdesc:a362a27baf57b040f6907b583e77ffc9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up an enclave by its UID.  <br /></td></tr>
+<tr class="memdesc:a362a27baf57b040f6907b583e77ffc9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the physical address of an enclave's EPM.  <br /></td></tr>
 <tr class="separator:a362a27baf57b040f6907b583e77ffc9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -196,22 +196,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Allocate and initialize a new enclave. </p>
-<p>Create a new enclave.</p>
-<p>Allocates memory for a new <code>struct enclave</code>, creates its EPM, and sets initial metadata values.</p>
+<p>Create a new enclave. </p>
+<p>This function creates a new enclave with the specified number of pages.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">min_pages</td><td>Minimum number of pages for the enclave's EPM. </td></tr>
+    <tr><td class="paramname">min_pages</td><td>The minimum number of pages required for the enclave. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the newly created enclave, or NULL on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created enclave. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="keystone-enclave_8c_a49dc4e494236d0b4313f258726f7eb1d_cgraph.png" border="0" usemap="#akeystone-enclave_8c_a49dc4e494236d0b4313f258726f7eb1d_cgraph" alt=""/></div>
 <map name="akeystone-enclave_8c_a49dc4e494236d0b4313f258726f7eb1d_cgraph" id="akeystone-enclave_8c_a49dc4e494236d0b4313f258726f7eb1d_cgraph">
-<area shape="rect" title="Allocate and initialize a new enclave." alt="" coords="5,55,115,80"/>
+<area shape="rect" title="Create a new enclave." alt="" coords="5,55,115,80"/>
 <area shape="rect" href="keystone-enclave_8c.html#a33f87ed11e05daae83697341e1752b3e" title="Destroy an enclave and free all associated resources." alt="" coords="163,29,278,55"/>
 <area shape="poly" title=" " alt="" coords="115,56,147,51,148,56,116,61"/>
 <area shape="rect" href="keystone-page_8c.html#a8620245b580007505b10f18c8edcbd1e" title="Initialize the enclave private memory (EPM)." alt="" coords="185,79,256,104"/>
@@ -242,7 +241,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Destroy an enclave and free all associated resources. </p>
-<p>Destroy an existing enclave.</p>
 <p>This function safely destroys an enclave by freeing its EPM and UTM, even if only partially initialized.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -269,7 +267,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="keystone-enclave_8c_a33f87ed11e05daae83697341e1752b3e_icgraph.png" border="0" usemap="#akeystone-enclave_8c_a33f87ed11e05daae83697341e1752b3e_icgraph" alt=""/></div>
 <map name="akeystone-enclave_8c_a33f87ed11e05daae83697341e1752b3e_icgraph" id="akeystone-enclave_8c_a33f87ed11e05daae83697341e1752b3e_icgraph">
 <area shape="rect" title="Destroy an enclave and free all associated resources." alt="" coords="163,5,278,31"/>
-<area shape="rect" href="keystone-enclave_8c.html#a49dc4e494236d0b4313f258726f7eb1d" title="Allocate and initialize a new enclave." alt="" coords="5,5,115,31"/>
+<area shape="rect" href="keystone-enclave_8c.html#a49dc4e494236d0b4313f258726f7eb1d" title="Create a new enclave." alt="" coords="5,5,115,31"/>
 <area shape="poly" title=" " alt="" coords="147,21,115,21,115,16,147,16"/>
 </map>
 </div>
@@ -292,16 +290,15 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Allocate a unique enclave ID and register it in the IDR. </p>
-<p>Allocate an ID for the enclave in the IDR.</p>
-<p>Thread-safe allocation of a UID for a given enclave.</p>
+<p>Allocate an ID for the enclave in the IDR. </p>
+<p>This function allocates an ID for the given enclave in the IDR.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">enclave</td><td>Pointer to the enclave to register. </td></tr>
+    <tr><td class="paramname">enclave</td><td>The enclave to allocate an ID for. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>UID in the range [ENCLAVE_IDR_MIN, ENCLAVE_IDR_MAX), or 0 on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The allocated ID. </dd></dl>
 
 </div>
 </div>
@@ -321,16 +318,15 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Remove and return an enclave from the IDR. </p>
-<p>Remove an enclave from the IDR by its ID.</p>
-<p>Thread-safe removal of an enclave identified by UID.</p>
+<p>Remove an enclave from the IDR by its ID. </p>
+<p>This function removes the specified enclave from the IDR.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ueid</td><td>The UID of the enclave. </td></tr>
+    <tr><td class="paramname">ueid</td><td>The ID of the enclave to remove. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the removed enclave, or NULL if not found. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the removed enclave, or NULL if not found. </dd></dl>
 
 </div>
 </div>
@@ -350,17 +346,8 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Look up an enclave by its UID. </p>
+<p>Get the physical address of an enclave's EPM. </p>
 <p>Retrieve an enclave by its identifier.</p>
-<p>Get the physical address of an enclave's EPM.</p>
-<p>Thread-safe lookup of the enclave registered with a given UID.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ueid</td><td>UID of the enclave to look up. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the enclave, or NULL if not found.</dd></dl>
 <p>This function retrieves the physical address of the specified enclave's EPM.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -374,7 +361,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="keystone-enclave_8c_a362a27baf57b040f6907b583e77ffc9b_icgraph.png" border="0" usemap="#akeystone-enclave_8c_a362a27baf57b040f6907b583e77ffc9b_icgraph" alt=""/></div>
 <map name="akeystone-enclave_8c_a362a27baf57b040f6907b583e77ffc9b_icgraph" id="akeystone-enclave_8c_a362a27baf57b040f6907b583e77ffc9b_icgraph">
-<area shape="rect" title="Look up an enclave by its UID." alt="" coords="176,31,304,56"/>
+<area shape="rect" title="Get the physical address of an enclave&#39;s EPM." alt="" coords="176,31,304,56"/>
 <area shape="rect" href="keystone_8c.html#a6744ed9121da8eadf28d48dbc5bd7269" title="Memory mapping function for the Keystone device." alt="" coords="8,5,125,31"/>
 <area shape="poly" title=" " alt="" coords="160,35,125,29,125,24,161,29"/>
 <area shape="rect" href="keystone-ioctl_8c.html#afe870736e84fdd466dba51ec71ebd6dd" title="Release function for the Keystone device." alt="" coords="5,55,128,80"/>
