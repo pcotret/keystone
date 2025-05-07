@@ -10,7 +10,8 @@ var searchData=
   ['thread_2eh_7',['thread.h',['../thread_8h.html',1,'']]],
   ['thread_5fstate_8',['thread_state',['../structthread__state.html',1,'']]],
   ['threads_9',['threads',['../structenclave.html#a0c4e543e437aaed2a600cdcfdbf8344c',1,'enclave']]],
-  ['tp_10',['tp',['../structctx.html#a8898279766d67b9f290b8d0c47963ee2',1,'ctx']]],
-  ['trap_5fvector_5fenclave_11',['trap_vector_enclave',['../thread_8h.html#a22e307929312ad228ae7857031ac7a61',1,'thread.h']]],
-  ['type_12',['type',['../structenclave__region.html#a03f79913f3cf0229acbb34fc8bd13641',1,'enclave_region::type'],['../structsbi__pmp__ipi__info.html#af94a2cceab63fd190a29a0444d7a6894',1,'sbi_pmp_ipi_info::type']]]
+  ['timex_2eh_10',['timex.h',['../timex_8h.html',1,'']]],
+  ['tp_11',['tp',['../structctx.html#a8898279766d67b9f290b8d0c47963ee2',1,'ctx']]],
+  ['trap_5fvector_5fenclave_12',['trap_vector_enclave',['../thread_8h.html#a22e307929312ad228ae7857031ac7a61',1,'thread.h']]],
+  ['type_13',['type',['../structenclave__region.html#a03f79913f3cf0229acbb34fc8bd13641',1,'enclave_region::type'],['../structsbi__pmp__ipi__info.html#af94a2cceab63fd190a29a0444d7a6894',1,'sbi_pmp_ipi_info::type']]]
 ];

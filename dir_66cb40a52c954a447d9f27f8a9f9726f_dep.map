@@ -1,9 +1,16 @@
 <map id="runtime/test/cmocka" name="runtime/test/cmocka">
 <area shape="rect" id="node2" href="dir_fbc93bc9d4fb7d30af937d35229a9672.html" title="coverity" alt="" coords="355,63,421,89"/>
 <area shape="rect" id="node3" href="dir_27b39982e18caf71f9f15e838fad319c.html" title="example" alt="" coords="261,63,331,89"/>
+<area shape="rect" id="node7" href="dir_67b55deb5940a6b63a778e938eb2b24d.html" title="include" alt="" coords="101,137,163,162"/>
+<area shape="poly" id="edge1" href="dir_000011_000018.html" alt="" coords="283,92,251,112,214,128,179,139,177,134,213,123,248,108,280,87"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000011_000018.html" title="6" alt="" coords="180,137,187,152"/>
 <area shape="rect" id="node4" href="dir_0034fad65a1372ab1310bfc8147c5347.html" title="include" alt="" coords="176,63,238,89"/>
 <area shape="rect" id="node5" href="dir_ff4d7b50a736e2476ef1d5494a9fd5a1.html" title="src" alt="" coords="112,63,152,89"/>
+<area shape="poly" id="edge2" href="dir_000035_000018.html" alt="" coords="135,89,135,121,129,121,129,89"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000035_000018.html" title="1" alt="" coords="137,111,144,126"/>
 <area shape="rect" id="node6" href="dir_5a2c233ef8a2128c3734bbbfae3837b1.html" title="tests" alt="" coords="38,63,88,89"/>
+<area shape="poly" id="edge3" href="dir_000040_000018.html" alt="" coords="76,87,112,124,108,127,72,91"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000040_000018.html" title="1" alt="" coords="110,110,117,125"/>
 <area shape="rect" id="clust2" href="dir_66cb40a52c954a447d9f27f8a9f9726f.html" alt="" coords="27,52,523,99"/>
 <area shape="rect" id="clust1" href="dir_2e2a309999b05691ad2c25fe32339ba5.html" title="test" alt="" coords="16,16,533,110"/>
 </map>

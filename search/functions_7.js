@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['kdf_0',['kdf',['../crypto_8h.html#ae271e48f1037e105a69e2736ae4c7c99',1,'crypto.c']]],
-  ['keystone_5fioctl_1',['keystone_ioctl',['../keystone_8h.html#a390615a1ae019a3592aba2b2c4c620c4',1,'keystone-ioctl.c']]],
-  ['keystone_5fmmap_2',['keystone_mmap',['../keystone_8h.html#a6744ed9121da8eadf28d48dbc5bd7269',1,'keystone.c']]],
-  ['keystone_5frelease_3',['keystone_release',['../keystone_8h.html#afe870736e84fdd466dba51ec71ebd6dd',1,'keystone-ioctl.c']]],
-  ['keystone_5frtld_5finit_5fapp_4',['keystone_rtld_init_app',['../keystone_8h.html#af3dd40ce2d21bcd29ef69d28c30d708c',1,'keystone.h']]],
-  ['keystone_5frtld_5finit_5fruntime_5',['keystone_rtld_init_runtime',['../keystone_8h.html#aee824bc41aad11a1e76380bebac426fc',1,'keystone.h']]],
-  ['keystone_5frtld_5finit_5funtrusted_6',['keystone_rtld_init_untrusted',['../keystone_8h.html#ab54fc6f89b72b510e038a7d2b35867ae',1,'keystone.h']]]
+  ['handle_5fpmp_5fipi_0',['handle_pmp_ipi',['../pmp_8h.html#ae8eae9cce3448dfb565ee9294ea9dcd3',1,'pmp.h']]],
+  ['handle_5fsyscall_1',['handle_syscall',['../syscall_8c.html#af9aafc4c23ef0fe1f8914b9354d23bbc',1,'handle_syscall(struct encl_ctx *ctx):&#160;syscall.c'],['../syscall_8h.html#af9aafc4c23ef0fe1f8914b9354d23bbc',1,'handle_syscall(struct encl_ctx *ctx):&#160;syscall.c']]],
+  ['hash_5fextend_2',['hash_extend',['../crypto_8h.html#a352108cee37e85428b1448bde68b2c30',1,'crypto.c']]],
+  ['hash_5fextend_5fpage_3',['hash_extend_page',['../crypto_8h.html#af461cb356a4a0c97cfd1786fdfdfb9df',1,'crypto.c']]],
+  ['hash_5ffinalize_4',['hash_finalize',['../crypto_8h.html#a5c5b61e4db79855426c811dc88f8bc37',1,'crypto.c']]],
+  ['hash_5finit_5',['hash_init',['../crypto_8h.html#a3733e91366067c4fcac26a8018bd67f6',1,'crypto.c']]]
 ];

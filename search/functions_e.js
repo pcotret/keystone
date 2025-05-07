@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['utm_5fdestroy_0',['utm_destroy',['../keystone_8h.html#a395abb5a07e84ea023d2c356e6254e1c',1,'keystone-page.c']]],
-  ['utm_5finit_1',['utm_init',['../keystone_8h.html#ad1b8c2c2e4fb99672359904999ae7d7a',1,'keystone-page.c']]]
+  ['resume_5fenclave_0',['resume_enclave',['../enclave_8h.html#adea50bfac43a7eefd85f6a0a0d2b8d5d',1,'enclave.c']]],
+  ['run_5fenclave_1',['run_enclave',['../enclave_8h.html#ae4dda0294501e10fb583acd0447402f3',1,'enclave.c']]]
 ];

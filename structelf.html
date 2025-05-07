@@ -96,19 +96,69 @@ $(document).ready(function(){initNavTree('structelf.html',''); initResizable(); 
   <div class="headertitle"><div class="title">elf Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Represents an ELF file in memory.  
+ <a href="structelf.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="loader_2elf_8h_source.html">elf.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a51781bcfff3700e97ca8547a2ad15c30" id="r_a51781bcfff3700e97ca8547a2ad15c30"><td class="memItemLeft" align="right" valign="top"><a id="a51781bcfff3700e97ca8547a2ad15c30" name="a51781bcfff3700e97ca8547a2ad15c30"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>elfFile</b></td></tr>
+<tr class="memitem:a51781bcfff3700e97ca8547a2ad15c30" id="r_a51781bcfff3700e97ca8547a2ad15c30"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structelf.html#a51781bcfff3700e97ca8547a2ad15c30">elfFile</a></td></tr>
 <tr class="separator:a51781bcfff3700e97ca8547a2ad15c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a88e53e1de2298c32310558bcdcce9b" id="r_a5a88e53e1de2298c32310558bcdcce9b"><td class="memItemLeft" align="right" valign="top"><a id="a5a88e53e1de2298c32310558bcdcce9b" name="a5a88e53e1de2298c32310558bcdcce9b"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>elfSize</b></td></tr>
+<tr class="memitem:a5a88e53e1de2298c32310558bcdcce9b" id="r_a5a88e53e1de2298c32310558bcdcce9b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structelf.html#a5a88e53e1de2298c32310558bcdcce9b">elfSize</a></td></tr>
 <tr class="separator:a5a88e53e1de2298c32310558bcdcce9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae4bc973b0966b1e1be804fae7ac6635" id="r_aae4bc973b0966b1e1be804fae7ac6635"><td class="memItemLeft" align="right" valign="top"><a id="aae4bc973b0966b1e1be804fae7ac6635" name="aae4bc973b0966b1e1be804fae7ac6635"></a>
-unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>elfClass</b></td></tr>
+<tr class="memitem:aae4bc973b0966b1e1be804fae7ac6635" id="r_aae4bc973b0966b1e1be804fae7ac6635"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structelf.html#aae4bc973b0966b1e1be804fae7ac6635">elfClass</a></td></tr>
 <tr class="separator:aae4bc973b0966b1e1be804fae7ac6635"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents an ELF file in memory. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="aae4bc973b0966b1e1be804fae7ac6635" name="aae4bc973b0966b1e1be804fae7ac6635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae4bc973b0966b1e1be804fae7ac6635">&#9670;&#160;</a></span>elfClass</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char elf::elfClass</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ELF class: 32-bit or 64-bit </p>
+
+</div>
+</div>
+<a id="a51781bcfff3700e97ca8547a2ad15c30" name="a51781bcfff3700e97ca8547a2ad15c30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51781bcfff3700e97ca8547a2ad15c30">&#9670;&#160;</a></span>elfFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* elf::elfFile</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pointer to the ELF file in memory </p>
+
+</div>
+</div>
+<a id="a5a88e53e1de2298c32310558bcdcce9b" name="a5a88e53e1de2298c32310558bcdcce9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a88e53e1de2298c32310558bcdcce9b">&#9670;&#160;</a></span>elfSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t elf::elfSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Size of the ELF file in bytes </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>runtime/include/loader/<a class="el" href="loader_2elf_8h_source.html">elf.h</a></li>
 </ul>

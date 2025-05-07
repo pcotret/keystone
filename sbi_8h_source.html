@@ -98,45 +98,56 @@ $(document).ready(function(){initNavTree('sbi_8h_source.html',''); initResizable
   <div class="headertitle"><div class="title">sbi.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//******************************************************************************</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Copyright (c) 2018, The Regents of the University of California (Regents).</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// All Rights Reserved. See LICENSE for license details.</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef __SBI_H_</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define __SBI_H_</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;sm_call.h&quot;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>sbi_putchar(<span class="keywordtype">char</span> c);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>sbi_set_timer(uint64_t stime_value);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>uintptr_t</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>sbi_stop_enclave(uint64_t request);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>sbi_exit_enclave(uint64_t retval);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>uintptr_t</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>sbi_random();</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>uintptr_t</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>sbi_query_multimem(<span class="keywordtype">size_t</span> *size);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>uintptr_t</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>sbi_query_multimem_addr(uintptr_t *addr);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>uintptr_t</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>sbi_attest_enclave(<span class="keywordtype">void</span>* <a class="code hl_struct" href="structreport.html">report</a>, <span class="keywordtype">void</span>* buf, uintptr_t len);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>uintptr_t</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>sbi_get_sealing_key(uintptr_t key_struct, uintptr_t key_ident, uintptr_t len);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif</span></div>
+<a href="sbi_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//******************************************************************************</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Copyright (c) 2018, The Regents of the University of California (Regents).</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// All Rights Reserved. See LICENSE for license details.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef __SBI_H_</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define __SBI_H_</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;sm_call.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">void</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><a class="code hl_function" href="sbi_8h.html#ad98accde9191fc28c61e613374860909">sbi_putchar</a>(<span class="keywordtype">char</span> c);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keywordtype">void</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><a class="code hl_function" href="sbi_8h.html#ad16fa478932e718f2882a535fa100c85">sbi_set_timer</a>(uint64_t stime_value);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>uintptr_t</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><a class="code hl_function" href="sbi_8h.html#a0687839f8443fc62b12b30f6952e561d">sbi_stop_enclave</a>(uint64_t request);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keywordtype">void</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><a class="code hl_function" href="sbi_8h.html#a658be33bffb4505dffa09101e19a8139">sbi_exit_enclave</a>(uint64_t retval);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>uintptr_t</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><a class="code hl_function" href="sbi_8h.html#afae8ee0aa373c286ce7939717c98c7dc">sbi_random</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>uintptr_t</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><a class="code hl_function" href="sbi_8h.html#a4228b3dbbfb294a4508d6479c2d78661">sbi_query_multimem</a>(<span class="keywordtype">size_t</span> *size);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>uintptr_t</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><a class="code hl_function" href="sbi_8h.html#a59dcebbff597051a0f4156e0f358cf61">sbi_query_multimem_addr</a>(uintptr_t *addr);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>uintptr_t</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><a class="code hl_function" href="sbi_8h.html#a24f19b92c8c3f83a4e21684775e410b2">sbi_attest_enclave</a>(<span class="keywordtype">void</span>* <a class="code hl_struct" href="structreport.html">report</a>, <span class="keywordtype">void</span>* buf, uintptr_t len);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>uintptr_t</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><a class="code hl_function" href="sbi_8h.html#af46ab7aeab168f9a2d4b64aff88a8cfa">sbi_get_sealing_key</a>(uintptr_t key_struct, uintptr_t key_ident, uintptr_t len);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="asbi_8h_html_a0687839f8443fc62b12b30f6952e561d"><div class="ttname"><a href="sbi_8h.html#a0687839f8443fc62b12b30f6952e561d">sbi_stop_enclave</a></div><div class="ttdeci">uintptr_t sbi_stop_enclave(uint64_t request)</div><div class="ttdoc">Stop the current enclave and return to the host.</div><div class="ttdef"><b>Definition</b> sbi.c:45</div></div>
+<div class="ttc" id="asbi_8h_html_a24f19b92c8c3f83a4e21684775e410b2"><div class="ttname"><a href="sbi_8h.html#a24f19b92c8c3f83a4e21684775e410b2">sbi_attest_enclave</a></div><div class="ttdeci">uintptr_t sbi_attest_enclave(void *report, void *buf, uintptr_t len)</div><div class="ttdoc">Request a remote attestation report.</div><div class="ttdef"><b>Definition</b> sbi.c:74</div></div>
+<div class="ttc" id="asbi_8h_html_a4228b3dbbfb294a4508d6479c2d78661"><div class="ttname"><a href="sbi_8h.html#a4228b3dbbfb294a4508d6479c2d78661">sbi_query_multimem</a></div><div class="ttdeci">uintptr_t sbi_query_multimem(size_t *size)</div><div class="ttdoc">Query the size of the available multi-memory region.</div><div class="ttdef"><b>Definition</b> sbi.c:62</div></div>
+<div class="ttc" id="asbi_8h_html_a59dcebbff597051a0f4156e0f358cf61"><div class="ttname"><a href="sbi_8h.html#a59dcebbff597051a0f4156e0f358cf61">sbi_query_multimem_addr</a></div><div class="ttdeci">uintptr_t sbi_query_multimem_addr(uintptr_t *addr)</div><div class="ttdoc">Query the base address of the multi-memory region.</div><div class="ttdef"><b>Definition</b> sbi.c:68</div></div>
+<div class="ttc" id="asbi_8h_html_a658be33bffb4505dffa09101e19a8139"><div class="ttname"><a href="sbi_8h.html#a658be33bffb4505dffa09101e19a8139">sbi_exit_enclave</a></div><div class="ttdeci">void sbi_exit_enclave(uint64_t retval)</div><div class="ttdoc">Exit the current enclave permanently and return a value.</div><div class="ttdef"><b>Definition</b> sbi.c:50</div></div>
+<div class="ttc" id="asbi_8h_html_ad16fa478932e718f2882a535fa100c85"><div class="ttname"><a href="sbi_8h.html#ad16fa478932e718f2882a535fa100c85">sbi_set_timer</a></div><div class="ttdeci">void sbi_set_timer(uint64_t stime_value)</div><div class="ttdoc">Set a timer interrupt for the calling hart.</div><div class="ttdef"><b>Definition</b> sbi.c:36</div></div>
+<div class="ttc" id="asbi_8h_html_ad98accde9191fc28c61e613374860909"><div class="ttname"><a href="sbi_8h.html#ad98accde9191fc28c61e613374860909">sbi_putchar</a></div><div class="ttdeci">void sbi_putchar(char c)</div><div class="ttdoc">Print a character to the console (via SBI).</div><div class="ttdef"><b>Definition</b> sbi.c:31</div></div>
+<div class="ttc" id="asbi_8h_html_af46ab7aeab168f9a2d4b64aff88a8cfa"><div class="ttname"><a href="sbi_8h.html#af46ab7aeab168f9a2d4b64aff88a8cfa">sbi_get_sealing_key</a></div><div class="ttdeci">uintptr_t sbi_get_sealing_key(uintptr_t key_struct, uintptr_t key_ident, uintptr_t len)</div><div class="ttdoc">Retrieve a sealing key for the enclave.</div><div class="ttdef"><b>Definition</b> sbi.c:79</div></div>
+<div class="ttc" id="asbi_8h_html_afae8ee0aa373c286ce7939717c98c7dc"><div class="ttname"><a href="sbi_8h.html#afae8ee0aa373c286ce7939717c98c7dc">sbi_random</a></div><div class="ttdeci">uintptr_t sbi_random()</div><div class="ttdoc">Generate a random number using hardware RNG.</div><div class="ttdef"><b>Definition</b> sbi.c:55</div></div>
 <div class="ttc" id="astructreport_html"><div class="ttname"><a href="structreport.html">report</a></div><div class="ttdoc">Combined report structure (enclave + SM).</div><div class="ttdef"><b>Definition</b> enclave.h:117</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_cb031e414f281a658b23dddb30bb9d2c.html">runtime</a></li><li class="navelem"><a class="el" href="dir_67b55deb5940a6b63a778e938eb2b24d.html">include</a></li><li class="navelem"><a class="el" href="dir_e3064426a58bb58c58dea8938c4fd3f9.html">call</a></li><li class="navelem"><b>sbi.h</b></li>
+    <li class="navelem"><a class="el" href="dir_cb031e414f281a658b23dddb30bb9d2c.html">runtime</a></li><li class="navelem"><a class="el" href="dir_67b55deb5940a6b63a778e938eb2b24d.html">include</a></li><li class="navelem"><a class="el" href="dir_e3064426a58bb58c58dea8938c4fd3f9.html">call</a></li><li class="navelem"><a class="el" href="sbi_8h.html">sbi.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

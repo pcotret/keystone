@@ -98,37 +98,42 @@ $(document).ready(function(){initNavTree('linux__wrap_8h_source.html',''); initR
   <div class="headertitle"><div class="title">linux_wrap.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifdef USE_LINUX_SYSCALL</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#ifndef _LINUX_WRAP_H_</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#define _LINUX_WRAP_H_</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;bits/types/sigset_t.h&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<a href="linux__wrap_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifdef USE_LINUX_SYSCALL</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef _LINUX_WRAP_H_</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define _LINUX_WRAP_H_</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">struct </span>timespec;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>uintptr_t linux_uname(<span class="keywordtype">void</span>* buf);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>uintptr_t linux_clock_gettime(__clockid_t clock, <span class="keyword">struct</span> timespec *tp);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>uintptr_t linux_rt_sigprocmask(<span class="keywordtype">int</span> how, <span class="keyword">const</span> sigset_t *set, sigset_t *oldset);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>uintptr_t linux_getrandom(<span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> buflen, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> flags);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>uintptr_t linux_getpid();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>uintptr_t linux_set_tid_address(<span class="keywordtype">int</span>* tidptr);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>uintptr_t linux_RET_ZERO_wrap(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> which);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>uintptr_t linux_RET_BAD_wrap(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> which);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>uintptr_t syscall_munmap(<span class="keywordtype">void</span> *addr, <span class="keywordtype">size_t</span> length);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>uintptr_t syscall_mmap(<span class="keywordtype">void</span> *addr, <span class="keywordtype">size_t</span> length, <span class="keywordtype">int</span> prot, <span class="keywordtype">int</span> flags,</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                  <span class="keywordtype">int</span> fd, __off_t offset);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>uintptr_t syscall_mprotect(<span class="keywordtype">void</span> *addr, <span class="keywordtype">size_t</span> len, <span class="keywordtype">int</span> prot);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>uintptr_t syscall_brk(<span class="keywordtype">void</span>* addr);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif </span><span class="comment">/* _LINUX_WRAP_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif </span><span class="comment">/* USE_LINUX_SYSCALL */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;bits/types/sigset_t.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">struct </span>timespec;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>uintptr_t linux_uname(<span class="keywordtype">void</span>* buf);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>uintptr_t linux_clock_gettime(__clockid_t clock, <span class="keyword">struct</span> timespec *tp);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>uintptr_t linux_rt_sigprocmask(<span class="keywordtype">int</span> how, <span class="keyword">const</span> sigset_t *set, sigset_t *oldset);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>uintptr_t linux_getrandom(<span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> buflen, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> flags);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>uintptr_t linux_getpid();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>uintptr_t linux_set_tid_address(<span class="keywordtype">int</span>* tidptr);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>uintptr_t linux_RET_ZERO_wrap(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> which);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>uintptr_t linux_RET_BAD_wrap(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> which);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>uintptr_t syscall_munmap(<span class="keywordtype">void</span> *addr, <span class="keywordtype">size_t</span> length);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>uintptr_t syscall_mmap(<span class="keywordtype">void</span> *addr, <span class="keywordtype">size_t</span> length, <span class="keywordtype">int</span> prot, <span class="keywordtype">int</span> flags,</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                  <span class="keywordtype">int</span> fd, __off_t offset);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>uintptr_t syscall_mprotect(<span class="keywordtype">void</span> *addr, <span class="keywordtype">size_t</span> len, <span class="keywordtype">int</span> prot);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>uintptr_t syscall_brk(<span class="keywordtype">void</span>* addr);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">#endif </span><span class="comment">/* _LINUX_WRAP_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#endif </span><span class="comment">/* USE_LINUX_SYSCALL */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_cb031e414f281a658b23dddb30bb9d2c.html">runtime</a></li><li class="navelem"><a class="el" href="dir_67b55deb5940a6b63a778e938eb2b24d.html">include</a></li><li class="navelem"><a class="el" href="dir_e3064426a58bb58c58dea8938c4fd3f9.html">call</a></li><li class="navelem"><b>linux_wrap.h</b></li>
+    <li class="navelem"><a class="el" href="dir_cb031e414f281a658b23dddb30bb9d2c.html">runtime</a></li><li class="navelem"><a class="el" href="dir_67b55deb5940a6b63a778e938eb2b24d.html">include</a></li><li class="navelem"><a class="el" href="dir_e3064426a58bb58c58dea8938c4fd3f9.html">call</a></li><li class="navelem"><a class="el" href="linux__wrap_8h.html">linux_wrap.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

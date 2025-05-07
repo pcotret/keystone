@@ -10,7 +10,7 @@ var annotated_dup =
     [ "csrs", "structcsrs.html", "structcsrs" ],
     [ "ctx", "structctx.html", "structctx" ],
     [ "DatabaseConnection", "structDatabaseConnection.html", null ],
-    [ "elf", "structelf.html", null ],
+    [ "elf", "structelf.html", "structelf" ],
     [ "Elf32_auxv_t", "structElf32__auxv__t.html", null ],
     [ "Elf32_Chdr", "structElf32__Chdr.html", null ],
     [ "Elf32_Dyn", "structElf32__Dyn.html", null ],

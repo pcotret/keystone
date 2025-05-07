@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['resume_5fenclave_0',['resume_enclave',['../enclave_8h.html#adea50bfac43a7eefd85f6a0a0d2b8d5d',1,'enclave.c']]],
-  ['run_5fenclave_1',['run_enclave',['../enclave_8h.html#ae4dda0294501e10fb583acd0447402f3',1,'enclave.c']]]
+  ['mock_5fassert_0',['mock_assert',['../group__cmocka__mock__assert.html#ga7f1663184edbd6120732191c4bffada2',1,'mock_assert(const int result, const char *const expression, const char *const file, const int line):&#160;cmocka.c'],['../group__cmocka__mock__assert.html#ga7f1663184edbd6120732191c4bffada2',1,'mock_assert(const int result, const char *const expression, const char *const file, const int line):&#160;cmocka.c']]]
 ];

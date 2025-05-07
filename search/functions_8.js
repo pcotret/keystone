@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mock_5fassert_0',['mock_assert',['../group__cmocka__mock__assert.html#ga7f1663184edbd6120732191c4bffada2',1,'mock_assert(const int result, const char *const expression, const char *const file, const int line):&#160;cmocka.c'],['../group__cmocka__mock__assert.html#ga7f1663184edbd6120732191c4bffada2',1,'mock_assert(const int result, const char *const expression, const char *const file, const int line):&#160;cmocka.c']]]
+  ['init_5fedge_5finternals_0',['init_edge_internals',['../syscall_8c.html#a1cfe9d4775f8efa643523cd7a7399e78',1,'init_edge_internals():&#160;syscall.c'],['../syscall_8h.html#afb7eb2af7744bc68801583664e0b7702',1,'init_edge_internals(void):&#160;syscall.c']]]
 ];

@@ -1,0 +1,23 @@
+<map id="runtime/include/mm/vm.h" name="runtime/include/mm/vm.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="154,5,322,31"/>
+<area shape="rect" id="Node000002" href="$common_8h.html" title=" " alt="" coords="91,79,198,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,34,174,72,171,67,221,29"/>
+<area shape="rect" id="Node000008" href="$printf_8h.html" title=" " alt="" coords="200,153,281,178"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="241,31,243,137,238,137,236,31"/>
+<area shape="rect" id="Node000010" href="$vm__defs_8h.html" title=" " alt="" coords="275,79,382,105"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="255,29,303,67,300,72,252,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,153,79,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="129,107,73,146,70,141,126,103"/>
+<area shape="rect" id="Node000004" href="$sbi_8h.html" title="SBI (Supervisor Binary Interface) function wrappers for Keystone runtime." alt="" coords="103,153,176,178"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="146,105,144,137,139,137,141,105"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="163,103,214,141,211,146,159,107"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="14,226,78,252"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="125,181,75,219,72,215,122,177"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="202,226,269,252"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="157,177,209,215,206,219,154,181"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="101,226,178,252"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="142,179,142,211,137,211,137,179"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="242,179,240,211,235,211,237,178"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="294,226,361,252"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="257,177,303,214,300,218,254,181"/>
+</map>

@@ -98,19 +98,19 @@ $(document).ready(function(){initNavTree('mm_2page__swap_8c_source.html',''); in
   <div class="headertitle"><div class="title">page_swap.c</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;mm/page_swap.h&quot;</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="page__swap_8h.html">mm/page_swap.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifdef USE_PAGING</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;stdatomic.h&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;crypto/aes.h&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;crypto/merkle.h&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;mm/paging.h&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;call/sbi.h&quot;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;crypto/sha256.h&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;mm/vm_defs.h&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="aes_8h.html">crypto/aes.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="merkle_8h.html">crypto/merkle.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="paging_8h.html">mm/paging.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="sbi_8h.html">call/sbi.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="sha256_8h.html">crypto/sha256.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="vm__defs_8h.html">mm/vm_defs.h</a>&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define NUM_CTR_INDIRECTS 24</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">static</span> uintptr_t ctr_indirect_ptrs[NUM_CTR_INDIRECTS];</div>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('mm_2page__swap_8c_source.html',''); in
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>find_coprime_of(uintptr_t n) {</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  uintptr_t res;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordflow">do</span> {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    res = n / 2 + sbi_random() % (n / 2);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    res = n / 2 + <a class="code hl_function" href="sbi_8c.html#afae8ee0aa373c286ce7939717c98c7dc">sbi_random</a>() % (n / 2);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  } <span class="keywordflow">while</span> (gcd(res, n) != 1);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordflow">return</span> res;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
@@ -316,7 +316,15 @@ $(document).ready(function(){initNavTree('mm_2page__swap_8c_source.html',''); in
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>}</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="astructSHA256__CTX_html"><div class="ttname"><a href="structSHA256__CTX.html">SHA256_CTX</a></div><div class="ttdef"><b>Definition</b> sha256.h:22</div></div>
+<div class="ttc" id="aaes_8h_html"><div class="ttname"><a href="aes_8h.html">aes.h</a></div></div>
+<div class="ttc" id="amerkle_8h_html"><div class="ttname"><a href="merkle_8h.html">merkle.h</a></div></div>
+<div class="ttc" id="apage__swap_8h_html"><div class="ttname"><a href="page__swap_8h.html">page_swap.h</a></div></div>
+<div class="ttc" id="apaging_8h_html"><div class="ttname"><a href="paging_8h.html">paging.h</a></div></div>
+<div class="ttc" id="asbi_8c_html_afae8ee0aa373c286ce7939717c98c7dc"><div class="ttname"><a href="sbi_8c.html#afae8ee0aa373c286ce7939717c98c7dc">sbi_random</a></div><div class="ttdeci">uintptr_t sbi_random()</div><div class="ttdoc">Generate a random number using hardware RNG.</div><div class="ttdef"><b>Definition</b> sbi.c:55</div></div>
+<div class="ttc" id="asbi_8h_html"><div class="ttname"><a href="sbi_8h.html">sbi.h</a></div><div class="ttdoc">SBI (Supervisor Binary Interface) function wrappers for Keystone runtime.</div></div>
+<div class="ttc" id="asha256_8h_html"><div class="ttname"><a href="sha256_8h.html">sha256.h</a></div></div>
+<div class="ttc" id="astructSHA256__CTX_html"><div class="ttname"><a href="structSHA256__CTX.html">SHA256_CTX</a></div><div class="ttdef"><b>Definition</b> sha256.h:25</div></div>
+<div class="ttc" id="avm__defs_8h_html"><div class="ttname"><a href="vm__defs_8h.html">vm_defs.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
