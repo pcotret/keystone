@@ -9,6 +9,7 @@ var enclave_8h =
     [ "ATTEST_DATA_MAXLEN", "enclave_8h.html#af64a9d5d20f94768757e084bdf0d23b7", null ],
     [ "MAX_ENCL_THREADS", "enclave_8h.html#a3dbee6ad38bd13b753367c3994b9a1ec", null ],
     [ "SEALING_KEY_SIZE", "enclave_8h.html#a50e87acd083c1eba8f40b20e1399972f", null ],
+    [ "enclave_id", "enclave_8h.html#ac91e4341d26fc4ab08c2edc8b672c5ba", null ],
     [ "enclave_region_type", "enclave_8h.html#ac990a68e29419468da56153c30ed36ca", [
       [ "REGION_INVALID", "enclave_8h.html#ac990a68e29419468da56153c30ed36caa104dc5151a2267870d69b1fb8cff44c6", null ],
       [ "REGION_EPM", "enclave_8h.html#ac990a68e29419468da56153c30ed36caab11f13c4271e7013c47757f0ce0844fe", null ],

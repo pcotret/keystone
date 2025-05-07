@@ -1,5 +1,0 @@
-<map id="runtime/include/call/syscall_nums.h" name="runtime/include/call/syscall_nums.h">
-<area shape="rect" id="Node000001" title="Definitions of Linux syscall numbers for use with custom musl builds." alt="" coords="10,5,143,46"/>
-<area shape="rect" id="Node000002" href="$syscall_8c.html" title=" " alt="" coords="5,94,148,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,62,79,93,74,93,74,62"/>
-</map>

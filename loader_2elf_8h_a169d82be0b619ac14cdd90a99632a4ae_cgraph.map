@@ -1,14 +1,4 @@
 <map id="elf_getEntryPoint" name="elf_getEntryPoint">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,125,80"/>
-<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="35,56,30,46,33,36,45,30,65,28,86,31,97,37,95,42,84,36,65,33,47,35,37,40,35,45,40,53"/>
-<area shape="rect" id="Node000002" href="$elf32_8h.html#abeb16981292345206845fb22836c8d06" title="Get the entry point address from the ELF header." alt="" coords="173,5,306,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,51,176,33,177,38,114,57"/>
-<area shape="rect" id="Node000004" href="$elf64_8h.html#aeb6e39e92d84d859a8a5bb63d80df9f4" title="Get the entry point address from the ELF header." alt="" coords="173,55,306,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="125,65,157,65,157,70,125,70"/>
-<area shape="rect" id="Node000006" href="$elf32_8h.html#a422462f1d203006dd7a2339e753b24cf" title="Determine if the ELF file is of class ELFCLASS32." alt="" coords="199,104,280,130"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="114,78,185,99,183,104,113,84"/>
-<area shape="rect" id="Node000003" href="$elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="354,5,470,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="306,16,338,16,338,21,306,21"/>
-<area shape="rect" id="Node000005" href="$elf64_8h.html#a2188fe429ceb1c6bc2b9e67983e5c2ef" title="Get the ELF header from the file." alt="" coords="354,55,470,80"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="306,65,338,65,338,70,306,70"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,125,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="44,30,40,21,42,11,51,5,65,3,80,5,88,12,84,16,78,10,65,8,53,10,47,14,45,20,49,28"/>
 </map>

@@ -1,5 +1,0 @@
-<map id="dispatch_edgecall_syscall" name="dispatch_edgecall_syscall">
-<area shape="rect" id="Node000001" title="Dispatches an edge call&#45;based syscall." alt="" coords="5,5,178,31"/>
-<area shape="rect" id="Node000002" href="$sbi_8c.html#a0687839f8443fc62b12b30f6952e561d" title="Stop the current enclave and return to the host." alt="" coords="226,5,348,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,16,210,16,210,21,178,21"/>
-</map>

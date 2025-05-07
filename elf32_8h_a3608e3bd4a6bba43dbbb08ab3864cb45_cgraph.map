@@ -1,7 +1,0 @@
-<map id="elf32_getProgramHeaderOffset" name="elf32_getProgramHeaderOffset">
-<area shape="rect" id="Node000001" title="Get the file offset of a program header." alt="" coords="5,5,206,31"/>
-<area shape="rect" id="Node000002" href="$elf32_8h.html#a44eb005207aad59fa5a844eebc2fd70a" title="Get a pointer to the program header table." alt="" coords="254,5,451,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,16,238,16,238,21,206,21"/>
-<area shape="rect" id="Node000003" href="$elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="499,5,615,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="451,16,483,16,483,21,451,21"/>
-</map>

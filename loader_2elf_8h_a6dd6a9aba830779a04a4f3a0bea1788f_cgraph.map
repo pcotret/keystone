@@ -1,55 +1,20 @@
 <map id="elf_getStringTable" name="elf_getStringTable">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,237,132,263"/>
-<area shape="poly" id="edge34_Node000001_Node000001" title=" " alt="" coords="41,238,35,229,39,219,50,213,69,211,88,213,99,220,96,224,87,218,68,216,52,218,43,223,41,228,45,236"/>
-<area shape="rect" id="Node000002" href="$elf_8c.html#ac68061c70e5d3e98c6de86d9fa1041d5" title=" " alt="" coords="180,176,284,202"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,234,180,205,182,210,106,239"/>
-<area shape="rect" id="Node000014" href="$elf_8c.html#a3daeb756b03485e27a4f6662647389d6" title=" " alt="" coords="337,237,466,263"/>
-<area shape="poly" id="edge26_Node000001_Node000014" title=" " alt="" coords="132,248,322,248,322,253,132,253"/>
-<area shape="rect" id="Node000017" href="$elf_8c.html#a4421db02fe4d89f40177d0587452ee7b" title=" " alt="" coords="336,323,468,348"/>
-<area shape="poly" id="edge27_Node000001_Node000017" title=" " alt="" coords="123,261,334,316,333,321,121,266"/>
-<area shape="poly" id="edge9_Node000002_Node000002" title=" " alt="" coords="204,177,199,167,202,158,213,152,232,149,252,152,262,159,259,163,250,157,232,155,215,157,206,161,204,167,209,174"/>
-<area shape="rect" id="Node000003" href="$elf_8c.html#a6964f249e17c45a6be44c0a489813d1e" title=" " alt="" coords="332,59,471,84"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="249,173,330,113,365,90,368,95,334,118,252,178"/>
-<area shape="rect" id="Node000009" href="$elf_8c.html#aef51a6645d6cd442088a9a4c64e9e256" title=" " alt="" coords="332,152,471,178"/>
-<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="284,179,316,174,317,179,285,184"/>
-<area shape="poly" id="edge19_Node000002_Node000014" title=" " alt="" coords="271,200,351,229,349,234,269,205"/>
-<area shape="poly" id="edge7_Node000003_Node000003" title=" " alt="" coords="373,60,367,50,371,40,382,34,402,32,422,35,433,41,430,46,421,40,402,37,384,39,375,44,373,49,377,57"/>
-<area shape="rect" id="Node000004" href="$elf32_8h.html#ab1b562849e1a73867ed3cf4d80aec642" title="Get the number of sections." alt="" coords="721,5,874,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="472,60,705,28,705,33,472,65"/>
-<area shape="rect" id="Node000006" href="$elf64_8h.html#a837adf84f3d185d9976a54bcff50c2ef" title="Get the number of sections." alt="" coords="721,65,874,91"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="472,70,705,74,705,79,472,75"/>
-<area shape="rect" id="Node000008" href="$elf32_8h.html#a422462f1d203006dd7a2339e753b24cf" title="Determine if the ELF file is of class ELFCLASS32." alt="" coords="555,195,637,220"/>
-<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="430,83,473,114,488,132,497,150,505,166,521,181,542,193,539,197,518,186,501,169,492,152,484,135,469,117,427,87"/>
-<area shape="rect" id="Node000005" href="$elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="922,97,1038,123"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="830,29,875,50,944,87,941,92,873,55,828,34"/>
-<area shape="rect" id="Node000007" href="$elf64_8h.html#a2188fe429ceb1c6bc2b9e67983e5c2ef" title="Get the ELF header from the file." alt="" coords="922,171,1038,196"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="823,89,875,120,944,160,942,165,873,124,820,94"/>
-<area shape="poly" id="edge18_Node000009_Node000008" title=" " alt="" coords="464,176,541,193,539,198,463,181"/>
-<area shape="poly" id="edge17_Node000009_Node000009" title=" " alt="" coords="373,153,367,143,371,134,382,128,402,125,422,128,433,135,430,139,421,133,402,131,384,133,375,137,373,143,377,150"/>
-<area shape="rect" id="Node000010" href="$elf32_8h.html#af60a2fc8eb6c2978c78c1422d0201fdd" title="Get the file offset of a section." alt="" coords="519,96,673,122"/>
-<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="448,149,533,124,535,129,450,154"/>
-<area shape="rect" id="Node000012" href="$elf64_8h.html#a3929f928ba019144529a572c93ba4ba1" title="Get the file offset of a section." alt="" coords="519,145,673,171"/>
-<area shape="poly" id="edge14_Node000009_Node000012" title=" " alt="" coords="472,160,504,159,504,164,472,165"/>
-<area shape="rect" id="Node000011" href="$elf32_8h.html#a68b790d384023453e89fb01441a5d29e" title="Get a pointer to the section header table." alt="" coords="722,135,873,160"/>
-<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="667,120,712,129,711,134,666,125"/>
-<area shape="poly" id="edge13_Node000011_Node000005" title=" " alt="" coords="863,131,906,122,908,128,864,137"/>
-<area shape="rect" id="Node000013" href="$elf64_8h.html#a519c17795453c6a33475be0d64e8d6b3" title="Get a pointer to the section header table." alt="" coords="722,220,873,246"/>
-<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="643,169,674,180,753,211,751,216,672,185,641,174"/>
-<area shape="poly" id="edge16_Node000013_Node000007" title=" " alt="" coords="847,217,914,198,916,204,849,222"/>
-<area shape="poly" id="edge25_Node000014_Node000008" title=" " alt="" coords="463,234,539,217,541,222,464,239"/>
-<area shape="poly" id="edge24_Node000014_Node000014" title=" " alt="" coords="373,238,367,229,371,219,382,213,402,211,422,213,433,220,430,224,421,218,402,216,384,218,375,223,373,228,377,236"/>
-<area shape="rect" id="Node000015" href="$elf32_8h.html#ab8713114b4857282bcb2df88f593ccf9" title="Get the size of a section." alt="" coords="524,244,668,270"/>
-<area shape="poly" id="edge20_Node000014_Node000015" title=" " alt="" coords="467,250,509,251,509,257,467,255"/>
-<area shape="rect" id="Node000016" href="$elf64_8h.html#a3fc73f471340f2f1c9247207e68e2127" title="Get the size of a section." alt="" coords="524,293,668,319"/>
-<area shape="poly" id="edge22_Node000014_Node000016" title=" " alt="" coords="450,261,535,286,533,291,448,266"/>
-<area shape="poly" id="edge21_Node000015_Node000011" title=" " alt="" coords="646,241,671,230,724,200,767,168,770,172,726,204,674,235,648,246"/>
-<area shape="poly" id="edge23_Node000016_Node000013" title=" " alt="" coords="640,290,672,280,750,249,752,254,674,285,642,295"/>
-<area shape="poly" id="edge33_Node000017_Node000008" title=" " alt="" coords="417,320,469,274,492,250,518,229,540,219,542,224,521,234,496,254,473,277,420,324"/>
-<area shape="poly" id="edge32_Node000017_Node000017" title=" " alt="" coords="373,324,367,314,371,304,382,298,402,296,422,299,433,305,430,310,421,304,402,301,384,303,375,308,373,313,377,321"/>
-<area shape="rect" id="Node000018" href="$elf32_8h.html#a5b72337b078cb40e318aeb18e3b0a74b" title="Get the type of a section." alt="" coords="523,343,669,368"/>
-<area shape="poly" id="edge28_Node000017_Node000018" title=" " alt="" coords="469,340,507,344,507,349,468,345"/>
-<area shape="rect" id="Node000019" href="$elf64_8h.html#a911914e16458795c57f369583f3ea5fc" title="Get the type of a section." alt="" coords="523,392,669,418"/>
-<area shape="poly" id="edge30_Node000017_Node000019" title=" " alt="" coords="437,346,520,378,537,384,536,389,518,383,435,351"/>
-<area shape="poly" id="edge29_Node000018_Node000011" title=" " alt="" coords="656,340,671,330,683,315,691,301,697,272,702,241,708,224,719,206,738,185,759,167,763,172,741,189,723,209,713,226,707,242,702,273,696,303,688,318,674,333,659,344"/>
-<area shape="poly" id="edge31_Node000019_Node000013" title=" " alt="" coords="651,389,671,379,705,351,735,319,779,257,783,261,739,322,709,355,674,383,653,394"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,169,132,195"/>
+<area shape="poly" id="edge12_Node000001_Node000001" title=" " alt="" coords="38,170,33,161,36,151,48,145,69,143,90,145,101,152,99,156,88,150,68,148,50,150,40,155,38,160,43,168"/>
+<area shape="rect" id="Node000002" href="$elf_8c.html#ac68061c70e5d3e98c6de86d9fa1041d5" title=" " alt="" coords="194,108,298,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,166,191,137,193,142,109,171"/>
+<area shape="rect" id="Node000005" href="$elf_8c.html#a3daeb756b03485e27a4f6662647389d6" title=" " alt="" coords="365,176,494,202"/>
+<area shape="poly" id="edge9_Node000001_Node000005" title=" " alt="" coords="132,181,350,185,350,190,132,186"/>
+<area shape="rect" id="Node000006" href="$elf_8c.html#a4421db02fe4d89f40177d0587452ee7b" title=" " alt="" coords="180,244,312,270"/>
+<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="102,193,200,235,198,240,100,198"/>
+<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="216,109,210,99,214,90,226,84,246,81,267,84,279,90,276,95,266,89,246,87,227,89,217,93,215,99,220,106"/>
+<area shape="rect" id="Node000003" href="$elf_8c.html#a6964f249e17c45a6be44c0a489813d1e" title=" " alt="" coords="360,29,499,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="272,105,359,64,372,58,374,63,361,69,274,110"/>
+<area shape="rect" id="Node000004" href="$elf_8c.html#aef51a6645d6cd442088a9a4c64e9e256" title=" " alt="" coords="360,103,499,128"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="299,117,345,115,345,121,299,122"/>
+<area shape="poly" id="edge7_Node000002_Node000005" title=" " alt="" coords="284,132,379,168,378,173,282,137"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="399,30,393,21,396,11,409,5,430,3,452,5,464,12,461,16,450,10,430,8,410,10,400,15,398,20,403,27"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="399,104,393,94,396,84,409,78,430,76,452,79,464,85,461,90,450,84,430,81,410,83,400,88,398,93,403,101"/>
+<area shape="poly" id="edge8_Node000005_Node000005" title=" " alt="" coords="399,177,393,167,396,158,409,152,430,149,452,152,464,158,461,163,450,157,430,155,410,157,400,161,398,167,403,174"/>
+<area shape="poly" id="edge11_Node000006_Node000006" title=" " alt="" coords="216,245,210,235,214,226,226,220,246,217,267,220,279,226,276,231,266,225,246,223,227,225,217,229,215,235,220,242"/>
 </map>

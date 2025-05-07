@@ -1,5 +1,0 @@
-<map id="attest_enclave" name="attest_enclave">
-<area shape="rect" id="Node000001" title="Generate an attestation report for the enclave." alt="" coords="209,5,315,31"/>
-<area shape="rect" id="Node000002" href="$sm-sbi_8c.html#a7d8927c735eda0a43706f79aa47c2ce9" title="Generate an attestation report for the enclave." alt="" coords="5,5,161,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,21,161,21,161,16,193,16"/>
-</map>

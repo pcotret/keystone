@@ -99,47 +99,53 @@ $(document).ready(function(){initNavTree('sha256_8h_source.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 <a href="sha256_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">/*********************************************************************</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * Filename:   sha256.h</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * Author:     Brad Conte (brad AT bradconte.com)</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * Copyright:</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * Disclaimer: This code is presented &quot;as is&quot; without any guarantees.</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * Details:    Defines the API for the corresponding SHA1 implementation.</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *********************************************************************/</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef SHA256_H</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define SHA256_H</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">/*************************** HEADER FILES ***************************/</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/****************************** MACROS ******************************/</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define SHA256_BLOCK_SIZE 32  </span><span class="comment">// SHA256 outputs a 32 byte digest</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/**************************** DATA TYPES ****************************/</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> BYTE;  <span class="comment">// 8-bit byte</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> WORD;  <span class="comment">// 32-bit word, change to &quot;long&quot; for 16-bit machines</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structSHA256__CTX.html">   25</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  BYTE data[64];</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  WORD datalen;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> bitlen;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  WORD state[8];</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>} <a class="code hl_struct" href="structSHA256__CTX.html">SHA256_CTX</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/*********************************************************************</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * Filename:   sha256.h</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * Author:     Brad Conte (brad AT bradconte.com)</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> * Copyright:</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * Disclaimer: This code is presented &quot;as is&quot; without any guarantees.</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * Details:    Defines the API for the corresponding SHA1 implementation.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *********************************************************************/</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifndef SHA256_H</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#define SHA256_H</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/*************************** HEADER FILES ***************************/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/****************************** MACROS ******************************/</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="sha256_8h.html#a9c1fe69ad43d4ca74b84303a0ed64f2f">   27</a></span><span class="preprocessor">#define SHA256_BLOCK_SIZE 32  </span><span class="comment">// SHA256 outputs a 32 byte digest</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/**************************** DATA TYPES ****************************/</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> BYTE;  <span class="comment">// 8-bit byte</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> WORD;  <span class="comment">// 32-bit word, change to &quot;long&quot; for 16-bit machines</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="};">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structSHA256__CTX.html">   49</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structSHA256__CTX.html#ac4cf981ce4100c3af150be3c98b2d03e">   50</a></span>  BYTE data[64];             </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structSHA256__CTX.html#acff27dfecde1d6e42f7c8474a3175529">   51</a></span>  WORD <a class="code hl_variable" href="structSHA256__CTX.html#acff27dfecde1d6e42f7c8474a3175529">datalen</a>;              </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structSHA256__CTX.html#a7971befc0fa37b07350552d3a949634a">   52</a></span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code hl_variable" href="structSHA256__CTX.html#a7971befc0fa37b07350552d3a949634a">bitlen</a>; </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structSHA256__CTX.html#a09c4eef8a0dc02bc9860e2a02c3f2638">   53</a></span>  WORD state[8];             </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>} <a class="code hl_struct" href="structSHA256__CTX.html">SHA256_CTX</a>;</div>
 </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">/*********************** FUNCTION DECLARATIONS **********************/</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>sha256_init(<a class="code hl_struct" href="structSHA256__CTX.html">SHA256_CTX</a>* <a class="code hl_struct" href="structctx.html">ctx</a>);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>sha256_update(<a class="code hl_struct" href="structSHA256__CTX.html">SHA256_CTX</a>* <a class="code hl_struct" href="structctx.html">ctx</a>, <span class="keyword">const</span> BYTE data[], <span class="keywordtype">size_t</span> len);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>sha256_final(<a class="code hl_struct" href="structSHA256__CTX.html">SHA256_CTX</a>* <a class="code hl_struct" href="structctx.html">ctx</a>, BYTE hash[]);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif  </span><span class="comment">// SHA256_H</span></div>
-<div class="ttc" id="astructSHA256__CTX_html"><div class="ttname"><a href="structSHA256__CTX.html">SHA256_CTX</a></div><div class="ttdef"><b>Definition</b> sha256.h:25</div></div>
-<div class="ttc" id="astructctx_html"><div class="ttname"><a href="structctx.html">ctx</a></div><div class="ttdoc">Thread context.</div><div class="ttdef"><b>Definition</b> thread.h:23</div></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">/*********************** FUNCTION DECLARATIONS **********************/</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keywordtype">void</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="sha256_8h.html#ade6fde6ef9ea137449d72891931c77ef">   62</a></span><a class="code hl_function" href="sha256_8h.html#ade6fde6ef9ea137449d72891931c77ef">sha256_init</a>(<a class="code hl_struct" href="structSHA256__CTX.html">SHA256_CTX</a>* <a class="code hl_struct" href="structctx.html">ctx</a>);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keywordtype">void</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="sha256_8h.html#ac98a25de627f4cded12b7312dee1ffa0">   70</a></span><a class="code hl_function" href="sha256_8h.html#ac98a25de627f4cded12b7312dee1ffa0">sha256_update</a>(<a class="code hl_struct" href="structSHA256__CTX.html">SHA256_CTX</a>* <a class="code hl_struct" href="structctx.html">ctx</a>, <span class="keyword">const</span> BYTE data[], <span class="keywordtype">size_t</span> len);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keywordtype">void</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="sha256_8h.html#a8f4b55bd1e49af6e4620bc9ba9549397">   77</a></span><a class="code hl_function" href="sha256_8h.html#a8f4b55bd1e49af6e4620bc9ba9549397">sha256_final</a>(<a class="code hl_struct" href="structSHA256__CTX.html">SHA256_CTX</a>* <a class="code hl_struct" href="structctx.html">ctx</a>, BYTE hash[]);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#endif  </span><span class="comment">// SHA256_H</span></div>
+<div class="ttc" id="asha256_8h_html_a8f4b55bd1e49af6e4620bc9ba9549397"><div class="ttname"><a href="sha256_8h.html#a8f4b55bd1e49af6e4620bc9ba9549397">sha256_final</a></div><div class="ttdeci">void sha256_final(SHA256_CTX *ctx, BYTE hash[])</div><div class="ttdoc">Finalizes the hash and outputs the digest.</div></div>
+<div class="ttc" id="asha256_8h_html_ac98a25de627f4cded12b7312dee1ffa0"><div class="ttname"><a href="sha256_8h.html#ac98a25de627f4cded12b7312dee1ffa0">sha256_update</a></div><div class="ttdeci">void sha256_update(SHA256_CTX *ctx, const BYTE data[], size_t len)</div><div class="ttdoc">Feeds data into the SHA-256 hash.</div></div>
+<div class="ttc" id="asha256_8h_html_ade6fde6ef9ea137449d72891931c77ef"><div class="ttname"><a href="sha256_8h.html#ade6fde6ef9ea137449d72891931c77ef">sha256_init</a></div><div class="ttdeci">void sha256_init(SHA256_CTX *ctx)</div><div class="ttdoc">Initializes a SHA256_CTX structure.</div></div>
+<div class="ttc" id="astructSHA256__CTX_html"><div class="ttname"><a href="structSHA256__CTX.html">SHA256_CTX</a></div><div class="ttdoc">Context structure for SHA-256 computation.</div><div class="ttdef"><b>Definition</b> sha256.h:49</div></div>
+<div class="ttc" id="astructSHA256__CTX_html_a7971befc0fa37b07350552d3a949634a"><div class="ttname"><a href="structSHA256__CTX.html#a7971befc0fa37b07350552d3a949634a">SHA256_CTX::bitlen</a></div><div class="ttdeci">unsigned long long bitlen</div><div class="ttdef"><b>Definition</b> sha256.h:52</div></div>
+<div class="ttc" id="astructSHA256__CTX_html_acff27dfecde1d6e42f7c8474a3175529"><div class="ttname"><a href="structSHA256__CTX.html#acff27dfecde1d6e42f7c8474a3175529">SHA256_CTX::datalen</a></div><div class="ttdeci">WORD datalen</div><div class="ttdef"><b>Definition</b> sha256.h:51</div></div>
+<div class="ttc" id="astructctx_html"><div class="ttname"><a href="structctx.html">ctx</a></div><div class="ttdoc">Thread context.</div><div class="ttdef"><b>Definition</b> thread.h:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

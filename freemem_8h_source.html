@@ -105,26 +105,34 @@ $(document).ready(function(){initNavTree('freemem_8h_source.html',''); initResiz
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define NEXT_PAGE(page) *((uintptr_t*)page)</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define LIST_EMPTY(list) ((list).count == 0 || (list).head == 0)</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define LIST_INIT(list) { (list).count = 0; (list).head = 0; (list).tail = 0; }</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structpg__list.html">   14</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structpg__list.html">pg_list</a></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    uintptr_t head;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    uintptr_t tail;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> count;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="freemem_8h.html#a122544834a2f2d7f7daa134ef59a55c5">   16</a></span><span class="preprocessor">#define NEXT_PAGE(page) *((uintptr_t*)page)</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="freemem_8h.html#ac157b9f1f332a4425af2f26c8e83127b">   23</a></span><span class="preprocessor">#define LIST_EMPTY(list) ((list).count == 0 || (list).head == 0)</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="freemem_8h.html#a74b9f28d71ffcd1b676161efeb328eb4">   29</a></span><span class="preprocessor">#define LIST_INIT(list) { (list).count = 0; (list).head = 0; (list).tail = 0; }</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structpg__list.html">   38</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structpg__list.html">pg_list</a></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structpg__list.html#a1bcd9a88c631191eb6339def68d6370c">   40</a></span>    uintptr_t <a class="code hl_variable" href="structpg__list.html#a1bcd9a88c631191eb6339def68d6370c">head</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="structpg__list.html#ae29503124bbd6b504393795d1bfdf402">   41</a></span>    uintptr_t <a class="code hl_variable" href="structpg__list.html#ae29503124bbd6b504393795d1bfdf402">tail</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structpg__list.html#adb86683e5fcc537f6acd7cac0e3adbe1">   42</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structpg__list.html#adb86683e5fcc537f6acd7cac0e3adbe1">count</a>; </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>};</div>
 </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">void</span> spa_init(uintptr_t base, <span class="keywordtype">size_t</span> size);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>uintptr_t spa_get(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>uintptr_t spa_get_zero(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keywordtype">void</span> spa_put(uintptr_t page);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> spa_available();</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="astructpg__list_html"><div class="ttname"><a href="structpg__list.html">pg_list</a></div><div class="ttdef"><b>Definition</b> freemem.h:15</div></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keywordtype">void</span> <a class="code hl_function" href="freemem_8h.html#aae34c31bcb1e17e2535548edd2e80bc7">spa_init</a>(uintptr_t base, <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>uintptr_t <a class="code hl_function" href="freemem_8h.html#aac2f85284282bbda2617a49238cd076f">spa_get</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>uintptr_t <a class="code hl_function" href="freemem_8h.html#a79db004e289c287f00eb71a431fd5d68">spa_get_zero</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keywordtype">void</span> <a class="code hl_function" href="freemem_8h.html#a82ceaa9fa0697cfec7fb959f57ac2f32">spa_put</a>(uintptr_t page);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="freemem_8h.html#a50b4bc7b180f06f8387a9af236f0f428">spa_available</a>();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="afreemem_8h_html_a50b4bc7b180f06f8387a9af236f0f428"><div class="ttname"><a href="freemem_8h.html#a50b4bc7b180f06f8387a9af236f0f428">spa_available</a></div><div class="ttdeci">unsigned int spa_available()</div><div class="ttdoc">Get the number of available free pages.</div><div class="ttdef"><b>Definition</b> freemem.c:86</div></div>
+<div class="ttc" id="afreemem_8h_html_a79db004e289c287f00eb71a431fd5d68"><div class="ttname"><a href="freemem_8h.html#a79db004e289c287f00eb71a431fd5d68">spa_get_zero</a></div><div class="ttdeci">uintptr_t spa_get_zero(void)</div><div class="ttdoc">Allocate and zero a page of memory.</div><div class="ttdef"><b>Definition</b> freemem.c:59</div></div>
+<div class="ttc" id="afreemem_8h_html_a82ceaa9fa0697cfec7fb959f57ac2f32"><div class="ttname"><a href="freemem_8h.html#a82ceaa9fa0697cfec7fb959f57ac2f32">spa_put</a></div><div class="ttdeci">void spa_put(uintptr_t page)</div><div class="ttdoc">Free a previously allocated page of memory.</div><div class="ttdef"><b>Definition</b> freemem.c:63</div></div>
+<div class="ttc" id="afreemem_8h_html_aac2f85284282bbda2617a49238cd076f"><div class="ttname"><a href="freemem_8h.html#aac2f85284282bbda2617a49238cd076f">spa_get</a></div><div class="ttdeci">uintptr_t spa_get(void)</div><div class="ttdoc">Allocate a page of memory.</div><div class="ttdef"><b>Definition</b> freemem.c:58</div></div>
+<div class="ttc" id="afreemem_8h_html_aae34c31bcb1e17e2535548edd2e80bc7"><div class="ttname"><a href="freemem_8h.html#aae34c31bcb1e17e2535548edd2e80bc7">spa_init</a></div><div class="ttdeci">void spa_init(uintptr_t base, size_t size)</div><div class="ttdoc">Initialize the simple physical allocator.</div><div class="ttdef"><b>Definition</b> freemem.c:95</div></div>
+<div class="ttc" id="astructpg__list_html"><div class="ttname"><a href="structpg__list.html">pg_list</a></div><div class="ttdoc">Structure representing a list of free pages.</div><div class="ttdef"><b>Definition</b> freemem.h:39</div></div>
+<div class="ttc" id="astructpg__list_html_a1bcd9a88c631191eb6339def68d6370c"><div class="ttname"><a href="structpg__list.html#a1bcd9a88c631191eb6339def68d6370c">pg_list::head</a></div><div class="ttdeci">uintptr_t head</div><div class="ttdef"><b>Definition</b> freemem.h:40</div></div>
+<div class="ttc" id="astructpg__list_html_adb86683e5fcc537f6acd7cac0e3adbe1"><div class="ttname"><a href="structpg__list.html#adb86683e5fcc537f6acd7cac0e3adbe1">pg_list::count</a></div><div class="ttdeci">unsigned int count</div><div class="ttdef"><b>Definition</b> freemem.h:42</div></div>
+<div class="ttc" id="astructpg__list_html_ae29503124bbd6b504393795d1bfdf402"><div class="ttname"><a href="structpg__list.html#ae29503124bbd6b504393795d1bfdf402">pg_list::tail</a></div><div class="ttdeci">uintptr_t tail</div><div class="ttdef"><b>Definition</b> freemem.h:41</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

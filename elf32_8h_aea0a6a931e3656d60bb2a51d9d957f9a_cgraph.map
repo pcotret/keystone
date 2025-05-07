@@ -1,7 +1,0 @@
-<map id="elf32_getSectionInfo" name="elf32_getSectionInfo">
-<area shape="rect" id="Node000001" title="Get the info field of a section." alt="" coords="5,5,146,31"/>
-<area shape="rect" id="Node000002" href="$elf32_8h.html#a68b790d384023453e89fb01441a5d29e" title="Get a pointer to the section header table." alt="" coords="194,5,344,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,16,178,16,178,21,146,21"/>
-<area shape="rect" id="Node000003" href="$elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="392,5,508,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="344,16,376,16,376,21,344,21"/>
-</map>

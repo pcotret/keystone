@@ -1,6 +1,0 @@
-<map id="elf32_getSectionInfo" name="elf32_getSectionInfo">
-<area shape="rect" id="Node000001" title="Get the info field of a section." alt="" coords="180,29,320,55"/>
-<area shape="rect" id="Node000002" href="$elf_8c.html#a74044a0df7da01d793da373653cc3bf1" title=" " alt="" coords="5,29,132,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,45,132,45,132,40,164,40"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="99,16,89,10,68,8,50,10,39,15,37,20,42,28,38,30,32,21,36,11,48,5,69,3,90,5,102,12"/>
-</map>

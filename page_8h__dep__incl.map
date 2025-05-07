@@ -1,7 +1,0 @@
-<map id="sm/src/page.h" name="sm/src/page.h">
-<area shape="rect" id="Node000001" title="RISC&#45;V page table and virtual memory definitions for Secure Monitor." alt="" coords="94,5,197,31"/>
-<area shape="rect" id="Node000002" href="$enclave_8c.html" title="Enclave management and context switching for the Keystone Security Monitor." alt="" coords="5,87,126,112"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,44,80,88,76,84,121,40"/>
-<area shape="rect" id="Node000003" href="$fu540__internal_8c_source.html" title=" " alt="" coords="149,79,302,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,40,208,77,204,81,167,44"/>
-</map>

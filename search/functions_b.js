@@ -1,4 +1,29 @@
 var searchData=
 [
-  ['mock_5fassert_0',['mock_assert',['../group__cmocka__mock__assert.html#ga7f1663184edbd6120732191c4bffada2',1,'mock_assert(const int result, const char *const expression, const char *const file, const int line):&#160;cmocka.c'],['../group__cmocka__mock__assert.html#ga7f1663184edbd6120732191c4bffada2',1,'mock_assert(const int result, const char *const expression, const char *const file, const int line):&#160;cmocka.c']]]
+  ['sbi_5fpmp_5fipi_5finit_0',['sbi_pmp_ipi_init',['../ipi_8h.html#a2f36521831ca8e53b451fd6e7e64f177',1,'ipi.h']]],
+  ['sbi_5fpmp_5fipi_5flocal_5fupdate_1',['sbi_pmp_ipi_local_update',['../ipi_8h.html#afc6d0460080de0b4a9bc129759766dca',1,'ipi.c']]],
+  ['sbi_5fpmp_5fipi_5frequest_2',['sbi_pmp_ipi_request',['../ipi_8h.html#ae573e71a92dfebad04f0bf481faef26a',1,'ipi.h']]],
+  ['sbi_5ftrap_5fhandler_5fkeystone_5fenclave_3',['sbi_trap_handler_keystone_enclave',['../enclave_8h.html#a14827ac37b1a7554b6b927bd85c5ae45',1,'sbi_trap_hack.c']]],
+  ['send_5fand_5fsync_5fpmp_5fipi_4',['send_and_sync_pmp_ipi',['../ipi_8h.html#abc107365426502ce0f3ac18e919f69c7',1,'ipi.c']]],
+  ['sha256_5ffinal_5',['sha256_final',['../sha256_8h.html#a8f4b55bd1e49af6e4620bc9ba9549397',1,'sha256.h']]],
+  ['sha256_5finit_6',['sha256_init',['../sha256_8h.html#ade6fde6ef9ea137449d72891931c77ef',1,'sha256.h']]],
+  ['sha256_5fupdate_7',['sha256_update',['../sha256_8h.html#ac98a25de627f4cded12b7312dee1ffa0',1,'sha256.h']]],
+  ['sha3_8',['sha3',['../sha3_8h.html#abe327664e43d8d65a80ebe684bf6bc01',1,'sha3.c']]],
+  ['sha3_5ffinal_9',['sha3_final',['../sha3_8h.html#a738e64b728c413a1db48ecb1b150014b',1,'sha3.c']]],
+  ['sha3_5finit_10',['sha3_init',['../sha3_8h.html#a3eaf522fd0d019b77988c3bb42248545',1,'sha3.c']]],
+  ['sha3_5fkeccakf_11',['sha3_keccakf',['../sha3_8h.html#ac78218ab825ef2879ce67a59b4095ded',1,'sha3.c']]],
+  ['sha3_5fupdate_12',['sha3_update',['../sha3_8h.html#ac2bf4e69c1fdf05f141849e43e477ba9',1,'sha3.c']]],
+  ['sm_5fcopy_5fkey_13',['sm_copy_key',['../mpfs_2platform_8c.html#a3628ff7fb1a4cae5e8e5fff8fce600d2',1,'platform.c']]],
+  ['spa_5favailable_14',['spa_available',['../freemem_8h.html#a50b4bc7b180f06f8387a9af236f0f428',1,'freemem.c']]],
+  ['spa_5fget_15',['spa_get',['../freemem_8h.html#aac2f85284282bbda2617a49238cd076f',1,'freemem.c']]],
+  ['spa_5fget_5fzero_16',['spa_get_zero',['../freemem_8h.html#a79db004e289c287f00eb71a431fd5d68',1,'freemem.c']]],
+  ['spa_5finit_17',['spa_init',['../freemem_8h.html#aae34c31bcb1e17e2535548edd2e80bc7',1,'freemem.c']]],
+  ['spa_5fput_18',['spa_put',['../freemem_8h.html#a82ceaa9fa0697cfec7fb959f57ac2f32',1,'freemem.c']]],
+  ['stop_5fenclave_19',['stop_enclave',['../enclave_8h.html#af13e39038864cf309ab05c5ec34561e6',1,'enclave.c']]],
+  ['swap_5fprev_5fmepc_20',['swap_prev_mepc',['../thread_8h.html#a679b102c3fdf7a40f3648894db6acbe7',1,'thread.c']]],
+  ['swap_5fprev_5fmstatus_21',['swap_prev_mstatus',['../thread_8h.html#ad1c5fa93893261a4316ff678ca80d00c',1,'thread.c']]],
+  ['swap_5fprev_5fsmode_5fcsrs_22',['swap_prev_smode_csrs',['../thread_8h.html#a6fcee5bffc90e0826a6a9131d3b410c0',1,'thread.c']]],
+  ['swap_5fprev_5fstate_23',['swap_prev_state',['../thread_8h.html#aca8bc6fe74de2b5686e143427136464d',1,'thread.c']]],
+  ['switch_5fvector_5fenclave_24',['switch_vector_enclave',['../thread_8h.html#a648fcc7f1473f8d7f6136d87d43f7542',1,'thread.c']]],
+  ['switch_5fvector_5fhost_25',['switch_vector_host',['../thread_8h.html#a92709939fa0461dc7e3b7b78945170c2',1,'thread.c']]]
 ];

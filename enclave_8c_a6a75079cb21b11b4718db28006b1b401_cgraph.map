@@ -1,6 +1,0 @@
-<map id="context_switch_to_host" name="context_switch_to_host">
-<area shape="rect" id="Node000001" title="Performs context switch from the enclave back to the host." alt="" coords="5,37,164,63"/>
-<area shape="rect" id="Node000002" href="$fu540__internal_8c.html#a4ebdf8d20fd54fc07239454de2428365" title="Perform platform&#45;specific actions after switching out of an enclave." alt="" coords="212,29,358,70"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,47,196,47,196,52,164,52"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="247,29,245,19,251,10,265,5,285,3,307,5,320,11,317,16,305,10,285,8,266,10,254,15,250,20,252,28"/>
-</map>

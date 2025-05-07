@@ -1,0 +1,24 @@
+<map id="sm/src/sha3/sha3.h" name="sm/src/sha3/sha3.h">
+<area shape="rect" id="Node000001" title="SHA&#45;3 (Keccak) cryptographic hash function interface." alt="" coords="325,5,460,31"/>
+<area shape="rect" id="Node000002" href="$crypto_8h_source.html" title=" " alt="" coords="256,87,366,112"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="371,44,325,88,321,84,367,40"/>
+<area shape="rect" id="Node000010" href="$hmac__sha3_8h_source.html" title=" " alt="" coords="391,79,559,120"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="417,40,456,77,453,81,414,44"/>
+<area shape="rect" id="Node000003" href="$enclave_8h.html" title="Enclave management interface and metadata structures for the Keystone security monitor." alt="" coords="251,168,371,193"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="314,128,314,167,308,167,308,128"/>
+<area shape="rect" id="Node000004" href="$cpu_8h.html" title="CPU context management for enclaves." alt="" coords="5,241,102,267"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="253,200,98,243,97,238,252,195"/>
+<area shape="rect" id="Node000005" href="$platform-hook_8h_source.html" title=" " alt="" coords="176,241,331,267"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="294,207,265,243,261,239,290,204"/>
+<area shape="rect" id="Node000006" href="$mpfs_2platform_8c.html" title="Platform&#45;specific functions for enclave management and random number generation." alt="" coords="84,315,229,356"/>
+<area shape="poly" id="edge7_Node000003_Node000006" title=" " alt="" coords="237,198,198,215,181,228,166,243,158,260,154,279,155,315,150,315,149,278,153,258,162,240,177,224,195,211,234,193"/>
+<area shape="rect" id="Node000007" href="$fu540__internal_8c_source.html" title=" " alt="" coords="263,315,415,356"/>
+<area shape="poly" id="edge8_Node000003_Node000007" title=" " alt="" coords="330,206,345,241,349,280,346,315,340,314,344,280,340,242,325,208"/>
+<area shape="rect" id="Node000008" href="$multimem_8h_source.html" title=" " alt="" coords="444,323,621,348"/>
+<area shape="poly" id="edge9_Node000003_Node000008" title=" " alt="" coords="342,200,516,320,513,324,339,205"/>
+<area shape="rect" id="Node000009" href="$plugins_8h_source.html" title=" " alt="" coords="457,241,618,267"/>
+<area shape="poly" id="edge10_Node000003_Node000009" title=" " alt="" coords="365,196,500,238,498,243,363,201"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="229,279,182,317,179,313,225,275"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="279,276,320,313,316,317,276,280"/>
+<area shape="poly" id="edge11_Node000009_Node000008" title=" " alt="" coords="538,283,536,322,530,322,533,283"/>
+</map>

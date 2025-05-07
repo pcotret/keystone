@@ -96,22 +96,87 @@ $(document).ready(function(){initNavTree('structSHA256__CTX.html',''); initResiz
   <div class="headertitle"><div class="title">SHA256_CTX Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Context structure for SHA-256 computation.  
+ <a href="structSHA256__CTX.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="sha256_8h_source.html">sha256.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ac4cf981ce4100c3af150be3c98b2d03e" id="r_ac4cf981ce4100c3af150be3c98b2d03e"><td class="memItemLeft" align="right" valign="top"><a id="ac4cf981ce4100c3af150be3c98b2d03e" name="ac4cf981ce4100c3af150be3c98b2d03e"></a>
-BYTE&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> [64]</td></tr>
+<tr class="memitem:ac4cf981ce4100c3af150be3c98b2d03e" id="r_ac4cf981ce4100c3af150be3c98b2d03e"><td class="memItemLeft" align="right" valign="top">BYTE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSHA256__CTX.html#ac4cf981ce4100c3af150be3c98b2d03e">data</a> [64]</td></tr>
 <tr class="separator:ac4cf981ce4100c3af150be3c98b2d03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acff27dfecde1d6e42f7c8474a3175529" id="r_acff27dfecde1d6e42f7c8474a3175529"><td class="memItemLeft" align="right" valign="top"><a id="acff27dfecde1d6e42f7c8474a3175529" name="acff27dfecde1d6e42f7c8474a3175529"></a>
-WORD&#160;</td><td class="memItemRight" valign="bottom"><b>datalen</b></td></tr>
+<tr class="memitem:acff27dfecde1d6e42f7c8474a3175529" id="r_acff27dfecde1d6e42f7c8474a3175529"><td class="memItemLeft" align="right" valign="top">WORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSHA256__CTX.html#acff27dfecde1d6e42f7c8474a3175529">datalen</a></td></tr>
 <tr class="separator:acff27dfecde1d6e42f7c8474a3175529"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7971befc0fa37b07350552d3a949634a" id="r_a7971befc0fa37b07350552d3a949634a"><td class="memItemLeft" align="right" valign="top"><a id="a7971befc0fa37b07350552d3a949634a" name="a7971befc0fa37b07350552d3a949634a"></a>
-unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><b>bitlen</b></td></tr>
+<tr class="memitem:a7971befc0fa37b07350552d3a949634a" id="r_a7971befc0fa37b07350552d3a949634a"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSHA256__CTX.html#a7971befc0fa37b07350552d3a949634a">bitlen</a></td></tr>
 <tr class="separator:a7971befc0fa37b07350552d3a949634a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09c4eef8a0dc02bc9860e2a02c3f2638" id="r_a09c4eef8a0dc02bc9860e2a02c3f2638"><td class="memItemLeft" align="right" valign="top"><a id="a09c4eef8a0dc02bc9860e2a02c3f2638" name="a09c4eef8a0dc02bc9860e2a02c3f2638"></a>
-WORD&#160;</td><td class="memItemRight" valign="bottom"><b>state</b> [8]</td></tr>
+<tr class="memitem:a09c4eef8a0dc02bc9860e2a02c3f2638" id="r_a09c4eef8a0dc02bc9860e2a02c3f2638"><td class="memItemLeft" align="right" valign="top">WORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSHA256__CTX.html#a09c4eef8a0dc02bc9860e2a02c3f2638">state</a> [8]</td></tr>
 <tr class="separator:a09c4eef8a0dc02bc9860e2a02c3f2638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Context structure for SHA-256 computation. </p>
+<p>Holds intermediate data, state, and length counters used throughout the SHA-256 hashing process. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7971befc0fa37b07350552d3a949634a" name="a7971befc0fa37b07350552d3a949634a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7971befc0fa37b07350552d3a949634a">&#9670;&#160;</a></span>bitlen</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long long SHA256_CTX::bitlen</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Total number of bits processed. </p>
+
+</div>
+</div>
+<a id="ac4cf981ce4100c3af150be3c98b2d03e" name="ac4cf981ce4100c3af150be3c98b2d03e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4cf981ce4100c3af150be3c98b2d03e">&#9670;&#160;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BYTE SHA256_CTX::data[64]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Input data buffer. </p>
+
+</div>
+</div>
+<a id="acff27dfecde1d6e42f7c8474a3175529" name="acff27dfecde1d6e42f7c8474a3175529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acff27dfecde1d6e42f7c8474a3175529">&#9670;&#160;</a></span>datalen</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WORD SHA256_CTX::datalen</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Current length of data in the buffer. </p>
+
+</div>
+</div>
+<a id="a09c4eef8a0dc02bc9860e2a02c3f2638" name="a09c4eef8a0dc02bc9860e2a02c3f2638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09c4eef8a0dc02bc9860e2a02c3f2638">&#9670;&#160;</a></span>state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WORD SHA256_CTX::state[8]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Current hash state (8 32-bit words). </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>runtime/include/crypto/<a class="el" href="sha256_8h_source.html">sha256.h</a></li>
 </ul>

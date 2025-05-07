@@ -1,0 +1,9 @@
+<map id="sm/src/platform/sifive/fu540/platform.h" name="sm/src/platform/sifive/fu540/platform.h">
+<area shape="rect" id="Node000001" title="FU540 platform&#45;specific enclave data and configuration." alt="" coords="8,5,154,46"/>
+<area shape="rect" id="Node000002" href="$waymasks_8h_source.html" title=" " alt="" coords="34,94,128,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,46,84,78,78,78,78,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,168,69,193"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="76,121,55,156,50,153,71,118"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="93,168,160,193"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="91,118,113,153,108,156,86,121"/>
+</map>

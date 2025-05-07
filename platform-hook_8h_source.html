@@ -98,64 +98,54 @@ $(document).ready(function(){initNavTree('platform-hook_8h_source.html',''); ini
   <div class="headertitle"><div class="title">platform-hook.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="platform-hook_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef _PLATFORM_HOOK_H_</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define _PLATFORM_HOOK_H_</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="enclave_8h.html">enclave.h</a>&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/* These functions are defined by platform/soc specific objects,</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">   defined in platform/$PLATFORM/$PLATFORM.c */</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef _PLATFORM_HOOK_H_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define _PLATFORM_HOOK_H_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="enclave_8h.html">enclave.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/* These functions are defined by platform/soc specific objects,</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">   defined in platform/$PLATFORM/$PLATFORM.c */</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/* This fires once FOR EACH sm supported enclave during init of</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">   enclave metadata. It may not fail currently. */</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keywordtype">void</span> platform_init_enclave(<span class="keyword">struct</span> <a class="code hl_struct" href="structenclave.html">enclave</a>* <a class="code hl_struct" href="structenclave.html">enclave</a>);</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">/* This fires once FOR EACH sm supported enclave during init of</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">   enclave metadata. It may not fail currently. */</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keywordtype">void</span> <a class="code hl_function" href="platform-hook_8h.html#a2e65f0078a83a169742be3733d4be45f">platform_init_enclave</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structenclave.html">enclave</a>* <a class="code hl_struct" href="structenclave.html">enclave</a>);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">/* This fires once GLOBALLY before any other platform init */</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_function" href="platform-hook_8h.html#a324ef36484f9b4e8b29d5377ae61caeb">platform_init_global_once</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">/* Fires once per-hart after global_once */</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_function" href="platform-hook_8h.html#aaf2a9514b29eabee07189cf06587dedd">platform_init_global</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">/* This fires once each time an enclave is created by the sm */</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_function" href="platform-hook_8h.html#a079aafebfa02ea8e5f124709d8519617">platform_create_enclave</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structenclave.html">enclave</a>* <a class="code hl_struct" href="structenclave.html">enclave</a>);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">/* This fires once each time an enclave is destroyed by the sm */</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keywordtype">void</span> <a class="code hl_function" href="platform-hook_8h.html#ad8a55b5de551b6fd77d703e8ae775695">platform_destroy_enclave</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structenclave.html">enclave</a>* <a class="code hl_struct" href="structenclave.html">enclave</a>);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">/* This fires when context switching INTO an enclave from the OS */</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keywordtype">void</span> <a class="code hl_function" href="platform-hook_8h.html#a53411d26e8386002dda41cf97f7b23da">platform_switch_to_enclave</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structenclave.html">enclave</a>* <a class="code hl_struct" href="structenclave.html">enclave</a>);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">/* This fires when context switching OUT of an enclave into the OS */</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keywordtype">void</span> <a class="code hl_function" href="platform-hook_8h.html#a4ebdf8d20fd54fc07239454de2428365">platform_switch_from_enclave</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structenclave.html">enclave</a>* <a class="code hl_struct" href="structenclave.html">enclave</a>);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">/* Future version: This fires when context switching from enclave A to</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">   enclave B */</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">// void platform_switch_between_enclaves(platform_enclave_data* enclaveA,</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">//                                       platform_enclave_data* enclaveB);</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">/* This is a required feature, it must return 64bits of random data on</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">   demand and never fail. If it would fail it may power off</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">   instead. */</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>uint64_t <a class="code hl_function" href="platform-hook_8h.html#acecbfff590486b7cf16d46af67000bbf">platform_random</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#endif </span><span class="comment">/* _PLATFORM_HOOK_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">/* This fires once GLOBALLY before any other platform init */</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> platform_init_global_once(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">/* Fires once per-hart after global_once */</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> platform_init_global(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/* This fires once each time an enclave is created by the sm */</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> platform_create_enclave(<span class="keyword">struct</span> <a class="code hl_struct" href="structenclave.html">enclave</a>* <a class="code hl_struct" href="structenclave.html">enclave</a>);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/* This fires once each time an enclave is destroyed by the sm */</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keywordtype">void</span> platform_destroy_enclave(<span class="keyword">struct</span> <a class="code hl_struct" href="structenclave.html">enclave</a>* <a class="code hl_struct" href="structenclave.html">enclave</a>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">/* This fires when context switching INTO an enclave from the OS */</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keywordtype">void</span> platform_switch_to_enclave(<span class="keyword">struct</span> <a class="code hl_struct" href="structenclave.html">enclave</a>* <a class="code hl_struct" href="structenclave.html">enclave</a>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">/* This fires when context switching OUT of an enclave into the OS */</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keywordtype">void</span> platform_switch_from_enclave(<span class="keyword">struct</span> <a class="code hl_struct" href="structenclave.html">enclave</a>* <a class="code hl_struct" href="structenclave.html">enclave</a>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">/* Future version: This fires when context switching from enclave A to</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">   enclave B */</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// void platform_switch_between_enclaves(platform_enclave_data* enclaveA,</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">//                                       platform_enclave_data* enclaveB);</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">/* This is a required feature, it must return 64bits of random data on</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">   demand and never fail. If it would fail it may power off</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">   instead. */</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>uint64_t platform_random(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif </span><span class="comment">/* _PLATFORM_HOOK_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aenclave_8h_html"><div class="ttname"><a href="enclave_8h.html">enclave.h</a></div><div class="ttdoc">Enclave management interface and metadata structures for the Keystone security monitor.</div></div>
-<div class="ttc" id="aplatform-hook_8h_html_a079aafebfa02ea8e5f124709d8519617"><div class="ttname"><a href="platform-hook_8h.html#a079aafebfa02ea8e5f124709d8519617">platform_create_enclave</a></div><div class="ttdeci">unsigned long platform_create_enclave(struct enclave *enclave)</div><div class="ttdoc">Perform platform-specific actions during enclave creation.</div><div class="ttdef"><b>Definition</b> platform.c:21</div></div>
-<div class="ttc" id="aplatform-hook_8h_html_a2e65f0078a83a169742be3733d4be45f"><div class="ttname"><a href="platform-hook_8h.html#a2e65f0078a83a169742be3733d4be45f">platform_init_enclave</a></div><div class="ttdeci">void platform_init_enclave(struct enclave *enclave)</div><div class="ttdoc">Initialize platform-specific data for a given enclave.</div><div class="ttdef"><b>Definition</b> platform.c:13</div></div>
-<div class="ttc" id="aplatform-hook_8h_html_a324ef36484f9b4e8b29d5377ae61caeb"><div class="ttname"><a href="platform-hook_8h.html#a324ef36484f9b4e8b29d5377ae61caeb">platform_init_global_once</a></div><div class="ttdeci">unsigned long platform_init_global_once(void)</div><div class="ttdoc">Perform one-time global platform initialization.</div><div class="ttdef"><b>Definition</b> platform.c:5</div></div>
-<div class="ttc" id="aplatform-hook_8h_html_a4ebdf8d20fd54fc07239454de2428365"><div class="ttname"><a href="platform-hook_8h.html#a4ebdf8d20fd54fc07239454de2428365">platform_switch_from_enclave</a></div><div class="ttdeci">void platform_switch_from_enclave(struct enclave *enclave)</div><div class="ttdoc">Perform platform-specific actions after switching out of an enclave.</div><div class="ttdef"><b>Definition</b> platform.c:29</div></div>
-<div class="ttc" id="aplatform-hook_8h_html_a53411d26e8386002dda41cf97f7b23da"><div class="ttname"><a href="platform-hook_8h.html#a53411d26e8386002dda41cf97f7b23da">platform_switch_to_enclave</a></div><div class="ttdeci">void platform_switch_to_enclave(struct enclave *enclave)</div><div class="ttdoc">Perform platform-specific actions before switching into an enclave.</div><div class="ttdef"><b>Definition</b> platform.c:25</div></div>
-<div class="ttc" id="aplatform-hook_8h_html_aaf2a9514b29eabee07189cf06587dedd"><div class="ttname"><a href="platform-hook_8h.html#aaf2a9514b29eabee07189cf06587dedd">platform_init_global</a></div><div class="ttdeci">unsigned long platform_init_global(void)</div><div class="ttdoc">Perform per-hart platform initialization.</div><div class="ttdef"><b>Definition</b> platform.c:9</div></div>
-<div class="ttc" id="aplatform-hook_8h_html_acecbfff590486b7cf16d46af67000bbf"><div class="ttname"><a href="platform-hook_8h.html#acecbfff590486b7cf16d46af67000bbf">platform_random</a></div><div class="ttdeci">uint64_t platform_random(void)</div><div class="ttdoc">Return 64 bits of cryptographically secure random data.</div><div class="ttdef"><b>Definition</b> platform.c:33</div></div>
-<div class="ttc" id="aplatform-hook_8h_html_ad8a55b5de551b6fd77d703e8ae775695"><div class="ttname"><a href="platform-hook_8h.html#ad8a55b5de551b6fd77d703e8ae775695">platform_destroy_enclave</a></div><div class="ttdeci">void platform_destroy_enclave(struct enclave *enclave)</div><div class="ttdoc">Perform platform-specific cleanup during enclave destruction.</div><div class="ttdef"><b>Definition</b> platform.c:17</div></div>
-<div class="ttc" id="astructenclave_html"><div class="ttname"><a href="structenclave.html">enclave</a></div><div class="ttdoc">Metadata structure for an enclave.</div><div class="ttdef"><b>Definition</b> enclave.h:71</div></div>
+<div class="ttc" id="astructenclave_html"><div class="ttname"><a href="structenclave.html">enclave</a></div><div class="ttdoc">Metadata structure for an enclave.</div><div class="ttdef"><b>Definition</b> enclave.h:82</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_bc0f242c85b520934b5dba85c72d6af4.html">sm</a></li><li class="navelem"><a class="el" href="dir_cfc62cafa00a1d6cf885ee8883644d45.html">src</a></li><li class="navelem"><a class="el" href="platform-hook_8h.html">platform-hook.h</a></li>
+    <li class="navelem"><a class="el" href="dir_bc0f242c85b520934b5dba85c72d6af4.html">sm</a></li><li class="navelem"><a class="el" href="dir_cfc62cafa00a1d6cf885ee8883644d45.html">src</a></li><li class="navelem"><b>platform-hook.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

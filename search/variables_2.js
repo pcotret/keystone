@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['data_0',['data',['../structenclave__report.html#a10ef1dfeb5f0db09776a8fd6f48a8a63',1,'enclave_report']]],
-  ['data_5flen_1',['data_len',['../structenclave__report.html#a91bf1391adf1c705e9d1e6dbba195f32',1,'enclave_report']]],
-  ['dev_5fpublic_5fkey_2',['dev_public_key',['../structreport.html#a0dc6c7ef83400733d904edacef6febb7',1,'report']]]
+  ['b_0',['b',['../structsha3__ctx__t.html#acfe22821caab968235e329c16bd5f101',1,'sha3_ctx_t']]],
+  ['bitlen_1',['bitlen',['../structSHA256__CTX.html#a7971befc0fa37b07350552d3a949634a',1,'SHA256_CTX']]]
 ];

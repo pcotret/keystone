@@ -1,7 +1,0 @@
-<map id="printf" name="printf">
-<area shape="rect" id="Node000001" title=" " alt="" coords="114,29,164,55"/>
-<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="155,16,150,10,139,8,129,10,123,14,122,20,125,28,120,30,117,21,119,11,126,5,139,3,152,5,159,12"/>
-<area shape="rect" id="Node000002" href="$loader_8c.html#ad7fb2a5875c6781f1a96640053fc10ba" title="Load an ELF file into memory." alt="" coords="5,29,66,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,45,66,45,66,40,98,40"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="52,16,46,10,35,8,25,10,20,14,19,20,22,28,17,30,14,21,16,11,23,5,36,3,49,5,56,12"/>
-</map>

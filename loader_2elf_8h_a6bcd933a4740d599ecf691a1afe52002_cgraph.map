@@ -1,12 +1,4 @@
 <map id="elf_checkProgramHeaderTable" name="elf_checkProgramHeaderTable">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,126,206,152"/>
-<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="66,128,58,118,63,108,79,102,106,100,135,102,150,109,148,114,134,107,105,105,80,107,66,112,63,117,70,124"/>
-<area shape="rect" id="Node000002" href="$elf32_8c.html#af23ced79c46619445a6fb2e23cd16aeb" title="Check the validity of the ELF32 program header table." alt="" coords="254,29,436,70"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,123,253,81,272,73,274,78,255,85,143,128"/>
-<area shape="rect" id="Node000003" href="$elf64_8c.html#a8124e0c03368d0ea520667562159dd3c" title="Check the validity of the ELF64 program header table." alt="" coords="254,119,436,159"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="206,136,238,136,238,142,206,142"/>
-<area shape="rect" id="Node000004" href="$elf32_8h.html#a422462f1d203006dd7a2339e753b24cf" title="Determine if the ELF file is of class ELFCLASS32." alt="" coords="304,184,386,209"/>
-<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="163,150,289,180,288,186,162,155"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="300,29,298,19,305,10,321,5,345,3,371,5,386,11,384,16,369,10,345,8,322,10,308,15,303,21,305,28"/>
-<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="300,119,298,109,305,100,321,94,345,92,371,94,386,101,384,106,369,100,345,97,322,99,308,104,303,110,305,117"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,206,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="72,30,65,21,69,11,83,5,106,3,130,5,143,12,140,17,129,10,105,8,84,10,73,15,71,20,76,27"/>
 </map>

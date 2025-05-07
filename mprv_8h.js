@@ -1,6 +1,6 @@
 var mprv_8h =
 [
-    [ "mprv_block", "structmprv__block.html", null ],
+    [ "mprv_block", "structmprv__block.html", "structmprv__block" ],
     [ "MPRV_BLOCK", "mprv_8h.html#ac83e2d38cb0c4200d65e8411b98d7379", null ],
     [ "REGBYTES", "mprv_8h.html#a4cbedf4d32de8a7fbc7474c72274d966", null ],
     [ "copy1_from_sm", "mprv_8h.html#a2b1b6d835c2c8844e2c1f91d05564ab0", null ],

@@ -1,6 +1,8 @@
 var loader_2elf_8h =
 [
     [ "elf", "structelf.html", "structelf" ],
+    [ "elf_addr_type_t", "loader_2elf_8h.html#a580c32e942cc1d0aa21934cf4394897b", null ],
+    [ "elf_t", "loader_2elf_8h.html#a0536080676f076eca509244dbbec6f18", null ],
     [ "elf_addr_type", "loader_2elf_8h.html#a671d0989574c4f4015e805cd96e68a52", [
       [ "VIRTUAL", "loader_2elf_8h.html#a671d0989574c4f4015e805cd96e68a52a8ef8ce731fb5582b726b1ef58a265f9b", null ],
       [ "PHYSICAL", "loader_2elf_8h.html#a671d0989574c4f4015e805cd96e68a52a1212ef902b38594c5e3a18a86ec90edc", null ]

@@ -96,19 +96,70 @@ $(document).ready(function(){initNavTree('structplatform__enclave__data.html',''
   <div class="headertitle"><div class="title">platform_enclave_data Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Configuration structure for enclave settings on the platform.  
+ <a href="structplatform__enclave__data.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="sifive_2fu540_2platform_8h_source.html">platform.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ace1959ed3f9c1e465ae0bf0c80abfec3" id="r_ace1959ed3f9c1e465ae0bf0c80abfec3"><td class="memItemLeft" align="right" valign="top"><a id="ace1959ed3f9c1e465ae0bf0c80abfec3" name="ace1959ed3f9c1e465ae0bf0c80abfec3"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_ways</b></td></tr>
+<tr class="memitem:ace1959ed3f9c1e465ae0bf0c80abfec3" id="r_ace1959ed3f9c1e465ae0bf0c80abfec3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structplatform__enclave__data.html#ace1959ed3f9c1e465ae0bf0c80abfec3">num_ways</a></td></tr>
 <tr class="separator:ace1959ed3f9c1e465ae0bf0c80abfec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f494cb708bb42e6ceacffb1441e185b" id="r_a9f494cb708bb42e6ceacffb1441e185b"><td class="memItemLeft" align="right" valign="top"><a id="a9f494cb708bb42e6ceacffb1441e185b" name="a9f494cb708bb42e6ceacffb1441e185b"></a>
-waymask_t&#160;</td><td class="memItemRight" valign="bottom"><b>saved_mask</b></td></tr>
+<tr class="memitem:a9f494cb708bb42e6ceacffb1441e185b" id="r_a9f494cb708bb42e6ceacffb1441e185b"><td class="memItemLeft" align="right" valign="top">waymask_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structplatform__enclave__data.html#a9f494cb708bb42e6ceacffb1441e185b">saved_mask</a></td></tr>
 <tr class="separator:a9f494cb708bb42e6ceacffb1441e185b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70b6268d8658fab0b3093c853717df28" id="r_a70b6268d8658fab0b3093c853717df28"><td class="memItemLeft" align="right" valign="top"><a id="a70b6268d8658fab0b3093c853717df28" name="a70b6268d8658fab0b3093c853717df28"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>use_scratch</b></td></tr>
+<tr class="memitem:a70b6268d8658fab0b3093c853717df28" id="r_a70b6268d8658fab0b3093c853717df28"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structplatform__enclave__data.html#a70b6268d8658fab0b3093c853717df28">use_scratch</a></td></tr>
 <tr class="separator:a70b6268d8658fab0b3093c853717df28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Configuration structure for enclave settings on the platform. </p>
+<p>This structure holds configuration information specific to the enclave's execution environment on the platform. It includes parameters for cache partitioning, waymask management, and scratchpad usage. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="ace1959ed3f9c1e465ae0bf0c80abfec3" name="ace1959ed3f9c1e465ae0bf0c80abfec3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace1959ed3f9c1e465ae0bf0c80abfec3">&#9670;&#160;</a></span>num_ways</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t platform_enclave_data::num_ways</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The number of cache ways allocated for the enclave (0 for no partitioning). </p>
+
+</div>
+</div>
+<a id="a9f494cb708bb42e6ceacffb1441e185b" name="a9f494cb708bb42e6ceacffb1441e185b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f494cb708bb42e6ceacffb1441e185b">&#9670;&#160;</a></span>saved_mask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">waymask_t platform_enclave_data::saved_mask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The waymask for cache partitioning (used when num_ways &gt; 0). </p>
+
+</div>
+</div>
+<a id="a70b6268d8658fab0b3093c853717df28" name="a70b6268d8658fab0b3093c853717df28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70b6268d8658fab0b3093c853717df28">&#9670;&#160;</a></span>use_scratch</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int platform_enclave_data::use_scratch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Indicates whether scratchpad memory is used (1 for yes, 0 for no). </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>sm/src/platform/fpga/ariane/<a class="el" href="fpga_2ariane_2platform_8h_source.html">platform.h</a></li>
 <li>sm/src/platform/sifive/fu540/<a class="el" href="sifive_2fu540_2platform_8h_source.html">platform.h</a></li>

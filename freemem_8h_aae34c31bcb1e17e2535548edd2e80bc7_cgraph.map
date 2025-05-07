@@ -1,0 +1,5 @@
+<map id="spa_init" name="spa_init">
+<area shape="rect" id="Node000001" title="Initialize the simple physical allocator." alt="" coords="5,5,72,31"/>
+<area shape="rect" id="Node000002" href="$freemem__ld_8c.html#a82ceaa9fa0697cfec7fb959f57ac2f32" title="Free a previously allocated page of memory." alt="" coords="120,5,187,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,16,104,16,104,21,72,21"/>
+</map>

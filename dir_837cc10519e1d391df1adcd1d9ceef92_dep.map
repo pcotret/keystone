@@ -1,7 +1,4 @@
 <map id="runtime/include/loader" name="runtime/include/loader">
-<area shape="rect" id="node1" href="dir_17e7c3833a7301cda24627589e04a981.html" title="util" alt="" coords="35,126,74,152"/>
-<area shape="rect" id="node2" href="dir_837cc10519e1d391df1adcd1d9ceef92.html" title="loader" alt="" coords="27,52,83,78"/>
-<area shape="poly" id="edge1" href="dir_000022_000043.html" alt="" coords="57,78,57,110,52,110,52,78"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000022_000043.html" title="1" alt="" coords="60,100,67,115"/>
-<area shape="rect" id="clust1" href="dir_67b55deb5940a6b63a778e938eb2b24d.html" title="include" alt="" coords="16,16,93,162"/>
+<area shape="rect" id="node1" href="dir_837cc10519e1d391df1adcd1d9ceef92.html" title="loader" alt="" coords="27,52,83,78"/>
+<area shape="rect" id="clust1" href="dir_67b55deb5940a6b63a778e938eb2b24d.html" title="include" alt="" coords="16,16,93,89"/>
 </map>

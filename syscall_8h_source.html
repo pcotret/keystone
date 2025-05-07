@@ -98,50 +98,44 @@ $(document).ready(function(){initNavTree('syscall_8h_source.html',''); initResiz
   <div class="headertitle"><div class="title">syscall.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="syscall_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//******************************************************************************</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Copyright (c) 2018, The Regents of the University of California (Regents).</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// All Rights Reserved. See LICENSE for license details.</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef __SYSCALL_H__</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define __SYSCALL_H__</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="printf_8h.html">util/printf.h</a>&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="regs_8h.html">util/regs.h</a>&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;edge_syscall.h&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="vm_8h.html">mm/vm.h</a>&quot;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;eyrie_call.h&quot;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keywordtype">void</span> <a class="code hl_function" href="syscall_8h.html#af9aafc4c23ef0fe1f8914b9354d23bbc">handle_syscall</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structencl__ctx.html">encl_ctx</a>* <a class="code hl_struct" href="structctx.html">ctx</a>);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keywordtype">void</span> <a class="code hl_function" href="syscall_8h.html#afb7eb2af7744bc68801583664e0b7702">init_edge_internals</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>uintptr_t <a class="code hl_function" href="syscall_8h.html#aae2f0f11f541bf9e11a881462eca73c8">dispatch_edgecall_syscall</a>(<span class="keyword">struct</span> edge_syscall* syscall_data_ptr,</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                                    <span class="keywordtype">size_t</span> data_len);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">// Define this to enable printing of a large amount of syscall information</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">//#define USE_INTERNAL_STRACE 1</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#ifdef USE_INTERNAL_STRACE</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#define print_strace printf</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#define print_strace(...)</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif </span><span class="comment">/* syscall.h */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aprintf_8h_html"><div class="ttname"><a href="printf_8h.html">printf.h</a></div></div>
-<div class="ttc" id="aregs_8h_html"><div class="ttname"><a href="regs_8h.html">regs.h</a></div></div>
-<div class="ttc" id="astructctx_html"><div class="ttname"><a href="structctx.html">ctx</a></div><div class="ttdoc">Thread context.</div><div class="ttdef"><b>Definition</b> thread.h:23</div></div>
-<div class="ttc" id="astructencl__ctx_html"><div class="ttname"><a href="structencl__ctx.html">encl_ctx</a></div><div class="ttdef"><b>Definition</b> regs.h:48</div></div>
-<div class="ttc" id="asyscall_8h_html_aae2f0f11f541bf9e11a881462eca73c8"><div class="ttname"><a href="syscall_8h.html#aae2f0f11f541bf9e11a881462eca73c8">dispatch_edgecall_syscall</a></div><div class="ttdeci">uintptr_t dispatch_edgecall_syscall(struct edge_syscall *syscall_data_ptr, size_t data_len)</div><div class="ttdoc">Dispatches an edge call-based syscall.</div><div class="ttdef"><b>Definition</b> syscall.c:34</div></div>
-<div class="ttc" id="asyscall_8h_html_af9aafc4c23ef0fe1f8914b9354d23bbc"><div class="ttname"><a href="syscall_8h.html#af9aafc4c23ef0fe1f8914b9354d23bbc">handle_syscall</a></div><div class="ttdeci">void handle_syscall(struct encl_ctx *ctx)</div><div class="ttdoc">Handles a syscall from the enclave context.</div><div class="ttdef"><b>Definition</b> syscall.c:153</div></div>
-<div class="ttc" id="asyscall_8h_html_afb7eb2af7744bc68801583664e0b7702"><div class="ttname"><a href="syscall_8h.html#afb7eb2af7744bc68801583664e0b7702">init_edge_internals</a></div><div class="ttdeci">void init_edge_internals(void)</div><div class="ttdoc">Initializes internal edge call structures and state.</div><div class="ttdef"><b>Definition</b> syscall.c:149</div></div>
-<div class="ttc" id="avm_8h_html"><div class="ttname"><a href="vm_8h.html">vm.h</a></div></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//******************************************************************************</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Copyright (c) 2018, The Regents of the University of California (Regents).</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// All Rights Reserved. See LICENSE for license details.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef __SYSCALL_H__</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define __SYSCALL_H__</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;util/printf.h&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="regs_8h.html">util/regs.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;edge_syscall.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;mm/vm.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;eyrie_call.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keywordtype">void</span> handle_syscall(<span class="keyword">struct</span> <a class="code hl_struct" href="structencl__ctx.html">encl_ctx</a>* <a class="code hl_struct" href="structctx.html">ctx</a>);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keywordtype">void</span> init_edge_internals(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>uintptr_t dispatch_edgecall_syscall(<span class="keyword">struct</span> edge_syscall* syscall_data_ptr,</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                                    <span class="keywordtype">size_t</span> data_len);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// Define this to enable printing of a large amount of syscall information</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//#define USE_INTERNAL_STRACE 1</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#ifdef USE_INTERNAL_STRACE</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define print_strace printf</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define print_strace(...)</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#endif </span><span class="comment">/* syscall.h */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aregs_8h_html"><div class="ttname"><a href="regs_8h.html">regs.h</a></div><div class="ttdoc">Defines structures for storing register state and context information.</div></div>
+<div class="ttc" id="astructctx_html"><div class="ttname"><a href="structctx.html">ctx</a></div><div class="ttdoc">Thread context.</div><div class="ttdef"><b>Definition</b> thread.h:22</div></div>
+<div class="ttc" id="astructencl__ctx_html"><div class="ttname"><a href="structencl__ctx.html">encl_ctx</a></div><div class="ttdoc">Structure that extends the register state to include supervisor-specific control and status registers...</div><div class="ttdef"><b>Definition</b> regs.h:69</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_cb031e414f281a658b23dddb30bb9d2c.html">runtime</a></li><li class="navelem"><a class="el" href="dir_67b55deb5940a6b63a778e938eb2b24d.html">include</a></li><li class="navelem"><a class="el" href="dir_e3064426a58bb58c58dea8938c4fd3f9.html">call</a></li><li class="navelem"><a class="el" href="syscall_8h.html">syscall.h</a></li>
+    <li class="navelem"><a class="el" href="dir_cb031e414f281a658b23dddb30bb9d2c.html">runtime</a></li><li class="navelem"><a class="el" href="dir_67b55deb5940a6b63a778e938eb2b24d.html">include</a></li><li class="navelem"><a class="el" href="dir_e3064426a58bb58c58dea8938c4fd3f9.html">call</a></li><li class="navelem"><b>syscall.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

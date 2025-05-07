@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('pmp_8h.html',''); initResizable(); });
 
 <p>Physical Memory Protection (PMP) management interface.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="sm_8h_source.html">sm.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;sm.h&quot;</code><br />
 <code>#include &lt;sbi/riscv_atomic.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for pmp.h:</div>
@@ -110,14 +110,14 @@ Include dependency graph for pmp.h:</div>
 <div class="center"><img src="pmp_8h__incl.png" border="0" usemap="#asm_2src_2pmp_8h" alt=""/></div>
 <map name="asm_2src_2pmp_8h" id="asm_2src_2pmp_8h">
 <area shape="rect" title="Physical Memory Protection (PMP) management interface." alt="" coords="210,5,311,31"/>
-<area shape="rect" href="sm_8h.html" title="Security Monitor (SM) interface." alt="" coords="236,79,285,105"/>
+<area shape="rect" href="sm_8h_source.html" title=" " alt="" coords="236,79,285,105"/>
 <area shape="poly" title=" " alt="" coords="256,31,254,64,249,63,251,31"/>
 <area shape="rect" title=" " alt="" coords="309,79,436,105"/>
 <area shape="poly" title=" " alt="" coords="281,29,342,68,339,73,278,34"/>
 <area shape="poly" title=" " alt="" coords="265,78,266,46,272,46,270,79"/>
 <area shape="rect" title=" " alt="" coords="5,226,113,252"/>
 <area shape="poly" title=" " alt="" coords="236,97,202,102,162,112,121,128,86,154,70,182,63,212,58,211,65,180,82,151,119,124,160,106,201,97,235,92"/>
-<area shape="rect" href="sm-sbi_8h.html" title="SBI interface for Keystone Security Monitor." alt="" coords="96,153,166,178"/>
+<area shape="rect" href="sm-sbi_8h_source.html" title=" " alt="" coords="96,153,166,178"/>
 <area shape="poly" title=" " alt="" coords="240,108,168,147,165,142,237,103"/>
 <area shape="rect" title=" " alt="" coords="191,153,330,178"/>
 <area shape="poly" title=" " alt="" coords="263,105,263,137,258,137,258,105"/>
@@ -135,38 +135,32 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="pmp_8h__dep__incl.png" border="0" usemap="#asm_2src_2pmp_8hdep" alt=""/></div>
 <map name="asm_2src_2pmp_8hdep" id="asm_2src_2pmp_8hdep">
-<area shape="rect" title="Physical Memory Protection (PMP) management interface." alt="" coords="485,5,585,31"/>
-<area shape="rect" href="enclave_8c.html" title="Enclave management and context switching for the Keystone Security Monitor." alt="" coords="5,308,126,333"/>
-<area shape="poly" title=" " alt="" coords="470,27,368,43,308,57,246,77,185,103,127,136,75,177,33,228,28,248,33,269,44,289,57,306,53,309,40,292,28,271,22,247,28,225,72,174,124,132,182,98,244,72,307,52,367,37,469,22"/>
-<area shape="rect" href="enclave_8h.html" title="Enclave management interface and metadata structures for the Keystone security monitor." alt="" coords="263,153,383,178"/>
-<area shape="poly" title=" " alt="" coords="506,42,342,154,339,150,503,38"/>
-<area shape="rect" href="sm-sbi-opensbi_8c.html" title="Keystone Enclave SBI handler implementation." alt="" coords="640,308,803,333"/>
-<area shape="poly" title=" " alt="" coords="572,37,597,55,620,77,642,107,661,139,691,206,711,266,722,307,716,308,706,267,686,208,656,142,637,110,615,81,593,59,569,42"/>
-<area shape="rect" href="fu540__internal_8c_source.html" title=" " alt="" coords="457,300,610,341"/>
-<area shape="poly" title=" " alt="" coords="565,40,582,57,596,78,618,124,632,165,633,206,617,253,597,281,571,302,568,297,593,277,612,251,628,205,627,166,614,126,591,80,578,60,561,43"/>
-<area shape="rect" href="sm_8h.html" title="Security Monitor (SM) interface." alt="" coords="488,79,582,105"/>
-<area shape="poly" title=" " alt="" coords="529,46,531,78,525,79,523,46"/>
-<area shape="poly" title=" " alt="" coords="248,175,188,182,128,193,77,208,59,218,46,228,39,247,41,268,50,289,60,306,55,309,45,291,36,269,34,246,42,225,56,213,75,203,127,188,188,177,247,170"/>
-<area shape="rect" href="cpu_8h.html" title="CPU context management for enclaves." alt="" coords="487,226,583,252"/>
-<area shape="poly" title=" " alt="" coords="374,181,500,223,498,228,372,186"/>
-<area shape="rect" href="platform-hook_8h.html" title="Platform&#45;specific hooks for enclave lifecycle management." alt="" coords="71,226,225,252"/>
-<area shape="poly" title=" " alt="" coords="280,187,179,228,177,223,278,182"/>
-<area shape="poly" title=" " alt="" coords="304,191,287,222,285,237,290,250,311,261,352,274,458,300,457,306,350,280,308,266,286,254,280,237,282,220,299,189"/>
-<area shape="rect" href="multimem_8h_source.html" title=" " alt="" coords="241,308,418,333"/>
-<area shape="poly" title=" " alt="" coords="247,170,171,175,98,188,72,199,55,212,51,229,61,250,88,269,132,285,241,306,240,311,131,290,86,274,57,254,45,229,51,209,69,194,97,183,170,169,247,164"/>
-<area shape="rect" href="plugins_8h_source.html" title=" " alt="" coords="301,226,462,252"/>
-<area shape="poly" title=" " alt="" coords="344,189,374,224,370,228,340,192"/>
-<area shape="poly" title=" " alt="" coords="472,255,127,312,126,307,471,250"/>
-<area shape="poly" title=" " alt="" coords="578,256,694,305,692,309,576,261"/>
-<area shape="poly" title=" " alt="" coords="126,265,80,309,76,305,123,261"/>
-<area shape="poly" title=" " alt="" coords="223,253,457,301,456,306,222,258"/>
-<area shape="poly" title=" " alt="" coords="367,267,340,308,335,305,363,264"/>
-<area shape="poly" title=" " alt="" coords="541,64,539,31,544,31,546,63"/>
-<area shape="poly" title=" " alt="" coords="486,112,360,155,358,150,484,107"/>
-<area shape="poly" title=" " alt="" coords="538,120,538,226,532,226,532,120"/>
-<area shape="poly" title=" " alt="" coords="564,112,605,151,672,238,717,306,712,308,668,241,601,154,560,116"/>
-<area shape="poly" title=" " alt="" coords="557,115,576,143,593,177,602,215,602,234,597,253,581,280,561,301,557,298,577,277,592,251,597,233,597,215,588,179,572,146,553,118"/>
-<area shape="poly" title=" " alt="" coords="513,117,396,228,392,224,510,113"/>
+<area shape="rect" title="Physical Memory Protection (PMP) management interface." alt="" coords="476,5,576,31"/>
+<area shape="rect" href="enclave_8h.html" title="Enclave management interface and metadata structures for the Keystone security monitor." alt="" coords="327,153,448,178"/>
+<area shape="poly" title=" " alt="" coords="505,44,469,81,400,154,396,151,465,77,502,40"/>
+<area shape="rect" href="fu540__internal_8c_source.html" title=" " alt="" coords="507,300,660,341"/>
+<area shape="poly" title=" " alt="" coords="553,40,587,77,635,147,651,180,665,226,667,239,664,253,645,281,620,302,616,297,641,277,660,251,662,239,659,227,646,182,631,149,583,81,549,43"/>
+<area shape="rect" href="sm_8h_source.html" title=" " alt="" coords="479,79,573,105"/>
+<area shape="poly" title=" " alt="" coords="520,46,522,78,516,79,515,46"/>
+<area shape="rect" href="cpu_8h.html" title="CPU context management for enclaves." alt="" coords="535,226,632,252"/>
+<area shape="poly" title=" " alt="" coords="436,182,551,223,549,228,434,187"/>
+<area shape="rect" href="platform-hook_8h_source.html" title=" " alt="" coords="69,226,223,252"/>
+<area shape="poly" title=" " alt="" coords="333,186,188,228,186,223,331,181"/>
+<area shape="rect" href="mpfs_2platform_8c.html" title="Platform&#45;specific functions for enclave management and random number generation." alt="" coords="5,300,151,341"/>
+<area shape="poly" title=" " alt="" coords="312,172,240,178,164,188,99,205,75,215,59,228,52,244,52,262,67,298,62,300,47,263,46,243,55,225,72,211,97,200,163,183,239,173,311,167"/>
+<area shape="poly" title=" " alt="" coords="420,185,474,224,563,298,560,302,471,228,417,190"/>
+<area shape="rect" href="multimem_8h_source.html" title=" " alt="" coords="196,308,373,333"/>
+<area shape="poly" title=" " alt="" coords="337,187,310,204,290,228,282,248,280,269,284,307,279,307,275,269,277,247,285,225,307,200,334,183"/>
+<area shape="rect" href="plugins_8h_source.html" title=" " alt="" coords="299,226,460,252"/>
+<area shape="poly" title=" " alt="" coords="387,194,383,226,378,226,382,193"/>
+<area shape="poly" title=" " alt="" coords="128,265,97,301,93,298,124,262"/>
+<area shape="poly" title=" " alt="" coords="229,253,507,303,506,308,228,258"/>
+<area shape="poly" title=" " alt="" coords="355,264,301,309,297,305,352,260"/>
+<area shape="poly" title=" " alt="" coords="532,64,530,31,536,31,537,63"/>
+<area shape="poly" title=" " alt="" coords="490,115,412,154,410,150,488,110"/>
+<area shape="poly" title=" " alt="" coords="539,118,581,225,576,227,534,120"/>
+<area shape="poly" title=" " alt="" coords="556,113,605,160,628,191,646,226,648,247,640,268,627,286,612,301,608,297,623,283,636,265,643,246,641,227,624,194,601,163,552,116"/>
+<area shape="poly" title=" " alt="" coords="512,119,489,149,461,180,430,207,400,228,397,224,426,203,457,176,485,146,508,116"/>
 </map>
 </div>
 </div>
@@ -204,9 +198,11 @@ Macros</h2></td></tr>
 <tr class="memdesc:ade790be7d7bb8ae983d762730a74eccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">No permissions. <br /></td></tr>
 <tr class="separator:ade790be7d7bb8ae983d762730a74eccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65dc7ba7b3c74a3db70687fc33475a94" id="r_a65dc7ba7b3c74a3db70687fc33475a94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmp_8h.html#a65dc7ba7b3c74a3db70687fc33475a94">LIST_OF_PMP_REGS</a></td></tr>
+<tr class="memdesc:a65dc7ba7b3c74a3db70687fc33475a94"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of PMP register and configuration group pairs for RV32.  <br /></td></tr>
 <tr class="separator:a65dc7ba7b3c74a3db70687fc33475a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d1ef852b78bd2b8444128b5862b7953" id="r_a0d1ef852b78bd2b8444128b5862b7953"><td class="memItemLeft" align="right" valign="top"><a id="a0d1ef852b78bd2b8444128b5862b7953" name="a0d1ef852b78bd2b8444128b5862b7953"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>PMP_PER_GROUP</b>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:a0d1ef852b78bd2b8444128b5862b7953"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of PMP entries per configuration group on RV32. <br /></td></tr>
 <tr class="separator:a0d1ef852b78bd2b8444128b5862b7953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24f6d46ac6d16b1dcc11301d5dd2300a" id="r_a24f6d46ac6d16b1dcc11301d5dd2300a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmp_8h.html#a24f6d46ac6d16b1dcc11301d5dd2300a">PMP_SET</a>(n,  g,  addr,  pmpc)</td></tr>
 <tr class="memdesc:a24f6d46ac6d16b1dcc11301d5dd2300a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a PMP register with proper context saving/restoring of mtvec.  <br /></td></tr>
@@ -292,6 +288,9 @@ Functions</h2></td></tr>
 <div class="line">                           X(8,2)  X(9,2)  X(10,2) X(11,2) \</div>
 <div class="line">                           X(12,3) X(13,3) X(14,3) X(15,3)</div>
 </div><!-- fragment -->
+<p>List of PMP register and configuration group pairs for RV32. </p>
+<p>Each group in RV32 controls 4 PMP entries. </p>
+
 </div>
 </div>
 <a id="a3ce82d1fc86d061d2a99032e8d869d31" name="a3ce82d1fc86d061d2a99032e8d869d31"></a>
@@ -366,7 +365,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{ uintptr_t oldcfg = csr_read(pmpcfg##g); \</div>
-<div class="line">  pmpc |= (oldcfg &amp; ~((uintptr_t)0xff &lt;&lt; (uintptr_t)8*(n%PMP_PER_GROUP))); \</div>
+<div class="line">  pmpc |= (oldcfg &amp; ~((uintptr_t)0xff &lt;&lt; (uintptr_t)8*(n%<a class="code hl_define" href="pmp_8h.html#a0d1ef852b78bd2b8444128b5862b7953">PMP_PER_GROUP</a>))); \</div>
 <div class="line">  <span class="keyword">asm</span> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;la t0, 1f\n\t&quot;</span> \</div>
 <div class="line">                <span class="stringliteral">&quot;csrrw t0, mtvec, t0\n\t&quot;</span> \</div>
 <div class="line">                <span class="stringliteral">&quot;csrw pmpaddr&quot;</span>#n<span class="stringliteral">&quot;, %0\n\t&quot;</span> \</div>
@@ -376,6 +375,7 @@ Functions</h2></td></tr>
 <div class="line">                <span class="stringliteral">&quot;1: csrw mtvec, t0 \n\t&quot;</span> \</div>
 <div class="line">                : : <span class="stringliteral">&quot;r&quot;</span> (addr), <span class="stringliteral">&quot;r&quot;</span> (pmpc) : <span class="stringliteral">&quot;t0&quot;</span>); \</div>
 <div class="line">}</div>
+<div class="ttc" id="apmp_8h_html_a0d1ef852b78bd2b8444128b5862b7953"><div class="ttname"><a href="pmp_8h.html#a0d1ef852b78bd2b8444128b5862b7953">PMP_PER_GROUP</a></div><div class="ttdeci">#define PMP_PER_GROUP</div><div class="ttdoc">Number of PMP entries per configuration group on RV32.</div><div class="ttdef"><b>Definition</b> pmp.h:67</div></div>
 </div><!-- fragment -->
 <p>Set a PMP register with proper context saving/restoring of mtvec. </p>
 
@@ -407,7 +407,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{ uintptr_t pmpc = csr_read(pmpcfg##g); \</div>
-<div class="line">  pmpc &amp;= ~((uintptr_t)0xff &lt;&lt; (uintptr_t)8*(n%PMP_PER_GROUP)); \</div>
+<div class="line">  pmpc &amp;= ~((uintptr_t)0xff &lt;&lt; (uintptr_t)8*(n%<a class="code hl_define" href="pmp_8h.html#a0d1ef852b78bd2b8444128b5862b7953">PMP_PER_GROUP</a>)); \</div>
 <div class="line">  <span class="keyword">asm</span> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;la t0, 1f \n\t&quot;</span> \</div>
 <div class="line">                <span class="stringliteral">&quot;csrrw t0, mtvec, t0 \n\t&quot;</span> \</div>
 <div class="line">                <span class="stringliteral">&quot;csrw pmpaddr&quot;</span>#n<span class="stringliteral">&quot;, %0\n\t&quot;</span> \</div>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['keystone_5ferr_0',['keystone_err',['../keystone_8h.html#a47dbd4fecfb67d357f7077ad6d6503be',1,'keystone.h']]],
-  ['keystone_5finfo_1',['keystone_info',['../keystone_8h.html#a99ff084e3f2addcf9536d2624afa0228',1,'keystone.h']]],
-  ['keystone_5fwarn_2',['keystone_warn',['../keystone_8h.html#adb0299b75049ca40b6bcdc031d81aaf0',1,'keystone.h']]]
+  ['max_5fencl_5fthreads_0',['MAX_ENCL_THREADS',['../enclave_8h.html#a3dbee6ad38bd13b753367c3994b9a1ec',1,'enclave.h']]],
+  ['mprv_5fblock_1',['MPRV_BLOCK',['../mprv_8h.html#ac83e2d38cb0c4200d65e8411b98d7379',1,'mprv.h']]]
 ];

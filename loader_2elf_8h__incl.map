@@ -1,5 +1,5 @@
 <map id="runtime/include/loader/elf.h" name="runtime/include/loader/elf.h">
-<area shape="rect" id="Node000001" title="ELF file handling functions and structures." alt="" coords="63,5,211,46"/>
+<area shape="rect" id="Node000001" title="Definitions and structures for handling ELF (Executable and Linkable Format) files." alt="" coords="63,5,211,46"/>
 <area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="212,9,230,14,237,25,234,34,227,39,224,34,230,30,232,26,227,18,210,14"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,79,120"/>
 <area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="115,48,70,86,66,82,112,44"/>

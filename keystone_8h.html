@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('keystone_8h.html',''); initResizable()
 <code>#include &lt;linux/miscdevice.h&gt;</code><br />
 <code>#include &lt;linux/idr.h&gt;</code><br />
 <code>#include &lt;linux/file.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="riscv64_8h_source.html">riscv64.h</a>&quot;</code><br />
+<code>#include &quot;riscv64.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for keystone.h:</div>
 <div class="dyncontent">
@@ -142,7 +142,7 @@ Include dependency graph for keystone.h:</div>
 <area shape="poly" title=" " alt="" coords="745,36,1036,91,1035,96,744,42"/>
 <area shape="rect" title=" " alt="" coords="1149,94,1227,120"/>
 <area shape="poly" title=" " alt="" coords="745,33,918,56,1134,91,1133,96,917,61,744,38"/>
-<area shape="rect" href="riscv64_8h.html" title="RISC&#45;V 64&#45;bit Architecture Definitions and Utilities." alt="" coords="1251,94,1325,120"/>
+<area shape="rect" href="riscv64_8h_source.html" title=" " alt="" coords="1251,94,1325,120"/>
 <area shape="poly" title=" " alt="" coords="745,30,961,52,1096,69,1236,91,1236,96,1096,75,960,57,745,35"/>
 <area shape="rect" href="const_8h_source.html" title=" " alt="" coords="99,168,192,193"/>
 <area shape="poly" title=" " alt="" coords="148,120,148,152,143,152,143,120"/>
@@ -152,24 +152,16 @@ Include dependency graph for keystone.h:</div>
 <area shape="poly" title=" " alt="" coords="1300,118,1328,154,1324,157,1295,122"/>
 </map>
 </div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="keystone_8h__dep__incl.png" border="0" usemap="#alinux-keystone-driver_2keystone_8hdep" alt=""/></div>
-<map name="alinux-keystone-driver_2keystone_8hdep" id="alinux-keystone-driver_2keystone_8hdep">
-<area shape="rect" title="Keystone Enclave Management API." alt="" coords="5,5,145,46"/>
-<area shape="rect" href="keystone-enclave_8c.html" title="Keystone enclave creation and management functions." alt="" coords="5,94,145,135"/>
-<area shape="poly" title=" " alt="" coords="78,62,78,94,72,94,72,62"/>
-</map>
-</div>
 </div>
 <p><a href="keystone_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structepm.html">epm</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enclave Private Memory (EPM) region descriptor.  <a href="structepm.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structutm.html">utm</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Untrusted Memory (UTM) region descriptor.  <a href="structutm.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structenclave.html">enclave</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata structure for an enclave.  <a href="structenclave.html#details">More...</a><br /></td></tr>
@@ -177,8 +169,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a1e37b551491f952ad4875a7794ab2314" id="r_a1e37b551491f952ad4875a7794ab2314"><td class="memItemLeft" align="right" valign="top"><a id="a1e37b551491f952ad4875a7794ab2314" name="a1e37b551491f952ad4875a7794ab2314"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>PAGE_UP</b>(addr)&#160;&#160;&#160;(((addr)+((PAGE_SIZE)-1))&amp;(~((PAGE_SIZE)-1)))</td></tr>
+<tr class="memitem:a1e37b551491f952ad4875a7794ab2314" id="r_a1e37b551491f952ad4875a7794ab2314"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keystone_8h.html#a1e37b551491f952ad4875a7794ab2314">PAGE_UP</a>(addr)&#160;&#160;&#160;(((addr)+((PAGE_SIZE)-1))&amp;(~((PAGE_SIZE)-1)))</td></tr>
+<tr class="memdesc:a1e37b551491f952ad4875a7794ab2314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rounds an address up to the nearest page boundary.  <br /></td></tr>
 <tr class="separator:a1e37b551491f952ad4875a7794ab2314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99ff084e3f2addcf9536d2624afa0228" id="r_a99ff084e3f2addcf9536d2624afa0228"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keystone_8h.html#a99ff084e3f2addcf9536d2624afa0228">keystone_info</a>(fmt, ...)&#160;&#160;&#160;  pr_info(&quot;keystone_enclave: &quot; fmt, ##__VA_ARGS__)</td></tr>
 <tr class="memdesc:a99ff084e3f2addcf9536d2624afa0228"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log information related to Keystone.  <br /></td></tr>
@@ -192,12 +184,12 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a21ac20b7178402654ba7b6de53ccc149" id="r_a21ac20b7178402654ba7b6de53ccc149"><td class="memItemLeft" align="right" valign="top"><a id="a21ac20b7178402654ba7b6de53ccc149" name="a21ac20b7178402654ba7b6de53ccc149"></a>
-typedef uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>vaddr_t</b></td></tr>
-<tr class="separator:a21ac20b7178402654ba7b6de53ccc149"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59897e9d2af1ab86597c1f4cfa994365" id="r_a59897e9d2af1ab86597c1f4cfa994365"><td class="memItemLeft" align="right" valign="top"><a id="a59897e9d2af1ab86597c1f4cfa994365" name="a59897e9d2af1ab86597c1f4cfa994365"></a>
-typedef uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>paddr_t</b></td></tr>
-<tr class="separator:a59897e9d2af1ab86597c1f4cfa994365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa79cb6d2618417056cfef25c1665bd2f" id="r_aa79cb6d2618417056cfef25c1665bd2f"><td class="memItemLeft" align="right" valign="top">typedef uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keystone_8h.html#aa79cb6d2618417056cfef25c1665bd2f">vaddr_t</a></td></tr>
+<tr class="memdesc:aa79cb6d2618417056cfef25c1665bd2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual address type.  <br /></td></tr>
+<tr class="separator:aa79cb6d2618417056cfef25c1665bd2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54d2176a558d887180d168504124f341" id="r_a54d2176a558d887180d168504124f341"><td class="memItemLeft" align="right" valign="top">typedef uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keystone_8h.html#a54d2176a558d887180d168504124f341">paddr_t</a></td></tr>
+<tr class="memdesc:a54d2176a558d887180d168504124f341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Physical address type.  <br /></td></tr>
+<tr class="separator:a54d2176a558d887180d168504124f341"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -229,7 +221,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a49dc4e494236d0b4313f258726f7eb1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new enclave.  <br /></td></tr>
 <tr class="separator:a49dc4e494236d0b4313f258726f7eb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33f87ed11e05daae83697341e1752b3e" id="r_a33f87ed11e05daae83697341e1752b3e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keystone_8h.html#a33f87ed11e05daae83697341e1752b3e">destroy_enclave</a> (struct <a class="el" href="structenclave.html">enclave</a> *<a class="el" href="structenclave.html">enclave</a>)</td></tr>
-<tr class="memdesc:a33f87ed11e05daae83697341e1752b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an enclave and free all associated resources.  <br /></td></tr>
+<tr class="memdesc:a33f87ed11e05daae83697341e1752b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an existing enclave.  <br /></td></tr>
 <tr class="separator:a33f87ed11e05daae83697341e1752b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5c16d7035ad239196f95f3ff043a653" id="r_ab5c16d7035ad239196f95f3ff043a653"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keystone_8h.html#ab5c16d7035ad239196f95f3ff043a653">enclave_idr_alloc</a> (struct <a class="el" href="structenclave.html">enclave</a> *<a class="el" href="structenclave.html">enclave</a>)</td></tr>
 <tr class="memdesc:ab5c16d7035ad239196f95f3ff043a653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate an ID for the enclave in the IDR.  <br /></td></tr>
@@ -237,8 +229,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a6d2343acb63d9f6369825ee37bdbddca" id="r_a6d2343acb63d9f6369825ee37bdbddca"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structenclave.html">enclave</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keystone_8h.html#a6d2343acb63d9f6369825ee37bdbddca">enclave_idr_remove</a> (unsigned int ueid)</td></tr>
 <tr class="memdesc:a6d2343acb63d9f6369825ee37bdbddca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an enclave from the IDR by its ID.  <br /></td></tr>
 <tr class="separator:a6d2343acb63d9f6369825ee37bdbddca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad13a1a658a4cf6e37bc5c231a4c168ce" id="r_ad13a1a658a4cf6e37bc5c231a4c168ce"><td class="memItemLeft" align="right" valign="top"><a id="ad13a1a658a4cf6e37bc5c231a4c168ce" name="ad13a1a658a4cf6e37bc5c231a4c168ce"></a>
-static uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>epm_satp</b> (struct <a class="el" href="structepm.html">epm</a> *<a class="el" href="structepm.html">epm</a>)</td></tr>
+<tr class="memitem:ad13a1a658a4cf6e37bc5c231a4c168ce" id="r_ad13a1a658a4cf6e37bc5c231a4c168ce"><td class="memItemLeft" align="right" valign="top">static uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keystone_8h.html#ad13a1a658a4cf6e37bc5c231a4c168ce">epm_satp</a> (struct <a class="el" href="structepm.html">epm</a> *<a class="el" href="structepm.html">epm</a>)</td></tr>
+<tr class="memdesc:ad13a1a658a4cf6e37bc5c231a4c168ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the SATP register value for the given EPM.  <br /></td></tr>
 <tr class="separator:ad13a1a658a4cf6e37bc5c231a4c168ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9518464e8dab260580c85c225337752c" id="r_a9518464e8dab260580c85c225337752c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keystone_8h.html#a9518464e8dab260580c85c225337752c">epm_destroy</a> (struct <a class="el" href="structepm.html">epm</a> *<a class="el" href="structepm.html">epm</a>)</td></tr>
 <tr class="memdesc:a9518464e8dab260580c85c225337752c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the enclave private memory (EPM).  <br /></td></tr>
@@ -252,14 +244,14 @@ static uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>epm_satp<
 <tr class="memitem:ad1b8c2c2e4fb99672359904999ae7d7a" id="r_ad1b8c2c2e4fb99672359904999ae7d7a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keystone_8h.html#ad1b8c2c2e4fb99672359904999ae7d7a">utm_init</a> (struct <a class="el" href="structutm.html">utm</a> *<a class="el" href="structutm.html">utm</a>, size_t untrusted_size)</td></tr>
 <tr class="memdesc:ad1b8c2c2e4fb99672359904999ae7d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the untrusted memory (UTM).  <br /></td></tr>
 <tr class="separator:ad1b8c2c2e4fb99672359904999ae7d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f89bd8deb71a46005cd44351c1af173" id="r_a9f89bd8deb71a46005cd44351c1af173"><td class="memItemLeft" align="right" valign="top">paddr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keystone_8h.html#a9f89bd8deb71a46005cd44351c1af173">epm_va_to_pa</a> (struct <a class="el" href="structepm.html">epm</a> *<a class="el" href="structepm.html">epm</a>, vaddr_t addr)</td></tr>
+<tr class="memitem:a9f89bd8deb71a46005cd44351c1af173" id="r_a9f89bd8deb71a46005cd44351c1af173"><td class="memItemLeft" align="right" valign="top"><a class="el" href="keystone_8h.html#a54d2176a558d887180d168504124f341">paddr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keystone_8h.html#a9f89bd8deb71a46005cd44351c1af173">epm_va_to_pa</a> (struct <a class="el" href="structepm.html">epm</a> *<a class="el" href="structepm.html">epm</a>, <a class="el" href="keystone_8h.html#aa79cb6d2618417056cfef25c1665bd2f">vaddr_t</a> addr)</td></tr>
 <tr class="memdesc:a9f89bd8deb71a46005cd44351c1af173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a virtual address to a physical address for the EPM.  <br /></td></tr>
 <tr class="separator:a9f89bd8deb71a46005cd44351c1af173"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a9bd97cbe30b01b1e71fe959a810e6fff" id="r_a9bd97cbe30b01b1e71fe959a810e6fff"><td class="memItemLeft" align="right" valign="top">struct miscdevice&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keystone_8h.html#a9bd97cbe30b01b1e71fe959a810e6fff">keystone_dev</a></td></tr>
-<tr class="memdesc:a9bd97cbe30b01b1e71fe959a810e6fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Misc device definition for the Keystone enclave.  <br /></td></tr>
+<tr class="memdesc:a9bd97cbe30b01b1e71fe959a810e6fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Misc device representing the Keystone enclave driver.  <br /></td></tr>
 <tr class="separator:a9bd97cbe30b01b1e71fe959a810e6fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -379,6 +371,69 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a1e37b551491f952ad4875a7794ab2314" name="a1e37b551491f952ad4875a7794ab2314"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e37b551491f952ad4875a7794ab2314">&#9670;&#160;</a></span>PAGE_UP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PAGE_UP</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">addr</td><td>)</td>
+          <td>&#160;&#160;&#160;(((addr)+((PAGE_SIZE)-1))&amp;(~((PAGE_SIZE)-1)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rounds an address up to the nearest page boundary. </p>
+<p>This macro rounds up the given address to the next multiple of PAGE_SIZE, ensuring page-aligned memory.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">addr</td><td>Address to round up. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Page-aligned address. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a54d2176a558d887180d168504124f341" name="a54d2176a558d887180d168504124f341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54d2176a558d887180d168504124f341">&#9670;&#160;</a></span>paddr_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="keystone_8h.html#a54d2176a558d887180d168504124f341">paddr_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Physical address type. </p>
+<p>This type is used to represent physical addresses in the Keystone enclave system. It is an alias for <code>uintptr_t</code>. </p>
+
+</div>
+</div>
+<a id="aa79cb6d2618417056cfef25c1665bd2f" name="aa79cb6d2618417056cfef25c1665bd2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa79cb6d2618417056cfef25c1665bd2f">&#9670;&#160;</a></span>vaddr_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="keystone_8h.html#aa79cb6d2618417056cfef25c1665bd2f">vaddr_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Virtual address type. </p>
+<p>This type is used to represent virtual addresses in the Keystone enclave system. It is an alias for <code>uintptr_t</code>. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a49dc4e494236d0b4313f258726f7eb1d" name="a49dc4e494236d0b4313f258726f7eb1d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a49dc4e494236d0b4313f258726f7eb1d">&#9670;&#160;</a></span>create_enclave()</h2>
@@ -411,7 +466,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="keystone_8h_a49dc4e494236d0b4313f258726f7eb1d_cgraph.png" border="0" usemap="#akeystone_8h_a49dc4e494236d0b4313f258726f7eb1d_cgraph" alt=""/></div>
 <map name="akeystone_8h_a49dc4e494236d0b4313f258726f7eb1d_cgraph" id="akeystone_8h_a49dc4e494236d0b4313f258726f7eb1d_cgraph">
 <area shape="rect" title="Create a new enclave." alt="" coords="5,55,115,80"/>
-<area shape="rect" href="keystone-enclave_8c.html#a33f87ed11e05daae83697341e1752b3e" title="Destroy an enclave and free all associated resources." alt="" coords="163,29,278,55"/>
+<area shape="rect" href="keystone-enclave_8c.html#a33f87ed11e05daae83697341e1752b3e" title="Destroy an existing enclave." alt="" coords="163,29,278,55"/>
 <area shape="poly" title=" " alt="" coords="115,56,147,51,148,56,116,61"/>
 <area shape="rect" href="keystone-page_8c.html#a8620245b580007505b10f18c8edcbd1e" title="Initialize the enclave private memory (EPM)." alt="" coords="185,79,256,104"/>
 <area shape="poly" title=" " alt="" coords="116,73,170,81,169,87,115,78"/>
@@ -478,21 +533,21 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Destroy an enclave and free all associated resources. </p>
-<p>This function safely destroys an enclave by freeing its EPM and UTM, even if only partially initialized.</p>
+<p>Destroy an existing enclave. </p>
+<p>This function destroys the specified enclave and frees associated resources.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">enclave</td><td>Pointer to the enclave to destroy. </td></tr>
+    <tr><td class="paramname">enclave</td><td>The enclave to destroy. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -ENOSYS if <code>enclave</code> is NULL. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or an error code. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="keystone_8h_a33f87ed11e05daae83697341e1752b3e_cgraph.png" border="0" usemap="#akeystone_8h_a33f87ed11e05daae83697341e1752b3e_cgraph" alt=""/></div>
 <map name="akeystone_8h_a33f87ed11e05daae83697341e1752b3e_cgraph" id="akeystone_8h_a33f87ed11e05daae83697341e1752b3e_cgraph">
-<area shape="rect" title="Destroy an enclave and free all associated resources." alt="" coords="5,31,121,56"/>
+<area shape="rect" title="Destroy an existing enclave." alt="" coords="5,31,121,56"/>
 <area shape="rect" href="keystone-page_8c.html#a9518464e8dab260580c85c225337752c" title="Destroy the enclave private memory (EPM)." alt="" coords="169,5,264,31"/>
 <area shape="poly" title=" " alt="" coords="121,31,153,26,154,31,122,37"/>
 <area shape="rect" href="keystone-page_8c.html#a395abb5a07e84ea023d2c356e6254e1c" title="Destroy the untrusted memory (UTM)." alt="" coords="170,55,263,80"/>
@@ -504,7 +559,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="keystone_8h_a33f87ed11e05daae83697341e1752b3e_icgraph.png" border="0" usemap="#akeystone_8h_a33f87ed11e05daae83697341e1752b3e_icgraph" alt=""/></div>
 <map name="akeystone_8h_a33f87ed11e05daae83697341e1752b3e_icgraph" id="akeystone_8h_a33f87ed11e05daae83697341e1752b3e_icgraph">
-<area shape="rect" title="Destroy an enclave and free all associated resources." alt="" coords="163,5,278,31"/>
+<area shape="rect" title="Destroy an existing enclave." alt="" coords="163,5,278,31"/>
 <area shape="rect" href="keystone-enclave_8c.html#a49dc4e494236d0b4313f258726f7eb1d" title="Create a new enclave." alt="" coords="5,5,115,31"/>
 <area shape="poly" title=" " alt="" coords="147,21,115,21,115,16,147,16"/>
 </map>
@@ -599,7 +654,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="keystone_8h_a9518464e8dab260580c85c225337752c_icgraph.png" border="0" usemap="#akeystone_8h_a9518464e8dab260580c85c225337752c_icgraph" alt=""/></div>
 <map name="akeystone_8h_a9518464e8dab260580c85c225337752c_icgraph" id="akeystone_8h_a9518464e8dab260580c85c225337752c_icgraph">
 <area shape="rect" title="Destroy the enclave private memory (EPM)." alt="" coords="326,5,421,31"/>
-<area shape="rect" href="keystone-enclave_8c.html#a33f87ed11e05daae83697341e1752b3e" title="Destroy an enclave and free all associated resources." alt="" coords="163,5,278,31"/>
+<area shape="rect" href="keystone-enclave_8c.html#a33f87ed11e05daae83697341e1752b3e" title="Destroy an existing enclave." alt="" coords="163,5,278,31"/>
 <area shape="poly" title=" " alt="" coords="310,21,279,21,279,16,310,16"/>
 <area shape="rect" href="keystone-enclave_8c.html#a49dc4e494236d0b4313f258726f7eb1d" title="Create a new enclave." alt="" coords="5,5,115,31"/>
 <area shape="poly" title=" " alt="" coords="147,21,115,21,115,16,147,16"/>
@@ -657,6 +712,42 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="ad13a1a658a4cf6e37bc5c231a4c168ce" name="ad13a1a658a4cf6e37bc5c231a4c168ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad13a1a658a4cf6e37bc5c231a4c168ce">&#9670;&#160;</a></span>epm_satp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uintptr_t epm_satp </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structepm.html">epm</a> *&#160;</td>
+          <td class="paramname"><em>epm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compute the SATP register value for the given EPM. </p>
+<p>This function returns the SATP (Supervisor Address Translation and Protection) register value by combining the root page table address of the EPM (Enclave Page Manager) with the current SATP mode (e.g., Sv39 or Sv48).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">epm</td><td>Pointer to the enclave's page manager structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Encoded SATP value for the EPM's root page table. </dd></dl>
+
+</div>
+</div>
 <a id="a9f89bd8deb71a46005cd44351c1af173" name="a9f89bd8deb71a46005cd44351c1af173"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9f89bd8deb71a46005cd44351c1af173">&#9670;&#160;</a></span>epm_va_to_pa()</h2>
 
@@ -664,7 +755,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">paddr_t epm_va_to_pa </td>
+          <td class="memname"><a class="el" href="keystone_8h.html#a54d2176a558d887180d168504124f341">paddr_t</a> epm_va_to_pa </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structepm.html">epm</a> *&#160;</td>
           <td class="paramname"><em>epm</em>, </td>
@@ -672,7 +763,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">vaddr_t&#160;</td>
+          <td class="paramtype"><a class="el" href="keystone_8h.html#aa79cb6d2618417056cfef25c1665bd2f">vaddr_t</a>&#160;</td>
           <td class="paramname"><em>addr</em>&#160;</td>
         </tr>
         <tr>
@@ -713,7 +804,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Retrieve an enclave by its identifier. </p>
-<p>Get the physical address of an enclave's EPM.</p>
 <p>This function retrieves the enclave corresponding to the specified ID.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -721,24 +811,7 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the enclave, or NULL if not found.</dd></dl>
-<p>This function retrieves the physical address of the specified enclave's EPM.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">epm</td><td>The enclave private memory (EPM) structure. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The physical address of the EPM.</dd></dl>
-<p>Retrieve an enclave by its identifier.</p>
-<p>This function retrieves the physical address of the specified enclave's EPM.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">epm</td><td>The enclave private memory (EPM) structure. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The physical address of the EPM. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the enclave, or NULL if not found. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -842,7 +915,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="keystone_8h_a6744ed9121da8eadf28d48dbc5bd7269_cgraph.png" border="0" usemap="#akeystone_8h_a6744ed9121da8eadf28d48dbc5bd7269_cgraph" alt=""/></div>
 <map name="akeystone_8h_a6744ed9121da8eadf28d48dbc5bd7269_cgraph" id="akeystone_8h_a6744ed9121da8eadf28d48dbc5bd7269_cgraph">
 <area shape="rect" title="Memory mapping function for the Keystone device." alt="" coords="5,5,122,31"/>
-<area shape="rect" href="keystone-enclave_8c.html#a362a27baf57b040f6907b583e77ffc9b" title="Get the physical address of an enclave&#39;s EPM." alt="" coords="170,5,298,31"/>
+<area shape="rect" href="keystone-enclave_8c.html#a362a27baf57b040f6907b583e77ffc9b" title="Retrieve an enclave by its identifier." alt="" coords="170,5,298,31"/>
 <area shape="poly" title=" " alt="" coords="122,16,154,16,154,21,122,21"/>
 </map>
 </div>
@@ -891,7 +964,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="keystone_8h_afe870736e84fdd466dba51ec71ebd6dd_cgraph.png" border="0" usemap="#akeystone_8h_afe870736e84fdd466dba51ec71ebd6dd_cgraph" alt=""/></div>
 <map name="akeystone_8h_afe870736e84fdd466dba51ec71ebd6dd_cgraph" id="akeystone_8h_afe870736e84fdd466dba51ec71ebd6dd_cgraph">
 <area shape="rect" title="Release function for the Keystone device." alt="" coords="5,5,128,31"/>
-<area shape="rect" href="keystone-enclave_8c.html#a362a27baf57b040f6907b583e77ffc9b" title="Get the physical address of an enclave&#39;s EPM." alt="" coords="176,5,304,31"/>
+<area shape="rect" href="keystone-enclave_8c.html#a362a27baf57b040f6907b583e77ffc9b" title="Retrieve an enclave by its identifier." alt="" coords="176,5,304,31"/>
 <area shape="poly" title=" " alt="" coords="128,16,160,16,160,21,128,21"/>
 </map>
 </div>
@@ -1095,7 +1168,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="keystone_8h_a395abb5a07e84ea023d2c356e6254e1c_icgraph.png" border="0" usemap="#akeystone_8h_a395abb5a07e84ea023d2c356e6254e1c_icgraph" alt=""/></div>
 <map name="akeystone_8h_a395abb5a07e84ea023d2c356e6254e1c_icgraph" id="akeystone_8h_a395abb5a07e84ea023d2c356e6254e1c_icgraph">
 <area shape="rect" title="Destroy the untrusted memory (UTM)." alt="" coords="326,5,418,31"/>
-<area shape="rect" href="keystone-enclave_8c.html#a33f87ed11e05daae83697341e1752b3e" title="Destroy an enclave and free all associated resources." alt="" coords="163,5,278,31"/>
+<area shape="rect" href="keystone-enclave_8c.html#a33f87ed11e05daae83697341e1752b3e" title="Destroy an existing enclave." alt="" coords="163,5,278,31"/>
 <area shape="poly" title=" " alt="" coords="310,21,278,21,278,16,310,16"/>
 <area shape="rect" href="keystone-enclave_8c.html#a49dc4e494236d0b4313f258726f7eb1d" title="Create a new enclave." alt="" coords="5,5,115,31"/>
 <area shape="poly" title=" " alt="" coords="147,21,115,21,115,16,147,16"/>
@@ -1164,8 +1237,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Misc device definition for the Keystone enclave. </p>
-<p>This device represents the user-facing interface for interacting with the Keystone enclave driver. </p>
+<p>Misc device representing the Keystone enclave driver. </p>
+<p>Externally defined miscdevice structure used to register the Keystone device with the Linux kernel's misc device framework. </p>
 
 </div>
 </div>

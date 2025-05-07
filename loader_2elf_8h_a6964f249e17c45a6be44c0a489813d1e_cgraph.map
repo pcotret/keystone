@@ -1,14 +1,4 @@
 <map id="elf_getNumSections" name="elf_getNumSections">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,145,80"/>
-<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="42,56,36,46,40,36,53,30,75,28,99,31,111,38,109,42,97,36,75,33,55,35,44,40,41,45,47,53"/>
-<area shape="rect" id="Node000002" href="$elf32_8h.html#ab1b562849e1a73867ed3cf4d80aec642" title="Get the number of sections." alt="" coords="193,5,346,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,51,200,33,202,38,129,57"/>
-<area shape="rect" id="Node000004" href="$elf64_8h.html#a837adf84f3d185d9976a54bcff50c2ef" title="Get the number of sections." alt="" coords="193,55,346,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="145,65,177,65,177,70,145,70"/>
-<area shape="rect" id="Node000006" href="$elf32_8h.html#a422462f1d203006dd7a2339e753b24cf" title="Determine if the ELF file is of class ELFCLASS32." alt="" coords="229,104,310,130"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="129,78,215,100,213,105,128,84"/>
-<area shape="rect" id="Node000003" href="$elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="394,5,510,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="347,16,379,16,379,21,347,21"/>
-<area shape="rect" id="Node000005" href="$elf64_8h.html#a2188fe429ceb1c6bc2b9e67983e5c2ef" title="Get the ELF header from the file." alt="" coords="394,55,510,80"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="347,65,379,65,379,70,347,70"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,145,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="51,30,46,21,49,11,59,5,75,3,92,5,101,12,98,16,90,10,75,8,61,10,53,14,52,20,56,28"/>
 </map>

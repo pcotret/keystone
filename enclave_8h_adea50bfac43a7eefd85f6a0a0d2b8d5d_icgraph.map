@@ -1,5 +1,0 @@
-<map id="resume_enclave" name="resume_enclave">
-<area shape="rect" id="Node000001" title="Resume execution of a stopped enclave." alt="" coords="219,5,335,31"/>
-<area shape="rect" id="Node000002" href="$sm-sbi_8c.html#aa85273969bc3e13bc70ee80b9b12ed7f" title="Resume execution of a previously stopped enclave." alt="" coords="5,5,171,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,21,171,21,171,16,203,16"/>
-</map>

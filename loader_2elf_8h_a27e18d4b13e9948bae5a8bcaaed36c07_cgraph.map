@@ -1,18 +1,4 @@
 <map id="elf_getProgramHeaderMemorySize" name="elf_getProgramHeaderMemorySize">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,228,80"/>
-<area shape="poly" id="edge7_Node000001_Node000001" title=" " alt="" coords="71,56,62,46,67,36,86,30,117,28,152,31,168,38,166,43,150,36,116,33,87,35,71,40,67,45,75,52"/>
-<area shape="rect" id="Node000002" href="$elf32_8h.html#a1146e3d1a710ca95b481c2ff66e2430a" title="Get the memory size of a program segment." alt="" coords="276,5,512,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,51,302,32,303,37,193,57"/>
-<area shape="rect" id="Node000005" href="$elf64_8h.html#a878cded730c117927c369b52e9b2ec87" title="Get the memory size of a program segment." alt="" coords="276,55,512,80"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="228,65,260,65,260,70,228,70"/>
-<area shape="rect" id="Node000008" href="$elf32_8h.html#a422462f1d203006dd7a2339e753b24cf" title="Determine if the ELF file is of class ELFCLASS32." alt="" coords="353,104,435,130"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="193,78,338,104,337,110,192,84"/>
-<area shape="rect" id="Node000003" href="$elf32_8h.html#a44eb005207aad59fa5a844eebc2fd70a" title="Get a pointer to the program header table." alt="" coords="560,5,757,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="512,16,544,16,544,21,512,21"/>
-<area shape="rect" id="Node000004" href="$elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="805,5,922,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="758,16,789,16,789,21,758,21"/>
-<area shape="rect" id="Node000006" href="$elf64_8h.html#aa9995307c9ab189c3e31374f1f82ada7" title="Get a pointer to the program header table." alt="" coords="560,55,757,80"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="512,65,544,65,544,70,512,70"/>
-<area shape="rect" id="Node000007" href="$elf64_8h.html#a2188fe429ceb1c6bc2b9e67983e5c2ef" title="Get the ELF header from the file." alt="" coords="805,55,922,80"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="758,65,789,65,789,70,758,70"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,228,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="80,31,72,21,77,11,92,5,117,3,144,5,158,12,155,17,142,10,116,8,93,10,80,15,78,20,84,27"/>
 </map>

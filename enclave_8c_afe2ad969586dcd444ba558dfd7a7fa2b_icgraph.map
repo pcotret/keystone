@@ -1,7 +1,0 @@
-<map id="copy_enclave_report" name="copy_enclave_report">
-<area shape="rect" id="Node000001" title="Copies report data from the SM to enclave memory." alt="" coords="363,5,503,31"/>
-<area shape="rect" id="Node000002" href="$enclave_8c.html#aebd517e0dc5b95b13e9489e28f3e1f87" title="Generate an attestation report for the enclave." alt="" coords="209,5,315,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="348,21,315,21,315,16,348,16"/>
-<area shape="rect" id="Node000003" href="$sm-sbi_8c.html#a7d8927c735eda0a43706f79aa47c2ce9" title="Generate an attestation report for the enclave." alt="" coords="5,5,161,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="193,21,161,21,161,16,193,16"/>
-</map>

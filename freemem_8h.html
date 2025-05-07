@@ -117,38 +117,266 @@ Include dependency graph for freemem.h:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpg__list.html">pg_list</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure representing a list of free pages.  <a href="structpg__list.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a122544834a2f2d7f7daa134ef59a55c5" id="r_a122544834a2f2d7f7daa134ef59a55c5"><td class="memItemLeft" align="right" valign="top"><a id="a122544834a2f2d7f7daa134ef59a55c5" name="a122544834a2f2d7f7daa134ef59a55c5"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>NEXT_PAGE</b>(page)&#160;&#160;&#160;*((uintptr_t*)page)</td></tr>
+<tr class="memitem:a122544834a2f2d7f7daa134ef59a55c5" id="r_a122544834a2f2d7f7daa134ef59a55c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freemem_8h.html#a122544834a2f2d7f7daa134ef59a55c5">NEXT_PAGE</a>(page)&#160;&#160;&#160;*((uintptr_t*)page)</td></tr>
+<tr class="memdesc:a122544834a2f2d7f7daa134ef59a55c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next page in the list.  <br /></td></tr>
 <tr class="separator:a122544834a2f2d7f7daa134ef59a55c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac157b9f1f332a4425af2f26c8e83127b" id="r_ac157b9f1f332a4425af2f26c8e83127b"><td class="memItemLeft" align="right" valign="top"><a id="ac157b9f1f332a4425af2f26c8e83127b" name="ac157b9f1f332a4425af2f26c8e83127b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LIST_EMPTY</b>(list)&#160;&#160;&#160;((list).count == 0 || (list).head == 0)</td></tr>
+<tr class="memitem:ac157b9f1f332a4425af2f26c8e83127b" id="r_ac157b9f1f332a4425af2f26c8e83127b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freemem_8h.html#ac157b9f1f332a4425af2f26c8e83127b">LIST_EMPTY</a>(list)&#160;&#160;&#160;((list).count == 0 || (list).head == 0)</td></tr>
+<tr class="memdesc:ac157b9f1f332a4425af2f26c8e83127b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a page list is empty.  <br /></td></tr>
 <tr class="separator:ac157b9f1f332a4425af2f26c8e83127b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74b9f28d71ffcd1b676161efeb328eb4" id="r_a74b9f28d71ffcd1b676161efeb328eb4"><td class="memItemLeft" align="right" valign="top"><a id="a74b9f28d71ffcd1b676161efeb328eb4" name="a74b9f28d71ffcd1b676161efeb328eb4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LIST_INIT</b>(list)&#160;&#160;&#160;{ (list).count = 0; (list).head = 0; (list).tail = 0; }</td></tr>
+<tr class="memitem:a74b9f28d71ffcd1b676161efeb328eb4" id="r_a74b9f28d71ffcd1b676161efeb328eb4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freemem_8h.html#a74b9f28d71ffcd1b676161efeb328eb4">LIST_INIT</a>(list)&#160;&#160;&#160;{ (list).count = 0; (list).head = 0; (list).tail = 0; }</td></tr>
+<tr class="memdesc:a74b9f28d71ffcd1b676161efeb328eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a page list to empty.  <br /></td></tr>
 <tr class="separator:a74b9f28d71ffcd1b676161efeb328eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aae34c31bcb1e17e2535548edd2e80bc7" id="r_aae34c31bcb1e17e2535548edd2e80bc7"><td class="memItemLeft" align="right" valign="top"><a id="aae34c31bcb1e17e2535548edd2e80bc7" name="aae34c31bcb1e17e2535548edd2e80bc7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spa_init</b> (uintptr_t base, size_t size)</td></tr>
+<tr class="memitem:aae34c31bcb1e17e2535548edd2e80bc7" id="r_aae34c31bcb1e17e2535548edd2e80bc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freemem_8h.html#aae34c31bcb1e17e2535548edd2e80bc7">spa_init</a> (uintptr_t base, size_t size)</td></tr>
+<tr class="memdesc:aae34c31bcb1e17e2535548edd2e80bc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the simple physical allocator.  <br /></td></tr>
 <tr class="separator:aae34c31bcb1e17e2535548edd2e80bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac2f85284282bbda2617a49238cd076f" id="r_aac2f85284282bbda2617a49238cd076f"><td class="memItemLeft" align="right" valign="top"><a id="aac2f85284282bbda2617a49238cd076f" name="aac2f85284282bbda2617a49238cd076f"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>spa_get</b> (void)</td></tr>
+<tr class="memitem:aac2f85284282bbda2617a49238cd076f" id="r_aac2f85284282bbda2617a49238cd076f"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freemem_8h.html#aac2f85284282bbda2617a49238cd076f">spa_get</a> (void)</td></tr>
+<tr class="memdesc:aac2f85284282bbda2617a49238cd076f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a page of memory.  <br /></td></tr>
 <tr class="separator:aac2f85284282bbda2617a49238cd076f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79db004e289c287f00eb71a431fd5d68" id="r_a79db004e289c287f00eb71a431fd5d68"><td class="memItemLeft" align="right" valign="top"><a id="a79db004e289c287f00eb71a431fd5d68" name="a79db004e289c287f00eb71a431fd5d68"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>spa_get_zero</b> (void)</td></tr>
+<tr class="memitem:a79db004e289c287f00eb71a431fd5d68" id="r_a79db004e289c287f00eb71a431fd5d68"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freemem_8h.html#a79db004e289c287f00eb71a431fd5d68">spa_get_zero</a> (void)</td></tr>
+<tr class="memdesc:a79db004e289c287f00eb71a431fd5d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and zero a page of memory.  <br /></td></tr>
 <tr class="separator:a79db004e289c287f00eb71a431fd5d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82ceaa9fa0697cfec7fb959f57ac2f32" id="r_a82ceaa9fa0697cfec7fb959f57ac2f32"><td class="memItemLeft" align="right" valign="top"><a id="a82ceaa9fa0697cfec7fb959f57ac2f32" name="a82ceaa9fa0697cfec7fb959f57ac2f32"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spa_put</b> (uintptr_t page)</td></tr>
+<tr class="memitem:a82ceaa9fa0697cfec7fb959f57ac2f32" id="r_a82ceaa9fa0697cfec7fb959f57ac2f32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freemem_8h.html#a82ceaa9fa0697cfec7fb959f57ac2f32">spa_put</a> (uintptr_t page)</td></tr>
+<tr class="memdesc:a82ceaa9fa0697cfec7fb959f57ac2f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a previously allocated page of memory.  <br /></td></tr>
 <tr class="separator:a82ceaa9fa0697cfec7fb959f57ac2f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50b4bc7b180f06f8387a9af236f0f428" id="r_a50b4bc7b180f06f8387a9af236f0f428"><td class="memItemLeft" align="right" valign="top"><a id="a50b4bc7b180f06f8387a9af236f0f428" name="a50b4bc7b180f06f8387a9af236f0f428"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>spa_available</b> ()</td></tr>
+<tr class="memitem:a50b4bc7b180f06f8387a9af236f0f428" id="r_a50b4bc7b180f06f8387a9af236f0f428"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freemem_8h.html#a50b4bc7b180f06f8387a9af236f0f428">spa_available</a> ()</td></tr>
+<tr class="memdesc:a50b4bc7b180f06f8387a9af236f0f428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of available free pages.  <br /></td></tr>
 <tr class="separator:a50b4bc7b180f06f8387a9af236f0f428"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ac157b9f1f332a4425af2f26c8e83127b" name="ac157b9f1f332a4425af2f26c8e83127b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac157b9f1f332a4425af2f26c8e83127b">&#9670;&#160;</a></span>LIST_EMPTY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIST_EMPTY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">list</td><td>)</td>
+          <td>&#160;&#160;&#160;((list).count == 0 || (list).head == 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if a page list is empty. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The page list to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the list is empty, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a74b9f28d71ffcd1b676161efeb328eb4" name="a74b9f28d71ffcd1b676161efeb328eb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74b9f28d71ffcd1b676161efeb328eb4">&#9670;&#160;</a></span>LIST_INIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIST_INIT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">list</td><td>)</td>
+          <td>&#160;&#160;&#160;{ (list).count = 0; (list).head = 0; (list).tail = 0; }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize a page list to empty. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list to initialize. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a122544834a2f2d7f7daa134ef59a55c5" name="a122544834a2f2d7f7daa134ef59a55c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a122544834a2f2d7f7daa134ef59a55c5">&#9670;&#160;</a></span>NEXT_PAGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NEXT_PAGE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">page</td><td>)</td>
+          <td>&#160;&#160;&#160;*((uintptr_t*)page)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the next page in the list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">page</td><td>A pointer to the current page. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The address of the next page in the list. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a50b4bc7b180f06f8387a9af236f0f428" name="a50b4bc7b180f06f8387a9af236f0f428"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50b4bc7b180f06f8387a9af236f0f428">&#9670;&#160;</a></span>spa_available()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int spa_available </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of available free pages. </p>
+<dl class="section return"><dt>Returns</dt><dd>The number of free pages currently available. </dd></dl>
+
+</div>
+</div>
+<a id="aac2f85284282bbda2617a49238cd076f" name="aac2f85284282bbda2617a49238cd076f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac2f85284282bbda2617a49238cd076f">&#9670;&#160;</a></span>spa_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t spa_get </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate a page of memory. </p>
+<dl class="section return"><dt>Returns</dt><dd>The physical address of the allocated page, or 0 if none available. </dd></dl>
+
+</div>
+</div>
+<a id="a79db004e289c287f00eb71a431fd5d68" name="a79db004e289c287f00eb71a431fd5d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79db004e289c287f00eb71a431fd5d68">&#9670;&#160;</a></span>spa_get_zero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t spa_get_zero </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate and zero a page of memory. </p>
+<dl class="section return"><dt>Returns</dt><dd>The physical address of the allocated and zeroed page, or 0 if none available. </dd></dl>
+
+</div>
+</div>
+<a id="aae34c31bcb1e17e2535548edd2e80bc7" name="aae34c31bcb1e17e2535548edd2e80bc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae34c31bcb1e17e2535548edd2e80bc7">&#9670;&#160;</a></span>spa_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spa_init </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize the simple physical allocator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">base</td><td>The base physical address of the memory region. </td></tr>
+    <tr><td class="paramname">size</td><td>The size of the memory region in bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="freemem_8h_aae34c31bcb1e17e2535548edd2e80bc7_cgraph.png" border="0" usemap="#afreemem_8h_aae34c31bcb1e17e2535548edd2e80bc7_cgraph" alt=""/></div>
+<map name="afreemem_8h_aae34c31bcb1e17e2535548edd2e80bc7_cgraph" id="afreemem_8h_aae34c31bcb1e17e2535548edd2e80bc7_cgraph">
+<area shape="rect" title="Initialize the simple physical allocator." alt="" coords="5,5,72,31"/>
+<area shape="rect" href="freemem__ld_8c.html#a82ceaa9fa0697cfec7fb959f57ac2f32" title="Free a previously allocated page of memory." alt="" coords="120,5,187,31"/>
+<area shape="poly" title=" " alt="" coords="72,16,104,16,104,21,72,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a82ceaa9fa0697cfec7fb959f57ac2f32" name="a82ceaa9fa0697cfec7fb959f57ac2f32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82ceaa9fa0697cfec7fb959f57ac2f32">&#9670;&#160;</a></span>spa_put()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spa_put </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>page</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free a previously allocated page of memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">page</td><td>The physical address of the page to free. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="freemem_8h_a82ceaa9fa0697cfec7fb959f57ac2f32_icgraph.png" border="0" usemap="#afreemem_8h_a82ceaa9fa0697cfec7fb959f57ac2f32_icgraph" alt=""/></div>
+<map name="afreemem_8h_a82ceaa9fa0697cfec7fb959f57ac2f32_icgraph" id="afreemem_8h_a82ceaa9fa0697cfec7fb959f57ac2f32_icgraph">
+<area shape="rect" title="Free a previously allocated page of memory." alt="" coords="120,5,187,31"/>
+<area shape="rect" href="freemem__ld_8c.html#aae34c31bcb1e17e2535548edd2e80bc7" title="Initialize the simple physical allocator." alt="" coords="5,5,72,31"/>
+<area shape="poly" title=" " alt="" coords="104,21,72,21,72,16,104,16"/>
+</map>
+</div>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

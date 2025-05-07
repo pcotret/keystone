@@ -1,5 +1,0 @@
-<map id="elf32_getSectionStringTableIndex" name="elf32_getSectionStringTableIndex">
-<area shape="rect" id="Node000001" title="Get the index of the section string table." alt="" coords="5,5,190,46"/>
-<area shape="rect" id="Node000002" href="$elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="238,13,354,39"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,23,222,23,222,28,190,28"/>
-</map>

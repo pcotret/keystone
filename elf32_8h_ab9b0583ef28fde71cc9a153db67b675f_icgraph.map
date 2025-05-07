@@ -1,6 +1,0 @@
-<map id="elf32_getSectionEntrySize" name="elf32_getSectionEntrySize">
-<area shape="rect" id="Node000001" title="Get the entry size of elements in a section." alt="" coords="212,29,384,55"/>
-<area shape="rect" id="Node000002" href="$elf_8c.html#aaf56b06d020c2a5e08a9e66a38716c84" title=" " alt="" coords="5,29,164,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,45,164,45,164,40,196,40"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="122,17,109,10,84,8,62,10,50,15,47,20,53,27,49,31,42,21,46,11,61,5,85,3,111,5,124,12"/>
-</map>

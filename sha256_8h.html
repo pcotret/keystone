@@ -98,13 +98,16 @@ $(document).ready(function(){initNavTree('sha256_8h.html',''); initResizable(); 
   <div class="headertitle"><div class="title">sha256.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>API for the SHA-256 cryptographic hash function.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sha256.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="sha256_8h__incl.png" border="0" usemap="#aruntime_2include_2crypto_2sha256_8h" alt=""/></div>
 <map name="aruntime_2include_2crypto_2sha256_8h" id="aruntime_2include_2crypto_2sha256_8h">
-<area shape="rect" title=" " alt="" coords="5,5,154,46"/>
+<area shape="rect" title="API for the SHA&#45;256 cryptographic hash function." alt="" coords="5,5,154,46"/>
 <area shape="rect" title=" " alt="" coords="46,94,113,120"/>
 <area shape="poly" title=" " alt="" coords="82,46,82,78,77,78,77,46"/>
 </map>
@@ -115,12 +118,14 @@ Include dependency graph for sha256.h:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSHA256__CTX.html">SHA256_CTX</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context structure for SHA-256 computation.  <a href="structSHA256__CTX.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a9c1fe69ad43d4ca74b84303a0ed64f2f" id="r_a9c1fe69ad43d4ca74b84303a0ed64f2f"><td class="memItemLeft" align="right" valign="top"><a id="a9c1fe69ad43d4ca74b84303a0ed64f2f" name="a9c1fe69ad43d4ca74b84303a0ed64f2f"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SHA256_BLOCK_SIZE</b>&#160;&#160;&#160;32</td></tr>
+<tr class="memdesc:a9c1fe69ad43d4ca74b84303a0ed64f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHA-256 outputs a 32-byte (256-bit) digest. <br /></td></tr>
 <tr class="separator:a9c1fe69ad43d4ca74b84303a0ed64f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -134,16 +139,127 @@ typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>WORD<
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ade6fde6ef9ea137449d72891931c77ef" id="r_ade6fde6ef9ea137449d72891931c77ef"><td class="memItemLeft" align="right" valign="top"><a id="ade6fde6ef9ea137449d72891931c77ef" name="ade6fde6ef9ea137449d72891931c77ef"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sha256_init</b> (<a class="el" href="structSHA256__CTX.html">SHA256_CTX</a> *<a class="el" href="structctx.html">ctx</a>)</td></tr>
+<tr class="memitem:ade6fde6ef9ea137449d72891931c77ef" id="r_ade6fde6ef9ea137449d72891931c77ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha256_8h.html#ade6fde6ef9ea137449d72891931c77ef">sha256_init</a> (<a class="el" href="structSHA256__CTX.html">SHA256_CTX</a> *<a class="el" href="structctx.html">ctx</a>)</td></tr>
+<tr class="memdesc:ade6fde6ef9ea137449d72891931c77ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="structSHA256__CTX.html" title="Context structure for SHA-256 computation.">SHA256_CTX</a> structure.  <br /></td></tr>
 <tr class="separator:ade6fde6ef9ea137449d72891931c77ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac98a25de627f4cded12b7312dee1ffa0" id="r_ac98a25de627f4cded12b7312dee1ffa0"><td class="memItemLeft" align="right" valign="top"><a id="ac98a25de627f4cded12b7312dee1ffa0" name="ac98a25de627f4cded12b7312dee1ffa0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sha256_update</b> (<a class="el" href="structSHA256__CTX.html">SHA256_CTX</a> *<a class="el" href="structctx.html">ctx</a>, const BYTE data[], size_t len)</td></tr>
+<tr class="memitem:ac98a25de627f4cded12b7312dee1ffa0" id="r_ac98a25de627f4cded12b7312dee1ffa0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha256_8h.html#ac98a25de627f4cded12b7312dee1ffa0">sha256_update</a> (<a class="el" href="structSHA256__CTX.html">SHA256_CTX</a> *<a class="el" href="structctx.html">ctx</a>, const BYTE data[], size_t len)</td></tr>
+<tr class="memdesc:ac98a25de627f4cded12b7312dee1ffa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Feeds data into the SHA-256 hash.  <br /></td></tr>
 <tr class="separator:ac98a25de627f4cded12b7312dee1ffa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f4b55bd1e49af6e4620bc9ba9549397" id="r_a8f4b55bd1e49af6e4620bc9ba9549397"><td class="memItemLeft" align="right" valign="top"><a id="a8f4b55bd1e49af6e4620bc9ba9549397" name="a8f4b55bd1e49af6e4620bc9ba9549397"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sha256_final</b> (<a class="el" href="structSHA256__CTX.html">SHA256_CTX</a> *<a class="el" href="structctx.html">ctx</a>, BYTE hash[])</td></tr>
+<tr class="memitem:a8f4b55bd1e49af6e4620bc9ba9549397" id="r_a8f4b55bd1e49af6e4620bc9ba9549397"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha256_8h.html#a8f4b55bd1e49af6e4620bc9ba9549397">sha256_final</a> (<a class="el" href="structSHA256__CTX.html">SHA256_CTX</a> *<a class="el" href="structctx.html">ctx</a>, BYTE hash[])</td></tr>
+<tr class="memdesc:a8f4b55bd1e49af6e4620bc9ba9549397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalizes the hash and outputs the digest.  <br /></td></tr>
 <tr class="separator:a8f4b55bd1e49af6e4620bc9ba9549397"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>API for the SHA-256 cryptographic hash function. </p>
+<p>This header defines the interface and data structures for computing SHA-256 hashes, including initialization, update, and finalization. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a8f4b55bd1e49af6e4620bc9ba9549397" name="a8f4b55bd1e49af6e4620bc9ba9549397"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f4b55bd1e49af6e4620bc9ba9549397">&#9670;&#160;</a></span>sha256_final()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sha256_final </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSHA256__CTX.html">SHA256_CTX</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BYTE&#160;</td>
+          <td class="paramname"><em>hash</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finalizes the hash and outputs the digest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Pointer to SHA256 context. </td></tr>
+    <tr><td class="paramname">hash</td><td>Output buffer (must be at least SHA256_BLOCK_SIZE bytes). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ade6fde6ef9ea137449d72891931c77ef" name="ade6fde6ef9ea137449d72891931c77ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade6fde6ef9ea137449d72891931c77ef">&#9670;&#160;</a></span>sha256_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sha256_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSHA256__CTX.html">SHA256_CTX</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a <a class="el" href="structSHA256__CTX.html" title="Context structure for SHA-256 computation.">SHA256_CTX</a> structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Pointer to the SHA256 context to initialize. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac98a25de627f4cded12b7312dee1ffa0" name="ac98a25de627f4cded12b7312dee1ffa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac98a25de627f4cded12b7312dee1ffa0">&#9670;&#160;</a></span>sha256_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sha256_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSHA256__CTX.html">SHA256_CTX</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const BYTE&#160;</td>
+          <td class="paramname"><em>data</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Feeds data into the SHA-256 hash. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Pointer to SHA256 context. </td></tr>
+    <tr><td class="paramname">data</td><td>Input data to hash. </td></tr>
+    <tr><td class="paramname">len</td><td>Length of the input data in bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -1,7 +1,0 @@
-<map id="elf32_getProgramHeaderMemorySize" name="elf32_getProgramHeaderMemorySize">
-<area shape="rect" id="Node000001" title="Get the memory size of a program segment." alt="" coords="5,5,242,31"/>
-<area shape="rect" id="Node000002" href="$elf32_8h.html#a44eb005207aad59fa5a844eebc2fd70a" title="Get a pointer to the program header table." alt="" coords="290,5,487,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,16,274,16,274,21,242,21"/>
-<area shape="rect" id="Node000003" href="$elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="535,5,651,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="487,16,519,16,519,21,487,21"/>
-</map>

@@ -1,0 +1,9 @@
+<map id="sm/src/ed25519/ge.h" name="sm/src/ed25519/ge.h">
+<area shape="rect" id="Node000001" title="Group element operations for elliptic curve cryptography on Curve25519." alt="" coords="5,5,148,31"/>
+<area shape="rect" id="Node000002" href="$fe_8h_source.html" title=" " alt="" coords="55,79,98,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,31,79,63,74,63,74,31"/>
+<area shape="rect" id="Node000003" href="$fixedint_8h_source.html" title=" " alt="" coords="41,153,112,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,105,79,137,74,137,74,105"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="45,226,108,252"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="79,179,79,211,74,211,74,179"/>
+</map>

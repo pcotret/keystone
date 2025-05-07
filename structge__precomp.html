@@ -96,19 +96,70 @@ $(document).ready(function(){initNavTree('structge__precomp.html',''); initResiz
   <div class="headertitle"><div class="title">ge_precomp Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Precomputed group element in Duif representation.  
+ <a href="structge__precomp.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ge_8h_source.html">ge.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a46087fd6f730bb9dd306e06a81b66973" id="r_a46087fd6f730bb9dd306e06a81b66973"><td class="memItemLeft" align="right" valign="top"><a id="a46087fd6f730bb9dd306e06a81b66973" name="a46087fd6f730bb9dd306e06a81b66973"></a>
-fe&#160;</td><td class="memItemRight" valign="bottom"><b>yplusx</b></td></tr>
+<tr class="memitem:a46087fd6f730bb9dd306e06a81b66973" id="r_a46087fd6f730bb9dd306e06a81b66973"><td class="memItemLeft" align="right" valign="top">fe&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge__precomp.html#a46087fd6f730bb9dd306e06a81b66973">yplusx</a></td></tr>
 <tr class="separator:a46087fd6f730bb9dd306e06a81b66973"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6662e7a9b16ed0ec0cbfb1fb2d1dad4" id="r_ab6662e7a9b16ed0ec0cbfb1fb2d1dad4"><td class="memItemLeft" align="right" valign="top"><a id="ab6662e7a9b16ed0ec0cbfb1fb2d1dad4" name="ab6662e7a9b16ed0ec0cbfb1fb2d1dad4"></a>
-fe&#160;</td><td class="memItemRight" valign="bottom"><b>yminusx</b></td></tr>
+<tr class="memitem:ab6662e7a9b16ed0ec0cbfb1fb2d1dad4" id="r_ab6662e7a9b16ed0ec0cbfb1fb2d1dad4"><td class="memItemLeft" align="right" valign="top">fe&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge__precomp.html#ab6662e7a9b16ed0ec0cbfb1fb2d1dad4">yminusx</a></td></tr>
 <tr class="separator:ab6662e7a9b16ed0ec0cbfb1fb2d1dad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0fcdc39b73637b2ac918f902597644d" id="r_ae0fcdc39b73637b2ac918f902597644d"><td class="memItemLeft" align="right" valign="top"><a id="ae0fcdc39b73637b2ac918f902597644d" name="ae0fcdc39b73637b2ac918f902597644d"></a>
-fe&#160;</td><td class="memItemRight" valign="bottom"><b>xy2d</b></td></tr>
+<tr class="memitem:ae0fcdc39b73637b2ac918f902597644d" id="r_ae0fcdc39b73637b2ac918f902597644d"><td class="memItemLeft" align="right" valign="top">fe&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge__precomp.html#ae0fcdc39b73637b2ac918f902597644d">xy2d</a></td></tr>
 <tr class="separator:ae0fcdc39b73637b2ac918f902597644d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Precomputed group element in Duif representation. </p>
+<p>Stores (y+x), (y−x), and 2·d·x·y to speed up fixed-base operations. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae0fcdc39b73637b2ac918f902597644d" name="ae0fcdc39b73637b2ac918f902597644d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0fcdc39b73637b2ac918f902597644d">&#9670;&#160;</a></span>xy2d</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fe ge_precomp::xy2d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>2 * d * x * y. </p>
+
+</div>
+</div>
+<a id="ab6662e7a9b16ed0ec0cbfb1fb2d1dad4" name="ab6662e7a9b16ed0ec0cbfb1fb2d1dad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6662e7a9b16ed0ec0cbfb1fb2d1dad4">&#9670;&#160;</a></span>yminusx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fe ge_precomp::yminusx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>y - x. </p>
+
+</div>
+</div>
+<a id="a46087fd6f730bb9dd306e06a81b66973" name="a46087fd6f730bb9dd306e06a81b66973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46087fd6f730bb9dd306e06a81b66973">&#9670;&#160;</a></span>yplusx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fe ge_precomp::yplusx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>y + x. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>sm/src/ed25519/<a class="el" href="ge_8h_source.html">ge.h</a></li>
 </ul>

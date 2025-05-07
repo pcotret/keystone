@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('cmocka_8c_source.html',''); initResiza
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &lt;<a class="code" href="string_8h.html">string.h</a>&gt;</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#include &lt;time.h&gt;</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#include &lt;float.h&gt;</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
@@ -2476,7 +2476,7 @@ $(document).ready(function(){initNavTree('cmocka_8c_source.html',''); initResiza
 <div class="line"><a id="l02359" name="l02359"></a><span class="lineno"> 2359</span><span class="keywordtype">void</span> vprint_message(<span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> format, va_list args) {</div>
 <div class="line"><a id="l02360" name="l02360"></a><span class="lineno"> 2360</span>    <span class="keywordtype">char</span> buffer[1024];</div>
 <div class="line"><a id="l02361" name="l02361"></a><span class="lineno"> 2361</span>    vsnprintf(buffer, <span class="keyword">sizeof</span>(buffer), format, args);</div>
-<div class="line"><a id="l02362" name="l02362"></a><span class="lineno"> 2362</span>    <a class="code hl_function" href="printf_8h.html#a98631211a4a8aee62f572375d5b637be">printf</a>(<span class="stringliteral">&quot;%s&quot;</span>, buffer);</div>
+<div class="line"><a id="l02362" name="l02362"></a><span class="lineno"> 2362</span>    printf(<span class="stringliteral">&quot;%s&quot;</span>, buffer);</div>
 <div class="line"><a id="l02363" name="l02363"></a><span class="lineno"> 2363</span>    fflush(stdout);</div>
 <div class="line"><a id="l02364" name="l02364"></a><span class="lineno"> 2364</span><span class="preprocessor">#ifdef _WIN32</span></div>
 <div class="line"><a id="l02365" name="l02365"></a><span class="lineno"> 2365</span>    OutputDebugString(buffer);</div>
@@ -2562,11 +2562,11 @@ $(document).ready(function(){initNavTree('cmocka_8c_source.html',''); initResiza
 <div class="line"><a id="l02445" name="l02445"></a><span class="lineno"> 2445</span>        <span class="keywordtype">char</span> buf[1024];</div>
 <div class="line"><a id="l02446" name="l02446"></a><span class="lineno"> 2446</span>        <span class="keywordtype">int</span> rc;</div>
 <div class="line"><a id="l02447" name="l02447"></a><span class="lineno"> 2447</span> </div>
-<div class="line"><a id="l02448" name="l02448"></a><span class="lineno"> 2448</span>        <a class="code hl_function" href="printf_8h.html#a212e2f1c2162f8a24b156191be16b6cd">snprintf</a>(buf, <span class="keyword">sizeof</span>(buf), <span class="stringliteral">&quot;%s&quot;</span>, env);</div>
+<div class="line"><a id="l02448" name="l02448"></a><span class="lineno"> 2448</span>        snprintf(buf, <span class="keyword">sizeof</span>(buf), <span class="stringliteral">&quot;%s&quot;</span>, env);</div>
 <div class="line"><a id="l02449" name="l02449"></a><span class="lineno"> 2449</span> </div>
 <div class="line"><a id="l02450" name="l02450"></a><span class="lineno"> 2450</span>        rc = c_strreplace(buf, <span class="keyword">sizeof</span>(buf), <span class="stringliteral">&quot;%g&quot;</span>, group_name, &amp;multiple_files);</div>
 <div class="line"><a id="l02451" name="l02451"></a><span class="lineno"> 2451</span>        <span class="keywordflow">if</span> (rc &lt; 0) {</div>
-<div class="line"><a id="l02452" name="l02452"></a><span class="lineno"> 2452</span>            <a class="code hl_function" href="printf_8h.html#a212e2f1c2162f8a24b156191be16b6cd">snprintf</a>(buf, <span class="keyword">sizeof</span>(buf), <span class="stringliteral">&quot;%s&quot;</span>, env);</div>
+<div class="line"><a id="l02452" name="l02452"></a><span class="lineno"> 2452</span>            snprintf(buf, <span class="keyword">sizeof</span>(buf), <span class="stringliteral">&quot;%s&quot;</span>, env);</div>
 <div class="line"><a id="l02453" name="l02453"></a><span class="lineno"> 2453</span>        }</div>
 <div class="line"><a id="l02454" name="l02454"></a><span class="lineno"> 2454</span> </div>
 <div class="line"><a id="l02455" name="l02455"></a><span class="lineno"> 2455</span>        fp = fopen(buf, <span class="stringliteral">&quot;r&quot;</span>);</div>
@@ -3307,7 +3307,7 @@ $(document).ready(function(){initNavTree('cmocka_8c_source.html',''); initResiza
 <div class="line"><a id="l03184" name="l03184"></a><span class="lineno"> 3184</span>            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l03185" name="l03185"></a><span class="lineno"> 3185</span>                <span class="keywordtype">char</span> err_msg[2048] = {0};</div>
 <div class="line"><a id="l03186" name="l03186"></a><span class="lineno"> 3186</span> </div>
-<div class="line"><a id="l03187" name="l03187"></a><span class="lineno"> 3187</span>                <a class="code hl_function" href="printf_8h.html#a212e2f1c2162f8a24b156191be16b6cd">snprintf</a>(err_msg, <span class="keyword">sizeof</span>(err_msg),</div>
+<div class="line"><a id="l03187" name="l03187"></a><span class="lineno"> 3187</span>                snprintf(err_msg, <span class="keyword">sizeof</span>(err_msg),</div>
 <div class="line"><a id="l03188" name="l03188"></a><span class="lineno"> 3188</span>                         <span class="stringliteral">&quot;Could not run test: %s&quot;</span>,</div>
 <div class="line"><a id="l03189" name="l03189"></a><span class="lineno"> 3189</span>                         cmtest-&gt;error_message);</div>
 <div class="line"><a id="l03190" name="l03190"></a><span class="lineno"> 3190</span> </div>
@@ -3759,9 +3759,6 @@ $(document).ready(function(){initNavTree('cmocka_8c_source.html',''); initResiza
 <div class="ttc" id="agroup__cmocka_html_gac3994cdf617401dee7b0923503621072"><div class="ttname"><a href="group__cmocka.html#gac3994cdf617401dee7b0923503621072">cmocka_set_skip_filter</a></div><div class="ttdeci">void cmocka_set_skip_filter(const char *pattern)</div><div class="ttdoc">Set a pattern to skip tests matching the pattern.</div><div class="ttdef"><b>Definition</b> cmocka.c:2808</div></div>
 <div class="ttc" id="agroup__cmocka_html_gad5006b3adbbe8962a57579f1d182a3b8"><div class="ttname"><a href="group__cmocka.html#gad5006b3adbbe8962a57579f1d182a3b8">cmocka_set_test_filter</a></div><div class="ttdeci">void cmocka_set_test_filter(const char *pattern)</div><div class="ttdoc">Set a pattern to only run the test matching the pattern.</div><div class="ttdef"><b>Definition</b> cmocka.c:2803</div></div>
 <div class="ttc" id="agroup__cmocka_html_gae3764f4f38d067fe9c5faf034c07debd"><div class="ttname"><a href="group__cmocka.html#gae3764f4f38d067fe9c5faf034c07debd">cmocka_set_message_output</a></div><div class="ttdeci">void cmocka_set_message_output(enum cm_message_output output)</div><div class="ttdoc">Function to set the output format for a test.</div><div class="ttdef"><b>Definition</b> cmocka.c:2798</div></div>
-<div class="ttc" id="aprintf_8h_html_a212e2f1c2162f8a24b156191be16b6cd"><div class="ttname"><a href="printf_8h.html#a212e2f1c2162f8a24b156191be16b6cd">snprintf</a></div><div class="ttdeci">int snprintf(char *buffer, size_t count, const char *format,...)</div><div class="ttdef"><b>Definition</b> printf.c:702</div></div>
-<div class="ttc" id="aprintf_8h_html_a98631211a4a8aee62f572375d5b637be"><div class="ttname"><a href="printf_8h.html#a98631211a4a8aee62f572375d5b637be">printf</a></div><div class="ttdeci">int printf(const char *format,...)</div><div class="ttdef"><b>Definition</b> printf.c:681</div></div>
-<div class="ttc" id="astring_8h_html"><div class="ttname"><a href="string_8h.html">string.h</a></div></div>
 <div class="ttc" id="astructCMUnitTestState_html"><div class="ttname"><a href="structCMUnitTestState.html">CMUnitTestState</a></div><div class="ttdef"><b>Definition</b> cmocka.c:384</div></div>
 <div class="ttc" id="astructCMUnitTest_html"><div class="ttname"><a href="structCMUnitTest.html">CMUnitTest</a></div><div class="ttdef"><b>Definition</b> cmocka.h:2204</div></div>
 <div class="ttc" id="astructCheckIntegerRange_html"><div class="ttname"><a href="structCheckIntegerRange.html">CheckIntegerRange</a></div><div class="ttdef"><b>Definition</b> cmocka.c:203</div></div>

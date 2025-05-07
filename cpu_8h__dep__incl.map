@@ -1,7 +1,0 @@
-<map id="sm/src/cpu.h" name="sm/src/cpu.h">
-<area shape="rect" id="Node000001" title="CPU context management for enclaves." alt="" coords="100,5,196,31"/>
-<area shape="rect" id="Node000002" href="$enclave_8c.html" title="Enclave management and context switching for the Keystone Security Monitor." alt="" coords="5,79,126,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,44,81,81,78,77,121,39"/>
-<area shape="rect" id="Node000003" href="$sm-sbi-opensbi_8c.html" title="Keystone Enclave SBI handler implementation." alt="" coords="149,79,313,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,39,219,77,215,81,172,44"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="elf32_getSectionFlags" name="elf32_getSectionFlags">
-<area shape="rect" id="Node000001" title="Get the flags of a section." alt="" coords="190,29,340,55"/>
-<area shape="rect" id="Node000002" href="$elf_8c.html#acac95db4ed37ddee9a15ea016f503a4b" title=" " alt="" coords="5,29,142,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,45,142,45,142,40,174,40"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="106,16,95,10,73,8,53,10,43,15,40,20,46,27,41,30,35,21,39,11,52,5,74,3,97,5,109,12"/>
-</map>

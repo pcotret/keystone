@@ -1,6 +1,0 @@
-<map id="platform_init_global" name="platform_init_global">
-<area shape="rect" id="Node000001" title="Perform per&#45;hart platform initialization." alt="" coords="117,29,250,55"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="208,16,199,10,183,8,168,10,160,14,159,20,163,28,158,30,153,21,156,11,167,5,183,3,201,5,211,12"/>
-<area shape="rect" id="Node000002" href="$sm_8c.html#a9c2cd24e275b1bd0f99d3103281fcda1" title="Initialize the Security Monitor (SM)." alt="" coords="5,29,69,55"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="101,45,69,45,69,40,101,40"/>
-</map>

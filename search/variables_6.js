@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['is_5fenclave_0',['is_enclave',['../structcpu__state.html#a81bc227ea824b4fe20b8ddebcecef659',1,'cpu_state']]]
+  ['gp_0',['gp',['../structctx.html#a00792acf424797300375407d69e0ff6a',1,'ctx::gp'],['../structregs.html#ad9b41a826773655d3a29020d6d3c3453',1,'regs::gp']]]
 ];

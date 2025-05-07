@@ -1,5 +1,0 @@
-<map id="sbi_stop_enclave" name="sbi_stop_enclave">
-<area shape="rect" id="Node000001" title="Stop the current enclave and return to the host." alt="" coords="226,5,348,31"/>
-<area shape="rect" id="Node000002" href="$syscall_8c.html#aae2f0f11f541bf9e11a881462eca73c8" title="Dispatches an edge call&#45;based syscall." alt="" coords="5,5,178,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,21,178,21,178,16,210,16"/>
-</map>
