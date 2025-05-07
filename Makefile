@@ -143,3 +143,8 @@ call:
 		-o ConnectTimeout=5 \
 		$(PORT_ARGS) root@$(IP_ARGS) $(KEYSTONE_COMMAND) 2>&1 | \
 		 grep -v "Warning: Permanently added" | tee -a $(CALL_LOGFILE)
+doc:
+	doxygen Doxyfile
+warn:
+	grep 'warning' doxygen_warnings.log | grep -v 'cmocka' | wc -l
+check: doc warn
