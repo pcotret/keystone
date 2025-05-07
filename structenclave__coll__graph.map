@@ -10,8 +10,8 @@
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="219,46,193,95,189,92,214,44"/>
 <area shape="rect" id="Node000006" href="$structplatform__enclave__data.html" title=" " alt="" coords="255,94,408,120"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="334,135,334,182,329,182,329,135"/>
-<area shape="rect" id="Node000007" href="$structutm.html" title="Untrusted Memory (UTM) region descriptor." alt="" coords="431,94,475,120"/>
+<area shape="rect" id="Node000007" href="$structutm.html" title=" " alt="" coords="431,94,475,120"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="426,131,350,184,347,180,422,126"/>
-<area shape="rect" id="Node000008" href="$structepm.html" title="Enclave Private Memory (EPM) region descriptor." alt="" coords="499,94,545,120"/>
+<area shape="rect" id="Node000008" href="$structepm.html" title=" " alt="" coords="499,94,545,120"/>
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="490,130,430,161,366,186,364,181,428,156,488,125"/>
 </map>

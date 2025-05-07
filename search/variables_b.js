@@ -1,7 +1,27 @@
 var searchData=
 [
-  ['n_5fdescsz_0',['n_descsz',['../structElf32__Nhdr.html#ad83450c86fb3e14d1096a141ea705f33',1,'Elf32_Nhdr::n_descsz'],['../structElf64__Nhdr.html#ace700cd855c773a6483e247f18a33350',1,'Elf64_Nhdr::n_descsz']]],
-  ['n_5fnamesz_1',['n_namesz',['../structElf32__Nhdr.html#a8e6389f882a5c695518a833b4c1bd9c6',1,'Elf32_Nhdr::n_namesz'],['../structElf64__Nhdr.html#a1169a3f8272ba5265ea3aecdc4974546',1,'Elf64_Nhdr::n_namesz']]],
-  ['n_5fthread_2',['n_thread',['../structenclave.html#a84fb4056dfca359ac6663076162a8133',1,'enclave']]],
-  ['n_5ftype_3',['n_type',['../structElf32__Nhdr.html#afdab20b47522cb964500a200ceb92462',1,'Elf32_Nhdr::n_type'],['../structElf64__Nhdr.html#abbb820712cc219d235bb7eb3c11eefbe',1,'Elf64_Nhdr::n_type']]]
+  ['s0_0',['s0',['../structctx.html#afa6a1ee7be87aa3bba081a5be3d1332e',1,'ctx']]],
+  ['s2_1',['s2',['../structctx.html#a99585884d1382913a9e72695390b7306',1,'ctx']]],
+  ['satp_2',['satp',['../structcsrs.html#a7f9064df430c5462be181658d3ff8b39',1,'csrs']]],
+  ['sbadaddr_3',['sbadaddr',['../structcsrs.html#a1aa594d73f4f4ebf022ae4f07e0cc1b4',1,'csrs']]],
+  ['scause_4',['scause',['../structcsrs.html#abc65231fb31eeca81505cc1cc9807559',1,'csrs']]],
+  ['scounteren_5',['scounteren',['../structcsrs.html#a9249eef0107bf318a9486f2e8d15d3c5',1,'csrs']]],
+  ['sedeleg_6',['sedeleg',['../structcsrs.html#aae8a7567b3ea4460a59b85b9e129bb0a',1,'csrs']]],
+  ['sepc_7',['sepc',['../structcsrs.html#a4e447b5f59e923c4094197d7bd165418',1,'csrs']]],
+  ['sideleg_8',['sideleg',['../structcsrs.html#a58e3f04b3b26905681ff0f2c25abfd7c',1,'csrs']]],
+  ['sie_9',['sie',['../structcsrs.html#ae5da4be95005201c1b572e824cc663b6',1,'csrs']]],
+  ['sign_10',['sign',['../structenclave.html#a51627a5d029310abcd0b440866c75fcc',1,'enclave']]],
+  ['signature_11',['signature',['../structsealing__key.html#a5efce39a3196f565e90d06593853e7e9',1,'sealing_key::signature'],['../structsm__report.html#a60c564ea45b7e9664283a1519e1d8874',1,'sm_report::signature'],['../structenclave__report.html#a75aa05a90b3106633f38c2e1cabcdd1a',1,'enclave_report::signature']]],
+  ['sip_12',['sip',['../structcsrs.html#a32dc7c7d797399eccd67173ed6550a69',1,'csrs']]],
+  ['size_13',['size',['../structpmp__region.html#ade1052059f70b35adbc810dc33c00126',1,'pmp_region']]],
+  ['sm_14',['sm',['../structreport.html#adc3027d84a05d24ff1753c0e9426e823',1,'report']]],
+  ['sm_5fhash_15',['sm_hash',['../crypto_8h.html#a0243fb0aec5f16c0baae675ae0be49fb',1,'sm.c']]],
+  ['sm_5fprivate_5fkey_16',['sm_private_key',['../crypto_8h.html#a6cf601a159b44c561e342dd5724fd5a3',1,'sm.c']]],
+  ['sm_5fpublic_5fkey_17',['sm_public_key',['../crypto_8h.html#aa14404253ff0517bbb766684f588aaa4',1,'sm.c']]],
+  ['sm_5fsignature_18',['sm_signature',['../crypto_8h.html#a4cd749ff8e561a962c56d447fafcfb8a',1,'sm.c']]],
+  ['sp_19',['sp',['../structctx.html#aa5d896d0c320120202fffb8e25ab0973',1,'ctx']]],
+  ['sscratch_20',['sscratch',['../structcsrs.html#a62fe7f2a048b2b303b06cc69b9629222',1,'csrs']]],
+  ['sstatus_21',['sstatus',['../structcsrs.html#ade120c60da2d1efc9b05a912dd2695fd',1,'csrs']]],
+  ['state_22',['state',['../structenclave.html#a692a614191592bee1e4d51a228c72049',1,'enclave']]],
+  ['stvec_23',['stvec',['../structcsrs.html#a0906f0c0f46510fb243a9dd22d0c202a',1,'csrs']]]
 ];

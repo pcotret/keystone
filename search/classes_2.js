@@ -35,13 +35,14 @@ var searchData=
   ['elf64_5fsyminfo_32',['Elf64_Syminfo',['../structElf64__Syminfo.html',1,'']]],
   ['elf64_5fverdaux_33',['Elf64_Verdaux',['../structElf64__Verdaux.html',1,'']]],
   ['elf64_5fverdef_34',['Elf64_Verdef',['../structElf64__Verdef.html',1,'']]],
-  ['elf64_5fverneed_35',['Elf64_Verneed',['../structElf64__Verneed.html',1,'']]],
-  ['elf_5fmips_5fabiflags_5fv0_36',['Elf_MIPS_ABIFlags_v0',['../structElf__MIPS__ABIFlags__v0.html',1,'']]],
-  ['elf_5foptions_37',['Elf_Options',['../structElf__Options.html',1,'']]],
-  ['elf_5foptions_5fhw_38',['Elf_Options_Hw',['../structElf__Options__Hw.html',1,'']]],
-  ['encl_5fctx_39',['encl_ctx',['../structencl__ctx.html',1,'']]],
-  ['enclave_40',['enclave',['../structenclave.html',1,'']]],
-  ['enclave_5fregion_41',['enclave_region',['../structenclave__region.html',1,'']]],
-  ['enclave_5freport_42',['enclave_report',['../structenclave__report.html',1,'']]],
-  ['epm_43',['epm',['../structepm.html',1,'']]]
+  ['elf64_5fvernaux_35',['Elf64_Vernaux',['../structElf64__Vernaux.html',1,'']]],
+  ['elf64_5fverneed_36',['Elf64_Verneed',['../structElf64__Verneed.html',1,'']]],
+  ['elf_5fmips_5fabiflags_5fv0_37',['Elf_MIPS_ABIFlags_v0',['../structElf__MIPS__ABIFlags__v0.html',1,'']]],
+  ['elf_5foptions_38',['Elf_Options',['../structElf__Options.html',1,'']]],
+  ['elf_5foptions_5fhw_39',['Elf_Options_Hw',['../structElf__Options__Hw.html',1,'']]],
+  ['encl_5fctx_40',['encl_ctx',['../structencl__ctx.html',1,'']]],
+  ['enclave_41',['enclave',['../structenclave.html',1,'']]],
+  ['enclave_5fregion_42',['enclave_region',['../structenclave__region.html',1,'']]],
+  ['enclave_5freport_43',['enclave_report',['../structenclave__report.html',1,'']]],
+  ['epm_44',['epm',['../structepm.html',1,'']]]
 ];

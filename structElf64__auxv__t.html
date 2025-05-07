@@ -96,72 +96,21 @@ $(document).ready(function(){initNavTree('structElf64__auxv__t.html',''); initRe
   <div class="headertitle"><div class="title">Elf64_auxv_t Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>ELF64 Auxiliary Vector Entry.  
- <a href="structElf64__auxv__t.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="util_2elf_8h_source.html">elf.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aa4799367aa86aa03c70a44148b14d000" id="r_aa4799367aa86aa03c70a44148b14d000"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structElf64__auxv__t.html#aa4799367aa86aa03c70a44148b14d000">a_type</a></td></tr>
+<tr class="memitem:aa4799367aa86aa03c70a44148b14d000" id="r_aa4799367aa86aa03c70a44148b14d000"><td class="memItemLeft" align="right" valign="top"><a id="aa4799367aa86aa03c70a44148b14d000" name="aa4799367aa86aa03c70a44148b14d000"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>a_type</b></td></tr>
 <tr class="separator:aa4799367aa86aa03c70a44148b14d000"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12a4e9e2856f0d0bfa11b45ef3e88314" id="r_a12a4e9e2856f0d0bfa11b45ef3e88314"><td class="memItemLeft" >union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memitem:a12a4e9e2856f0d0bfa11b45ef3e88314" id="r_a12a4e9e2856f0d0bfa11b45ef3e88314"><td class="memItemLeft" ><a id="a12a4e9e2856f0d0bfa11b45ef3e88314" name="a12a4e9e2856f0d0bfa11b45ef3e88314"></a>
+union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0deb0a9c7619998cec233fce3e09920" id="r_aa0deb0a9c7619998cec233fce3e09920"><td class="memItemLeft" >&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structElf64__auxv__t.html#ae9741865b74b4fbe872d5de874feb207">a_val</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memitem:aa0deb0a9c7619998cec233fce3e09920" id="r_aa0deb0a9c7619998cec233fce3e09920"><td class="memItemLeft" >
+&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>a_val</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:aa0deb0a9c7619998cec233fce3e09920"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12a4e9e2856f0d0bfa11b45ef3e88314" id="r_a12a4e9e2856f0d0bfa11b45ef3e88314"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structElf64__auxv__t.html#a12a4e9e2856f0d0bfa11b45ef3e88314">a_un</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memitem:a12a4e9e2856f0d0bfa11b45ef3e88314" id="r_a12a4e9e2856f0d0bfa11b45ef3e88314"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>a_un</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a12a4e9e2856f0d0bfa11b45ef3e88314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>ELF64 Auxiliary Vector Entry. </p>
-<p>Represents an entry in the auxiliary vector for ELF64. The auxiliary vector is used to pass additional information to the program during its execution, such as system information, program-specific data, or dynamic loader-related data. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="aa4799367aa86aa03c70a44148b14d000" name="aa4799367aa86aa03c70a44148b14d000"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4799367aa86aa03c70a44148b14d000">&#9670;&#160;</a></span>a_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t Elf64_auxv_t::a_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Type of the auxiliary entry (e.g., AT_PHDR, AT_PHENT) </p>
-
-</div>
-</div>
-<a id="a12a4e9e2856f0d0bfa11b45ef3e88314" name="a12a4e9e2856f0d0bfa11b45ef3e88314"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12a4e9e2856f0d0bfa11b45ef3e88314">&#9670;&#160;</a></span>[union]</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">union  { ... }  Elf64_auxv_t::a_un</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Union for holding the value or pointer depending on the type </p>
-
-</div>
-</div>
-<a id="ae9741865b74b4fbe872d5de874feb207" name="ae9741865b74b4fbe872d5de874feb207"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9741865b74b4fbe872d5de874feb207">&#9670;&#160;</a></span>a_val</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t Elf64_auxv_t::a_val</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Value associated with the entry, the type determines its meaning </p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>runtime/include/util/<a class="el" href="util_2elf_8h_source.html">elf.h</a></li>
 </ul>

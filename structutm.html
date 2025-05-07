@@ -96,87 +96,22 @@ $(document).ready(function(){initNavTree('structutm.html',''); initResizable(); 
   <div class="headertitle"><div class="title">utm Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Untrusted Memory (UTM) region descriptor.  
- <a href="structutm.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="keystone_8h_source.html">keystone.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a5f22b3b542849ff82ec3fe844e6babe9" id="r_a5f22b3b542849ff82ec3fe844e6babe9"><td class="memItemLeft" align="right" valign="top">pte_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structutm.html#a5f22b3b542849ff82ec3fe844e6babe9">root_page_table</a></td></tr>
+<tr class="memitem:a5f22b3b542849ff82ec3fe844e6babe9" id="r_a5f22b3b542849ff82ec3fe844e6babe9"><td class="memItemLeft" align="right" valign="top"><a id="a5f22b3b542849ff82ec3fe844e6babe9" name="a5f22b3b542849ff82ec3fe844e6babe9"></a>
+pte_t *&#160;</td><td class="memItemRight" valign="bottom"><b>root_page_table</b></td></tr>
 <tr class="separator:a5f22b3b542849ff82ec3fe844e6babe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd7f444851095543d39fb7ddad4e8e9c" id="r_afd7f444851095543d39fb7ddad4e8e9c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structutm.html#afd7f444851095543d39fb7ddad4e8e9c">ptr</a></td></tr>
+<tr class="memitem:afd7f444851095543d39fb7ddad4e8e9c" id="r_afd7f444851095543d39fb7ddad4e8e9c"><td class="memItemLeft" align="right" valign="top"><a id="afd7f444851095543d39fb7ddad4e8e9c" name="afd7f444851095543d39fb7ddad4e8e9c"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>ptr</b></td></tr>
 <tr class="separator:afd7f444851095543d39fb7ddad4e8e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac52146725eac73c7de7ca818d19894da" id="r_ac52146725eac73c7de7ca818d19894da"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structutm.html#ac52146725eac73c7de7ca818d19894da">size</a></td></tr>
+<tr class="memitem:ac52146725eac73c7de7ca818d19894da" id="r_ac52146725eac73c7de7ca818d19894da"><td class="memItemLeft" align="right" valign="top"><a id="ac52146725eac73c7de7ca818d19894da" name="ac52146725eac73c7de7ca818d19894da"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b></td></tr>
 <tr class="separator:ac52146725eac73c7de7ca818d19894da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af372e395e9f528306be1959cc93549ff" id="r_af372e395e9f528306be1959cc93549ff"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structutm.html#af372e395e9f528306be1959cc93549ff">order</a></td></tr>
+<tr class="memitem:af372e395e9f528306be1959cc93549ff" id="r_af372e395e9f528306be1959cc93549ff"><td class="memItemLeft" align="right" valign="top"><a id="af372e395e9f528306be1959cc93549ff" name="af372e395e9f528306be1959cc93549ff"></a>
+unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>order</b></td></tr>
 <tr class="separator:af372e395e9f528306be1959cc93549ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Untrusted Memory (UTM) region descriptor. </p>
-<p>Describes a memory region accessible by both enclave and non-enclave code. Used for communication or data exchange between the enclave and the host. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="af372e395e9f528306be1959cc93549ff" name="af372e395e9f528306be1959cc93549ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af372e395e9f528306be1959cc93549ff">&#9670;&#160;</a></span>order</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned long utm::order</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Allocation order used for page granularity. </p>
-
-</div>
-</div>
-<a id="afd7f444851095543d39fb7ddad4e8e9c" name="afd7f444851095543d39fb7ddad4e8e9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd7f444851095543d39fb7ddad4e8e9c">&#9670;&#160;</a></span>ptr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* utm::ptr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Pointer to the base of the UTM region. </p>
-
-</div>
-</div>
-<a id="a5f22b3b542849ff82ec3fe844e6babe9" name="a5f22b3b542849ff82ec3fe844e6babe9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f22b3b542849ff82ec3fe844e6babe9">&#9670;&#160;</a></span>root_page_table</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pte_t* utm::root_page_table</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Pointer to the page table covering the UTM region. </p>
-
-</div>
-</div>
-<a id="ac52146725eac73c7de7ca818d19894da" name="ac52146725eac73c7de7ca818d19894da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac52146725eac73c7de7ca818d19894da">&#9670;&#160;</a></span>size</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t utm::size</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Size of the UTM in bytes. </p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>linux-keystone-driver/<a class="el" href="keystone_8h_source.html">keystone.h</a></li>
 </ul>

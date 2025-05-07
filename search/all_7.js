@@ -9,7 +9,5 @@ var searchData=
   ['hash_5ffinalize_6',['hash_finalize',['../crypto_8h.html#a5c5b61e4db79855426c811dc88f8bc37',1,'crypto.c']]],
   ['hash_5finit_7',['hash_init',['../crypto_8h.html#a3733e91366067c4fcac26a8018bd67f6',1,'crypto.c']]],
   ['hash_5fs_8',['hash_s',['../structhash__s.html',1,'']]],
-  ['hmac_5fsha3_5fctx_5ft_9',['hmac_sha3_ctx_t',['../structhmac__sha3__ctx__t.html',1,'']]],
-  ['hwp_5fflags1_10',['hwp_flags1',['../structElf__Options__Hw.html#ade844ca291219a4c2ddb9daa5ff7cdc1',1,'Elf_Options_Hw']]],
-  ['hwp_5fflags2_11',['hwp_flags2',['../structElf__Options__Hw.html#a4940c510ca6158e2ea1df247ffce5882',1,'Elf_Options_Hw']]]
+  ['hmac_5fsha3_5fctx_5ft_9',['hmac_sha3_ctx_t',['../structhmac__sha3__ctx__t.html',1,'']]]
 ];

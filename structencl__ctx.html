@@ -96,97 +96,32 @@ $(document).ready(function(){initNavTree('structencl__ctx.html',''); initResizab
   <div class="headertitle"><div class="title">encl_ctx Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Structure that extends the register state to include supervisor-specific control and status registers (CSRs).  
- <a href="structencl__ctx.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="regs_8h_source.html">regs.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for encl_ctx:</div>
 <div class="dyncontent">
 <div class="center"><img src="structencl__ctx__coll__graph.png" border="0" usemap="#aencl__ctx_coll__map" alt="Collaboration graph"/></div>
 <map name="aencl__ctx_coll__map" id="aencl__ctx_coll__map">
-<area shape="rect" title="Structure that extends the register state to include supervisor&#45;specific control and status registers..." alt="" coords="5,94,75,120"/>
-<area shape="rect" href="structregs.html" title="Structure that holds the register values for a RISC&#45;V execution context." alt="" coords="17,5,63,31"/>
+<area shape="rect" title=" " alt="" coords="5,94,75,120"/>
+<area shape="rect" href="structregs.html" title=" " alt="" coords="17,5,63,31"/>
 <area shape="poly" title=" " alt="" coords="43,47,43,94,37,94,37,47"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a4c8d2e7a3943ab70829ef087134dd0c8" id="r_a4c8d2e7a3943ab70829ef087134dd0c8"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structregs.html">regs</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structencl__ctx.html#a4c8d2e7a3943ab70829ef087134dd0c8">regs</a></td></tr>
+<tr class="memitem:a4c8d2e7a3943ab70829ef087134dd0c8" id="r_a4c8d2e7a3943ab70829ef087134dd0c8"><td class="memItemLeft" align="right" valign="top"><a id="a4c8d2e7a3943ab70829ef087134dd0c8" name="a4c8d2e7a3943ab70829ef087134dd0c8"></a>
+struct <a class="el" href="structregs.html">regs</a>&#160;</td><td class="memItemRight" valign="bottom"><b>regs</b></td></tr>
 <tr class="separator:a4c8d2e7a3943ab70829ef087134dd0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8811857f74b8cf057c08de7be141951e" id="r_a8811857f74b8cf057c08de7be141951e"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structencl__ctx.html#a8811857f74b8cf057c08de7be141951e">sstatus</a></td></tr>
+<tr class="memitem:a8811857f74b8cf057c08de7be141951e" id="r_a8811857f74b8cf057c08de7be141951e"><td class="memItemLeft" align="right" valign="top"><a id="a8811857f74b8cf057c08de7be141951e" name="a8811857f74b8cf057c08de7be141951e"></a>
+uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>sstatus</b></td></tr>
 <tr class="separator:a8811857f74b8cf057c08de7be141951e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaba4656b3b820dcb090982bbcf846365" id="r_aaba4656b3b820dcb090982bbcf846365"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structencl__ctx.html#aaba4656b3b820dcb090982bbcf846365">sbadaddr</a></td></tr>
+<tr class="memitem:aaba4656b3b820dcb090982bbcf846365" id="r_aaba4656b3b820dcb090982bbcf846365"><td class="memItemLeft" align="right" valign="top"><a id="aaba4656b3b820dcb090982bbcf846365" name="aaba4656b3b820dcb090982bbcf846365"></a>
+uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>sbadaddr</b></td></tr>
 <tr class="separator:aaba4656b3b820dcb090982bbcf846365"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23775f226b9b0837c19e015c128db15a" id="r_a23775f226b9b0837c19e015c128db15a"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structencl__ctx.html#a23775f226b9b0837c19e015c128db15a">scause</a></td></tr>
+<tr class="memitem:a23775f226b9b0837c19e015c128db15a" id="r_a23775f226b9b0837c19e015c128db15a"><td class="memItemLeft" align="right" valign="top"><a id="a23775f226b9b0837c19e015c128db15a" name="a23775f226b9b0837c19e015c128db15a"></a>
+uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>scause</b></td></tr>
 <tr class="separator:a23775f226b9b0837c19e015c128db15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Structure that extends the register state to include supervisor-specific control and status registers (CSRs). </p>
-<p>This structure extends the <code>regs</code> structure with additional registers used for managing supervisor-level context and exceptions in a RISC-V system. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a4c8d2e7a3943ab70829ef087134dd0c8" name="a4c8d2e7a3943ab70829ef087134dd0c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c8d2e7a3943ab70829ef087134dd0c8">&#9670;&#160;</a></span>regs</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structregs.html">regs</a> encl_ctx::regs</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>General-purpose and standard registers. </p>
-
-</div>
-</div>
-<a id="aaba4656b3b820dcb090982bbcf846365" name="aaba4656b3b820dcb090982bbcf846365"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaba4656b3b820dcb090982bbcf846365">&#9670;&#160;</a></span>sbadaddr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uintptr_t encl_ctx::sbadaddr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Bad address register (deprecated; typically use stval). </p>
-
-</div>
-</div>
-<a id="a23775f226b9b0837c19e015c128db15a" name="a23775f226b9b0837c19e015c128db15a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23775f226b9b0837c19e015c128db15a">&#9670;&#160;</a></span>scause</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uintptr_t encl_ctx::scause</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Exception cause register (scause). </p>
-
-</div>
-</div>
-<a id="a8811857f74b8cf057c08de7be141951e" name="a8811857f74b8cf057c08de7be141951e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8811857f74b8cf057c08de7be141951e">&#9670;&#160;</a></span>sstatus</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uintptr_t encl_ctx::sstatus</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Supervisor status register (sstatus). </p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>runtime/include/util/<a class="el" href="regs_8h_source.html">regs.h</a></li>
 </ul>

@@ -1,7 +1,7 @@
 var keystone_8h =
 [
-    [ "epm", "structepm.html", "structepm" ],
-    [ "utm", "structutm.html", "structutm" ],
+    [ "epm", "structepm.html", null ],
+    [ "utm", "structutm.html", null ],
     [ "enclave", "structenclave.html", "structenclave" ],
     [ "keystone_err", "keystone_8h.html#a47dbd4fecfb67d357f7077ad6d6503be", null ],
     [ "keystone_info", "keystone_8h.html#a99ff084e3f2addcf9536d2624afa0228", null ],

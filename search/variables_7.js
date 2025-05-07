@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['hash_0',['hash',['../structenclave.html#a62a4f3807691f86ac1cde7fdc7232215',1,'enclave::hash'],['../structenclave__report.html#af2542fa1bb4f01a38660b70a13e09f22',1,'enclave_report::hash'],['../structsm__report.html#a9067b61244e3f528aaa94f32c70db21d',1,'sm_report::hash']]],
-  ['hwp_5fflags1_1',['hwp_flags1',['../structElf__Options__Hw.html#ade844ca291219a4c2ddb9daa5ff7cdc1',1,'Elf_Options_Hw']]],
-  ['hwp_5fflags2_2',['hwp_flags2',['../structElf__Options__Hw.html#a4940c510ca6158e2ea1df247ffce5882',1,'Elf_Options_Hw']]]
+  ['key_0',['key',['../structsealing__key.html#afe92601d88c2e7195a70a6b7bbc259ae',1,'sealing_key']]],
+  ['keystone_5fdev_1',['keystone_dev',['../keystone_8h.html#a9bd97cbe30b01b1e71fe959a810e6fff',1,'keystone.c']]]
 ];

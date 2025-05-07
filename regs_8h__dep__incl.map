@@ -1,5 +1,5 @@
 <map id="runtime/include/util/regs.h" name="runtime/include/util/regs.h">
-<area shape="rect" id="Node000001" title="Defines structures for storing register state and context information." alt="" coords="84,5,215,46"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="84,5,215,46"/>
 <area shape="rect" id="Node000002" href="$syscall_8h.html" title="Declarations for syscall handling in the enclave environment." alt="" coords="5,94,139,135"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,60,91,95,87,92,120,56"/>
 <area shape="rect" id="Node000004" href="$rt__util_8h.html" title=" " alt="" coords="163,94,293,135"/>

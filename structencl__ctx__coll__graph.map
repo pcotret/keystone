@@ -1,5 +1,5 @@
 <map id="encl_ctx" name="encl_ctx">
-<area shape="rect" id="Node000001" title="Structure that extends the register state to include supervisor&#45;specific control and status registers..." alt="" coords="5,94,75,120"/>
-<area shape="rect" id="Node000002" href="$structregs.html" title="Structure that holds the register values for a RISC&#45;V execution context." alt="" coords="17,5,63,31"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,94,75,120"/>
+<area shape="rect" id="Node000002" href="$structregs.html" title=" " alt="" coords="17,5,63,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="43,47,43,94,37,94,37,47"/>
 </map>
