@@ -1,5 +1,5 @@
 <map id="destroy_enclave" name="destroy_enclave">
-<area shape="rect" id="Node000001" title="Destroy an existing enclave." alt="" coords="163,5,278,31"/>
+<area shape="rect" id="Node000001" title="Destroy an enclave and free all associated resources." alt="" coords="163,5,278,31"/>
 <area shape="rect" id="Node000002" href="$keystone-enclave_8c.html#a49dc4e494236d0b4313f258726f7eb1d" title="Allocate and initialize a new enclave." alt="" coords="5,5,115,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,21,115,21,115,16,147,16"/>
 </map>

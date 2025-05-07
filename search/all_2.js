@@ -37,7 +37,7 @@ var searchData=
   ['cpu_5fget_5fenclave_5fid_34',['cpu_get_enclave_id',['../cpu_8h.html#ab20a0934fd7fcb164fd79a6cb3bbc465',1,'cpu.c']]],
   ['cpu_5fis_5fenclave_5fcontext_35',['cpu_is_enclave_context',['../cpu_8h.html#a90f3a1d4eceeb1692f617f3a793c92ce',1,'cpu.c']]],
   ['cpu_5fstate_36',['cpu_state',['../structcpu__state.html',1,'']]],
-  ['create_5fenclave_37',['create_enclave',['../enclave_8h.html#ae5091dc7c998554d97bf949ec7af8ab8',1,'create_enclave(unsigned long *eid, struct keystone_sbi_create_t create_args):&#160;enclave.c'],['../keystone_8h.html#a49dc4e494236d0b4313f258726f7eb1d',1,'create_enclave(unsigned long min_pages):&#160;keystone-enclave.c']]],
+  ['create_5fenclave_37',['create_enclave',['../enclave_8h.html#ae5091dc7c998554d97bf949ec7af8ab8',1,'create_enclave(unsigned long *eid, struct keystone_sbi_create_t create_args):&#160;enclave.c'],['../keystone-enclave_8c.html#a49dc4e494236d0b4313f258726f7eb1d',1,'create_enclave(unsigned long min_pages):&#160;keystone-enclave.c'],['../keystone_8h.html#a49dc4e494236d0b4313f258726f7eb1d',1,'create_enclave(unsigned long min_pages):&#160;keystone-enclave.c']]],
   ['crypto_2eh_38',['crypto.h',['../crypto_8h.html',1,'']]],
   ['csrs_39',['csrs',['../structcsrs.html',1,'']]],
   ['ctx_40',['ctx',['../structctx.html',1,'']]]

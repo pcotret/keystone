@@ -2,4 +2,6 @@
 <area shape="rect" id="Node000001" title="RISC&#45;V 64&#45;bit Architecture Definitions and Utilities." alt="" coords="5,5,145,46"/>
 <area shape="rect" id="Node000002" href="$keystone_8h.html" title="Keystone Enclave Management API." alt="" coords="5,94,145,135"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,62,78,94,72,94,72,62"/>
+<area shape="rect" id="Node000003" href="$keystone-enclave_8c.html" title="Keystone enclave creation and management functions." alt="" coords="5,183,145,223"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="78,150,78,182,72,182,72,150"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="create_enclave" name="create_enclave">
-<area shape="rect" id="Node000001" title="Create a new enclave." alt="" coords="5,55,115,80"/>
+<area shape="rect" id="Node000001" title="Allocate and initialize a new enclave." alt="" coords="5,55,115,80"/>
 <area shape="rect" id="Node000002" href="$keystone-enclave_8c.html#a33f87ed11e05daae83697341e1752b3e" title="Destroy an enclave and free all associated resources." alt="" coords="163,29,278,55"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,56,147,51,148,56,116,61"/>
 <area shape="rect" id="Node000005" href="$keystone-page_8c.html#a8620245b580007505b10f18c8edcbd1e" title="Initialize the enclave private memory (EPM)." alt="" coords="185,79,256,104"/>

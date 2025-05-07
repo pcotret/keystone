@@ -22,5 +22,6 @@ var keystone_8h =
     [ "keystone_rtld_init_runtime", "keystone_8h.html#aee824bc41aad11a1e76380bebac426fc", null ],
     [ "keystone_rtld_init_untrusted", "keystone_8h.html#ab54fc6f89b72b510e038a7d2b35867ae", null ],
     [ "utm_destroy", "keystone_8h.html#a395abb5a07e84ea023d2c356e6254e1c", null ],
-    [ "utm_init", "keystone_8h.html#ad1b8c2c2e4fb99672359904999ae7d7a", null ]
+    [ "utm_init", "keystone_8h.html#ad1b8c2c2e4fb99672359904999ae7d7a", null ],
+    [ "keystone_dev", "keystone_8h.html#a9bd97cbe30b01b1e71fe959a810e6fff", null ]
 ];

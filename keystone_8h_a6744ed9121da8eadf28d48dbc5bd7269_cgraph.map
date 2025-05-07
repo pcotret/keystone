@@ -1,5 +1,5 @@
 <map id="keystone_mmap" name="keystone_mmap">
 <area shape="rect" id="Node000001" title="Memory mapping function for the Keystone device." alt="" coords="5,5,122,31"/>
-<area shape="rect" id="Node000002" href="$keystone-enclave_8c.html#a362a27baf57b040f6907b583e77ffc9b" title="Retrieve an enclave by its identifier." alt="" coords="170,5,298,31"/>
+<area shape="rect" id="Node000002" href="$keystone-enclave_8c.html#a362a27baf57b040f6907b583e77ffc9b" title="Look up an enclave by its UID." alt="" coords="170,5,298,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,16,154,16,154,21,122,21"/>
 </map>
