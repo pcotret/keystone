@@ -1,5 +1,5 @@
 Currently documented:
-- Security monitor. Without cryptographic modules.
+- Security monitor.
 - Linux Keystone driver.
 - (Parts of) runtime.
 
