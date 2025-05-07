@@ -1,0 +1,9 @@
+<map id="handle_syscall" name="handle_syscall">
+<area shape="rect" id="Node000001" title="Handles a syscall from the enclave context." alt="" coords="5,55,112,80"/>
+<area shape="rect" id="Node000002" href="$sbi_8c.html#a24f19b92c8c3f83a4e21684775e410b2" title="Request a remote attestation report." alt="" coords="164,5,294,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,51,167,33,168,38,106,57"/>
+<area shape="rect" id="Node000003" href="$sbi_8c.html#a658be33bffb4505dffa09101e19a8139" title="Exit the current enclave permanently and return a value." alt="" coords="170,55,288,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,65,154,65,154,70,112,70"/>
+<area shape="rect" id="Node000004" href="$sbi_8c.html#af46ab7aeab168f9a2d4b64aff88a8cfa" title="Retrieve a sealing key for the enclave." alt="" coords="160,104,298,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="106,78,168,97,167,102,105,84"/>
+</map>

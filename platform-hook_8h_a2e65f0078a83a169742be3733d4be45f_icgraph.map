@@ -1,0 +1,6 @@
+<map id="platform_init_enclave" name="platform_init_enclave">
+<area shape="rect" id="Node000001" title="Initialize platform&#45;specific data for a given enclave." alt="" coords="205,29,349,55"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="311,17,299,10,277,8,256,10,245,15,243,20,248,27,244,30,238,21,241,11,255,5,277,3,301,5,313,12"/>
+<area shape="rect" id="Node000002" href="$enclave_8c.html#a635924ab96178f9738670070d0107f20" title="Initialize enclave metadata structures." alt="" coords="5,29,157,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,45,157,45,157,40,189,40"/>
+</map>

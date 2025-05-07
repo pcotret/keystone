@@ -1,0 +1,5 @@
+<map id="switch_vector_host" name="switch_vector_host">
+<area shape="rect" id="Node000001" title="Switch to the host&#39;s trap vector." alt="" coords="5,5,140,31"/>
+<area shape="rect" id="Node000002" href="$thread_8h.html#a176d7f6b97b5a49ce1e518f8a76d3d75" title="General trap handler." alt="" coords="188,5,287,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,16,172,16,172,21,140,21"/>
+</map>

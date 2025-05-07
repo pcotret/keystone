@@ -1,0 +1,5 @@
+<map id="sbi_get_sealing_key" name="sbi_get_sealing_key">
+<area shape="rect" id="Node000001" title="Retrieve a sealing key for the enclave." alt="" coords="160,5,298,31"/>
+<area shape="rect" id="Node000002" href="$syscall_8c.html#af9aafc4c23ef0fe1f8914b9354d23bbc" title="Handles a syscall from the enclave context." alt="" coords="5,5,112,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,21,112,21,112,16,144,16"/>
+</map>

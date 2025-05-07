@@ -1,0 +1,10 @@
+<map id="elf_checkProgramHeaderTable" name="elf_checkProgramHeaderTable">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,82,206,108"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="66,84,58,74,63,64,79,58,106,56,135,58,150,65,148,70,134,63,105,61,80,63,66,68,63,73,70,80"/>
+<area shape="rect" id="Node000002" href="$elf32_8c.html#af23ced79c46619445a6fb2e23cd16aeb" title="Check the validity of the ELF32 program header table." alt="" coords="254,29,436,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,79,238,67,239,72,178,84"/>
+<area shape="rect" id="Node000003" href="$elf64_8c.html#a8124e0c03368d0ea520667562159dd3c" title="Check the validity of the ELF64 program header table." alt="" coords="254,119,436,159"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="180,106,239,117,238,122,179,111"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="300,29,298,19,305,10,321,5,345,3,371,5,386,11,384,16,369,10,345,8,322,10,308,15,303,21,305,28"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="300,119,298,109,305,100,321,94,345,92,371,94,386,101,384,106,369,100,345,97,322,99,308,104,303,110,305,117"/>
+</map>

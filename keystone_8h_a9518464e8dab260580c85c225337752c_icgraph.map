@@ -1,0 +1,7 @@
+<map id="epm_destroy" name="epm_destroy">
+<area shape="rect" id="Node000001" title="Destroy the enclave private memory (EPM)." alt="" coords="326,5,421,31"/>
+<area shape="rect" id="Node000002" href="$keystone-enclave_8c.html#a33f87ed11e05daae83697341e1752b3e" title="Destroy an existing enclave." alt="" coords="163,5,278,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="310,21,279,21,279,16,310,16"/>
+<area shape="rect" id="Node000003" href="$keystone-enclave_8c.html#a49dc4e494236d0b4313f258726f7eb1d" title="Create a new enclave." alt="" coords="5,5,115,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="147,21,115,21,115,16,147,16"/>
+</map>

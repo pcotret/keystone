@@ -1,0 +1,7 @@
+<map id="elf32_checkFile" name="elf32_checkFile">
+<area shape="rect" id="Node000001" title="Check whether the given file is a valid ELF32 file." alt="" coords="5,29,118,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="34,30,28,21,31,11,43,5,62,3,81,5,92,12,89,16,80,10,61,8,44,10,36,15,34,20,38,28"/>
+<area shape="rect" id="Node000002" href="$elf_8c.html#a6c61b631b4f94c93e5ab1824ed27d81f" title=" " alt="" coords="166,29,285,55"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="118,40,150,40,150,45,118,45"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="197,30,192,21,195,11,207,5,225,3,245,5,256,12,253,16,244,10,225,8,208,10,199,15,197,20,202,28"/>
+</map>

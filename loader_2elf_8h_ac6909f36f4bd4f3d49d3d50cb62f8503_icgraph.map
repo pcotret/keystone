@@ -1,0 +1,10 @@
+<map id="elf_checkSectionTable" name="elf_checkSectionTable">
+<area shape="rect" id="Node000001" title=" " alt="" coords="367,29,520,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="481,17,468,10,444,8,421,10,409,15,406,20,412,27,408,31,401,21,405,11,420,5,444,3,470,5,483,12"/>
+<area shape="rect" id="Node000002" href="$elf_8c.html#a34a84a8ca483afa40d9df0edb49e4f42" title=" " alt="" coords="141,29,319,55"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="351,45,320,45,320,40,351,40"/>
+<area shape="poly" id="edge5_Node000002_Node000002" title=" " alt="" coords="261,16,250,10,230,8,211,10,201,15,199,20,204,28,199,30,193,21,197,11,209,5,230,3,252,5,263,12"/>
+<area shape="rect" id="Node000003" href="$elf_8c.html#a4c8179f773dec5bfa05b9f13a0093765" title=" " alt="" coords="5,29,93,55"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="125,45,93,45,93,40,125,40"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="80,16,69,10,49,8,30,10,20,15,18,20,23,28,18,30,13,21,16,11,29,5,49,3,71,5,82,12"/>
+</map>

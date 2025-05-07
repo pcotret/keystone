@@ -1,0 +1,35 @@
+<map id="elf_newFile_maybe_unsafe" name="elf_newFile_maybe_unsafe">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,229,184,255"/>
+<area shape="poly" id="edge22_Node000001_Node000001" title=" " alt="" coords="55,231,47,221,52,211,68,205,95,203,124,206,139,213,136,217,123,211,94,208,69,210,56,215,53,220,59,227"/>
+<area shape="rect" id="Node000002" href="$elf_8c.html#aea754dc1a54e1625d95fa88f8eba27c8" title=" " alt="" coords="283,103,381,128"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,227,291,134,294,138,122,231"/>
+<area shape="rect" id="Node000006" href="$elf_8c.html#a6bcd933a4740d599ecf691a1afe52002" title=" " alt="" coords="232,229,432,255"/>
+<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="184,240,216,240,216,245,184,245"/>
+<area shape="rect" id="Node000009" href="$elf_8c.html#ac6909f36f4bd4f3d49d3d50cb62f8503" title=" " alt="" coords="255,355,409,380"/>
+<area shape="poly" id="edge16_Node000001_Node000009" title=" " alt="" coords="122,253,294,345,291,349,120,258"/>
+<area shape="poly" id="edge9_Node000002_Node000002" title=" " alt="" coords="293,104,285,94,289,84,305,78,332,76,361,79,376,86,374,91,360,84,332,81,307,83,293,88,290,93,297,101"/>
+<area shape="rect" id="Node000003" href="$elf32_8c.html#ac808fcbebd5f8bcab21505d339ec1bb5" title="Check whether the given file is a valid ELF32 file." alt="" coords="515,29,627,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="370,100,479,64,502,57,503,62,481,69,372,105"/>
+<area shape="rect" id="Node000005" href="$elf64_8c.html#afcc0669bb7f4bba4976a4c14fa085a95" title="Check whether the given file is a valid ELF64 file." alt="" coords="515,103,627,128"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="382,113,499,113,499,118,382,118"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="538,30,531,21,535,11,549,5,571,3,596,5,608,12,606,17,594,10,571,8,550,10,539,15,537,20,542,27"/>
+<area shape="rect" id="Node000004" href="$elf_8c.html#a6c61b631b4f94c93e5ab1824ed27d81f" title=" " alt="" coords="710,67,830,92"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="628,50,695,63,694,68,627,55"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="737,68,730,58,734,48,748,42,770,40,794,43,807,50,804,54,793,48,770,45,749,47,738,52,735,57,741,65"/>
+<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="627,103,694,90,695,96,628,108"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="538,104,531,94,535,84,549,78,571,76,596,79,608,86,606,90,594,84,571,81,550,83,539,88,537,93,542,101"/>
+<area shape="poly" id="edge15_Node000006_Node000006" title=" " alt="" coords="293,231,285,221,289,211,305,205,332,203,361,206,376,213,374,217,360,211,332,208,307,210,293,215,290,220,297,227"/>
+<area shape="rect" id="Node000007" href="$elf32_8c.html#af23ced79c46619445a6fb2e23cd16aeb" title="Check the validity of the ELF32 program header table." alt="" coords="480,177,662,217"/>
+<area shape="poly" id="edge11_Node000006_Node000007" title=" " alt="" coords="403,226,464,214,465,220,404,231"/>
+<area shape="rect" id="Node000008" href="$elf64_8c.html#a8124e0c03368d0ea520667562159dd3c" title="Check the validity of the ELF64 program header table." alt="" coords="480,266,662,307"/>
+<area shape="poly" id="edge13_Node000006_Node000008" title=" " alt="" coords="406,253,466,264,465,269,405,258"/>
+<area shape="poly" id="edge12_Node000007_Node000007" title=" " alt="" coords="533,176,531,167,538,158,551,152,571,150,593,152,606,159,603,163,591,157,571,155,552,157,541,162,537,168,539,175"/>
+<area shape="poly" id="edge14_Node000008_Node000008" title=" " alt="" coords="533,266,531,256,538,247,551,241,571,239,593,242,606,248,603,253,591,247,571,244,552,246,541,251,537,257,539,265"/>
+<area shape="poly" id="edge21_Node000009_Node000009" title=" " alt="" coords="293,356,285,346,289,336,305,330,332,328,361,331,376,338,374,343,360,336,332,333,307,335,293,340,290,345,297,353"/>
+<area shape="rect" id="Node000010" href="$elf32_8c.html#a60b331dbfffe72939f85a63a001aac3d" title="Check the validity of the ELF32 section header table." alt="" coords="488,355,655,380"/>
+<area shape="poly" id="edge17_Node000009_Node000010" title=" " alt="" coords="409,365,472,365,472,370,409,370"/>
+<area shape="rect" id="Node000011" href="$elf64_8c.html#a5a39a3d18113e80006c62199e8dc3bb8" title="Check the validity of the ELF64 section header table." alt="" coords="488,428,655,454"/>
+<area shape="poly" id="edge19_Node000009_Node000011" title=" " alt="" coords="377,378,513,420,511,426,376,383"/>
+<area shape="poly" id="edge18_Node000010_Node000010" title=" " alt="" coords="538,356,531,346,535,336,549,330,571,328,596,331,608,338,606,342,594,336,571,333,550,335,539,340,537,345,542,353"/>
+<area shape="poly" id="edge20_Node000011_Node000011" title=" " alt="" coords="538,429,531,419,535,410,549,403,571,401,596,404,608,411,606,416,594,409,571,407,550,409,539,413,537,419,542,426"/>
+</map>
