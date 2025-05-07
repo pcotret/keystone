@@ -151,6 +151,12 @@ Functions</h2></td></tr>
 <tr class="memitem:acddc4090683a0336f5097327b2c2c25e" id="r_acddc4090683a0336f5097327b2c2c25e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mprv_8h.html#acddc4090683a0336f5097327b2c2c25e">copy_block_to_sm</a> (<a class="el" href="structmprv__block.html">mprv_block</a> *dst, uintptr_t src)</td></tr>
 <tr class="memdesc:acddc4090683a0336f5097327b2c2c25e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy one full <code><a class="el" href="structmprv__block.html" title="Represents a block of memory for fast aligned transfers.">mprv_block</a></code> to SM.  <br /></td></tr>
 <tr class="separator:acddc4090683a0336f5097327b2c2c25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaee4f68f49b38ad12b28d96429aed14" id="r_abaee4f68f49b38ad12b28d96429aed14"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mprv_8h.html#abaee4f68f49b38ad12b28d96429aed14">copy_from_sm</a> (uintptr_t dst, void *src_buf, size_t len)</td></tr>
+<tr class="memdesc:abaee4f68f49b38ad12b28d96429aed14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy memory from secure monitor to external destination.  <br /></td></tr>
+<tr class="separator:abaee4f68f49b38ad12b28d96429aed14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0bef1269f94b4c27b713f69a377ffe2" id="r_ae0bef1269f94b4c27b713f69a377ffe2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mprv_8h.html#ae0bef1269f94b4c27b713f69a377ffe2">copy_to_sm</a> (void *dst_buf, uintptr_t src, size_t len)</td></tr>
+<tr class="memdesc:ae0bef1269f94b4c27b713f69a377ffe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy memory from external source into secure monitor.  <br /></td></tr>
+<tr class="separator:ae0bef1269f94b4c27b713f69a377ffe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Memory copy functions with MPRV support between SM and external world. </p>
@@ -190,6 +196,16 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, non-zero on failure </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="mprv_8h_a2b1b6d835c2c8844e2c1f91d05564ab0_icgraph.png" border="0" usemap="#amprv_8h_a2b1b6d835c2c8844e2c1f91d05564ab0_icgraph" alt=""/></div>
+<map name="amprv_8h_a2b1b6d835c2c8844e2c1f91d05564ab0_icgraph" id="amprv_8h_a2b1b6d835c2c8844e2c1f91d05564ab0_icgraph">
+<area shape="rect" title="Copy 1 byte from secure monitor memory to destination." alt="" coords="160,5,273,31"/>
+<area shape="rect" href="mprv_8h.html#abaee4f68f49b38ad12b28d96429aed14" title="Copy memory from secure monitor to external destination." alt="" coords="5,5,112,31"/>
+<area shape="poly" title=" " alt="" coords="144,21,112,21,112,16,144,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -228,6 +244,18 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, non-zero on failure </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="mprv_8h_a53f5a0e19f13a7399184f311c3bdb4ad_icgraph.png" border="0" usemap="#amprv_8h_a53f5a0e19f13a7399184f311c3bdb4ad_icgraph" alt=""/></div>
+<map name="amprv_8h_a53f5a0e19f13a7399184f311c3bdb4ad_icgraph" id="amprv_8h_a53f5a0e19f13a7399184f311c3bdb4ad_icgraph">
+<area shape="rect" title="Copy 1 byte to secure monitor memory." alt="" coords="368,5,466,31"/>
+<area shape="rect" href="mprv_8h.html#ae0bef1269f94b4c27b713f69a377ffe2" title="Copy memory from external source into secure monitor." alt="" coords="229,5,320,31"/>
+<area shape="poly" title=" " alt="" coords="352,21,320,21,320,16,352,16"/>
+<area shape="rect" href="enclave_8c.html#a462420f809082acd04431ba4bc2d04cb" title="Copy user&#45;provided enclave creation arguments." alt="" coords="5,5,181,31"/>
+<area shape="poly" title=" " alt="" coords="213,21,181,21,181,16,213,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -266,6 +294,16 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, non-zero on failure </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="mprv_8h_ad38f4e13942b781d6911ec49b69e1415_icgraph.png" border="0" usemap="#amprv_8h_ad38f4e13942b781d6911ec49b69e1415_icgraph" alt=""/></div>
+<map name="amprv_8h_ad38f4e13942b781d6911ec49b69e1415_icgraph" id="amprv_8h_ad38f4e13942b781d6911ec49b69e1415_icgraph">
+<area shape="rect" title="Copy one full mprv_block from SM." alt="" coords="160,5,304,31"/>
+<area shape="rect" href="mprv_8h.html#abaee4f68f49b38ad12b28d96429aed14" title="Copy memory from secure monitor to external destination." alt="" coords="5,5,112,31"/>
+<area shape="poly" title=" " alt="" coords="144,21,112,21,112,16,144,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -304,6 +342,164 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, non-zero on failure </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="mprv_8h_acddc4090683a0336f5097327b2c2c25e_icgraph.png" border="0" usemap="#amprv_8h_acddc4090683a0336f5097327b2c2c25e_icgraph" alt=""/></div>
+<map name="amprv_8h_acddc4090683a0336f5097327b2c2c25e_icgraph" id="amprv_8h_acddc4090683a0336f5097327b2c2c25e_icgraph">
+<area shape="rect" title="Copy one full mprv_block to SM." alt="" coords="368,5,497,31"/>
+<area shape="rect" href="mprv_8h.html#ae0bef1269f94b4c27b713f69a377ffe2" title="Copy memory from external source into secure monitor." alt="" coords="229,5,320,31"/>
+<area shape="poly" title=" " alt="" coords="352,21,321,21,321,16,352,16"/>
+<area shape="rect" href="enclave_8c.html#a462420f809082acd04431ba4bc2d04cb" title="Copy user&#45;provided enclave creation arguments." alt="" coords="5,5,181,31"/>
+<area shape="poly" title=" " alt="" coords="213,21,181,21,181,16,213,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abaee4f68f49b38ad12b28d96429aed14" name="abaee4f68f49b38ad12b28d96429aed14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaee4f68f49b38ad12b28d96429aed14">&#9670;&#160;</a></span>copy_from_sm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int copy_from_sm </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>src_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy memory from secure monitor to external destination. </p>
+<p>This function attempts to copy in large aligned chunks (<code><a class="el" href="structmprv__block.html" title="Represents a block of memory for fast aligned transfers.">mprv_block</a></code> or register-sized words) if the source and destination are aligned. Otherwise, falls back to byte-wise copy.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>Destination pointer outside SM </td></tr>
+    <tr><td class="paramname">src_buf</td><td>Source pointer in SM </td></tr>
+    <tr><td class="paramname">len</td><td>Number of bytes to copy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, non-zero on failure </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="mprv_8h_abaee4f68f49b38ad12b28d96429aed14_cgraph.png" border="0" usemap="#amprv_8h_abaee4f68f49b38ad12b28d96429aed14_cgraph" alt=""/></div>
+<map name="amprv_8h_abaee4f68f49b38ad12b28d96429aed14_cgraph" id="amprv_8h_abaee4f68f49b38ad12b28d96429aed14_cgraph">
+<area shape="rect" title="Copy memory from secure monitor to external destination." alt="" coords="5,55,112,80"/>
+<area shape="rect" href="mprv_8h.html#a2b1b6d835c2c8844e2c1f91d05564ab0" title="Copy 1 byte from secure monitor memory to destination." alt="" coords="175,5,289,31"/>
+<area shape="poly" title=" " alt="" coords="106,51,169,33,170,38,107,57"/>
+<area shape="rect" href="mprv_8h.html#ad38f4e13942b781d6911ec49b69e1415" title="Copy one full mprv_block from SM." alt="" coords="160,55,304,80"/>
+<area shape="poly" title=" " alt="" coords="112,65,144,65,144,70,112,70"/>
+<area shape="rect" href="mprv_8h.html#a10df97499cb600ebc66a08f60a265740" title="Copy one register&#45;sized word from SM." alt="" coords="161,104,303,130"/>
+<area shape="poly" title=" " alt="" coords="107,78,170,97,169,102,106,84"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae0bef1269f94b4c27b713f69a377ffe2" name="ae0bef1269f94b4c27b713f69a377ffe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0bef1269f94b4c27b713f69a377ffe2">&#9670;&#160;</a></span>copy_to_sm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int copy_to_sm </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy memory from external source into secure monitor. </p>
+<p>This function mirrors <code>copy_from_sm</code> but in the reverse direction.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst_buf</td><td>Destination pointer in SM </td></tr>
+    <tr><td class="paramname">src</td><td>Source address outside SM </td></tr>
+    <tr><td class="paramname">len</td><td>Number of bytes to copy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, non-zero on failure </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="mprv_8h_ae0bef1269f94b4c27b713f69a377ffe2_cgraph.png" border="0" usemap="#amprv_8h_ae0bef1269f94b4c27b713f69a377ffe2_cgraph" alt=""/></div>
+<map name="amprv_8h_ae0bef1269f94b4c27b713f69a377ffe2_cgraph" id="amprv_8h_ae0bef1269f94b4c27b713f69a377ffe2_cgraph">
+<area shape="rect" title="Copy memory from external source into secure monitor." alt="" coords="5,55,97,80"/>
+<area shape="rect" href="mprv_8h.html#a53f5a0e19f13a7399184f311c3bdb4ad" title="Copy 1 byte to secure monitor memory." alt="" coords="160,5,259,31"/>
+<area shape="poly" title=" " alt="" coords="94,51,150,34,152,39,96,57"/>
+<area shape="rect" href="mprv_8h.html#acddc4090683a0336f5097327b2c2c25e" title="Copy one full mprv_block to SM." alt="" coords="145,55,274,80"/>
+<area shape="poly" title=" " alt="" coords="97,65,129,65,129,70,97,70"/>
+<area shape="rect" href="mprv_8h.html#abb62a4e1355be650277cf2afe34415c7" title="Copy one register&#45;sized word to SM." alt="" coords="146,104,273,130"/>
+<area shape="poly" title=" " alt="" coords="96,78,152,96,150,101,94,84"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="mprv_8h_ae0bef1269f94b4c27b713f69a377ffe2_icgraph.png" border="0" usemap="#amprv_8h_ae0bef1269f94b4c27b713f69a377ffe2_icgraph" alt=""/></div>
+<map name="amprv_8h_ae0bef1269f94b4c27b713f69a377ffe2_icgraph" id="amprv_8h_ae0bef1269f94b4c27b713f69a377ffe2_icgraph">
+<area shape="rect" title="Copy memory from external source into secure monitor." alt="" coords="229,5,320,31"/>
+<area shape="rect" href="enclave_8c.html#a462420f809082acd04431ba4bc2d04cb" title="Copy user&#45;provided enclave creation arguments." alt="" coords="5,5,181,31"/>
+<area shape="poly" title=" " alt="" coords="213,21,181,21,181,16,213,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -342,6 +538,16 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, non-zero on failure </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="mprv_8h_a10df97499cb600ebc66a08f60a265740_icgraph.png" border="0" usemap="#amprv_8h_a10df97499cb600ebc66a08f60a265740_icgraph" alt=""/></div>
+<map name="amprv_8h_a10df97499cb600ebc66a08f60a265740_icgraph" id="amprv_8h_a10df97499cb600ebc66a08f60a265740_icgraph">
+<area shape="rect" title="Copy one register&#45;sized word from SM." alt="" coords="160,5,301,31"/>
+<area shape="rect" href="mprv_8h.html#abaee4f68f49b38ad12b28d96429aed14" title="Copy memory from secure monitor to external destination." alt="" coords="5,5,112,31"/>
+<area shape="poly" title=" " alt="" coords="144,21,112,21,112,16,144,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -380,6 +586,18 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, non-zero on failure </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="mprv_8h_abb62a4e1355be650277cf2afe34415c7_icgraph.png" border="0" usemap="#amprv_8h_abb62a4e1355be650277cf2afe34415c7_icgraph" alt=""/></div>
+<map name="amprv_8h_abb62a4e1355be650277cf2afe34415c7_icgraph" id="amprv_8h_abb62a4e1355be650277cf2afe34415c7_icgraph">
+<area shape="rect" title="Copy one register&#45;sized word to SM." alt="" coords="368,5,494,31"/>
+<area shape="rect" href="mprv_8h.html#ae0bef1269f94b4c27b713f69a377ffe2" title="Copy memory from external source into secure monitor." alt="" coords="229,5,320,31"/>
+<area shape="poly" title=" " alt="" coords="352,21,321,21,321,16,352,16"/>
+<area shape="rect" href="enclave_8c.html#a462420f809082acd04431ba4bc2d04cb" title="Copy user&#45;provided enclave creation arguments." alt="" coords="5,5,181,31"/>
+<area shape="poly" title=" " alt="" coords="213,21,181,21,181,16,213,16"/>
+</map>
+</div>
 
 </div>
 </div>

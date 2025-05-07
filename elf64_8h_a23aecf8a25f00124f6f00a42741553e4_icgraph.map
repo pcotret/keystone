@@ -1,0 +1,12 @@
+<map id="elf64_getSectionNameOffset" name="elf64_getSectionNameOffset">
+<area shape="rect" id="Node000001" title="Get the offset of a section name in the string table." alt="" coords="609,29,798,55"/>
+<area shape="rect" id="Node000002" href="$elf_8c.html#adfe57839981a50cbf02310d29129b1b6" title=" " alt="" coords="387,29,561,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="594,45,562,45,562,40,594,40"/>
+<area shape="poly" id="edge6_Node000002_Node000002" title=" " alt="" coords="510,17,498,10,474,8,453,10,441,15,439,20,444,27,440,31,433,21,437,11,451,5,474,3,499,5,512,12"/>
+<area shape="rect" id="Node000003" href="$elf_8c.html#af7dd2485abe0e81d58c8114972adff71" title=" " alt="" coords="200,29,339,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="371,45,340,45,340,40,371,40"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="302,16,291,10,269,8,249,10,239,15,236,20,242,27,237,30,231,21,235,11,248,5,269,3,292,5,304,12"/>
+<area shape="rect" id="Node000004" href="$elf_8c.html#aa41336d7f07ac318a13428113cbd1915" title=" " alt="" coords="5,29,152,55"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="184,45,152,45,152,40,184,40"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="111,16,100,10,78,8,58,10,48,15,45,20,51,27,46,30,40,21,44,11,57,5,79,3,102,5,114,12"/>
+</map>

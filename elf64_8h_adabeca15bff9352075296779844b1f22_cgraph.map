@@ -1,0 +1,7 @@
+<map id="elf64_getProgramHeaderFileSize" name="elf64_getProgramHeaderFileSize">
+<area shape="rect" id="Node000001" title="Get the file size of a program segment." alt="" coords="5,5,217,31"/>
+<area shape="rect" id="Node000002" href="$elf64_8h.html#aa9995307c9ab189c3e31374f1f82ada7" title="Get a pointer to the program header table." alt="" coords="265,5,462,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,16,249,16,249,21,217,21"/>
+<area shape="rect" id="Node000003" href="$elf64_8h.html#a2188fe429ceb1c6bc2b9e67983e5c2ef" title="Get the ELF header from the file." alt="" coords="510,5,626,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="462,16,494,16,494,21,462,21"/>
+</map>

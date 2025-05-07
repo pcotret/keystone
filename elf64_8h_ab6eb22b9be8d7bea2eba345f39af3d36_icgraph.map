@@ -1,0 +1,6 @@
+<map id="elf64_getSectionAddr" name="elf64_getSectionAddr">
+<area shape="rect" id="Node000001" title="Get the virtual address of a section." alt="" coords="185,29,330,55"/>
+<area shape="rect" id="Node000002" href="$elf_8c.html#aaea508f707d7e1a50d7e426497f701cb" title=" " alt="" coords="5,29,137,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,45,137,45,137,40,169,40"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="103,16,92,10,71,8,51,10,41,15,39,20,44,27,40,30,34,21,37,11,50,5,71,3,94,5,105,12"/>
+</map>

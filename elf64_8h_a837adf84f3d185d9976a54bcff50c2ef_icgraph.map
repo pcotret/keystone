@@ -1,0 +1,23 @@
+<map id="elf64_getNumSections" name="elf64_getNumSections">
+<area shape="rect" id="Node000001" title="Get the number of sections." alt="" coords="932,156,1085,181"/>
+<area shape="rect" id="Node000002" href="$elf_8c.html#a6964f249e17c45a6be44c0a489813d1e" title=" " alt="" coords="745,156,884,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="917,171,885,171,885,166,917,166"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="843,143,833,137,814,134,797,136,787,141,785,146,790,154,785,157,780,147,783,137,795,131,814,129,835,132,846,138"/>
+<area shape="rect" id="Node000003" href="$elf_8c.html#ac68061c70e5d3e98c6de86d9fa1041d5" title=" " alt="" coords="592,94,697,120"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="761,152,682,123,683,118,763,147"/>
+<area shape="rect" id="Node000004" href="$elf_8c.html#aa41336d7f07ac318a13428113cbd1915" title=" " alt="" coords="5,57,152,83"/>
+<area shape="poly" id="edge14_Node000002_Node000004" title=" " alt="" coords="736,187,628,203,492,212,418,211,343,204,270,191,199,171,164,153,132,130,88,85,92,81,136,126,166,149,201,166,271,186,344,199,418,205,491,207,627,198,735,182"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="672,81,663,75,644,73,628,75,619,80,617,85,621,93,617,95,611,86,615,76,626,70,645,68,664,70,675,77"/>
+<area shape="poly" id="edge5_Node000003_Node000004" title=" " alt="" coords="606,89,543,60,450,29,374,11,337,8,297,9,200,23,149,39,105,59,103,54,147,34,199,18,297,4,337,3,375,6,451,24,545,55,608,84"/>
+<area shape="rect" id="Node000005" href="$elf_8c.html#a150d6bd162869e12a80fa4a6d267c625" title=" " alt="" coords="418,94,544,120"/>
+<area shape="poly" id="edge7_Node000003_Node000005" title=" " alt="" coords="577,110,545,110,545,104,577,104"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="114,45,102,38,78,36,57,38,45,42,43,48,48,55,44,58,37,48,41,39,55,32,79,30,104,33,117,40"/>
+<area shape="poly" id="edge13_Node000005_Node000005" title=" " alt="" coords="509,81,499,75,481,73,464,75,455,80,453,85,458,93,453,95,448,86,451,76,463,70,481,68,501,70,512,77"/>
+<area shape="rect" id="Node000006" href="$elf_8c.html#af7dd2485abe0e81d58c8114972adff71" title=" " alt="" coords="215,57,355,83"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="402,95,355,86,356,80,403,90"/>
+<area shape="rect" id="Node000007" href="$elf_8c.html#a525f1635a3c3784e2552653b9e5c22f7" title=" " alt="" coords="200,130,370,156"/>
+<area shape="poly" id="edge11_Node000005_Node000007" title=" " alt="" coords="403,124,359,132,358,127,402,119"/>
+<area shape="poly" id="edge10_Node000006_Node000004" title=" " alt="" coords="200,72,152,72,152,67,200,67"/>
+<area shape="poly" id="edge9_Node000006_Node000006" title=" " alt="" coords="319,45,307,38,285,36,264,38,253,42,251,48,256,55,252,58,245,48,249,39,263,32,285,30,309,33,321,40"/>
+<area shape="poly" id="edge12_Node000007_Node000007" title=" " alt="" coords="319,118,307,111,285,109,264,111,253,116,251,121,256,128,252,131,245,122,249,112,263,106,285,104,309,106,321,113"/>
+</map>

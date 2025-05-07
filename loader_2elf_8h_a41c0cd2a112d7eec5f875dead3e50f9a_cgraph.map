@@ -1,4 +1,18 @@
 <map id="elf_getProgramHeaderType" name="elf_getProgramHeaderType">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,185,55"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="65,30,59,21,62,11,75,5,95,3,117,5,128,12,125,16,115,10,95,8,76,10,66,15,64,20,69,28"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,185,80"/>
+<area shape="poly" id="edge7_Node000001_Node000001" title=" " alt="" coords="56,56,49,46,53,36,69,30,95,28,124,31,138,37,136,42,122,36,95,33,70,35,57,40,54,45,60,53"/>
+<area shape="rect" id="Node000002" href="$elf32_8h.html#a9953d346b9f5c485453edfa81afe2559" title="Get the type of a program header." alt="" coords="233,5,426,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,51,249,32,250,37,160,57"/>
+<area shape="rect" id="Node000005" href="$elf64_8h.html#a16960747e5a308f2c5c7150fceb4440c" title="Get the type of a program header." alt="" coords="233,55,426,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="185,65,217,65,217,70,185,70"/>
+<area shape="rect" id="Node000008" href="$elf32_8h.html#a422462f1d203006dd7a2339e753b24cf" title="Determine if the ELF file is of class ELFCLASS32." alt="" coords="289,104,370,130"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="160,78,274,103,273,108,159,84"/>
+<area shape="rect" id="Node000003" href="$elf32_8h.html#a44eb005207aad59fa5a844eebc2fd70a" title="Get a pointer to the program header table." alt="" coords="474,5,671,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="426,16,458,16,458,21,426,21"/>
+<area shape="rect" id="Node000004" href="$elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="719,5,836,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="672,16,703,16,703,21,672,21"/>
+<area shape="rect" id="Node000006" href="$elf64_8h.html#aa9995307c9ab189c3e31374f1f82ada7" title="Get a pointer to the program header table." alt="" coords="474,55,671,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="426,65,458,65,458,70,426,70"/>
+<area shape="rect" id="Node000007" href="$elf64_8h.html#a2188fe429ceb1c6bc2b9e67983e5c2ef" title="Get the ELF header from the file." alt="" coords="719,55,836,80"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="672,65,703,65,703,70,672,70"/>
 </map>

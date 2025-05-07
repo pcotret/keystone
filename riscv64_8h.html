@@ -91,7 +91,8 @@ $(document).ready(function(){initNavTree('riscv64_8h.html',''); initResizable();
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">riscv64.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -221,6 +222,18 @@ Macros</h2></td></tr>
 <tr class="memitem:afd152d8e0d2dcced1af7c66c327bdd6c" id="r_afd152d8e0d2dcced1af7c66c327bdd6c"><td class="memItemLeft" align="right" valign="top"><a id="afd152d8e0d2dcced1af7c66c327bdd6c" name="afd152d8e0d2dcced1af7c66c327bdd6c"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>GIGAPAGE_SIZE</b>&#160;&#160;&#160;(MEGAPAGE_SIZE &lt;&lt; <a class="el" href="page_8h.html#a5b4a8552fe2a1616b125ecc55a064e73">RISCV_PGLEVEL_BITS</a>)</td></tr>
 <tr class="separator:afd152d8e0d2dcced1af7c66c327bdd6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a4c06f2b19c1cbf5c6a01eb9bd8d75267" id="r_a4c06f2b19c1cbf5c6a01eb9bd8d75267"><td class="memItemLeft" align="right" valign="top"><a id="a4c06f2b19c1cbf5c6a01eb9bd8d75267" name="a4c06f2b19c1cbf5c6a01eb9bd8d75267"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>flush_tlb</b> (void)</td></tr>
+<tr class="separator:a4c06f2b19c1cbf5c6a01eb9bd8d75267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2024ad555bc6069cfac80a823934b9f9" id="r_a2024ad555bc6069cfac80a823934b9f9"><td class="memItemLeft" align="right" valign="top">static pte_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="riscv64_8h.html#a2024ad555bc6069cfac80a823934b9f9">pte_create</a> (unsigned long ppn, int type)</td></tr>
+<tr class="memdesc:a2024ad555bc6069cfac80a823934b9f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a page table entry (PTE).  <br /></td></tr>
+<tr class="separator:a2024ad555bc6069cfac80a823934b9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ed31b966c5383bc205c57b94fa7819" id="r_a43ed31b966c5383bc205c57b94fa7819"><td class="memItemLeft" align="right" valign="top">static pte_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="riscv64_8h.html#a43ed31b966c5383bc205c57b94fa7819">ptd_create</a> (unsigned long ppn)</td></tr>
+<tr class="memdesc:a43ed31b966c5383bc205c57b94fa7819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a page table directory (PTD) entry.  <br /></td></tr>
+<tr class="separator:a43ed31b966c5383bc205c57b94fa7819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>RISC-V 64-bit Architecture Definitions and Utilities. </p>
@@ -506,6 +519,110 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Execute permission </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a43ed31b966c5383bc205c57b94fa7819" name="a43ed31b966c5383bc205c57b94fa7819"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43ed31b966c5383bc205c57b94fa7819">&#9670;&#160;</a></span>ptd_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static pte_t ptd_create </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>ppn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a page table directory (PTD) entry. </p>
+<p>This inline function creates a PTD from the given physical page number.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ppn</td><td>The physical page number. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The created PTD. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="riscv64_8h_a43ed31b966c5383bc205c57b94fa7819_cgraph.png" border="0" usemap="#ariscv64_8h_a43ed31b966c5383bc205c57b94fa7819_cgraph" alt=""/></div>
+<map name="ariscv64_8h_a43ed31b966c5383bc205c57b94fa7819_cgraph" id="ariscv64_8h_a43ed31b966c5383bc205c57b94fa7819_cgraph">
+<area shape="rect" title="Create a page table directory (PTD) entry." alt="" coords="5,5,88,31"/>
+<area shape="rect" href="riscv64_8h.html#a2024ad555bc6069cfac80a823934b9f9" title="Create a page table entry (PTE)." alt="" coords="136,5,218,31"/>
+<area shape="poly" title=" " alt="" coords="88,16,120,16,120,21,88,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2024ad555bc6069cfac80a823934b9f9" name="a2024ad555bc6069cfac80a823934b9f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2024ad555bc6069cfac80a823934b9f9">&#9670;&#160;</a></span>pte_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static pte_t pte_create </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>ppn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a page table entry (PTE). </p>
+<p>This inline function creates a PTE from the given physical page number (ppn) and type.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ppn</td><td>The physical page number. </td></tr>
+    <tr><td class="paramname">type</td><td>The access type for the page (permissions). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The created PTE. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="riscv64_8h_a2024ad555bc6069cfac80a823934b9f9_icgraph.png" border="0" usemap="#ariscv64_8h_a2024ad555bc6069cfac80a823934b9f9_icgraph" alt=""/></div>
+<map name="ariscv64_8h_a2024ad555bc6069cfac80a823934b9f9_icgraph" id="ariscv64_8h_a2024ad555bc6069cfac80a823934b9f9_icgraph">
+<area shape="rect" title="Create a page table entry (PTE)." alt="" coords="136,5,218,31"/>
+<area shape="rect" href="riscv64_8h.html#a43ed31b966c5383bc205c57b94fa7819" title="Create a page table directory (PTD) entry." alt="" coords="5,5,88,31"/>
+<area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
+</map>
+</div>
 
 </div>
 </div>

@@ -1,0 +1,7 @@
+<map id="elf64_getProgramHeaderPaddr" name="elf64_getProgramHeaderPaddr">
+<area shape="rect" id="Node000001" title="Get the physical address of a program header." alt="" coords="5,5,205,31"/>
+<area shape="rect" id="Node000002" href="$elf64_8h.html#aa9995307c9ab189c3e31374f1f82ada7" title="Get a pointer to the program header table." alt="" coords="253,5,450,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,16,237,16,237,21,205,21"/>
+<area shape="rect" id="Node000003" href="$elf64_8h.html#a2188fe429ceb1c6bc2b9e67983e5c2ef" title="Get the ELF header from the file." alt="" coords="498,5,614,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="450,16,482,16,482,21,450,21"/>
+</map>

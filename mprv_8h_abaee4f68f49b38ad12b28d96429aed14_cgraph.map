@@ -1,0 +1,9 @@
+<map id="copy_from_sm" name="copy_from_sm">
+<area shape="rect" id="Node000001" title="Copy memory from secure monitor to external destination." alt="" coords="5,55,112,80"/>
+<area shape="rect" id="Node000002" href="$mprv_8h.html#a2b1b6d835c2c8844e2c1f91d05564ab0" title="Copy 1 byte from secure monitor memory to destination." alt="" coords="175,5,289,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,51,169,33,170,38,107,57"/>
+<area shape="rect" id="Node000003" href="$mprv_8h.html#ad38f4e13942b781d6911ec49b69e1415" title="Copy one full mprv_block from SM." alt="" coords="160,55,304,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,65,144,65,144,70,112,70"/>
+<area shape="rect" id="Node000004" href="$mprv_8h.html#a10df97499cb600ebc66a08f60a265740" title="Copy one register&#45;sized word from SM." alt="" coords="161,104,303,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="107,78,170,97,169,102,106,84"/>
+</map>

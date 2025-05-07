@@ -1,10 +1,12 @@
 <map id="elf_checkSectionTable" name="elf_checkSectionTable">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,67,159,92"/>
-<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="47,68,40,58,45,48,59,42,82,40,108,43,121,50,118,54,106,48,82,45,60,47,48,52,46,57,52,65"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,103,159,128"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="47,104,40,94,45,84,59,78,82,76,108,79,121,86,118,90,106,84,82,81,60,83,48,88,46,93,52,101"/>
 <area shape="rect" id="Node000002" href="$elf32_8c.html#a60b331dbfffe72939f85a63a001aac3d" title="Check the validity of the ELF32 section header table." alt="" coords="207,29,374,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,63,199,56,200,61,158,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,100,206,64,224,58,226,63,208,69,115,105"/>
 <area shape="rect" id="Node000003" href="$elf64_8c.html#a5a39a3d18113e80006c62199e8dc3bb8" title="Check the validity of the ELF64 section header table." alt="" coords="207,103,374,128"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="160,90,198,97,197,102,159,95"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="159,113,191,113,191,118,159,118"/>
+<area shape="rect" id="Node000004" href="$elf32_8h.html#a422462f1d203006dd7a2339e753b24cf" title="Determine if the ELF file is of class ELFCLASS32." alt="" coords="250,152,331,178"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="140,126,235,149,234,154,139,132"/>
 <area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="256,31,249,21,253,11,267,5,290,3,316,5,329,12,326,17,314,10,290,8,268,10,257,15,254,20,260,27"/>
 <area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="256,104,249,94,253,84,267,78,290,76,316,79,329,86,326,90,314,84,290,81,268,83,257,88,254,93,260,101"/>
 </map>

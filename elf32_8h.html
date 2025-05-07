@@ -137,6 +137,84 @@ Functions</h2></td></tr>
 <tr class="memitem:a60b331dbfffe72939f85a63a001aac3d" id="r_a60b331dbfffe72939f85a63a001aac3d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#a60b331dbfffe72939f85a63a001aac3d">elf32_checkSectionTable</a> (<a class="el" href="structelf.html">elf_t</a> *<a class="el" href="structelf.html">elf</a>)</td></tr>
 <tr class="memdesc:a60b331dbfffe72939f85a63a001aac3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the validity of the ELF32 section header table.  <br /></td></tr>
 <tr class="separator:a60b331dbfffe72939f85a63a001aac3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a422462f1d203006dd7a2339e753b24cf" id="r_a422462f1d203006dd7a2339e753b24cf"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#a422462f1d203006dd7a2339e753b24cf">elf_isElf32</a> (<a class="el" href="structelf.html">elf_t</a> *<a class="el" href="structelf.html">elf</a>)</td></tr>
+<tr class="memdesc:a422462f1d203006dd7a2339e753b24cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the ELF file is of class ELFCLASS32.  <br /></td></tr>
+<tr class="separator:a422462f1d203006dd7a2339e753b24cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab074c6272422a9c7fb5da840edc0e9ed" id="r_ab074c6272422a9c7fb5da840edc0e9ed"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structElf32__Ehdr.html">Elf32_Ehdr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed">elf32_getHeader</a> (<a class="el" href="structelf.html">elf_t</a> *<a class="el" href="structelf.html">elf</a>)</td></tr>
+<tr class="memdesc:ab074c6272422a9c7fb5da840edc0e9ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ELF header from the file.  <br /></td></tr>
+<tr class="separator:ab074c6272422a9c7fb5da840edc0e9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeb16981292345206845fb22836c8d06" id="r_abeb16981292345206845fb22836c8d06"><td class="memItemLeft" align="right" valign="top">static uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#abeb16981292345206845fb22836c8d06">elf32_getEntryPoint</a> (<a class="el" href="structelf.html">elf_t</a> *<a class="el" href="structelf.html">elf</a>)</td></tr>
+<tr class="memdesc:abeb16981292345206845fb22836c8d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the entry point address from the ELF header.  <br /></td></tr>
+<tr class="separator:abeb16981292345206845fb22836c8d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44eb005207aad59fa5a844eebc2fd70a" id="r_a44eb005207aad59fa5a844eebc2fd70a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structElf32__Phdr.html">Elf32_Phdr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#a44eb005207aad59fa5a844eebc2fd70a">elf32_getProgramHeaderTable</a> (<a class="el" href="structelf.html">elf_t</a> *file)</td></tr>
+<tr class="memdesc:a44eb005207aad59fa5a844eebc2fd70a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the program header table.  <br /></td></tr>
+<tr class="separator:a44eb005207aad59fa5a844eebc2fd70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b790d384023453e89fb01441a5d29e" id="r_a68b790d384023453e89fb01441a5d29e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structElf32__Shdr.html">Elf32_Shdr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#a68b790d384023453e89fb01441a5d29e">elf32_getSectionTable</a> (<a class="el" href="structelf.html">elf_t</a> *<a class="el" href="structelf.html">elf</a>)</td></tr>
+<tr class="memdesc:a68b790d384023453e89fb01441a5d29e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the section header table.  <br /></td></tr>
+<tr class="separator:a68b790d384023453e89fb01441a5d29e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec7b4af5a2381970a8ecba538c2df27e" id="r_aec7b4af5a2381970a8ecba538c2df27e"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#aec7b4af5a2381970a8ecba538c2df27e">elf32_getNumProgramHeaders</a> (<a class="el" href="structelf.html">elf_t</a> *<a class="el" href="structelf.html">elf</a>)</td></tr>
+<tr class="memdesc:aec7b4af5a2381970a8ecba538c2df27e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of program headers.  <br /></td></tr>
+<tr class="separator:aec7b4af5a2381970a8ecba538c2df27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1b562849e1a73867ed3cf4d80aec642" id="r_ab1b562849e1a73867ed3cf4d80aec642"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#ab1b562849e1a73867ed3cf4d80aec642">elf32_getNumSections</a> (<a class="el" href="structelf.html">elf_t</a> *<a class="el" href="structelf.html">elf</a>)</td></tr>
+<tr class="memdesc:ab1b562849e1a73867ed3cf4d80aec642"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of sections.  <br /></td></tr>
+<tr class="separator:ab1b562849e1a73867ed3cf4d80aec642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d5aa4a792733505cc5c414beae6354c" id="r_a4d5aa4a792733505cc5c414beae6354c"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#a4d5aa4a792733505cc5c414beae6354c">elf32_getSectionStringTableIndex</a> (<a class="el" href="structelf.html">elf_t</a> *<a class="el" href="structelf.html">elf</a>)</td></tr>
+<tr class="memdesc:a4d5aa4a792733505cc5c414beae6354c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the index of the section string table.  <br /></td></tr>
+<tr class="separator:a4d5aa4a792733505cc5c414beae6354c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9423174406bc55978c59cd74f6cc0fe8" id="r_a9423174406bc55978c59cd74f6cc0fe8"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#a9423174406bc55978c59cd74f6cc0fe8">elf32_getSectionNameOffset</a> (<a class="el" href="structelf.html">elf_t</a> *<a class="el" href="structelf.html">elf</a>, size_t s)</td></tr>
+<tr class="memdesc:a9423174406bc55978c59cd74f6cc0fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the offset of a section name in the string table.  <br /></td></tr>
+<tr class="separator:a9423174406bc55978c59cd74f6cc0fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b72337b078cb40e318aeb18e3b0a74b" id="r_a5b72337b078cb40e318aeb18e3b0a74b"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#a5b72337b078cb40e318aeb18e3b0a74b">elf32_getSectionType</a> (<a class="el" href="structelf.html">elf_t</a> *<a class="el" href="structelf.html">elf</a>, size_t i)</td></tr>
+<tr class="memdesc:a5b72337b078cb40e318aeb18e3b0a74b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of a section.  <br /></td></tr>
+<tr class="separator:a5b72337b078cb40e318aeb18e3b0a74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e8ed24680c76914f5d0e940b10e6531" id="r_a2e8ed24680c76914f5d0e940b10e6531"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#a2e8ed24680c76914f5d0e940b10e6531">elf32_getSectionFlags</a> (<a class="el" href="structelf.html">elf_t</a> *<a class="el" href="structelf.html">elf</a>, size_t i)</td></tr>
+<tr class="memdesc:a2e8ed24680c76914f5d0e940b10e6531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the flags of a section.  <br /></td></tr>
+<tr class="separator:a2e8ed24680c76914f5d0e940b10e6531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a88340581d03e48088e0db49ab17988" id="r_a0a88340581d03e48088e0db49ab17988"><td class="memItemLeft" align="right" valign="top">static uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#a0a88340581d03e48088e0db49ab17988">elf32_getSectionAddr</a> (<a class="el" href="structelf.html">elf_t</a> *<a class="el" href="structelf.html">elf</a>, size_t i)</td></tr>
+<tr class="memdesc:a0a88340581d03e48088e0db49ab17988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the virtual address of a section.  <br /></td></tr>
+<tr class="separator:a0a88340581d03e48088e0db49ab17988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af60a2fc8eb6c2978c78c1422d0201fdd" id="r_af60a2fc8eb6c2978c78c1422d0201fdd"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#af60a2fc8eb6c2978c78c1422d0201fdd">elf32_getSectionOffset</a> (<a class="el" href="structelf.html">elf_t</a> *<a class="el" href="structelf.html">elf</a>, size_t i)</td></tr>
+<tr class="memdesc:af60a2fc8eb6c2978c78c1422d0201fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the file offset of a section.  <br /></td></tr>
+<tr class="separator:af60a2fc8eb6c2978c78c1422d0201fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8713114b4857282bcb2df88f593ccf9" id="r_ab8713114b4857282bcb2df88f593ccf9"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#ab8713114b4857282bcb2df88f593ccf9">elf32_getSectionSize</a> (<a class="el" href="structelf.html">elf_t</a> *<a class="el" href="structelf.html">elf</a>, size_t i)</td></tr>
+<tr class="memdesc:ab8713114b4857282bcb2df88f593ccf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of a section.  <br /></td></tr>
+<tr class="separator:ab8713114b4857282bcb2df88f593ccf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a1973f2b1b0ee911e361770253b3d18" id="r_a4a1973f2b1b0ee911e361770253b3d18"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#a4a1973f2b1b0ee911e361770253b3d18">elf32_getSectionLink</a> (<a class="el" href="structelf.html">elf_t</a> *<a class="el" href="structelf.html">elf</a>, size_t i)</td></tr>
+<tr class="memdesc:a4a1973f2b1b0ee911e361770253b3d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the link field of a section.  <br /></td></tr>
+<tr class="separator:a4a1973f2b1b0ee911e361770253b3d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea0a6a931e3656d60bb2a51d9d957f9a" id="r_aea0a6a931e3656d60bb2a51d9d957f9a"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#aea0a6a931e3656d60bb2a51d9d957f9a">elf32_getSectionInfo</a> (<a class="el" href="structelf.html">elf_t</a> *<a class="el" href="structelf.html">elf</a>, size_t i)</td></tr>
+<tr class="memdesc:aea0a6a931e3656d60bb2a51d9d957f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the info field of a section.  <br /></td></tr>
+<tr class="separator:aea0a6a931e3656d60bb2a51d9d957f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bde88ff9d03faf5744daebd623ce3d8" id="r_a2bde88ff9d03faf5744daebd623ce3d8"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#a2bde88ff9d03faf5744daebd623ce3d8">elf32_getSectionAddrAlign</a> (<a class="el" href="structelf.html">elf_t</a> *<a class="el" href="structelf.html">elf</a>, size_t i)</td></tr>
+<tr class="memdesc:a2bde88ff9d03faf5744daebd623ce3d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the address alignment of a section.  <br /></td></tr>
+<tr class="separator:a2bde88ff9d03faf5744daebd623ce3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b0583ef28fde71cc9a153db67b675f" id="r_ab9b0583ef28fde71cc9a153db67b675f"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#ab9b0583ef28fde71cc9a153db67b675f">elf32_getSectionEntrySize</a> (<a class="el" href="structelf.html">elf_t</a> *<a class="el" href="structelf.html">elf</a>, size_t i)</td></tr>
+<tr class="memdesc:ab9b0583ef28fde71cc9a153db67b675f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the entry size of elements in a section.  <br /></td></tr>
+<tr class="separator:ab9b0583ef28fde71cc9a153db67b675f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9953d346b9f5c485453edfa81afe2559" id="r_a9953d346b9f5c485453edfa81afe2559"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#a9953d346b9f5c485453edfa81afe2559">elf32_getProgramHeaderType</a> (<a class="el" href="structelf.html">elf_t</a> *file, size_t ph)</td></tr>
+<tr class="memdesc:a9953d346b9f5c485453edfa81afe2559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of a program header.  <br /></td></tr>
+<tr class="separator:a9953d346b9f5c485453edfa81afe2559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3608e3bd4a6bba43dbbb08ab3864cb45" id="r_a3608e3bd4a6bba43dbbb08ab3864cb45"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#a3608e3bd4a6bba43dbbb08ab3864cb45">elf32_getProgramHeaderOffset</a> (<a class="el" href="structelf.html">elf_t</a> *file, size_t ph)</td></tr>
+<tr class="memdesc:a3608e3bd4a6bba43dbbb08ab3864cb45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the file offset of a program header.  <br /></td></tr>
+<tr class="separator:a3608e3bd4a6bba43dbbb08ab3864cb45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af34e30b7c5b3bf312a9fdab1f11eddf7" id="r_af34e30b7c5b3bf312a9fdab1f11eddf7"><td class="memItemLeft" align="right" valign="top">static uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#af34e30b7c5b3bf312a9fdab1f11eddf7">elf32_getProgramHeaderVaddr</a> (<a class="el" href="structelf.html">elf_t</a> *file, size_t ph)</td></tr>
+<tr class="memdesc:af34e30b7c5b3bf312a9fdab1f11eddf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the virtual address of a program header.  <br /></td></tr>
+<tr class="separator:af34e30b7c5b3bf312a9fdab1f11eddf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f764eeb58178c9e53ee78bd1b2885a6" id="r_a5f764eeb58178c9e53ee78bd1b2885a6"><td class="memItemLeft" align="right" valign="top">static uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#a5f764eeb58178c9e53ee78bd1b2885a6">elf32_getProgramHeaderPaddr</a> (<a class="el" href="structelf.html">elf_t</a> *file, size_t ph)</td></tr>
+<tr class="memdesc:a5f764eeb58178c9e53ee78bd1b2885a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the physical address of a program header.  <br /></td></tr>
+<tr class="separator:a5f764eeb58178c9e53ee78bd1b2885a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1466b2f47114f410a4ea7061826802f7" id="r_a1466b2f47114f410a4ea7061826802f7"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#a1466b2f47114f410a4ea7061826802f7">elf32_getProgramHeaderFileSize</a> (<a class="el" href="structelf.html">elf_t</a> *file, size_t ph)</td></tr>
+<tr class="memdesc:a1466b2f47114f410a4ea7061826802f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the file size of a program segment.  <br /></td></tr>
+<tr class="separator:a1466b2f47114f410a4ea7061826802f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1146e3d1a710ca95b481c2ff66e2430a" id="r_a1146e3d1a710ca95b481c2ff66e2430a"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#a1146e3d1a710ca95b481c2ff66e2430a">elf32_getProgramHeaderMemorySize</a> (<a class="el" href="structelf.html">elf_t</a> *file, size_t ph)</td></tr>
+<tr class="memdesc:a1146e3d1a710ca95b481c2ff66e2430a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the memory size of a program segment.  <br /></td></tr>
+<tr class="separator:a1146e3d1a710ca95b481c2ff66e2430a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a682654eb6e23b83cfdfdafe83964617b" id="r_a682654eb6e23b83cfdfdafe83964617b"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#a682654eb6e23b83cfdfdafe83964617b">elf32_getProgramHeaderFlags</a> (<a class="el" href="structelf.html">elf_t</a> *file, size_t ph)</td></tr>
+<tr class="memdesc:a682654eb6e23b83cfdfdafe83964617b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the flags of a program header.  <br /></td></tr>
+<tr class="separator:a682654eb6e23b83cfdfdafe83964617b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec9c38c3e2672e91024623fc0c3af514" id="r_aec9c38c3e2672e91024623fc0c3af514"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elf32_8h.html#aec9c38c3e2672e91024623fc0c3af514">elf32_getProgramHeaderAlign</a> (<a class="el" href="structelf.html">elf_t</a> *file, size_t ph)</td></tr>
+<tr class="memdesc:aec9c38c3e2672e91024623fc0c3af514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the alignment of a program header.  <br /></td></tr>
+<tr class="separator:aec9c38c3e2672e91024623fc0c3af514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ELF32 parsing and access utilities. </p>
@@ -301,6 +379,2232 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="elf_8c.html#a4c8179f773dec5bfa05b9f13a0093765" title=" " alt="" coords="5,29,93,55"/>
 <area shape="poly" title=" " alt="" coords="125,45,93,45,93,40,125,40"/>
 <area shape="poly" title=" " alt="" coords="80,16,69,10,49,8,30,10,20,15,18,20,23,28,18,30,13,21,16,11,29,5,49,3,71,5,82,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abeb16981292345206845fb22836c8d06" name="abeb16981292345206845fb22836c8d06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeb16981292345206845fb22836c8d06">&#9670;&#160;</a></span>elf32_getEntryPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uintptr_t elf32_getEntryPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>elf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the entry point address from the ELF header. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elf</td><td>Pointer to an elf_t structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Entry point address. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_abeb16981292345206845fb22836c8d06_cgraph.png" border="0" usemap="#aelf32_8h_abeb16981292345206845fb22836c8d06_cgraph" alt=""/></div>
+<map name="aelf32_8h_abeb16981292345206845fb22836c8d06_cgraph" id="aelf32_8h_abeb16981292345206845fb22836c8d06_cgraph">
+<area shape="rect" title="Get the entry point address from the ELF header." alt="" coords="5,5,139,31"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="187,5,303,31"/>
+<area shape="poly" title=" " alt="" coords="139,16,171,16,171,21,139,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_abeb16981292345206845fb22836c8d06_icgraph.png" border="0" usemap="#aelf32_8h_abeb16981292345206845fb22836c8d06_icgraph" alt=""/></div>
+<map name="aelf32_8h_abeb16981292345206845fb22836c8d06_icgraph" id="aelf32_8h_abeb16981292345206845fb22836c8d06_icgraph">
+<area shape="rect" title="Get the entry point address from the ELF header." alt="" coords="173,29,306,55"/>
+<area shape="rect" href="elf_8c.html#a169d82be0b619ac14cdd90a99632a4ae" title=" " alt="" coords="5,29,125,55"/>
+<area shape="poly" title=" " alt="" coords="157,45,125,45,125,40,157,40"/>
+<area shape="poly" title=" " alt="" coords="95,16,84,10,65,8,47,10,37,15,35,20,40,28,35,30,30,21,33,11,45,5,65,3,86,5,97,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab074c6272422a9c7fb5da840edc0e9ed" name="ab074c6272422a9c7fb5da840edc0e9ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab074c6272422a9c7fb5da840edc0e9ed">&#9670;&#160;</a></span>elf32_getHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structElf32__Ehdr.html">Elf32_Ehdr</a> elf32_getHeader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>elf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the ELF header from the file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elf</td><td>Pointer to an elf_t structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ELF header. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_ab074c6272422a9c7fb5da840edc0e9ed_icgraph.png" border="0" usemap="#aelf32_8h_ab074c6272422a9c7fb5da840edc0e9ed_icgraph" alt=""/></div>
+<map name="aelf32_8h_ab074c6272422a9c7fb5da840edc0e9ed_icgraph" id="aelf32_8h_ab074c6272422a9c7fb5da840edc0e9ed_icgraph">
+<area shape="rect" title="Get the ELF header from the file." alt="" coords="1007,599,1123,624"/>
+<area shape="rect" href="elf32_8h.html#abeb16981292345206845fb22836c8d06" title="Get the entry point address from the ELF header." alt="" coords="792,181,925,207"/>
+<area shape="poly" title=" " alt="" coords="1054,585,1020,465,991,391,956,318,912,255,871,209,875,206,917,252,961,315,996,389,1025,464,1060,583"/>
+<area shape="rect" href="elf32_8h.html#aec7b4af5a2381970a8ecba538c2df27e" title="Get the number of program headers." alt="" coords="758,581,959,607"/>
+<area shape="poly" title=" " alt="" coords="991,608,959,605,959,600,991,603"/>
+<area shape="rect" href="elf32_8h.html#ab1b562849e1a73867ed3cf4d80aec642" title="Get the number of sections." alt="" coords="782,792,935,818"/>
+<area shape="poly" title=" " alt="" coords="1042,637,960,719,877,793,874,789,957,715,1039,634"/>
+<area shape="rect" href="elf32_8h.html#a44eb005207aad59fa5a844eebc2fd70a" title="Get a pointer to the program header table." alt="" coords="760,329,957,355"/>
+<area shape="poly" title=" " alt="" coords="1042,588,868,357,872,354,1046,584"/>
+<area shape="rect" href="elf32_8h.html#a4d5aa4a792733505cc5c414beae6354c" title="Get the index of the section string table." alt="" coords="766,665,951,705"/>
+<area shape="poly" title=" " alt="" coords="1013,633,919,666,917,661,1011,628"/>
+<area shape="rect" href="elf32_8h.html#a68b790d384023453e89fb01441a5d29e" title="Get a pointer to the section header table." alt="" coords="783,1183,934,1208"/>
+<area shape="poly" title=" " alt="" coords="1056,640,867,1183,862,1182,1051,638"/>
+<area shape="rect" href="elf_8c.html#a169d82be0b619ac14cdd90a99632a4ae" title=" " alt="" coords="533,83,652,108"/>
+<area shape="poly" title=" " alt="" coords="821,176,769,148,709,122,651,107,653,102,711,117,772,143,824,171"/>
+<area shape="poly" title=" " alt="" coords="640,71,624,64,592,61,564,63,548,68,545,73,552,80,549,84,540,74,545,64,563,58,592,56,626,59,642,66"/>
+<area shape="rect" href="elf_8c.html#ac7f9085709fd8512fda6f03eedae384a" title=" " alt="" coords="222,543,408,568"/>
+<area shape="poly" title=" " alt="" coords="743,589,408,565,409,559,743,583"/>
+<area shape="poly" title=" " alt="" coords="356,530,342,524,315,521,290,523,277,528,274,533,280,541,276,544,268,534,273,524,289,518,315,516,343,519,358,525"/>
+<area shape="rect" href="elf_8c.html#a994d1b358e939467b6b0049f5abcc362" title=" " alt="" coords="5,543,156,568"/>
+<area shape="poly" title=" " alt="" coords="206,558,156,558,156,553,206,553"/>
+<area shape="rect" href="elf_8c.html#ac2883438bf028a2c2a0876bbe9bfd2b7" title=" " alt="" coords="37,433,124,459"/>
+<area shape="poly" title=" " alt="" coords="267,539,203,510,106,462,108,457,205,505,269,534"/>
+<area shape="rect" href="loader_8c.html#ad7fb2a5875c6781f1a96640053fc10ba" title="Load an ELF file into memory." alt="" coords="50,287,111,312"/>
+<area shape="poly" title=" " alt="" coords="247,539,223,526,202,509,182,482,173,456,167,429,153,398,121,351,91,314,96,311,125,348,158,396,172,427,178,455,186,479,206,506,226,522,250,534"/>
+<area shape="poly" title=" " alt="" coords="121,530,108,524,80,521,56,523,42,528,39,533,46,541,42,544,34,534,39,524,54,518,81,516,109,519,124,525"/>
+<area shape="poly" title=" " alt="" coords="121,421,108,415,80,412,56,414,42,419,39,424,46,431,42,435,34,425,39,415,54,409,81,407,109,409,124,416"/>
+<area shape="poly" title=" " alt="" coords="121,280,121,275,116,270,80,265,54,268,41,273,40,279,51,288,48,292,35,281,37,270,52,263,81,260,118,266,126,272,126,280"/>
+<area shape="rect" href="elf_8c.html#a6964f249e17c45a6be44c0a489813d1e" title=" " alt="" coords="523,836,662,862"/>
+<area shape="poly" title=" " alt="" coords="767,823,663,840,662,835,766,817"/>
+<area shape="poly" title=" " alt="" coords="640,825,624,817,592,815,564,817,548,822,545,827,552,834,549,837,540,827,545,817,563,811,592,809,626,812,642,820"/>
+<area shape="rect" href="elf_8c.html#ac68061c70e5d3e98c6de86d9fa1041d5" title=" " alt="" coords="263,836,367,862"/>
+<area shape="poly" title=" " alt="" coords="507,852,367,852,367,846,507,846"/>
+<area shape="rect" href="elf_8c.html#aa41336d7f07ac318a13428113cbd1915" title=" " alt="" coords="7,836,154,862"/>
+<area shape="poly" title=" " alt="" coords="508,867,426,877,315,883,203,877,134,865,135,860,204,872,315,878,426,872,507,862"/>
+<area shape="poly" title=" " alt="" coords="356,824,342,817,315,815,290,817,277,821,274,827,280,834,276,837,268,827,273,818,289,811,315,809,343,812,358,819"/>
+<area shape="poly" title=" " alt="" coords="247,852,154,852,154,846,247,846"/>
+<area shape="poly" title=" " alt="" coords="121,824,108,817,80,815,56,817,42,821,39,827,46,834,42,837,34,827,39,818,54,811,81,809,109,812,124,819"/>
+<area shape="rect" href="elf32_8h.html#aec9c38c3e2672e91024623fc0c3af514" title="Get the alignment of a program header." alt="" coords="495,132,689,158"/>
+<area shape="poly" title=" " alt="" coords="835,319,764,231,730,191,709,171,686,161,689,156,712,167,734,188,768,228,839,315"/>
+<area shape="rect" href="elf32_8h.html#a1466b2f47114f410a4ea7061826802f7" title="Get the file size of a program segment." alt="" coords="487,280,698,306"/>
+<area shape="poly" title=" " alt="" coords="770,329,665,309,666,304,771,323"/>
+<area shape="rect" href="elf32_8h.html#a682654eb6e23b83cfdfdafe83964617b" title="Get the flags of a program header." alt="" coords="494,231,691,256"/>
+<area shape="poly" title=" " alt="" coords="821,324,769,296,709,270,673,260,674,254,711,265,772,291,824,319"/>
+<area shape="rect" href="elf32_8h.html#a1146e3d1a710ca95b481c2ff66e2430a" title="Get the memory size of a program segment." alt="" coords="474,457,710,483"/>
+<area shape="poly" title=" " alt="" coords="826,366,773,398,711,431,639,459,637,454,709,426,771,394,823,361"/>
+<area shape="rect" href="elf32_8h.html#a3608e3bd4a6bba43dbbb08ab3864cb45" title="Get the file offset of a program header." alt="" coords="492,391,692,416"/>
+<area shape="poly" title=" " alt="" coords="785,362,652,393,651,387,784,356"/>
+<area shape="rect" href="elf32_8h.html#a5f764eeb58178c9e53ee78bd1b2885a6" title="Get the physical address of a program header." alt="" coords="493,601,692,627"/>
+<area shape="poly" title=" " alt="" coords="836,368,712,497,609,603,605,599,708,494,833,364"/>
+<area shape="rect" href="elf32_8h.html#a9953d346b9f5c485453edfa81afe2559" title="Get the type of a program header." alt="" coords="496,181,689,207"/>
+<area shape="poly" title=" " alt="" coords="834,320,780,269,746,242,709,221,682,210,683,205,711,216,749,238,784,265,838,316"/>
+<area shape="rect" href="elf32_8h.html#af34e30b7c5b3bf312a9fdab1f11eddf7" title="Get the virtual address of a program header." alt="" coords="493,329,692,355"/>
+<area shape="poly" title=" " alt="" coords="744,345,692,345,692,340,744,340"/>
+<area shape="rect" href="elf_8c.html#a3836854f84b6f285fbaced66e0cb2865" title=" " alt="" coords="225,29,405,55"/>
+<area shape="poly" title=" " alt="" coords="482,128,473,123,457,109,448,95,439,81,425,68,402,58,404,53,427,64,443,78,452,92,461,106,475,119,485,123"/>
+<area shape="poly" title=" " alt="" coords="356,17,342,11,315,8,290,10,277,15,274,20,280,27,276,31,268,21,273,11,289,5,315,3,343,5,358,12"/>
+<area shape="rect" href="elf_8c.html#aa1c323318dd8e6a5f29fb6671c9464e0" title=" " alt="" coords="216,249,414,275"/>
+<area shape="poly" title=" " alt="" coords="471,282,413,276,414,270,471,277"/>
+<area shape="poly" title=" " alt="" coords="213,284,205,288,164,323,131,364,106,403,90,434,86,432,102,401,127,361,161,319,202,284,210,279"/>
+<area shape="poly" title=" " alt="" coords="215,281,112,297,111,292,215,275"/>
+<area shape="poly" title=" " alt="" coords="356,237,342,231,315,228,290,230,277,235,274,240,280,247,276,251,268,241,273,231,289,225,315,223,343,225,358,232"/>
+<area shape="rect" href="elf_8c.html#a1030f49f98d91540e499d6b4e06fdd11" title=" " alt="" coords="223,176,407,202"/>
+<area shape="poly" title=" " alt="" coords="508,230,383,205,384,200,509,224"/>
+<area shape="poly" title=" " alt="" coords="220,209,205,215,173,232,144,252,98,288,95,284,141,247,171,227,203,210,218,204"/>
+<area shape="poly" title=" " alt="" coords="356,164,342,157,315,155,290,157,277,161,274,167,280,174,276,177,268,167,273,158,289,151,315,149,343,152,358,159"/>
+<area shape="rect" href="elf_8c.html#a27e18d4b13e9948bae5a8bcaaed36c07" title=" " alt="" coords="204,469,426,495"/>
+<area shape="poly" title=" " alt="" coords="459,479,427,480,426,475,458,473"/>
+<area shape="poly" title=" " alt="" coords="230,502,205,509,112,545,110,540,203,504,228,497"/>
+<area shape="poly" title=" " alt="" coords="212,469,124,455,125,450,213,464"/>
+<area shape="poly" title=" " alt="" coords="256,465,202,436,166,406,133,372,89,314,93,311,137,368,169,402,205,432,259,461"/>
+<area shape="poly" title=" " alt="" coords="356,457,342,451,315,448,290,450,277,455,274,460,280,467,276,471,268,461,273,451,289,445,315,443,343,445,358,452"/>
+<area shape="rect" href="elf_8c.html#a6eb359762d57487c3a35135d9984c56d" title=" " alt="" coords="222,396,408,422"/>
+<area shape="poly" title=" " alt="" coords="477,408,408,410,408,404,477,403"/>
+<area shape="poly" title=" " alt="" coords="215,427,125,442,124,437,215,422"/>
+<area shape="poly" title=" " alt="" coords="356,384,342,377,315,375,290,377,277,381,274,387,280,394,276,397,268,387,273,378,289,371,315,369,343,372,358,379"/>
+<area shape="rect" href="elf_8c.html#a3733d8dfb8dc06846c576d036bce3352" title=" " alt="" coords="222,616,408,642"/>
+<area shape="poly" title=" " alt="" coords="477,623,408,627,408,621,477,618"/>
+<area shape="poly" title=" " alt="" coords="256,613,124,572,125,566,257,608"/>
+<area shape="poly" title=" " alt="" coords="252,612,226,600,202,583,185,564,176,546,168,528,154,508,127,482,100,462,103,457,130,478,158,504,172,525,181,544,189,561,205,579,229,595,254,608"/>
+<area shape="poly" title=" " alt="" coords="356,604,342,597,315,595,290,597,277,601,274,607,280,614,276,617,268,607,273,598,289,591,315,589,343,592,358,599"/>
+<area shape="rect" href="elf_8c.html#a41c0cd2a112d7eec5f875dead3e50f9a" title=" " alt="" coords="225,103,405,128"/>
+<area shape="poly" title=" " alt="" coords="491,179,473,173,449,157,425,142,393,131,395,126,427,137,451,153,475,168,493,174"/>
+<area shape="poly" title=" " alt="" coords="213,137,205,142,164,176,131,217,106,257,90,287,86,285,102,254,127,214,161,172,202,137,210,133"/>
+<area shape="poly" title=" " alt="" coords="356,90,342,84,315,81,290,83,277,88,274,93,280,101,276,104,268,94,273,84,289,78,315,76,343,79,358,85"/>
+<area shape="rect" href="elf_8c.html#a10553020947aa2836eebef4d569b00b4" title=" " alt="" coords="222,323,408,348"/>
+<area shape="poly" title=" " alt="" coords="477,342,408,340,408,335,477,337"/>
+<area shape="poly" title=" " alt="" coords="210,358,206,361,185,386,177,412,172,440,158,473,127,513,98,544,94,540,123,510,153,470,167,439,172,411,180,384,202,358,207,354"/>
+<area shape="poly" title=" " alt="" coords="220,356,205,362,173,379,144,398,98,435,95,431,141,394,171,374,203,357,218,351"/>
+<area shape="poly" title=" " alt="" coords="212,322,111,307,111,301,213,317"/>
+<area shape="poly" title=" " alt="" coords="356,310,342,304,315,301,290,303,277,308,274,313,280,321,276,324,268,314,273,304,289,298,315,296,343,299,358,305"/>
+<area shape="rect" href="elf_8c.html#ac99173ca6a63aeb9b88ea082c0b203c9" title=" " alt="" coords="507,682,677,723"/>
+<area shape="poly" title=" " alt="" coords="751,695,678,699,678,694,750,689"/>
+<area shape="poly" title=" " alt="" coords="636,669,620,663,592,660,567,662,551,667,545,673,548,680,542,682,540,672,548,663,566,657,592,655,621,658,638,664"/>
+<area shape="rect" href="elf_8c.html#af7dd2485abe0e81d58c8114972adff71" title=" " alt="" coords="245,763,385,788"/>
+<area shape="poly" title=" " alt="" coords="499,730,367,765,366,759,497,724"/>
+<area shape="rect" href="elf_8c.html#a525f1635a3c3784e2552653b9e5c22f7" title=" " alt="" coords="230,689,400,715"/>
+<area shape="poly" title=" " alt="" coords="491,705,400,705,400,700,491,700"/>
+<area shape="poly" title=" " alt="" coords="231,795,205,802,112,838,110,833,203,797,230,789"/>
+<area shape="poly" title=" " alt="" coords="356,750,342,744,315,741,290,743,277,748,274,753,280,761,276,764,268,754,273,744,289,738,315,736,343,739,358,745"/>
+<area shape="poly" title=" " alt="" coords="356,677,342,671,315,668,290,670,277,675,274,680,280,687,276,691,268,681,273,671,289,665,315,663,343,665,358,672"/>
+<area shape="rect" href="elf32_8h.html#a0a88340581d03e48088e0db49ab17988" title="Get the virtual address of a section." alt="" coords="520,1380,665,1406"/>
+<area shape="poly" title=" " alt="" coords="845,1224,823,1258,793,1298,755,1338,712,1371,690,1381,666,1388,665,1383,688,1377,709,1367,752,1334,789,1295,819,1255,840,1221"/>
+<area shape="rect" href="elf32_8h.html#a2bde88ff9d03faf5744daebd623ce3d8" title="Get the address alignment of a section." alt="" coords="505,1435,679,1460"/>
+<area shape="poly" title=" " alt="" coords="850,1224,830,1267,801,1320,761,1375,738,1399,712,1420,680,1437,677,1432,709,1416,734,1395,757,1371,796,1318,825,1265,845,1221"/>
+<area shape="rect" href="elf32_8h.html#ab9b0583ef28fde71cc9a153db67b675f" title="Get the entry size of elements in a section." alt="" coords="506,973,678,999"/>
+<area shape="poly" title=" " alt="" coords="840,1171,788,1098,751,1058,709,1024,685,1012,659,1002,661,997,687,1007,712,1020,755,1055,792,1095,844,1168"/>
+<area shape="rect" href="elf32_8h.html#a2e8ed24680c76914f5d0e940b10e6531" title="Get the flags of a section." alt="" coords="517,1035,667,1060"/>
+<area shape="poly" title=" " alt="" coords="834,1173,780,1122,746,1096,709,1074,667,1059,668,1054,711,1069,749,1091,784,1118,838,1169"/>
+<area shape="rect" href="elf32_8h.html#aea0a6a931e3656d60bb2a51d9d957f9a" title="Get the info field of a section." alt="" coords="522,1084,662,1110"/>
+<area shape="poly" title=" " alt="" coords="821,1177,769,1149,709,1123,662,1110,664,1105,711,1118,772,1144,824,1172"/>
+<area shape="rect" href="elf32_8h.html#a4a1973f2b1b0ee911e361770253b3d18" title="Get the link field of a section." alt="" coords="521,1133,664,1159"/>
+<area shape="poly" title=" " alt="" coords="770,1182,664,1162,665,1157,771,1177"/>
+<area shape="rect" href="elf32_8h.html#a9423174406bc55978c59cd74f6cc0fe8" title="Get the offset of a section name in the string table." alt="" coords="498,1183,686,1208"/>
+<area shape="poly" title=" " alt="" coords="768,1198,687,1198,687,1193,768,1193"/>
+<area shape="rect" href="elf32_8h.html#af60a2fc8eb6c2978c78c1422d0201fdd" title="Get the file offset of a section." alt="" coords="516,1232,669,1258"/>
+<area shape="poly" title=" " alt="" coords="771,1214,666,1234,665,1229,770,1209"/>
+<area shape="rect" href="elf32_8h.html#ab8713114b4857282bcb2df88f593ccf9" title="Get the size of a section." alt="" coords="521,1281,664,1307"/>
+<area shape="poly" title=" " alt="" coords="824,1219,772,1247,711,1273,665,1285,663,1280,709,1268,769,1242,821,1214"/>
+<area shape="rect" href="elf32_8h.html#a5b72337b078cb40e318aeb18e3b0a74b" title="Get the type of a section." alt="" coords="519,1331,665,1356"/>
+<area shape="poly" title=" " alt="" coords="838,1222,784,1273,749,1300,711,1322,667,1337,665,1332,709,1317,746,1295,780,1269,834,1218"/>
+<area shape="rect" href="elf_8c.html#aaea508f707d7e1a50d7e426497f701cb" title=" " alt="" coords="249,1373,381,1399"/>
+<area shape="poly" title=" " alt="" coords="504,1393,381,1390,381,1385,504,1388"/>
+<area shape="poly" title=" " alt="" coords="356,1361,342,1355,315,1352,290,1354,277,1359,274,1364,280,1371,276,1375,268,1365,273,1355,289,1349,315,1347,343,1349,358,1356"/>
+<area shape="rect" href="elf_8c.html#a795e21d45927f36eb046d0bff4a270d5" title=" " alt="" coords="235,1447,395,1472"/>
+<area shape="poly" title=" " alt="" coords="490,1455,396,1459,395,1453,490,1449"/>
+<area shape="poly" title=" " alt="" coords="356,1434,342,1428,315,1425,290,1427,277,1432,274,1437,280,1445,276,1448,268,1438,273,1428,289,1422,315,1420,343,1423,358,1429"/>
+<area shape="rect" href="elf_8c.html#aaf56b06d020c2a5e08a9e66a38716c84" title=" " alt="" coords="236,961,394,987"/>
+<area shape="poly" title=" " alt="" coords="490,984,394,980,395,975,490,979"/>
+<area shape="poly" title=" " alt="" coords="356,949,342,943,315,940,290,942,277,947,274,952,280,959,276,963,268,953,273,943,289,937,315,935,343,937,358,944"/>
+<area shape="rect" href="elf_8c.html#acac95db4ed37ddee9a15ea016f503a4b" title=" " alt="" coords="247,1035,383,1060"/>
+<area shape="poly" title=" " alt="" coords="502,1050,384,1050,384,1045,502,1045"/>
+<area shape="poly" title=" " alt="" coords="356,1022,342,1016,315,1013,290,1015,277,1020,274,1025,280,1033,276,1036,268,1026,273,1016,289,1010,315,1008,343,1011,358,1017"/>
+<area shape="rect" href="elf_8c.html#a74044a0df7da01d793da373653cc3bf1" title=" " alt="" coords="252,1108,378,1134"/>
+<area shape="poly" title=" " alt="" coords="507,1107,379,1118,378,1113,506,1102"/>
+<area shape="poly" title=" " alt="" coords="356,1096,342,1089,315,1087,290,1089,277,1093,274,1099,280,1106,276,1109,268,1099,273,1090,289,1083,315,1081,343,1084,358,1091"/>
+<area shape="rect" href="elf_8c.html#a430e3d8e32b744c38cd8f317a45ccfc5" title=" " alt="" coords="250,1181,380,1207"/>
+<area shape="poly" title=" " alt="" coords="505,1164,381,1186,380,1180,505,1159"/>
+<area shape="poly" title=" " alt="" coords="356,1169,342,1163,315,1160,290,1162,277,1167,274,1172,280,1179,276,1183,268,1173,273,1163,289,1157,315,1155,343,1157,358,1164"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aec7b4af5a2381970a8ecba538c2df27e" name="aec7b4af5a2381970a8ecba538c2df27e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec7b4af5a2381970a8ecba538c2df27e">&#9670;&#160;</a></span>elf32_getNumProgramHeaders()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t elf32_getNumProgramHeaders </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>elf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the number of program headers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elf</td><td>Pointer to an elf_t structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of program headers. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_aec7b4af5a2381970a8ecba538c2df27e_cgraph.png" border="0" usemap="#aelf32_8h_aec7b4af5a2381970a8ecba538c2df27e_cgraph" alt=""/></div>
+<map name="aelf32_8h_aec7b4af5a2381970a8ecba538c2df27e_cgraph" id="aelf32_8h_aec7b4af5a2381970a8ecba538c2df27e_cgraph">
+<area shape="rect" title="Get the number of program headers." alt="" coords="5,5,206,31"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="254,5,370,31"/>
+<area shape="poly" title=" " alt="" coords="206,16,238,16,238,21,206,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_aec7b4af5a2381970a8ecba538c2df27e_icgraph.png" border="0" usemap="#aelf32_8h_aec7b4af5a2381970a8ecba538c2df27e_icgraph" alt=""/></div>
+<map name="aelf32_8h_aec7b4af5a2381970a8ecba538c2df27e_icgraph" id="aelf32_8h_aec7b4af5a2381970a8ecba538c2df27e_icgraph">
+<area shape="rect" title="Get the number of program headers." alt="" coords="438,103,638,128"/>
+<area shape="rect" href="elf_8c.html#ac7f9085709fd8512fda6f03eedae384a" title=" " alt="" coords="204,103,390,128"/>
+<area shape="poly" title=" " alt="" coords="422,118,391,118,391,113,422,113"/>
+<area shape="poly" title=" " alt="" coords="334,90,322,84,297,81,274,83,262,88,259,93,265,101,261,104,254,94,258,84,273,78,297,76,323,79,337,86"/>
+<area shape="rect" href="elf_8c.html#a994d1b358e939467b6b0049f5abcc362" title=" " alt="" coords="5,29,156,55"/>
+<area shape="poly" title=" " alt="" coords="243,99,155,69,123,58,125,53,157,64,245,94"/>
+<area shape="rect" href="elf_8c.html#ac2883438bf028a2c2a0876bbe9bfd2b7" title=" " alt="" coords="37,103,124,128"/>
+<area shape="poly" title=" " alt="" coords="188,118,125,118,125,113,188,113"/>
+<area shape="rect" href="loader_8c.html#ad7fb2a5875c6781f1a96640053fc10ba" title="Load an ELF file into memory." alt="" coords="50,176,111,202"/>
+<area shape="poly" title=" " alt="" coords="243,136,112,181,110,176,241,131"/>
+<area shape="poly" title=" " alt="" coords="118,17,105,10,80,8,58,10,45,15,43,20,49,27,45,31,37,21,42,11,56,5,81,3,107,5,121,12"/>
+<area shape="poly" title=" " alt="" coords="118,90,105,84,80,81,58,83,45,88,43,93,49,101,45,104,37,94,42,84,56,78,81,76,107,79,121,86"/>
+<area shape="poly" title=" " alt="" coords="119,167,117,163,111,159,80,155,56,157,45,162,43,168,52,176,48,180,38,170,40,159,55,152,81,149,112,154,121,159,124,166"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab1b562849e1a73867ed3cf4d80aec642" name="ab1b562849e1a73867ed3cf4d80aec642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1b562849e1a73867ed3cf4d80aec642">&#9670;&#160;</a></span>elf32_getNumSections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t elf32_getNumSections </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>elf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the number of sections. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elf</td><td>Pointer to an elf_t structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of sections. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_ab1b562849e1a73867ed3cf4d80aec642_cgraph.png" border="0" usemap="#aelf32_8h_ab1b562849e1a73867ed3cf4d80aec642_cgraph" alt=""/></div>
+<map name="aelf32_8h_ab1b562849e1a73867ed3cf4d80aec642_cgraph" id="aelf32_8h_ab1b562849e1a73867ed3cf4d80aec642_cgraph">
+<area shape="rect" title="Get the number of sections." alt="" coords="5,5,159,31"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="207,5,323,31"/>
+<area shape="poly" title=" " alt="" coords="159,16,191,16,191,21,159,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_ab1b562849e1a73867ed3cf4d80aec642_icgraph.png" border="0" usemap="#aelf32_8h_ab1b562849e1a73867ed3cf4d80aec642_icgraph" alt=""/></div>
+<map name="aelf32_8h_ab1b562849e1a73867ed3cf4d80aec642_icgraph" id="aelf32_8h_ab1b562849e1a73867ed3cf4d80aec642_icgraph">
+<area shape="rect" title="Get the number of sections." alt="" coords="932,156,1085,181"/>
+<area shape="rect" href="elf_8c.html#a6964f249e17c45a6be44c0a489813d1e" title=" " alt="" coords="745,156,884,181"/>
+<area shape="poly" title=" " alt="" coords="917,171,885,171,885,166,917,166"/>
+<area shape="poly" title=" " alt="" coords="843,143,833,137,814,134,797,136,787,141,785,146,790,154,785,157,780,147,783,137,795,131,814,129,835,132,846,138"/>
+<area shape="rect" href="elf_8c.html#ac68061c70e5d3e98c6de86d9fa1041d5" title=" " alt="" coords="592,94,697,120"/>
+<area shape="poly" title=" " alt="" coords="761,152,682,123,683,118,763,147"/>
+<area shape="rect" href="elf_8c.html#aa41336d7f07ac318a13428113cbd1915" title=" " alt="" coords="5,57,152,83"/>
+<area shape="poly" title=" " alt="" coords="736,187,628,203,492,212,418,211,343,204,270,191,199,171,164,153,132,130,88,85,92,81,136,126,166,149,201,166,271,186,344,199,418,205,491,207,627,198,735,182"/>
+<area shape="poly" title=" " alt="" coords="672,81,663,75,644,73,628,75,619,80,617,85,621,93,617,95,611,86,615,76,626,70,645,68,664,70,675,77"/>
+<area shape="poly" title=" " alt="" coords="606,89,543,60,450,29,374,11,337,8,297,9,200,23,149,39,105,59,103,54,147,34,199,18,297,4,337,3,375,6,451,24,545,55,608,84"/>
+<area shape="rect" href="elf_8c.html#a150d6bd162869e12a80fa4a6d267c625" title=" " alt="" coords="418,94,544,120"/>
+<area shape="poly" title=" " alt="" coords="577,110,545,110,545,104,577,104"/>
+<area shape="poly" title=" " alt="" coords="114,45,102,38,78,36,57,38,45,42,43,48,48,55,44,58,37,48,41,39,55,32,79,30,104,33,117,40"/>
+<area shape="poly" title=" " alt="" coords="509,81,499,75,481,73,464,75,455,80,453,85,458,93,453,95,448,86,451,76,463,70,481,68,501,70,512,77"/>
+<area shape="rect" href="elf_8c.html#af7dd2485abe0e81d58c8114972adff71" title=" " alt="" coords="215,57,355,83"/>
+<area shape="poly" title=" " alt="" coords="402,95,355,86,356,80,403,90"/>
+<area shape="rect" href="elf_8c.html#a525f1635a3c3784e2552653b9e5c22f7" title=" " alt="" coords="200,130,370,156"/>
+<area shape="poly" title=" " alt="" coords="403,124,359,132,358,127,402,119"/>
+<area shape="poly" title=" " alt="" coords="200,72,152,72,152,67,200,67"/>
+<area shape="poly" title=" " alt="" coords="319,45,307,38,285,36,264,38,253,42,251,48,256,55,252,58,245,48,249,39,263,32,285,30,309,33,321,40"/>
+<area shape="poly" title=" " alt="" coords="319,118,307,111,285,109,264,111,253,116,251,121,256,128,252,131,245,122,249,112,263,106,285,104,309,106,321,113"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aec9c38c3e2672e91024623fc0c3af514" name="aec9c38c3e2672e91024623fc0c3af514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec9c38c3e2672e91024623fc0c3af514">&#9670;&#160;</a></span>elf32_getProgramHeaderAlign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t elf32_getProgramHeaderAlign </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>ph</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the alignment of a program header. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>Pointer to an elf_t structure. </td></tr>
+    <tr><td class="paramname">ph</td><td>Index of the program header. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Alignment value. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_aec9c38c3e2672e91024623fc0c3af514_cgraph.png" border="0" usemap="#aelf32_8h_aec9c38c3e2672e91024623fc0c3af514_cgraph" alt=""/></div>
+<map name="aelf32_8h_aec9c38c3e2672e91024623fc0c3af514_cgraph" id="aelf32_8h_aec9c38c3e2672e91024623fc0c3af514_cgraph">
+<area shape="rect" title="Get the alignment of a program header." alt="" coords="5,5,200,31"/>
+<area shape="rect" href="elf32_8h.html#a44eb005207aad59fa5a844eebc2fd70a" title="Get a pointer to the program header table." alt="" coords="248,5,445,31"/>
+<area shape="poly" title=" " alt="" coords="200,16,232,16,232,21,200,21"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="493,5,609,31"/>
+<area shape="poly" title=" " alt="" coords="445,16,477,16,477,21,445,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_aec9c38c3e2672e91024623fc0c3af514_icgraph.png" border="0" usemap="#aelf32_8h_aec9c38c3e2672e91024623fc0c3af514_icgraph" alt=""/></div>
+<map name="aelf32_8h_aec9c38c3e2672e91024623fc0c3af514_icgraph" id="aelf32_8h_aec9c38c3e2672e91024623fc0c3af514_icgraph">
+<area shape="rect" title="Get the alignment of a program header." alt="" coords="234,29,428,55"/>
+<area shape="rect" href="elf_8c.html#a3836854f84b6f285fbaced66e0cb2865" title=" " alt="" coords="5,29,186,55"/>
+<area shape="poly" title=" " alt="" coords="218,45,186,45,186,40,218,40"/>
+<area shape="poly" title=" " alt="" coords="137,17,123,11,95,8,71,10,57,15,54,20,61,27,57,31,49,21,53,11,69,5,96,3,124,5,139,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1466b2f47114f410a4ea7061826802f7" name="a1466b2f47114f410a4ea7061826802f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1466b2f47114f410a4ea7061826802f7">&#9670;&#160;</a></span>elf32_getProgramHeaderFileSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t elf32_getProgramHeaderFileSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>ph</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the file size of a program segment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>Pointer to an elf_t structure. </td></tr>
+    <tr><td class="paramname">ph</td><td>Index of the program header. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Size in file. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a1466b2f47114f410a4ea7061826802f7_cgraph.png" border="0" usemap="#aelf32_8h_a1466b2f47114f410a4ea7061826802f7_cgraph" alt=""/></div>
+<map name="aelf32_8h_a1466b2f47114f410a4ea7061826802f7_cgraph" id="aelf32_8h_a1466b2f47114f410a4ea7061826802f7_cgraph">
+<area shape="rect" title="Get the file size of a program segment." alt="" coords="5,5,217,31"/>
+<area shape="rect" href="elf32_8h.html#a44eb005207aad59fa5a844eebc2fd70a" title="Get a pointer to the program header table." alt="" coords="265,5,462,31"/>
+<area shape="poly" title=" " alt="" coords="217,16,249,16,249,21,217,21"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="510,5,626,31"/>
+<area shape="poly" title=" " alt="" coords="462,16,494,16,494,21,462,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a1466b2f47114f410a4ea7061826802f7_icgraph.png" border="0" usemap="#aelf32_8h_a1466b2f47114f410a4ea7061826802f7_icgraph" alt=""/></div>
+<map name="aelf32_8h_a1466b2f47114f410a4ea7061826802f7_icgraph" id="aelf32_8h_a1466b2f47114f410a4ea7061826802f7_icgraph">
+<area shape="rect" title="Get the file size of a program segment." alt="" coords="568,80,780,106"/>
+<area shape="rect" href="elf_8c.html#aa1c323318dd8e6a5f29fb6671c9464e0" title=" " alt="" coords="323,80,520,106"/>
+<area shape="poly" title=" " alt="" coords="553,96,521,96,521,90,553,90"/>
+<area shape="poly" title=" " alt="" coords="461,68,448,61,422,59,398,61,385,65,382,71,388,78,384,81,377,71,381,62,396,55,422,53,449,56,464,63"/>
+<area shape="rect" href="elf_8c.html#adf47a5394418d2ad931a14e54102aa13" title=" " alt="" coords="114,29,275,55"/>
+<area shape="poly" title=" " alt="" coords="346,79,255,58,256,53,347,73"/>
+<area shape="rect" href="loader_8c.html#ad7fb2a5875c6781f1a96640053fc10ba" title="Load an ELF file into memory." alt="" coords="5,55,66,80"/>
+<area shape="poly" title=" " alt="" coords="307,88,66,72,66,67,307,83"/>
+<area shape="rect" href="elf_8c.html#ac2883438bf028a2c2a0876bbe9bfd2b7" title=" " alt="" coords="151,155,238,180"/>
+<area shape="poly" title=" " alt="" coords="367,113,237,157,235,151,365,108"/>
+<area shape="poly" title=" " alt="" coords="221,16,212,10,194,8,178,10,169,15,167,20,172,28,167,30,162,21,165,11,176,5,194,3,214,5,224,12"/>
+<area shape="poly" title=" " alt="" coords="99,60,67,65,66,60,98,55"/>
+<area shape="poly" title=" " alt="" coords="62,42,53,36,35,33,19,35,10,40,8,45,13,53,8,56,3,46,6,36,17,30,36,28,55,31,65,37"/>
+<area shape="poly" title=" " alt="" coords="221,142,212,136,194,133,178,135,169,140,167,145,172,153,167,156,162,146,165,136,176,130,194,128,214,131,224,137"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a682654eb6e23b83cfdfdafe83964617b" name="a682654eb6e23b83cfdfdafe83964617b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a682654eb6e23b83cfdfdafe83964617b">&#9670;&#160;</a></span>elf32_getProgramHeaderFlags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t elf32_getProgramHeaderFlags </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>ph</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the flags of a program header. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>Pointer to an elf_t structure. </td></tr>
+    <tr><td class="paramname">ph</td><td>Index of the program header. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Flags. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a682654eb6e23b83cfdfdafe83964617b_cgraph.png" border="0" usemap="#aelf32_8h_a682654eb6e23b83cfdfdafe83964617b_cgraph" alt=""/></div>
+<map name="aelf32_8h_a682654eb6e23b83cfdfdafe83964617b_cgraph" id="aelf32_8h_a682654eb6e23b83cfdfdafe83964617b_cgraph">
+<area shape="rect" title="Get the flags of a program header." alt="" coords="5,5,203,31"/>
+<area shape="rect" href="elf32_8h.html#a44eb005207aad59fa5a844eebc2fd70a" title="Get a pointer to the program header table." alt="" coords="251,5,448,31"/>
+<area shape="poly" title=" " alt="" coords="203,16,235,16,235,21,203,21"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="496,5,612,31"/>
+<area shape="poly" title=" " alt="" coords="448,16,480,16,480,21,448,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a682654eb6e23b83cfdfdafe83964617b_icgraph.png" border="0" usemap="#aelf32_8h_a682654eb6e23b83cfdfdafe83964617b_icgraph" alt=""/></div>
+<map name="aelf32_8h_a682654eb6e23b83cfdfdafe83964617b_icgraph" id="aelf32_8h_a682654eb6e23b83cfdfdafe83964617b_icgraph">
+<area shape="rect" title="Get the flags of a program header." alt="" coords="347,29,544,55"/>
+<area shape="rect" href="elf_8c.html#a1030f49f98d91540e499d6b4e06fdd11" title=" " alt="" coords="116,29,299,55"/>
+<area shape="poly" title=" " alt="" coords="331,45,299,45,299,40,331,40"/>
+<area shape="poly" title=" " alt="" coords="236,16,226,10,207,8,190,10,180,15,178,20,183,28,178,30,173,21,176,11,188,5,207,3,228,5,239,12"/>
+<area shape="rect" href="loader_8c.html#ad7fb2a5875c6781f1a96640053fc10ba" title="Load an ELF file into memory." alt="" coords="7,29,68,55"/>
+<area shape="poly" title=" " alt="" coords="100,45,68,45,68,40,100,40"/>
+<area shape="poly" title=" " alt="" coords="66,16,56,10,37,8,20,10,10,15,8,20,13,28,9,30,3,21,6,11,18,5,38,3,58,5,69,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1146e3d1a710ca95b481c2ff66e2430a" name="a1146e3d1a710ca95b481c2ff66e2430a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1146e3d1a710ca95b481c2ff66e2430a">&#9670;&#160;</a></span>elf32_getProgramHeaderMemorySize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t elf32_getProgramHeaderMemorySize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>ph</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the memory size of a program segment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>Pointer to an elf_t structure. </td></tr>
+    <tr><td class="paramname">ph</td><td>Index of the program header. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Size in memory. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a1146e3d1a710ca95b481c2ff66e2430a_cgraph.png" border="0" usemap="#aelf32_8h_a1146e3d1a710ca95b481c2ff66e2430a_cgraph" alt=""/></div>
+<map name="aelf32_8h_a1146e3d1a710ca95b481c2ff66e2430a_cgraph" id="aelf32_8h_a1146e3d1a710ca95b481c2ff66e2430a_cgraph">
+<area shape="rect" title="Get the memory size of a program segment." alt="" coords="5,5,242,31"/>
+<area shape="rect" href="elf32_8h.html#a44eb005207aad59fa5a844eebc2fd70a" title="Get a pointer to the program header table." alt="" coords="290,5,487,31"/>
+<area shape="poly" title=" " alt="" coords="242,16,274,16,274,21,242,21"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="535,5,651,31"/>
+<area shape="poly" title=" " alt="" coords="487,16,519,16,519,21,487,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a1146e3d1a710ca95b481c2ff66e2430a_icgraph.png" border="0" usemap="#aelf32_8h_a1146e3d1a710ca95b481c2ff66e2430a_icgraph" alt=""/></div>
+<map name="aelf32_8h_a1146e3d1a710ca95b481c2ff66e2430a_icgraph" id="aelf32_8h_a1146e3d1a710ca95b481c2ff66e2430a_icgraph">
+<area shape="rect" title="Get the memory size of a program segment." alt="" coords="500,140,736,166"/>
+<area shape="rect" href="elf_8c.html#a27e18d4b13e9948bae5a8bcaaed36c07" title=" " alt="" coords="230,140,452,166"/>
+<area shape="poly" title=" " alt="" coords="484,156,453,156,453,150,484,150"/>
+<area shape="poly" title=" " alt="" coords="384,128,370,121,341,119,315,121,300,126,297,131,304,138,300,141,292,131,297,121,313,115,341,113,372,116,387,123"/>
+<area shape="rect" href="elf_8c.html#a994d1b358e939467b6b0049f5abcc362" title=" " alt="" coords="18,29,169,55"/>
+<area shape="poly" title=" " alt="" coords="305,134,248,101,181,69,150,58,152,53,183,64,250,96,308,129"/>
+<area shape="rect" href="elf_8c.html#ac2883438bf028a2c2a0876bbe9bfd2b7" title=" " alt="" coords="50,103,137,128"/>
+<area shape="poly" title=" " alt="" coords="236,140,137,125,138,119,236,134"/>
+<area shape="rect" href="elf_8c.html#a1c90c443c9fba9e81853155a3570f6f0" title=" " alt="" coords="5,176,182,202"/>
+<area shape="poly" title=" " alt="" coords="234,171,183,179,182,173,233,166"/>
+<area shape="rect" href="loader_8c.html#ad7fb2a5875c6781f1a96640053fc10ba" title="Load an ELF file into memory." alt="" coords="63,249,124,275"/>
+<area shape="poly" title=" " alt="" coords="297,175,125,251,123,247,295,170"/>
+<area shape="poly" title=" " alt="" coords="137,17,123,11,93,8,67,10,53,15,50,20,57,27,53,31,45,21,49,11,66,5,94,3,124,5,139,13"/>
+<area shape="poly" title=" " alt="" coords="137,91,123,84,93,81,67,83,53,88,50,93,57,101,53,104,45,94,49,84,66,78,94,76,124,79,139,86"/>
+<area shape="poly" title=" " alt="" coords="137,164,123,157,93,155,67,157,53,162,50,167,57,174,53,177,45,167,49,157,66,151,94,149,124,152,139,159"/>
+<area shape="poly" title=" " alt="" coords="134,244,137,238,132,234,118,230,94,228,65,231,51,236,51,242,65,251,62,255,46,245,47,233,63,225,93,223,119,224,135,229,142,237,139,246"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3608e3bd4a6bba43dbbb08ab3864cb45" name="a3608e3bd4a6bba43dbbb08ab3864cb45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3608e3bd4a6bba43dbbb08ab3864cb45">&#9670;&#160;</a></span>elf32_getProgramHeaderOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t elf32_getProgramHeaderOffset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>ph</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the file offset of a program header. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>Pointer to an elf_t structure. </td></tr>
+    <tr><td class="paramname">ph</td><td>Index of the program header. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>File offset. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a3608e3bd4a6bba43dbbb08ab3864cb45_cgraph.png" border="0" usemap="#aelf32_8h_a3608e3bd4a6bba43dbbb08ab3864cb45_cgraph" alt=""/></div>
+<map name="aelf32_8h_a3608e3bd4a6bba43dbbb08ab3864cb45_cgraph" id="aelf32_8h_a3608e3bd4a6bba43dbbb08ab3864cb45_cgraph">
+<area shape="rect" title="Get the file offset of a program header." alt="" coords="5,5,206,31"/>
+<area shape="rect" href="elf32_8h.html#a44eb005207aad59fa5a844eebc2fd70a" title="Get a pointer to the program header table." alt="" coords="254,5,451,31"/>
+<area shape="poly" title=" " alt="" coords="206,16,238,16,238,21,206,21"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="499,5,615,31"/>
+<area shape="poly" title=" " alt="" coords="451,16,483,16,483,21,451,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a3608e3bd4a6bba43dbbb08ab3864cb45_icgraph.png" border="0" usemap="#aelf32_8h_a3608e3bd4a6bba43dbbb08ab3864cb45_icgraph" alt=""/></div>
+<map name="aelf32_8h_a3608e3bd4a6bba43dbbb08ab3864cb45_icgraph" id="aelf32_8h_a3608e3bd4a6bba43dbbb08ab3864cb45_icgraph">
+<area shape="rect" title="Get the file offset of a program header." alt="" coords="557,67,758,92"/>
+<area shape="rect" href="elf_8c.html#a6eb359762d57487c3a35135d9984c56d" title=" " alt="" coords="323,67,509,92"/>
+<area shape="poly" title=" " alt="" coords="541,82,510,82,510,77,541,77"/>
+<area shape="poly" title=" " alt="" coords="455,54,442,48,416,45,393,47,380,52,377,57,384,65,379,68,372,58,376,48,391,42,416,40,443,43,457,50"/>
+<area shape="rect" href="elf_8c.html#adf47a5394418d2ad931a14e54102aa13" title=" " alt="" coords="114,29,275,55"/>
+<area shape="poly" title=" " alt="" coords="320,66,274,58,275,53,321,61"/>
+<area shape="rect" href="elf_8c.html#ac2883438bf028a2c2a0876bbe9bfd2b7" title=" " alt="" coords="151,103,238,128"/>
+<area shape="poly" title=" " alt="" coords="319,98,239,111,238,106,318,93"/>
+<area shape="poly" title=" " alt="" coords="221,16,212,10,194,8,178,10,169,15,167,20,172,28,167,30,162,21,165,11,176,5,194,3,214,5,224,12"/>
+<area shape="rect" href="loader_8c.html#ad7fb2a5875c6781f1a96640053fc10ba" title="Load an ELF file into memory." alt="" coords="5,29,66,55"/>
+<area shape="poly" title=" " alt="" coords="98,45,66,45,66,40,98,40"/>
+<area shape="poly" title=" " alt="" coords="62,16,53,10,35,8,19,10,10,15,8,20,13,28,8,30,3,21,6,11,17,5,36,3,55,5,65,12"/>
+<area shape="poly" title=" " alt="" coords="221,90,212,84,194,81,178,83,169,88,167,93,172,101,167,104,162,94,165,84,176,78,194,76,214,79,224,85"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5f764eeb58178c9e53ee78bd1b2885a6" name="a5f764eeb58178c9e53ee78bd1b2885a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f764eeb58178c9e53ee78bd1b2885a6">&#9670;&#160;</a></span>elf32_getProgramHeaderPaddr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uintptr_t elf32_getProgramHeaderPaddr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>ph</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the physical address of a program header. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>Pointer to an elf_t structure. </td></tr>
+    <tr><td class="paramname">ph</td><td>Index of the program header. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Physical address. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a5f764eeb58178c9e53ee78bd1b2885a6_cgraph.png" border="0" usemap="#aelf32_8h_a5f764eeb58178c9e53ee78bd1b2885a6_cgraph" alt=""/></div>
+<map name="aelf32_8h_a5f764eeb58178c9e53ee78bd1b2885a6_cgraph" id="aelf32_8h_a5f764eeb58178c9e53ee78bd1b2885a6_cgraph">
+<area shape="rect" title="Get the physical address of a program header." alt="" coords="5,5,205,31"/>
+<area shape="rect" href="elf32_8h.html#a44eb005207aad59fa5a844eebc2fd70a" title="Get a pointer to the program header table." alt="" coords="253,5,450,31"/>
+<area shape="poly" title=" " alt="" coords="205,16,237,16,237,21,205,21"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="498,5,614,31"/>
+<area shape="poly" title=" " alt="" coords="450,16,482,16,482,21,450,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a5f764eeb58178c9e53ee78bd1b2885a6_icgraph.png" border="0" usemap="#aelf32_8h_a5f764eeb58178c9e53ee78bd1b2885a6_icgraph" alt=""/></div>
+<map name="aelf32_8h_a5f764eeb58178c9e53ee78bd1b2885a6_icgraph" id="aelf32_8h_a5f764eeb58178c9e53ee78bd1b2885a6_icgraph">
+<area shape="rect" title="Get the physical address of a program header." alt="" coords="445,103,644,128"/>
+<area shape="rect" href="elf_8c.html#a3733d8dfb8dc06846c576d036bce3352" title=" " alt="" coords="212,103,397,128"/>
+<area shape="poly" title=" " alt="" coords="430,118,398,118,398,113,430,113"/>
+<area shape="poly" title=" " alt="" coords="343,90,330,84,304,81,281,83,269,88,266,93,272,101,268,104,261,94,265,84,280,78,304,76,331,79,345,86"/>
+<area shape="rect" href="elf_8c.html#a994d1b358e939467b6b0049f5abcc362" title=" " alt="" coords="9,29,160,55"/>
+<area shape="poly" title=" " alt="" coords="251,99,163,69,130,58,131,53,165,64,253,94"/>
+<area shape="rect" href="elf_8c.html#ac2883438bf028a2c2a0876bbe9bfd2b7" title=" " alt="" coords="41,103,128,128"/>
+<area shape="poly" title=" " alt="" coords="196,118,129,118,129,113,196,113"/>
+<area shape="rect" href="elf_8c.html#a1cb7891a95c0c9ec8df524db3fb64593" title=" " alt="" coords="5,176,164,202"/>
+<area shape="poly" title=" " alt="" coords="250,136,127,178,125,173,248,131"/>
+<area shape="poly" title=" " alt="" coords="123,17,110,10,84,8,61,10,49,15,46,20,52,27,48,31,41,21,45,11,60,5,85,3,111,5,125,12"/>
+<area shape="poly" title=" " alt="" coords="123,90,110,84,84,81,61,83,49,88,46,93,52,101,48,104,41,94,45,84,60,78,85,76,111,79,125,86"/>
+<area shape="poly" title=" " alt="" coords="123,164,110,157,84,155,61,157,49,161,46,167,52,174,48,177,41,167,45,158,60,151,85,149,111,152,125,159"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a44eb005207aad59fa5a844eebc2fd70a" name="a44eb005207aad59fa5a844eebc2fd70a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44eb005207aad59fa5a844eebc2fd70a">&#9670;&#160;</a></span>elf32_getProgramHeaderTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structElf32__Phdr.html">Elf32_Phdr</a> * elf32_getProgramHeaderTable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a pointer to the program header table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>Pointer to an elf_t structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the program header table. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a44eb005207aad59fa5a844eebc2fd70a_cgraph.png" border="0" usemap="#aelf32_8h_a44eb005207aad59fa5a844eebc2fd70a_cgraph" alt=""/></div>
+<map name="aelf32_8h_a44eb005207aad59fa5a844eebc2fd70a_cgraph" id="aelf32_8h_a44eb005207aad59fa5a844eebc2fd70a_cgraph">
+<area shape="rect" title="Get a pointer to the program header table." alt="" coords="5,5,203,31"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="251,5,367,31"/>
+<area shape="poly" title=" " alt="" coords="203,16,235,16,235,21,203,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a44eb005207aad59fa5a844eebc2fd70a_icgraph.png" border="0" usemap="#aelf32_8h_a44eb005207aad59fa5a844eebc2fd70a_icgraph" alt=""/></div>
+<map name="aelf32_8h_a44eb005207aad59fa5a844eebc2fd70a_icgraph" id="aelf32_8h_a44eb005207aad59fa5a844eebc2fd70a_icgraph">
+<area shape="rect" title="Get a pointer to the program header table." alt="" coords="902,327,1099,352"/>
+<area shape="rect" href="elf32_8h.html#aec9c38c3e2672e91024623fc0c3af514" title="Get the alignment of a program header." alt="" coords="638,108,833,134"/>
+<area shape="poly" title=" " alt="" coords="984,314,963,277,933,233,896,189,852,152,818,137,821,132,855,148,900,185,938,230,967,274,988,311"/>
+<area shape="rect" href="elf32_8h.html#a1466b2f47114f410a4ea7061826802f7" title="Get the file size of a program segment." alt="" coords="630,549,841,575"/>
+<area shape="poly" title=" " alt="" coords="988,367,967,403,937,447,899,491,855,528,831,542,806,551,804,546,829,537,852,524,895,487,932,443,962,400,983,364"/>
+<area shape="rect" href="elf32_8h.html#a682654eb6e23b83cfdfdafe83964617b" title="Get the flags of a program header." alt="" coords="637,163,834,188"/>
+<area shape="poly" title=" " alt="" coords="976,317,923,263,889,235,852,211,803,191,805,187,855,206,892,231,927,259,980,313"/>
+<area shape="rect" href="elf32_8h.html#a1146e3d1a710ca95b481c2ff66e2430a" title="Get the memory size of a program segment." alt="" coords="617,289,854,315"/>
+<area shape="poly" title=" " alt="" coords="889,327,831,318,832,313,890,321"/>
+<area shape="rect" href="elf32_8h.html#a3608e3bd4a6bba43dbbb08ab3864cb45" title="Get the file offset of a program header." alt="" coords="635,488,836,514"/>
+<area shape="poly" title=" " alt="" coords="974,365,921,409,855,454,815,474,776,490,774,485,813,469,852,449,918,405,971,361"/>
+<area shape="rect" href="elf32_8h.html#a5f764eeb58178c9e53ee78bd1b2885a6" title="Get the physical address of a program header." alt="" coords="636,413,835,439"/>
+<area shape="poly" title=" " alt="" coords="947,360,854,391,780,415,779,410,853,386,945,355"/>
+<area shape="rect" href="elf32_8h.html#a9953d346b9f5c485453edfa81afe2559" title="Get the type of a program header." alt="" coords="639,221,832,247"/>
+<area shape="poly" title=" " alt="" coords="954,322,853,279,775,250,776,245,855,274,957,318"/>
+<area shape="rect" href="elf32_8h.html#af34e30b7c5b3bf312a9fdab1f11eddf7" title="Get the virtual address of a program header." alt="" coords="636,351,835,376"/>
+<area shape="poly" title=" " alt="" coords="886,353,836,357,835,352,886,347"/>
+<area shape="rect" href="elf_8c.html#a3836854f84b6f285fbaced66e0cb2865" title=" " alt="" coords="368,104,548,130"/>
+<area shape="poly" title=" " alt="" coords="623,122,549,121,549,115,623,117"/>
+<area shape="poly" title=" " alt="" coords="502,92,488,85,458,83,431,85,417,90,414,95,421,102,417,105,409,95,414,85,430,79,458,77,489,80,505,87"/>
+<area shape="rect" href="elf_8c.html#aa1c323318dd8e6a5f29fb6671c9464e0" title=" " alt="" coords="359,573,557,599"/>
+<area shape="poly" title=" " alt="" coords="615,575,557,580,557,575,614,570"/>
+<area shape="poly" title=" " alt="" coords="502,561,488,555,458,552,431,554,417,559,414,564,421,571,417,575,409,565,414,555,430,549,458,547,489,549,505,557"/>
+<area shape="rect" href="elf_8c.html#adf47a5394418d2ad931a14e54102aa13" title=" " alt="" coords="127,573,288,599"/>
+<area shape="poly" title=" " alt="" coords="344,589,288,589,288,584,344,584"/>
+<area shape="rect" href="loader_8c.html#ad7fb2a5875c6781f1a96640053fc10ba" title="Load an ELF file into memory." alt="" coords="7,216,68,242"/>
+<area shape="poly" title=" " alt="" coords="416,608,352,632,272,649,230,651,188,647,149,635,114,613,93,586,77,543,64,490,54,432,41,319,37,242,42,242,47,319,59,432,69,489,82,541,98,583,117,610,151,630,189,642,230,646,271,644,350,627,414,603"/>
+<area shape="rect" href="elf_8c.html#ac2883438bf028a2c2a0876bbe9bfd2b7" title=" " alt="" coords="164,500,251,526"/>
+<area shape="poly" title=" " alt="" coords="400,571,298,539,251,526,252,521,300,534,402,565"/>
+<area shape="poly" title=" " alt="" coords="236,560,226,554,207,552,190,554,180,559,178,564,183,572,178,574,173,565,176,555,188,549,207,547,228,549,239,556"/>
+<area shape="poly" title=" " alt="" coords="149,568,130,556,114,540,89,502,70,460,56,416,47,373,37,295,36,242,41,242,43,295,52,372,61,415,75,458,94,499,118,536,133,552,152,564"/>
+<area shape="poly" title=" " alt="" coords="66,203,56,197,37,195,20,197,10,201,8,207,13,214,9,217,3,207,6,198,18,192,38,189,58,192,69,199"/>
+<area shape="poly" title=" " alt="" coords="236,487,226,481,207,479,190,481,180,485,178,491,183,498,178,501,173,491,176,482,188,476,207,473,228,476,239,483"/>
+<area shape="rect" href="elf_8c.html#a1030f49f98d91540e499d6b4e06fdd11" title=" " alt="" coords="116,29,299,55"/>
+<area shape="poly" title=" " alt="" coords="621,179,543,177,464,172,394,161,367,154,345,144,327,126,320,106,313,86,297,68,279,58,281,53,301,64,318,84,325,104,332,123,349,140,368,149,395,156,465,167,544,172,621,174"/>
+<area shape="poly" title=" " alt="" coords="121,65,117,68,87,104,65,145,51,186,44,216,39,215,46,184,60,143,82,101,114,64,118,61"/>
+<area shape="poly" title=" " alt="" coords="236,16,226,10,207,8,190,10,180,15,178,20,183,28,178,30,173,21,176,11,188,5,207,3,228,5,239,12"/>
+<area shape="rect" href="elf_8c.html#a27e18d4b13e9948bae5a8bcaaed36c07" title=" " alt="" coords="347,280,569,306"/>
+<area shape="poly" title=" " alt="" coords="602,300,570,299,570,294,602,295"/>
+<area shape="poly" title=" " alt="" coords="410,275,345,239,331,226,322,214,313,203,298,194,249,179,209,176,168,182,116,194,87,204,61,218,58,213,84,200,115,189,167,177,209,171,250,174,300,189,316,199,326,210,335,222,349,235,413,271"/>
+<area shape="poly" title=" " alt="" coords="351,317,349,319,334,336,327,353,323,389,321,426,314,446,301,467,277,487,250,502,247,497,274,483,297,463,309,444,315,425,318,388,322,351,330,333,345,315,348,313"/>
+<area shape="poly" title=" " alt="" coords="502,268,488,261,458,259,431,261,417,266,414,271,421,278,417,281,409,271,414,261,430,255,458,253,489,256,505,263"/>
+<area shape="rect" href="elf_8c.html#a994d1b358e939467b6b0049f5abcc362" title=" " alt="" coords="132,353,282,379"/>
+<area shape="poly" title=" " alt="" coords="375,312,348,319,243,355,242,350,346,314,374,307"/>
+<area shape="rect" href="elf_8c.html#a1c90c443c9fba9e81853155a3570f6f0" title=" " alt="" coords="119,228,295,254"/>
+<area shape="poly" title=" " alt="" coords="378,279,272,257,273,252,379,274"/>
+<area shape="poly" title=" " alt="" coords="236,340,226,334,207,332,190,334,180,339,178,344,183,352,178,354,173,345,176,335,188,329,207,327,228,329,239,336"/>
+<area shape="poly" title=" " alt="" coords="236,215,226,209,207,207,190,209,180,213,178,219,183,226,178,229,173,219,176,210,188,204,207,201,228,204,239,211"/>
+<area shape="rect" href="elf_8c.html#a6eb359762d57487c3a35135d9984c56d" title=" " alt="" coords="365,500,551,526"/>
+<area shape="poly" title=" " alt="" coords="620,508,552,511,552,506,620,503"/>
+<area shape="poly" title=" " alt="" coords="375,532,348,539,243,575,242,570,346,534,374,527"/>
+<area shape="poly" title=" " alt="" coords="349,516,251,516,251,510,349,510"/>
+<area shape="poly" title=" " alt="" coords="502,488,488,481,458,479,431,481,417,486,414,491,421,498,417,501,409,491,414,481,430,475,458,473,489,476,505,483"/>
+<area shape="rect" href="elf_8c.html#a3733d8dfb8dc06846c576d036bce3352" title=" " alt="" coords="365,427,551,452"/>
+<area shape="poly" title=" " alt="" coords="621,434,552,438,551,432,620,429"/>
+<area shape="poly" title=" " alt="" coords="375,459,348,466,243,502,242,497,346,461,374,454"/>
+<area shape="poly" title=" " alt="" coords="400,424,298,393,260,382,262,377,300,388,402,419"/>
+<area shape="poly" title=" " alt="" coords="502,415,488,408,458,405,431,407,417,412,414,417,421,425,417,428,409,418,414,408,430,402,458,400,489,403,505,410"/>
+<area shape="rect" href="elf_8c.html#a1cb7891a95c0c9ec8df524db3fb64593" title=" " alt="" coords="128,427,286,452"/>
+<area shape="poly" title=" " alt="" coords="350,442,287,442,287,437,350,437"/>
+<area shape="poly" title=" " alt="" coords="236,414,226,408,207,405,190,407,180,412,178,417,183,425,178,428,173,418,176,408,188,402,207,400,228,403,239,409"/>
+<area shape="rect" href="elf_8c.html#a41c0cd2a112d7eec5f875dead3e50f9a" title=" " alt="" coords="118,103,297,128"/>
+<area shape="poly" title=" " alt="" coords="623,233,489,220,417,207,346,189,233,131,235,127,348,184,418,202,490,214,623,228"/>
+<area shape="poly" title=" " alt="" coords="142,137,117,150,78,184,50,217,46,214,74,180,114,145,140,132"/>
+<area shape="poly" title=" " alt="" coords="236,90,226,84,207,81,190,83,180,88,178,93,183,101,178,104,173,94,176,84,188,78,207,76,228,79,239,85"/>
+<area shape="rect" href="elf_8c.html#a10553020947aa2836eebef4d569b00b4" title=" " alt="" coords="365,353,551,379"/>
+<area shape="poly" title=" " alt="" coords="620,367,551,368,551,363,620,362"/>
+<area shape="poly" title=" " alt="" coords="400,351,298,319,206,296,166,286,115,269,62,245,65,240,117,264,167,281,207,291,300,314,401,346"/>
+<area shape="poly" title=" " alt="" coords="355,388,349,392,332,409,324,427,317,446,301,467,273,487,245,502,242,497,271,482,297,463,312,444,319,425,328,406,345,388,352,384"/>
+<area shape="poly" title=" " alt="" coords="350,369,283,369,283,364,350,364"/>
+<area shape="poly" title=" " alt="" coords="403,350,346,320,331,308,321,297,312,286,298,275,257,257,259,252,300,271,315,282,325,293,335,305,348,316,405,345"/>
+<area shape="poly" title=" " alt="" coords="375,386,348,393,243,429,242,424,346,388,374,380"/>
+<area shape="poly" title=" " alt="" coords="502,341,488,335,458,332,431,334,417,339,414,344,421,351,417,355,409,345,414,335,430,329,458,327,489,329,505,337"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9953d346b9f5c485453edfa81afe2559" name="a9953d346b9f5c485453edfa81afe2559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9953d346b9f5c485453edfa81afe2559">&#9670;&#160;</a></span>elf32_getProgramHeaderType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t elf32_getProgramHeaderType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>ph</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the type of a program header. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>Pointer to an elf_t structure. </td></tr>
+    <tr><td class="paramname">ph</td><td>Index of the program header. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Program header type. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a9953d346b9f5c485453edfa81afe2559_cgraph.png" border="0" usemap="#aelf32_8h_a9953d346b9f5c485453edfa81afe2559_cgraph" alt=""/></div>
+<map name="aelf32_8h_a9953d346b9f5c485453edfa81afe2559_cgraph" id="aelf32_8h_a9953d346b9f5c485453edfa81afe2559_cgraph">
+<area shape="rect" title="Get the type of a program header." alt="" coords="5,5,199,31"/>
+<area shape="rect" href="elf32_8h.html#a44eb005207aad59fa5a844eebc2fd70a" title="Get a pointer to the program header table." alt="" coords="247,5,444,31"/>
+<area shape="poly" title=" " alt="" coords="199,16,231,16,231,21,199,21"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="492,5,608,31"/>
+<area shape="poly" title=" " alt="" coords="444,16,476,16,476,21,444,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a9953d346b9f5c485453edfa81afe2559_icgraph.png" border="0" usemap="#aelf32_8h_a9953d346b9f5c485453edfa81afe2559_icgraph" alt=""/></div>
+<map name="aelf32_8h_a9953d346b9f5c485453edfa81afe2559_icgraph" id="aelf32_8h_a9953d346b9f5c485453edfa81afe2559_icgraph">
+<area shape="rect" title="Get the type of a program header." alt="" coords="343,29,536,55"/>
+<area shape="rect" href="elf_8c.html#a41c0cd2a112d7eec5f875dead3e50f9a" title=" " alt="" coords="115,29,295,55"/>
+<area shape="poly" title=" " alt="" coords="327,45,295,45,295,40,327,40"/>
+<area shape="poly" title=" " alt="" coords="233,16,224,10,205,8,187,10,178,15,176,20,181,28,176,30,171,21,174,11,186,5,205,3,225,5,236,12"/>
+<area shape="rect" href="loader_8c.html#ad7fb2a5875c6781f1a96640053fc10ba" title="Load an ELF file into memory." alt="" coords="7,29,67,55"/>
+<area shape="poly" title=" " alt="" coords="99,45,68,45,68,40,99,40"/>
+<area shape="poly" title=" " alt="" coords="65,16,56,10,37,8,20,10,10,15,8,20,13,28,9,30,3,21,6,11,18,5,37,3,58,5,68,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af34e30b7c5b3bf312a9fdab1f11eddf7" name="af34e30b7c5b3bf312a9fdab1f11eddf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af34e30b7c5b3bf312a9fdab1f11eddf7">&#9670;&#160;</a></span>elf32_getProgramHeaderVaddr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uintptr_t elf32_getProgramHeaderVaddr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>ph</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the virtual address of a program header. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>Pointer to an elf_t structure. </td></tr>
+    <tr><td class="paramname">ph</td><td>Index of the program header. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Virtual address. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_af34e30b7c5b3bf312a9fdab1f11eddf7_cgraph.png" border="0" usemap="#aelf32_8h_af34e30b7c5b3bf312a9fdab1f11eddf7_cgraph" alt=""/></div>
+<map name="aelf32_8h_af34e30b7c5b3bf312a9fdab1f11eddf7_cgraph" id="aelf32_8h_af34e30b7c5b3bf312a9fdab1f11eddf7_cgraph">
+<area shape="rect" title="Get the virtual address of a program header." alt="" coords="5,5,205,31"/>
+<area shape="rect" href="elf32_8h.html#a44eb005207aad59fa5a844eebc2fd70a" title="Get a pointer to the program header table." alt="" coords="253,5,450,31"/>
+<area shape="poly" title=" " alt="" coords="205,16,237,16,237,21,205,21"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="498,5,614,31"/>
+<area shape="poly" title=" " alt="" coords="450,16,482,16,482,21,450,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_af34e30b7c5b3bf312a9fdab1f11eddf7_icgraph.png" border="0" usemap="#aelf32_8h_af34e30b7c5b3bf312a9fdab1f11eddf7_icgraph" alt=""/></div>
+<map name="aelf32_8h_af34e30b7c5b3bf312a9fdab1f11eddf7_icgraph" id="aelf32_8h_af34e30b7c5b3bf312a9fdab1f11eddf7_icgraph">
+<area shape="rect" title="Get the virtual address of a program header." alt="" coords="463,176,662,202"/>
+<area shape="rect" href="elf_8c.html#a10553020947aa2836eebef4d569b00b4" title=" " alt="" coords="230,176,415,202"/>
+<area shape="poly" title=" " alt="" coords="448,192,416,192,416,186,448,186"/>
+<area shape="poly" title=" " alt="" coords="362,164,349,157,322,155,298,157,285,161,282,167,289,174,284,177,277,167,281,158,297,151,322,149,350,152,365,159"/>
+<area shape="rect" href="elf_8c.html#a994d1b358e939467b6b0049f5abcc362" title=" " alt="" coords="18,29,169,55"/>
+<area shape="poly" title=" " alt="" coords="298,166,247,117,215,91,180,69,156,58,158,53,183,64,218,86,251,113,302,163"/>
+<area shape="rect" href="elf_8c.html#ac2883438bf028a2c2a0876bbe9bfd2b7" title=" " alt="" coords="50,103,137,128"/>
+<area shape="poly" title=" " alt="" coords="270,173,181,142,137,129,138,124,182,137,272,168"/>
+<area shape="rect" href="elf_8c.html#a1c90c443c9fba9e81853155a3570f6f0" title=" " alt="" coords="5,176,182,202"/>
+<area shape="poly" title=" " alt="" coords="214,192,182,192,182,186,214,186"/>
+<area shape="rect" href="elf_8c.html#a1cb7891a95c0c9ec8df524db3fb64593" title=" " alt="" coords="14,249,173,275"/>
+<area shape="poly" title=" " alt="" coords="266,210,137,251,136,246,264,204"/>
+<area shape="rect" href="loader_8c.html#ad7fb2a5875c6781f1a96640053fc10ba" title="Load an ELF file into memory." alt="" coords="63,323,124,348"/>
+<area shape="poly" title=" " alt="" coords="293,213,183,290,122,324,119,320,180,285,290,209"/>
+<area shape="poly" title=" " alt="" coords="133,17,120,10,93,8,69,10,56,15,53,20,60,27,56,31,48,21,53,11,68,5,94,3,121,5,136,12"/>
+<area shape="poly" title=" " alt="" coords="133,90,120,84,93,81,69,83,56,88,53,93,60,101,56,104,48,94,53,84,68,78,94,76,121,79,136,86"/>
+<area shape="poly" title=" " alt="" coords="133,164,120,157,93,155,69,157,56,161,53,167,60,174,56,177,48,167,53,158,68,151,94,149,121,152,136,159"/>
+<area shape="poly" title=" " alt="" coords="133,237,120,230,93,228,69,230,56,235,53,240,60,247,56,251,48,241,53,231,68,225,94,223,121,225,136,232"/>
+<area shape="poly" title=" " alt="" coords="133,316,133,310,127,306,93,301,68,304,55,309,54,315,64,323,61,327,49,317,51,306,66,299,94,296,129,301,138,308,138,315"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0a88340581d03e48088e0db49ab17988" name="a0a88340581d03e48088e0db49ab17988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a88340581d03e48088e0db49ab17988">&#9670;&#160;</a></span>elf32_getSectionAddr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uintptr_t elf32_getSectionAddr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>elf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the virtual address of a section. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elf</td><td>Pointer to an elf_t structure. </td></tr>
+    <tr><td class="paramname">i</td><td>Index of the section. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Virtual address of the section. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a0a88340581d03e48088e0db49ab17988_cgraph.png" border="0" usemap="#aelf32_8h_a0a88340581d03e48088e0db49ab17988_cgraph" alt=""/></div>
+<map name="aelf32_8h_a0a88340581d03e48088e0db49ab17988_cgraph" id="aelf32_8h_a0a88340581d03e48088e0db49ab17988_cgraph">
+<area shape="rect" title="Get the virtual address of a section." alt="" coords="5,5,151,31"/>
+<area shape="rect" href="elf32_8h.html#a68b790d384023453e89fb01441a5d29e" title="Get a pointer to the section header table." alt="" coords="199,5,349,31"/>
+<area shape="poly" title=" " alt="" coords="151,16,183,16,183,21,151,21"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="397,5,513,31"/>
+<area shape="poly" title=" " alt="" coords="349,16,381,16,381,21,349,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a0a88340581d03e48088e0db49ab17988_icgraph.png" border="0" usemap="#aelf32_8h_a0a88340581d03e48088e0db49ab17988_icgraph" alt=""/></div>
+<map name="aelf32_8h_a0a88340581d03e48088e0db49ab17988_icgraph" id="aelf32_8h_a0a88340581d03e48088e0db49ab17988_icgraph">
+<area shape="rect" title="Get the virtual address of a section." alt="" coords="185,29,330,55"/>
+<area shape="rect" href="elf_8c.html#aaea508f707d7e1a50d7e426497f701cb" title=" " alt="" coords="5,29,137,55"/>
+<area shape="poly" title=" " alt="" coords="169,45,137,45,137,40,169,40"/>
+<area shape="poly" title=" " alt="" coords="103,16,92,10,71,8,51,10,41,15,39,20,44,27,40,30,34,21,37,11,50,5,71,3,94,5,105,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2bde88ff9d03faf5744daebd623ce3d8" name="a2bde88ff9d03faf5744daebd623ce3d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bde88ff9d03faf5744daebd623ce3d8">&#9670;&#160;</a></span>elf32_getSectionAddrAlign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t elf32_getSectionAddrAlign </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>elf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the address alignment of a section. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elf</td><td>Pointer to an elf_t structure. </td></tr>
+    <tr><td class="paramname">i</td><td>Index of the section. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Address alignment value. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a2bde88ff9d03faf5744daebd623ce3d8_cgraph.png" border="0" usemap="#aelf32_8h_a2bde88ff9d03faf5744daebd623ce3d8_cgraph" alt=""/></div>
+<map name="aelf32_8h_a2bde88ff9d03faf5744daebd623ce3d8_cgraph" id="aelf32_8h_a2bde88ff9d03faf5744daebd623ce3d8_cgraph">
+<area shape="rect" title="Get the address alignment of a section." alt="" coords="5,5,180,31"/>
+<area shape="rect" href="elf32_8h.html#a68b790d384023453e89fb01441a5d29e" title="Get a pointer to the section header table." alt="" coords="228,5,378,31"/>
+<area shape="poly" title=" " alt="" coords="180,16,212,16,212,21,180,21"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="426,5,542,31"/>
+<area shape="poly" title=" " alt="" coords="378,16,410,16,410,21,378,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a2bde88ff9d03faf5744daebd623ce3d8_icgraph.png" border="0" usemap="#aelf32_8h_a2bde88ff9d03faf5744daebd623ce3d8_icgraph" alt=""/></div>
+<map name="aelf32_8h_a2bde88ff9d03faf5744daebd623ce3d8_icgraph" id="aelf32_8h_a2bde88ff9d03faf5744daebd623ce3d8_icgraph">
+<area shape="rect" title="Get the address alignment of a section." alt="" coords="214,29,388,55"/>
+<area shape="rect" href="elf_8c.html#a795e21d45927f36eb046d0bff4a270d5" title=" " alt="" coords="5,29,166,55"/>
+<area shape="poly" title=" " alt="" coords="198,45,166,45,166,40,198,40"/>
+<area shape="poly" title=" " alt="" coords="123,17,110,10,85,8,63,10,51,15,48,20,54,27,50,31,43,21,47,11,61,5,86,3,112,5,125,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab9b0583ef28fde71cc9a153db67b675f" name="ab9b0583ef28fde71cc9a153db67b675f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9b0583ef28fde71cc9a153db67b675f">&#9670;&#160;</a></span>elf32_getSectionEntrySize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t elf32_getSectionEntrySize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>elf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the entry size of elements in a section. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elf</td><td>Pointer to an elf_t structure. </td></tr>
+    <tr><td class="paramname">i</td><td>Index of the section. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Entry size of elements. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_ab9b0583ef28fde71cc9a153db67b675f_cgraph.png" border="0" usemap="#aelf32_8h_ab9b0583ef28fde71cc9a153db67b675f_cgraph" alt=""/></div>
+<map name="aelf32_8h_ab9b0583ef28fde71cc9a153db67b675f_cgraph" id="aelf32_8h_ab9b0583ef28fde71cc9a153db67b675f_cgraph">
+<area shape="rect" title="Get the entry size of elements in a section." alt="" coords="5,5,178,31"/>
+<area shape="rect" href="elf32_8h.html#a68b790d384023453e89fb01441a5d29e" title="Get a pointer to the section header table." alt="" coords="226,5,376,31"/>
+<area shape="poly" title=" " alt="" coords="178,16,210,16,210,21,178,21"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="424,5,540,31"/>
+<area shape="poly" title=" " alt="" coords="376,16,408,16,408,21,376,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_ab9b0583ef28fde71cc9a153db67b675f_icgraph.png" border="0" usemap="#aelf32_8h_ab9b0583ef28fde71cc9a153db67b675f_icgraph" alt=""/></div>
+<map name="aelf32_8h_ab9b0583ef28fde71cc9a153db67b675f_icgraph" id="aelf32_8h_ab9b0583ef28fde71cc9a153db67b675f_icgraph">
+<area shape="rect" title="Get the entry size of elements in a section." alt="" coords="212,29,384,55"/>
+<area shape="rect" href="elf_8c.html#aaf56b06d020c2a5e08a9e66a38716c84" title=" " alt="" coords="5,29,164,55"/>
+<area shape="poly" title=" " alt="" coords="196,45,164,45,164,40,196,40"/>
+<area shape="poly" title=" " alt="" coords="122,17,109,10,84,8,62,10,50,15,47,20,53,27,49,31,42,21,46,11,61,5,85,3,111,5,124,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2e8ed24680c76914f5d0e940b10e6531" name="a2e8ed24680c76914f5d0e940b10e6531"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e8ed24680c76914f5d0e940b10e6531">&#9670;&#160;</a></span>elf32_getSectionFlags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t elf32_getSectionFlags </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>elf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the flags of a section. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elf</td><td>Pointer to an elf_t structure. </td></tr>
+    <tr><td class="paramname">i</td><td>Index of the section. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Section flags. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a2e8ed24680c76914f5d0e940b10e6531_cgraph.png" border="0" usemap="#aelf32_8h_a2e8ed24680c76914f5d0e940b10e6531_cgraph" alt=""/></div>
+<map name="aelf32_8h_a2e8ed24680c76914f5d0e940b10e6531_cgraph" id="aelf32_8h_a2e8ed24680c76914f5d0e940b10e6531_cgraph">
+<area shape="rect" title="Get the flags of a section." alt="" coords="5,5,156,31"/>
+<area shape="rect" href="elf32_8h.html#a68b790d384023453e89fb01441a5d29e" title="Get a pointer to the section header table." alt="" coords="204,5,354,31"/>
+<area shape="poly" title=" " alt="" coords="156,16,188,16,188,21,156,21"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="402,5,518,31"/>
+<area shape="poly" title=" " alt="" coords="354,16,386,16,386,21,354,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a2e8ed24680c76914f5d0e940b10e6531_icgraph.png" border="0" usemap="#aelf32_8h_a2e8ed24680c76914f5d0e940b10e6531_icgraph" alt=""/></div>
+<map name="aelf32_8h_a2e8ed24680c76914f5d0e940b10e6531_icgraph" id="aelf32_8h_a2e8ed24680c76914f5d0e940b10e6531_icgraph">
+<area shape="rect" title="Get the flags of a section." alt="" coords="190,29,340,55"/>
+<area shape="rect" href="elf_8c.html#acac95db4ed37ddee9a15ea016f503a4b" title=" " alt="" coords="5,29,142,55"/>
+<area shape="poly" title=" " alt="" coords="174,45,142,45,142,40,174,40"/>
+<area shape="poly" title=" " alt="" coords="106,16,95,10,73,8,53,10,43,15,40,20,46,27,41,30,35,21,39,11,52,5,74,3,97,5,109,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aea0a6a931e3656d60bb2a51d9d957f9a" name="aea0a6a931e3656d60bb2a51d9d957f9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea0a6a931e3656d60bb2a51d9d957f9a">&#9670;&#160;</a></span>elf32_getSectionInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t elf32_getSectionInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>elf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the info field of a section. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elf</td><td>Pointer to an elf_t structure. </td></tr>
+    <tr><td class="paramname">i</td><td>Index of the section. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Info field value. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_aea0a6a931e3656d60bb2a51d9d957f9a_cgraph.png" border="0" usemap="#aelf32_8h_aea0a6a931e3656d60bb2a51d9d957f9a_cgraph" alt=""/></div>
+<map name="aelf32_8h_aea0a6a931e3656d60bb2a51d9d957f9a_cgraph" id="aelf32_8h_aea0a6a931e3656d60bb2a51d9d957f9a_cgraph">
+<area shape="rect" title="Get the info field of a section." alt="" coords="5,5,146,31"/>
+<area shape="rect" href="elf32_8h.html#a68b790d384023453e89fb01441a5d29e" title="Get a pointer to the section header table." alt="" coords="194,5,344,31"/>
+<area shape="poly" title=" " alt="" coords="146,16,178,16,178,21,146,21"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="392,5,508,31"/>
+<area shape="poly" title=" " alt="" coords="344,16,376,16,376,21,344,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_aea0a6a931e3656d60bb2a51d9d957f9a_icgraph.png" border="0" usemap="#aelf32_8h_aea0a6a931e3656d60bb2a51d9d957f9a_icgraph" alt=""/></div>
+<map name="aelf32_8h_aea0a6a931e3656d60bb2a51d9d957f9a_icgraph" id="aelf32_8h_aea0a6a931e3656d60bb2a51d9d957f9a_icgraph">
+<area shape="rect" title="Get the info field of a section." alt="" coords="180,29,320,55"/>
+<area shape="rect" href="elf_8c.html#a74044a0df7da01d793da373653cc3bf1" title=" " alt="" coords="5,29,132,55"/>
+<area shape="poly" title=" " alt="" coords="164,45,132,45,132,40,164,40"/>
+<area shape="poly" title=" " alt="" coords="99,16,89,10,68,8,50,10,39,15,37,20,42,28,38,30,32,21,36,11,48,5,69,3,90,5,102,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4a1973f2b1b0ee911e361770253b3d18" name="a4a1973f2b1b0ee911e361770253b3d18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a1973f2b1b0ee911e361770253b3d18">&#9670;&#160;</a></span>elf32_getSectionLink()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t elf32_getSectionLink </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>elf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the link field of a section. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elf</td><td>Pointer to an elf_t structure. </td></tr>
+    <tr><td class="paramname">i</td><td>Index of the section. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Link field value. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a4a1973f2b1b0ee911e361770253b3d18_cgraph.png" border="0" usemap="#aelf32_8h_a4a1973f2b1b0ee911e361770253b3d18_cgraph" alt=""/></div>
+<map name="aelf32_8h_a4a1973f2b1b0ee911e361770253b3d18_cgraph" id="aelf32_8h_a4a1973f2b1b0ee911e361770253b3d18_cgraph">
+<area shape="rect" title="Get the link field of a section." alt="" coords="5,5,149,31"/>
+<area shape="rect" href="elf32_8h.html#a68b790d384023453e89fb01441a5d29e" title="Get a pointer to the section header table." alt="" coords="197,5,347,31"/>
+<area shape="poly" title=" " alt="" coords="149,16,181,16,181,21,149,21"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="395,5,511,31"/>
+<area shape="poly" title=" " alt="" coords="347,16,379,16,379,21,347,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a4a1973f2b1b0ee911e361770253b3d18_icgraph.png" border="0" usemap="#aelf32_8h_a4a1973f2b1b0ee911e361770253b3d18_icgraph" alt=""/></div>
+<map name="aelf32_8h_a4a1973f2b1b0ee911e361770253b3d18_icgraph" id="aelf32_8h_a4a1973f2b1b0ee911e361770253b3d18_icgraph">
+<area shape="rect" title="Get the link field of a section." alt="" coords="183,29,326,55"/>
+<area shape="rect" href="elf_8c.html#a430e3d8e32b744c38cd8f317a45ccfc5" title=" " alt="" coords="5,29,135,55"/>
+<area shape="poly" title=" " alt="" coords="167,45,135,45,135,40,167,40"/>
+<area shape="poly" title=" " alt="" coords="101,16,91,10,70,8,51,10,40,15,38,20,43,27,39,30,33,21,37,11,49,5,70,3,92,5,104,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9423174406bc55978c59cd74f6cc0fe8" name="a9423174406bc55978c59cd74f6cc0fe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9423174406bc55978c59cd74f6cc0fe8">&#9670;&#160;</a></span>elf32_getSectionNameOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t elf32_getSectionNameOffset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>elf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the offset of a section name in the string table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elf</td><td>Pointer to an elf_t structure. </td></tr>
+    <tr><td class="paramname">s</td><td>Index of the section. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Offset of the section name. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a9423174406bc55978c59cd74f6cc0fe8_cgraph.png" border="0" usemap="#aelf32_8h_a9423174406bc55978c59cd74f6cc0fe8_cgraph" alt=""/></div>
+<map name="aelf32_8h_a9423174406bc55978c59cd74f6cc0fe8_cgraph" id="aelf32_8h_a9423174406bc55978c59cd74f6cc0fe8_cgraph">
+<area shape="rect" title="Get the offset of a section name in the string table." alt="" coords="5,5,194,31"/>
+<area shape="rect" href="elf32_8h.html#a68b790d384023453e89fb01441a5d29e" title="Get a pointer to the section header table." alt="" coords="242,5,392,31"/>
+<area shape="poly" title=" " alt="" coords="194,16,226,16,226,21,194,21"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="440,5,556,31"/>
+<area shape="poly" title=" " alt="" coords="392,16,424,16,424,21,392,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a9423174406bc55978c59cd74f6cc0fe8_icgraph.png" border="0" usemap="#aelf32_8h_a9423174406bc55978c59cd74f6cc0fe8_icgraph" alt=""/></div>
+<map name="aelf32_8h_a9423174406bc55978c59cd74f6cc0fe8_icgraph" id="aelf32_8h_a9423174406bc55978c59cd74f6cc0fe8_icgraph">
+<area shape="rect" title="Get the offset of a section name in the string table." alt="" coords="609,29,798,55"/>
+<area shape="rect" href="elf_8c.html#adfe57839981a50cbf02310d29129b1b6" title=" " alt="" coords="387,29,561,55"/>
+<area shape="poly" title=" " alt="" coords="594,45,562,45,562,40,594,40"/>
+<area shape="poly" title=" " alt="" coords="510,17,498,10,474,8,453,10,441,15,439,20,444,27,440,31,433,21,437,11,451,5,474,3,499,5,512,12"/>
+<area shape="rect" href="elf_8c.html#af7dd2485abe0e81d58c8114972adff71" title=" " alt="" coords="200,29,339,55"/>
+<area shape="poly" title=" " alt="" coords="371,45,340,45,340,40,371,40"/>
+<area shape="poly" title=" " alt="" coords="302,16,291,10,269,8,249,10,239,15,236,20,242,27,237,30,231,21,235,11,248,5,269,3,292,5,304,12"/>
+<area shape="rect" href="elf_8c.html#aa41336d7f07ac318a13428113cbd1915" title=" " alt="" coords="5,29,152,55"/>
+<area shape="poly" title=" " alt="" coords="184,45,152,45,152,40,184,40"/>
+<area shape="poly" title=" " alt="" coords="111,16,100,10,78,8,58,10,48,15,45,20,51,27,46,30,40,21,44,11,57,5,79,3,102,5,114,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af60a2fc8eb6c2978c78c1422d0201fdd" name="af60a2fc8eb6c2978c78c1422d0201fdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af60a2fc8eb6c2978c78c1422d0201fdd">&#9670;&#160;</a></span>elf32_getSectionOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t elf32_getSectionOffset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>elf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the file offset of a section. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elf</td><td>Pointer to an elf_t structure. </td></tr>
+    <tr><td class="paramname">i</td><td>Index of the section. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>File offset of the section. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_af60a2fc8eb6c2978c78c1422d0201fdd_cgraph.png" border="0" usemap="#aelf32_8h_af60a2fc8eb6c2978c78c1422d0201fdd_cgraph" alt=""/></div>
+<map name="aelf32_8h_af60a2fc8eb6c2978c78c1422d0201fdd_cgraph" id="aelf32_8h_af60a2fc8eb6c2978c78c1422d0201fdd_cgraph">
+<area shape="rect" title="Get the file offset of a section." alt="" coords="5,5,159,31"/>
+<area shape="rect" href="elf32_8h.html#a68b790d384023453e89fb01441a5d29e" title="Get a pointer to the section header table." alt="" coords="207,5,357,31"/>
+<area shape="poly" title=" " alt="" coords="159,16,191,16,191,21,159,21"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="405,5,521,31"/>
+<area shape="poly" title=" " alt="" coords="357,16,389,16,389,21,357,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_af60a2fc8eb6c2978c78c1422d0201fdd_icgraph.png" border="0" usemap="#aelf32_8h_af60a2fc8eb6c2978c78c1422d0201fdd_icgraph" alt=""/></div>
+<map name="aelf32_8h_af60a2fc8eb6c2978c78c1422d0201fdd_icgraph" id="aelf32_8h_af60a2fc8eb6c2978c78c1422d0201fdd_icgraph">
+<area shape="rect" title="Get the file offset of a section." alt="" coords="932,29,1085,55"/>
+<area shape="rect" href="elf_8c.html#aef51a6645d6cd442088a9a4c64e9e256" title=" " alt="" coords="745,29,884,55"/>
+<area shape="poly" title=" " alt="" coords="917,45,885,45,885,40,917,40"/>
+<area shape="poly" title=" " alt="" coords="843,16,833,10,814,8,797,10,787,15,785,20,790,28,785,30,780,21,783,11,795,5,814,3,835,5,846,12"/>
+<area shape="rect" href="elf_8c.html#ac68061c70e5d3e98c6de86d9fa1041d5" title=" " alt="" coords="592,29,697,55"/>
+<area shape="poly" title=" " alt="" coords="729,45,697,45,697,40,729,40"/>
+<area shape="poly" title=" " alt="" coords="672,16,663,10,644,8,628,10,619,15,617,20,621,28,617,30,611,21,615,11,626,5,645,3,664,5,675,12"/>
+<area shape="rect" href="elf_8c.html#aa41336d7f07ac318a13428113cbd1915" title=" " alt="" coords="5,29,152,55"/>
+<area shape="poly" title=" " alt="" coords="577,36,544,33,372,26,200,33,152,36,152,31,200,28,372,21,544,28,577,30"/>
+<area shape="rect" href="elf_8c.html#a150d6bd162869e12a80fa4a6d267c625" title=" " alt="" coords="418,67,544,92"/>
+<area shape="poly" title=" " alt="" coords="578,60,541,69,540,63,577,55"/>
+<area shape="poly" title=" " alt="" coords="114,17,102,10,78,8,57,10,45,15,43,20,48,27,44,31,37,21,41,11,55,5,79,3,104,5,117,12"/>
+<area shape="poly" title=" " alt="" coords="509,54,499,48,481,45,464,47,455,52,453,57,458,65,453,68,448,58,451,48,463,42,481,40,501,43,512,49"/>
+<area shape="rect" href="elf_8c.html#af7dd2485abe0e81d58c8114972adff71" title=" " alt="" coords="215,67,355,92"/>
+<area shape="poly" title=" " alt="" coords="402,82,355,82,355,77,402,77"/>
+<area shape="rect" href="elf_8c.html#a525f1635a3c3784e2552653b9e5c22f7" title=" " alt="" coords="200,140,370,166"/>
+<area shape="poly" title=" " alt="" coords="431,101,322,142,321,137,429,96"/>
+<area shape="poly" title=" " alt="" coords="199,67,152,58,153,53,200,62"/>
+<area shape="poly" title=" " alt="" coords="319,54,307,48,285,45,264,47,253,52,251,57,256,65,252,68,245,58,249,48,263,42,285,40,309,43,321,50"/>
+<area shape="poly" title=" " alt="" coords="319,128,307,121,285,119,264,121,253,125,251,131,256,138,252,141,245,131,249,122,263,115,285,113,309,116,321,123"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab8713114b4857282bcb2df88f593ccf9" name="ab8713114b4857282bcb2df88f593ccf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8713114b4857282bcb2df88f593ccf9">&#9670;&#160;</a></span>elf32_getSectionSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t elf32_getSectionSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>elf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the size of a section. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elf</td><td>Pointer to an elf_t structure. </td></tr>
+    <tr><td class="paramname">i</td><td>Index of the section. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Size of the section. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_ab8713114b4857282bcb2df88f593ccf9_cgraph.png" border="0" usemap="#aelf32_8h_ab8713114b4857282bcb2df88f593ccf9_cgraph" alt=""/></div>
+<map name="aelf32_8h_ab8713114b4857282bcb2df88f593ccf9_cgraph" id="aelf32_8h_ab8713114b4857282bcb2df88f593ccf9_cgraph">
+<area shape="rect" title="Get the size of a section." alt="" coords="5,5,149,31"/>
+<area shape="rect" href="elf32_8h.html#a68b790d384023453e89fb01441a5d29e" title="Get a pointer to the section header table." alt="" coords="197,5,347,31"/>
+<area shape="poly" title=" " alt="" coords="149,16,181,16,181,21,149,21"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="395,5,511,31"/>
+<area shape="poly" title=" " alt="" coords="347,16,379,16,379,21,347,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_ab8713114b4857282bcb2df88f593ccf9_icgraph.png" border="0" usemap="#aelf32_8h_ab8713114b4857282bcb2df88f593ccf9_icgraph" alt=""/></div>
+<map name="aelf32_8h_ab8713114b4857282bcb2df88f593ccf9_icgraph" id="aelf32_8h_ab8713114b4857282bcb2df88f593ccf9_icgraph">
+<area shape="rect" title="Get the size of a section." alt="" coords="922,80,1065,106"/>
+<area shape="rect" href="elf_8c.html#a3daeb756b03485e27a4f6662647389d6" title=" " alt="" coords="745,80,874,106"/>
+<area shape="poly" title=" " alt="" coords="906,96,874,96,874,90,906,90"/>
+<area shape="poly" title=" " alt="" coords="837,67,828,61,809,59,792,61,783,65,781,71,786,78,781,81,776,71,779,62,791,56,809,53,829,56,840,63"/>
+<area shape="rect" href="elf_8c.html#ac68061c70e5d3e98c6de86d9fa1041d5" title=" " alt="" coords="592,29,697,55"/>
+<area shape="poly" title=" " alt="" coords="750,77,688,58,689,53,751,72"/>
+<area shape="rect" href="elf_8c.html#a150d6bd162869e12a80fa4a6d267c625" title=" " alt="" coords="418,75,544,100"/>
+<area shape="poly" title=" " alt="" coords="729,94,545,91,545,86,729,89"/>
+<area shape="rect" href="elf_8c.html#af7dd2485abe0e81d58c8114972adff71" title=" " alt="" coords="215,137,355,163"/>
+<area shape="poly" title=" " alt="" coords="729,104,355,145,355,140,729,99"/>
+<area shape="poly" title=" " alt="" coords="672,16,663,10,644,8,628,10,619,15,617,20,621,28,617,30,611,21,615,11,626,5,645,3,664,5,675,12"/>
+<area shape="rect" href="elf_8c.html#aa41336d7f07ac318a13428113cbd1915" title=" " alt="" coords="5,64,152,90"/>
+<area shape="poly" title=" " alt="" coords="576,33,499,24,405,17,302,18,200,30,149,46,105,66,103,61,147,41,199,25,302,13,405,12,500,18,577,28"/>
+<area shape="poly" title=" " alt="" coords="582,62,531,77,529,72,580,57"/>
+<area shape="poly" title=" " alt="" coords="114,52,102,45,78,43,57,45,45,49,43,55,48,62,44,65,37,55,41,46,55,39,79,37,104,40,117,47"/>
+<area shape="poly" title=" " alt="" coords="509,62,499,56,481,53,464,55,455,60,453,65,458,73,453,76,448,66,451,56,463,50,481,48,501,51,512,57"/>
+<area shape="poly" title=" " alt="" coords="425,108,328,139,327,134,423,103"/>
+<area shape="rect" href="elf_8c.html#a525f1635a3c3784e2552653b9e5c22f7" title=" " alt="" coords="200,64,370,90"/>
+<area shape="poly" title=" " alt="" coords="402,86,370,84,371,79,403,81"/>
+<area shape="poly" title=" " alt="" coords="231,134,116,93,118,88,233,129"/>
+<area shape="poly" title=" " alt="" coords="319,125,307,118,285,116,264,118,253,123,251,128,256,135,252,138,245,129,249,119,263,113,285,111,309,113,321,120"/>
+<area shape="poly" title=" " alt="" coords="319,52,307,45,285,43,264,45,253,49,251,55,256,62,252,65,245,55,249,46,263,39,285,37,309,40,321,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4d5aa4a792733505cc5c414beae6354c" name="a4d5aa4a792733505cc5c414beae6354c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d5aa4a792733505cc5c414beae6354c">&#9670;&#160;</a></span>elf32_getSectionStringTableIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t elf32_getSectionStringTableIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>elf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the index of the section string table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elf</td><td>Pointer to an elf_t structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Index of the section string table. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a4d5aa4a792733505cc5c414beae6354c_cgraph.png" border="0" usemap="#aelf32_8h_a4d5aa4a792733505cc5c414beae6354c_cgraph" alt=""/></div>
+<map name="aelf32_8h_a4d5aa4a792733505cc5c414beae6354c_cgraph" id="aelf32_8h_a4d5aa4a792733505cc5c414beae6354c_cgraph">
+<area shape="rect" title="Get the index of the section string table." alt="" coords="5,5,190,46"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="238,13,354,39"/>
+<area shape="poly" title=" " alt="" coords="190,23,222,23,222,28,190,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a4d5aa4a792733505cc5c414beae6354c_icgraph.png" border="0" usemap="#aelf32_8h_a4d5aa4a792733505cc5c414beae6354c_icgraph" alt=""/></div>
+<map name="aelf32_8h_a4d5aa4a792733505cc5c414beae6354c_icgraph" id="aelf32_8h_a4d5aa4a792733505cc5c414beae6354c_icgraph">
+<area shape="rect" title="Get the index of the section string table." alt="" coords="636,59,821,100"/>
+<area shape="rect" href="elf_8c.html#ac99173ca6a63aeb9b88ea082c0b203c9" title=" " alt="" coords="418,59,588,100"/>
+<area shape="poly" title=" " alt="" coords="621,82,589,82,589,77,621,77"/>
+<area shape="poly" title=" " alt="" coords="539,46,525,40,503,38,482,40,470,44,465,50,467,58,462,59,460,49,467,40,481,35,503,33,527,35,541,41"/>
+<area shape="rect" href="elf_8c.html#af7dd2485abe0e81d58c8114972adff71" title=" " alt="" coords="215,29,355,55"/>
+<area shape="poly" title=" " alt="" coords="403,65,355,57,355,51,403,60"/>
+<area shape="rect" href="elf_8c.html#a525f1635a3c3784e2552653b9e5c22f7" title=" " alt="" coords="200,103,370,128"/>
+<area shape="poly" title=" " alt="" coords="403,99,367,105,366,99,402,93"/>
+<area shape="poly" title=" " alt="" coords="321,17,309,10,285,8,263,10,251,15,249,20,255,27,250,31,244,21,248,11,262,5,285,3,310,5,323,12"/>
+<area shape="rect" href="elf_8c.html#aa41336d7f07ac318a13428113cbd1915" title=" " alt="" coords="5,29,152,55"/>
+<area shape="poly" title=" " alt="" coords="200,45,152,45,152,40,200,40"/>
+<area shape="poly" title=" " alt="" coords="114,17,102,10,78,8,57,10,45,15,43,20,48,27,44,31,37,21,41,11,55,5,79,3,104,5,117,12"/>
+<area shape="poly" title=" " alt="" coords="321,90,309,84,285,81,263,83,251,88,249,93,255,101,250,104,244,94,248,84,262,78,285,76,310,79,323,86"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a68b790d384023453e89fb01441a5d29e" name="a68b790d384023453e89fb01441a5d29e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68b790d384023453e89fb01441a5d29e">&#9670;&#160;</a></span>elf32_getSectionTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structElf32__Shdr.html">Elf32_Shdr</a> * elf32_getSectionTable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>elf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a pointer to the section header table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elf</td><td>Pointer to an elf_t structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the section header table. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a68b790d384023453e89fb01441a5d29e_cgraph.png" border="0" usemap="#aelf32_8h_a68b790d384023453e89fb01441a5d29e_cgraph" alt=""/></div>
+<map name="aelf32_8h_a68b790d384023453e89fb01441a5d29e_cgraph" id="aelf32_8h_a68b790d384023453e89fb01441a5d29e_cgraph">
+<area shape="rect" title="Get a pointer to the section header table." alt="" coords="5,5,156,31"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="204,5,320,31"/>
+<area shape="poly" title=" " alt="" coords="156,16,188,16,188,21,156,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a68b790d384023453e89fb01441a5d29e_icgraph.png" border="0" usemap="#aelf32_8h_a68b790d384023453e89fb01441a5d29e_icgraph" alt=""/></div>
+<map name="aelf32_8h_a68b790d384023453e89fb01441a5d29e_icgraph" id="aelf32_8h_a68b790d384023453e89fb01441a5d29e_icgraph">
+<area shape="rect" title="Get a pointer to the section header table." alt="" coords="1259,367,1410,392"/>
+<area shape="rect" href="elf32_8h.html#a0a88340581d03e48088e0db49ab17988" title="Get the virtual address of a section." alt="" coords="1045,48,1190,74"/>
+<area shape="poly" title=" " alt="" coords="1325,352,1311,302,1288,238,1255,170,1234,138,1209,109,1185,90,1158,77,1161,72,1188,86,1213,106,1238,135,1259,167,1293,236,1316,300,1330,351"/>
+<area shape="rect" href="elf32_8h.html#a2bde88ff9d03faf5744daebd623ce3d8" title="Get the address alignment of a section." alt="" coords="1030,120,1204,146"/>
+<area shape="poly" title=" " alt="" coords="1320,353,1278,270,1247,223,1210,181,1184,163,1156,149,1158,144,1186,158,1213,178,1251,220,1283,268,1325,351"/>
+<area shape="rect" href="elf32_8h.html#ab9b0583ef28fde71cc9a153db67b675f" title="Get the entry size of elements in a section." alt="" coords="1031,192,1203,218"/>
+<area shape="poly" title=" " alt="" coords="1312,356,1268,305,1210,252,1181,235,1152,221,1154,216,1184,230,1213,248,1272,301,1316,353"/>
+<area shape="rect" href="elf32_8h.html#a2e8ed24680c76914f5d0e940b10e6531" title="Get the flags of a section." alt="" coords="1042,263,1192,288"/>
+<area shape="poly" title=" " alt="" coords="1294,361,1210,319,1149,291,1151,286,1212,314,1296,357"/>
+<area shape="rect" href="elf32_8h.html#aea0a6a931e3656d60bb2a51d9d957f9a" title="Get the info field of a section." alt="" coords="1047,329,1187,355"/>
+<area shape="poly" title=" " alt="" coords="1243,367,1187,357,1188,352,1244,361"/>
+<area shape="rect" href="elf32_8h.html#a4a1973f2b1b0ee911e361770253b3d18" title="Get the link field of a section." alt="" coords="1046,391,1189,416"/>
+<area shape="poly" title=" " alt="" coords="1244,392,1190,398,1189,393,1243,387"/>
+<area shape="rect" href="elf32_8h.html#a9423174406bc55978c59cd74f6cc0fe8" title="Get the offset of a section name in the string table." alt="" coords="1023,632,1211,658"/>
+<area shape="poly" title=" " alt="" coords="1330,409,1316,455,1293,513,1259,573,1238,599,1213,623,1195,634,1192,629,1210,619,1234,596,1255,570,1288,511,1311,454,1324,407"/>
+<area shape="rect" href="elf32_8h.html#af60a2fc8eb6c2978c78c1422d0201fdd" title="Get the file offset of a section." alt="" coords="1041,457,1194,483"/>
+<area shape="poly" title=" " alt="" coords="1289,401,1151,459,1149,454,1287,396"/>
+<area shape="rect" href="elf32_8h.html#ab8713114b4857282bcb2df88f593ccf9" title="Get the size of a section." alt="" coords="1046,583,1189,608"/>
+<area shape="poly" title=" " alt="" coords="1322,408,1279,479,1249,518,1213,554,1187,571,1159,585,1157,580,1184,567,1210,549,1245,515,1275,476,1318,405"/>
+<area shape="rect" href="elf32_8h.html#a5b72337b078cb40e318aeb18e3b0a74b" title="Get the type of a section." alt="" coords="1044,513,1190,539"/>
+<area shape="poly" title=" " alt="" coords="1315,406,1271,453,1243,477,1213,498,1174,515,1172,510,1210,493,1240,472,1267,449,1311,403"/>
+<area shape="rect" href="elf_8c.html#aaea508f707d7e1a50d7e426497f701cb" title=" " alt="" coords="829,29,961,55"/>
+<area shape="poly" title=" " alt="" coords="1029,56,961,50,961,45,1029,51"/>
+<area shape="poly" title=" " alt="" coords="932,17,920,10,895,8,872,10,860,15,857,20,863,27,859,31,852,21,856,11,871,5,895,3,921,5,935,12"/>
+<area shape="rect" href="elf_8c.html#a795e21d45927f36eb046d0bff4a270d5" title=" " alt="" coords="815,103,975,128"/>
+<area shape="poly" title=" " alt="" coords="1014,127,975,124,976,119,1015,122"/>
+<area shape="poly" title=" " alt="" coords="932,90,920,84,895,81,872,83,860,88,857,93,863,101,859,104,852,94,856,84,871,78,895,76,921,79,935,86"/>
+<area shape="rect" href="elf_8c.html#aaf56b06d020c2a5e08a9e66a38716c84" title=" " alt="" coords="816,176,974,202"/>
+<area shape="poly" title=" " alt="" coords="1016,200,974,197,975,192,1016,195"/>
+<area shape="poly" title=" " alt="" coords="932,164,920,157,895,155,872,157,860,161,857,167,863,174,859,177,852,167,856,158,871,151,895,149,921,152,935,159"/>
+<area shape="rect" href="elf_8c.html#acac95db4ed37ddee9a15ea016f503a4b" title=" " alt="" coords="827,249,963,275"/>
+<area shape="poly" title=" " alt="" coords="1026,273,963,269,964,264,1027,267"/>
+<area shape="poly" title=" " alt="" coords="932,237,920,230,895,228,872,230,860,235,857,240,863,247,859,251,852,241,856,231,871,225,895,223,921,225,935,232"/>
+<area shape="rect" href="elf_8c.html#a74044a0df7da01d793da373653cc3bf1" title=" " alt="" coords="832,323,958,348"/>
+<area shape="poly" title=" " alt="" coords="1032,342,958,340,959,335,1032,337"/>
+<area shape="poly" title=" " alt="" coords="932,310,920,304,895,301,872,303,860,308,857,313,863,321,859,324,852,314,856,304,871,298,895,296,921,299,935,306"/>
+<area shape="rect" href="elf_8c.html#a430e3d8e32b744c38cd8f317a45ccfc5" title=" " alt="" coords="830,396,960,422"/>
+<area shape="poly" title=" " alt="" coords="1030,408,960,410,960,405,1030,403"/>
+<area shape="poly" title=" " alt="" coords="932,384,920,377,895,375,872,377,860,381,857,387,863,394,859,397,852,387,856,378,871,371,895,369,921,372,935,379"/>
+<area shape="rect" href="elf_8c.html#adfe57839981a50cbf02310d29129b1b6" title=" " alt="" coords="592,707,767,732"/>
+<area shape="poly" title=" " alt="" coords="1023,663,760,709,759,703,1022,658"/>
+<area shape="poly" title=" " alt="" coords="714,694,702,688,679,685,659,687,647,692,645,697,651,705,646,708,640,698,644,688,657,682,680,680,704,683,716,690"/>
+<area shape="rect" href="elf_8c.html#af7dd2485abe0e81d58c8114972adff71" title=" " alt="" coords="215,619,355,644"/>
+<area shape="poly" title=" " alt="" coords="598,706,417,666,339,647,341,642,419,661,599,700"/>
+<area shape="poly" title=" " alt="" coords="319,606,307,600,285,597,264,599,253,604,251,609,256,617,252,620,245,610,249,600,263,594,285,592,309,595,321,602"/>
+<area shape="rect" href="elf_8c.html#aa41336d7f07ac318a13428113cbd1915" title=" " alt="" coords="5,545,152,571"/>
+<area shape="poly" title=" " alt="" coords="231,615,116,574,118,569,233,610"/>
+<area shape="poly" title=" " alt="" coords="114,533,102,526,78,524,57,526,45,531,43,536,48,543,44,547,37,537,41,527,55,521,79,519,104,521,117,528"/>
+<area shape="rect" href="elf_8c.html#aef51a6645d6cd442088a9a4c64e9e256" title=" " alt="" coords="825,469,965,495"/>
+<area shape="poly" title=" " alt="" coords="1025,478,965,481,965,476,1025,472"/>
+<area shape="poly" title=" " alt="" coords="932,457,920,450,895,448,872,450,860,455,857,460,863,467,859,471,852,461,856,451,871,445,895,443,921,445,935,452"/>
+<area shape="rect" href="elf_8c.html#ac68061c70e5d3e98c6de86d9fa1041d5" title=" " alt="" coords="627,457,732,483"/>
+<area shape="poly" title=" " alt="" coords="810,480,732,476,732,470,810,475"/>
+<area shape="poly" title=" " alt="" coords="612,470,528,469,425,472,312,483,200,505,147,524,103,547,101,542,145,519,199,500,311,478,425,467,528,463,612,464"/>
+<area shape="poly" title=" " alt="" coords="714,445,702,438,679,436,659,438,647,443,645,448,651,455,646,458,640,449,644,439,657,433,680,431,704,433,716,440"/>
+<area shape="rect" href="elf_8c.html#a150d6bd162869e12a80fa4a6d267c625" title=" " alt="" coords="418,539,544,564"/>
+<area shape="poly" title=" " alt="" coords="614,489,593,497,546,519,506,541,503,536,544,514,591,492,612,484"/>
+<area shape="poly" title=" " alt="" coords="435,573,320,621,318,616,433,568"/>
+<area shape="poly" title=" " alt="" coords="515,526,504,520,481,517,461,519,450,524,447,529,453,537,448,540,442,530,446,520,459,514,481,512,505,515,518,522"/>
+<area shape="rect" href="elf_8c.html#a525f1635a3c3784e2552653b9e5c22f7" title=" " alt="" coords="200,539,370,564"/>
+<area shape="poly" title=" " alt="" coords="402,554,371,554,371,549,402,549"/>
+<area shape="poly" title=" " alt="" coords="319,526,307,520,285,517,264,519,253,524,251,529,256,537,252,540,245,530,249,520,263,514,285,512,309,515,321,522"/>
+<area shape="rect" href="elf_8c.html#a3daeb756b03485e27a4f6662647389d6" title=" " alt="" coords="830,595,960,620"/>
+<area shape="poly" title=" " alt="" coords="1030,603,960,607,960,601,1030,598"/>
+<area shape="poly" title=" " alt="" coords="815,613,355,631,355,626,814,608"/>
+<area shape="poly" title=" " alt="" coords="870,585,825,539,796,516,765,497,731,483,733,478,768,492,799,512,828,536,874,581"/>
+<area shape="poly" title=" " alt="" coords="815,601,592,571,544,564,545,559,593,566,815,595"/>
+<area shape="poly" title=" " alt="" coords="932,582,920,576,895,573,872,575,860,580,857,585,863,593,859,596,852,586,856,576,871,570,895,568,921,571,935,578"/>
+<area shape="rect" href="elf_8c.html#a4421db02fe4d89f40177d0587452ee7b" title=" " alt="" coords="613,531,746,556"/>
+<area shape="poly" title=" " alt="" coords="1029,532,746,544,746,538,1028,527"/>
+<area shape="poly" title=" " alt="" coords="598,549,545,552,545,546,598,544"/>
+<area shape="poly" title=" " alt="" coords="714,518,702,512,679,509,659,511,647,516,645,521,651,529,646,532,640,522,644,512,657,506,680,504,704,507,716,514"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5b72337b078cb40e318aeb18e3b0a74b" name="a5b72337b078cb40e318aeb18e3b0a74b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b72337b078cb40e318aeb18e3b0a74b">&#9670;&#160;</a></span>elf32_getSectionType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t elf32_getSectionType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>elf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the type of a section. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elf</td><td>Pointer to an elf_t structure. </td></tr>
+    <tr><td class="paramname">i</td><td>Index of the section. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Section type. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a5b72337b078cb40e318aeb18e3b0a74b_cgraph.png" border="0" usemap="#aelf32_8h_a5b72337b078cb40e318aeb18e3b0a74b_cgraph" alt=""/></div>
+<map name="aelf32_8h_a5b72337b078cb40e318aeb18e3b0a74b_cgraph" id="aelf32_8h_a5b72337b078cb40e318aeb18e3b0a74b_cgraph">
+<area shape="rect" title="Get the type of a section." alt="" coords="5,5,152,31"/>
+<area shape="rect" href="elf32_8h.html#a68b790d384023453e89fb01441a5d29e" title="Get a pointer to the section header table." alt="" coords="200,5,350,31"/>
+<area shape="poly" title=" " alt="" coords="152,16,184,16,184,21,152,21"/>
+<area shape="rect" href="elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="398,5,514,31"/>
+<area shape="poly" title=" " alt="" coords="350,16,382,16,382,21,350,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a5b72337b078cb40e318aeb18e3b0a74b_icgraph.png" border="0" usemap="#aelf32_8h_a5b72337b078cb40e318aeb18e3b0a74b_icgraph" alt=""/></div>
+<map name="aelf32_8h_a5b72337b078cb40e318aeb18e3b0a74b_icgraph" id="aelf32_8h_a5b72337b078cb40e318aeb18e3b0a74b_icgraph">
+<area shape="rect" title="Get the type of a section." alt="" coords="773,67,919,92"/>
+<area shape="rect" href="elf_8c.html#a4421db02fe4d89f40177d0587452ee7b" title=" " alt="" coords="592,67,725,92"/>
+<area shape="poly" title=" " alt="" coords="757,82,725,82,725,77,757,77"/>
+<area shape="poly" title=" " alt="" coords="689,54,678,48,658,45,640,47,630,52,628,57,633,65,628,68,623,58,626,48,638,42,659,40,680,43,691,49"/>
+<area shape="rect" href="elf_8c.html#a150d6bd162869e12a80fa4a6d267c625" title=" " alt="" coords="418,67,544,92"/>
+<area shape="poly" title=" " alt="" coords="577,82,545,82,545,77,577,77"/>
+<area shape="poly" title=" " alt="" coords="511,54,501,48,481,45,463,47,453,52,451,57,456,65,451,68,445,58,449,48,461,42,481,40,503,43,514,49"/>
+<area shape="rect" href="elf_8c.html#af7dd2485abe0e81d58c8114972adff71" title=" " alt="" coords="215,29,355,55"/>
+<area shape="poly" title=" " alt="" coords="402,67,355,58,356,53,403,62"/>
+<area shape="rect" href="elf_8c.html#a525f1635a3c3784e2552653b9e5c22f7" title=" " alt="" coords="200,103,370,128"/>
+<area shape="poly" title=" " alt="" coords="403,96,359,105,358,99,402,91"/>
+<area shape="poly" title=" " alt="" coords="319,17,307,10,285,8,264,10,253,15,251,20,256,27,252,30,245,21,249,11,263,5,285,3,309,5,321,12"/>
+<area shape="rect" href="elf_8c.html#aa41336d7f07ac318a13428113cbd1915" title=" " alt="" coords="5,29,152,55"/>
+<area shape="poly" title=" " alt="" coords="200,45,152,45,152,40,200,40"/>
+<area shape="poly" title=" " alt="" coords="114,17,102,10,78,8,57,10,45,15,43,20,48,27,44,31,37,21,41,11,55,5,79,3,104,5,117,12"/>
+<area shape="poly" title=" " alt="" coords="319,90,307,84,285,81,264,83,253,88,251,93,256,101,252,104,245,94,249,84,263,78,285,76,309,79,321,86"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a422462f1d203006dd7a2339e753b24cf" name="a422462f1d203006dd7a2339e753b24cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a422462f1d203006dd7a2339e753b24cf">&#9670;&#160;</a></span>elf_isElf32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool elf_isElf32 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structelf.html">elf_t</a> *&#160;</td>
+          <td class="paramname"><em>elf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine if the ELF file is of class ELFCLASS32. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elf</td><td>Pointer to an elf_t structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the file is ELF32, false otherwise. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elf32_8h_a422462f1d203006dd7a2339e753b24cf_icgraph.png" border="0" usemap="#aelf32_8h_a422462f1d203006dd7a2339e753b24cf_icgraph" alt=""/></div>
+<map name="aelf32_8h_a422462f1d203006dd7a2339e753b24cf_icgraph" id="aelf32_8h_a422462f1d203006dd7a2339e753b24cf_icgraph">
+<area shape="rect" title="Determine if the ELF file is of class ELFCLASS32." alt="" coords="1142,840,1223,866"/>
+<area shape="rect" href="elf_8c.html#a6bcd933a4740d599ecf691a1afe52002" title=" " alt="" coords="883,32,1083,58"/>
+<area shape="poly" title=" " alt="" coords="1177,825,1168,659,1151,421,1139,301,1125,196,1109,117,1101,90,1092,75,1074,60,1077,56,1096,71,1106,88,1114,116,1130,196,1144,301,1156,420,1174,659,1183,824"/>
+<area shape="rect" href="elf_8c.html#ac6909f36f4bd4f3d49d3d50cb62f8503" title=" " alt="" coords="906,109,1060,135"/>
+<area shape="poly" title=" " alt="" coords="1179,824,1179,683,1170,481,1160,376,1144,281,1121,203,1108,173,1092,151,1077,138,1059,130,1061,125,1080,134,1096,147,1112,171,1126,201,1149,280,1165,376,1175,480,1184,683,1185,824"/>
+<area shape="rect" href="elf_8c.html#a169d82be0b619ac14cdd90a99632a4ae" title=" " alt="" coords="923,185,1043,211"/>
+<area shape="poly" title=" " alt="" coords="1179,824,1176,698,1164,520,1153,429,1138,346,1118,278,1106,252,1092,232,1069,215,1042,205,1044,200,1072,210,1096,228,1110,249,1123,276,1143,345,1159,429,1169,520,1181,698,1184,824"/>
+<area shape="rect" href="elf_8c.html#ac7f9085709fd8512fda6f03eedae384a" title=" " alt="" coords="890,531,1076,556"/>
+<area shape="poly" title=" " alt="" coords="1179,825,1175,770,1163,701,1152,665,1137,630,1117,598,1092,569,1075,558,1078,553,1096,566,1121,594,1141,627,1157,663,1168,700,1180,770,1184,824"/>
+<area shape="rect" href="elf_8c.html#a6964f249e17c45a6be44c0a489813d1e" title=" " alt="" coords="913,803,1053,828"/>
+<area shape="poly" title=" " alt="" coords="1126,845,1053,831,1054,826,1127,840"/>
+<area shape="rect" href="elf_8c.html#a3836854f84b6f285fbaced66e0cb2865" title=" " alt="" coords="893,1177,1073,1203"/>
+<area shape="poly" title=" " alt="" coords="1182,882,1176,934,1162,1001,1136,1072,1118,1105,1096,1136,1065,1162,1030,1179,1027,1174,1062,1158,1092,1132,1114,1102,1131,1069,1156,999,1171,933,1177,881"/>
+<area shape="rect" href="elf_8c.html#aa1c323318dd8e6a5f29fb6671c9464e0" title=" " alt="" coords="884,677,1082,703"/>
+<area shape="poly" title=" " alt="" coords="1168,827,1138,774,1117,747,1092,724,1055,706,1058,701,1096,720,1121,744,1143,771,1172,824"/>
+<area shape="rect" href="elf_8c.html#a1030f49f98d91540e499d6b4e06fdd11" title=" " alt="" coords="640,103,824,128"/>
+<area shape="poly" title=" " alt="" coords="1178,825,1175,706,1163,541,1152,457,1137,381,1117,318,1105,294,1092,276,1067,255,1041,245,1016,243,989,245,932,247,902,241,870,226,853,209,844,192,837,176,822,159,798,143,773,131,775,127,801,139,825,155,841,173,849,190,857,206,873,221,903,236,933,242,989,239,1016,238,1043,240,1069,251,1096,272,1110,291,1122,316,1142,379,1157,456,1168,541,1180,706,1184,825"/>
+<area shape="rect" href="elf_8c.html#a27e18d4b13e9948bae5a8bcaaed36c07" title=" " alt="" coords="872,311,1094,336"/>
+<area shape="poly" title=" " alt="" coords="1178,825,1172,720,1158,577,1147,504,1132,439,1114,385,1092,349,1079,339,1083,335,1096,346,1119,383,1138,437,1152,503,1163,576,1177,719,1183,825"/>
+<area shape="rect" href="elf_8c.html#a6eb359762d57487c3a35135d9984c56d" title=" " alt="" coords="890,604,1076,630"/>
+<area shape="poly" title=" " alt="" coords="1175,825,1167,784,1152,734,1128,685,1112,662,1092,643,1075,632,1078,627,1096,639,1116,659,1132,682,1157,732,1173,783,1181,824"/>
+<area shape="rect" href="elf_8c.html#a3733d8dfb8dc06846c576d036bce3352" title=" " alt="" coords="890,457,1076,483"/>
+<area shape="poly" title=" " alt="" coords="1176,825,1165,748,1148,649,1124,556,1109,520,1092,496,1074,484,1077,479,1096,492,1113,517,1129,554,1153,647,1171,747,1181,824"/>
+<area shape="rect" href="elf_8c.html#a41c0cd2a112d7eec5f875dead3e50f9a" title=" " alt="" coords="642,751,822,776"/>
+<area shape="poly" title=" " alt="" coords="1162,829,1132,795,1114,780,1093,769,1056,756,1017,747,937,741,861,744,797,753,796,747,861,739,937,735,1017,742,1057,751,1095,764,1117,776,1136,791,1166,825"/>
+<area shape="rect" href="elf_8c.html#a10553020947aa2836eebef4d569b00b4" title=" " alt="" coords="890,384,1076,410"/>
+<area shape="poly" title=" " alt="" coords="1177,825,1169,733,1153,612,1142,552,1128,497,1111,452,1092,423,1075,410,1078,406,1096,419,1116,450,1133,495,1147,551,1159,611,1174,733,1182,824"/>
+<area shape="rect" href="elf_8c.html#aaea508f707d7e1a50d7e426497f701cb" title=" " alt="" coords="917,1251,1049,1276"/>
+<area shape="poly" title=" " alt="" coords="1180,881,1169,959,1151,1058,1126,1153,1112,1191,1096,1217,1071,1239,1041,1253,1039,1248,1068,1234,1092,1214,1107,1188,1121,1151,1146,1057,1164,958,1175,881"/>
+<area shape="rect" href="elf_8c.html#a795e21d45927f36eb046d0bff4a270d5" title=" " alt="" coords="903,1324,1063,1350"/>
+<area shape="poly" title=" " alt="" coords="1182,881,1173,972,1156,1094,1131,1211,1115,1258,1096,1291,1072,1312,1043,1326,1041,1321,1069,1307,1092,1287,1110,1255,1125,1210,1150,1093,1167,972,1176,881"/>
+<area shape="rect" href="elf_8c.html#aaf56b06d020c2a5e08a9e66a38716c84" title=" " alt="" coords="904,1397,1062,1423"/>
+<area shape="poly" title=" " alt="" coords="1183,881,1175,986,1160,1129,1149,1202,1134,1269,1117,1325,1096,1364,1072,1385,1044,1399,1041,1394,1069,1381,1092,1361,1112,1323,1129,1268,1143,1201,1155,1129,1170,986,1177,881"/>
+<area shape="rect" href="elf_8c.html#acac95db4ed37ddee9a15ea016f503a4b" title=" " alt="" coords="915,1471,1051,1496"/>
+<area shape="poly" title=" " alt="" coords="1183,881,1178,1000,1164,1165,1153,1249,1138,1327,1120,1391,1096,1437,1072,1459,1044,1473,1042,1468,1069,1454,1092,1434,1115,1390,1133,1326,1148,1248,1159,1164,1173,999,1178,881"/>
+<area shape="rect" href="elf_8c.html#a74044a0df7da01d793da373653cc3bf1" title=" " alt="" coords="920,1544,1046,1570"/>
+<area shape="poly" title=" " alt="" coords="1184,881,1180,1013,1168,1200,1157,1296,1142,1385,1122,1458,1110,1488,1096,1511,1073,1532,1045,1546,1042,1541,1070,1527,1092,1507,1105,1485,1117,1457,1137,1383,1152,1295,1163,1199,1175,1013,1178,881"/>
+<area shape="rect" href="elf_8c.html#a430e3d8e32b744c38cd8f317a45ccfc5" title=" " alt="" coords="918,1617,1048,1643"/>
+<area shape="poly" title=" " alt="" coords="1184,881,1183,1025,1172,1234,1162,1342,1146,1442,1125,1525,1111,1558,1096,1584,1073,1605,1045,1619,1042,1614,1070,1601,1092,1580,1107,1556,1120,1523,1141,1441,1156,1342,1167,1234,1177,1025,1179,881"/>
+<area shape="rect" href="elf_8c.html#adfe57839981a50cbf02310d29129b1b6" title=" " alt="" coords="418,1189,592,1215"/>
+<area shape="poly" title=" " alt="" coords="1182,881,1176,928,1162,985,1136,1043,1118,1069,1095,1092,1030,1111,893,1138,589,1191,588,1186,892,1133,1028,1106,1093,1088,1114,1066,1131,1040,1156,983,1171,927,1177,881"/>
+<area shape="rect" href="elf_8c.html#aef51a6645d6cd442088a9a4c64e9e256" title=" " alt="" coords="913,876,1053,902"/>
+<area shape="poly" title=" " alt="" coords="1127,865,1054,879,1053,874,1126,860"/>
+<area shape="rect" href="elf_8c.html#a3daeb756b03485e27a4f6662647389d6" title=" " alt="" coords="918,1001,1048,1027"/>
+<area shape="poly" title=" " alt="" coords="1167,880,1136,920,1096,960,1058,985,1020,1003,1018,998,1055,980,1092,956,1132,917,1162,877"/>
+<area shape="rect" href="elf_8c.html#ac99173ca6a63aeb9b88ea082c0b203c9" title=" " alt="" coords="420,1101,590,1141"/>
+<area shape="poly" title=" " alt="" coords="1179,882,1170,919,1154,963,1130,1006,1114,1025,1095,1042,1068,1053,1021,1064,885,1085,591,1116,591,1111,884,1080,1020,1059,1066,1048,1093,1037,1110,1021,1126,1003,1149,960,1165,917,1174,880"/>
+<area shape="rect" href="elf_8c.html#a4421db02fe4d89f40177d0587452ee7b" title=" " alt="" coords="666,949,798,975"/>
+<area shape="poly" title=" " alt="" coords="1157,878,1129,899,1095,917,1017,940,937,955,862,963,798,965,798,960,862,957,937,950,1016,935,1093,912,1126,894,1154,874"/>
+<area shape="poly" title=" " alt="" coords="1017,20,1006,13,983,11,962,13,951,17,948,23,954,30,949,33,943,23,947,14,960,7,983,5,1007,8,1020,15"/>
+<area shape="rect" href="elf_8c.html#a34a84a8ca483afa40d9df0edb49e4f42" title=" " alt="" coords="643,29,821,55"/>
+<area shape="poly" title=" " alt="" coords="867,46,821,46,822,40,867,41"/>
+<area shape="poly" title=" " alt="" coords="772,17,758,10,732,8,708,10,695,15,692,20,699,27,694,31,687,21,691,11,707,5,732,3,760,5,774,12"/>
+<area shape="rect" href="elf_8c.html#a4c8179f773dec5bfa05b9f13a0093765" title=" " alt="" coords="462,29,549,55"/>
+<area shape="poly" title=" " alt="" coords="627,45,549,45,549,40,627,40"/>
+<area shape="poly" title=" " alt="" coords="543,17,531,10,505,8,482,10,469,15,467,20,473,27,469,31,461,21,466,11,481,5,505,3,532,5,546,12"/>
+<area shape="poly" title=" " alt="" coords="931,106,823,69,786,58,788,53,824,64,933,101"/>
+<area shape="poly" title=" " alt="" coords="1017,97,1006,90,983,88,962,90,951,95,948,100,954,107,949,110,943,101,947,91,960,85,983,83,1007,85,1020,92"/>
+<area shape="poly" title=" " alt="" coords="1017,173,1006,166,983,164,962,166,951,171,948,176,954,183,949,186,943,177,947,167,960,161,983,159,1007,161,1020,168"/>
+<area shape="poly" title=" " alt="" coords="1017,518,1006,512,983,509,962,511,951,516,948,521,954,529,949,532,943,522,947,512,960,506,983,504,1007,507,1020,514"/>
+<area shape="rect" href="elf_8c.html#a994d1b358e939467b6b0049f5abcc362" title=" " alt="" coords="657,427,807,452"/>
+<area shape="poly" title=" " alt="" coords="931,527,870,498,847,481,822,466,794,455,796,450,825,461,849,477,873,493,934,522"/>
+<area shape="rect" href="elf_8c.html#ac2883438bf028a2c2a0876bbe9bfd2b7" title=" " alt="" coords="688,500,776,526"/>
+<area shape="poly" title=" " alt="" coords="874,533,776,521,776,515,874,528"/>
+<area shape="rect" href="loader_8c.html#ad7fb2a5875c6781f1a96640053fc10ba" title="Load an ELF file into memory." alt="" coords="475,551,535,576"/>
+<area shape="poly" title=" " alt="" coords="874,551,536,565,536,560,874,545"/>
+<area shape="poly" title=" " alt="" coords="772,414,758,408,732,405,708,407,695,412,692,417,699,425,694,428,687,418,691,408,707,402,732,400,760,403,774,410"/>
+<area shape="poly" title=" " alt="" coords="772,488,758,481,732,479,708,481,695,485,692,491,699,498,694,501,687,491,691,482,707,475,732,473,760,476,774,483"/>
+<area shape="poly" title=" " alt="" coords="544,543,543,538,536,534,505,529,481,532,468,537,467,543,476,551,473,555,462,544,464,533,479,526,505,524,538,529,547,534,549,541"/>
+<area shape="poly" title=" " alt="" coords="1017,790,1006,784,983,781,962,783,951,788,948,793,954,801,949,804,943,794,947,784,960,778,983,776,1007,779,1020,786"/>
+<area shape="rect" href="elf_8c.html#ac68061c70e5d3e98c6de86d9fa1041d5" title=" " alt="" coords="680,876,784,902"/>
+<area shape="poly" title=" " alt="" coords="900,835,872,842,768,878,766,873,871,837,899,830"/>
+<area shape="rect" href="elf_8c.html#aa41336d7f07ac318a13428113cbd1915" title=" " alt="" coords="5,876,152,902"/>
+<area shape="poly" title=" " alt="" coords="898,822,590,839,396,854,200,873,152,879,152,874,199,868,395,848,590,834,898,816"/>
+<area shape="poly" title=" " alt="" coords="772,864,758,857,732,855,708,857,695,861,692,867,699,874,694,877,687,867,691,858,707,851,732,849,760,852,774,859"/>
+<area shape="poly" title=" " alt="" coords="664,892,152,892,152,886,664,886"/>
+<area shape="rect" href="elf_8c.html#a150d6bd162869e12a80fa4a6d267c625" title=" " alt="" coords="442,960,568,986"/>
+<area shape="poly" title=" " alt="" coords="666,907,641,915,583,939,534,962,532,957,581,934,639,910,665,902"/>
+<area shape="poly" title=" " alt="" coords="114,864,102,857,78,855,57,857,45,861,43,867,48,874,44,877,37,867,41,858,55,851,79,849,104,852,117,859"/>
+<area shape="poly" title=" " alt="" coords="543,948,531,941,505,939,482,941,469,945,467,951,473,958,469,961,461,951,466,942,481,935,505,933,532,936,546,943"/>
+<area shape="rect" href="elf_8c.html#af7dd2485abe0e81d58c8114972adff71" title=" " alt="" coords="215,1033,355,1059"/>
+<area shape="poly" title=" " alt="" coords="450,994,327,1035,325,1030,449,989"/>
+<area shape="rect" href="elf_8c.html#a525f1635a3c3784e2552653b9e5c22f7" title=" " alt="" coords="200,960,370,986"/>
+<area shape="poly" title=" " alt="" coords="427,976,370,976,370,970,427,970"/>
+<area shape="poly" title=" " alt="" coords="242,1028,198,1000,136,949,91,904,95,900,140,945,201,996,244,1023"/>
+<area shape="poly" title=" " alt="" coords="321,1021,309,1014,285,1012,263,1014,251,1019,249,1024,255,1031,250,1035,244,1025,248,1015,262,1009,285,1007,310,1009,323,1016"/>
+<area shape="poly" title=" " alt="" coords="321,948,309,941,285,939,263,941,251,945,249,951,255,958,250,961,244,951,248,942,262,935,285,933,310,936,323,943"/>
+<area shape="poly" title=" " alt="" coords="1017,1165,1006,1158,983,1156,962,1158,951,1163,948,1168,954,1175,949,1178,943,1169,947,1159,960,1153,983,1151,1007,1153,1020,1160"/>
+<area shape="poly" title=" " alt="" coords="924,673,870,644,845,619,822,591,749,528,752,524,826,587,849,615,873,640,927,669"/>
+<area shape="poly" title=" " alt="" coords="868,700,814,698,756,693,696,683,639,666,602,647,567,624,517,579,521,575,570,619,604,643,641,661,698,678,756,688,814,693,868,694"/>
+<area shape="poly" title=" " alt="" coords="1017,665,1006,658,983,656,962,658,951,663,948,668,954,675,949,678,943,669,947,659,960,653,983,651,1007,653,1020,660"/>
+<area shape="rect" href="elf_8c.html#adf47a5394418d2ad931a14e54102aa13" title=" " alt="" coords="651,625,813,651"/>
+<area shape="poly" title=" " alt="" coords="902,676,797,654,798,649,903,671"/>
+<area shape="poly" title=" " alt="" coords="675,623,535,576,537,571,677,618"/>
+<area shape="poly" title=" " alt="" coords="772,613,758,606,732,604,708,606,695,611,692,616,699,623,694,627,687,617,691,607,707,601,732,599,760,601,774,608"/>
+<area shape="poly" title=" " alt="" coords="657,138,642,149,603,199,573,255,549,314,533,374,514,481,509,550,504,550,509,480,527,372,544,312,568,252,599,196,638,146,654,134"/>
+<area shape="poly" title=" " alt="" coords="772,90,758,84,732,81,708,83,695,88,692,93,699,101,694,104,687,94,691,84,707,78,732,76,760,79,774,86"/>
+<area shape="poly" title=" " alt="" coords="885,344,873,350,858,360,849,370,825,394,764,428,762,424,822,389,845,366,855,356,870,345,882,340"/>
+<area shape="poly" title=" " alt="" coords="877,347,873,349,861,363,854,376,848,405,844,435,837,451,826,467,801,487,773,502,771,497,798,483,822,463,832,448,838,433,843,404,849,374,857,360,870,346,873,343"/>
+<area shape="poly" title=" " alt="" coords="929,307,898,290,870,269,854,248,847,228,840,209,822,194,773,171,730,162,709,163,688,169,642,194,601,232,569,278,546,330,529,383,519,436,513,483,509,550,504,550,507,483,513,435,524,382,541,328,565,275,597,228,639,189,686,164,708,158,730,157,775,166,825,189,844,206,852,226,859,246,874,266,901,286,931,302"/>
+<area shape="poly" title=" " alt="" coords="1017,298,1006,292,983,289,962,291,951,296,948,301,954,309,949,312,943,302,947,292,960,286,983,284,1007,287,1020,294"/>
+<area shape="rect" href="elf_8c.html#a1c90c443c9fba9e81853155a3570f6f0" title=" " alt="" coords="644,228,820,254"/>
+<area shape="poly" title=" " alt="" coords="926,308,773,257,775,252,928,303"/>
+<area shape="poly" title=" " alt="" coords="772,216,758,209,732,207,708,209,695,213,692,219,699,226,694,229,687,219,691,210,707,203,732,201,760,204,774,211"/>
+<area shape="poly" title=" " alt="" coords="935,600,765,529,767,524,937,595"/>
+<area shape="poly" title=" " alt="" coords="875,629,813,634,813,629,874,623"/>
+<area shape="poly" title=" " alt="" coords="1017,592,1006,585,983,583,962,585,951,589,948,595,954,602,949,605,943,595,947,586,960,579,983,577,1007,580,1020,587"/>
+<area shape="poly" title=" " alt="" coords="875,460,807,451,808,446,875,454"/>
+<area shape="poly" title=" " alt="" coords="888,489,776,508,776,503,887,484"/>
+<area shape="poly" title=" " alt="" coords="1017,445,1006,438,983,436,962,438,951,443,948,448,954,455,949,458,943,449,947,439,960,433,983,431,1007,433,1020,440"/>
+<area shape="rect" href="elf_8c.html#a1cb7891a95c0c9ec8df524db3fb64593" title=" " alt="" coords="653,353,811,379"/>
+<area shape="poly" title=" " alt="" coords="931,453,870,424,847,408,822,393,794,382,796,377,825,388,849,403,873,420,934,449"/>
+<area shape="poly" title=" " alt="" coords="772,341,758,334,732,332,708,334,695,339,692,344,699,351,694,355,687,345,691,335,707,329,732,327,760,329,774,336"/>
+<area shape="poly" title=" " alt="" coords="691,745,639,710,600,675,565,638,515,579,519,575,569,635,604,671,642,705,694,740"/>
+<area shape="poly" title=" " alt="" coords="772,738,758,732,732,729,708,731,695,736,692,741,699,749,694,752,687,742,691,732,707,726,732,724,760,727,774,734"/>
+<area shape="poly" title=" " alt="" coords="888,416,808,429,807,424,888,410"/>
+<area shape="poly" title=" " alt="" coords="885,418,873,423,858,433,849,443,825,467,764,502,762,497,822,463,845,440,855,429,870,419,882,413"/>
+<area shape="poly" title=" " alt="" coords="931,380,870,351,847,333,837,326,823,319,771,304,729,295,688,299,642,319,611,342,585,371,564,404,547,438,523,504,511,551,506,549,518,502,542,436,559,401,581,368,608,338,639,315,687,293,729,290,773,298,825,314,840,321,850,329,873,347,934,375"/>
+<area shape="poly" title=" " alt="" coords="919,380,894,367,870,351,853,331,846,311,838,293,822,275,788,257,791,252,825,271,842,290,850,309,858,328,873,347,896,363,922,375"/>
+<area shape="poly" title=" " alt="" coords="875,386,811,378,812,373,876,381"/>
+<area shape="poly" title=" " alt="" coords="1017,372,1006,365,983,363,962,365,951,369,948,375,954,382,949,385,943,375,947,366,960,359,983,357,1007,360,1020,367"/>
+<area shape="poly" title=" " alt="" coords="1017,1238,1006,1232,983,1229,962,1231,951,1236,948,1241,954,1249,949,1252,943,1242,947,1232,960,1226,983,1224,1007,1227,1020,1234"/>
+<area shape="poly" title=" " alt="" coords="1017,1312,1006,1305,983,1303,962,1305,951,1309,948,1315,954,1322,949,1325,943,1315,947,1306,960,1299,983,1297,1007,1300,1020,1307"/>
+<area shape="poly" title=" " alt="" coords="1017,1385,1006,1378,983,1376,962,1378,951,1383,948,1388,954,1395,949,1398,943,1389,947,1379,960,1373,983,1371,1007,1373,1020,1380"/>
+<area shape="poly" title=" " alt="" coords="1017,1458,1006,1452,983,1449,962,1451,951,1456,948,1461,954,1469,949,1472,943,1462,947,1452,960,1446,983,1444,1007,1447,1020,1454"/>
+<area shape="poly" title=" " alt="" coords="1017,1532,1006,1525,983,1523,962,1525,951,1529,948,1535,954,1542,949,1545,943,1535,947,1526,960,1519,983,1517,1007,1520,1020,1527"/>
+<area shape="poly" title=" " alt="" coords="1017,1605,1006,1598,983,1596,962,1598,951,1603,948,1608,954,1615,949,1618,943,1609,947,1599,960,1593,983,1591,1007,1593,1020,1600"/>
+<area shape="poly" title=" " alt="" coords="464,1184,416,1155,350,1105,299,1061,303,1057,353,1100,420,1151,466,1179"/>
+<area shape="poly" title=" " alt="" coords="543,1177,531,1170,505,1168,482,1170,469,1175,467,1180,473,1187,469,1191,461,1181,466,1171,481,1165,505,1163,532,1165,546,1172"/>
+<area shape="poly" title=" " alt="" coords="898,892,785,892,785,886,898,886"/>
+<area shape="poly" title=" " alt="" coords="1017,864,1006,857,983,855,962,857,951,861,948,867,954,874,949,877,943,867,947,858,960,851,983,849,1007,852,1020,859"/>
+<area shape="poly" title=" " alt="" coords="951,994,893,954,823,915,784,902,785,897,825,910,896,949,954,989"/>
+<area shape="poly" title=" " alt="" coords="903,1011,640,990,568,983,569,977,641,985,903,1006"/>
+<area shape="poly" title=" " alt="" coords="903,1020,355,1046,355,1040,903,1015"/>
+<area shape="poly" title=" " alt="" coords="1017,989,1006,982,983,980,962,982,951,987,948,992,954,999,949,1002,943,993,947,983,960,977,983,975,1007,977,1020,984"/>
+<area shape="poly" title=" " alt="" coords="428,1098,324,1062,326,1057,429,1092"/>
+<area shape="poly" title=" " alt="" coords="475,1091,428,1043,400,1020,369,999,345,989,347,984,371,994,403,1015,432,1039,479,1087"/>
+<area shape="poly" title=" " alt="" coords="541,1087,528,1081,505,1079,484,1081,471,1086,467,1092,469,1099,464,1100,461,1091,468,1081,483,1076,505,1074,529,1076,543,1082"/>
+<area shape="poly" title=" " alt="" coords="650,969,569,973,569,967,650,963"/>
+<area shape="poly" title=" " alt="" coords="772,937,758,930,732,928,708,930,695,935,692,940,699,947,694,951,687,941,691,931,707,925,732,923,760,925,774,932"/>
 </map>
 </div>
 

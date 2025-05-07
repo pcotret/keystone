@@ -15,5 +15,7 @@ var riscv64_8h =
     [ "PTE_U", "riscv64_8h.html#adced9836a1dc98d72849361e6ab03cda", null ],
     [ "PTE_V", "riscv64_8h.html#a9a3c738182007bee471e44aae04c386f", null ],
     [ "PTE_W", "riscv64_8h.html#a058fcbcc3e1eab2c09c68b3e5221c545", null ],
-    [ "PTE_X", "riscv64_8h.html#ae20c834a93867eedc88007621c74ad55", null ]
+    [ "PTE_X", "riscv64_8h.html#ae20c834a93867eedc88007621c74ad55", null ],
+    [ "ptd_create", "riscv64_8h.html#a43ed31b966c5383bc205c57b94fa7819", null ],
+    [ "pte_create", "riscv64_8h.html#a2024ad555bc6069cfac80a823934b9f9", null ]
 ];

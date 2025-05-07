@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('sm-sbi-opensbi_8c.html',''); initResiz
 
 <div class="header">
   <div class="summary">
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">sm-sbi-opensbi.c File Reference</div></div>
 </div><!--header-->
@@ -195,6 +196,12 @@ Include dependency graph for sm-sbi-opensbi.c:</div>
 </map>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:abd9b560147ee232f8376f61ec0595218" id="r_abd9b560147ee232f8376f61ec0595218"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sm-sbi-opensbi_8c.html#abd9b560147ee232f8376f61ec0595218">sbi_ecall_keystone_enclave_handler</a> (unsigned long extid, unsigned long funcid, const struct sbi_trap_regs *<a class="el" href="structregs.html">regs</a>, unsigned long *out_val, struct sbi_trap_info *out_trap)</td></tr>
+<tr class="memdesc:abd9b560147ee232f8376f61ec0595218"><td class="mdescLeft">&#160;</td><td class="mdescRight">SBI handler for Keystone Enclave system calls.  <br /></td></tr>
+<tr class="separator:abd9b560147ee232f8376f61ec0595218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a5a6580dde1ba8dcb8ce4c8f7f9ce9b09" id="r_a5a6580dde1ba8dcb8ce4c8f7f9ce9b09"><td class="memItemLeft" align="right" valign="top">struct sbi_ecall_extension&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sm-sbi-opensbi_8c.html#a5a6580dde1ba8dcb8ce4c8f7f9ce9b09">ecall_keystone_enclave</a></td></tr>
@@ -203,7 +210,81 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Keystone Enclave SBI handler implementation. </p>
-</div><h2 class="groupheader">Variable Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="abd9b560147ee232f8376f61ec0595218" name="abd9b560147ee232f8376f61ec0595218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd9b560147ee232f8376f61ec0595218">&#9670;&#160;</a></span>sbi_ecall_keystone_enclave_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int sbi_ecall_keystone_enclave_handler </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>extid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>funcid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct sbi_trap_regs *&#160;</td>
+          <td class="paramname"><em>regs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long *&#160;</td>
+          <td class="paramname"><em>out_val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct sbi_trap_info *&#160;</td>
+          <td class="paramname"><em>out_trap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SBI handler for Keystone Enclave system calls. </p>
+<p>This function handles various SBI system calls related to Keystone Enclaves. It checks the <code>funcid</code> to determine the type of system call and invokes the corresponding enclave function. The function handles calls for enclave creation, destruction, execution, and other operations, ensuring correct behavior depending on the context (enclave or host).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">extid</td><td>Extension identifier for the SBI call. </td></tr>
+    <tr><td class="paramname">funcid</td><td>Function identifier for the specific SBI call. </td></tr>
+    <tr><td class="paramname">regs</td><td>Pointer to the trap registers containing the function arguments. </td></tr>
+    <tr><td class="paramname">out_val</td><td>Output value for the function, if applicable. </td></tr>
+    <tr><td class="paramname">out_trap</td><td>Trap information, if applicable.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a value indicating success or failure of the operation.<ul>
+<li><code>SBI_ERR_SM_DEPRECATED</code> if the function ID is deprecated.</li>
+<li><code>SBI_ERR_SM_ENCLAVE_SBI_PROHIBITED</code> if the function is prohibited in the current enclave context.</li>
+<li>Function-specific return values on success or failure. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
 <a id="a5a6580dde1ba8dcb8ce4c8f7f9ce9b09" name="a5a6580dde1ba8dcb8ce4c8f7f9ce9b09"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a6580dde1ba8dcb8ce4c8f7f9ce9b09">&#9670;&#160;</a></span>ecall_keystone_enclave</h2>
 
@@ -218,8 +299,9 @@ Variables</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">  .extid_start = SBI_EXT_EXPERIMENTAL_KEYSTONE_ENCLAVE,</div>
 <div class="line">  .extid_end = SBI_EXT_EXPERIMENTAL_KEYSTONE_ENCLAVE,</div>
-<div class="line">  .handle = sbi_ecall_keystone_enclave_handler,</div>
+<div class="line">  .handle = <a class="code hl_function" href="sm-sbi-opensbi_8c.html#abd9b560147ee232f8376f61ec0595218">sbi_ecall_keystone_enclave_handler</a>,</div>
 <div class="line">}</div>
+<div class="ttc" id="asm-sbi-opensbi_8c_html_abd9b560147ee232f8376f61ec0595218"><div class="ttname"><a href="sm-sbi-opensbi_8c.html#abd9b560147ee232f8376f61ec0595218">sbi_ecall_keystone_enclave_handler</a></div><div class="ttdeci">static int sbi_ecall_keystone_enclave_handler(unsigned long extid, unsigned long funcid, const struct sbi_trap_regs *regs, unsigned long *out_val, struct sbi_trap_info *out_trap)</div><div class="ttdoc">SBI handler for Keystone Enclave system calls.</div><div class="ttdef"><b>Definition</b> sm-sbi-opensbi.c:43</div></div>
 </div><!-- fragment -->
 <p>SBI extension for Keystone Enclave system calls. </p>
 <p>SBI ecall extension for Keystone enclaves.</p>

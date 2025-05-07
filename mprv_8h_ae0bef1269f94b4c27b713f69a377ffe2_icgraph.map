@@ -1,0 +1,5 @@
+<map id="copy_to_sm" name="copy_to_sm">
+<area shape="rect" id="Node000001" title="Copy memory from external source into secure monitor." alt="" coords="229,5,320,31"/>
+<area shape="rect" id="Node000002" href="$enclave_8c.html#a462420f809082acd04431ba4bc2d04cb" title="Copy user&#45;provided enclave creation arguments." alt="" coords="5,5,181,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,21,181,21,181,16,213,16"/>
+</map>

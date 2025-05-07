@@ -1,0 +1,5 @@
+<map id="elf64_getEntryPoint" name="elf64_getEntryPoint">
+<area shape="rect" id="Node000001" title="Get the entry point address from the ELF header." alt="" coords="5,5,139,31"/>
+<area shape="rect" id="Node000002" href="$elf64_8h.html#a2188fe429ceb1c6bc2b9e67983e5c2ef" title="Get the ELF header from the file." alt="" coords="187,5,303,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,16,171,16,171,21,139,21"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="elf64_getProgramHeaderFlags" name="elf64_getProgramHeaderFlags">
+<area shape="rect" id="Node000001" title="Get the flags of a program header." alt="" coords="347,29,544,55"/>
+<area shape="rect" id="Node000002" href="$elf_8c.html#a1030f49f98d91540e499d6b4e06fdd11" title=" " alt="" coords="116,29,299,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="331,45,299,45,299,40,331,40"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="236,16,226,10,207,8,190,10,180,15,178,20,183,28,178,30,173,21,176,11,188,5,207,3,228,5,239,12"/>
+<area shape="rect" id="Node000003" href="$loader_8c.html#ad7fb2a5875c6781f1a96640053fc10ba" title="Load an ELF file into memory." alt="" coords="7,29,68,55"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="100,45,68,45,68,40,100,40"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="66,16,56,10,37,8,20,10,10,15,8,20,13,28,9,30,3,21,6,11,18,5,38,3,58,5,69,12"/>
+</map>

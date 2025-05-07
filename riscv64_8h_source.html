@@ -161,17 +161,23 @@ $(document).ready(function(){initNavTree('riscv64_8h_source.html',''); initResiz
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keyword">asm</span> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;sfence.vma&quot;</span>);</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="keyword">static</span> <span class="keyword">inline</span> pte_t pte_create(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> ppn, <span class="keywordtype">int</span> type)</div>
+<div class="foldopen" id="foldopen00099" data-start="{" data-end="}">
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="riscv64_8h.html#a2024ad555bc6069cfac80a823934b9f9">   99</a></span><span class="keyword">static</span> <span class="keyword">inline</span> pte_t <a class="code hl_function" href="riscv64_8h.html#a2024ad555bc6069cfac80a823934b9f9">pte_create</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> ppn, <span class="keywordtype">int</span> type)</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>{ </div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keywordflow">return</span> __pte( (ppn &lt;&lt; <a class="code hl_define" href="riscv64_8h.html#a5b5b713a1ec901153c786686d5962574">PTE_PPN_SHIFT</a>) | <a class="code hl_define" href="riscv64_8h.html#a9a3c738182007bee471e44aae04c386f">PTE_V</a> | type );</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
+</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="keyword">static</span> <span class="keyword">inline</span> pte_t ptd_create(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> ppn)</div>
+<div class="foldopen" id="foldopen00113" data-start="{" data-end="}">
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="riscv64_8h.html#a43ed31b966c5383bc205c57b94fa7819">  113</a></span><span class="keyword">static</span> <span class="keyword">inline</span> pte_t <a class="code hl_function" href="riscv64_8h.html#a43ed31b966c5383bc205c57b94fa7819">ptd_create</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> ppn)</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>{</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordflow">return</span> pte_create(ppn, <a class="code hl_define" href="riscv64_8h.html#a9a3c738182007bee471e44aae04c386f">PTE_V</a>);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="riscv64_8h.html#a2024ad555bc6069cfac80a823934b9f9">pte_create</a>(ppn, <a class="code hl_define" href="riscv64_8h.html#a9a3c738182007bee471e44aae04c386f">PTE_V</a>);</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}</div>
+</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="ariscv64_8h_html_a2024ad555bc6069cfac80a823934b9f9"><div class="ttname"><a href="riscv64_8h.html#a2024ad555bc6069cfac80a823934b9f9">pte_create</a></div><div class="ttdeci">static pte_t pte_create(unsigned long ppn, int type)</div><div class="ttdoc">Create a page table entry (PTE).</div><div class="ttdef"><b>Definition</b> riscv64.h:99</div></div>
+<div class="ttc" id="ariscv64_8h_html_a43ed31b966c5383bc205c57b94fa7819"><div class="ttname"><a href="riscv64_8h.html#a43ed31b966c5383bc205c57b94fa7819">ptd_create</a></div><div class="ttdeci">static pte_t ptd_create(unsigned long ppn)</div><div class="ttdoc">Create a page table directory (PTD) entry.</div><div class="ttdef"><b>Definition</b> riscv64.h:113</div></div>
 <div class="ttc" id="ariscv64_8h_html_a5b5b713a1ec901153c786686d5962574"><div class="ttname"><a href="riscv64_8h.html#a5b5b713a1ec901153c786686d5962574">PTE_PPN_SHIFT</a></div><div class="ttdeci">#define PTE_PPN_SHIFT</div><div class="ttdef"><b>Definition</b> riscv64.h:58</div></div>
 <div class="ttc" id="ariscv64_8h_html_a9a3c738182007bee471e44aae04c386f"><div class="ttname"><a href="riscv64_8h.html#a9a3c738182007bee471e44aae04c386f">PTE_V</a></div><div class="ttdeci">#define PTE_V</div><div class="ttdef"><b>Definition</b> riscv64.h:48</div></div>
 </div><!-- fragment --></div><!-- contents -->

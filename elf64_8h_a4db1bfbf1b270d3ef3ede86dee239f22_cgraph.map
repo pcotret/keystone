@@ -1,0 +1,7 @@
+<map id="elf64_getSectionFlags" name="elf64_getSectionFlags">
+<area shape="rect" id="Node000001" title="Get the flags of a section." alt="" coords="5,5,156,31"/>
+<area shape="rect" id="Node000002" href="$elf64_8h.html#a519c17795453c6a33475be0d64e8d6b3" title="Get a pointer to the section header table." alt="" coords="204,5,354,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,16,188,16,188,21,156,21"/>
+<area shape="rect" id="Node000003" href="$elf64_8h.html#a2188fe429ceb1c6bc2b9e67983e5c2ef" title="Get the ELF header from the file." alt="" coords="402,5,518,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="354,16,386,16,386,21,354,21"/>
+</map>

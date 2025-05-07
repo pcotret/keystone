@@ -125,7 +125,8 @@ $(document).ready(function(){initNavTree('mprv_8h_source.html',''); initResizabl
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="mprv_8h.html#a4cbedf4d32de8a7fbc7474c72274d966">   76</a></span><span class="preprocessor">#define REGBYTES (1 &lt;&lt; LOG_REGBYTES)</span></div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="mprv_8h.html#ac83e2d38cb0c4200d65e8411b98d7379">   78</a></span><span class="preprocessor">#define MPRV_BLOCK (REGBYTES * 8)</span></div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> copy_from_sm(uintptr_t dst, <span class="keywordtype">void</span> *src_buf, <span class="keywordtype">size_t</span> len)</div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="mprv_8h.html#abaee4f68f49b38ad12b28d96429aed14">   91</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code hl_function" href="mprv_8h.html#abaee4f68f49b38ad12b28d96429aed14">copy_from_sm</a>(uintptr_t dst, <span class="keywordtype">void</span> *src_buf, <span class="keywordtype">size_t</span> len)</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>{</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    uintptr_t src = (uintptr_t)src_buf;</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
@@ -163,8 +164,10 @@ $(document).ready(function(){initNavTree('mprv_8h_source.html',''); initResizabl
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}</div>
+</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> copy_to_sm(<span class="keywordtype">void</span> *dst_buf, uintptr_t src, <span class="keywordtype">size_t</span> len)</div>
+<div class="foldopen" id="foldopen00140" data-start="{" data-end="}">
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="mprv_8h.html#ae0bef1269f94b4c27b713f69a377ffe2">  140</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code hl_function" href="mprv_8h.html#ae0bef1269f94b4c27b713f69a377ffe2">copy_to_sm</a>(<span class="keywordtype">void</span> *dst_buf, uintptr_t src, <span class="keywordtype">size_t</span> len)</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>{</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    uintptr_t dst = (uintptr_t)dst_buf;</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
@@ -202,14 +205,17 @@ $(document).ready(function(){initNavTree('mprv_8h_source.html',''); initResizabl
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>}</div>
+</div>
 <div class="ttc" id="amprv_8h_html_a10df97499cb600ebc66a08f60a265740"><div class="ttname"><a href="mprv_8h.html#a10df97499cb600ebc66a08f60a265740">copy_word_from_sm</a></div><div class="ttdeci">int copy_word_from_sm(uintptr_t dst, const uintptr_t *src)</div><div class="ttdoc">Copy one register-sized word from SM.</div></div>
 <div class="ttc" id="amprv_8h_html_a2b1b6d835c2c8844e2c1f91d05564ab0"><div class="ttname"><a href="mprv_8h.html#a2b1b6d835c2c8844e2c1f91d05564ab0">copy1_from_sm</a></div><div class="ttdeci">int copy1_from_sm(uintptr_t dst, const uint8_t *src)</div><div class="ttdoc">Copy 1 byte from secure monitor memory to destination.</div></div>
 <div class="ttc" id="amprv_8h_html_a4cbedf4d32de8a7fbc7474c72274d966"><div class="ttname"><a href="mprv_8h.html#a4cbedf4d32de8a7fbc7474c72274d966">REGBYTES</a></div><div class="ttdeci">#define REGBYTES</div><div class="ttdoc">Number of bytes per register.</div><div class="ttdef"><b>Definition</b> mprv.h:76</div></div>
 <div class="ttc" id="amprv_8h_html_a53f5a0e19f13a7399184f311c3bdb4ad"><div class="ttname"><a href="mprv_8h.html#a53f5a0e19f13a7399184f311c3bdb4ad">copy1_to_sm</a></div><div class="ttdeci">int copy1_to_sm(uint8_t *dst, uintptr_t src)</div><div class="ttdoc">Copy 1 byte to secure monitor memory.</div></div>
+<div class="ttc" id="amprv_8h_html_abaee4f68f49b38ad12b28d96429aed14"><div class="ttname"><a href="mprv_8h.html#abaee4f68f49b38ad12b28d96429aed14">copy_from_sm</a></div><div class="ttdeci">static int copy_from_sm(uintptr_t dst, void *src_buf, size_t len)</div><div class="ttdoc">Copy memory from secure monitor to external destination.</div><div class="ttdef"><b>Definition</b> mprv.h:91</div></div>
 <div class="ttc" id="amprv_8h_html_abb62a4e1355be650277cf2afe34415c7"><div class="ttname"><a href="mprv_8h.html#abb62a4e1355be650277cf2afe34415c7">copy_word_to_sm</a></div><div class="ttdeci">int copy_word_to_sm(uintptr_t *dst, uintptr_t src)</div><div class="ttdoc">Copy one register-sized word to SM.</div></div>
 <div class="ttc" id="amprv_8h_html_ac83e2d38cb0c4200d65e8411b98d7379"><div class="ttname"><a href="mprv_8h.html#ac83e2d38cb0c4200d65e8411b98d7379">MPRV_BLOCK</a></div><div class="ttdeci">#define MPRV_BLOCK</div><div class="ttdoc">Size of an mprv_block in bytes.</div><div class="ttdef"><b>Definition</b> mprv.h:78</div></div>
 <div class="ttc" id="amprv_8h_html_acddc4090683a0336f5097327b2c2c25e"><div class="ttname"><a href="mprv_8h.html#acddc4090683a0336f5097327b2c2c25e">copy_block_to_sm</a></div><div class="ttdeci">int copy_block_to_sm(mprv_block *dst, uintptr_t src)</div><div class="ttdoc">Copy one full mprv_block to SM.</div></div>
 <div class="ttc" id="amprv_8h_html_ad38f4e13942b781d6911ec49b69e1415"><div class="ttname"><a href="mprv_8h.html#ad38f4e13942b781d6911ec49b69e1415">copy_block_from_sm</a></div><div class="ttdeci">int copy_block_from_sm(uintptr_t dst, const mprv_block *src)</div><div class="ttdoc">Copy one full mprv_block from SM.</div></div>
+<div class="ttc" id="amprv_8h_html_ae0bef1269f94b4c27b713f69a377ffe2"><div class="ttname"><a href="mprv_8h.html#ae0bef1269f94b4c27b713f69a377ffe2">copy_to_sm</a></div><div class="ttdeci">static int copy_to_sm(void *dst_buf, uintptr_t src, size_t len)</div><div class="ttdoc">Copy memory from external source into secure monitor.</div><div class="ttdef"><b>Definition</b> mprv.h:140</div></div>
 <div class="ttc" id="astructmprv__block_html"><div class="ttname"><a href="structmprv__block.html">mprv_block</a></div><div class="ttdoc">Represents a block of memory for fast aligned transfers.</div><div class="ttdef"><b>Definition</b> mprv.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,0 +1,5 @@
+<map id="pte_create" name="pte_create">
+<area shape="rect" id="Node000001" title="Create a page table entry (PTE)." alt="" coords="136,5,218,31"/>
+<area shape="rect" id="Node000002" href="$riscv64_8h.html#a43ed31b966c5383bc205c57b94fa7819" title="Create a page table directory (PTD) entry." alt="" coords="5,5,88,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
+</map>

@@ -1,4 +1,14 @@
 <map id="elf_getSectionStringTableIndex" name="elf_getSectionStringTableIndex">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,176,70"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="58,29,56,19,61,11,73,5,91,3,109,5,120,11,118,16,108,10,90,8,75,10,65,14,61,20,63,28"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,71,176,111"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="48,71,46,61,53,52,68,46,91,44,115,46,129,53,127,58,114,52,90,49,69,51,56,56,51,62,53,69"/>
+<area shape="rect" id="Node000002" href="$elf32_8h.html#a4d5aa4a792733505cc5c414beae6354c" title="Get the index of the section string table." alt="" coords="224,5,408,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,68,228,48,229,54,164,73"/>
+<area shape="rect" id="Node000004" href="$elf64_8h.html#a5453a199a607ed53f79a521d30c1bf5c" title="Get the index of the section string table." alt="" coords="224,71,408,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="176,88,208,88,208,94,176,94"/>
+<area shape="rect" id="Node000006" href="$elf32_8h.html#a422462f1d203006dd7a2339e753b24cf" title="Determine if the ELF file is of class ELFCLASS32." alt="" coords="275,136,357,161"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="174,109,261,132,260,137,172,114"/>
+<area shape="rect" id="Node000003" href="$elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="456,13,572,39"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="408,23,441,23,441,28,408,28"/>
+<area shape="rect" id="Node000005" href="$elf64_8h.html#a2188fe429ceb1c6bc2b9e67983e5c2ef" title="Get the ELF header from the file." alt="" coords="456,78,572,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="408,88,441,88,441,94,408,94"/>
 </map>

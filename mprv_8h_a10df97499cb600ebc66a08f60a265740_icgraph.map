@@ -1,0 +1,5 @@
+<map id="copy_word_from_sm" name="copy_word_from_sm">
+<area shape="rect" id="Node000001" title="Copy one register&#45;sized word from SM." alt="" coords="160,5,301,31"/>
+<area shape="rect" id="Node000002" href="$mprv_8h.html#abaee4f68f49b38ad12b28d96429aed14" title="Copy memory from secure monitor to external destination." alt="" coords="5,5,112,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,21,112,21,112,16,144,16"/>
+</map>

@@ -1,16 +1,51 @@
 <map id="elf_getMemoryBounds" name="elf_getMemoryBounds">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,140,156,166"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="42,141,34,131,39,122,54,115,81,113,109,116,124,123,121,128,108,121,80,119,56,121,42,125,39,131,46,138"/>
-<area shape="rect" id="Node000002" href="$elf_8c.html#ac7f9085709fd8512fda6f03eedae384a" title=" " alt="" coords="222,29,408,55"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="95,137,141,101,171,81,203,64,218,58,220,63,205,69,173,85,144,105,98,142"/>
-<area shape="rect" id="Node000003" href="$elf_8c.html#a27e18d4b13e9948bae5a8bcaaed36c07" title=" " alt="" coords="204,103,426,128"/>
-<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="155,138,214,129,215,134,156,144"/>
-<area shape="rect" id="Node000004" href="$elf_8c.html#a3733d8dfb8dc06846c576d036bce3352" title=" " alt="" coords="222,176,408,202"/>
-<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="156,162,212,170,212,176,155,167"/>
-<area shape="rect" id="Node000005" href="$elf_8c.html#a10553020947aa2836eebef4d569b00b4" title=" " alt="" coords="222,249,408,275"/>
-<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="108,164,205,212,269,240,267,245,203,217,106,169"/>
-<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="276,31,268,21,273,11,289,5,315,3,343,5,358,12,356,17,342,11,315,8,290,10,277,15,274,20,280,27"/>
-<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="276,104,268,94,273,84,289,78,315,76,343,79,358,85,356,90,342,84,315,81,290,83,277,88,274,93,280,101"/>
-<area shape="poly" id="edge7_Node000004_Node000004" title=" " alt="" coords="276,177,268,167,273,158,289,151,315,149,343,152,358,159,356,164,342,157,315,155,290,157,277,161,274,167,280,174"/>
-<area shape="poly" id="edge9_Node000005_Node000005" title=" " alt="" coords="276,251,268,241,273,231,289,225,315,223,343,225,358,232,356,237,342,231,315,228,290,230,277,235,274,240,280,247"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,201,156,227"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="42,203,34,193,39,183,54,177,81,175,109,177,124,184,121,189,108,183,80,180,56,182,42,187,39,192,46,199"/>
+<area shape="rect" id="Node000002" href="$elf_8c.html#ac7f9085709fd8512fda6f03eedae384a" title=" " alt="" coords="222,59,408,84"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="94,199,140,158,202,113,256,88,258,93,205,118,143,162,97,203"/>
+<area shape="rect" id="Node000008" href="$elf_8c.html#a27e18d4b13e9948bae5a8bcaaed36c07" title=" " alt="" coords="204,152,426,178"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="145,198,235,179,236,184,146,203"/>
+<area shape="rect" id="Node000013" href="$elf_8c.html#a3733d8dfb8dc06846c576d036bce3352" title=" " alt="" coords="222,237,408,263"/>
+<area shape="poly" id="edge18_Node000001_Node000013" title=" " alt="" coords="156,223,212,232,212,237,155,228"/>
+<area shape="rect" id="Node000016" href="$elf_8c.html#a10553020947aa2836eebef4d569b00b4" title=" " alt="" coords="222,323,408,348"/>
+<area shape="poly" id="edge25_Node000001_Node000016" title=" " alt="" coords="109,225,276,313,274,318,106,230"/>
+<area shape="poly" id="edge7_Node000002_Node000002" title=" " alt="" coords="276,60,268,50,273,40,289,34,315,32,343,35,358,41,356,46,342,40,315,37,290,39,277,44,274,49,280,57"/>
+<area shape="rect" id="Node000003" href="$elf32_8h.html#aec7b4af5a2381970a8ecba538c2df27e" title="Get the number of program headers." alt="" coords="758,5,959,31"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="408,60,743,27,743,32,409,65"/>
+<area shape="rect" id="Node000005" href="$elf64_8h.html#aeecdf8b0cfc641d83f30f6cb748c107f" title="Get the number of program headers." alt="" coords="758,65,959,91"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="409,70,743,74,743,79,409,75"/>
+<area shape="rect" id="Node000007" href="$elf32_8h.html#a422462f1d203006dd7a2339e753b24cf" title="Determine if the ELF file is of class ELFCLASS32." alt="" coords="552,195,633,220"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="367,82,398,95,428,113,444,132,452,149,460,166,476,181,505,195,537,202,536,207,503,200,472,186,455,169,447,152,439,134,424,118,396,100,365,87"/>
+<area shape="rect" id="Node000004" href="$elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="1007,97,1123,123"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="904,29,960,50,1030,87,1027,92,958,55,902,34"/>
+<area shape="rect" id="Node000006" href="$elf64_8h.html#a2188fe429ceb1c6bc2b9e67983e5c2ef" title="Get the ELF header from the file." alt="" coords="1007,171,1123,196"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="893,89,960,120,1031,160,1028,165,957,125,891,94"/>
+<area shape="poly" id="edge17_Node000008_Node000007" title=" " alt="" coords="403,176,537,196,536,202,403,181"/>
+<area shape="poly" id="edge16_Node000008_Node000008" title=" " alt="" coords="276,153,268,143,273,134,289,127,315,125,343,128,358,135,356,140,342,133,315,131,290,133,277,137,274,143,280,150"/>
+<area shape="rect" id="Node000009" href="$elf32_8h.html#a1146e3d1a710ca95b481c2ff66e2430a" title="Get the memory size of a program segment." alt="" coords="474,96,710,122"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="382,149,510,123,511,128,383,154"/>
+<area shape="rect" id="Node000011" href="$elf64_8h.html#a878cded730c117927c369b52e9b2ec87" title="Get the memory size of a program segment." alt="" coords="474,145,710,171"/>
+<area shape="poly" id="edge13_Node000008_Node000011" title=" " alt="" coords="426,159,458,159,458,164,426,165"/>
+<area shape="rect" id="Node000010" href="$elf32_8h.html#a44eb005207aad59fa5a844eebc2fd70a" title="Get a pointer to the program header table." alt="" coords="760,135,957,160"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="686,120,751,129,750,134,685,125"/>
+<area shape="poly" id="edge12_Node000010_Node000004" title=" " alt="" coords="933,131,991,121,992,126,934,137"/>
+<area shape="rect" id="Node000012" href="$elf64_8h.html#aa9995307c9ab189c3e31374f1f82ada7" title="Get a pointer to the program header table." alt="" coords="760,220,957,246"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="667,169,711,180,809,212,808,217,710,185,666,174"/>
+<area shape="poly" id="edge15_Node000012_Node000006" title=" " alt="" coords="915,217,993,198,994,203,916,222"/>
+<area shape="poly" id="edge24_Node000013_Node000007" title=" " alt="" coords="403,234,536,213,537,219,403,239"/>
+<area shape="poly" id="edge23_Node000013_Node000013" title=" " alt="" coords="276,239,268,229,273,219,289,213,315,211,343,213,358,220,356,225,342,219,315,216,290,218,277,223,274,228,280,235"/>
+<area shape="rect" id="Node000014" href="$elf32_8h.html#a5f764eeb58178c9e53ee78bd1b2885a6" title="Get the physical address of a program header." alt="" coords="493,244,692,270"/>
+<area shape="poly" id="edge19_Node000013_Node000014" title=" " alt="" coords="408,250,477,251,477,257,408,255"/>
+<area shape="rect" id="Node000015" href="$elf64_8h.html#a2b306fdc45fc9d6124f72f81fb4bfb40" title="Get the physical address of a program header." alt="" coords="493,293,692,319"/>
+<area shape="poly" id="edge21_Node000013_Node000015" title=" " alt="" coords="383,261,511,287,510,292,382,266"/>
+<area shape="poly" id="edge20_Node000014_Node000010" title=" " alt="" coords="675,241,709,230,821,166,823,171,711,235,677,246"/>
+<area shape="poly" id="edge22_Node000015_Node000012" title=" " alt="" coords="666,290,710,280,806,249,808,254,711,285,667,295"/>
+<area shape="poly" id="edge31_Node000016_Node000007" title=" " alt="" coords="344,320,383,299,424,273,447,250,457,240,473,229,504,217,536,210,537,215,505,222,475,234,461,244,451,254,428,278,386,304,347,324"/>
+<area shape="poly" id="edge30_Node000016_Node000016" title=" " alt="" coords="276,324,268,314,273,304,289,298,315,296,343,299,358,305,356,310,342,304,315,301,290,303,277,308,274,313,280,321"/>
+<area shape="rect" id="Node000017" href="$elf32_8h.html#af34e30b7c5b3bf312a9fdab1f11eddf7" title="Get the virtual address of a program header." alt="" coords="493,343,692,368"/>
+<area shape="poly" id="edge26_Node000016_Node000017" title=" " alt="" coords="408,340,477,345,477,350,408,345"/>
+<area shape="rect" id="Node000018" href="$elf64_8h.html#abcabf754aa8bc09e7fde3afc49f73f19" title="Get the virtual address of a program header." alt="" coords="493,392,692,418"/>
+<area shape="poly" id="edge28_Node000016_Node000018" title=" " alt="" coords="360,346,475,378,507,386,506,391,473,383,359,351"/>
+<area shape="poly" id="edge27_Node000017_Node000010" title=" " alt="" coords="691,341,709,329,722,316,729,302,734,272,739,240,745,223,756,206,781,183,809,165,812,170,784,187,760,209,750,225,744,241,740,273,734,303,726,319,712,334,693,345"/>
+<area shape="poly" id="edge29_Node000018_Node000012" title=" " alt="" coords="684,389,709,378,749,352,785,319,837,257,841,260,788,323,752,356,712,383,686,394"/>
 </map>

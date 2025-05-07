@@ -1,0 +1,5 @@
+<map id="elf32_getSectionTable" name="elf32_getSectionTable">
+<area shape="rect" id="Node000001" title="Get a pointer to the section header table." alt="" coords="5,5,156,31"/>
+<area shape="rect" id="Node000002" href="$elf32_8h.html#ab074c6272422a9c7fb5da840edc0e9ed" title="Get the ELF header from the file." alt="" coords="204,5,320,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,16,188,16,188,21,156,21"/>
+</map>
