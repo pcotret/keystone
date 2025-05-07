@@ -1,3 +1,11 @@
+/**
+ * @file ge.h
+ * @brief Group element operations for elliptic curve cryptography on Curve25519.
+ *
+ * This file defines the core representations and operations for manipulating group elements
+ * on the Edwards curve used in Curve25519. Group elements are represented in different coordinate
+ * systems to optimize various computations.
+ */
 #ifndef GE_H
 #define GE_H
 
@@ -18,57 +26,125 @@ Representations:
   ge_precomp (Duif): (y+x,y-x,2dxy)
 */
 
+/**
+ * @struct ge_p2
+ * @brief Projective coordinates representation of a group element.
+ *
+ * Represents (X:Y:Z) such that x = X/Z and y = Y/Z.
+ */
 typedef struct {
-  fe X;
-  fe Y;
-  fe Z;
+  fe X; /**< Projective X coordinate. */
+  fe Y; /**< Projective Y coordinate. */
+  fe Z; /**< Projective Z coordinate. */
 } ge_p2;
 
+/**
+ * @struct ge_p3
+ * @brief Extended coordinates representation of a group element.
+ *
+ * Represents (X:Y:Z:T) such that x = X/Z, y = Y/Z, and XY = ZT.
+ */
 typedef struct {
-  fe X;
-  fe Y;
-  fe Z;
-  fe T;
+  fe X; /**< Extended X coordinate. */
+  fe Y; /**< Extended Y coordinate. */
+  fe Z; /**< Extended Z coordinate. */
+  fe T; /**< Extended T coordinate. */
 } ge_p3;
 
+/**
+ * @struct ge_p1p1
+ * @brief Completed coordinates representation of a group element.
+ *
+ * Represents ((X:Z),(Y:T)) such that x = X/Z and y = Y/T.
+ */
 typedef struct {
-  fe X;
-  fe Y;
-  fe Z;
-  fe T;
+  fe X; /**< X coordinate. */
+  fe Y; /**< Y coordinate. */
+  fe Z; /**< Z coordinate. */
+  fe T; /**< T coordinate. */
 } ge_p1p1;
 
+/**
+ * @struct ge_precomp
+ * @brief Precomputed group element in Duif representation.
+ *
+ * Stores (y+x), (y−x), and 2·d·x·y to speed up fixed-base operations.
+ */
 typedef struct {
-  fe yplusx;
-  fe yminusx;
-  fe xy2d;
+  fe yplusx;  /**< y + x. */
+  fe yminusx; /**< y - x. */
+  fe xy2d;    /**< 2 * d * x * y. */
 } ge_precomp;
 
+/**
+ * @struct ge_cached
+ * @brief Cached group element used for fast addition/subtraction.
+ */
 typedef struct {
-  fe YplusX;
-  fe YminusX;
-  fe Z;
-  fe T2d;
+  fe YplusX;  /**< y + x. */
+  fe YminusX; /**< y - x. */
+  fe Z;       /**< Z coordinate. */
+  fe T2d;     /**< 2 * d * T. */
 } ge_cached;
 
+
+/** @brief Convert a group element to a 32-byte representation. */
 void ge_p3_tobytes(unsigned char *s, const ge_p3 *h);
+
+/** @brief Convert a group element to bytes using projective coordinates. */
 void ge_tobytes(unsigned char *s, const ge_p2 *h);
+
+/**
+ * @brief Parse a group element from a 32-byte input with optional negation.
+ *
+ * @param h Output group element.
+ * @param s 32-byte serialized input.
+ * @return 0 on success, non-zero on failure.
+ */
 int ge_frombytes_negate_vartime(ge_p3 *h, const unsigned char *s);
 
-void ge_add(ge_p1p1 *r, const ge_p3 *p, const ge_cached *q);
-void ge_sub(ge_p1p1 *r, const ge_p3 *p, const ge_cached *q);
-void ge_double_scalarmult_vartime(ge_p2 *r, const unsigned char *a, const ge_p3 *A, const unsigned char *b);
-void ge_madd(ge_p1p1 *r, const ge_p3 *p, const ge_precomp *q);
-void ge_msub(ge_p1p1 *r, const ge_p3 *p, const ge_precomp *q);
-void ge_scalarmult_base(ge_p3 *h, const unsigned char *a);
 
+/** @brief Add two group elements: r = p + q. */
+void ge_add(ge_p1p1 *r, const ge_p3 *p, const ge_cached *q);
+
+/** @brief Subtract two group elements: r = p - q. */
+void ge_sub(ge_p1p1 *r, const ge_p3 *p, const ge_cached *q);
+/**
+ * @brief Double scalar multiplication: r = a * A + b * B.
+ *
+ * @param r Output group element.
+ * @param a Scalar multiplier for A.
+ * @param A Group element.
+ * @param b Scalar multiplier for B.
+ */
+void ge_double_scalarmult_vartime(ge_p2 *r, const unsigned char *a, const ge_p3 *A, const unsigned char *b);
+
+/** @brief Multiply and add: r = p + q (precomputed). */
+void ge_madd(ge_p1p1 *r, const ge_p3 *p, const ge_precomp *q);
+
+/** @brief Multiply and subtract: r = p - q (precomputed). */
+void ge_msub(ge_p1p1 *r, const ge_p3 *p, const ge_precomp *q);
+
+/** @brief Scalar multiplication with the curve base point. */
+void ge_scalarmult_base(ge_p3 *h, const unsigned char *a);
+/** @brief Convert completed to projective coordinates. */
 void ge_p1p1_to_p2(ge_p2 *r, const ge_p1p1 *p);
+
+/** @brief Convert completed to extended coordinates. */
 void ge_p1p1_to_p3(ge_p3 *r, const ge_p1p1 *p);
+/** @brief Set a projective element to zero (identity). */
 void ge_p2_0(ge_p2 *h);
+
+/** @brief Double a projective element. */
 void ge_p2_dbl(ge_p1p1 *r, const ge_p2 *p);
+
+/** @brief Set an extended element to zero (identity). */
 void ge_p3_0(ge_p3 *h);
+/** @brief Double an extended element. */
 void ge_p3_dbl(ge_p1p1 *r, const ge_p3 *p);
+/** @brief Convert extended to cached representation. */
 void ge_p3_to_cached(ge_cached *r, const ge_p3 *p);
+/** @brief Convert extended to projective coordinates. */
 void ge_p3_to_p2(ge_p2 *r, const ge_p3 *p);
 
 #endif
