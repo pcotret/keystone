@@ -96,23 +96,35 @@ $(document).ready(function(){initNavTree('structsbi__pmp__ipi__info.html',''); i
   <div class="headertitle"><div class="title">sbi_pmp_ipi_info Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>PMP IPI info structure passed between harts.  
+ <a href="structsbi__pmp__ipi__info.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ipi_8h_source.html">ipi.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:af94a2cceab63fd190a29a0444d7a6894" id="r_af94a2cceab63fd190a29a0444d7a6894"><td class="memItemLeft" align="right" valign="top"><a id="af94a2cceab63fd190a29a0444d7a6894" name="af94a2cceab63fd190a29a0444d7a6894"></a>
 unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
+<tr class="memdesc:af94a2cceab63fd190a29a0444d7a6894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operation type: SBI_PMP_IPI_TYPE_SET or SBI_PMP_IPI_TYPE_UNSET. <br /></td></tr>
 <tr class="separator:af94a2cceab63fd190a29a0444d7a6894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c093dee35a8b83e918bfb6478dcf002" id="r_a5c093dee35a8b83e918bfb6478dcf002"><td class="memItemLeft" align="right" valign="top"><a id="a5c093dee35a8b83e918bfb6478dcf002" name="a5c093dee35a8b83e918bfb6478dcf002"></a>
 unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>__dummy</b></td></tr>
+<tr class="memdesc:a5c093dee35a8b83e918bfb6478dcf002"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved or unused padding for alignment. <br /></td></tr>
 <tr class="separator:a5c093dee35a8b83e918bfb6478dcf002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac118ff724201a5c7404e79651f7520a7" id="r_ac118ff724201a5c7404e79651f7520a7"><td class="memItemLeft" align="right" valign="top"><a id="ac118ff724201a5c7404e79651f7520a7" name="ac118ff724201a5c7404e79651f7520a7"></a>
 unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>rid</b></td></tr>
+<tr class="memdesc:ac118ff724201a5c7404e79651f7520a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">PMP region ID. <br /></td></tr>
 <tr class="separator:ac118ff724201a5c7404e79651f7520a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81ec07c916ecdd42c26afa53ddc3ed94" id="r_a81ec07c916ecdd42c26afa53ddc3ed94"><td class="memItemLeft" align="right" valign="top"><a id="a81ec07c916ecdd42c26afa53ddc3ed94" name="a81ec07c916ecdd42c26afa53ddc3ed94"></a>
 unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>perm</b></td></tr>
+<tr class="memdesc:a81ec07c916ecdd42c26afa53ddc3ed94"><td class="mdescLeft">&#160;</td><td class="mdescRight">PMP permissions to apply. <br /></td></tr>
 <tr class="separator:a81ec07c916ecdd42c26afa53ddc3ed94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>PMP IPI info structure passed between harts. </p>
+<p>This structure carries the parameters necessary to apply PMP changes on remote harts via an IPI. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>sm/src/<a class="el" href="ipi_8h_source.html">ipi.h</a></li>
 </ul>
 </div><!-- contents -->

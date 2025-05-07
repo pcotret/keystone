@@ -98,42 +98,52 @@ $(document).ready(function(){initNavTree('ipi_8h_source.html',''); initResizable
   <div class="headertitle"><div class="title">ipi.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __PMP_IPI_H__</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __PMP_IPI_H__</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;sbi/sbi_scratch.h&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;sbi/sbi_hartmask.h&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;sbi/sbi_tlb.h&gt;</span></div>
+<a href="ipi_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef __PMP_IPI_H__</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define __PMP_IPI_H__</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define SBI_PMP_IPI_TYPE_SET    0</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define SBI_PMP_IPI_TYPE_UNSET  1</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="structsbi__pmp__ipi__info.html">   11</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structsbi__pmp__ipi__info.html">sbi_pmp_ipi_info</a> {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> type;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> __dummy;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> rid;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> perm;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;sbi/sbi_scratch.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;sbi/sbi_hartmask.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;sbi/sbi_tlb.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="ipi_8h.html#afec497eda02eaad77f26e646352b2557">   13</a></span><span class="preprocessor">#define SBI_PMP_IPI_TYPE_SET    0</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="ipi_8h.html#a37431c0df24aa56fddb9dbda904fa38a">   15</a></span><span class="preprocessor">#define SBI_PMP_IPI_TYPE_UNSET  1</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structsbi__pmp__ipi__info.html">   23</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structsbi__pmp__ipi__info.html">sbi_pmp_ipi_info</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structsbi__pmp__ipi__info.html#af94a2cceab63fd190a29a0444d7a6894">   24</a></span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_variable" href="structsbi__pmp__ipi__info.html#af94a2cceab63fd190a29a0444d7a6894">type</a>;   </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structsbi__pmp__ipi__info.html#a5c093dee35a8b83e918bfb6478dcf002">   25</a></span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_variable" href="structsbi__pmp__ipi__info.html#a5c093dee35a8b83e918bfb6478dcf002">__dummy</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structsbi__pmp__ipi__info.html#ac118ff724201a5c7404e79651f7520a7">   26</a></span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_variable" href="structsbi__pmp__ipi__info.html#ac118ff724201a5c7404e79651f7520a7">rid</a>;    </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structsbi__pmp__ipi__info.html#a81ec07c916ecdd42c26afa53ddc3ed94">   27</a></span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_variable" href="structsbi__pmp__ipi__info.html#a81ec07c916ecdd42c26afa53ddc3ed94">perm</a>;   </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
 </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keywordtype">void</span> sbi_pmp_ipi_local_update(<span class="keyword">struct</span> sbi_tlb_info *info);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define SBI_PMP_IPI_INFO_SIZE sizeof(struct sbi_pmp_ipi_info)</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keywordtype">int</span> sbi_pmp_ipi_init(<span class="keyword">struct</span> sbi_scratch* scratch, <span class="keywordtype">bool</span> cold_boot);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keywordtype">int</span> sbi_pmp_ipi_request(ulong hmask, ulong hbase, <span class="keyword">struct</span> <a class="code hl_struct" href="structsbi__pmp__ipi__info.html">sbi_pmp_ipi_info</a>* info);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keywordtype">void</span> send_and_sync_pmp_ipi(<span class="keywordtype">int</span> region_idx, <span class="keywordtype">int</span> type, uint8_t perm);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="astructsbi__pmp__ipi__info_html"><div class="ttname"><a href="structsbi__pmp__ipi__info.html">sbi_pmp_ipi_info</a></div><div class="ttdef"><b>Definition</b> ipi.h:11</div></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keywordtype">void</span> <a class="code hl_function" href="ipi_8h.html#afc6d0460080de0b4a9bc129759766dca">sbi_pmp_ipi_local_update</a>(<span class="keyword">struct</span> sbi_tlb_info *info);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="ipi_8h.html#aea513c3effd5e5c7b315a90189ddffd3">   38</a></span><span class="preprocessor">#define SBI_PMP_IPI_INFO_SIZE sizeof(struct sbi_pmp_ipi_info)</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="ipi_8h.html#a2f36521831ca8e53b451fd6e7e64f177">   47</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="ipi_8h.html#a2f36521831ca8e53b451fd6e7e64f177">sbi_pmp_ipi_init</a>(<span class="keyword">struct</span> sbi_scratch* scratch, <span class="keywordtype">bool</span> cold_boot);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="ipi_8h.html#ae573e71a92dfebad04f0bf481faef26a">   58</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="ipi_8h.html#ae573e71a92dfebad04f0bf481faef26a">sbi_pmp_ipi_request</a>(ulong hmask, ulong hbase, <span class="keyword">struct</span> <a class="code hl_struct" href="structsbi__pmp__ipi__info.html">sbi_pmp_ipi_info</a>* info);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keywordtype">void</span> <a class="code hl_function" href="ipi_8h.html#abc107365426502ce0f3ac18e919f69c7">send_and_sync_pmp_ipi</a>(<span class="keywordtype">int</span> region_idx, <span class="keywordtype">int</span> type, uint8_t perm);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aipi_8h_html_a2f36521831ca8e53b451fd6e7e64f177"><div class="ttname"><a href="ipi_8h.html#a2f36521831ca8e53b451fd6e7e64f177">sbi_pmp_ipi_init</a></div><div class="ttdeci">int sbi_pmp_ipi_init(struct sbi_scratch *scratch, bool cold_boot)</div><div class="ttdoc">Initialize PMP IPI subsystem.</div></div>
+<div class="ttc" id="aipi_8h_html_abc107365426502ce0f3ac18e919f69c7"><div class="ttname"><a href="ipi_8h.html#abc107365426502ce0f3ac18e919f69c7">send_and_sync_pmp_ipi</a></div><div class="ttdeci">void send_and_sync_pmp_ipi(int region_idx, int type, uint8_t perm)</div><div class="ttdoc">Helper to send a PMP IPI and wait for all target harts to complete the operation.</div><div class="ttdef"><b>Definition</b> ipi.c:21</div></div>
+<div class="ttc" id="aipi_8h_html_ae573e71a92dfebad04f0bf481faef26a"><div class="ttname"><a href="ipi_8h.html#ae573e71a92dfebad04f0bf481faef26a">sbi_pmp_ipi_request</a></div><div class="ttdeci">int sbi_pmp_ipi_request(ulong hmask, ulong hbase, struct sbi_pmp_ipi_info *info)</div><div class="ttdoc">Send a PMP IPI request to a group of harts.</div></div>
+<div class="ttc" id="aipi_8h_html_afc6d0460080de0b4a9bc129759766dca"><div class="ttname"><a href="ipi_8h.html#afc6d0460080de0b4a9bc129759766dca">sbi_pmp_ipi_local_update</a></div><div class="ttdeci">void sbi_pmp_ipi_local_update(struct sbi_tlb_info *info)</div><div class="ttdoc">Perform a local PMP update on the current hart.</div><div class="ttdef"><b>Definition</b> ipi.c:11</div></div>
+<div class="ttc" id="astructsbi__pmp__ipi__info_html"><div class="ttname"><a href="structsbi__pmp__ipi__info.html">sbi_pmp_ipi_info</a></div><div class="ttdoc">PMP IPI info structure passed between harts.</div><div class="ttdef"><b>Definition</b> ipi.h:23</div></div>
+<div class="ttc" id="astructsbi__pmp__ipi__info_html_a5c093dee35a8b83e918bfb6478dcf002"><div class="ttname"><a href="structsbi__pmp__ipi__info.html#a5c093dee35a8b83e918bfb6478dcf002">sbi_pmp_ipi_info::__dummy</a></div><div class="ttdeci">unsigned long __dummy</div><div class="ttdoc">Reserved or unused padding for alignment.</div><div class="ttdef"><b>Definition</b> ipi.h:25</div></div>
+<div class="ttc" id="astructsbi__pmp__ipi__info_html_a81ec07c916ecdd42c26afa53ddc3ed94"><div class="ttname"><a href="structsbi__pmp__ipi__info.html#a81ec07c916ecdd42c26afa53ddc3ed94">sbi_pmp_ipi_info::perm</a></div><div class="ttdeci">unsigned long perm</div><div class="ttdoc">PMP permissions to apply.</div><div class="ttdef"><b>Definition</b> ipi.h:27</div></div>
+<div class="ttc" id="astructsbi__pmp__ipi__info_html_ac118ff724201a5c7404e79651f7520a7"><div class="ttname"><a href="structsbi__pmp__ipi__info.html#ac118ff724201a5c7404e79651f7520a7">sbi_pmp_ipi_info::rid</a></div><div class="ttdeci">unsigned long rid</div><div class="ttdoc">PMP region ID.</div><div class="ttdef"><b>Definition</b> ipi.h:26</div></div>
+<div class="ttc" id="astructsbi__pmp__ipi__info_html_af94a2cceab63fd190a29a0444d7a6894"><div class="ttname"><a href="structsbi__pmp__ipi__info.html#af94a2cceab63fd190a29a0444d7a6894">sbi_pmp_ipi_info::type</a></div><div class="ttdeci">unsigned long type</div><div class="ttdoc">Operation type: SBI_PMP_IPI_TYPE_SET or SBI_PMP_IPI_TYPE_UNSET.</div><div class="ttdef"><b>Definition</b> ipi.h:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_bc0f242c85b520934b5dba85c72d6af4.html">sm</a></li><li class="navelem"><a class="el" href="dir_cfc62cafa00a1d6cf885ee8883644d45.html">src</a></li><li class="navelem"><b>ipi.h</b></li>
+    <li class="navelem"><a class="el" href="dir_bc0f242c85b520934b5dba85c72d6af4.html">sm</a></li><li class="navelem"><a class="el" href="dir_cfc62cafa00a1d6cf885ee8883644d45.html">src</a></li><li class="navelem"><a class="el" href="ipi_8h.html">ipi.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

@@ -96,41 +96,58 @@ $(document).ready(function(){initNavTree('structenclave.html',''); initResizable
   <div class="headertitle"><div class="title">enclave Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Metadata structure for an enclave.  
+ <a href="structenclave.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="enclave_8h_source.html">enclave.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:af047078fb0063095cdc69d5f8b5d988b" id="r_af047078fb0063095cdc69d5f8b5d988b"><td class="memItemLeft" align="right" valign="top"><a id="af047078fb0063095cdc69d5f8b5d988b" name="af047078fb0063095cdc69d5f8b5d988b"></a>
 enclave_id&#160;</td><td class="memItemRight" valign="bottom"><b>eid</b></td></tr>
+<tr class="memdesc:af047078fb0063095cdc69d5f8b5d988b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enclave identifier. <br /></td></tr>
 <tr class="separator:af047078fb0063095cdc69d5f8b5d988b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04fedd103e239d76e893b6ec20891e26" id="r_a04fedd103e239d76e893b6ec20891e26"><td class="memItemLeft" align="right" valign="top"><a id="a04fedd103e239d76e893b6ec20891e26" name="a04fedd103e239d76e893b6ec20891e26"></a>
 unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>encl_satp</b></td></tr>
+<tr class="memdesc:a04fedd103e239d76e893b6ec20891e26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Page table base for enclave virtual memory. <br /></td></tr>
 <tr class="separator:a04fedd103e239d76e893b6ec20891e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a692a614191592bee1e4d51a228c72049" id="r_a692a614191592bee1e4d51a228c72049"><td class="memItemLeft" align="right" valign="top"><a id="a692a614191592bee1e4d51a228c72049" name="a692a614191592bee1e4d51a228c72049"></a>
-enclave_state&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
+<a class="el" href="enclave_8h.html#ad243be806b52597f338face25a816217">enclave_state</a>&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
+<tr class="memdesc:a692a614191592bee1e4d51a228c72049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current global state of the enclave. <br /></td></tr>
 <tr class="separator:a692a614191592bee1e4d51a228c72049"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc4a940232580be61322535c5b0ac94f" id="r_afc4a940232580be61322535c5b0ac94f"><td class="memItemLeft" align="right" valign="top"><a id="afc4a940232580be61322535c5b0ac94f" name="afc4a940232580be61322535c5b0ac94f"></a>
 struct <a class="el" href="structenclave__region.html">enclave_region</a>&#160;</td><td class="memItemRight" valign="bottom"><b>regions</b> [ENCLAVE_REGIONS_MAX]</td></tr>
+<tr class="memdesc:afc4a940232580be61322535c5b0ac94f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory regions assigned. <br /></td></tr>
 <tr class="separator:afc4a940232580be61322535c5b0ac94f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62a4f3807691f86ac1cde7fdc7232215" id="r_a62a4f3807691f86ac1cde7fdc7232215"><td class="memItemLeft" align="right" valign="top"><a id="a62a4f3807691f86ac1cde7fdc7232215" name="a62a4f3807691f86ac1cde7fdc7232215"></a>
-byte&#160;</td><td class="memItemRight" valign="bottom"><b>hash</b> [MDSIZE]</td></tr>
+byte&#160;</td><td class="memItemRight" valign="bottom"><b>hash</b> [<a class="el" href="crypto_8h.html#afbf2d1e171a818d02d910169f5ee0619">MDSIZE</a>]</td></tr>
+<tr class="memdesc:a62a4f3807691f86ac1cde7fdc7232215"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHA3-512 hash measurement. <br /></td></tr>
 <tr class="separator:a62a4f3807691f86ac1cde7fdc7232215"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51627a5d029310abcd0b440866c75fcc" id="r_a51627a5d029310abcd0b440866c75fcc"><td class="memItemLeft" align="right" valign="top"><a id="a51627a5d029310abcd0b440866c75fcc" name="a51627a5d029310abcd0b440866c75fcc"></a>
-byte&#160;</td><td class="memItemRight" valign="bottom"><b>sign</b> [SIGNATURE_SIZE]</td></tr>
+byte&#160;</td><td class="memItemRight" valign="bottom"><b>sign</b> [<a class="el" href="crypto_8h.html#a4ccb2bce0e19deec8833fcb1d367e30d">SIGNATURE_SIZE</a>]</td></tr>
+<tr class="memdesc:a51627a5d029310abcd0b440866c75fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ed25519 signature of the measurement. <br /></td></tr>
 <tr class="separator:a51627a5d029310abcd0b440866c75fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3004501af754abbbfaeccb18e0a3d88" id="r_ac3004501af754abbbfaeccb18e0a3d88"><td class="memItemLeft" align="right" valign="top"><a id="ac3004501af754abbbfaeccb18e0a3d88" name="ac3004501af754abbbfaeccb18e0a3d88"></a>
 struct runtime_params_t&#160;</td><td class="memItemRight" valign="bottom"><b>params</b></td></tr>
+<tr class="memdesc:ac3004501af754abbbfaeccb18e0a3d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters passed to the enclave. <br /></td></tr>
 <tr class="separator:ac3004501af754abbbfaeccb18e0a3d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84fb4056dfca359ac6663076162a8133" id="r_a84fb4056dfca359ac6663076162a8133"><td class="memItemLeft" align="right" valign="top"><a id="a84fb4056dfca359ac6663076162a8133" name="a84fb4056dfca359ac6663076162a8133"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>n_thread</b></td></tr>
+<tr class="memdesc:a84fb4056dfca359ac6663076162a8133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of active threads. <br /></td></tr>
 <tr class="separator:a84fb4056dfca359ac6663076162a8133"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c4e543e437aaed2a600cdcfdbf8344c" id="r_a0c4e543e437aaed2a600cdcfdbf8344c"><td class="memItemLeft" align="right" valign="top"><a id="a0c4e543e437aaed2a600cdcfdbf8344c" name="a0c4e543e437aaed2a600cdcfdbf8344c"></a>
-struct <a class="el" href="structthread__state.html">thread_state</a>&#160;</td><td class="memItemRight" valign="bottom"><b>threads</b> [MAX_ENCL_THREADS]</td></tr>
+struct <a class="el" href="structthread__state.html">thread_state</a>&#160;</td><td class="memItemRight" valign="bottom"><b>threads</b> [<a class="el" href="enclave_8h.html#a3dbee6ad38bd13b753367c3994b9a1ec">MAX_ENCL_THREADS</a>]</td></tr>
+<tr class="memdesc:a0c4e543e437aaed2a600cdcfdbf8344c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread state information. <br /></td></tr>
 <tr class="separator:a0c4e543e437aaed2a600cdcfdbf8344c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab29294babfbb71f2cad73718d838f7f2" id="r_ab29294babfbb71f2cad73718d838f7f2"><td class="memItemLeft" align="right" valign="top"><a id="ab29294babfbb71f2cad73718d838f7f2" name="ab29294babfbb71f2cad73718d838f7f2"></a>
 struct <a class="el" href="structplatform__enclave__data.html">platform_enclave_data</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ped</b></td></tr>
+<tr class="memdesc:ab29294babfbb71f2cad73718d838f7f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-specific enclave data. <br /></td></tr>
 <tr class="separator:ab29294babfbb71f2cad73718d838f7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Metadata structure for an enclave. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>sm/src/<a class="el" href="enclave_8h_source.html">enclave.h</a></li>
 </ul>
 </div><!-- contents -->

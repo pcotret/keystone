@@ -98,113 +98,150 @@ $(document).ready(function(){initNavTree('thread_8h_source.html',''); initResiza
   <div class="headertitle"><div class="title">thread.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//******************************************************************************</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Copyright (c) 2018, The Regents of the University of California (Regents).</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// All Rights Reserved. See LICENSE for license details.</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef __THREAD_H__</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define __THREAD_H__</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;sbi/sbi_types.h&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;sbi/sbi_trap.h&gt;</span></div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="structctx.html">   10</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structctx.html">ctx</a></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  uintptr_t slot;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  uintptr_t ra;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  uintptr_t sp;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  uintptr_t gp;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  uintptr_t tp;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  uintptr_t t0;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  uintptr_t t1;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  uintptr_t t2;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  uintptr_t s0;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  uintptr_t s1;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  uintptr_t a0;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  uintptr_t a1;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  uintptr_t a2;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  uintptr_t a3;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  uintptr_t a4;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  uintptr_t a5;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  uintptr_t a6;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  uintptr_t a7;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  uintptr_t s2;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  uintptr_t s3;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  uintptr_t s4;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  uintptr_t s5;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  uintptr_t s6;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  uintptr_t s7;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  uintptr_t s8;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  uintptr_t s9;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  uintptr_t s10;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  uintptr_t s11;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  uintptr_t t3;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  uintptr_t t4;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  uintptr_t t5;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  uintptr_t t6;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>} __packed;</div>
+<a href="thread_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//******************************************************************************</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Copyright (c) 2018, The Regents of the University of California (Regents).</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// All Rights Reserved. See LICENSE for license details.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef __THREAD_H__</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define __THREAD_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;sbi/sbi_types.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;sbi/sbi_trap.h&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structctx.html">   22</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structctx.html">ctx</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  uintptr_t slot;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structctx.html#a898c03d8d04bcdb6c7c9e12e5f4e406e">   25</a></span>  uintptr_t <a class="code hl_variable" href="structctx.html#a898c03d8d04bcdb6c7c9e12e5f4e406e">ra</a>;  </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structctx.html#aa5d896d0c320120202fffb8e25ab0973">   26</a></span>  uintptr_t <a class="code hl_variable" href="structctx.html#aa5d896d0c320120202fffb8e25ab0973">sp</a>;  </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structctx.html#a00792acf424797300375407d69e0ff6a">   27</a></span>  uintptr_t <a class="code hl_variable" href="structctx.html#a00792acf424797300375407d69e0ff6a">gp</a>;  </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structctx.html#a8898279766d67b9f290b8d0c47963ee2">   28</a></span>  uintptr_t <a class="code hl_variable" href="structctx.html#a8898279766d67b9f290b8d0c47963ee2">tp</a>;  </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structctx.html#a22aaed51d011bd42d118cf70e68dba67">   29</a></span>  uintptr_t <a class="code hl_variable" href="structctx.html#a22aaed51d011bd42d118cf70e68dba67">t0</a>;  </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  uintptr_t t1;  </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  uintptr_t t2;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structctx.html#afa6a1ee7be87aa3bba081a5be3d1332e">   32</a></span>  uintptr_t <a class="code hl_variable" href="structctx.html#afa6a1ee7be87aa3bba081a5be3d1332e">s0</a>;  </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  uintptr_t s1;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structctx.html#a3ae0e1a92044a1d4749418e3a0d7cb61">   34</a></span>  uintptr_t <a class="code hl_variable" href="structctx.html#a3ae0e1a92044a1d4749418e3a0d7cb61">a0</a>;  </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  uintptr_t a1;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  uintptr_t a2;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  uintptr_t a3;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  uintptr_t a4;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  uintptr_t a5;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  uintptr_t a6;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  uintptr_t a7;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structctx.html#a99585884d1382913a9e72695390b7306">   42</a></span>  uintptr_t <a class="code hl_variable" href="structctx.html#a99585884d1382913a9e72695390b7306">s2</a>;  </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  uintptr_t s3;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  uintptr_t s4;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  uintptr_t s5;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  uintptr_t s6;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  uintptr_t s7;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  uintptr_t s8;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  uintptr_t s9;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  uintptr_t s10;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  uintptr_t s11;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structctx.html#a49cd4e27bfeadf1f464991a8295b05a2">   52</a></span>  uintptr_t <a class="code hl_variable" href="structctx.html#a49cd4e27bfeadf1f464991a8295b05a2">t3</a>;  </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  uintptr_t t4;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  uintptr_t t5;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  uintptr_t t6;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>} __packed;</div>
 </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="foldopen" id="foldopen00046" data-start="{" data-end="};">
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structcsrs.html">   46</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structcsrs.html">csrs</a></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  uintptr_t sstatus;    <span class="comment">//Supervisor status register.</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  uintptr_t sedeleg;    <span class="comment">//Supervisor exception delegation register.</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  uintptr_t sideleg;    <span class="comment">//Supervisor interrupt delegation register.</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  uintptr_t sie;        <span class="comment">//Supervisor interrupt-enable register.</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  uintptr_t stvec;      <span class="comment">//Supervisor trap handler base address.</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  uintptr_t scounteren; <span class="comment">//Supervisor counter enable</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="comment">/*  Supervisor Trap Handling */</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  uintptr_t sscratch;   <span class="comment">//Scratch register for supervisor trap handlers.</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  uintptr_t sepc;       <span class="comment">//Supervisor exception program counter.</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  uintptr_t scause;     <span class="comment">//Supervisor trap cause.</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="comment">//NOTE: This should be stval, toolchain issue?</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  uintptr_t sbadaddr;   <span class="comment">//Supervisor bad address.</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  uintptr_t sip;        <span class="comment">//Supervisor interrupt pending.</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="comment">/*  Supervisor Protection and Translation */</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  uintptr_t satp;     <span class="comment">//Page-table base register.</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="};">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="structcsrs.html">   65</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structcsrs.html">csrs</a></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="structcsrs.html#ade120c60da2d1efc9b05a912dd2695fd">   67</a></span>  uintptr_t <a class="code hl_variable" href="structcsrs.html#ade120c60da2d1efc9b05a912dd2695fd">sstatus</a>;    </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="structcsrs.html#aae8a7567b3ea4460a59b85b9e129bb0a">   68</a></span>  uintptr_t <a class="code hl_variable" href="structcsrs.html#aae8a7567b3ea4460a59b85b9e129bb0a">sedeleg</a>;    </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="structcsrs.html#a58e3f04b3b26905681ff0f2c25abfd7c">   69</a></span>  uintptr_t <a class="code hl_variable" href="structcsrs.html#a58e3f04b3b26905681ff0f2c25abfd7c">sideleg</a>;    </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="structcsrs.html#ae5da4be95005201c1b572e824cc663b6">   70</a></span>  uintptr_t <a class="code hl_variable" href="structcsrs.html#ae5da4be95005201c1b572e824cc663b6">sie</a>;        </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="structcsrs.html#a0906f0c0f46510fb243a9dd22d0c202a">   71</a></span>  uintptr_t <a class="code hl_variable" href="structcsrs.html#a0906f0c0f46510fb243a9dd22d0c202a">stvec</a>;      </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="structcsrs.html#a9249eef0107bf318a9486f2e8d15d3c5">   72</a></span>  uintptr_t <a class="code hl_variable" href="structcsrs.html#a9249eef0107bf318a9486f2e8d15d3c5">scounteren</a>; </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="comment">/*  Supervisor Trap Handling */</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="structcsrs.html#a62fe7f2a048b2b303b06cc69b9629222">   75</a></span>  uintptr_t <a class="code hl_variable" href="structcsrs.html#a62fe7f2a048b2b303b06cc69b9629222">sscratch</a>;   </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="structcsrs.html#a4e447b5f59e923c4094197d7bd165418">   76</a></span>  uintptr_t <a class="code hl_variable" href="structcsrs.html#a4e447b5f59e923c4094197d7bd165418">sepc</a>;       </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="structcsrs.html#abc65231fb31eeca81505cc1cc9807559">   77</a></span>  uintptr_t <a class="code hl_variable" href="structcsrs.html#abc65231fb31eeca81505cc1cc9807559">scause</a>;     </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="comment">//NOTE: This should be stval, toolchain issue?</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="structcsrs.html#a1aa594d73f4f4ebf022ae4f07e0cc1b4">   79</a></span>  uintptr_t <a class="code hl_variable" href="structcsrs.html#a1aa594d73f4f4ebf022ae4f07e0cc1b4">sbadaddr</a>;   </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="structcsrs.html#a32dc7c7d797399eccd67173ed6550a69">   80</a></span>  uintptr_t <a class="code hl_variable" href="structcsrs.html#a32dc7c7d797399eccd67173ed6550a69">sip</a>;        </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="comment">/*  Supervisor Protection and Translation */</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="structcsrs.html#a7f9064df430c5462be181658d3ff8b39">   83</a></span>  uintptr_t <a class="code hl_variable" href="structcsrs.html#a7f9064df430c5462be181658d3ff8b39">satp</a>;       </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>};</div>
 </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">/* enclave thread state */</span></div>
-<div class="foldopen" id="foldopen00069" data-start="{" data-end="};">
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="structthread__state.html">   69</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structthread__state.html">thread_state</a></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>{</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">int</span> prev_mpp;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  uintptr_t prev_mepc;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  uintptr_t prev_mstatus;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structcsrs.html">csrs</a> prev_csrs;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structctx.html">ctx</a> prev_state;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>};</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">/* enclave thread state */</span></div>
+<div class="foldopen" id="foldopen00094" data-start="{" data-end="};">
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="structthread__state.html">   94</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structthread__state.html">thread_state</a></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>{</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="structthread__state.html#a52f93b64f1a627944d75befe48f6df97">   96</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="structthread__state.html#a52f93b64f1a627944d75befe48f6df97">prev_mpp</a>;            </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="structthread__state.html#afd15dc987861404aa28b5781638e0dce">   97</a></span>  uintptr_t <a class="code hl_variable" href="structthread__state.html#afd15dc987861404aa28b5781638e0dce">prev_mepc</a>;     </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="structthread__state.html#af435dd3f1a04341c97401c3ea4494353">   98</a></span>  uintptr_t <a class="code hl_variable" href="structthread__state.html#af435dd3f1a04341c97401c3ea4494353">prev_mstatus</a>;  </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="structthread__state.html#a2c684fd28400424d88a44917128beff6">   99</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structcsrs.html">csrs</a> <a class="code hl_variable" href="structthread__state.html#a2c684fd28400424d88a44917128beff6">prev_csrs</a>;   </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="structthread__state.html#a32f03d325ce0215848c643ba35ae82c7">  100</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structctx.html">ctx</a> <a class="code hl_variable" href="structthread__state.html#a32f03d325ce0215848c643ba35ae82c7">prev_state</a>;   </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>};</div>
 </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">/* swap previous and current thread states */</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keywordtype">void</span> swap_prev_state(<span class="keyword">struct</span> <a class="code hl_struct" href="structthread__state.html">thread_state</a>* state, <span class="keyword">struct</span> sbi_trap_regs* regs, <span class="keywordtype">int</span> return_on_resume);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keywordtype">void</span> swap_prev_mepc(<span class="keyword">struct</span> <a class="code hl_struct" href="structthread__state.html">thread_state</a>* state, <span class="keyword">struct</span> sbi_trap_regs* regs, uintptr_t mepc);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keywordtype">void</span> swap_prev_mstatus(<span class="keyword">struct</span> <a class="code hl_struct" href="structthread__state.html">thread_state</a>* state, <span class="keyword">struct</span> sbi_trap_regs* regs, uintptr_t mstatus);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="keywordtype">void</span> swap_prev_smode_csrs(<span class="keyword">struct</span> <a class="code hl_struct" href="structthread__state.html">thread_state</a>* thread);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keywordtype">void</span> switch_vector_enclave(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keywordtype">void</span> switch_vector_host(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">extern</span> <span class="keywordtype">void</span> trap_vector_enclave(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keyword">extern</span> <span class="keywordtype">void</span> _trap_handler(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">/* Clean state generation */</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keywordtype">void</span> clean_state(<span class="keyword">struct</span> <a class="code hl_struct" href="structthread__state.html">thread_state</a>* state);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keywordtype">void</span> clean_smode_csrs(<span class="keyword">struct</span> <a class="code hl_struct" href="structthread__state.html">thread_state</a>* state);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif </span><span class="comment">/* thread */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="astructcsrs_html"><div class="ttname"><a href="structcsrs.html">csrs</a></div><div class="ttdef"><b>Definition</b> thread.h:47</div></div>
-<div class="ttc" id="astructctx_html"><div class="ttname"><a href="structctx.html">ctx</a></div><div class="ttdef"><b>Definition</b> thread.h:11</div></div>
-<div class="ttc" id="astructthread__state_html"><div class="ttname"><a href="structthread__state.html">thread_state</a></div><div class="ttdef"><b>Definition</b> thread.h:70</div></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">/* swap previous and current thread states */</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="keywordtype">void</span> <a class="code hl_function" href="thread_8h.html#aca8bc6fe74de2b5686e143427136464d">swap_prev_state</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structthread__state.html">thread_state</a>* state, <span class="keyword">struct</span> sbi_trap_regs* regs, <span class="keywordtype">int</span> return_on_resume);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="keywordtype">void</span> <a class="code hl_function" href="thread_8h.html#a679b102c3fdf7a40f3648894db6acbe7">swap_prev_mepc</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structthread__state.html">thread_state</a>* state, <span class="keyword">struct</span> sbi_trap_regs* regs, uintptr_t mepc);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="keywordtype">void</span> <a class="code hl_function" href="thread_8h.html#ad1c5fa93893261a4316ff678ca80d00c">swap_prev_mstatus</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structthread__state.html">thread_state</a>* state, <span class="keyword">struct</span> sbi_trap_regs* regs, uintptr_t mstatus);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="keywordtype">void</span> <a class="code hl_function" href="thread_8h.html#a6fcee5bffc90e0826a6a9131d3b410c0">swap_prev_smode_csrs</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structthread__state.html">thread_state</a>* thread);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="keywordtype">void</span> <a class="code hl_function" href="thread_8h.html#a648fcc7f1473f8d7f6136d87d43f7542">switch_vector_enclave</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="keywordtype">void</span> <a class="code hl_function" href="thread_8h.html#a92709939fa0461dc7e3b7b78945170c2">switch_vector_host</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="thread_8h.html#a22e307929312ad228ae7857031ac7a61">  165</a></span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="thread_8h.html#a22e307929312ad228ae7857031ac7a61">trap_vector_enclave</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="thread_8h.html#a176d7f6b97b5a49ce1e518f8a76d3d75">  171</a></span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="thread_8h.html#a176d7f6b97b5a49ce1e518f8a76d3d75">_trap_handler</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">/* Clean state generation */</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="keywordtype">void</span> <a class="code hl_function" href="thread_8h.html#a08a863662ab74410c1565718d60d6939">clean_state</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structthread__state.html">thread_state</a>* state);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="keywordtype">void</span> <a class="code hl_function" href="thread_8h.html#a3dfb381839a0e5619f6e221cfa5551d4">clean_smode_csrs</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structthread__state.html">thread_state</a>* state);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="preprocessor">#endif </span><span class="comment">/* thread */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="astructcsrs_html"><div class="ttname"><a href="structcsrs.html">csrs</a></div><div class="ttdoc">Supervisor Control and Status Registers (CSRs).</div><div class="ttdef"><b>Definition</b> thread.h:66</div></div>
+<div class="ttc" id="astructcsrs_html_a0906f0c0f46510fb243a9dd22d0c202a"><div class="ttname"><a href="structcsrs.html#a0906f0c0f46510fb243a9dd22d0c202a">csrs::stvec</a></div><div class="ttdeci">uintptr_t stvec</div><div class="ttdef"><b>Definition</b> thread.h:71</div></div>
+<div class="ttc" id="astructcsrs_html_a1aa594d73f4f4ebf022ae4f07e0cc1b4"><div class="ttname"><a href="structcsrs.html#a1aa594d73f4f4ebf022ae4f07e0cc1b4">csrs::sbadaddr</a></div><div class="ttdeci">uintptr_t sbadaddr</div><div class="ttdef"><b>Definition</b> thread.h:79</div></div>
+<div class="ttc" id="astructcsrs_html_a32dc7c7d797399eccd67173ed6550a69"><div class="ttname"><a href="structcsrs.html#a32dc7c7d797399eccd67173ed6550a69">csrs::sip</a></div><div class="ttdeci">uintptr_t sip</div><div class="ttdef"><b>Definition</b> thread.h:80</div></div>
+<div class="ttc" id="astructcsrs_html_a4e447b5f59e923c4094197d7bd165418"><div class="ttname"><a href="structcsrs.html#a4e447b5f59e923c4094197d7bd165418">csrs::sepc</a></div><div class="ttdeci">uintptr_t sepc</div><div class="ttdef"><b>Definition</b> thread.h:76</div></div>
+<div class="ttc" id="astructcsrs_html_a58e3f04b3b26905681ff0f2c25abfd7c"><div class="ttname"><a href="structcsrs.html#a58e3f04b3b26905681ff0f2c25abfd7c">csrs::sideleg</a></div><div class="ttdeci">uintptr_t sideleg</div><div class="ttdef"><b>Definition</b> thread.h:69</div></div>
+<div class="ttc" id="astructcsrs_html_a62fe7f2a048b2b303b06cc69b9629222"><div class="ttname"><a href="structcsrs.html#a62fe7f2a048b2b303b06cc69b9629222">csrs::sscratch</a></div><div class="ttdeci">uintptr_t sscratch</div><div class="ttdef"><b>Definition</b> thread.h:75</div></div>
+<div class="ttc" id="astructcsrs_html_a7f9064df430c5462be181658d3ff8b39"><div class="ttname"><a href="structcsrs.html#a7f9064df430c5462be181658d3ff8b39">csrs::satp</a></div><div class="ttdeci">uintptr_t satp</div><div class="ttdef"><b>Definition</b> thread.h:83</div></div>
+<div class="ttc" id="astructcsrs_html_a9249eef0107bf318a9486f2e8d15d3c5"><div class="ttname"><a href="structcsrs.html#a9249eef0107bf318a9486f2e8d15d3c5">csrs::scounteren</a></div><div class="ttdeci">uintptr_t scounteren</div><div class="ttdef"><b>Definition</b> thread.h:72</div></div>
+<div class="ttc" id="astructcsrs_html_aae8a7567b3ea4460a59b85b9e129bb0a"><div class="ttname"><a href="structcsrs.html#aae8a7567b3ea4460a59b85b9e129bb0a">csrs::sedeleg</a></div><div class="ttdeci">uintptr_t sedeleg</div><div class="ttdef"><b>Definition</b> thread.h:68</div></div>
+<div class="ttc" id="astructcsrs_html_abc65231fb31eeca81505cc1cc9807559"><div class="ttname"><a href="structcsrs.html#abc65231fb31eeca81505cc1cc9807559">csrs::scause</a></div><div class="ttdeci">uintptr_t scause</div><div class="ttdef"><b>Definition</b> thread.h:77</div></div>
+<div class="ttc" id="astructcsrs_html_ade120c60da2d1efc9b05a912dd2695fd"><div class="ttname"><a href="structcsrs.html#ade120c60da2d1efc9b05a912dd2695fd">csrs::sstatus</a></div><div class="ttdeci">uintptr_t sstatus</div><div class="ttdef"><b>Definition</b> thread.h:67</div></div>
+<div class="ttc" id="astructcsrs_html_ae5da4be95005201c1b572e824cc663b6"><div class="ttname"><a href="structcsrs.html#ae5da4be95005201c1b572e824cc663b6">csrs::sie</a></div><div class="ttdeci">uintptr_t sie</div><div class="ttdef"><b>Definition</b> thread.h:70</div></div>
+<div class="ttc" id="astructctx_html"><div class="ttname"><a href="structctx.html">ctx</a></div><div class="ttdoc">Thread context.</div><div class="ttdef"><b>Definition</b> thread.h:23</div></div>
+<div class="ttc" id="astructctx_html_a00792acf424797300375407d69e0ff6a"><div class="ttname"><a href="structctx.html#a00792acf424797300375407d69e0ff6a">ctx::gp</a></div><div class="ttdeci">uintptr_t gp</div><div class="ttdef"><b>Definition</b> thread.h:27</div></div>
+<div class="ttc" id="astructctx_html_a22aaed51d011bd42d118cf70e68dba67"><div class="ttname"><a href="structctx.html#a22aaed51d011bd42d118cf70e68dba67">ctx::t0</a></div><div class="ttdeci">uintptr_t t0</div><div class="ttdef"><b>Definition</b> thread.h:29</div></div>
+<div class="ttc" id="astructctx_html_a3ae0e1a92044a1d4749418e3a0d7cb61"><div class="ttname"><a href="structctx.html#a3ae0e1a92044a1d4749418e3a0d7cb61">ctx::a0</a></div><div class="ttdeci">uintptr_t a0</div><div class="ttdef"><b>Definition</b> thread.h:34</div></div>
+<div class="ttc" id="astructctx_html_a49cd4e27bfeadf1f464991a8295b05a2"><div class="ttname"><a href="structctx.html#a49cd4e27bfeadf1f464991a8295b05a2">ctx::t3</a></div><div class="ttdeci">uintptr_t t3</div><div class="ttdef"><b>Definition</b> thread.h:52</div></div>
+<div class="ttc" id="astructctx_html_a8898279766d67b9f290b8d0c47963ee2"><div class="ttname"><a href="structctx.html#a8898279766d67b9f290b8d0c47963ee2">ctx::tp</a></div><div class="ttdeci">uintptr_t tp</div><div class="ttdef"><b>Definition</b> thread.h:28</div></div>
+<div class="ttc" id="astructctx_html_a898c03d8d04bcdb6c7c9e12e5f4e406e"><div class="ttname"><a href="structctx.html#a898c03d8d04bcdb6c7c9e12e5f4e406e">ctx::ra</a></div><div class="ttdeci">uintptr_t ra</div><div class="ttdef"><b>Definition</b> thread.h:25</div></div>
+<div class="ttc" id="astructctx_html_a99585884d1382913a9e72695390b7306"><div class="ttname"><a href="structctx.html#a99585884d1382913a9e72695390b7306">ctx::s2</a></div><div class="ttdeci">uintptr_t s2</div><div class="ttdef"><b>Definition</b> thread.h:42</div></div>
+<div class="ttc" id="astructctx_html_aa5d896d0c320120202fffb8e25ab0973"><div class="ttname"><a href="structctx.html#aa5d896d0c320120202fffb8e25ab0973">ctx::sp</a></div><div class="ttdeci">uintptr_t sp</div><div class="ttdef"><b>Definition</b> thread.h:26</div></div>
+<div class="ttc" id="astructctx_html_afa6a1ee7be87aa3bba081a5be3d1332e"><div class="ttname"><a href="structctx.html#afa6a1ee7be87aa3bba081a5be3d1332e">ctx::s0</a></div><div class="ttdeci">uintptr_t s0</div><div class="ttdef"><b>Definition</b> thread.h:32</div></div>
+<div class="ttc" id="astructthread__state_html"><div class="ttname"><a href="structthread__state.html">thread_state</a></div><div class="ttdoc">Enclave thread state.</div><div class="ttdef"><b>Definition</b> thread.h:95</div></div>
+<div class="ttc" id="astructthread__state_html_a2c684fd28400424d88a44917128beff6"><div class="ttname"><a href="structthread__state.html#a2c684fd28400424d88a44917128beff6">thread_state::prev_csrs</a></div><div class="ttdeci">struct csrs prev_csrs</div><div class="ttdef"><b>Definition</b> thread.h:99</div></div>
+<div class="ttc" id="astructthread__state_html_a32f03d325ce0215848c643ba35ae82c7"><div class="ttname"><a href="structthread__state.html#a32f03d325ce0215848c643ba35ae82c7">thread_state::prev_state</a></div><div class="ttdeci">struct ctx prev_state</div><div class="ttdef"><b>Definition</b> thread.h:100</div></div>
+<div class="ttc" id="astructthread__state_html_a52f93b64f1a627944d75befe48f6df97"><div class="ttname"><a href="structthread__state.html#a52f93b64f1a627944d75befe48f6df97">thread_state::prev_mpp</a></div><div class="ttdeci">int prev_mpp</div><div class="ttdef"><b>Definition</b> thread.h:96</div></div>
+<div class="ttc" id="astructthread__state_html_af435dd3f1a04341c97401c3ea4494353"><div class="ttname"><a href="structthread__state.html#af435dd3f1a04341c97401c3ea4494353">thread_state::prev_mstatus</a></div><div class="ttdeci">uintptr_t prev_mstatus</div><div class="ttdef"><b>Definition</b> thread.h:98</div></div>
+<div class="ttc" id="astructthread__state_html_afd15dc987861404aa28b5781638e0dce"><div class="ttname"><a href="structthread__state.html#afd15dc987861404aa28b5781638e0dce">thread_state::prev_mepc</a></div><div class="ttdeci">uintptr_t prev_mepc</div><div class="ttdef"><b>Definition</b> thread.h:97</div></div>
+<div class="ttc" id="athread_8h_html_a08a863662ab74410c1565718d60d6939"><div class="ttname"><a href="thread_8h.html#a08a863662ab74410c1565718d60d6939">clean_state</a></div><div class="ttdeci">void clean_state(struct thread_state *state)</div><div class="ttdoc">Clean the state of the thread.</div><div class="ttdef"><b>Definition</b> thread.c:88</div></div>
+<div class="ttc" id="athread_8h_html_a176d7f6b97b5a49ce1e518f8a76d3d75"><div class="ttname"><a href="thread_8h.html#a176d7f6b97b5a49ce1e518f8a76d3d75">_trap_handler</a></div><div class="ttdeci">void _trap_handler(void)</div><div class="ttdoc">General trap handler.</div></div>
+<div class="ttc" id="athread_8h_html_a22e307929312ad228ae7857031ac7a61"><div class="ttname"><a href="thread_8h.html#a22e307929312ad228ae7857031ac7a61">trap_vector_enclave</a></div><div class="ttdeci">void trap_vector_enclave(void)</div><div class="ttdoc">Enclave-specific trap handler.</div></div>
+<div class="ttc" id="athread_8h_html_a3dfb381839a0e5619f6e221cfa5551d4"><div class="ttname"><a href="thread_8h.html#a3dfb381839a0e5619f6e221cfa5551d4">clean_smode_csrs</a></div><div class="ttdeci">void clean_smode_csrs(struct thread_state *state)</div><div class="ttdoc">Clean the supervisor mode control and status registers (CSRs).</div><div class="ttdef"><b>Definition</b> thread.c:100</div></div>
+<div class="ttc" id="athread_8h_html_a648fcc7f1473f8d7f6136d87d43f7542"><div class="ttname"><a href="thread_8h.html#a648fcc7f1473f8d7f6136d87d43f7542">switch_vector_enclave</a></div><div class="ttdeci">void switch_vector_enclave(void)</div><div class="ttdoc">Switch to the enclave's trap vector.</div><div class="ttdef"><b>Definition</b> thread.c:9</div></div>
+<div class="ttc" id="athread_8h_html_a679b102c3fdf7a40f3648894db6acbe7"><div class="ttname"><a href="thread_8h.html#a679b102c3fdf7a40f3648894db6acbe7">swap_prev_mepc</a></div><div class="ttdeci">void swap_prev_mepc(struct thread_state *state, struct sbi_trap_regs *regs, uintptr_t mepc)</div><div class="ttdoc">Swap the previous machine exception program counter (mepc).</div><div class="ttdef"><b>Definition</b> thread.c:80</div></div>
+<div class="ttc" id="athread_8h_html_a6fcee5bffc90e0826a6a9131d3b410c0"><div class="ttname"><a href="thread_8h.html#a6fcee5bffc90e0826a6a9131d3b410c0">swap_prev_smode_csrs</a></div><div class="ttdeci">void swap_prev_smode_csrs(struct thread_state *thread)</div><div class="ttdoc">Swap the previous supervisor mode control and status registers (CSRs).</div><div class="ttdef"><b>Definition</b> thread.c:53</div></div>
+<div class="ttc" id="athread_8h_html_a92709939fa0461dc7e3b7b78945170c2"><div class="ttname"><a href="thread_8h.html#a92709939fa0461dc7e3b7b78945170c2">switch_vector_host</a></div><div class="ttdeci">void switch_vector_host(void)</div><div class="ttdoc">Switch to the host's trap vector.</div><div class="ttdef"><b>Definition</b> thread.c:13</div></div>
+<div class="ttc" id="athread_8h_html_aca8bc6fe74de2b5686e143427136464d"><div class="ttname"><a href="thread_8h.html#aca8bc6fe74de2b5686e143427136464d">swap_prev_state</a></div><div class="ttdeci">void swap_prev_state(struct thread_state *state, struct sbi_trap_regs *regs, int return_on_resume)</div><div class="ttdoc">Swap the previous and current thread states.</div><div class="ttdef"><b>Definition</b> thread.c:29</div></div>
+<div class="ttc" id="athread_8h_html_ad1c5fa93893261a4316ff678ca80d00c"><div class="ttname"><a href="thread_8h.html#ad1c5fa93893261a4316ff678ca80d00c">swap_prev_mstatus</a></div><div class="ttdeci">void swap_prev_mstatus(struct thread_state *state, struct sbi_trap_regs *regs, uintptr_t mstatus)</div><div class="ttdoc">Swap the previous machine status register (mstatus).</div><div class="ttdef"><b>Definition</b> thread.c:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_bc0f242c85b520934b5dba85c72d6af4.html">sm</a></li><li class="navelem"><a class="el" href="dir_cfc62cafa00a1d6cf885ee8883644d45.html">src</a></li><li class="navelem"><b>thread.h</b></li>
+    <li class="navelem"><a class="el" href="dir_bc0f242c85b520934b5dba85c72d6af4.html">sm</a></li><li class="navelem"><a class="el" href="dir_cfc62cafa00a1d6cf885ee8883644d45.html">src</a></li><li class="navelem"><a class="el" href="thread_8h.html">thread.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

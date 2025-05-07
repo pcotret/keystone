@@ -98,40 +98,47 @@ $(document).ready(function(){initNavTree('sm_8h_source.html',''); initResizable(
   <div class="headertitle"><div class="title">sm.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//******************************************************************************</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Copyright (c) 2018, The Regents of the University of California (Regents).</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// All Rights Reserved. See LICENSE for license details.</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef sm_h</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define sm_h</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;sbi/sbi_types.h&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;pmp.h&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;sm-sbi.h&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;sbi/riscv_encoding.h&gt;</span></div>
+<a href="sm_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//******************************************************************************</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// Copyright (c) 2018, The Regents of the University of California (Regents).</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// All Rights Reserved. See LICENSE for license details.</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef sm_h</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define sm_h</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;sm_call.h&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;sm_err.h&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keywordtype">void</span> sm_init(<span class="keywordtype">bool</span> cold_boot);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;sbi/sbi_types.h&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="pmp_8h.html">pmp.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="sm-sbi_8h.html">sm-sbi.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;sbi/riscv_encoding.h&gt;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/* platform specific functions */</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define ATTESTATION_KEY_LENGTH  64</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keywordtype">void</span> sm_retrieve_pubkey(<span class="keywordtype">void</span>* dest);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">void</span> sm_sign(<span class="keywordtype">void</span>* sign, <span class="keyword">const</span> <span class="keywordtype">void</span>* data, <span class="keywordtype">size_t</span> len);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keywordtype">int</span> sm_derive_sealing_key(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *key,</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                          <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *key_ident,</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                          <span class="keywordtype">size_t</span> key_ident_size,</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                          <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *enclave_hash);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keywordtype">int</span> osm_pmp_set(uint8_t perm);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;sm_call.h&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;sm_err.h&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">void</span> <a class="code hl_function" href="sm_8h.html#a9c2cd24e275b1bd0f99d3103281fcda1">sm_init</a>(<span class="keywordtype">bool</span> cold_boot);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">/* platform specific functions */</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#define ATTESTATION_KEY_LENGTH  64</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="sm_8h.html#a01e119578626c1a2746e2b30b88d86a8">   41</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="sm_8h.html#a01e119578626c1a2746e2b30b88d86a8">sm_retrieve_pubkey</a>(<span class="keywordtype">void</span>* dest);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">void</span> <a class="code hl_function" href="sm_8h.html#af26a570276311fba224bb0d8126798f8">sm_sign</a>(<span class="keywordtype">void</span>* sign, <span class="keyword">const</span> <span class="keywordtype">void</span>* data, <span class="keywordtype">size_t</span> len);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keywordtype">int</span> <a class="code hl_function" href="sm_8h.html#ab26f3284f854e3b116a89a2b0f319a59">sm_derive_sealing_key</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *key,</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                          <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *key_ident,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                          <span class="keywordtype">size_t</span> key_ident_size,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                          <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *enclave_hash);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keywordtype">int</span> <a class="code hl_function" href="sm_8h.html#a83c1d95e0a11045651b2464bde124157">osm_pmp_set</a>(uint8_t perm);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="apmp_8h_html"><div class="ttname"><a href="pmp_8h.html">pmp.h</a></div><div class="ttdoc">Physical Memory Protection (PMP) management interface.</div></div>
+<div class="ttc" id="asm-sbi_8h_html"><div class="ttname"><a href="sm-sbi_8h.html">sm-sbi.h</a></div><div class="ttdoc">SBI interface for Keystone Security Monitor.</div></div>
+<div class="ttc" id="asm_8h_html_a01e119578626c1a2746e2b30b88d86a8"><div class="ttname"><a href="sm_8h.html#a01e119578626c1a2746e2b30b88d86a8">sm_retrieve_pubkey</a></div><div class="ttdeci">void sm_retrieve_pubkey(void *dest)</div><div class="ttdoc">Retrieve the public key used for attestation.</div></div>
+<div class="ttc" id="asm_8h_html_a83c1d95e0a11045651b2464bde124157"><div class="ttname"><a href="sm_8h.html#a83c1d95e0a11045651b2464bde124157">osm_pmp_set</a></div><div class="ttdeci">int osm_pmp_set(uint8_t perm)</div><div class="ttdoc">Set PMP (Physical Memory Protection) permissions.</div><div class="ttdef"><b>Definition</b> sm.c:34</div></div>
+<div class="ttc" id="asm_8h_html_a9c2cd24e275b1bd0f99d3103281fcda1"><div class="ttname"><a href="sm_8h.html#a9c2cd24e275b1bd0f99d3103281fcda1">sm_init</a></div><div class="ttdeci">void sm_init(bool cold_boot)</div><div class="ttdoc">Initialize the Security Monitor (SM).</div><div class="ttdef"><b>Definition</b> sm.c:118</div></div>
+<div class="ttc" id="asm_8h_html_ab26f3284f854e3b116a89a2b0f319a59"><div class="ttname"><a href="sm_8h.html#ab26f3284f854e3b116a89a2b0f319a59">sm_derive_sealing_key</a></div><div class="ttdeci">int sm_derive_sealing_key(unsigned char *key, const unsigned char *key_ident, size_t key_ident_size, const unsigned char *enclave_hash)</div><div class="ttdoc">Derive a sealing key.</div><div class="ttdef"><b>Definition</b> sm.c:65</div></div>
+<div class="ttc" id="asm_8h_html_af26a570276311fba224bb0d8126798f8"><div class="ttname"><a href="sm_8h.html#af26a570276311fba224bb0d8126798f8">sm_sign</a></div><div class="ttdeci">void sm_sign(void *sign, const void *data, size_t len)</div><div class="ttdoc">Sign the given data using the SM's private key.</div><div class="ttdef"><b>Definition</b> sm.c:60</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_bc0f242c85b520934b5dba85c72d6af4.html">sm</a></li><li class="navelem"><a class="el" href="dir_cfc62cafa00a1d6cf885ee8883644d45.html">src</a></li><li class="navelem"><b>sm.h</b></li>
+    <li class="navelem"><a class="el" href="dir_bc0f242c85b520934b5dba85c72d6af4.html">sm</a></li><li class="navelem"><a class="el" href="dir_cfc62cafa00a1d6cf885ee8883644d45.html">src</a></li><li class="navelem"><a class="el" href="sm_8h.html">sm.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

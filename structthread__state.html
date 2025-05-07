@@ -96,25 +96,104 @@ $(document).ready(function(){initNavTree('structthread__state.html',''); initRes
   <div class="headertitle"><div class="title">thread_state Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Enclave thread state.  
+ <a href="structthread__state.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="thread_8h_source.html">thread.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a52f93b64f1a627944d75befe48f6df97" id="r_a52f93b64f1a627944d75befe48f6df97"><td class="memItemLeft" align="right" valign="top"><a id="a52f93b64f1a627944d75befe48f6df97" name="a52f93b64f1a627944d75befe48f6df97"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>prev_mpp</b></td></tr>
+<tr class="memitem:a52f93b64f1a627944d75befe48f6df97" id="r_a52f93b64f1a627944d75befe48f6df97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthread__state.html#a52f93b64f1a627944d75befe48f6df97">prev_mpp</a></td></tr>
 <tr class="separator:a52f93b64f1a627944d75befe48f6df97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd15dc987861404aa28b5781638e0dce" id="r_afd15dc987861404aa28b5781638e0dce"><td class="memItemLeft" align="right" valign="top"><a id="afd15dc987861404aa28b5781638e0dce" name="afd15dc987861404aa28b5781638e0dce"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>prev_mepc</b></td></tr>
+<tr class="memitem:afd15dc987861404aa28b5781638e0dce" id="r_afd15dc987861404aa28b5781638e0dce"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthread__state.html#afd15dc987861404aa28b5781638e0dce">prev_mepc</a></td></tr>
 <tr class="separator:afd15dc987861404aa28b5781638e0dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af435dd3f1a04341c97401c3ea4494353" id="r_af435dd3f1a04341c97401c3ea4494353"><td class="memItemLeft" align="right" valign="top"><a id="af435dd3f1a04341c97401c3ea4494353" name="af435dd3f1a04341c97401c3ea4494353"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>prev_mstatus</b></td></tr>
+<tr class="memitem:af435dd3f1a04341c97401c3ea4494353" id="r_af435dd3f1a04341c97401c3ea4494353"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthread__state.html#af435dd3f1a04341c97401c3ea4494353">prev_mstatus</a></td></tr>
 <tr class="separator:af435dd3f1a04341c97401c3ea4494353"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c684fd28400424d88a44917128beff6" id="r_a2c684fd28400424d88a44917128beff6"><td class="memItemLeft" align="right" valign="top"><a id="a2c684fd28400424d88a44917128beff6" name="a2c684fd28400424d88a44917128beff6"></a>
-struct <a class="el" href="structcsrs.html">csrs</a>&#160;</td><td class="memItemRight" valign="bottom"><b>prev_csrs</b></td></tr>
+<tr class="memitem:a2c684fd28400424d88a44917128beff6" id="r_a2c684fd28400424d88a44917128beff6"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcsrs.html">csrs</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthread__state.html#a2c684fd28400424d88a44917128beff6">prev_csrs</a></td></tr>
 <tr class="separator:a2c684fd28400424d88a44917128beff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32f03d325ce0215848c643ba35ae82c7" id="r_a32f03d325ce0215848c643ba35ae82c7"><td class="memItemLeft" align="right" valign="top"><a id="a32f03d325ce0215848c643ba35ae82c7" name="a32f03d325ce0215848c643ba35ae82c7"></a>
-struct <a class="el" href="structctx.html">ctx</a>&#160;</td><td class="memItemRight" valign="bottom"><b>prev_state</b></td></tr>
+<tr class="memitem:a32f03d325ce0215848c643ba35ae82c7" id="r_a32f03d325ce0215848c643ba35ae82c7"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structctx.html">ctx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthread__state.html#a32f03d325ce0215848c643ba35ae82c7">prev_state</a></td></tr>
 <tr class="separator:a32f03d325ce0215848c643ba35ae82c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Enclave thread state. </p>
+<p>This structure represents the state of a thread in an enclave, including previous mode and context state. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2c684fd28400424d88a44917128beff6" name="a2c684fd28400424d88a44917128beff6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c684fd28400424d88a44917128beff6">&#9670;&#160;</a></span>prev_csrs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structcsrs.html">csrs</a> thread_state::prev_csrs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Previous CSR registers. </p>
+
+</div>
+</div>
+<a id="afd15dc987861404aa28b5781638e0dce" name="afd15dc987861404aa28b5781638e0dce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd15dc987861404aa28b5781638e0dce">&#9670;&#160;</a></span>prev_mepc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t thread_state::prev_mepc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Previous machine exception program counter. </p>
+
+</div>
+</div>
+<a id="a52f93b64f1a627944d75befe48f6df97" name="a52f93b64f1a627944d75befe48f6df97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52f93b64f1a627944d75befe48f6df97">&#9670;&#160;</a></span>prev_mpp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int thread_state::prev_mpp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Previous machine mode privilege. </p>
+
+</div>
+</div>
+<a id="af435dd3f1a04341c97401c3ea4494353" name="af435dd3f1a04341c97401c3ea4494353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af435dd3f1a04341c97401c3ea4494353">&#9670;&#160;</a></span>prev_mstatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t thread_state::prev_mstatus</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Previous machine status register. </p>
+
+</div>
+</div>
+<a id="a32f03d325ce0215848c643ba35ae82c7" name="a32f03d325ce0215848c643ba35ae82c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32f03d325ce0215848c643ba35ae82c7">&#9670;&#160;</a></span>prev_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structctx.html">ctx</a> thread_state::prev_state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Previous thread context. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>sm/src/<a class="el" href="thread_8h_source.html">thread.h</a></li>
 </ul>

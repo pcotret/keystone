@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['ra_0',['ra',['../structctx.html#a898c03d8d04bcdb6c7c9e12e5f4e406e',1,'ctx']]],
+  ['random_1',['random',['../structrandom.html',1,'']]],
+  ['reg_5fidx_2',['reg_idx',['../structpmp__region.html#ae9733fe2fe537ca5d818001bd849bc74',1,'pmp_region']]],
+  ['regbytes_3',['REGBYTES',['../mprv_8h.html#a4cbedf4d32de8a7fbc7474c72274d966',1,'mprv.h']]],
+  ['region_5fepm_4',['REGION_EPM',['../enclave_8h.html#ac990a68e29419468da56153c30ed36caab11f13c4271e7013c47757f0ce0844fe',1,'enclave.h']]],
+  ['region_5fid_5',['region_id',['../pmp_8h.html#a65dbadd1803402286d86f2aef04d0c7b',1,'pmp.h']]],
+  ['region_5finvalid_6',['REGION_INVALID',['../enclave_8h.html#ac990a68e29419468da56153c30ed36caa104dc5151a2267870d69b1fb8cff44c6',1,'enclave.h']]],
+  ['region_5fother_7',['REGION_OTHER',['../enclave_8h.html#ac990a68e29419468da56153c30ed36caa870d3d5b902941a9ad9933c2d46febaa',1,'enclave.h']]],
+  ['region_5futm_8',['REGION_UTM',['../enclave_8h.html#ac990a68e29419468da56153c30ed36caac10d9a20ba3d00b846833812cd12c68d',1,'enclave.h']]],
+  ['regions_9',['regions',['../structenclave.html#afc4a940232580be61322535c5b0ac94f',1,'enclave']]],
+  ['report_10',['report',['../structreport.html',1,'']]],
+  ['resume_5fenclave_11',['resume_enclave',['../enclave_8h.html#adea50bfac43a7eefd85f6a0a0d2b8d5d',1,'enclave.c']]],
+  ['rid_12',['rid',['../structsbi__pmp__ipi__info.html#ac118ff724201a5c7404e79651f7520a7',1,'sbi_pmp_ipi_info']]],
+  ['riscv_5fpglevel_5fbits_13',['RISCV_PGLEVEL_BITS',['../page_8h.html#a5b4a8552fe2a1616b125ecc55a064e73',1,'page.h']]],
+  ['riscv_5fpglevel_5fmask_14',['RISCV_PGLEVEL_MASK',['../page_8h.html#ade01236f7104972103405fae15cc1a52',1,'page.h']]],
+  ['riscv_5fpglevel_5ftop_15',['RISCV_PGLEVEL_TOP',['../page_8h.html#a15cf15dd37868cc61bbf232686ff9b3f',1,'page.h']]],
+  ['riscv_5fpgshift_16',['RISCV_PGSHIFT',['../page_8h.html#a1461d04dcf290d752aa4bfc52058dc6d',1,'page.h']]],
+  ['riscv_5fpgsize_17',['RISCV_PGSIZE',['../page_8h.html#a81fa09700cedf8b4b7716cbbd65ba46d',1,'page.h']]],
+  ['riscv_5fpgtable_5fhighest_5fbit_18',['RISCV_PGTABLE_HIGHEST_BIT',['../page_8h.html#a36d92f5eedb9e08ad9ae5a344583c444',1,'page.h']]],
+  ['run_5fenclave_19',['run_enclave',['../enclave_8h.html#ae4dda0294501e10fb583acd0447402f3',1,'enclave.c']]],
+  ['running_20',['RUNNING',['../enclave_8h.html#ad243be806b52597f338face25a816217a1061be6c3fb88d32829cba6f6b2be304',1,'enclave.h']]]
+];

@@ -96,16 +96,53 @@ $(document).ready(function(){initNavTree('structcpu__state.html',''); initResiza
   <div class="headertitle"><div class="title">cpu_state Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Represents the CPU state for enclave context tracking.  
+ <a href="structcpu__state.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="cpu_8h_source.html">cpu.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a81bc227ea824b4fe20b8ddebcecef659" id="r_a81bc227ea824b4fe20b8ddebcecef659"><td class="memItemLeft" align="right" valign="top"><a id="a81bc227ea824b4fe20b8ddebcecef659" name="a81bc227ea824b4fe20b8ddebcecef659"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>is_enclave</b></td></tr>
+<tr class="memitem:a81bc227ea824b4fe20b8ddebcecef659" id="r_a81bc227ea824b4fe20b8ddebcecef659"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcpu__state.html#a81bc227ea824b4fe20b8ddebcecef659">is_enclave</a></td></tr>
 <tr class="separator:a81bc227ea824b4fe20b8ddebcecef659"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a850bb8f48bbab47748600f713639a71e" id="r_a850bb8f48bbab47748600f713639a71e"><td class="memItemLeft" align="right" valign="top"><a id="a850bb8f48bbab47748600f713639a71e" name="a850bb8f48bbab47748600f713639a71e"></a>
-enclave_id&#160;</td><td class="memItemRight" valign="bottom"><b>eid</b></td></tr>
+<tr class="memitem:a850bb8f48bbab47748600f713639a71e" id="r_a850bb8f48bbab47748600f713639a71e"><td class="memItemLeft" align="right" valign="top">enclave_id&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcpu__state.html#a850bb8f48bbab47748600f713639a71e">eid</a></td></tr>
 <tr class="separator:a850bb8f48bbab47748600f713639a71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents the CPU state for enclave context tracking. </p>
+<p>This structure holds the state of a hart to indicate whether it is currently executing inside an enclave and, if so, the identifier of the active enclave. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a850bb8f48bbab47748600f713639a71e" name="a850bb8f48bbab47748600f713639a71e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a850bb8f48bbab47748600f713639a71e">&#9670;&#160;</a></span>eid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enclave_id cpu_state::eid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Identifier of the currently executing enclave. </p>
+
+</div>
+</div>
+<a id="a81bc227ea824b4fe20b8ddebcecef659" name="a81bc227ea824b4fe20b8ddebcecef659"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81bc227ea824b4fe20b8ddebcecef659">&#9670;&#160;</a></span>is_enclave</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cpu_state::is_enclave</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flag indicating if the CPU is in enclave mode (non-zero if true). </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>sm/src/<a class="el" href="cpu_8h_source.html">cpu.h</a></li>
 </ul>

@@ -96,16 +96,52 @@ $(document).ready(function(){initNavTree('structipi__msg.html',''); initResizabl
   <div class="headertitle"><div class="title">ipi_msg Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Structure representing a PMP IPI mailbox message.  
+ <a href="structipi__msg.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="pmp_8h_source.html">pmp.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ac3c779284b65f596a75112e429f5381e" id="r_ac3c779284b65f596a75112e429f5381e"><td class="memItemLeft" align="right" valign="top"><a id="ac3c779284b65f596a75112e429f5381e" name="ac3c779284b65f596a75112e429f5381e"></a>
-atomic_t&#160;</td><td class="memItemRight" valign="bottom"><b>pending</b></td></tr>
+<tr class="memitem:ac3c779284b65f596a75112e429f5381e" id="r_ac3c779284b65f596a75112e429f5381e"><td class="memItemLeft" align="right" valign="top">atomic_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structipi__msg.html#ac3c779284b65f596a75112e429f5381e">pending</a></td></tr>
 <tr class="separator:ac3c779284b65f596a75112e429f5381e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac98500fb48a630521885638f0d49759" id="r_aac98500fb48a630521885638f0d49759"><td class="memItemLeft" align="right" valign="top"><a id="aac98500fb48a630521885638f0d49759" name="aac98500fb48a630521885638f0d49759"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>perm</b></td></tr>
+<tr class="memitem:aac98500fb48a630521885638f0d49759" id="r_aac98500fb48a630521885638f0d49759"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structipi__msg.html#aac98500fb48a630521885638f0d49759">perm</a></td></tr>
 <tr class="separator:aac98500fb48a630521885638f0d49759"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Structure representing a PMP IPI mailbox message. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac3c779284b65f596a75112e429f5381e" name="ac3c779284b65f596a75112e429f5381e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3c779284b65f596a75112e429f5381e">&#9670;&#160;</a></span>pending</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">atomic_t ipi_msg::pending</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Atomic flag for pending IPI. </p>
+
+</div>
+</div>
+<a id="aac98500fb48a630521885638f0d49759" name="aac98500fb48a630521885638f0d49759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac98500fb48a630521885638f0d49759">&#9670;&#160;</a></span>perm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ipi_msg::perm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Permissions to set via IPI. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>sm/src/<a class="el" href="pmp_8h_source.html">pmp.h</a></li>
 </ul>
