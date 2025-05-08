@@ -1,0 +1,25 @@
+var group__ElfFlagsSH =
+[
+    [ "EF_SH1", "group__ElfFlagsSH.html#ga80137f5dc85626e7f625dd85e82820fe", null ],
+    [ "EF_SH2", "group__ElfFlagsSH.html#gafeca65c4b57b59f3b458860e5a894fc1", null ],
+    [ "EF_SH2A", "group__ElfFlagsSH.html#ga54ec105ed5a823400f71a83c618ad5c4", null ],
+    [ "EF_SH2A_NOFPU", "group__ElfFlagsSH.html#ga66d4744e140ce2900a71defd7cb0d542", null ],
+    [ "EF_SH2A_SH3_NOFPU", "group__ElfFlagsSH.html#ga558bb882ed03651fde5c36dd3434cdd3", null ],
+    [ "EF_SH2A_SH3E", "group__ElfFlagsSH.html#gad4c7ec5c5bad1ec907f74022d86365c4", null ],
+    [ "EF_SH2A_SH4", "group__ElfFlagsSH.html#ga928984ed8e064835cc761d07650a2dbf", null ],
+    [ "EF_SH2A_SH4_NOFPU", "group__ElfFlagsSH.html#gab607ae7f13b029b3f3dea56b9d7408d6", null ],
+    [ "EF_SH2E", "group__ElfFlagsSH.html#ga92c47ba1ec011df46f1311f13bbe2207", null ],
+    [ "EF_SH3", "group__ElfFlagsSH.html#gab25cdf106173457ddad4a489631e7efb", null ],
+    [ "EF_SH3_DSP", "group__ElfFlagsSH.html#ga6733883017bb95e83549bfef3552d023", null ],
+    [ "EF_SH3_NOMMU", "group__ElfFlagsSH.html#gaff17e1960e656f44ff4177516b7857b1", null ],
+    [ "EF_SH3E", "group__ElfFlagsSH.html#ga8d338dbf1f4aa48bfb935bd37f165d4b", null ],
+    [ "EF_SH4", "group__ElfFlagsSH.html#ga795044f44c83b9006ef99992818bec32", null ],
+    [ "EF_SH4_NOFPU", "group__ElfFlagsSH.html#ga33d9568c725dd60fa984e3e59a0a1f58", null ],
+    [ "EF_SH4_NOMMU_NOFPU", "group__ElfFlagsSH.html#gaaeb2f299ac68df97ad04cb635b4f5f65", null ],
+    [ "EF_SH4A", "group__ElfFlagsSH.html#ga0ec9c059a68ec35ff3cbe2025b8d34f5", null ],
+    [ "EF_SH4A_NOFPU", "group__ElfFlagsSH.html#gafbbaf5e88c20d12d3ce40b93d8f6e815", null ],
+    [ "EF_SH4AL_DSP", "group__ElfFlagsSH.html#ga8be3d2b690ebf989174d0eb6a60e27b5", null ],
+    [ "EF_SH_DSP", "group__ElfFlagsSH.html#gadaff654c8528bd042461cad274f83e3a", null ],
+    [ "EF_SH_MACH_MASK", "group__ElfFlagsSH.html#ga34f8452fb223243f60fd9f6c9ce23ccf", null ],
+    [ "EF_SH_UNKNOWN", "group__ElfFlagsSH.html#ga1492150a6970c30f30746731a681578d", null ]
+];

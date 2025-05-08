@@ -1,0 +1,28 @@
+var group__MN10300__Relocation__Types =
+[
+    [ "R_MN10300_16", "group__MN10300__Relocation__Types.html#ga1036f79817c83777b421248fb3f9a76b", null ],
+    [ "R_MN10300_24", "group__MN10300__Relocation__Types.html#ga8b8e5f7effd744f40903f2d9c50bbd75", null ],
+    [ "R_MN10300_32", "group__MN10300__Relocation__Types.html#gab9a4319390ec95a7865ee58c08262463", null ],
+    [ "R_MN10300_8", "group__MN10300__Relocation__Types.html#ga632c4aa064c4bd577dea8d3474632a99", null ],
+    [ "R_MN10300_COPY", "group__MN10300__Relocation__Types.html#ga8ae1b6430e21164c8a672717523a293b", null ],
+    [ "R_MN10300_GLOB_DAT", "group__MN10300__Relocation__Types.html#ga4ec49d2998229972e525d3d12d20018b", null ],
+    [ "R_MN10300_GNU_VTENTRY", "group__MN10300__Relocation__Types.html#ga2b301e5d8c98e91628f6ce3a50b278db", null ],
+    [ "R_MN10300_GNU_VTINHERIT", "group__MN10300__Relocation__Types.html#ga5f9dc8f66c73cd1216e0d2a99ee21fa4", null ],
+    [ "R_MN10300_GOT16", "group__MN10300__Relocation__Types.html#gadc544adebd565c8edf1093841d34ed46", null ],
+    [ "R_MN10300_GOT24", "group__MN10300__Relocation__Types.html#gaec09efcd1a3f4c1a50a0d489f602ccea", null ],
+    [ "R_MN10300_GOT32", "group__MN10300__Relocation__Types.html#ga5b015aa6b0b6e829dec6d3d90f39d929", null ],
+    [ "R_MN10300_GOTOFF16", "group__MN10300__Relocation__Types.html#ga374e3cdf7eb75bc12db4503e57a4bb4c", null ],
+    [ "R_MN10300_GOTOFF24", "group__MN10300__Relocation__Types.html#gaa990e773fe2ccea384d1c5691f2bd1a5", null ],
+    [ "R_MN10300_GOTOFF32", "group__MN10300__Relocation__Types.html#ga3f6242f7400194da3ce863904936639a", null ],
+    [ "R_MN10300_GOTPC16", "group__MN10300__Relocation__Types.html#ga9161df25ef2f9fdff50e1c22b5ed62ae", null ],
+    [ "R_MN10300_GOTPC32", "group__MN10300__Relocation__Types.html#gac55b4bf57201745fea77c155aa228f9a", null ],
+    [ "R_MN10300_JMP_SLOT", "group__MN10300__Relocation__Types.html#ga545ab0d8ae815c1f03c68eda66cbfa41", null ],
+    [ "R_MN10300_NONE", "group__MN10300__Relocation__Types.html#ga71600ee075ed3d9aa0c94f91d613338c", null ],
+    [ "R_MN10300_NUM", "group__MN10300__Relocation__Types.html#ga17a521dbf65495fe2b1ea69d18b57595", null ],
+    [ "R_MN10300_PCREL16", "group__MN10300__Relocation__Types.html#gaddf7e495827a089f05bb7733e80ffe94", null ],
+    [ "R_MN10300_PCREL32", "group__MN10300__Relocation__Types.html#ga7b3d38791ebc2d3da17d97d672f38308", null ],
+    [ "R_MN10300_PCREL8", "group__MN10300__Relocation__Types.html#gaee061e651cbb7324b5e09b720308574c", null ],
+    [ "R_MN10300_PLT16", "group__MN10300__Relocation__Types.html#ga77d43af13ea3dbee620d577c716cd886", null ],
+    [ "R_MN10300_PLT32", "group__MN10300__Relocation__Types.html#gad3d987fca25af731c4342e530c83d084", null ],
+    [ "R_MN10300_RELATIVE", "group__MN10300__Relocation__Types.html#gae6600567e069bbcbcd25694b37fb3717", null ]
+];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['b_0',['b',['../structsha3__ctx__t.html#acfe22821caab968235e329c16bd5f101',1,'sha3_ctx_t']]],
-  ['bitlen_1',['bitlen',['../structSHA256__CTX.html#a7971befc0fa37b07350552d3a949634a',1,'SHA256_CTX']]]
+  ['_5f_5fdummy_0',['__dummy',['../structsbi__pmp__ipi__info.html#a5c093dee35a8b83e918bfb6478dcf002',1,'sbi_pmp_ipi_info']]],
+  ['_5ftrap_5fhandler_1',['_trap_handler',['../thread_8h.html#a176d7f6b97b5a49ce1e518f8a76d3d75',1,'thread.h']]]
 ];

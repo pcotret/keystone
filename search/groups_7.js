@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['standard_20assertions_0',['Standard Assertions',['../group__cmocka__mock__assert.html',1,'']]]
+  ['flags_0',['SuperH (SH) ELF Header Flags',['../group__ElfFlagsSH.html',1,'']]]
 ];

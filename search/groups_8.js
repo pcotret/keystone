@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['tests_0',['Running Tests',['../group__cmocka__exec.html',1,'']]],
-  ['the_20cmocka_20api_1',['The CMocka API',['../group__cmocka.html',1,'']]],
-  ['types_2',['RISC-V Relocation Types',['../group__riscv__relocations.html',1,'']]]
+  ['header_20flags_0',['SuperH (SH) ELF Header Flags',['../group__ElfFlagsSH.html',1,'']]]
 ];
