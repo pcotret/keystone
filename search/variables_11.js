@@ -1,16 +1,18 @@
 var searchData=
 [
-  ['t_0',['t',['../structge__p1p1.html#afce92a685333ed81b1702e3f403e751e',1,'ge_p1p1::T'],['../structge__p3.html#ad6827868e7b9345d5dfeb45230d475b4',1,'ge_p3::T']]],
-  ['t0_1',['t0',['../structctx.html#a22aaed51d011bd42d118cf70e68dba67',1,'ctx::t0'],['../structregs.html#a113113431137bcf677772d73dcdd9ec8',1,'regs::t0']]],
-  ['t1_2',['t1',['../structctx.html#a91cce8f69acfb80455bc6e0ceac188e6',1,'ctx::t1'],['../structregs.html#ae6b6e9059b8fda767ff49a5747b6b69a',1,'regs::t1']]],
-  ['t2_3',['t2',['../structctx.html#a6c4cf99a097c153de9d30838f2a4673b',1,'ctx::t2'],['../structregs.html#a485a0fc4f72aed5d1d33174297f6080d',1,'regs::t2']]],
-  ['t2d_4',['T2d',['../structge__cached.html#a30b3fdf6310a1db182cb9bce02f80650',1,'ge_cached']]],
-  ['t3_5',['t3',['../structctx.html#a49cd4e27bfeadf1f464991a8295b05a2',1,'ctx::t3'],['../structregs.html#aed66ab20e0a599665f4592dc00e0235a',1,'regs::t3']]],
-  ['t4_6',['t4',['../structctx.html#acf8ebbd50f7df289df488d70a662293b',1,'ctx::t4'],['../structregs.html#a4ca9f1bfc21f8a4fca519a480f57a422',1,'regs::t4']]],
-  ['t5_7',['t5',['../structctx.html#a8710fbd2a6dbb1a3af1f8accd7e3fa77',1,'ctx::t5'],['../structregs.html#a7a81993ee11d11ec81c8edf141445ace',1,'regs::t5']]],
-  ['t6_8',['t6',['../structctx.html#a42442609a46269f77006269ad259505b',1,'ctx::t6'],['../structregs.html#a4ca2d9ac441b7c40558e1079ec6b3c9f',1,'regs::t6']]],
-  ['tail_9',['tail',['../structpg__list.html#ae29503124bbd6b504393795d1bfdf402',1,'pg_list']]],
-  ['threads_10',['threads',['../structenclave.html#a0c4e543e437aaed2a600cdcfdbf8344c',1,'enclave']]],
-  ['tp_11',['tp',['../structctx.html#a8898279766d67b9f290b8d0c47963ee2',1,'ctx::tp'],['../structregs.html#a5113c962aaa68d969dc8e85d453cb991',1,'regs::tp']]],
-  ['type_12',['type',['../structenclave__region.html#a03f79913f3cf0229acbb34fc8bd13641',1,'enclave_region::type'],['../structsbi__pmp__ipi__info.html#af94a2cceab63fd190a29a0444d7a6894',1,'sbi_pmp_ipi_info::type']]]
+  ['r_5faddend_0',['r_addend',['../structElf64__Rela.html#a04358b55027a7dcc414e221d916aac64',1,'Elf64_Rela::r_addend'],['../structElf32__Rela.html#a1952286a900648afb9029c68a8bcea4d',1,'Elf32_Rela::r_addend']]],
+  ['r_5finfo_1',['r_info',['../structElf32__Rel.html#a81c52bb1589056c5d37d58b9bfe2a046',1,'Elf32_Rel::r_info'],['../structElf64__Rel.html#a775740962c9bd1e3f956bd8bffca173b',1,'Elf64_Rel::r_info'],['../structElf32__Rela.html#ac3a79d3f04209c33ddb4c36d07e68a79',1,'Elf32_Rela::r_info'],['../structElf64__Rela.html#aeab8bc0f9035184127ec02d947bf2c76',1,'Elf64_Rela::r_info']]],
+  ['r_5foffset_2',['r_offset',['../structElf32__Rel.html#addcf5ef67ababeb4940889e912c11eff',1,'Elf32_Rel::r_offset'],['../structElf64__Rel.html#af719169bd59569a885bf9d5df794b951',1,'Elf64_Rel::r_offset'],['../structElf32__Rela.html#aa850a306ee7fa3935a9f8c3d1aae4e51',1,'Elf32_Rela::r_offset'],['../structElf64__Rela.html#a9ea7e07ec6e0d57bf4bcd53b89de7948',1,'Elf64_Rela::r_offset']]],
+  ['ra_3',['ra',['../structctx.html#a898c03d8d04bcdb6c7c9e12e5f4e406e',1,'ctx::ra'],['../structregs.html#a9b813fbee789280eb63b0b3efba07cf6',1,'regs::ra']]],
+  ['rand_5fstate_4',['rand_state',['../mpfs_2platform_8c.html#abeea5f744caede57382b935bd1d3a8f3',1,'platform.c']]],
+  ['rand_5fstate_5flock_5',['rand_state_lock',['../mpfs_2platform_8c.html#a8b9661bdb66d6c4185a6d2366f192cb5',1,'platform.c']]],
+  ['reg_5fidx_6',['reg_idx',['../structpmp__region.html#ae9733fe2fe537ca5d818001bd849bc74',1,'pmp_region']]],
+  ['regions_7',['regions',['../structenclave.html#afc4a940232580be61322535c5b0ac94f',1,'enclave']]],
+  ['regs_8',['regs',['../structencl__ctx.html#a4c8d2e7a3943ab70829ef087134dd0c8',1,'encl_ctx']]],
+  ['ri_5fcprmask_9',['ri_cprmask',['../structElf32__RegInfo.html#a42ab40af79e7bbfb3122546aa99824a8',1,'Elf32_RegInfo']]],
+  ['ri_5fgp_5fvalue_10',['ri_gp_value',['../structElf32__RegInfo.html#ae464ec715b979270bedadc8889f94a16',1,'Elf32_RegInfo']]],
+  ['ri_5fgprmask_11',['ri_gprmask',['../structElf32__RegInfo.html#a14e7256134e34950e4fb5681d77dd353',1,'Elf32_RegInfo']]],
+  ['rid_12',['rid',['../structsbi__pmp__ipi__info.html#ac118ff724201a5c7404e79651f7520a7',1,'sbi_pmp_ipi_info']]],
+  ['root_5fpage_5ftable_13',['root_page_table',['../structepm.html#aa27e417fd4e90d697fc61aee3500ea52',1,'epm::root_page_table'],['../structutm.html#a5f22b3b542849ff82ec3fe844e6babe9',1,'utm::root_page_table']]],
+  ['rsiz_14',['rsiz',['../structsha3__ctx__t.html#aa4d69c40f5d48e195d998104caf9dc88',1,'sha3_ctx_t']]]
 ];

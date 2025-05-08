@@ -96,24 +96,75 @@ $(document).ready(function(){initNavTree('structElf32__Dyn.html',''); initResiza
   <div class="headertitle"><div class="title">Elf32_Dyn Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Dynamic section entry for 32-bit ELF.  
+ <a href="structElf32__Dyn.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="util_2elf_8h_source.html">elf.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a0edbe45a1c49cbb352dc3e1937369180" id="r_a0edbe45a1c49cbb352dc3e1937369180"><td class="memItemLeft" align="right" valign="top"><a id="a0edbe45a1c49cbb352dc3e1937369180" name="a0edbe45a1c49cbb352dc3e1937369180"></a>
-Elf32_Sword&#160;</td><td class="memItemRight" valign="bottom"><b>d_tag</b></td></tr>
+<tr class="memitem:a0edbe45a1c49cbb352dc3e1937369180" id="r_a0edbe45a1c49cbb352dc3e1937369180"><td class="memItemLeft" align="right" valign="top"><a class="el" href="util_2elf_8h.html#a30ce6352cf03c667272698ada477da95">Elf32_Sword</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structElf32__Dyn.html#a0edbe45a1c49cbb352dc3e1937369180">d_tag</a></td></tr>
 <tr class="separator:a0edbe45a1c49cbb352dc3e1937369180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1fd64d6536335e30d7f470d10e472ff" id="r_ae1fd64d6536335e30d7f470d10e472ff"><td class="memItemLeft" ><a id="ae1fd64d6536335e30d7f470d10e472ff" name="ae1fd64d6536335e30d7f470d10e472ff"></a>
 union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e1642fac05574115bd75823c92a89ba" id="r_a6e1642fac05574115bd75823c92a89ba"><td class="memItemLeft" >
-&#160;&#160;&#160;Elf32_Word&#160;&#160;&#160;<b>d_val</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memitem:a6e1642fac05574115bd75823c92a89ba" id="r_a6e1642fac05574115bd75823c92a89ba"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="util_2elf_8h.html#af5924ece606c732e86f8263a19408e45">Elf32_Word</a>&#160;&#160;&#160;<a class="el" href="structElf32__Dyn.html#a00a89085454a384ae77fd9112b3062c7">d_val</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a6e1642fac05574115bd75823c92a89ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb67d317a1e12379ee42cebc43ff759f" id="r_adb67d317a1e12379ee42cebc43ff759f"><td class="memItemLeft" >
-&#160;&#160;&#160;Elf32_Addr&#160;&#160;&#160;<b>d_ptr</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memitem:adb67d317a1e12379ee42cebc43ff759f" id="r_adb67d317a1e12379ee42cebc43ff759f"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="util_2elf_8h.html#a40c6d4571e6001f443cc6a6474620158">Elf32_Addr</a>&#160;&#160;&#160;<a class="el" href="structElf32__Dyn.html#adcdb4fa1682c07a7e7874c99f9cbd028">d_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:adb67d317a1e12379ee42cebc43ff759f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1fd64d6536335e30d7f470d10e472ff" id="r_ae1fd64d6536335e30d7f470d10e472ff"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>d_un</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:ae1fd64d6536335e30d7f470d10e472ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Dynamic section entry for 32-bit ELF. </p>
+<p>Represents an entry in the dynamic section, which provides information used at runtime by the dynamic linker. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="adcdb4fa1682c07a7e7874c99f9cbd028" name="adcdb4fa1682c07a7e7874c99f9cbd028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcdb4fa1682c07a7e7874c99f9cbd028">&#9670;&#160;</a></span>d_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="util_2elf_8h.html#a40c6d4571e6001f443cc6a6474620158">Elf32_Addr</a> Elf32_Dyn::d_ptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Address value. </p>
+
+</div>
+</div>
+<a id="a0edbe45a1c49cbb352dc3e1937369180" name="a0edbe45a1c49cbb352dc3e1937369180"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0edbe45a1c49cbb352dc3e1937369180">&#9670;&#160;</a></span>d_tag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="util_2elf_8h.html#a30ce6352cf03c667272698ada477da95">Elf32_Sword</a> Elf32_Dyn::d_tag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Type of dynamic entry. </p>
+
+</div>
+</div>
+<a id="a00a89085454a384ae77fd9112b3062c7" name="a00a89085454a384ae77fd9112b3062c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00a89085454a384ae77fd9112b3062c7">&#9670;&#160;</a></span>d_val</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="util_2elf_8h.html#af5924ece606c732e86f8263a19408e45">Elf32_Word</a> Elf32_Dyn::d_val</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Integer value. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>runtime/include/util/<a class="el" href="util_2elf_8h_source.html">elf.h</a></li>
 </ul>

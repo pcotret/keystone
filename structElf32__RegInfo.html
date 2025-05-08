@@ -96,19 +96,70 @@ $(document).ready(function(){initNavTree('structElf32__RegInfo.html',''); initRe
   <div class="headertitle"><div class="title">Elf32_RegInfo Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>MIPS register usage information.  
+ <a href="structElf32__RegInfo.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="util_2elf_8h_source.html">elf.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a14e7256134e34950e4fb5681d77dd353" id="r_a14e7256134e34950e4fb5681d77dd353"><td class="memItemLeft" align="right" valign="top"><a id="a14e7256134e34950e4fb5681d77dd353" name="a14e7256134e34950e4fb5681d77dd353"></a>
-Elf32_Word&#160;</td><td class="memItemRight" valign="bottom"><b>ri_gprmask</b></td></tr>
+<tr class="memitem:a14e7256134e34950e4fb5681d77dd353" id="r_a14e7256134e34950e4fb5681d77dd353"><td class="memItemLeft" align="right" valign="top"><a class="el" href="util_2elf_8h.html#af5924ece606c732e86f8263a19408e45">Elf32_Word</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structElf32__RegInfo.html#a14e7256134e34950e4fb5681d77dd353">ri_gprmask</a></td></tr>
 <tr class="separator:a14e7256134e34950e4fb5681d77dd353"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42ab40af79e7bbfb3122546aa99824a8" id="r_a42ab40af79e7bbfb3122546aa99824a8"><td class="memItemLeft" align="right" valign="top"><a id="a42ab40af79e7bbfb3122546aa99824a8" name="a42ab40af79e7bbfb3122546aa99824a8"></a>
-Elf32_Word&#160;</td><td class="memItemRight" valign="bottom"><b>ri_cprmask</b> [4]</td></tr>
+<tr class="memitem:a42ab40af79e7bbfb3122546aa99824a8" id="r_a42ab40af79e7bbfb3122546aa99824a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="util_2elf_8h.html#af5924ece606c732e86f8263a19408e45">Elf32_Word</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structElf32__RegInfo.html#a42ab40af79e7bbfb3122546aa99824a8">ri_cprmask</a> [4]</td></tr>
 <tr class="separator:a42ab40af79e7bbfb3122546aa99824a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae464ec715b979270bedadc8889f94a16" id="r_ae464ec715b979270bedadc8889f94a16"><td class="memItemLeft" align="right" valign="top"><a id="ae464ec715b979270bedadc8889f94a16" name="ae464ec715b979270bedadc8889f94a16"></a>
-Elf32_Sword&#160;</td><td class="memItemRight" valign="bottom"><b>ri_gp_value</b></td></tr>
+<tr class="memitem:ae464ec715b979270bedadc8889f94a16" id="r_ae464ec715b979270bedadc8889f94a16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="util_2elf_8h.html#a30ce6352cf03c667272698ada477da95">Elf32_Sword</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structElf32__RegInfo.html#ae464ec715b979270bedadc8889f94a16">ri_gp_value</a></td></tr>
 <tr class="separator:ae464ec715b979270bedadc8889f94a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>MIPS register usage information. </p>
+<p>Describes usage of general-purpose and coprocessor registers for optimization. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a42ab40af79e7bbfb3122546aa99824a8" name="a42ab40af79e7bbfb3122546aa99824a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42ab40af79e7bbfb3122546aa99824a8">&#9670;&#160;</a></span>ri_cprmask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="util_2elf_8h.html#af5924ece606c732e86f8263a19408e45">Elf32_Word</a> Elf32_RegInfo::ri_cprmask[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bitmask of used coprocessor registers. </p>
+
+</div>
+</div>
+<a id="ae464ec715b979270bedadc8889f94a16" name="ae464ec715b979270bedadc8889f94a16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae464ec715b979270bedadc8889f94a16">&#9670;&#160;</a></span>ri_gp_value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="util_2elf_8h.html#a30ce6352cf03c667272698ada477da95">Elf32_Sword</a> Elf32_RegInfo::ri_gp_value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Global pointer value. </p>
+
+</div>
+</div>
+<a id="a14e7256134e34950e4fb5681d77dd353" name="a14e7256134e34950e4fb5681d77dd353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14e7256134e34950e4fb5681d77dd353">&#9670;&#160;</a></span>ri_gprmask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="util_2elf_8h.html#af5924ece606c732e86f8263a19408e45">Elf32_Word</a> Elf32_RegInfo::ri_gprmask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bitmask of used general-purpose registers. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>runtime/include/util/<a class="el" href="util_2elf_8h_source.html">elf.h</a></li>
 </ul>

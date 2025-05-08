@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['is_5fcma_0',['is_cma',['../structepm.html#ae34e6b4985358f5319801ff7c22c37e5',1,'epm']]],
-  ['is_5fenclave_1',['is_enclave',['../structcpu__state.html#a81bc227ea824b4fe20b8ddebcecef659',1,'cpu_state']]],
-  ['is_5finit_2',['is_init',['../structenclave.html#ae8d2a35fc83ca8db230ae2784be3c87e',1,'enclave']]]
+  ['hash_0',['hash',['../structenclave.html#a62a4f3807691f86ac1cde7fdc7232215',1,'enclave::hash'],['../structenclave__report.html#af2542fa1bb4f01a38660b70a13e09f22',1,'enclave_report::hash'],['../structsm__report.html#a9067b61244e3f528aaa94f32c70db21d',1,'sm_report::hash']]],
+  ['head_1',['head',['../structpg__list.html#a1bcd9a88c631191eb6339def68d6370c',1,'pg_list']]],
+  ['hwp_5fflags1_2',['hwp_flags1',['../structElf__Options__Hw.html#ade844ca291219a4c2ddb9daa5ff7cdc1',1,'Elf_Options_Hw']]],
+  ['hwp_5fflags2_3',['hwp_flags2',['../structElf__Options__Hw.html#a4940c510ca6158e2ea1df247ffce5882',1,'Elf_Options_Hw']]]
 ];

@@ -96,19 +96,70 @@ $(document).ready(function(){initNavTree('structElf32__Chdr.html',''); initResiz
   <div class="headertitle"><div class="title">Elf32_Chdr Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Compressed section header for 32-bit ELF binaries.  
+ <a href="structElf32__Chdr.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="util_2elf_8h_source.html">elf.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a7b78dd3e0ba865cd44c8a4f705d19954" id="r_a7b78dd3e0ba865cd44c8a4f705d19954"><td class="memItemLeft" align="right" valign="top"><a id="a7b78dd3e0ba865cd44c8a4f705d19954" name="a7b78dd3e0ba865cd44c8a4f705d19954"></a>
-Elf32_Word&#160;</td><td class="memItemRight" valign="bottom"><b>ch_type</b></td></tr>
+<tr class="memitem:a7b78dd3e0ba865cd44c8a4f705d19954" id="r_a7b78dd3e0ba865cd44c8a4f705d19954"><td class="memItemLeft" align="right" valign="top"><a class="el" href="util_2elf_8h.html#af5924ece606c732e86f8263a19408e45">Elf32_Word</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structElf32__Chdr.html#a7b78dd3e0ba865cd44c8a4f705d19954">ch_type</a></td></tr>
 <tr class="separator:a7b78dd3e0ba865cd44c8a4f705d19954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbf67385dafc8d3a35034b9c5a755d6b" id="r_afbf67385dafc8d3a35034b9c5a755d6b"><td class="memItemLeft" align="right" valign="top"><a id="afbf67385dafc8d3a35034b9c5a755d6b" name="afbf67385dafc8d3a35034b9c5a755d6b"></a>
-Elf32_Word&#160;</td><td class="memItemRight" valign="bottom"><b>ch_size</b></td></tr>
+<tr class="memitem:afbf67385dafc8d3a35034b9c5a755d6b" id="r_afbf67385dafc8d3a35034b9c5a755d6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="util_2elf_8h.html#af5924ece606c732e86f8263a19408e45">Elf32_Word</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structElf32__Chdr.html#afbf67385dafc8d3a35034b9c5a755d6b">ch_size</a></td></tr>
 <tr class="separator:afbf67385dafc8d3a35034b9c5a755d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72370f6928a556d16dd0fcfae9978c60" id="r_a72370f6928a556d16dd0fcfae9978c60"><td class="memItemLeft" align="right" valign="top"><a id="a72370f6928a556d16dd0fcfae9978c60" name="a72370f6928a556d16dd0fcfae9978c60"></a>
-Elf32_Word&#160;</td><td class="memItemRight" valign="bottom"><b>ch_addralign</b></td></tr>
+<tr class="memitem:a72370f6928a556d16dd0fcfae9978c60" id="r_a72370f6928a556d16dd0fcfae9978c60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="util_2elf_8h.html#af5924ece606c732e86f8263a19408e45">Elf32_Word</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structElf32__Chdr.html#a72370f6928a556d16dd0fcfae9978c60">ch_addralign</a></td></tr>
 <tr class="separator:a72370f6928a556d16dd0fcfae9978c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Compressed section header for 32-bit ELF binaries. </p>
+<p>Describes the compression details of a section in ELF32 format. Used when a section is marked with SHF_COMPRESSED. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a72370f6928a556d16dd0fcfae9978c60" name="a72370f6928a556d16dd0fcfae9978c60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72370f6928a556d16dd0fcfae9978c60">&#9670;&#160;</a></span>ch_addralign</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="util_2elf_8h.html#af5924ece606c732e86f8263a19408e45">Elf32_Word</a> Elf32_Chdr::ch_addralign</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Alignment of uncompressed data. </p>
+
+</div>
+</div>
+<a id="afbf67385dafc8d3a35034b9c5a755d6b" name="afbf67385dafc8d3a35034b9c5a755d6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbf67385dafc8d3a35034b9c5a755d6b">&#9670;&#160;</a></span>ch_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="util_2elf_8h.html#af5924ece606c732e86f8263a19408e45">Elf32_Word</a> Elf32_Chdr::ch_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Uncompressed data size in bytes. </p>
+
+</div>
+</div>
+<a id="a7b78dd3e0ba865cd44c8a4f705d19954" name="a7b78dd3e0ba865cd44c8a4f705d19954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b78dd3e0ba865cd44c8a4f705d19954">&#9670;&#160;</a></span>ch_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="util_2elf_8h.html#af5924ece606c732e86f8263a19408e45">Elf32_Word</a> Elf32_Chdr::ch_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Compression format type (e.g., ELFCOMPRESS_ZLIB). </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>runtime/include/util/<a class="el" href="util_2elf_8h_source.html">elf.h</a></li>
 </ul>

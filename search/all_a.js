@@ -13,5 +13,6 @@ var searchData=
   ['keystone_5frtld_5finit_5fapp_10',['keystone_rtld_init_app',['../keystone_8h.html#af3dd40ce2d21bcd29ef69d28c30d708c',1,'keystone.h']]],
   ['keystone_5frtld_5finit_5fruntime_11',['keystone_rtld_init_runtime',['../keystone_8h.html#aee824bc41aad11a1e76380bebac426fc',1,'keystone.h']]],
   ['keystone_5frtld_5finit_5funtrusted_12',['keystone_rtld_init_untrusted',['../keystone_8h.html#ab54fc6f89b72b510e038a7d2b35867ae',1,'keystone.h']]],
-  ['keystone_5fwarn_13',['keystone_warn',['../keystone_8h.html#adb0299b75049ca40b6bcdc031d81aaf0',1,'keystone.h']]]
+  ['keystone_5fwarn_13',['keystone_warn',['../keystone_8h.html#adb0299b75049ca40b6bcdc031d81aaf0',1,'keystone.h']]],
+  ['kind_14',['kind',['../structElf__Options.html#a3732e1185baf21c513ee7618d334d8c5',1,'Elf_Options']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['x_0',['x',['../structge__p2.html#a9a004ecb925ec8c5539f147b2a96fc0e',1,'ge_p2::X'],['../structge__p3.html#acc57ebdebc00ab8868ecc6b0edc25a4d',1,'ge_p3::X'],['../structge__p1p1.html#af4797ff4f6956e59361443bdffb06cda',1,'ge_p1p1::X']]],
-  ['xy2d_1',['xy2d',['../structge__precomp.html#ae0fcdc39b73637b2ac918f902597644d',1,'ge_precomp']]]
+  ['use_5fscratch_0',['use_scratch',['../structplatform__enclave__data.html#a70b6268d8658fab0b3093c853717df28',1,'platform_enclave_data']]],
+  ['utm_1',['utm',['../structenclave.html#aac7a3d792a3e1d01d36c6eaa5ee71953',1,'enclave']]]
 ];
