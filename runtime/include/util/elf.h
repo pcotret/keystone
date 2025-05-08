@@ -2872,89 +2872,92 @@ enum
 
 #define R_ARM_NUM		256
 
+/** @defgroup ElfRelocCKCore C-SKY CKCore ELF Relocation Types
+ *  @brief Relocation types for the C-SKY CKCore architecture.
+ *  @{
+ */
+#define R_CKCORE_NONE               0   ///< No relocation
+#define R_CKCORE_ADDR32             1   ///< Direct 32-bit address
+#define R_CKCORE_PCRELIMM8BY4       2   ///< 8-bit PC-relative offset (multiplied by 4)
+#define R_CKCORE_PCRELIMM11BY2      3   ///< 11-bit PC-relative offset (multiplied by 2)
+#define R_CKCORE_PCREL32            5   ///< 32-bit PC-relative address
+#define R_CKCORE_PCRELJSR_IMM11BY2  6   ///< 11-bit PC-relative jump offset for JSR (×2)
+#define R_CKCORE_RELATIVE           9   ///< Relative relocation
+#define R_CKCORE_COPY               10  ///< Runtime copy of symbol
+#define R_CKCORE_GLOB_DAT           11  ///< Global data
+#define R_CKCORE_JUMP_SLOT          12  ///< PLT entry
+#define R_CKCORE_GOTOFF             13  ///< Offset to GOT
+#define R_CKCORE_GOTPC              14  ///< PC-relative offset to GOT
+#define R_CKCORE_GOT32              15  ///< 32-bit GOT entry
+#define R_CKCORE_PLT32              16  ///< 32-bit PLT address
+#define R_CKCORE_ADDRGOT            17  ///< Address of GOT entry
+#define R_CKCORE_ADDRPLT            18  ///< Address of PLT entry
+#define R_CKCORE_PCREL_IMM26BY2     19  ///< 26-bit PC-relative offset (×2)
+#define R_CKCORE_PCREL_IMM16BY2     20  ///< 16-bit PC-relative offset (×2)
+#define R_CKCORE_PCREL_IMM16BY4     21  ///< 16-bit PC-relative offset (×4)
+#define R_CKCORE_PCREL_IMM10BY2     22  ///< 10-bit PC-relative offset (×2)
+#define R_CKCORE_PCREL_IMM10BY4     23  ///< 10-bit PC-relative offset (×4)
+#define R_CKCORE_ADDR_HI16          24  ///< High 16 bits of address
+#define R_CKCORE_ADDR_LO16          25  ///< Low 16 bits of address
+#define R_CKCORE_GOTPC_HI16         26  ///< High 16 bits of PC-relative GOT offset
+#define R_CKCORE_GOTPC_LO16         27  ///< Low 16 bits of PC-relative GOT offset
+#define R_CKCORE_GOTOFF_HI16        28  ///< High 16 bits of GOT offset
+#define R_CKCORE_GOTOFF_LO16        29  ///< Low 16 bits of GOT offset
+#define R_CKCORE_GOT12              30  ///< 12-bit GOT entry
+#define R_CKCORE_GOT_HI16           31  ///< High 16 bits of GOT entry
+#define R_CKCORE_GOT_LO16           32  ///< Low 16 bits of GOT entry
+#define R_CKCORE_PLT12              33  ///< 12-bit PLT entry
+#define R_CKCORE_PLT_HI16           34  ///< High 16 bits of PLT entry
+#define R_CKCORE_PLT_LO16           35  ///< Low 16 bits of PLT entry
+#define R_CKCORE_ADDRGOT_HI16       36  ///< High 16 bits of GOT address
+#define R_CKCORE_ADDRGOT_LO16       37  ///< Low 16 bits of GOT address
+#define R_CKCORE_ADDRPLT_HI16       38  ///< High 16 bits of PLT address
+#define R_CKCORE_ADDRPLT_LO16       39  ///< Low 16 bits of PLT address
+#define R_CKCORE_PCREL_JSR_IMM26BY2 40  ///< 26-bit PC-relative offset for JSR (×2)
+#define R_CKCORE_TOFFSET_LO16       41  ///< Low 16 bits of TLS offset
+#define R_CKCORE_DOFFSET_LO16       42  ///< Low 16 bits of DTP offset
+#define R_CKCORE_PCREL_IMM18BY2     43  ///< 18-bit PC-relative offset (×2)
+#define R_CKCORE_DOFFSET_IMM18      44  ///< 18-bit DTP offset
+#define R_CKCORE_DOFFSET_IMM18BY2   45  ///< 18-bit DTP offset (×2)
+#define R_CKCORE_DOFFSET_IMM18BY4   46  ///< 18-bit DTP offset (×4)
+#define R_CKCORE_GOT_IMM18BY4       48  ///< 18-bit GOT offset (×4)
+#define R_CKCORE_PLT_IMM18BY4       49  ///< 18-bit PLT offset (×4)
+#define R_CKCORE_PCREL_IMM7BY4      50  ///< 7-bit PC-relative offset (×4)
+#define R_CKCORE_TLS_LE32           51  ///< TLS local exec model, 32-bit
+#define R_CKCORE_TLS_IE32           52  ///< TLS initial exec model, 32-bit
+#define R_CKCORE_TLS_GD32           53  ///< TLS global dynamic model, 32-bit
+#define R_CKCORE_TLS_LDM32          54  ///< TLS local dynamic model, 32-bit
+#define R_CKCORE_TLS_LDO32          55  ///< TLS LDO relocation
+#define R_CKCORE_TLS_DTPMOD32       56  ///< TLS module index
+#define R_CKCORE_TLS_DTPOFF32       57  ///< TLS offset in module
+#define R_CKCORE_TLS_TPOFF32        58  ///< TLS offset in TLS block
+/** @} */
 
-#define R_CKCORE_NONE               0
-#define R_CKCORE_ADDR32             1
-#define R_CKCORE_PCRELIMM8BY4       2
-#define R_CKCORE_PCRELIMM11BY2      3
-#define R_CKCORE_PCREL32            5
-#define R_CKCORE_PCRELJSR_IMM11BY2  6
-#define R_CKCORE_RELATIVE           9
-#define R_CKCORE_COPY               10
-#define R_CKCORE_GLOB_DAT           11
-#define R_CKCORE_JUMP_SLOT          12
-#define R_CKCORE_GOTOFF             13
-#define R_CKCORE_GOTPC              14
-#define R_CKCORE_GOT32              15
-#define R_CKCORE_PLT32              16
-#define R_CKCORE_ADDRGOT            17
-#define R_CKCORE_ADDRPLT            18
-#define R_CKCORE_PCREL_IMM26BY2     19
-#define R_CKCORE_PCREL_IMM16BY2     20
-#define R_CKCORE_PCREL_IMM16BY4     21
-#define R_CKCORE_PCREL_IMM10BY2     22
-#define R_CKCORE_PCREL_IMM10BY4     23
-#define R_CKCORE_ADDR_HI16          24
-#define R_CKCORE_ADDR_LO16          25
-#define R_CKCORE_GOTPC_HI16         26
-#define R_CKCORE_GOTPC_LO16         27
-#define R_CKCORE_GOTOFF_HI16        28
-#define R_CKCORE_GOTOFF_LO16        29
-#define R_CKCORE_GOT12              30
-#define R_CKCORE_GOT_HI16           31
-#define R_CKCORE_GOT_LO16           32
-#define R_CKCORE_PLT12              33
-#define R_CKCORE_PLT_HI16           34
-#define R_CKCORE_PLT_LO16           35
-#define R_CKCORE_ADDRGOT_HI16       36
-#define R_CKCORE_ADDRGOT_LO16       37
-#define R_CKCORE_ADDRPLT_HI16       38
-#define R_CKCORE_ADDRPLT_LO16       39
-#define R_CKCORE_PCREL_JSR_IMM26BY2 40
-#define R_CKCORE_TOFFSET_LO16       41
-#define R_CKCORE_DOFFSET_LO16       42
-#define R_CKCORE_PCREL_IMM18BY2     43
-#define R_CKCORE_DOFFSET_IMM18      44
-#define R_CKCORE_DOFFSET_IMM18BY2   45
-#define R_CKCORE_DOFFSET_IMM18BY4   46
-#define R_CKCORE_GOT_IMM18BY4       48
-#define R_CKCORE_PLT_IMM18BY4       49
-#define R_CKCORE_PCREL_IMM7BY4      50
-#define R_CKCORE_TLS_LE32           51
-#define R_CKCORE_TLS_IE32           52
-#define R_CKCORE_TLS_GD32           53
-#define R_CKCORE_TLS_LDM32          54
-#define R_CKCORE_TLS_LDO32          55
-#define R_CKCORE_TLS_DTPMOD32       56
-#define R_CKCORE_TLS_DTPOFF32       57
-#define R_CKCORE_TLS_TPOFF32        58
+/** @defgroup ElfIA64Flags IA-64 ELF Flags and Relocations
+ *  @brief Flags, section types, program types, and dynamic tags for IA-64 architecture.
+ *  @{
+ */
+#define EF_IA_64_MASKOS     0x0000000f  ///< OS-specific flags
+#define EF_IA_64_ABI64      0x00000010  ///< 64-bit ABI flag
+#define EF_IA_64_ARCH       0xff000000  ///< Architecture version mask
 
+#define PT_IA_64_ARCHEXT    (PT_LOPROC + 0)  ///< Architecture extension segment
+#define PT_IA_64_UNWIND     (PT_LOPROC + 1)  ///< Unwind segment
+#define PT_IA_64_HP_OPT_ANOT (PT_LOOS + 0x12) ///< HP optimization annotation
+#define PT_IA_64_HP_HSL_ANOT (PT_LOOS + 0x13) ///< HP HSL annotation
+#define PT_IA_64_HP_STACK   (PT_LOOS + 0x14) ///< HP stack segment
 
-#define EF_IA_64_MASKOS		0x0000000f
-#define EF_IA_64_ABI64		0x00000010
-#define EF_IA_64_ARCH		0xff000000
+#define PF_IA_64_NORECOV    0x80000000  ///< Non-recoverable segment flag
 
+#define SHT_IA_64_EXT       (SHT_LOPROC + 0) ///< IA-64 extension section
+#define SHT_IA_64_UNWIND    (SHT_LOPROC + 1) ///< IA-64 unwind section
 
-#define PT_IA_64_ARCHEXT	(PT_LOPROC + 0)
-#define PT_IA_64_UNWIND		(PT_LOPROC + 1)
-#define PT_IA_64_HP_OPT_ANOT	(PT_LOOS + 0x12)
-#define PT_IA_64_HP_HSL_ANOT	(PT_LOOS + 0x13)
-#define PT_IA_64_HP_STACK	(PT_LOOS + 0x14)
+#define SHF_IA_64_SHORT     0x10000000  ///< Section uses short addressing
+#define SHF_IA_64_NORECOV   0x20000000  ///< Section is non-recoverable
 
-
-#define PF_IA_64_NORECOV	0x80000000
-
-
-#define SHT_IA_64_EXT		(SHT_LOPROC + 0)
-#define SHT_IA_64_UNWIND	(SHT_LOPROC + 1)
-
-
-#define SHF_IA_64_SHORT		0x10000000
-#define SHF_IA_64_NORECOV	0x20000000
-
-
-#define DT_IA_64_PLT_RESERVE	(DT_LOPROC + 0)
-#define DT_IA_64_NUM		1
+#define DT_IA_64_PLT_RESERVE (DT_LOPROC + 0) ///< Reserved entry for PLT
+#define DT_IA_64_NUM        1           ///< Number of IA-64 specific dynamic tags
+/** @} */
 
 /** @defgroup RelocIA64 IA-64 Relocation Types
  *  ELF relocation types for the IA-64 (Itanium) architecture.
