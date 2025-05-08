@@ -14,65 +14,86 @@ extern "C" {
 
 #include <stdint.h>
 
-typedef uint16_t Elf32_Half;
-typedef uint16_t Elf64_Half;
 
-typedef uint32_t Elf32_Word;
-typedef	int32_t  Elf32_Sword;
-typedef uint32_t Elf64_Word;
-typedef	int32_t  Elf64_Sword;
+/* 16-bit half-word types */
+typedef uint16_t Elf32_Half;     /**< 16-bit unsigned type for ELF32 */
+typedef uint16_t Elf64_Half;     /**< 16-bit unsigned type for ELF64 */
 
-typedef uint64_t Elf32_Xword;
-typedef	int64_t  Elf32_Sxword;
-typedef uint64_t Elf64_Xword;
-typedef	int64_t  Elf64_Sxword;
+/* 32-bit and signed 32-bit word types */
+typedef uint32_t Elf32_Word;     /**< 32-bit unsigned type for ELF32 */
+typedef	int32_t  Elf32_Sword;    /**< 32-bit signed type for ELF32 */
+typedef uint32_t Elf64_Word;     /**< 32-bit unsigned type for ELF64 */
+typedef	int32_t  Elf64_Sword;    /**< 32-bit signed type for ELF64 */
 
-typedef uint32_t Elf32_Addr;
-typedef uint64_t Elf64_Addr;
+/* 64-bit and signed 64-bit extended word types */
+typedef uint64_t Elf32_Xword;    /**< 64-bit unsigned type (not native to ELF32) */
+typedef	int64_t  Elf32_Sxword;   /**< 64-bit unsigned type (not native to ELF32) */
+typedef uint64_t Elf64_Xword;    /**< 64-bit unsigned type for ELF64 */
+typedef	int64_t  Elf64_Sxword;   /**< 64-bit unsigned type for ELF64 */
 
-typedef uint32_t Elf32_Off;
-typedef uint64_t Elf64_Off;
+/* Address and offset types */
+typedef uint32_t Elf32_Addr;     /**< Program address in ELF32 */
+typedef uint64_t Elf64_Addr;     /**< Program address in ELF64 */
 
-typedef uint16_t Elf32_Section;
-typedef uint16_t Elf64_Section;
+typedef uint32_t Elf32_Off;      /**< File offset in ELF32 */
+typedef uint64_t Elf64_Off;      /**< File offset in ELF64 */
 
-typedef Elf32_Half Elf32_Versym;
-typedef Elf64_Half Elf64_Versym;
+/* Section index types */
+typedef uint16_t Elf32_Section;  /**< Section index in ELF32 */
+typedef uint16_t Elf64_Section;  /**< Section index in ELF64 */
+
+/* Version symbol types */
+typedef Elf32_Half Elf32_Versym; /**< Version symbol type for ELF32 */
+typedef Elf64_Half Elf64_Versym; /**< Version symbol type for ELF64 */
 
 #define EI_NIDENT (16)
 
+/**
+ * @struct Elf32_Ehdr
+ * @brief ELF header for 32-bit binaries.
+ *
+ * This structure appears at the beginning of every ELF32 file and contains
+ * information about the file's organization and how to interpret its contents.
+ */
 typedef struct {
-  unsigned char	e_ident[EI_NIDENT];
-  Elf32_Half	e_type;
-  Elf32_Half	e_machine;
-  Elf32_Word	e_version;
-  Elf32_Addr	e_entry;
-  Elf32_Off	e_phoff;
-  Elf32_Off	e_shoff;
-  Elf32_Word	e_flags;
-  Elf32_Half	e_ehsize;
-  Elf32_Half	e_phentsize;
-  Elf32_Half	e_phnum;
-  Elf32_Half	e_shentsize;
-  Elf32_Half	e_shnum;
-  Elf32_Half	e_shstrndx;
+  unsigned char	e_ident[EI_NIDENT]; /**< Magic number and other identification. */
+  Elf32_Half	e_type;               /**< Object file type. */
+  Elf32_Half	e_machine;            /**< Target architecture. */
+  Elf32_Word	e_version;            /**< Object file version. */
+  Elf32_Addr	e_entry;              /**< Entry point virtual address. */
+  Elf32_Off	e_phoff;                /**< Program header table file offset. */
+  Elf32_Off	e_shoff;                /**< Section header table file offset. */
+  Elf32_Word	e_flags;              /**< Processor-specific flags. */
+  Elf32_Half	e_ehsize;             /**< ELF header size in bytes. */
+  Elf32_Half	e_phentsize;          /**< Program header table entry size. */
+  Elf32_Half	e_phnum;              /**< Program header table entry count. */
+  Elf32_Half	e_shentsize;          /**< Section header table entry size. */
+  Elf32_Half	e_shnum;              /**< Section header table entry count. */
+  Elf32_Half	e_shstrndx;           /**< Section header string table index. */
 } Elf32_Ehdr;
 
+/**
+ * @struct Elf64_Ehdr
+ * @brief ELF header for 64-bit binaries.
+ *
+ * This structure appears at the beginning of every ELF64 file and contains
+ * information about the file's organization and how to interpret its contents.
+ */
 typedef struct {
-  unsigned char	e_ident[EI_NIDENT];
-  Elf64_Half	e_type;
-  Elf64_Half	e_machine;
-  Elf64_Word	e_version;
-  Elf64_Addr	e_entry;
-  Elf64_Off	e_phoff;
-  Elf64_Off	e_shoff;
-  Elf64_Word	e_flags;
-  Elf64_Half	e_ehsize;
-  Elf64_Half	e_phentsize;
-  Elf64_Half	e_phnum;
-  Elf64_Half	e_shentsize;
-  Elf64_Half	e_shnum;
-  Elf64_Half	e_shstrndx;
+  unsigned char	e_ident[EI_NIDENT]; /**< Magic number and other identification. */
+  Elf64_Half	e_type;               /**< Object file type. */
+  Elf64_Half	e_machine;            /**< Target architecture. */
+  Elf64_Word	e_version;            /**< Object file version. */
+  Elf64_Addr	e_entry;              /**< Entry point virtual address. */
+  Elf64_Off	e_phoff;                /**< Program header table file offset. */
+  Elf64_Off	e_shoff;                /**< Section header table file offset. */
+  Elf64_Word	e_flags;              /**< Processor-specific flags. */
+  Elf64_Half	e_ehsize;             /**< ELF header size in bytes. */
+  Elf64_Half	e_phentsize;          /**< Program header table entry size. */
+  Elf64_Half	e_phnum;              /**< Program header table entry count. */
+  Elf64_Half	e_shentsize;          /**< Section header table entry size. */
+  Elf64_Half	e_shnum;              /**< Section header table entry count. */
+  Elf64_Half	e_shstrndx;           /**< Section header string table index. */
 } Elf64_Ehdr;
 
 #define EI_MAG0		0
@@ -330,30 +351,44 @@ typedef struct {
 #define EV_CURRENT	1
 #define EV_NUM		2
 
+/**
+ * @struct Elf32_Shdr
+ * @brief Section header for 32-bit ELF binaries.
+ *
+ * Describes each section within an ELF32 file, providing details such as
+ * type, size, location, and alignment of the section.
+ */
 typedef struct {
-  Elf32_Word	sh_name;
-  Elf32_Word	sh_type;
-  Elf32_Word	sh_flags;
-  Elf32_Addr	sh_addr;
-  Elf32_Off	sh_offset;
-  Elf32_Word	sh_size;
-  Elf32_Word	sh_link;
-  Elf32_Word	sh_info;
-  Elf32_Word	sh_addralign;
-  Elf32_Word	sh_entsize;
+  Elf32_Word	sh_name;      /**< Offset to the section name in the string table. */
+  Elf32_Word	sh_type;      /**< Section type (e.g., SHT_PROGBITS, SHT_SYMTAB). */
+  Elf32_Word	sh_flags;     /**< Section attributes (e.g., SHF_WRITE, SHF_ALLOC). */
+  Elf32_Addr	sh_addr;      /**< Virtual address in memory (for loaded sections). */
+  Elf32_Off	sh_offset;      /**< Offset of the section in the file. */
+  Elf32_Word	sh_size;      /**< Size of the section in bytes. */
+  Elf32_Word	sh_link;      /**< Link to another section (e.g., symbol table index). */
+  Elf32_Word	sh_info;      /**< Extra information (e.g., index of related section). */
+  Elf32_Word	sh_addralign; /**< Address alignment constraints. */
+  Elf32_Word	sh_entsize;   /**< Entry size if section holds a table of fixed-size entries. */
 } Elf32_Shdr;
 
+/**
+ * @struct Elf64_Shdr
+ * @brief Section header for 64-bit ELF binaries.
+ *
+ * Describes each section within an ELF64 file, including its type, flags,
+ * memory layout, and linkage information.
+ */
 typedef struct {
-  Elf64_Word	sh_name;
-  Elf64_Word	sh_type;
-  Elf64_Xword	sh_flags;
-  Elf64_Addr	sh_addr;
-  Elf64_Off	sh_offset;
-  Elf64_Xword	sh_size;
-  Elf64_Word	sh_link;
-  Elf64_Word	sh_info;
-  Elf64_Xword	sh_addralign;
-  Elf64_Xword	sh_entsize;
+  Elf64_Word	sh_name;      /**< Offset to the section name in the string table. */
+  Elf64_Word	sh_type;      /**< Section type (e.g., SHT_PROGBITS, SHT_SYMTAB). */
+  Elf64_Xword	sh_flags;     /**< Section attributes (e.g., SHF_WRITE, SHF_ALLOC). */
+  Elf64_Addr	sh_addr;      /**< Virtual address in memory (for loaded sections). */
+  Elf64_Off	sh_offset;      /**< Offset of the section in the file. */  
+  Elf64_Xword	sh_size;      /**< Size of the section in bytes. */
+  Elf64_Word	sh_link;      /**< Link to another section (e.g., symbol table index). */
+  Elf64_Word	sh_info;      /**< Extra information (e.g., index of related section). */
+  Elf64_Xword	sh_addralign; /**< Address alignment constraints. */
+  Elf64_Xword	sh_entsize;   /**< Entry size if section holds a table of fixed-size entries. */
 } Elf64_Shdr;
 
 
@@ -430,17 +465,31 @@ typedef struct {
 #define SHF_ORDERED	     (1 << 30)
 #define SHF_EXCLUDE	     (1U << 31)
 
+/**
+ * @struct Elf32_Chdr
+ * @brief Compressed section header for 32-bit ELF binaries.
+ *
+ * Describes the compression details of a section in ELF32 format.
+ * Used when a section is marked with SHF_COMPRESSED.
+ */
 typedef struct {
-  Elf32_Word	ch_type;
-  Elf32_Word	ch_size;
-  Elf32_Word	ch_addralign;
+  Elf32_Word	ch_type;      /**< Compression format type (e.g., ELFCOMPRESS_ZLIB). */
+  Elf32_Word	ch_size;      /**< Uncompressed data size in bytes. */
+  Elf32_Word	ch_addralign; /**< Alignment of uncompressed data. */
 } Elf32_Chdr;
 
+/**
+ * @struct Elf64_Chdr
+ * @brief Compressed section header for 64-bit ELF binaries.
+ *
+ * Describes the compression details of a section in ELF64 format.
+ * Used when a section is marked with SHF_COMPRESSED.
+ */
 typedef struct {
-  Elf64_Word	ch_type;
-  Elf64_Word	ch_reserved;
-  Elf64_Xword	ch_size;
-  Elf64_Xword	ch_addralign;
+  Elf64_Word	ch_type;      /**< Compression format type (e.g., ELFCOMPRESS_ZLIB). */
+  Elf64_Word	ch_reserved;  /**< Reserved, must be zero. */
+  Elf64_Xword	ch_size;      /**< Uncompressed data size in bytes. */
+  Elf64_Xword	ch_addralign; /**< Alignment of uncompressed data. */
 } Elf64_Chdr;
 
 #define ELFCOMPRESS_ZLIB	1
@@ -452,32 +501,56 @@ typedef struct {
 
 #define GRP_COMDAT	0x1
 
+/**
+ * @struct Elf32_Sym
+ * @brief Symbol table entry for 32-bit ELF binaries.
+ *
+ * Describes a symbol's name, value, size, and other attributes used in linking.
+ */
 typedef struct {
-  Elf32_Word	st_name;
-  Elf32_Addr	st_value;
-  Elf32_Word	st_size;
-  unsigned char	st_info;
-  unsigned char	st_other;
+  Elf32_Word	st_name;    /**< Symbol name (index into string table). */
+  Elf32_Addr	st_value;   /**< Symbol value (address). */
+  Elf32_Word	st_size;    /**< Size of the symbol. */
+  unsigned char	st_info;  /**< Symbol type and binding attributes. */
+  unsigned char	st_other; /**< Symbol visibility. */
   Elf32_Section	st_shndx;
 } Elf32_Sym;
 
+/**
+ * @struct Elf64_Sym
+ * @brief Symbol table entry for 64-bit ELF binaries.
+ *
+ * Describes a symbol's name, value, size, and other attributes used in linking.
+ */
 typedef struct {
-  Elf64_Word	st_name;
-  unsigned char	st_info;
-  unsigned char st_other;
-  Elf64_Section	st_shndx;
-  Elf64_Addr	st_value;
-  Elf64_Xword	st_size;
+  Elf64_Word	st_name;    /**< Symbol name (index into string table). */
+  unsigned char	st_info;  /**< Symbol type and binding attributes. */
+  unsigned char st_other; /**< Symbol visibility. */
+  Elf64_Section	st_shndx; /**< Section index associated with the symbol. */
+  Elf64_Addr	st_value;   /**< Symbol value (address). */
+  Elf64_Xword	st_size;    /**< Size of the symbol. */
 } Elf64_Sym;
 
+/**
+ * @struct Elf32_Syminfo
+ * @brief Auxiliary symbol information for 32-bit ELF binaries.
+ *
+ * Provides additional linking information such as symbol bindings to other symbols.
+ */
 typedef struct {
-  Elf32_Half si_boundto;
-  Elf32_Half si_flags;
+  Elf32_Half si_boundto; /**< Index of the related symbol. */
+  Elf32_Half si_flags;   /**< Flags providing additional symbol info. */
 } Elf32_Syminfo;
 
+/**
+ * @struct Elf64_Syminfo
+ * @brief Auxiliary symbol information for 64-bit ELF binaries.
+ *
+ * Provides additional linking information such as symbol bindings to other symbols.
+ */
 typedef struct {
-  Elf64_Half si_boundto;
-  Elf64_Half si_flags;
+  Elf64_Half si_boundto; /**< Index of the related symbol. */
+  Elf64_Half si_flags;   /**< Flags providing additional symbol info. */
 } Elf64_Syminfo;
 
 #define SYMINFO_BT_SELF		0xffff
@@ -537,29 +610,52 @@ typedef struct {
 
 
 
-
+/**
+ * @struct Elf32_Rel
+ * @brief Structure representing a relocation entry without addend (32-bit).
+ *
+ * This structure is used for relocation entries in sections of type `SHT_REL`.
+ */
 typedef struct {
-  Elf32_Addr	r_offset;
-  Elf32_Word	r_info;
+  Elf32_Addr	r_offset; /**< Location to apply the relocation action. */
+  Elf32_Word	r_info;   /**< Symbol table index and type of relocation. */
 } Elf32_Rel;
 
+
+/**
+ * @struct Elf64_Rel
+ * @brief Structure representing a relocation entry without addend (64-bit).
+ *
+ * This structure is used for relocation entries in sections of type `SHT_REL`.
+ */
 typedef struct {
-  Elf64_Addr	r_offset;
-  Elf64_Xword	r_info;
+  Elf64_Addr	r_offset; /**< Location to apply the relocation action. */
+  Elf64_Xword	r_info;   /**< Symbol table index and type of relocation. */
 } Elf64_Rel;
 
 
-
+/**
+ * @struct Elf32_Rela
+ * @brief Structure representing a relocation entry with addend (32-bit).
+ *
+ * This structure is used for relocation entries in sections of type `SHT_RELA`.
+ */
 typedef struct {
-  Elf32_Addr	r_offset;
-  Elf32_Word	r_info;
-  Elf32_Sword	r_addend;
+  Elf32_Addr	r_offset; /**< Location to apply the relocation action. */
+  Elf32_Word	r_info;   /**< Symbol table index and type of relocation. */
+  Elf32_Sword	r_addend; /**< Constant addend used to compute value. */
 } Elf32_Rela;
 
+/**
+ * @struct Elf64_Rela
+ * @brief Structure representing a relocation entry with addend (64-bit).
+ *
+ * This structure is used for relocation entries in sections of type `SHT_RELA`.
+ */
 typedef struct {
-  Elf64_Addr	r_offset;
-  Elf64_Xword	r_info;
-  Elf64_Sxword	r_addend;
+  Elf64_Addr	r_offset;   /**< Location to apply the relocation action. */
+  Elf64_Xword	r_info;     /**< Symbol table index and type of relocation. */
+  Elf64_Sxword	r_addend; /**< Constant addend used to compute value. */
 } Elf64_Rela;
 
 
@@ -573,27 +669,40 @@ typedef struct {
 #define ELF64_R_INFO(sym,type)		((((Elf64_Xword) (sym)) << 32) + (type))
 
 
-
+/**
+ * @struct Elf32_Phdr
+ * @brief Program header for 32-bit ELF binaries.
+ *
+ * Describes a segment to be loaded into memory, including its offset, size,
+ * and memory attributes.
+ */
 typedef struct {
-  Elf32_Word	p_type;
-  Elf32_Off	p_offset;
-  Elf32_Addr	p_vaddr;
-  Elf32_Addr	p_paddr;
-  Elf32_Word	p_filesz;
-  Elf32_Word	p_memsz;
-  Elf32_Word	p_flags;
-  Elf32_Word	p_align;
+  Elf32_Word	p_type;   /**< Type of segment. */
+  Elf32_Off	p_offset;   /**< Offset of the segment in the file image. */
+  Elf32_Addr	p_vaddr;  /**< Virtual address of the segment in memory. */
+  Elf32_Addr	p_paddr;  /**< Physical address of the segment (unused on most systems). */
+  Elf32_Word	p_filesz; /**< Size of the segment in the file image. */
+  Elf32_Word	p_memsz;  /**< Size of the segment in memory. */
+  Elf32_Word	p_flags;  /**< Segment flags (e.g., read/write/execute). */
+  Elf32_Word	p_align;  /**< Segment alignment (must be a power of 2). */
 } Elf32_Phdr;
 
+/**
+ * @struct Elf64_Phdr
+ * @brief Program header for 64-bit ELF binaries.
+ *
+ * Describes a segment to be loaded into memory, including its offset, size,
+ * and memory attributes.
+ */
 typedef struct {
-  Elf64_Word	p_type;
-  Elf64_Word	p_flags;
-  Elf64_Off	p_offset;
-  Elf64_Addr	p_vaddr;
-  Elf64_Addr	p_paddr;
-  Elf64_Xword	p_filesz;
-  Elf64_Xword	p_memsz;
-  Elf64_Xword	p_align;
+  Elf64_Word	p_type;   /**< Type of segment. */
+  Elf64_Word	p_flags;  /**< Segment flags (e.g., read/write/execute). */
+  Elf64_Off	p_offset;   /**< Offset of the segment in the file image. */
+  Elf64_Addr	p_vaddr;  /**< Virtual address of the segment in memory. */
+  Elf64_Addr	p_paddr;  /**< Physical address of the segment (unused on most systems). */
+  Elf64_Xword	p_filesz; /**< Size of the segment in the file image. */
+  Elf64_Xword	p_memsz;  /**< Size of the segment in memory. */
+  Elf64_Xword	p_align;  /**< Segment alignment (must be a power of 2). */
 } Elf64_Phdr;
 
 
@@ -708,20 +817,32 @@ typedef struct {
 
 
 
-
+/**
+ * @struct Elf32_Dyn
+ * @brief Dynamic section entry for 32-bit ELF.
+ *
+ * Represents an entry in the dynamic section, which provides information
+ * used at runtime by the dynamic linker.
+ */
 typedef struct {
-  Elf32_Sword d_tag;
+  Elf32_Sword d_tag;  /**< Type of dynamic entry. */
   union {
-    Elf32_Word d_val;
-    Elf32_Addr d_ptr;
+    Elf32_Word d_val; /**< Integer value. */
+    Elf32_Addr d_ptr; /**< Address value. */
   } d_un;
 } Elf32_Dyn;
 
+/**
+ * @struct Elf64_Dyn
+ * @brief Dynamic section entry for 64-bit ELF.
+ *
+ * Represents an entry in the dynamic section for 64-bit binaries.
+ */
 typedef struct {
-  Elf64_Sxword d_tag;
+  Elf64_Sxword d_tag;  /**< Type of dynamic entry. */
   union {
-    Elf64_Xword d_val;
-    Elf64_Addr d_ptr;
+    Elf64_Xword d_val; /**< Integer value. */
+    Elf64_Addr d_ptr;  /**< Address value. */
   } d_un;
 } Elf64_Dyn;
 
@@ -877,25 +998,36 @@ typedef struct {
 
 
 
-
+/**
+ * @struct Elf32_Verdef
+ * @brief Symbol version definition for 32-bit ELF.
+ *
+ * Describes the version of a defined symbol in the binary.
+ */
 typedef struct {
-  Elf32_Half	vd_version;
-  Elf32_Half	vd_flags;
-  Elf32_Half	vd_ndx;
-  Elf32_Half	vd_cnt;
-  Elf32_Word	vd_hash;
-  Elf32_Word	vd_aux;
-  Elf32_Word	vd_next;
+  Elf32_Half	vd_version; /**< Version of the structure format. */
+  Elf32_Half	vd_flags;   /**< Version definition flags. */
+  Elf32_Half	vd_ndx;     /**< Version index. */
+  Elf32_Half	vd_cnt;     /**< Number of associated auxiliary entries. */
+  Elf32_Word	vd_hash;    /**< Hash of the version name. */
+  Elf32_Word	vd_aux;     /**< Offset to the first Verdaux entry. */
+  Elf32_Word	vd_next;    /**< Offset to the next Verdef entry. */
 } Elf32_Verdef;
 
+/**
+ * @struct Elf64_Verdef
+ * @brief Symbol version definition for 64-bit ELF.
+ *
+ * Describes the version of a defined symbol in the binary.
+ */
 typedef struct {
-  Elf64_Half	vd_version;
-  Elf64_Half	vd_flags;
-  Elf64_Half	vd_ndx;
-  Elf64_Half	vd_cnt;
-  Elf64_Word	vd_hash;
-  Elf64_Word	vd_aux;
-  Elf64_Word	vd_next;
+  Elf64_Half	vd_version; /**< Version of the structure format. */
+  Elf64_Half	vd_flags;   /**< Version definition flags. */
+  Elf64_Half	vd_ndx;     /**< Version index. */
+  Elf64_Half	vd_cnt;     /**< Number of associated auxiliary entries. */
+  Elf64_Word	vd_hash;    /**< Hash of the version name. */
+  Elf64_Word	vd_aux;     /**< Offset to the first Verdaux entry. */
+  Elf64_Word	vd_next;    /**< Offset to the next Verdef entry. */
 } Elf64_Verdef;
 
 
@@ -915,34 +1047,53 @@ typedef struct {
 #define	VER_NDX_ELIMINATE	0xff01
 
 
-
+/**
+ * @struct Elf32_Verdaux
+ * @brief Auxiliary version definition entry for 32-bit ELF.
+ */
 typedef struct {
-  Elf32_Word	vda_name;
-  Elf32_Word	vda_next;
+  Elf32_Word	vda_name; /**< Offset to the version name string. */
+  Elf32_Word	vda_next; /**< Offset to the next Verdaux entry. */
 } Elf32_Verdaux;
 
+
+/**
+ * @struct Elf64_Verdaux
+ * @brief Auxiliary version definition entry for 64-bit ELF.
+ */
 typedef struct {
-  Elf64_Word	vda_name;
-  Elf64_Word	vda_next;
+  Elf64_Word	vda_name; /**< Offset to the version name string. */
+  Elf64_Word	vda_next; /**< Offset to the next Verdaux entry. */
 } Elf64_Verdaux;
 
 
 
-
+/**
+ * @struct Elf32_Verneed
+ * @brief Symbol version dependency for 32-bit ELF.
+ *
+ * Describes the versions of undefined symbols that this binary needs.
+ */
 typedef struct {
-  Elf32_Half	vn_version;
-  Elf32_Half	vn_cnt;
-  Elf32_Word	vn_file;
-  Elf32_Word	vn_aux;
-  Elf32_Word	vn_next;
+  Elf32_Half	vn_version; /**< Version of the structure format. */
+  Elf32_Half	vn_cnt;     /**< Number of associated auxiliary entries. */
+  Elf32_Word	vn_file;    /**< Offset to the file name string. */
+  Elf32_Word	vn_aux;     /**< Offset to the first Vernaux entry. */
+  Elf32_Word	vn_next;    /**< Offset to the next Verneed entry. */
 } Elf32_Verneed;
 
+/**
+ * @struct Elf64_Verneed
+ * @brief Symbol version dependency for 64-bit ELF.
+ *
+ * Describes the versions of undefined symbols that this binary needs.
+ */
 typedef struct {
-  Elf64_Half	vn_version;
-  Elf64_Half	vn_cnt;
-  Elf64_Word	vn_file;
-  Elf64_Word	vn_aux;
-  Elf64_Word	vn_next;
+  Elf64_Half	vn_version; /**< Version of the structure format. */
+  Elf64_Half	vn_cnt;     /**< Number of associated auxiliary entries. */
+  Elf64_Word	vn_file;    /**< Offset to the file name string. */
+  Elf64_Word	vn_aux;     /**< Offset to the first Vernaux entry. */
+  Elf64_Word	vn_next;    /**< Offset to the next Verneed entry. */
 } Elf64_Verneed;
 
 
@@ -952,21 +1103,30 @@ typedef struct {
 #define VER_NEED_NUM	 2
 
 
-
+/**
+ * @struct Elf32_Vernaux
+ * @brief Auxiliary version dependency entry for 32-bit ELF.
+ *
+ * Represents a version requirement for a specific symbol.
+ */
 typedef struct {
-  Elf32_Word	vna_hash;
-  Elf32_Half	vna_flags;
-  Elf32_Half	vna_other;
-  Elf32_Word	vna_name;
-  Elf32_Word	vna_next;
+  Elf32_Word	vna_hash;  /**< Hash of the dependency version name. */
+  Elf32_Half	vna_flags; /**< Version dependency flags. */
+  Elf32_Half	vna_other; /**< Version index. */
+  Elf32_Word	vna_name;  /**< Offset to version name string in string table. */
+  Elf32_Word	vna_next;  /**< Offset to next Vernaux entry. */
 } Elf32_Vernaux;
 
+/**
+ * @struct Elf64_Vernaux
+ * @brief Auxiliary version dependency entry for 64-bit ELF.
+ */
 typedef struct {
-  Elf64_Word	vna_hash;
-  Elf64_Half	vna_flags;
-  Elf64_Half	vna_other;
-  Elf64_Word	vna_name;
-  Elf64_Word	vna_next;
+  Elf64_Word	vna_hash;  /**< Hash of the dependency version name. */
+  Elf64_Half	vna_flags; /**< Version dependency flags. */
+  Elf64_Half	vna_other; /**< Version index. */
+  Elf64_Word	vna_name;  /**< Offset to version name string in string table. */
+  Elf64_Word	vna_next;  /**< Offset to next Vernaux entry. */
 } Elf64_Vernaux;
 
 
@@ -974,18 +1134,27 @@ typedef struct {
 #define VER_FLG_WEAK	0x2
 
 
-
+/**
+ * @struct Elf32_auxv_t
+ * @brief Auxiliary vector for 32-bit ELF.
+ *
+ * Contains key-value pairs passed from the kernel to the program during exec.
+ */
 typedef struct {
-  uint32_t a_type;
+  uint32_t a_type;  /**< Entry type (e.g., AT_PHDR, AT_ENTRY). */
   union {
-    uint32_t a_val;
+    uint32_t a_val; /**< Integer or address value. */
   } a_un;
 } Elf32_auxv_t;
 
+/**
+ * @struct Elf64_auxv_t
+ * @brief Auxiliary vector for 64-bit ELF.
+ */
 typedef struct {
-  uint64_t a_type;
+  uint64_t a_type;  /**< Entry type (e.g., AT_PHDR, AT_ENTRY). */
   union {
-    uint64_t a_val;
+    uint64_t a_val; /**< Integer or address value. */
   } a_un;
 } Elf64_auxv_t;
 
@@ -1059,17 +1228,28 @@ typedef struct {
 
 #define AT_MINSIGSTKSZ		51
 
-
+/**
+ * @struct Elf32_Nhdr
+ * @brief Note section header for 32-bit ELF.
+ *
+ * Used in PT_NOTE segments to store auxiliary information such as
+ * build ID, ABI, etc.
+ */
 typedef struct {
-  Elf32_Word n_namesz;
-  Elf32_Word n_descsz;
-  Elf32_Word n_type;
+  Elf32_Word n_namesz; /**< Size of the name field. */
+  Elf32_Word n_descsz; /**< Size of the descriptor field. */
+  Elf32_Word n_type;   /**< Note type. */
 } Elf32_Nhdr;
 
+
+/**
+ * @struct Elf64_Nhdr
+ * @brief Note section header for 64-bit ELF.
+ */
 typedef struct {
-  Elf64_Word n_namesz;
-  Elf64_Word n_descsz;
-  Elf64_Word n_type;
+  Elf64_Word n_namesz; /**< Size of the name field. */
+  Elf64_Word n_descsz; /**< Size of the descriptor field. */
+  Elf64_Word n_type;   /**< Note type. */
 } Elf64_Nhdr;
 
 
@@ -1102,21 +1282,30 @@ typedef struct {
 #define NT_GNU_PROPERTY_TYPE_0	5
 
 
-
+/**
+ * @struct Elf32_Move
+ * @brief Move entry for 32-bit ELF.
+ *
+ * Used for data relocation in large static objects.
+ */
 typedef struct {
-  Elf32_Xword m_value;
-  Elf32_Word m_info;
-  Elf32_Word m_poffset;
-  Elf32_Half m_repeat;
-  Elf32_Half m_stride;
+  Elf32_Xword m_value;  /**< Symbol value to be moved. */
+  Elf32_Word m_info;    /**< Encoded symbol and type. */
+  Elf32_Word m_poffset; /**< Offset in the symbol. */
+  Elf32_Half m_repeat;  /**< Repeat count. */
+  Elf32_Half m_stride;  /**< Stride between repetitions. */
 } Elf32_Move;
 
+/**
+ * @struct Elf64_Move
+ * @brief Move entry for 64-bit ELF.
+ */
 typedef struct {
-  Elf64_Xword m_value;
-  Elf64_Xword m_info;
-  Elf64_Xword m_poffset;
-  Elf64_Half m_repeat;
-  Elf64_Half m_stride;
+  Elf64_Xword m_value;   /**< Symbol value to be moved. */
+  Elf64_Xword m_info;    /**< Encoded symbol and type. */
+  Elf64_Xword m_poffset; /**< Offset in the symbol. */
+  Elf64_Half m_repeat;   /**< Repeat count. */
+  Elf64_Half m_stride;   /**< Stride between repetitions. */
 } Elf64_Move;
 
 
@@ -1449,35 +1638,50 @@ typedef struct {
 #define STB_MIPS_SPLIT_COMMON		13
 
 
-
+/**
+ * @union Elf32_gptab
+ * @brief Global Offset Table (GOT) processing table for 32-bit ELF (MIPS-specific).
+ *
+ * Contains either header information or an entry describing global pointer values.
+ */
 typedef union {
   struct {
-    Elf32_Word gt_current_g_value;
-    Elf32_Word gt_unused;
+    Elf32_Word gt_current_g_value; /**< Current GP value used. */
+    Elf32_Word gt_unused;          /**< Unused. */
   } gt_header;
   struct {
-    Elf32_Word gt_g_value;
-    Elf32_Word gt_bytes;
+    Elf32_Word gt_g_value;         /**< Global pointer value. */
+    Elf32_Word gt_bytes;           /**< Number of bytes associated with this GP value. */
   } gt_entry;
 } Elf32_gptab;
 
 
-
+/**
+ * @struct Elf32_RegInfo
+ * @brief MIPS register usage information.
+ *
+ * Describes usage of general-purpose and coprocessor registers for optimization.
+ */
 typedef struct {
-  Elf32_Word	ri_gprmask;
-  Elf32_Word	ri_cprmask[4];
-  Elf32_Sword	ri_gp_value;
+  Elf32_Word	ri_gprmask;    /**< Bitmask of used general-purpose registers. */
+  Elf32_Word	ri_cprmask[4]; /**< Bitmask of used coprocessor registers. */
+  Elf32_Sword	ri_gp_value;   /**< Global pointer value. */
 } Elf32_RegInfo;
 
 
-
+/**
+ * @struct Elf_Options
+ * @brief ELF Options section entry.
+ *
+ * Used for processor- and platform-specific extensions (e.g., MIPS).
+ */
 typedef struct {
-  unsigned char kind;
+  unsigned char kind;    /**< Option kind identifier. */
 
-  unsigned char size;
-  Elf32_Section section;
+  unsigned char size;    /**< Total size of this option. */
+  Elf32_Section section; /**< Section index that this option applies to. */
 
-  Elf32_Word info;
+  Elf32_Word info;       /**< Additional option-specific information. */
 } Elf_Options;
 
 
@@ -1520,10 +1724,13 @@ typedef struct {
 #define OPAD_SYMBOL	0x4
 
 
-
+/**
+ * @struct Elf_Options_Hw
+ * @brief Hardware-specific options flags.
+ */
 typedef struct {
-  Elf32_Word hwp_flags1;
-  Elf32_Word hwp_flags2;
+  Elf32_Word hwp_flags1; /**< First hardware capability flag word. */
+  Elf32_Word hwp_flags2; /**< Second hardware capability flag word. */
 } Elf_Options_Hw;
 
 
@@ -1680,21 +1887,28 @@ typedef struct {
 #define RHF_RLD_ORDER_SAFE	   (1 << 14)
 
 
-
+/**
+ * @struct Elf32_Lib
+ * @brief Library dependency information for 32-bit ELF.
+ */
 typedef struct {
-  Elf32_Word l_name;
-  Elf32_Word l_time_stamp;
-  Elf32_Word l_checksum;
-  Elf32_Word l_version;
-  Elf32_Word l_flags;
+  Elf32_Word l_name;       /**< Offset to library name in string table. */
+  Elf32_Word l_time_stamp; /**< Timestamp of the library. */
+  Elf32_Word l_checksum;   /**< Checksum for integrity. */
+  Elf32_Word l_version;    /**< Interface version. */
+  Elf32_Word l_flags;      /**< Flags describing library properties. */
 } Elf32_Lib;
 
+/**
+ * @struct Elf64_Lib
+ * @brief Library dependency information for 64-bit ELF.
+ */
 typedef struct {
-  Elf64_Word l_name;
-  Elf64_Word l_time_stamp;
-  Elf64_Word l_checksum;
-  Elf64_Word l_version;
-  Elf64_Word l_flags;
+  Elf64_Word l_name;       /**< Offset to library name in string table. */
+  Elf64_Word l_time_stamp; /**< Timestamp of the library. */
+  Elf64_Word l_checksum;   /**< Checksum for integrity. */  
+  Elf64_Word l_version;    /**< Interface version. */
+  Elf64_Word l_flags;      /**< Flags describing library properties. */
 } Elf64_Lib;
 
 
@@ -1709,21 +1923,32 @@ typedef struct {
 #define LL_DELTA	  (1 << 5)
 
 
-
+/**
+ * @typedef Elf32_Conflict
+ * @brief Conflict table entry used in dynamic linking.
+ *
+ * This is typically used in symbol conflict resolution during relocations.
+ */
 typedef Elf32_Addr Elf32_Conflict;
 
+/**
+ * @struct Elf_MIPS_ABIFlags_v0
+ * @brief MIPS ABI flags structure version 0.
+ *
+ * Encodes MIPS-specific ABI attributes in the `.MIPS.abiflags` section.
+ */
 typedef struct {
-  Elf32_Half version;
-  unsigned char isa_level;
-  unsigned char isa_rev;
-  unsigned char gpr_size;
-  unsigned char cpr1_size;
-  unsigned char cpr2_size;
-  unsigned char fp_abi;
-  Elf32_Word isa_ext;
-  Elf32_Word ases;
-  Elf32_Word flags1;
-  Elf32_Word flags2;
+  Elf32_Half version;      /**< Version of the structure. */
+  unsigned char isa_level; /**< ISA level (e.g., 1 for MIPS I). */
+  unsigned char isa_rev;   /**< ISA revision. */
+  unsigned char gpr_size;  /**< Size of general-purpose registers. */
+  unsigned char cpr1_size; /**< Size of coprocessor 1 (FPU) registers. */
+  unsigned char cpr2_size; /**< Size of coprocessor 2 registers. */
+  unsigned char fp_abi;    /**< Floating-point ABI used. */
+  Elf32_Word isa_ext;      /**< Bitfield of ISA extensions. */
+  Elf32_Word ases;         /**< Bitfield of application-specific extensions. */
+  Elf32_Word flags1;       /**< Additional processor-specific flags. */
+  Elf32_Word flags2;       /**< Additional processor-specific flags. */
 } Elf_MIPS_ABIFlags_v0;
 
 #define MIPS_AFL_REG_NONE	0x00
@@ -1767,17 +1992,24 @@ typedef struct {
 
 #define MIPS_AFL_FLAGS1_ODDSPREG  1
 
+/**
+ * @enum
+ * @brief MIPS floating-point ABI types used in the `.MIPS.abiflags` section.
+ *
+ * These values describe the floating-point ABI in use, as encoded in the `fp_abi` field
+ * of the `Elf_MIPS_ABIFlags_v0` structure.
+ */
 enum
 {
-  Val_GNU_MIPS_ABI_FP_ANY = 0,
-  Val_GNU_MIPS_ABI_FP_DOUBLE = 1,
-  Val_GNU_MIPS_ABI_FP_SINGLE = 2,
-  Val_GNU_MIPS_ABI_FP_SOFT = 3,
-  Val_GNU_MIPS_ABI_FP_OLD_64 = 4,
-  Val_GNU_MIPS_ABI_FP_XX = 5,
-  Val_GNU_MIPS_ABI_FP_64 = 6,
-  Val_GNU_MIPS_ABI_FP_64A = 7,
-  Val_GNU_MIPS_ABI_FP_MAX = 7
+  Val_GNU_MIPS_ABI_FP_ANY = 0,    /**< Unknown or unspecified FP ABI. */
+  Val_GNU_MIPS_ABI_FP_DOUBLE = 1, /**< Double-precision hard-float. */
+  Val_GNU_MIPS_ABI_FP_SINGLE = 2, /**< Single-precision hard-float. */
+  Val_GNU_MIPS_ABI_FP_SOFT = 3,   /**< Software-emulated floating-point. */
+  Val_GNU_MIPS_ABI_FP_OLD_64 = 4, /**< Old 64-bit FPU calling convention. */
+  Val_GNU_MIPS_ABI_FP_XX = 5,     /**< No float arguments passed in float registers. */
+  Val_GNU_MIPS_ABI_FP_64 = 6,     /**< New 64-bit FPU calling convention. */
+  Val_GNU_MIPS_ABI_FP_64A = 7,    /**< New 64-bit FPU calling convention with 64-bit alignment. */
+  Val_GNU_MIPS_ABI_FP_MAX = 7     /**< Maximum valid FP ABI value. */
 };
 
 
