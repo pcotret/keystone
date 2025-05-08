@@ -2603,134 +2603,176 @@ enum
 #define SHT_ARM_PREEMPTMAP	(SHT_LOPROC + 2)
 #define SHT_ARM_ATTRIBUTES	(SHT_LOPROC + 3)
 
+/** 
+ * \defgroup R_AARCH64 Relocation Types for AArch64
+ * \brief A collection of relocation types for AArch64 architecture.
+ * @{
+ */
+
 #define R_AARCH64_NONE            0
-#define R_AARCH64_P32_ABS32	1
-#define R_AARCH64_P32_COPY	180
-#define R_AARCH64_P32_GLOB_DAT	181
-#define R_AARCH64_P32_JUMP_SLOT	182
-#define R_AARCH64_P32_RELATIVE	183
-#define R_AARCH64_P32_TLS_DTPMOD 184
-#define R_AARCH64_P32_TLS_DTPREL 185
-#define R_AARCH64_P32_TLS_TPREL	186
-#define R_AARCH64_P32_TLSDESC	187
-#define R_AARCH64_P32_IRELATIVE	188
-#define R_AARCH64_ABS64         257
-#define R_AARCH64_ABS32         258
-#define R_AARCH64_ABS16		259
-#define R_AARCH64_PREL64	260
-#define R_AARCH64_PREL32	261
-#define R_AARCH64_PREL16	262
-#define R_AARCH64_MOVW_UABS_G0	263
-#define R_AARCH64_MOVW_UABS_G0_NC 264
-#define R_AARCH64_MOVW_UABS_G1	265
-#define R_AARCH64_MOVW_UABS_G1_NC 266
-#define R_AARCH64_MOVW_UABS_G2	267
-#define R_AARCH64_MOVW_UABS_G2_NC 268
-#define R_AARCH64_MOVW_UABS_G3	269
-#define R_AARCH64_MOVW_SABS_G0	270
-#define R_AARCH64_MOVW_SABS_G1	271
-#define R_AARCH64_MOVW_SABS_G2	272
-#define R_AARCH64_LD_PREL_LO19	273
-#define R_AARCH64_ADR_PREL_LO21	274
-#define R_AARCH64_ADR_PREL_PG_HI21 275
-#define R_AARCH64_ADR_PREL_PG_HI21_NC 276
-#define R_AARCH64_ADD_ABS_LO12_NC 277
-#define R_AARCH64_LDST8_ABS_LO12_NC 278
-#define R_AARCH64_TSTBR14	279
-#define R_AARCH64_CONDBR19	280
-#define R_AARCH64_JUMP26	282
-#define R_AARCH64_CALL26	283
-#define R_AARCH64_LDST16_ABS_LO12_NC 284
-#define R_AARCH64_LDST32_ABS_LO12_NC 285
-#define R_AARCH64_LDST64_ABS_LO12_NC 286
-#define R_AARCH64_MOVW_PREL_G0	287
-#define R_AARCH64_MOVW_PREL_G0_NC 288
-#define R_AARCH64_MOVW_PREL_G1	289
-#define R_AARCH64_MOVW_PREL_G1_NC 290
-#define R_AARCH64_MOVW_PREL_G2	291
-#define R_AARCH64_MOVW_PREL_G2_NC 292
-#define R_AARCH64_MOVW_PREL_G3	293
-#define R_AARCH64_LDST128_ABS_LO12_NC 299
-#define R_AARCH64_MOVW_GOTOFF_G0 300
-#define R_AARCH64_MOVW_GOTOFF_G0_NC 301
-#define R_AARCH64_MOVW_GOTOFF_G1 302
-#define R_AARCH64_MOVW_GOTOFF_G1_NC 303
-#define R_AARCH64_MOVW_GOTOFF_G2 304
-#define R_AARCH64_MOVW_GOTOFF_G2_NC 305
-#define R_AARCH64_MOVW_GOTOFF_G3 306
-#define R_AARCH64_GOTREL64	307
-#define R_AARCH64_GOTREL32	308
-#define R_AARCH64_GOT_LD_PREL19	309
-#define R_AARCH64_LD64_GOTOFF_LO15 310
-#define R_AARCH64_ADR_GOT_PAGE	311
-#define R_AARCH64_LD64_GOT_LO12_NC 312
-#define R_AARCH64_LD64_GOTPAGE_LO15 313
-#define R_AARCH64_TLSGD_ADR_PREL21 512
-#define R_AARCH64_TLSGD_ADR_PAGE21 513
-#define R_AARCH64_TLSGD_ADD_LO12_NC 514
-#define R_AARCH64_TLSGD_MOVW_G1	515
-#define R_AARCH64_TLSGD_MOVW_G0_NC 516
-#define R_AARCH64_TLSLD_ADR_PREL21 517
-#define R_AARCH64_TLSLD_ADR_PAGE21 518
-#define R_AARCH64_TLSLD_ADD_LO12_NC 519
-#define R_AARCH64_TLSLD_MOVW_G1	520
-#define R_AARCH64_TLSLD_MOVW_G0_NC 521
-#define R_AARCH64_TLSLD_LD_PREL19 522
-#define R_AARCH64_TLSLD_MOVW_DTPREL_G2 523
-#define R_AARCH64_TLSLD_MOVW_DTPREL_G1 524
-#define R_AARCH64_TLSLD_MOVW_DTPREL_G1_NC 525
-#define R_AARCH64_TLSLD_MOVW_DTPREL_G0 526
-#define R_AARCH64_TLSLD_MOVW_DTPREL_G0_NC 527
-#define R_AARCH64_TLSLD_ADD_DTPREL_HI12 528
-#define R_AARCH64_TLSLD_ADD_DTPREL_LO12 529
-#define R_AARCH64_TLSLD_ADD_DTPREL_LO12_NC 530
-#define R_AARCH64_TLSLD_LDST8_DTPREL_LO12 531
-#define R_AARCH64_TLSLD_LDST8_DTPREL_LO12_NC 532
-#define R_AARCH64_TLSLD_LDST16_DTPREL_LO12 533
-#define R_AARCH64_TLSLD_LDST16_DTPREL_LO12_NC 534
-#define R_AARCH64_TLSLD_LDST32_DTPREL_LO12 535
-#define R_AARCH64_TLSLD_LDST32_DTPREL_LO12_NC 536
-#define R_AARCH64_TLSLD_LDST64_DTPREL_LO12 537
-#define R_AARCH64_TLSLD_LDST64_DTPREL_LO12_NC 538
-#define R_AARCH64_TLSIE_MOVW_GOTTPREL_G1 539
-#define R_AARCH64_TLSIE_MOVW_GOTTPREL_G0_NC 540
-#define R_AARCH64_TLSIE_ADR_GOTTPREL_PAGE21 541
-#define R_AARCH64_TLSIE_LD64_GOTTPREL_LO12_NC 542
-#define R_AARCH64_TLSIE_LD_GOTTPREL_PREL19 543
-#define R_AARCH64_TLSLE_MOVW_TPREL_G2 544
-#define R_AARCH64_TLSLE_MOVW_TPREL_G1 545
-#define R_AARCH64_TLSLE_MOVW_TPREL_G1_NC 546
-#define R_AARCH64_TLSLE_MOVW_TPREL_G0 547
-#define R_AARCH64_TLSLE_MOVW_TPREL_G0_NC 548
-#define R_AARCH64_TLSLE_ADD_TPREL_HI12 549
-#define R_AARCH64_TLSLE_ADD_TPREL_LO12 550
-#define R_AARCH64_TLSLE_ADD_TPREL_LO12_NC 551
-#define R_AARCH64_TLSLE_LDST8_TPREL_LO12 552
-#define R_AARCH64_TLSLE_LDST8_TPREL_LO12_NC 553
-#define R_AARCH64_TLSLE_LDST16_TPREL_LO12 554
-#define R_AARCH64_TLSLE_LDST16_TPREL_LO12_NC 555
-#define R_AARCH64_TLSLE_LDST32_TPREL_LO12 556
-#define R_AARCH64_TLSLE_LDST32_TPREL_LO12_NC 557
-#define R_AARCH64_TLSLE_LDST64_TPREL_LO12 558
-#define R_AARCH64_TLSLE_LDST64_TPREL_LO12_NC 559
-#define R_AARCH64_TLSDESC_LD_PREL19 560
-#define R_AARCH64_TLSDESC_ADR_PREL21 561
-#define R_AARCH64_TLSDESC_ADR_PAGE21 562
-#define R_AARCH64_TLSDESC_LD64_LO12 563
-#define R_AARCH64_TLSDESC_ADD_LO12 564
-#define R_AARCH64_TLSDESC_OFF_G1 565
-#define R_AARCH64_TLSDESC_OFF_G0_NC 566
-#define R_AARCH64_TLSDESC_LDR	567
-#define R_AARCH64_TLSDESC_ADD	568
-#define R_AARCH64_TLSDESC_CALL	569
-#define R_AARCH64_TLSLE_LDST128_TPREL_LO12 570
-#define R_AARCH64_TLSLE_LDST128_TPREL_LO12_NC 571
-#define R_AARCH64_TLSLD_LDST128_DTPREL_LO12 572
-#define R_AARCH64_TLSLD_LDST128_DTPREL_LO12_NC 573
-#define R_AARCH64_COPY         1024
-#define R_AARCH64_GLOB_DAT     1025
-#define R_AARCH64_JUMP_SLOT    1026
-#define R_AARCH64_RELATIVE     1027
+/** \name P32 Relocation Types */
+#define R_AARCH64_P32_ABS32        1  /**< P32 Absolute relocation, 32-bit. */
+#define R_AARCH64_P32_COPY         180 /**< P32 Copy relocation. */
+#define R_AARCH64_P32_GLOB_DAT     181 /**< P32 Global Data relocation. */
+#define R_AARCH64_P32_JUMP_SLOT    182 /**< P32 Jump Slot relocation. */
+#define R_AARCH64_P32_RELATIVE     183 /**< P32 Relative relocation. */
+#define R_AARCH64_P32_TLS_DTPMOD   184 /**< P32 TLS DTP Mod relocation. */
+#define R_AARCH64_P32_TLS_DTPREL   185 /**< P32 TLS DTP Relocation. */
+#define R_AARCH64_P32_TLS_TPREL    186 /**< P32 TLS TP Relocation. */
+#define R_AARCH64_P32_TLSDESC      187 /**< P32 TLS Desc relocation. */
+#define R_AARCH64_P32_IRELATIVE    188 /**< P32 I-relative relocation. */
+/** @} */
+/** \name Absolute Relocation Types */
+#define R_AARCH64_ABS64            257 /**< Absolute relocation, 64-bit. */
+#define R_AARCH64_ABS32            258 /**< Absolute relocation, 32-bit. */
+#define R_AARCH64_ABS16            259 /**< Absolute relocation, 16-bit. */
+/** @} */
+/** \name Preload Relocation Types */
+#define R_AARCH64_PREL64           260 /**< Preload relocation for 64-bit addresses. */
+#define R_AARCH64_PREL32           261 /**< Preload relocation for 32-bit addresses. */
+#define R_AARCH64_PREL16           262 /**< Preload relocation for 16-bit addresses. */
+/** @} */
+/** \name Move-Wide Unsigned Absolute Relocation Types */
+#define R_AARCH64_MOVW_UABS_G0     263 /**< Move Wide Unsigned Absolute relocation for G0. */
+#define R_AARCH64_MOVW_UABS_G0_NC  264 /**< Move Wide Unsigned Absolute relocation for G0, no carry. */
+#define R_AARCH64_MOVW_UABS_G1     265 /**< Move Wide Unsigned Absolute relocation for G1. */
+#define R_AARCH64_MOVW_UABS_G1_NC  266 /**< Move Wide Unsigned Absolute relocation for G1, no carry. */
+#define R_AARCH64_MOVW_UABS_G2     267 /**< Move Wide Unsigned Absolute relocation for G2. */
+#define R_AARCH64_MOVW_UABS_G2_NC  268 /**< Move Wide Unsigned Absolute relocation for G2, no carry. */
+#define R_AARCH64_MOVW_UABS_G3     269 /**< Move Wide Unsigned Absolute relocation for G3. */
+/** @} */
+/** \name Move-Wide Signed Absolute Relocation Types */
+#define R_AARCH64_MOVW_SABS_G0     270 /**< Move Wide Signed Absolute relocation for G0. */
+#define R_AARCH64_MOVW_SABS_G1     271 /**< Move Wide Signed Absolute relocation for G1. */
+#define R_AARCH64_MOVW_SABS_G2     272 /**< Move Wide Signed Absolute relocation for G2. */
+/** @} */
+/** \name Load/Store Relocation Types */
+#define R_AARCH64_LD_PREL_LO19     273 /**< Load Preload LO19 for 64-bit addresses. */
+#define R_AARCH64_ADR_PREL_LO21    274 /**< ADR Preload LO21 for 64-bit addresses. */
+#define R_AARCH64_ADR_PREL_PG_HI21 275 /**< ADR Preload PG Hi21 for 64-bit addresses. */
+#define R_AARCH64_ADR_PREL_PG_HI21_NC 276 /**< ADR Preload PG Hi21 for 64-bit addresses, no carry. */
+#define R_AARCH64_ADD_ABS_LO12_NC  277 /**< Add Absolute relocation for low 12 bits, no carry. */
+#define R_AARCH64_LDST8_ABS_LO12_NC 278 /**< Load/Store 8-bit Absolute relocation, low 12 bits, no carry. */
+/** @} */
+/** \name Branch and Jump Relocation Types */
+#define R_AARCH64_TSTBR14          279 /**< Test Branch relocation for 14-bit addresses. */
+#define R_AARCH64_CONDBR19         280 /**< Conditional Branch relocation for 19-bit addresses. */
+#define R_AARCH64_JUMP26           282 /**< Jump relocation for 26-bit addresses. */
+#define R_AARCH64_CALL26           283 /**< Call relocation for 26-bit addresses. */
+/** @} */
+/** \name Load/Store Relocation Types */
+#define R_AARCH64_LDST16_ABS_LO12_NC 284 /**< Load/Store 16-bit Absolute relocation, low 12 bits, no carry. */
+#define R_AARCH64_LDST32_ABS_LO12_NC 285 /**< Load/Store 32-bit Absolute relocation, low 12 bits, no carry. */
+#define R_AARCH64_LDST64_ABS_LO12_NC 286 /**< Load/Store 64-bit Absolute relocation, low 12 bits, no carry. */
+#define R_AARCH64_LDST128_ABS_LO12_NC 299 /**< Load/Store 128-bit Absolute relocation, low 12 bits, no carry. */
+/** @} */
+/** \name Move-Wide Preload Relocation Types */
+#define R_AARCH64_MOVW_PREL_G0     287 /**< Move Wide Preload relocation for G0. */
+#define R_AARCH64_MOVW_PREL_G0_NC  288 /**< Move Wide Preload relocation for G0, no carry. */
+#define R_AARCH64_MOVW_PREL_G1     289 /**< Move Wide Preload relocation for G1. */
+#define R_AARCH64_MOVW_PREL_G1_NC  290 /**< Move Wide Preload relocation for G1, no carry. */
+#define R_AARCH64_MOVW_PREL_G2     291 /**< Move Wide Preload relocation for G2. */
+#define R_AARCH64_MOVW_PREL_G2_NC  292 /**< Move Wide Preload relocation for G2, no carry. */
+#define R_AARCH64_MOVW_PREL_G3     293 /**< Move Wide Preload relocation for G3. */
+/** @} */
+/** \name Global Offset Table (GOT) Relocation Types */
+#define R_AARCH64_MOVW_GOTOFF_G0   300 /**< Global Offset relocation for G0. */
+#define R_AARCH64_MOVW_GOTOFF_G0_NC 301 /**< Global Offset relocation for G0, no carry. */
+#define R_AARCH64_MOVW_GOTOFF_G1   302 /**< Global Offset relocation for G1. */
+#define R_AARCH64_MOVW_GOTOFF_G1_NC 303 /**< Global Offset relocation for G1, no carry. */
+#define R_AARCH64_MOVW_GOTOFF_G2   304 /**< Global Offset relocation for G2. */
+#define R_AARCH64_MOVW_GOTOFF_G2_NC 305 /**< Global Offset relocation for G2, no carry. */
+#define R_AARCH64_MOVW_GOTOFF_G3   306 /**< Global Offset relocation for G3. */
+/** @} */
+/** \name GOT Relocation Types */
+#define R_AARCH64_GOTREL64         307 /**< GOT Relative relocation for 64-bit addresses. */
+#define R_AARCH64_GOTREL32         308 /**< GOT Relative relocation for 32-bit addresses. */
+#define R_AARCH64_GOT_LD_PREL19    309 /**< GOT Load Preload LO19 relocation. */
+#define R_AARCH64_LD64_GOTOFF_LO15 310 /**< Load 64-bit Global Offset relocation for low 15 bits. */
+#define R_AARCH64_ADR_GOT_PAGE     311 /**< ADR Global Offset Page relocation. */
+#define R_AARCH64_LD64_GOT_LO12_NC 312 /**< Load 64-bit Global Offset relocation, low 12 bits, no carry. */
+#define R_AARCH64_LD64_GOTPAGE_LO15 313 /**< Load 64-bit Global Offset Page relocation, low 15 bits. */
+/** @} */
+/** \name TLS Global Descriptor Relocation Types */
+#define R_AARCH64_TLSGD_ADR_PREL21 512 /**< TLS Global Descriptor Preload relocation for 21-bit addresses. */
+#define R_AARCH64_TLSGD_ADR_PAGE21 513 /**< TLS Global Descriptor Page Preload relocation for 21-bit addresses. */
+#define R_AARCH64_TLSGD_ADD_LO12_NC 514 /**< TLS Global Descriptor Add LO12 relocation, no carry. */
+#define R_AARCH64_TLSGD_MOVW_G1    515 /**< TLS Global Descriptor Move for G1. */
+#define R_AARCH64_TLSGD_MOVW_G0_NC 516 /**< TLS Global Descriptor Move for G0, no carry. */
+/** @} */
+/** \name TLS Local Descriptor Relocation Types */
+#define R_AARCH64_TLSLD_ADR_PREL21     517 /**< TLSLD Address Preload relocation for 21-bit addresses. */
+#define R_AARCH64_TLSLD_ADR_PAGE21     518 /**< TLSLD Address Page relocation for 21-bit addresses. */
+#define R_AARCH64_TLSLD_ADD_LO12_NC    519 /**< TLSLD Add LO12 relocation, no carry. */
+#define R_AARCH64_TLSLD_MOVW_G1        520 /**< TLSLD Move Wide relocation for G1. */
+#define R_AARCH64_TLSLD_MOVW_G0_NC     521 /**< TLSLD Move Wide relocation for G0, no carry. */
+#define R_AARCH64_TLSLD_LD_PREL19      522 /**< TLSLD Load Preload LO19 relocation. */
+#define R_AARCH64_TLSLD_MOVW_DTPREL_G2 523 /**< TLSLD Move Wide DTP-relative relocation for G2. */
+#define R_AARCH64_TLSLD_MOVW_DTPREL_G1 524 /**< TLSLD Move Wide DTP-relative relocation for G1. */
+#define R_AARCH64_TLSLD_MOVW_DTPREL_G1_NC 525 /**< TLSLD Move Wide DTP-relative relocation for G1, no carry. */
+#define R_AARCH64_TLSLD_MOVW_DTPREL_G0 526 /**< TLSLD Move Wide DTP-relative relocation for G0. */
+#define R_AARCH64_TLSLD_MOVW_DTPREL_G0_NC 527 /**< TLSLD Move Wide DTP-relative relocation for G0, no carry. */
+#define R_AARCH64_TLSLD_ADD_DTPREL_HI12 528 /**< TLSLD Add DTP-relative High 12 bits relocation. */
+#define R_AARCH64_TLSLD_ADD_DTPREL_LO12 529 /**< TLSLD Add DTP-relative Low 12 bits relocation. */
+#define R_AARCH64_TLSLD_ADD_DTPREL_LO12_NC 530 /**< TLSLD Add DTP-relative Low 12 bits relocation, no carry. */
+#define R_AARCH64_TLSLD_LDST8_DTPREL_LO12 531 /**< TLSLD Load/Store 8-bit DTP-relative relocation, low 12 bits. */
+#define R_AARCH64_TLSLD_LDST8_DTPREL_LO12_NC 532 /**< TLSLD Load/Store 8-bit DTP-relative relocation, low 12 bits, no carry. */
+#define R_AARCH64_TLSLD_LDST16_DTPREL_LO12 533 /**< TLSLD Load/Store 16-bit DTP-relative relocation, low 12 bits. */
+#define R_AARCH64_TLSLD_LDST16_DTPREL_LO12_NC 534 /**< TLSLD Load/Store 16-bit DTP-relative relocation, low 12 bits, no carry. */
+#define R_AARCH64_TLSLD_LDST32_DTPREL_LO12 535 /**< TLSLD Load/Store 32-bit DTP-relative relocation, low 12 bits. */
+#define R_AARCH64_TLSLD_LDST32_DTPREL_LO12_NC 536 /**< TLSLD Load/Store 32-bit DTP-relative relocation, low 12 bits, no carry. */
+#define R_AARCH64_TLSLD_LDST64_DTPREL_LO12 537 /**< TLSLD Load/Store 64-bit DTP-relative relocation, low 12 bits. */
+#define R_AARCH64_TLSLD_LDST64_DTPREL_LO12_NC 538 /**< TLSLD Load/Store 64-bit DTP-relative relocation, low 12 bits, no carry. */
+/** @} */
+/** \name TLS Immediate Relocation Types */
+#define R_AARCH64_TLSIE_MOVW_GOTTPREL_G1     539 /**< TLSIE Move Wide GOT TP-relative relocation for G1. */
+#define R_AARCH64_TLSIE_MOVW_GOTTPREL_G0_NC  540 /**< TLSIE Move Wide GOT TP-relative relocation for G0, no carry. */
+#define R_AARCH64_TLSIE_ADR_GOTTPREL_PAGE21  541 /**< TLSIE Address GOT TP-relative relocation for 21-bit page. */
+#define R_AARCH64_TLSIE_LD64_GOTTPREL_LO12_NC 542 /**< TLSIE Load 64-bit GOT TP-relative relocation, low 12 bits, no carry. */
+#define R_AARCH64_TLSIE_LD_GOTTPREL_PREL19   543 /**< TLSIE Load GOT TP-relative Preload relocation for 19-bit. */
+/** @} */
+/** \name TLS Little Endian Relocation Types */
+#define R_AARCH64_TLSLE_MOVW_TPREL_G2        544 /**< TLSLE Move Wide TPREL relocation for G2. */
+#define R_AARCH64_TLSLE_MOVW_TPREL_G1        545 /**< TLSLE Move Wide TPREL relocation for G1. */
+#define R_AARCH64_TLSLE_MOVW_TPREL_G1_NC     546 /**< TLSLE Move Wide TPREL relocation for G1, no carry. */
+#define R_AARCH64_TLSLE_MOVW_TPREL_G0        547 /**< TLSLE Move Wide TPREL relocation for G0. */
+#define R_AARCH64_TLSLE_MOVW_TPREL_G0_NC     548 /**< TLSLE Move Wide TPREL relocation for G0, no carry. */
+#define R_AARCH64_TLSLE_ADD_TPREL_HI12       549 /**< TLSLE Add TPREL High 12 bits relocation. */
+#define R_AARCH64_TLSLE_ADD_TPREL_LO12       550 /**< TLSLE Add TPREL Low 12 bits relocation. */
+#define R_AARCH64_TLSLE_ADD_TPREL_LO12_NC    551 /**< TLSLE Add TPREL Low 12 bits relocation, no carry. */
+#define R_AARCH64_TLSLE_LDST8_TPREL_LO12     552 /**< TLSLE Load/Store 8-bit TPREL relocation, low 12 bits. */
+#define R_AARCH64_TLSLE_LDST8_TPREL_LO12_NC  553 /**< TLSLE Load/Store 8-bit TPREL relocation, low 12 bits, no carry. */
+#define R_AARCH64_TLSLE_LDST16_TPREL_LO12    554 /**< TLSLE Load/Store 16-bit TPREL relocation, low 12 bits. */
+#define R_AARCH64_TLSLE_LDST16_TPREL_LO12_NC 555 /**< TLSLE Load/Store 16-bit TPREL relocation, low 12 bits, no carry. */
+#define R_AARCH64_TLSLE_LDST32_TPREL_LO12    556 /**< TLSLE Load/Store 32-bit TPREL relocation, low 12 bits. */
+#define R_AARCH64_TLSLE_LDST32_TPREL_LO12_NC 557 /**< TLSLE Load/Store 32-bit TPREL relocation, low 12 bits, no carry. */
+#define R_AARCH64_TLSLE_LDST64_TPREL_LO12    558 /**< TLSLE Load/Store 64-bit TPREL relocation, low 12 bits. */
+#define R_AARCH64_TLSLE_LDST64_TPREL_LO12_NC 559 /**< TLSLE Load/Store 64-bit TPREL relocation, low 12 bits, no carry. */
+/** @} */
+/** \name TLS Descriptor Relocation Types */
+#define R_AARCH64_TLSDESC_LD_PREL19         560 /**< TLSDESC Load Preload 19-bit relocation. */
+#define R_AARCH64_TLSDESC_ADR_PREL21        561 /**< TLSDESC Address Preload 21-bit relocation. */
+#define R_AARCH64_TLSDESC_ADR_PAGE21        562 /**< TLSDESC Address 21-bit page relocation. */
+#define R_AARCH64_TLSDESC_LD64_LO12         563 /**< TLSDESC Load 64-bit, low 12 bits relocation. */
+#define R_AARCH64_TLSDESC_ADD_LO12          564 /**< TLSDESC Add Low 12 bits relocation. */
+#define R_AARCH64_TLSDESC_OFF_G1            565 /**< TLSDESC Offset G1 relocation. */
+#define R_AARCH64_TLSDESC_OFF_G0_NC         566 /**< TLSDESC Offset G0, no carry relocation. */
+#define R_AARCH64_TLSDESC_LDR               567 /**< TLSDESC Load Register relocation. */
+#define R_AARCH64_TLSDESC_ADD               568 /**< TLSDESC Add relocation. */
+#define R_AARCH64_TLSDESC_CALL              569 /**< TLSDESC Call relocation. */
+/** @} */
+/** \name TLS Little Endian and TLS Load Relocation Types */
+#define R_AARCH64_TLSLE_LDST128_TPREL_LO12  570 /**< TLSLE Load/Store 128-bit TPREL relocation, low 12 bits. */
+#define R_AARCH64_TLSLE_LDST128_TPREL_LO12_NC 571 /**< TLSLE Load/Store 128-bit TPREL relocation, low 12 bits, no carry. */
+#define R_AARCH64_TLSLD_LDST128_DTPREL_LO12 572 /**< TLSLD Load/Store 128-bit DTPREL relocation, low 12 bits. */
+#define R_AARCH64_TLSLD_LDST128_DTPREL_LO12_NC 573 /**< TLSLD Load/Store 128-bit DTPREL relocation, low 12 bits, no carry. */
+/** @} */
+/** \name General Relocation Types */
+#define R_AARCH64_COPY             1024 /**< Copy relocation. */
+#define R_AARCH64_GLOB_DAT         1025 /**< Global Data relocation. */
+#define R_AARCH64_JUMP_SLOT        1026 /**< Jump Slot relocation. */
+#define R_AARCH64_RELATIVE         1027 /**< Relative relocation. */
+/** @} */
 #define R_AARCH64_TLS_DTPMOD   1028
 #define R_AARCH64_TLS_DTPMOD64 1028
 #define R_AARCH64_TLS_DTPREL   1029
@@ -2738,6 +2780,8 @@ enum
 #define R_AARCH64_TLS_TPREL    1030
 #define R_AARCH64_TLS_TPREL64  1030
 #define R_AARCH64_TLSDESC      1031
+/** @} */
+
 
 /** @defgroup ElfRelocARM ARM ELF Relocation Types
  *  @brief ELF relocation types for the ARM architecture.
