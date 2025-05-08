@@ -3475,61 +3475,71 @@ enum
 #define R_BPF_NONE		0
 #define R_BPF_MAP_FD		1
 
-#define R_RISCV_NONE            0
-#define R_RISCV_32              1
-#define R_RISCV_64              2
-#define R_RISCV_RELATIVE        3
-#define R_RISCV_COPY            4
-#define R_RISCV_JUMP_SLOT       5
-#define R_RISCV_TLS_DTPMOD32    6
-#define R_RISCV_TLS_DTPMOD64    7
-#define R_RISCV_TLS_DTPREL32    8
-#define R_RISCV_TLS_DTPREL64    9
-#define R_RISCV_TLS_TPREL32     10
-#define R_RISCV_TLS_TPREL64     11
+/** 
+ * @defgroup riscv_relocations RISC-V Relocation Types
+ * @brief Constants for different RISC-V relocation types.
+ * 
+ * This group contains all the relocation types used in RISC-V architecture.
+ * These constants are used in ELF files to handle various kinds of relocation.
+ * 
+ * @{
+ */
+#define R_RISCV_NONE            0  /**< No relocation */
+#define R_RISCV_32              1  /**< 32-bit relocation */
+#define R_RISCV_64              2  /**< 64-bit relocation */
+#define R_RISCV_RELATIVE        3  /**< Relative relocation */
+#define R_RISCV_COPY            4  /**< Copy relocation */
+#define R_RISCV_JUMP_SLOT       5  /**< Jump slot for dynamic linking */
+#define R_RISCV_TLS_DTPMOD32    6  /**< TLS module index (32-bit) */
+#define R_RISCV_TLS_DTPMOD64    7  /**< TLS module index (64-bit) */
+#define R_RISCV_TLS_DTPREL32    8  /**< TLS data (32-bit) */
+#define R_RISCV_TLS_DTPREL64    9  /**< TLS data (64-bit) */
+#define R_RISCV_TLS_TPREL32     10 /**< TLS thread-specific (32-bit) */
+#define R_RISCV_TLS_TPREL64     11 /**< TLS thread-specific (64-bit) */
 
-#define R_RISCV_BRANCH          16
-#define R_RISCV_JAL             17
-#define R_RISCV_CALL            18
-#define R_RISCV_CALL_PLT        19
-#define R_RISCV_GOT_HI20        20
-#define R_RISCV_TLS_GOT_HI20    21
-#define R_RISCV_TLS_GD_HI20     22
-#define R_RISCV_PCREL_HI20      23
-#define R_RISCV_PCREL_LO12_I    24
-#define R_RISCV_PCREL_LO12_S    25
-#define R_RISCV_HI20            26
-#define R_RISCV_LO12_I          27
-#define R_RISCV_LO12_S          28
-#define R_RISCV_TPREL_HI20      29
-#define R_RISCV_TPREL_LO12_I    30
-#define R_RISCV_TPREL_LO12_S    31
-#define R_RISCV_TPREL_ADD       32
-#define R_RISCV_ADD8            33
-#define R_RISCV_ADD16           34
-#define R_RISCV_ADD32           35
-#define R_RISCV_ADD64           36
-#define R_RISCV_SUB8            37
-#define R_RISCV_SUB16           38
-#define R_RISCV_SUB32           39
-#define R_RISCV_SUB64           40
-#define R_RISCV_GNU_VTINHERIT   41
-#define R_RISCV_GNU_VTENTRY     42
-#define R_RISCV_ALIGN           43
-#define R_RISCV_RVC_BRANCH      44
-#define R_RISCV_RVC_JUMP        45
-#define R_RISCV_RVC_LUI         46
-#define R_RISCV_GPREL_I         47
-#define R_RISCV_GPREL_S         48
-#define R_RISCV_TPREL_I         49
-#define R_RISCV_TPREL_S         50
-#define R_RISCV_RELAX           51
-#define R_RISCV_SUB6            52
-#define R_RISCV_SET6            53
-#define R_RISCV_SET8            54
-#define R_RISCV_SET16           55
-#define R_RISCV_SET32           56
-#define R_RISCV_32_PCREL        57
+#define R_RISCV_BRANCH          16 /**< Branch relocation */
+#define R_RISCV_JAL             17 /**< JAL relocation */
+#define R_RISCV_CALL            18 /**< Call relocation */
+#define R_RISCV_CALL_PLT        19 /**< Call PLT relocation */
+#define R_RISCV_GOT_HI20        20 /**< GOT high 20 bits */
+#define R_RISCV_TLS_GOT_HI20    21 /**< TLS GOT high 20 bits */
+#define R_RISCV_TLS_GD_HI20     22 /**< TLS global data high 20 bits */
+#define R_RISCV_PCREL_HI20      23 /**< PC-relative high 20 bits */
+#define R_RISCV_PCREL_LO12_I    24 /**< PC-relative low 12 bits (I-type) */
+#define R_RISCV_PCREL_LO12_S    25 /**< PC-relative low 12 bits (S-type) */
+#define R_RISCV_HI20            26 /**< High 20 bits */
+#define R_RISCV_LO12_I          27 /**< Low 12 bits (I-type) */
+#define R_RISCV_LO12_S          28 /**< Low 12 bits (S-type) */
+#define R_RISCV_TPREL_HI20      29 /**< TLS thread-specific high 20 bits */
+#define R_RISCV_TPREL_LO12_I    30 /**< TLS thread-specific low 12 bits (I-type) */
+#define R_RISCV_TPREL_LO12_S    31 /**< TLS thread-specific low 12 bits (S-type) */
+#define R_RISCV_TPREL_ADD       32 /**< TLS thread-specific addition */
+#define R_RISCV_ADD8            33 /**< 8-bit addition */
+#define R_RISCV_ADD16           34 /**< 16-bit addition */
+#define R_RISCV_ADD32           35 /**< 32-bit addition */
+#define R_RISCV_ADD64           36 /**< 64-bit addition */
+#define R_RISCV_SUB8            37 /**< 8-bit subtraction */
+#define R_RISCV_SUB16           38 /**< 16-bit subtraction */
+#define R_RISCV_SUB32           39 /**< 32-bit subtraction */
+#define R_RISCV_SUB64           40 /**< 64-bit subtraction */
+#define R_RISCV_GNU_VTINHERIT   41 /**< GNU-specific inheritance */
+#define R_RISCV_GNU_VTENTRY     42 /**< GNU-specific VT entry */
+#define R_RISCV_ALIGN           43 /**< Alignment relocation */
+#define R_RISCV_RVC_BRANCH      44 /**< RVC branch relocation */
+#define R_RISCV_RVC_JUMP        45 /**< RVC jump relocation */
+#define R_RISCV_RVC_LUI         46 /**< RVC LUI relocation */
+#define R_RISCV_GPREL_I         47 /**< GP-relative (I-type) */
+#define R_RISCV_GPREL_S         48 /**< GP-relative (S-type) */
+#define R_RISCV_TPREL_I         49 /**< TLS thread-specific (I-type) */
+#define R_RISCV_TPREL_S         50 /**< TLS thread-specific (S-type) */
+#define R_RISCV_RELAX           51 /**< Relaxation relocation */
+#define R_RISCV_SUB6            52 /**< 6-bit subtraction */
+#define R_RISCV_SET6            53 /**< 6-bit set relocation */
+#define R_RISCV_SET8            54 /**< 8-bit set relocation */
+#define R_RISCV_SET16           55 /**< 16-bit set relocation */
+#define R_RISCV_SET32           56 /**< 32-bit set relocation */
+#define R_RISCV_32_PCREL        57 /**< 32-bit PC-relative relocation */
+/** @} */ // end of riscv_relocations group
 
 #ifdef __cplusplus
 }
