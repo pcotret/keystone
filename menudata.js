@@ -126,4 +126,14 @@ var menudata={children:[
 {text:"Typedefs",url:"globals_type.html"},
 {text:"Enumerations",url:"globals_enum.html"},
 {text:"Enumerator",url:"globals_eval.html"},
-{text:"Macros",url:"globals_defs.html"}]}]}]}
+{text:"Macros",url:"globals_defs.html",children:[
+{text:"a",url:"globals_defs.html#index_a"},
+{text:"k",url:"globals_defs.html#index_k"},
+{text:"l",url:"globals_defs.html#index_l"},
+{text:"m",url:"globals_defs.html#index_m"},
+{text:"n",url:"globals_defs.html#index_n"},
+{text:"p",url:"globals_defs.html#index_p"},
+{text:"r",url:"globals_defs.html#index_r"},
+{text:"s",url:"globals_defs.html#index_s"},
+{text:"t",url:"globals_defs.html#index_t"},
+{text:"u",url:"globals_defs.html#index_u"}]}]}]}]}

@@ -3399,68 +3399,67 @@ $(document).ready(function(){initNavTree('util_2elf_8h_source.html',''); initRes
 <div class="line"><a id="l03475" name="l03475"></a><span class="lineno"> 3475</span><span class="preprocessor">#define R_BPF_NONE      0</span></div>
 <div class="line"><a id="l03476" name="l03476"></a><span class="lineno"> 3476</span><span class="preprocessor">#define R_BPF_MAP_FD        1</span></div>
 <div class="line"><a id="l03477" name="l03477"></a><span class="lineno"> 3477</span> </div>
-<div class="line"><a id="l03478" name="l03478"></a><span class="lineno"> 3478</span><span class="preprocessor">#define R_RISCV_NONE            0</span></div>
-<div class="line"><a id="l03479" name="l03479"></a><span class="lineno"> 3479</span><span class="preprocessor">#define R_RISCV_32              1</span></div>
-<div class="line"><a id="l03480" name="l03480"></a><span class="lineno"> 3480</span><span class="preprocessor">#define R_RISCV_64              2</span></div>
-<div class="line"><a id="l03481" name="l03481"></a><span class="lineno"> 3481</span><span class="preprocessor">#define R_RISCV_RELATIVE        3</span></div>
-<div class="line"><a id="l03482" name="l03482"></a><span class="lineno"> 3482</span><span class="preprocessor">#define R_RISCV_COPY            4</span></div>
-<div class="line"><a id="l03483" name="l03483"></a><span class="lineno"> 3483</span><span class="preprocessor">#define R_RISCV_JUMP_SLOT       5</span></div>
-<div class="line"><a id="l03484" name="l03484"></a><span class="lineno"> 3484</span><span class="preprocessor">#define R_RISCV_TLS_DTPMOD32    6</span></div>
-<div class="line"><a id="l03485" name="l03485"></a><span class="lineno"> 3485</span><span class="preprocessor">#define R_RISCV_TLS_DTPMOD64    7</span></div>
-<div class="line"><a id="l03486" name="l03486"></a><span class="lineno"> 3486</span><span class="preprocessor">#define R_RISCV_TLS_DTPREL32    8</span></div>
-<div class="line"><a id="l03487" name="l03487"></a><span class="lineno"> 3487</span><span class="preprocessor">#define R_RISCV_TLS_DTPREL64    9</span></div>
-<div class="line"><a id="l03488" name="l03488"></a><span class="lineno"> 3488</span><span class="preprocessor">#define R_RISCV_TLS_TPREL32     10</span></div>
-<div class="line"><a id="l03489" name="l03489"></a><span class="lineno"> 3489</span><span class="preprocessor">#define R_RISCV_TLS_TPREL64     11</span></div>
-<div class="line"><a id="l03490" name="l03490"></a><span class="lineno"> 3490</span> </div>
-<div class="line"><a id="l03491" name="l03491"></a><span class="lineno"> 3491</span><span class="preprocessor">#define R_RISCV_BRANCH          16</span></div>
-<div class="line"><a id="l03492" name="l03492"></a><span class="lineno"> 3492</span><span class="preprocessor">#define R_RISCV_JAL             17</span></div>
-<div class="line"><a id="l03493" name="l03493"></a><span class="lineno"> 3493</span><span class="preprocessor">#define R_RISCV_CALL            18</span></div>
-<div class="line"><a id="l03494" name="l03494"></a><span class="lineno"> 3494</span><span class="preprocessor">#define R_RISCV_CALL_PLT        19</span></div>
-<div class="line"><a id="l03495" name="l03495"></a><span class="lineno"> 3495</span><span class="preprocessor">#define R_RISCV_GOT_HI20        20</span></div>
-<div class="line"><a id="l03496" name="l03496"></a><span class="lineno"> 3496</span><span class="preprocessor">#define R_RISCV_TLS_GOT_HI20    21</span></div>
-<div class="line"><a id="l03497" name="l03497"></a><span class="lineno"> 3497</span><span class="preprocessor">#define R_RISCV_TLS_GD_HI20     22</span></div>
-<div class="line"><a id="l03498" name="l03498"></a><span class="lineno"> 3498</span><span class="preprocessor">#define R_RISCV_PCREL_HI20      23</span></div>
-<div class="line"><a id="l03499" name="l03499"></a><span class="lineno"> 3499</span><span class="preprocessor">#define R_RISCV_PCREL_LO12_I    24</span></div>
-<div class="line"><a id="l03500" name="l03500"></a><span class="lineno"> 3500</span><span class="preprocessor">#define R_RISCV_PCREL_LO12_S    25</span></div>
-<div class="line"><a id="l03501" name="l03501"></a><span class="lineno"> 3501</span><span class="preprocessor">#define R_RISCV_HI20            26</span></div>
-<div class="line"><a id="l03502" name="l03502"></a><span class="lineno"> 3502</span><span class="preprocessor">#define R_RISCV_LO12_I          27</span></div>
-<div class="line"><a id="l03503" name="l03503"></a><span class="lineno"> 3503</span><span class="preprocessor">#define R_RISCV_LO12_S          28</span></div>
-<div class="line"><a id="l03504" name="l03504"></a><span class="lineno"> 3504</span><span class="preprocessor">#define R_RISCV_TPREL_HI20      29</span></div>
-<div class="line"><a id="l03505" name="l03505"></a><span class="lineno"> 3505</span><span class="preprocessor">#define R_RISCV_TPREL_LO12_I    30</span></div>
-<div class="line"><a id="l03506" name="l03506"></a><span class="lineno"> 3506</span><span class="preprocessor">#define R_RISCV_TPREL_LO12_S    31</span></div>
-<div class="line"><a id="l03507" name="l03507"></a><span class="lineno"> 3507</span><span class="preprocessor">#define R_RISCV_TPREL_ADD       32</span></div>
-<div class="line"><a id="l03508" name="l03508"></a><span class="lineno"> 3508</span><span class="preprocessor">#define R_RISCV_ADD8            33</span></div>
-<div class="line"><a id="l03509" name="l03509"></a><span class="lineno"> 3509</span><span class="preprocessor">#define R_RISCV_ADD16           34</span></div>
-<div class="line"><a id="l03510" name="l03510"></a><span class="lineno"> 3510</span><span class="preprocessor">#define R_RISCV_ADD32           35</span></div>
-<div class="line"><a id="l03511" name="l03511"></a><span class="lineno"> 3511</span><span class="preprocessor">#define R_RISCV_ADD64           36</span></div>
-<div class="line"><a id="l03512" name="l03512"></a><span class="lineno"> 3512</span><span class="preprocessor">#define R_RISCV_SUB8            37</span></div>
-<div class="line"><a id="l03513" name="l03513"></a><span class="lineno"> 3513</span><span class="preprocessor">#define R_RISCV_SUB16           38</span></div>
-<div class="line"><a id="l03514" name="l03514"></a><span class="lineno"> 3514</span><span class="preprocessor">#define R_RISCV_SUB32           39</span></div>
-<div class="line"><a id="l03515" name="l03515"></a><span class="lineno"> 3515</span><span class="preprocessor">#define R_RISCV_SUB64           40</span></div>
-<div class="line"><a id="l03516" name="l03516"></a><span class="lineno"> 3516</span><span class="preprocessor">#define R_RISCV_GNU_VTINHERIT   41</span></div>
-<div class="line"><a id="l03517" name="l03517"></a><span class="lineno"> 3517</span><span class="preprocessor">#define R_RISCV_GNU_VTENTRY     42</span></div>
-<div class="line"><a id="l03518" name="l03518"></a><span class="lineno"> 3518</span><span class="preprocessor">#define R_RISCV_ALIGN           43</span></div>
-<div class="line"><a id="l03519" name="l03519"></a><span class="lineno"> 3519</span><span class="preprocessor">#define R_RISCV_RVC_BRANCH      44</span></div>
-<div class="line"><a id="l03520" name="l03520"></a><span class="lineno"> 3520</span><span class="preprocessor">#define R_RISCV_RVC_JUMP        45</span></div>
-<div class="line"><a id="l03521" name="l03521"></a><span class="lineno"> 3521</span><span class="preprocessor">#define R_RISCV_RVC_LUI         46</span></div>
-<div class="line"><a id="l03522" name="l03522"></a><span class="lineno"> 3522</span><span class="preprocessor">#define R_RISCV_GPREL_I         47</span></div>
-<div class="line"><a id="l03523" name="l03523"></a><span class="lineno"> 3523</span><span class="preprocessor">#define R_RISCV_GPREL_S         48</span></div>
-<div class="line"><a id="l03524" name="l03524"></a><span class="lineno"> 3524</span><span class="preprocessor">#define R_RISCV_TPREL_I         49</span></div>
-<div class="line"><a id="l03525" name="l03525"></a><span class="lineno"> 3525</span><span class="preprocessor">#define R_RISCV_TPREL_S         50</span></div>
-<div class="line"><a id="l03526" name="l03526"></a><span class="lineno"> 3526</span><span class="preprocessor">#define R_RISCV_RELAX           51</span></div>
-<div class="line"><a id="l03527" name="l03527"></a><span class="lineno"> 3527</span><span class="preprocessor">#define R_RISCV_SUB6            52</span></div>
-<div class="line"><a id="l03528" name="l03528"></a><span class="lineno"> 3528</span><span class="preprocessor">#define R_RISCV_SET6            53</span></div>
-<div class="line"><a id="l03529" name="l03529"></a><span class="lineno"> 3529</span><span class="preprocessor">#define R_RISCV_SET8            54</span></div>
-<div class="line"><a id="l03530" name="l03530"></a><span class="lineno"> 3530</span><span class="preprocessor">#define R_RISCV_SET16           55</span></div>
-<div class="line"><a id="l03531" name="l03531"></a><span class="lineno"> 3531</span><span class="preprocessor">#define R_RISCV_SET32           56</span></div>
-<div class="line"><a id="l03532" name="l03532"></a><span class="lineno"> 3532</span><span class="preprocessor">#define R_RISCV_32_PCREL        57</span></div>
-<div class="line"><a id="l03533" name="l03533"></a><span class="lineno"> 3533</span> </div>
-<div class="line"><a id="l03534" name="l03534"></a><span class="lineno"> 3534</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l03535" name="l03535"></a><span class="lineno"> 3535</span>}</div>
-<div class="line"><a id="l03536" name="l03536"></a><span class="lineno"> 3536</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l03537" name="l03537"></a><span class="lineno"> 3537</span> </div>
-<div class="line"><a id="l03538" name="l03538"></a><span class="lineno"> 3538</span> </div>
-<div class="line"><a id="l03539" name="l03539"></a><span class="lineno"> 3539</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l03487" name="l03487"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga730eefc0276ebe8418453024f0ebb53b"> 3487</a></span><span class="preprocessor">#define R_RISCV_NONE            0  </span></div>
+<div class="line"><a id="l03488" name="l03488"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga4a6317c5e5d7fa7735ae5708bbacde8e"> 3488</a></span><span class="preprocessor">#define R_RISCV_32              1  </span></div>
+<div class="line"><a id="l03489" name="l03489"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga4b63bf757f3a697a61fb7e72bd565160"> 3489</a></span><span class="preprocessor">#define R_RISCV_64              2  </span></div>
+<div class="line"><a id="l03490" name="l03490"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga2cc6b5a7a866320afe71bd60c3b02b40"> 3490</a></span><span class="preprocessor">#define R_RISCV_RELATIVE        3  </span></div>
+<div class="line"><a id="l03491" name="l03491"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#gab53041d85ed0171d6ec5f8443cc89dc0"> 3491</a></span><span class="preprocessor">#define R_RISCV_COPY            4  </span></div>
+<div class="line"><a id="l03492" name="l03492"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga631f67d5bbcc0bf09f31f5afa70ec16a"> 3492</a></span><span class="preprocessor">#define R_RISCV_JUMP_SLOT       5  </span></div>
+<div class="line"><a id="l03493" name="l03493"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#gab9d72b268d95c1e35e307741131402c2"> 3493</a></span><span class="preprocessor">#define R_RISCV_TLS_DTPMOD32    6  </span></div>
+<div class="line"><a id="l03494" name="l03494"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#gae69a484155c5649b1cb5bf3dc7448fe2"> 3494</a></span><span class="preprocessor">#define R_RISCV_TLS_DTPMOD64    7  </span></div>
+<div class="line"><a id="l03495" name="l03495"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#gaf3ca596863411c79ffb03c6e5f339ade"> 3495</a></span><span class="preprocessor">#define R_RISCV_TLS_DTPREL32    8  </span></div>
+<div class="line"><a id="l03496" name="l03496"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#gadf77679c5571ac03b1463da12e92b2a2"> 3496</a></span><span class="preprocessor">#define R_RISCV_TLS_DTPREL64    9  </span></div>
+<div class="line"><a id="l03497" name="l03497"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga04dadd36d9510b01d0e370525ca03168"> 3497</a></span><span class="preprocessor">#define R_RISCV_TLS_TPREL32     10 </span></div>
+<div class="line"><a id="l03498" name="l03498"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga988fa6287bde6d55ab4c9b283974fc65"> 3498</a></span><span class="preprocessor">#define R_RISCV_TLS_TPREL64     11 </span></div>
+<div class="line"><a id="l03500" name="l03500"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga4e661b00d8637bfafa2f7166f4b6945f"> 3500</a></span><span class="preprocessor">#define R_RISCV_BRANCH          16 </span></div>
+<div class="line"><a id="l03501" name="l03501"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga7c283a52e7b2f1c833d13801cdb48f20"> 3501</a></span><span class="preprocessor">#define R_RISCV_JAL             17 </span></div>
+<div class="line"><a id="l03502" name="l03502"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#gad9f45b63729296a28c61c4fcbd210492"> 3502</a></span><span class="preprocessor">#define R_RISCV_CALL            18 </span></div>
+<div class="line"><a id="l03503" name="l03503"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#gac682166cc7b5111771ac7d8c491b625c"> 3503</a></span><span class="preprocessor">#define R_RISCV_CALL_PLT        19 </span></div>
+<div class="line"><a id="l03504" name="l03504"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga844733150677fefe32e255a6b24ddbb7"> 3504</a></span><span class="preprocessor">#define R_RISCV_GOT_HI20        20 </span></div>
+<div class="line"><a id="l03505" name="l03505"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga2d7a89493f6936e3c335c3a2148584a4"> 3505</a></span><span class="preprocessor">#define R_RISCV_TLS_GOT_HI20    21 </span></div>
+<div class="line"><a id="l03506" name="l03506"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#gaf0152d699e4e5f4be1cb5b5e5f5b011c"> 3506</a></span><span class="preprocessor">#define R_RISCV_TLS_GD_HI20     22 </span></div>
+<div class="line"><a id="l03507" name="l03507"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga38ee03c6c11792aeb6dc36bd6d7f9bb9"> 3507</a></span><span class="preprocessor">#define R_RISCV_PCREL_HI20      23 </span></div>
+<div class="line"><a id="l03508" name="l03508"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#gaa8599a3b71ee224f37f143a831a8f01e"> 3508</a></span><span class="preprocessor">#define R_RISCV_PCREL_LO12_I    24 </span></div>
+<div class="line"><a id="l03509" name="l03509"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga68311c4bf83c7f723d5415c3ad2d20e4"> 3509</a></span><span class="preprocessor">#define R_RISCV_PCREL_LO12_S    25 </span></div>
+<div class="line"><a id="l03510" name="l03510"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga803a92a299d8b3f335f520a34139e5f3"> 3510</a></span><span class="preprocessor">#define R_RISCV_HI20            26 </span></div>
+<div class="line"><a id="l03511" name="l03511"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga928aa72c2d90698ba8340825f55f1594"> 3511</a></span><span class="preprocessor">#define R_RISCV_LO12_I          27 </span></div>
+<div class="line"><a id="l03512" name="l03512"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga61b2a7464e6c92e42723c692967f128c"> 3512</a></span><span class="preprocessor">#define R_RISCV_LO12_S          28 </span></div>
+<div class="line"><a id="l03513" name="l03513"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga56699897b09c4f9b7f0bc5da77a5b02e"> 3513</a></span><span class="preprocessor">#define R_RISCV_TPREL_HI20      29 </span></div>
+<div class="line"><a id="l03514" name="l03514"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga89d5c65f164026631d84e40e2a6a3389"> 3514</a></span><span class="preprocessor">#define R_RISCV_TPREL_LO12_I    30 </span></div>
+<div class="line"><a id="l03515" name="l03515"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga23e6ebe31fac9915aca730c2d1cd4230"> 3515</a></span><span class="preprocessor">#define R_RISCV_TPREL_LO12_S    31 </span></div>
+<div class="line"><a id="l03516" name="l03516"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#gaf41eaaa64464e921597fa6fc6adc5fdd"> 3516</a></span><span class="preprocessor">#define R_RISCV_TPREL_ADD       32 </span></div>
+<div class="line"><a id="l03517" name="l03517"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#gacf72a8d2cc39694d1bcf7ba8dc262957"> 3517</a></span><span class="preprocessor">#define R_RISCV_ADD8            33 </span></div>
+<div class="line"><a id="l03518" name="l03518"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#gafc791fe42708fd41cb72f001d2014c37"> 3518</a></span><span class="preprocessor">#define R_RISCV_ADD16           34 </span></div>
+<div class="line"><a id="l03519" name="l03519"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga8344a11101a9920bcee2e4d61a045523"> 3519</a></span><span class="preprocessor">#define R_RISCV_ADD32           35 </span></div>
+<div class="line"><a id="l03520" name="l03520"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga6a7a22caf1decc68a1b4907dea46bab9"> 3520</a></span><span class="preprocessor">#define R_RISCV_ADD64           36 </span></div>
+<div class="line"><a id="l03521" name="l03521"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#gad9946aa77d72708a3934c5290fae18f4"> 3521</a></span><span class="preprocessor">#define R_RISCV_SUB8            37 </span></div>
+<div class="line"><a id="l03522" name="l03522"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga1d7aafcc00a4c2c52ed11d6c0d9a09d8"> 3522</a></span><span class="preprocessor">#define R_RISCV_SUB16           38 </span></div>
+<div class="line"><a id="l03523" name="l03523"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga50ea081b0b010852070b106809b3f5b7"> 3523</a></span><span class="preprocessor">#define R_RISCV_SUB32           39 </span></div>
+<div class="line"><a id="l03524" name="l03524"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga7d7569fb2288aeb3d2eb915866f2fdfe"> 3524</a></span><span class="preprocessor">#define R_RISCV_SUB64           40 </span></div>
+<div class="line"><a id="l03525" name="l03525"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga8c16bf9941d6516719fadffa6811b9a6"> 3525</a></span><span class="preprocessor">#define R_RISCV_GNU_VTINHERIT   41 </span></div>
+<div class="line"><a id="l03526" name="l03526"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#gad27893d35453aef2c2bae69af42b8598"> 3526</a></span><span class="preprocessor">#define R_RISCV_GNU_VTENTRY     42 </span></div>
+<div class="line"><a id="l03527" name="l03527"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#gaf1ee603b1dff7b202eef4f016cc1d1a5"> 3527</a></span><span class="preprocessor">#define R_RISCV_ALIGN           43 </span></div>
+<div class="line"><a id="l03528" name="l03528"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga03ea934622477a8cf82b0d99f563f44f"> 3528</a></span><span class="preprocessor">#define R_RISCV_RVC_BRANCH      44 </span></div>
+<div class="line"><a id="l03529" name="l03529"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga24c2195c4d097e4eca2ddacc2df23db5"> 3529</a></span><span class="preprocessor">#define R_RISCV_RVC_JUMP        45 </span></div>
+<div class="line"><a id="l03530" name="l03530"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga371a28c2bd0bcdc4ffbc2cb500aa2630"> 3530</a></span><span class="preprocessor">#define R_RISCV_RVC_LUI         46 </span></div>
+<div class="line"><a id="l03531" name="l03531"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga36b2477233982fd17b7b8b64200dfd42"> 3531</a></span><span class="preprocessor">#define R_RISCV_GPREL_I         47 </span></div>
+<div class="line"><a id="l03532" name="l03532"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga7a05ae99de5afcff119dcb2b639ea70e"> 3532</a></span><span class="preprocessor">#define R_RISCV_GPREL_S         48 </span></div>
+<div class="line"><a id="l03533" name="l03533"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#gadc8dbfb247dff1462f66c0ed21e94ce3"> 3533</a></span><span class="preprocessor">#define R_RISCV_TPREL_I         49 </span></div>
+<div class="line"><a id="l03534" name="l03534"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga14525ee7934527af489a505eeb0090fb"> 3534</a></span><span class="preprocessor">#define R_RISCV_TPREL_S         50 </span></div>
+<div class="line"><a id="l03535" name="l03535"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga5a47203bb8037af174b4ed9e86284572"> 3535</a></span><span class="preprocessor">#define R_RISCV_RELAX           51 </span></div>
+<div class="line"><a id="l03536" name="l03536"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga785c12891106770dfdadd2339328e574"> 3536</a></span><span class="preprocessor">#define R_RISCV_SUB6            52 </span></div>
+<div class="line"><a id="l03537" name="l03537"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga18d3676728603ff79b6f8f6e52b3effd"> 3537</a></span><span class="preprocessor">#define R_RISCV_SET6            53 </span></div>
+<div class="line"><a id="l03538" name="l03538"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#gad2a632c802dae307b9fc3ad42ee9b7bb"> 3538</a></span><span class="preprocessor">#define R_RISCV_SET8            54 </span></div>
+<div class="line"><a id="l03539" name="l03539"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga46920519811dc25de7d233b639fbc772"> 3539</a></span><span class="preprocessor">#define R_RISCV_SET16           55 </span></div>
+<div class="line"><a id="l03540" name="l03540"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#gafb69a5dd4f99ec20e88130a65ef3d62f"> 3540</a></span><span class="preprocessor">#define R_RISCV_SET32           56 </span></div>
+<div class="line"><a id="l03541" name="l03541"></a><span class="lineno"><a class="line" href="group__riscv__relocations.html#ga105efd90428005c42ccdf13380585a42"> 3541</a></span><span class="preprocessor">#define R_RISCV_32_PCREL        57 </span></div>
+ <span class="comment">// end of riscv_relocations group</span><div class="line"><a id="l03543" name="l03543"></a><span class="lineno"> 3543</span> </div>
+<div class="line"><a id="l03544" name="l03544"></a><span class="lineno"> 3544</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l03545" name="l03545"></a><span class="lineno"> 3545</span>}</div>
+<div class="line"><a id="l03546" name="l03546"></a><span class="lineno"> 3546</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l03547" name="l03547"></a><span class="lineno"> 3547</span> </div>
+<div class="line"><a id="l03548" name="l03548"></a><span class="lineno"> 3548</span> </div>
+<div class="line"><a id="l03549" name="l03549"></a><span class="lineno"> 3549</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="astructElf32__Chdr_html"><div class="ttname"><a href="structElf32__Chdr.html">Elf32_Chdr</a></div><div class="ttdoc">Compressed section header for 32-bit ELF binaries.</div><div class="ttdef"><b>Definition</b> elf.h:475</div></div>
 <div class="ttc" id="astructElf32__Chdr_html_a72370f6928a556d16dd0fcfae9978c60"><div class="ttname"><a href="structElf32__Chdr.html#a72370f6928a556d16dd0fcfae9978c60">Elf32_Chdr::ch_addralign</a></div><div class="ttdeci">Elf32_Word ch_addralign</div><div class="ttdef"><b>Definition</b> elf.h:478</div></div>
 <div class="ttc" id="astructElf32__Chdr_html_a7b78dd3e0ba865cd44c8a4f705d19954"><div class="ttname"><a href="structElf32__Chdr.html#a7b78dd3e0ba865cd44c8a4f705d19954">Elf32_Chdr::ch_type</a></div><div class="ttdeci">Elf32_Word ch_type</div><div class="ttdef"><b>Definition</b> elf.h:476</div></div>

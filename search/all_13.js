@@ -20,5 +20,6 @@ var searchData=
   ['threads_17',['threads',['../structenclave.html#a0c4e543e437aaed2a600cdcfdbf8344c',1,'enclave']]],
   ['tp_18',['tp',['../structctx.html#a8898279766d67b9f290b8d0c47963ee2',1,'ctx::tp'],['../structregs.html#a5113c962aaa68d969dc8e85d453cb991',1,'regs::tp']]],
   ['trap_5fvector_5fenclave_19',['trap_vector_enclave',['../thread_8h.html#a22e307929312ad228ae7857031ac7a61',1,'thread.h']]],
-  ['type_20',['type',['../structenclave__region.html#a03f79913f3cf0229acbb34fc8bd13641',1,'enclave_region::type'],['../structsbi__pmp__ipi__info.html#af94a2cceab63fd190a29a0444d7a6894',1,'sbi_pmp_ipi_info::type']]]
+  ['type_20',['type',['../structenclave__region.html#a03f79913f3cf0229acbb34fc8bd13641',1,'enclave_region::type'],['../structsbi__pmp__ipi__info.html#af94a2cceab63fd190a29a0444d7a6894',1,'sbi_pmp_ipi_info::type']]],
+  ['types_21',['RISC-V Relocation Types',['../group__riscv__relocations.html',1,'']]]
 ];
