@@ -1893,13 +1893,14 @@ typedef struct {
 
 
 
-#define LL_NONE		  0
-#define LL_EXACT_MATCH	  (1 << 0)
-#define LL_IGNORE_INT_VER (1 << 1)
-#define LL_REQUIRE_MINOR  (1 << 2)
-#define LL_EXPORTS	  (1 << 3)
-#define LL_DELAY_LOAD	  (1 << 4)
-#define LL_DELTA	  (1 << 5)
+#define LL_NONE                      0 /**< No specific linking library flags set */
+#define LL_EXACT_MATCH               (1 << 0) /**< Exact match linking library flag */
+#define LL_IGNORE_INT_VER            (1 << 1) /**< Ignore internal version during linking */
+#define LL_REQUIRE_MINOR             (1 << 2) /**< Require a minor version match for linking */
+#define LL_EXPORTS                   (1 << 3) /**< Export symbols from the linking library */
+#define LL_DELAY_LOAD                (1 << 4) /**< Flag to delay library loading */
+#define LL_DELTA                     (1 << 5) /**< Delta-specific linking library flag */
+
 
 
 /**
@@ -1930,46 +1931,47 @@ typedef struct {
   Elf32_Word flags2;       /**< Additional processor-specific flags. */
 } Elf_MIPS_ABIFlags_v0;
 
-#define MIPS_AFL_REG_NONE	0x00
-#define MIPS_AFL_REG_32		0x01
-#define MIPS_AFL_REG_64		0x02
-#define MIPS_AFL_REG_128	0x03
+#define MIPS_AFL_REG_NONE           0x00 /**< No registers selected */
+#define MIPS_AFL_REG_32             0x01 /**< 32-bit registers selected */
+#define MIPS_AFL_REG_64             0x02 /**< 64-bit registers selected */
+#define MIPS_AFL_REG_128            0x03 /**< 128-bit registers selected */
 
-#define MIPS_AFL_ASE_DSP	0x00000001
-#define MIPS_AFL_ASE_DSPR2	0x00000002
-#define MIPS_AFL_ASE_EVA	0x00000004
-#define MIPS_AFL_ASE_MCU	0x00000008
-#define MIPS_AFL_ASE_MDMX	0x00000010
-#define MIPS_AFL_ASE_MIPS3D	0x00000020
-#define MIPS_AFL_ASE_MT		0x00000040
-#define MIPS_AFL_ASE_SMARTMIPS	0x00000080
-#define MIPS_AFL_ASE_VIRT	0x00000100
-#define MIPS_AFL_ASE_MSA	0x00000200
-#define MIPS_AFL_ASE_MIPS16	0x00000400
-#define MIPS_AFL_ASE_MICROMIPS	0x00000800
-#define MIPS_AFL_ASE_XPA	0x00001000
-#define MIPS_AFL_ASE_MASK	0x00001fff
+#define MIPS_AFL_ASE_DSP            0x00000001 /**< Digital Signal Processing (DSP) ASE */
+#define MIPS_AFL_ASE_DSPR2          0x00000002 /**< DSP R2 ASE */
+#define MIPS_AFL_ASE_EVA            0x00000004 /**< Enhanced Virtual Addressing (EVA) ASE */
+#define MIPS_AFL_ASE_MCU            0x00000008 /**< Microcontroller (MCU) ASE */
+#define MIPS_AFL_ASE_MDMX           0x00000010 /**< MDMX ASE (MIPS SIMD) */
+#define MIPS_AFL_ASE_MIPS3D         0x00000020 /**< MIPS 3D ASE */
+#define MIPS_AFL_ASE_MT             0x00000040 /**< Multi-threading (MT) ASE */
+#define MIPS_AFL_ASE_SMARTMIPS      0x00000080 /**< SmartMIPS ASE */
+#define MIPS_AFL_ASE_VIRT           0x00000100 /**< Virtual ASE */
+#define MIPS_AFL_ASE_MSA            0x00000200 /**< MIPS SIMD Architecture (MSA) ASE */
+#define MIPS_AFL_ASE_MIPS16         0x00000400 /**< MIPS16 ASE (16-bit instructions) */
+#define MIPS_AFL_ASE_MICROMIPS      0x00000800 /**< MicroMIPS ASE (compact encoding) */
+#define MIPS_AFL_ASE_XPA            0x00001000 /**< XPA ASE (extended physical addressing) */
+#define MIPS_AFL_ASE_MASK           0x00001fff /**< Mask for all ASE flags */
 
-#define MIPS_AFL_EXT_XLR	  1
-#define MIPS_AFL_EXT_OCTEON2	  2
-#define MIPS_AFL_EXT_OCTEONP	  3
-#define MIPS_AFL_EXT_LOONGSON_3A  4
-#define MIPS_AFL_EXT_OCTEON	  5
-#define MIPS_AFL_EXT_5900	  6
-#define MIPS_AFL_EXT_4650	  7
-#define MIPS_AFL_EXT_4010	  8
-#define MIPS_AFL_EXT_4100	  9
-#define MIPS_AFL_EXT_3900	  10
-#define MIPS_AFL_EXT_10000	  11
-#define MIPS_AFL_EXT_SB1	  12
-#define MIPS_AFL_EXT_4111	  13
-#define MIPS_AFL_EXT_4120	  14
-#define MIPS_AFL_EXT_5400	  15
-#define MIPS_AFL_EXT_5500	  16
-#define MIPS_AFL_EXT_LOONGSON_2E  17
-#define MIPS_AFL_EXT_LOONGSON_2F  18
+#define MIPS_AFL_EXT_XLR            1 /**< XLR Extension */
+#define MIPS_AFL_EXT_OCTEON2        2 /**< Octeon2 Extension */
+#define MIPS_AFL_EXT_OCTEONP        3 /**< OcteonP Extension */
+#define MIPS_AFL_EXT_LOONGSON_3A    4 /**< Loongson 3A Extension */
+#define MIPS_AFL_EXT_OCTEON         5 /**< Octeon Extension */
+#define MIPS_AFL_EXT_5900           6 /**< 5900 Extension */
+#define MIPS_AFL_EXT_4650           7 /**< 4650 Extension */
+#define MIPS_AFL_EXT_4010           8 /**< 4010 Extension */
+#define MIPS_AFL_EXT_4100           9 /**< 4100 Extension */
+#define MIPS_AFL_EXT_3900           10 /**< 3900 Extension */
+#define MIPS_AFL_EXT_10000          11 /**< 10000 Extension */
+#define MIPS_AFL_EXT_SB1            12 /**< SB1 Extension */
+#define MIPS_AFL_EXT_4111           13 /**< 4111 Extension */
+#define MIPS_AFL_EXT_4120           14 /**< 4120 Extension */
+#define MIPS_AFL_EXT_5400           15 /**< 5400 Extension */
+#define MIPS_AFL_EXT_5500           16 /**< 5500 Extension */
+#define MIPS_AFL_EXT_LOONGSON_2E    17 /**< Loongson 2E Extension */
+#define MIPS_AFL_EXT_LOONGSON_2F    18 /**< Loongson 2F Extension */
 
-#define MIPS_AFL_FLAGS1_ODDSPREG  1
+#define MIPS_AFL_FLAGS1_ODDSPREG    1 /**< Odd Special Registers flag */
+
 
 /**
  * @enum
