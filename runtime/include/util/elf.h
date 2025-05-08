@@ -2739,138 +2739,139 @@ enum
 #define R_AARCH64_TLS_TPREL64  1030
 #define R_AARCH64_TLSDESC      1031
 
+/** @defgroup ElfRelocARM ARM ELF Relocation Types
+ *  @brief ELF relocation types for the ARM architecture.
+ *  @{
+ */
+#define R_ARM_NONE                 0   ///< No relocation
+#define R_ARM_PC24                 1   ///< PC-relative 24-bit
+#define R_ARM_ABS32                2   ///< Direct 32-bit
+#define R_ARM_REL32                3   ///< PC-relative 32-bit
+#define R_ARM_PC13                 4   ///< PC-relative 13-bit
+#define R_ARM_ABS16                5   ///< Direct 16-bit
+#define R_ARM_ABS12                6   ///< Direct 12-bit
+#define R_ARM_THM_ABS5             7   ///< Thumb mode, 5-bit absolute
+#define R_ARM_ABS8                 8   ///< Direct 8-bit
+#define R_ARM_SBREL32              9   ///< Static base relative 32-bit
+#define R_ARM_THM_PC22            10   ///< Thumb mode, PC-relative 22-bit
+#define R_ARM_THM_PC8             11   ///< Thumb mode, PC-relative 8-bit
+#define R_ARM_AMP_VCALL9          12   ///< VCALL instruction (virtual call)
+#define R_ARM_TLS_DESC            13   ///< TLS descriptor
+#define R_ARM_THM_SWI8            14   ///< Thumb mode, software interrupt 8-bit
+#define R_ARM_XPC25               15   ///< Extended PC-relative 25-bit
+#define R_ARM_THM_XPC22           16   ///< Thumb mode, extended PC-relative 22-bit
+#define R_ARM_TLS_DTPMOD32        17   ///< TLS module index, 32-bit
+#define R_ARM_TLS_DTPOFF32        18   ///< TLS offset in module, 32-bit
+#define R_ARM_TLS_TPOFF32         19   ///< TLS offset in TLS block, 32-bit
+#define R_ARM_COPY                20   ///< Copy symbol at runtime
+#define R_ARM_GLOB_DAT            21   ///< Global data
+#define R_ARM_JUMP_SLOT           22   ///< PLT entry
+#define R_ARM_RELATIVE            23   ///< Relative relocation
+#define R_ARM_GOTOFF              24   ///< Offset to GOT
+#define R_ARM_GOTPC               25   ///< PC-relative offset to GOT
+#define R_ARM_GOT32               26   ///< 32-bit GOT entry
+#define R_ARM_PLT32               27   ///< 32-bit PLT address
+#define R_ARM_CALL                28   ///< Call target
+#define R_ARM_JUMP24              29   ///< 24-bit jump
+#define R_ARM_THM_JUMP24          30   ///< Thumb mode, 24-bit jump
+#define R_ARM_BASE_ABS            31   ///< Absolute base address
+#define R_ARM_ALU_PCREL_7_0       32   ///< PC-relative ALU, bits 7:0
+#define R_ARM_ALU_PCREL_15_8      33   ///< PC-relative ALU, bits 15:8
+#define R_ARM_ALU_PCREL_23_15     34   ///< PC-relative ALU, bits 23:15
+#define R_ARM_LDR_SBREL_11_0      35   ///< LDR static base relative, bits 11:0
+#define R_ARM_ALU_SBREL_19_12     36   ///< ALU static base relative, bits 19:12
+#define R_ARM_ALU_SBREL_27_20     37   ///< ALU static base relative, bits 27:20
+#define R_ARM_TARGET1             38   ///< Target relocation 1
+#define R_ARM_SBREL31             39   ///< Static base relative, bit 31
+#define R_ARM_V4BX                40   ///< V4BX transition
+#define R_ARM_TARGET2             41   ///< Target relocation 2
+#define R_ARM_PREL31              42   ///< PC-relative, bit 31
+#define R_ARM_MOVW_ABS_NC         43   ///< MOVW, absolute, no check
+#define R_ARM_MOVT_ABS            44   ///< MOVT, absolute
+#define R_ARM_MOVW_PREL_NC        45   ///< MOVW, PC-relative, no check
+#define R_ARM_MOVT_PREL           46   ///< MOVT, PC-relative
+#define R_ARM_THM_MOVW_ABS_NC     47   ///< Thumb MOVW, absolute, no check
+#define R_ARM_THM_MOVT_ABS        48   ///< Thumb MOVT, absolute
+#define R_ARM_THM_MOVW_PREL_NC    49   ///< Thumb MOVW, PC-relative, no check
+#define R_ARM_THM_MOVT_PREL       50   ///< Thumb MOVT, PC-relative
+#define R_ARM_THM_JUMP19          51   ///< Thumb mode, 19-bit jump
+#define R_ARM_THM_JUMP6           52   ///< Thumb mode, 6-bit jump
+#define R_ARM_THM_ALU_PREL_11_0   53   ///< Thumb ALU, PC-relative, bits 11:0
+#define R_ARM_THM_PC12            54   ///< Thumb PC-relative, bits 11:0
+#define R_ARM_ABS32_NOI           55   ///< Absolute 32-bit, no instruction
+#define R_ARM_REL32_NOI           56   ///< Relative 32-bit, no instruction
+#define R_ARM_ALU_PC_G0_NC        57   ///< ALU, PC-relative group 0, no check
+#define R_ARM_ALU_PC_G0           58   ///< ALU, PC-relative group 0
+#define R_ARM_ALU_PC_G1_NC        59   ///< ALU, PC-relative group 1, no check
+#define R_ARM_ALU_PC_G1           60   ///< ALU, PC-relative group 1
+#define R_ARM_ALU_PC_G2           61   ///< ALU, PC-relative group 2
+#define R_ARM_LDR_PC_G1           62   ///< LDR, PC-relative group 1
+#define R_ARM_LDR_PC_G2           63   ///< LDR, PC-relative group 2
+#define R_ARM_LDRS_PC_G0          64   ///< LDRS, PC-relative group 0
+#define R_ARM_LDRS_PC_G1          65   ///< LDRS, PC-relative group 1
+#define R_ARM_LDRS_PC_G2          66   ///< LDRS, PC-relative group 2
+#define R_ARM_LDC_PC_G0           67   ///< LDC, PC-relative group 0
+#define R_ARM_LDC_PC_G1           68   ///< LDC, PC-relative group 1
+#define R_ARM_LDC_PC_G2           69   ///< LDC, PC-relative group 2
+#define R_ARM_ALU_SB_G0_NC        70   ///< ALU, static base group 0, no check
+#define R_ARM_ALU_SB_G0           71   ///< ALU, static base group 0
+#define R_ARM_ALU_SB_G1_NC        72   ///< ALU, static base group 1, no check
+#define R_ARM_ALU_SB_G1           73   ///< ALU, static base group 1
+#define R_ARM_ALU_SB_G2           74   ///< ALU, static base group 2
+#define R_ARM_LDR_SB_G0           75   ///< LDR, static base group 0
+#define R_ARM_LDR_SB_G1           76   ///< LDR, static base group 1
+#define R_ARM_LDR_SB_G2           77   ///< LDR, static base group 2
+#define R_ARM_LDRS_SB_G0          78   ///< LDRS, static base group 0
+#define R_ARM_LDRS_SB_G1          79   ///< LDRS, static base group 1
+#define R_ARM_LDRS_SB_G2          80   ///< LDRS, static base group 2
+#define R_ARM_LDC_SB_G0           81   ///< LDC, static base group 0
+#define R_ARM_LDC_SB_G1           82   ///< LDC, static base group 1
+#define R_ARM_LDC_SB_G2           83   ///< LDC, static base group 2
+#define R_ARM_MOVW_BREL_NC        84   ///< MOVW, GOT-relative, no check
+#define R_ARM_MOVT_BREL           85   ///< MOVT, GOT-relative
+#define R_ARM_MOVW_BREL           86   ///< MOVW, GOT-relative
+#define R_ARM_THM_MOVW_BREL_NC    87   ///< Thumb MOVW, GOT-relative, no check
+#define R_ARM_THM_MOVT_BREL       88   ///< Thumb MOVT, GOT-relative
+#define R_ARM_THM_MOVW_BREL       89   ///< Thumb MOVW, GOT-relative
+#define R_ARM_TLS_GOTDESC         90   ///< TLS GOT descriptor
+#define R_ARM_TLS_CALL            91   ///< TLS call
+#define R_ARM_TLS_DESCSEQ         92   ///< TLS descriptor sequence
+#define R_ARM_THM_TLS_CALL        93   ///< Thumb TLS call
+#define R_ARM_PLT32_ABS           94   ///< Absolute PLT 32-bit
+#define R_ARM_GOT_ABS             95   ///< Absolute GOT entry
+#define R_ARM_GOT_PREL            96   ///< PC-relative GOT entry
+#define R_ARM_GOT_BREL12          97   ///< 12-bit GOT-relative
+#define R_ARM_GOTOFF12            98   ///< 12-bit offset to GOT
+#define R_ARM_GOTRELAX            99   ///< GOT entry relax
+#define R_ARM_GNU_VTENTRY        100   ///< GNU vtable entry
+#define R_ARM_GNU_VTINHERIT      101   ///< GNU vtable inheritance
+#define R_ARM_THM_PC11           102   ///< Thumb PC-relative 11-bit
+#define R_ARM_THM_PC9            103   ///< Thumb PC-relative 9-bit
+#define R_ARM_TLS_GD32           104   ///< TLS general dynamic model
+#define R_ARM_TLS_LDM32          105   ///< TLS local dynamic model
+#define R_ARM_TLS_LDO32          106   ///< TLS local dynamic offset
+#define R_ARM_TLS_IE32           107   ///< TLS initial exec model
+#define R_ARM_TLS_LE32           108   ///< TLS local exec model
+#define R_ARM_TLS_LDO12          109   ///< TLS 12-bit local dynamic offset
+#define R_ARM_TLS_LE12           110   ///< TLS 12-bit local exec offset
+#define R_ARM_TLS_IE12GP         111   ///< TLS 12-bit initial exec GP offset
+#define R_ARM_ME_TOO             128   ///< Reserved (ME TOO)
+#define R_ARM_THM_TLS_DESCSEQ    129   ///< Thumb TLS descriptor sequence
+#define R_ARM_THM_TLS_DESCSEQ16  129   ///< Thumb TLS desc seq (16-bit alias)
+#define R_ARM_THM_TLS_DESCSEQ32  130   ///< Thumb TLS desc seq (32-bit)
+#define R_ARM_THM_GOT_BREL12     131   ///< Thumb GOT-relative 12-bit
+#define R_ARM_IRELATIVE          160   ///< Indirect relative relocation
+#define R_ARM_RXPC25             249   ///< RX PC-relative 25-bit
+#define R_ARM_RSBREL32           250   ///< Read-only static base rel. 32-bit
+#define R_ARM_THM_RPC22          251   ///< Thumb PC-relative call
+#define R_ARM_RREL32             252   ///< Read-only relative 32-bit
+#define R_ARM_RABS22             253   ///< Read-only absolute 22-bit
+#define R_ARM_RPC24              254   ///< Read-only PC-relative 24-bit
+#define R_ARM_RBASE              255   ///< Read-only base address
 
-#define R_ARM_NONE		0
-#define R_ARM_PC24		1
-#define R_ARM_ABS32		2
-#define R_ARM_REL32		3
-#define R_ARM_PC13		4
-#define R_ARM_ABS16		5
-#define R_ARM_ABS12		6
-#define R_ARM_THM_ABS5		7
-#define R_ARM_ABS8		8
-#define R_ARM_SBREL32		9
-#define R_ARM_THM_PC22		10
-#define R_ARM_THM_PC8		11
-#define R_ARM_AMP_VCALL9	12
-#define R_ARM_TLS_DESC		13
-#define R_ARM_THM_SWI8		14
-#define R_ARM_XPC25		15
-#define R_ARM_THM_XPC22		16
-#define R_ARM_TLS_DTPMOD32	17
-#define R_ARM_TLS_DTPOFF32	18
-#define R_ARM_TLS_TPOFF32	19
-#define R_ARM_COPY		20
-#define R_ARM_GLOB_DAT		21
-#define R_ARM_JUMP_SLOT		22
-#define R_ARM_RELATIVE		23
-#define R_ARM_GOTOFF		24
-#define R_ARM_GOTPC		25
-#define R_ARM_GOT32		26
-#define R_ARM_PLT32		27
-#define R_ARM_CALL		28
-#define R_ARM_JUMP24		29
-#define R_ARM_THM_JUMP24	30
-#define R_ARM_BASE_ABS		31
-#define R_ARM_ALU_PCREL_7_0	32
-#define R_ARM_ALU_PCREL_15_8	33
-#define R_ARM_ALU_PCREL_23_15	34
-#define R_ARM_LDR_SBREL_11_0	35
-#define R_ARM_ALU_SBREL_19_12	36
-#define R_ARM_ALU_SBREL_27_20	37
-#define R_ARM_TARGET1		38
-#define R_ARM_SBREL31		39
-#define R_ARM_V4BX		40
-#define R_ARM_TARGET2		41
-#define R_ARM_PREL31		42
-#define R_ARM_MOVW_ABS_NC	43
-#define R_ARM_MOVT_ABS		44
-#define R_ARM_MOVW_PREL_NC	45
-#define R_ARM_MOVT_PREL		46
-#define R_ARM_THM_MOVW_ABS_NC	47
-#define R_ARM_THM_MOVT_ABS	48
-#define R_ARM_THM_MOVW_PREL_NC	49
-#define R_ARM_THM_MOVT_PREL	50
-#define R_ARM_THM_JUMP19	51
-#define R_ARM_THM_JUMP6		52
-#define R_ARM_THM_ALU_PREL_11_0	53
-#define R_ARM_THM_PC12		54
-#define R_ARM_ABS32_NOI		55
-#define R_ARM_REL32_NOI		56
-#define R_ARM_ALU_PC_G0_NC	57
-#define R_ARM_ALU_PC_G0		58
-#define R_ARM_ALU_PC_G1_NC	59
-#define R_ARM_ALU_PC_G1		60
-#define R_ARM_ALU_PC_G2		61
-#define R_ARM_LDR_PC_G1		62
-#define R_ARM_LDR_PC_G2		63
-#define R_ARM_LDRS_PC_G0	64
-#define R_ARM_LDRS_PC_G1	65
-#define R_ARM_LDRS_PC_G2	66
-#define R_ARM_LDC_PC_G0		67
-#define R_ARM_LDC_PC_G1		68
-#define R_ARM_LDC_PC_G2		69
-#define R_ARM_ALU_SB_G0_NC	70
-#define R_ARM_ALU_SB_G0		71
-#define R_ARM_ALU_SB_G1_NC	72
-#define R_ARM_ALU_SB_G1		73
-#define R_ARM_ALU_SB_G2		74
-#define R_ARM_LDR_SB_G0		75
-#define R_ARM_LDR_SB_G1		76
-#define R_ARM_LDR_SB_G2		77
-#define R_ARM_LDRS_SB_G0	78
-#define R_ARM_LDRS_SB_G1	79
-#define R_ARM_LDRS_SB_G2	80
-#define R_ARM_LDC_SB_G0		81
-#define R_ARM_LDC_SB_G1		82
-#define R_ARM_LDC_SB_G2		83
-#define R_ARM_MOVW_BREL_NC	84
-#define R_ARM_MOVT_BREL		85
-#define R_ARM_MOVW_BREL		86
-#define R_ARM_THM_MOVW_BREL_NC	87
-#define R_ARM_THM_MOVT_BREL	88
-#define R_ARM_THM_MOVW_BREL	89
-#define R_ARM_TLS_GOTDESC	90
-#define R_ARM_TLS_CALL		91
-#define R_ARM_TLS_DESCSEQ	92
-#define R_ARM_THM_TLS_CALL	93
-#define R_ARM_PLT32_ABS		94
-#define R_ARM_GOT_ABS		95
-#define R_ARM_GOT_PREL		96
-#define R_ARM_GOT_BREL12	97
-#define R_ARM_GOTOFF12		98
-#define R_ARM_GOTRELAX		99
-#define R_ARM_GNU_VTENTRY	100
-#define R_ARM_GNU_VTINHERIT	101
-#define R_ARM_THM_PC11		102
-#define R_ARM_THM_PC9		103
-#define R_ARM_TLS_GD32		104
+#define R_ARM_NUM                256   ///< Number of ARM relocation types
+/** @} */
 
-#define R_ARM_TLS_LDM32		105
-
-#define R_ARM_TLS_LDO32		106
-
-#define R_ARM_TLS_IE32		107
-
-#define R_ARM_TLS_LE32		108
-#define R_ARM_TLS_LDO12		109
-#define R_ARM_TLS_LE12		110
-#define R_ARM_TLS_IE12GP	111
-#define R_ARM_ME_TOO		128
-#define R_ARM_THM_TLS_DESCSEQ	129
-#define R_ARM_THM_TLS_DESCSEQ16	129
-#define R_ARM_THM_TLS_DESCSEQ32	130
-#define R_ARM_THM_GOT_BREL12	131
-#define R_ARM_IRELATIVE		160
-#define R_ARM_RXPC25		249
-#define R_ARM_RSBREL32		250
-#define R_ARM_THM_RPC22		251
-#define R_ARM_RREL32		252
-#define R_ARM_RABS22		253
-#define R_ARM_RPC24		254
-#define R_ARM_RBASE		255
-
-#define R_ARM_NUM		256
 
 /** @defgroup ElfRelocCKCore C-SKY CKCore ELF Relocation Types
  *  @brief Relocation types for the C-SKY CKCore architecture.
