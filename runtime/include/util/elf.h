@@ -2956,524 +2956,565 @@ enum
 #define DT_IA_64_PLT_RESERVE	(DT_LOPROC + 0)
 #define DT_IA_64_NUM		1
 
+/** @defgroup RelocIA64 IA-64 Relocation Types
+ *  ELF relocation types for the IA-64 (Itanium) architecture.
+ *  @{
+ */
+#define R_IA64_NONE             0x00 /**< No relocation. */
+#define R_IA64_IMM14            0x21 /**< 14-bit immediate relocation. */
+#define R_IA64_IMM22            0x22 /**< 22-bit immediate relocation. */
+#define R_IA64_IMM64            0x23 /**< 64-bit immediate relocation. */
+#define R_IA64_DIR32MSB         0x24 /**< 32-bit direct MSB relocation. */
+#define R_IA64_DIR32LSB         0x25 /**< 32-bit direct LSB relocation. */
+#define R_IA64_DIR64MSB         0x26 /**< 64-bit direct MSB relocation. */
+#define R_IA64_DIR64LSB         0x27 /**< 64-bit direct LSB relocation. */
+#define R_IA64_GPREL22          0x2a /**< 22-bit GP-relative relocation. */
+#define R_IA64_GPREL64I         0x2b /**< 64-bit GP-relative immediate relocation. */
+#define R_IA64_GPREL32MSB       0x2c /**< 32-bit GP-relative MSB relocation. */
+#define R_IA64_GPREL32LSB       0x2d /**< 32-bit GP-relative LSB relocation. */
+#define R_IA64_GPREL64MSB       0x2e /**< 64-bit GP-relative MSB relocation. */
+#define R_IA64_GPREL64LSB       0x2f /**< 64-bit GP-relative LSB relocation. */
+#define R_IA64_LTOFF22          0x32 /**< 22-bit LTOFF relocation. */
+#define R_IA64_LTOFF64I         0x33 /**< 64-bit LTOFF immediate relocation. */
+#define R_IA64_PLTOFF22         0x3a /**< 22-bit PLTOFF relocation. */
+#define R_IA64_PLTOFF64I        0x3b /**< 64-bit PLTOFF immediate relocation. */
+#define R_IA64_PLTOFF64MSB      0x3e /**< 64-bit PLTOFF MSB relocation. */
+#define R_IA64_PLTOFF64LSB      0x3f /**< 64-bit PLTOFF LSB relocation. */
+#define R_IA64_FPTR64I          0x43 /**< 64-bit function pointer immediate relocation. */
+#define R_IA64_FPTR32MSB        0x44 /**< 32-bit function pointer MSB relocation. */
+#define R_IA64_FPTR32LSB        0x45 /**< 32-bit function pointer LSB relocation. */
+#define R_IA64_FPTR64MSB        0x46 /**< 64-bit function pointer MSB relocation. */
+#define R_IA64_FPTR64LSB        0x47 /**< 64-bit function pointer LSB relocation. */
+#define R_IA64_PCREL60B         0x48 /**< 60-bit PC-relative branch relocation. */
+#define R_IA64_PCREL21B         0x49 /**< 21-bit PC-relative branch relocation. */
+#define R_IA64_PCREL21M         0x4a /**< 21-bit PC-relative memory relocation. */
+#define R_IA64_PCREL21F         0x4b /**< 21-bit PC-relative function relocation. */
+#define R_IA64_PCREL32MSB       0x4c /**< 32-bit PC-relative MSB relocation. */
+#define R_IA64_PCREL32LSB       0x4d /**< 32-bit PC-relative LSB relocation. */
+#define R_IA64_PCREL64MSB       0x4e /**< 64-bit PC-relative MSB relocation. */
+#define R_IA64_PCREL64LSB       0x4f /**< 64-bit PC-relative LSB relocation. */
+#define R_IA64_LTOFF_FPTR22     0x52 /**< 22-bit LTOFF function pointer relocation. */
+#define R_IA64_LTOFF_FPTR64I    0x53 /**< 64-bit LTOFF function pointer immediate relocation. */
+#define R_IA64_LTOFF_FPTR32MSB  0x54 /**< 32-bit LTOFF function pointer MSB relocation. */
+#define R_IA64_LTOFF_FPTR32LSB  0x55 /**< 32-bit LTOFF function pointer LSB relocation. */
+#define R_IA64_LTOFF_FPTR64MSB  0x56 /**< 64-bit LTOFF function pointer MSB relocation. */
+#define R_IA64_LTOFF_FPTR64LSB  0x57 /**< 64-bit LTOFF function pointer LSB relocation. */
+#define R_IA64_SEGREL32MSB      0x5c /**< 32-bit segment-relative MSB relocation. */
+#define R_IA64_SEGREL32LSB      0x5d /**< 32-bit segment-relative LSB relocation. */
+#define R_IA64_SEGREL64MSB      0x5e /**< 64-bit segment-relative MSB relocation. */
+#define R_IA64_SEGREL64LSB      0x5f /**< 64-bit segment-relative LSB relocation. */
+#define R_IA64_SECREL32MSB      0x64 /**< 32-bit section-relative MSB relocation. */
+#define R_IA64_SECREL32LSB      0x65 /**< 32-bit section-relative LSB relocation. */
+#define R_IA64_SECREL64MSB      0x66 /**< 64-bit section-relative MSB relocation. */
+#define R_IA64_SECREL64LSB      0x67 /**< 64-bit section-relative LSB relocation. */
+#define R_IA64_REL32MSB         0x6c /**< 32-bit relative MSB relocation. */
+#define R_IA64_REL32LSB         0x6d /**< 32-bit relative LSB relocation. */
+#define R_IA64_REL64MSB         0x6e /**< 64-bit relative MSB relocation. */
+#define R_IA64_REL64LSB         0x6f /**< 64-bit relative LSB relocation. */
+#define R_IA64_LTV32MSB         0x74 /**< 32-bit LTV MSB relocation. */
+#define R_IA64_LTV32LSB         0x75 /**< 32-bit LTV LSB relocation. */
+#define R_IA64_LTV64MSB         0x76 /**< 64-bit LTV MSB relocation. */
+#define R_IA64_LTV64LSB         0x77 /**< 64-bit LTV LSB relocation. */
+#define R_IA64_PCREL21BI        0x79 /**< 21-bit PC-relative indirect branch relocation. */
+#define R_IA64_PCREL22          0x7a /**< 22-bit PC-relative relocation. */
+#define R_IA64_PCREL64I         0x7b /**< 64-bit PC-relative immediate relocation. */
+#define R_IA64_IPLTMSB          0x80 /**< MSB entry in the dynamic procedure linkage table. */
+#define R_IA64_IPLTLSB          0x81 /**< LSB entry in the dynamic procedure linkage table. */
+#define R_IA64_COPY             0x84 /**< Runtime copy relocation. */
+#define R_IA64_SUB              0x85 /**< Subtraction relocation. */
+#define R_IA64_LTOFF22X         0x86 /**< Extended LTOFF 22-bit relocation. */
+#define R_IA64_LDXMOV           0x87 /**< LDXMOV relocation. */
+#define R_IA64_TPREL14          0x91 /**< 14-bit thread pointer relative relocation. */
+#define R_IA64_TPREL22          0x92 /**< 22-bit thread pointer relative relocation. */
+#define R_IA64_TPREL64I         0x93 /**< 64-bit thread pointer relative immediate relocation. */
+#define R_IA64_TPREL64MSB       0x96 /**< 64-bit thread pointer relative MSB relocation. */
+#define R_IA64_TPREL64LSB       0x97 /**< 64-bit thread pointer relative LSB relocation. */
+#define R_IA64_LTOFF_TPREL22    0x9a /**< 22-bit LTOFF thread pointer relative relocation. */
+#define R_IA64_DTPMOD64MSB      0xa6 /**< 64-bit MSB module index relocation. */
+#define R_IA64_DTPMOD64LSB      0xa7 /**< 64-bit LSB module index relocation. */
+#define R_IA64_LTOFF_DTPMOD22   0xaa /**< 22-bit LTOFF module index relocation. */
+#define R_IA64_DTPREL14         0xb1 /**< 14-bit DTP-relative relocation. */
+#define R_IA64_DTPREL22         0xb2 /**< 22-bit DTP-relative relocation. */
+#define R_IA64_DTPREL64I        0xb3 /**< 64-bit DTP-relative immediate relocation. */
+#define R_IA64_DTPREL32MSB      0xb4 /**< 32-bit DTP-relative MSB relocation. */
+#define R_IA64_DTPREL32LSB      0xb5 /**< 32-bit DTP-relative LSB relocation. */
+#define R_IA64_DTPREL64MSB      0xb6 /**< 64-bit DTP-relative MSB relocation. */
+#define R_IA64_DTPREL64LSB      0xb7 /**< 64-bit DTP-relative LSB relocation. */
+#define R_IA64_LTOFF_DTPREL22   0xba /**< 22-bit LTOFF DTP-relative relocation. */
+/** @} */ // end of RelocIA64
 
-#define R_IA64_NONE		0x00
-#define R_IA64_IMM14		0x21
-#define R_IA64_IMM22		0x22
-#define R_IA64_IMM64		0x23
-#define R_IA64_DIR32MSB		0x24
-#define R_IA64_DIR32LSB		0x25
-#define R_IA64_DIR64MSB		0x26
-#define R_IA64_DIR64LSB		0x27
-#define R_IA64_GPREL22		0x2a
-#define R_IA64_GPREL64I		0x2b
-#define R_IA64_GPREL32MSB	0x2c
-#define R_IA64_GPREL32LSB	0x2d
-#define R_IA64_GPREL64MSB	0x2e
-#define R_IA64_GPREL64LSB	0x2f
-#define R_IA64_LTOFF22		0x32
-#define R_IA64_LTOFF64I		0x33
-#define R_IA64_PLTOFF22		0x3a
-#define R_IA64_PLTOFF64I	0x3b
-#define R_IA64_PLTOFF64MSB	0x3e
-#define R_IA64_PLTOFF64LSB	0x3f
-#define R_IA64_FPTR64I		0x43
-#define R_IA64_FPTR32MSB	0x44
-#define R_IA64_FPTR32LSB	0x45
-#define R_IA64_FPTR64MSB	0x46
-#define R_IA64_FPTR64LSB	0x47
-#define R_IA64_PCREL60B		0x48
-#define R_IA64_PCREL21B		0x49
-#define R_IA64_PCREL21M		0x4a
-#define R_IA64_PCREL21F		0x4b
-#define R_IA64_PCREL32MSB	0x4c
-#define R_IA64_PCREL32LSB	0x4d
-#define R_IA64_PCREL64MSB	0x4e
-#define R_IA64_PCREL64LSB	0x4f
-#define R_IA64_LTOFF_FPTR22	0x52
-#define R_IA64_LTOFF_FPTR64I	0x53
-#define R_IA64_LTOFF_FPTR32MSB	0x54
-#define R_IA64_LTOFF_FPTR32LSB	0x55
-#define R_IA64_LTOFF_FPTR64MSB	0x56
-#define R_IA64_LTOFF_FPTR64LSB	0x57
-#define R_IA64_SEGREL32MSB	0x5c
-#define R_IA64_SEGREL32LSB	0x5d
-#define R_IA64_SEGREL64MSB	0x5e
-#define R_IA64_SEGREL64LSB	0x5f
-#define R_IA64_SECREL32MSB	0x64
-#define R_IA64_SECREL32LSB	0x65
-#define R_IA64_SECREL64MSB	0x66
-#define R_IA64_SECREL64LSB	0x67
-#define R_IA64_REL32MSB		0x6c
-#define R_IA64_REL32LSB		0x6d
-#define R_IA64_REL64MSB		0x6e
-#define R_IA64_REL64LSB		0x6f
-#define R_IA64_LTV32MSB		0x74
-#define R_IA64_LTV32LSB		0x75
-#define R_IA64_LTV64MSB		0x76
-#define R_IA64_LTV64LSB		0x77
-#define R_IA64_PCREL21BI	0x79
-#define R_IA64_PCREL22		0x7a
-#define R_IA64_PCREL64I		0x7b
-#define R_IA64_IPLTMSB		0x80
-#define R_IA64_IPLTLSB		0x81
-#define R_IA64_COPY		0x84
-#define R_IA64_SUB		0x85
-#define R_IA64_LTOFF22X		0x86
-#define R_IA64_LDXMOV		0x87
-#define R_IA64_TPREL14		0x91
-#define R_IA64_TPREL22		0x92
-#define R_IA64_TPREL64I		0x93
-#define R_IA64_TPREL64MSB	0x96
-#define R_IA64_TPREL64LSB	0x97
-#define R_IA64_LTOFF_TPREL22	0x9a
-#define R_IA64_DTPMOD64MSB	0xa6
-#define R_IA64_DTPMOD64LSB	0xa7
-#define R_IA64_LTOFF_DTPMOD22	0xaa
-#define R_IA64_DTPREL14		0xb1
-#define R_IA64_DTPREL22		0xb2
-#define R_IA64_DTPREL64I	0xb3
-#define R_IA64_DTPREL32MSB	0xb4
-#define R_IA64_DTPREL32LSB	0xb5
-#define R_IA64_DTPREL64MSB	0xb6
-#define R_IA64_DTPREL64LSB	0xb7
-#define R_IA64_LTOFF_DTPREL22	0xba
+/** @defgroup ElfFlagsSH SuperH (SH) ELF Header Flags
+ *  ELF `e_flags` values specific to the SH (SuperH) architecture.
+ *  @{
+ */
+#define EF_SH_MACH_MASK    0x1f /**< Mask for machine subtype. */
+#define EF_SH_UNKNOWN      0x0  /**< Unknown or unspecified SH architecture. */
+#define EF_SH1             0x1  /**< SH-1 architecture. */
+#define EF_SH2             0x2  /**< SH-2 architecture. */
+#define EF_SH3             0x3  /**< SH-3 architecture. */
+#define EF_SH_DSP          0x4  /**< SH-DSP architecture. */
+#define EF_SH3_DSP         0x5  /**< SH-3-DSP architecture. */
+#define EF_SH4AL_DSP       0x6  /**< SH-4AL-DSP architecture. */
+#define EF_SH3E            0x8  /**< SH-3E (extended) architecture. */
+#define EF_SH4             0x9  /**< SH-4 architecture. */
+#define EF_SH2E            0xb  /**< SH-2E architecture. */
+#define EF_SH4A            0xc  /**< SH-4A architecture. */
+#define EF_SH2A            0xd  /**< SH-2A architecture. */
+#define EF_SH4_NOFPU       0x10 /**< SH-4 without FPU. */
+#define EF_SH4A_NOFPU      0x11 /**< SH-4A without FPU. */
+#define EF_SH4_NOMMU_NOFPU 0x12 /**< SH-4 without MMU and FPU. */
+#define EF_SH2A_NOFPU      0x13 /**< SH-2A without FPU. */
+#define EF_SH3_NOMMU       0x14 /**< SH-3 without MMU. */
+#define EF_SH2A_SH4_NOFPU  0x15 /**< Hybrid SH-2A/SH-4 without FPU. */
+#define EF_SH2A_SH3_NOFPU  0x16 /**< Hybrid SH-2A/SH-3 without FPU. */
+#define EF_SH2A_SH4        0x17 /**< Hybrid SH-2A/SH-4 with FPU. */
+#define EF_SH2A_SH3E       0x18 /**< Hybrid SH-2A/SH-3E. */
+/** @} */ // end of ElfFlagsSH
 
-
-#define EF_SH_MACH_MASK		0x1f
-#define EF_SH_UNKNOWN		0x0
-#define EF_SH1			0x1
-#define EF_SH2			0x2
-#define EF_SH3			0x3
-#define EF_SH_DSP		0x4
-#define EF_SH3_DSP		0x5
-#define EF_SH4AL_DSP		0x6
-#define EF_SH3E			0x8
-#define EF_SH4			0x9
-#define EF_SH2E			0xb
-#define EF_SH4A			0xc
-#define EF_SH2A			0xd
-#define EF_SH4_NOFPU		0x10
-#define EF_SH4A_NOFPU		0x11
-#define EF_SH4_NOMMU_NOFPU	0x12
-#define EF_SH2A_NOFPU		0x13
-#define EF_SH3_NOMMU		0x14
-#define EF_SH2A_SH4_NOFPU	0x15
-#define EF_SH2A_SH3_NOFPU	0x16
-#define EF_SH2A_SH4		0x17
-#define EF_SH2A_SH3E		0x18
-
-#define	R_SH_NONE		0
-#define	R_SH_DIR32		1
-#define	R_SH_REL32		2
-#define	R_SH_DIR8WPN		3
-#define	R_SH_IND12W		4
-#define	R_SH_DIR8WPL		5
-#define	R_SH_DIR8WPZ		6
-#define	R_SH_DIR8BP		7
-#define	R_SH_DIR8W		8
-#define	R_SH_DIR8L		9
-#define	R_SH_SWITCH16		25
-#define	R_SH_SWITCH32		26
-#define	R_SH_USES		27
-#define	R_SH_COUNT		28
-#define	R_SH_ALIGN		29
-#define	R_SH_CODE		30
-#define	R_SH_DATA		31
-#define	R_SH_LABEL		32
-#define	R_SH_SWITCH8		33
-#define	R_SH_GNU_VTINHERIT	34
-#define	R_SH_GNU_VTENTRY	35
-#define	R_SH_TLS_GD_32		144
-#define	R_SH_TLS_LD_32		145
-#define	R_SH_TLS_LDO_32		146
-#define	R_SH_TLS_IE_32		147
-#define	R_SH_TLS_LE_32		148
-#define	R_SH_TLS_DTPMOD32	149
-#define	R_SH_TLS_DTPOFF32	150
-#define	R_SH_TLS_TPOFF32	151
-#define	R_SH_GOT32		160
-#define	R_SH_PLT32		161
-#define	R_SH_COPY		162
-#define	R_SH_GLOB_DAT		163
-#define	R_SH_JMP_SLOT		164
-#define	R_SH_RELATIVE		165
-#define	R_SH_GOTOFF		166
-#define	R_SH_GOTPC		167
-#define	R_SH_GOT20		201
-#define	R_SH_GOTOFF20		202
-#define	R_SH_GOTFUNCDESC	203
-#define	R_SH_GOTFUNCDEST20	204
-#define	R_SH_GOTOFFFUNCDESC	205
-#define	R_SH_GOTOFFFUNCDEST20	206
-#define	R_SH_FUNCDESC		207
-#define	R_SH_FUNCDESC_VALUE	208
-
-#define	R_SH_NUM		256
-
-
-
-#define R_390_NONE		0
-#define R_390_8			1
-#define R_390_12		2
-#define R_390_16		3
-#define R_390_32		4
-#define R_390_PC32		5
-#define R_390_GOT12		6
-#define R_390_GOT32		7
-#define R_390_PLT32		8
-#define R_390_COPY		9
-#define R_390_GLOB_DAT		10
-#define R_390_JMP_SLOT		11
-#define R_390_RELATIVE		12
-#define R_390_GOTOFF32		13
-#define R_390_GOTPC		14
-#define R_390_GOT16		15
-#define R_390_PC16		16
-#define R_390_PC16DBL		17
-#define R_390_PLT16DBL		18
-#define R_390_PC32DBL		19
-#define R_390_PLT32DBL		20
-#define R_390_GOTPCDBL		21
-#define R_390_64		22
-#define R_390_PC64		23
-#define R_390_GOT64		24
-#define R_390_PLT64		25
-#define R_390_GOTENT		26
-#define R_390_GOTOFF16		27
-#define R_390_GOTOFF64		28
-#define R_390_GOTPLT12		29
-#define R_390_GOTPLT16		30
-#define R_390_GOTPLT32		31
-#define R_390_GOTPLT64		32
-#define R_390_GOTPLTENT		33
-#define R_390_PLTOFF16		34
-#define R_390_PLTOFF32		35
-#define R_390_PLTOFF64		36
-#define R_390_TLS_LOAD		37
-#define R_390_TLS_GDCALL	38
-
-#define R_390_TLS_LDCALL	39
-
-#define R_390_TLS_GD32		40
-
-#define R_390_TLS_GD64		41
-
-#define R_390_TLS_GOTIE12	42
-
-#define R_390_TLS_GOTIE32	43
-
-#define R_390_TLS_GOTIE64	44
-
-#define R_390_TLS_LDM32		45
-
-#define R_390_TLS_LDM64		46
-
-#define R_390_TLS_IE32		47
-
-#define R_390_TLS_IE64		48
-
-#define R_390_TLS_IEENT		49
-
-#define R_390_TLS_LE32		50
-
-#define R_390_TLS_LE64		51
-
-#define R_390_TLS_LDO32		52
-
-#define R_390_TLS_LDO64		53
-
-#define R_390_TLS_DTPMOD	54
-#define R_390_TLS_DTPOFF	55
-#define R_390_TLS_TPOFF		56
-
-#define R_390_20		57
-#define R_390_GOT20		58
-#define R_390_GOTPLT20		59
-#define R_390_TLS_GOTIE20	60
+/** @defgroup RelocationSH SuperH (SH) Relocation Types
+ *  ELF relocation types for Renesas SuperH (SH) architecture.
+ *  @{
+ */
+#define R_SH_NONE           0 /**< No relocation. */
+#define R_SH_DIR32          1 /**< Direct 32-bit. */
+#define R_SH_REL32          2 /**< PC-relative 32-bit. */
+#define R_SH_DIR8WPN        3 /**< 8-bit offset, word aligned, no base. */
+#define R_SH_IND12W         4 /**< Indirect 12-bit word offset. */
+#define R_SH_DIR8WPL        5 /**< 8-bit offset, word aligned, with base. */
+#define R_SH_DIR8WPZ        6 /**< 8-bit offset, word aligned, zero base. */
+#define R_SH_DIR8BP         7 /**< 8-bit byte offset from base. */
+#define R_SH_DIR8W          8 /**< 8-bit word offset. */
+#define R_SH_DIR8L          9 /**< 8-bit longword offset. */
+#define R_SH_SWITCH16      25 /**< 16-bit switch table entry. */
+#define R_SH_SWITCH32      26 /**< 32-bit switch table entry. */
+#define R_SH_USES          27 /**< Relocation used by another. */
+#define R_SH_COUNT         28 /**< Symbol reference count. */
+#define R_SH_ALIGN         29 /**< Alignment directive. */
+#define R_SH_CODE          30 /**< Code section relocation. */
+#define R_SH_DATA          31 /**< Data section relocation. */
+#define R_SH_LABEL         32 /**< Label relocation. */
+#define R_SH_SWITCH8       33 /**< 8-bit switch table entry. */
+#define R_SH_GNU_VTINHERIT 34 /**< GNU C++ vtable inheritance. */
+#define R_SH_GNU_VTENTRY   35 /**< GNU C++ vtable entry. */
+/** @name TLS Relocations
+ *  Thread-Local Storage relocations for SH.
+ *  @{
+ */
+#define R_SH_TLS_GD_32    144 /**< TLS General Dynamic 32-bit. */
+#define R_SH_TLS_LD_32    145 /**< TLS Local Dynamic 32-bit. */
+#define R_SH_TLS_LDO_32   146 /**< TLS Local Dynamic offset 32-bit. */
+#define R_SH_TLS_IE_32    147 /**< TLS Initial Exec 32-bit. */
+#define R_SH_TLS_LE_32    148 /**< TLS Local Exec 32-bit. */
+#define R_SH_TLS_DTPMOD32 149 /**< TLS Module ID. */
+#define R_SH_TLS_DTPOFF32 150 /**< TLS Offset in module. */
+#define R_SH_TLS_TPOFF32  151 /**< TLS Offset in static block. */
+/** @} */
+/** @name GOT and PLT Relocations
+ *  Global Offset Table and Procedure Linkage Table related.
+ *  @{
+ */
+#define R_SH_GOT32            160 /**< 32-bit offset into GOT. */
+#define R_SH_PLT32            161 /**< 32-bit PLT entry. */
+#define R_SH_COPY             162 /**< Copy symbol at runtime. */
+#define R_SH_GLOB_DAT         163 /**< Create GOT entry. */
+#define R_SH_JMP_SLOT         164 /**< Create PLT entry. */
+#define R_SH_RELATIVE         165 /**< Adjust by program base. */
+#define R_SH_GOTOFF           166 /**< 32-bit offset from GOT. */
+#define R_SH_GOTPC            167 /**< 32-bit PC-relative offset to GOT. */
+#define R_SH_GOT20            201 /**< 20-bit GOT entry. */
+#define R_SH_GOTOFF20         202 /**< 20-bit offset from GOT. */
+#define R_SH_GOTFUNCDESC      203 /**< GOT entry for function descriptor. */
+#define R_SH_GOTFUNCDEST20    204 /**< 20-bit GOT entry for function destination. */
+#define R_SH_GOTOFFFUNCDESC   205 /**< Offset from GOT to function descriptor. */
+#define R_SH_GOTOFFFUNCDEST20 206 /**< Offset from GOT to function destination. */
+#define R_SH_FUNCDESC         207 /**< Function descriptor. */
+#define R_SH_FUNCDESC_VALUE   208 /**< Value of function descriptor. */
+/** @} */
+#define R_SH_NUM              256 /**< Number of defined SH relocations. */
+/** @} */ // end of RelocationSH
 
 
-#define R_390_NUM		61
+/** @defgroup Relocation390 IBM S/390 Relocation Types
+ *  Relocation types used in ELF for IBM z/Architecture (s390).
+ *  @{
+ */
+#define R_390_NONE         0 /**< No relocation. */
+#define R_390_8            1 /**< Direct 8-bit. */
+#define R_390_12           2 /**< Direct 12-bit. */
+#define R_390_16           3 /**< Direct 16-bit. */
+#define R_390_32           4 /**< Direct 32-bit. */
+#define R_390_PC32         5 /**< PC-relative 32-bit. */
+#define R_390_GOT12        6 /**< 12-bit offset into GOT. */
+#define R_390_GOT32        7 /**< 32-bit offset into GOT. */
+#define R_390_PLT32        8 /**< 32-bit PLT address. */
+#define R_390_COPY         9 /**< Copy symbol at runtime. */
+#define R_390_GLOB_DAT    10 /**< Create GOT entry. */
+#define R_390_JMP_SLOT    11 /**< Create PLT entry. */
+#define R_390_RELATIVE    12 /**< Adjust by program base. */
+#define R_390_GOTOFF32    13 /**< 32-bit offset from GOT. */
+#define R_390_GOTPC       14 /**< 32-bit PC-relative offset to GOT. */
+#define R_390_GOT16       15 /**< 16-bit offset into GOT. */
+#define R_390_PC16        16 /**< PC-relative 16-bit. */
+#define R_390_PC16DBL     17 /**< PC-relative 16-bit shifted by 1. */
+#define R_390_PLT16DBL    18 /**< PLT 16-bit shifted by 1. */
+#define R_390_PC32DBL     19 /**< PC-relative 32-bit shifted by 1. */
+#define R_390_PLT32DBL    20 /**< PLT 32-bit shifted by 1. */
+#define R_390_GOTPCDBL    21 /**< PC-relative GOT offset shifted. */
+#define R_390_64          22 /**< Direct 64-bit. */
+#define R_390_PC64        23 /**< PC-relative 64-bit. */
+#define R_390_GOT64       24 /**< 64-bit offset into GOT. */
+#define R_390_PLT64       25 /**< 64-bit PLT address. */
+#define R_390_GOTENT      26 /**< GOT entry offset. */
+#define R_390_GOTOFF16    27 /**< 16-bit offset from GOT. */
+#define R_390_GOTOFF64    28 /**< 64-bit offset from GOT. */
+#define R_390_GOTPLT12    29 /**< 12-bit offset into GOT PLT. */
+#define R_390_GOTPLT16    30 /**< 16-bit offset into GOT PLT. */
+#define R_390_GOTPLT32    31 /**< 32-bit offset into GOT PLT. */
+#define R_390_GOTPLT64    32 /**< 64-bit offset into GOT PLT. */
+#define R_390_GOTPLTENT   33 /**< GOT PLT entry offset. */
+#define R_390_PLTOFF16    34 /**< 16-bit offset from PLT. */
+#define R_390_PLTOFF32    35 /**< 32-bit offset from PLT. */
+#define R_390_PLTOFF64    36 /**< 64-bit offset from PLT. */
+#define R_390_TLS_LOAD    37 /**< TLS load module index. */
+#define R_390_TLS_GDCALL  38 /**< General Dynamic TLS call. */
+#define R_390_TLS_LDCALL  39 /**< Local Dynamic TLS call. */
+#define R_390_TLS_GD32    40 /**< GD 32-bit relocation. */
+#define R_390_TLS_GD64    41 /**< GD 64-bit relocation. */
+#define R_390_TLS_GOTIE12 42 /**< GOT entry for IE TLS, 12-bit. */
+#define R_390_TLS_GOTIE32 43 /**< GOT entry for IE TLS, 32-bit. */
+#define R_390_TLS_GOTIE64 44 /**< GOT entry for IE TLS, 64-bit. */
+#define R_390_TLS_LDM32   45 /**< LDM 32-bit relocation. */
+#define R_390_TLS_LDM64   46 /**< LDM 64-bit relocation. */
+#define R_390_TLS_IE32    47 /**< Initial Exec TLS, 32-bit. */
+#define R_390_TLS_IE64    48 /**< Initial Exec TLS, 64-bit. */
+#define R_390_TLS_IEENT   49 /**< IE entry offset. */
+#define R_390_TLS_LE32    50 /**< Local Exec TLS, 32-bit. */
+#define R_390_TLS_LE64    51 /**< Local Exec TLS, 64-bit. */
+#define R_390_TLS_LDO32   52 /**< LDO 32-bit. */
+#define R_390_TLS_LDO64   53 /**< LDO 64-bit. */
+#define R_390_TLS_DTPMOD  54 /**< Module index for TLS. */
+#define R_390_TLS_DTPOFF  55 /**< Offset in TLS block. */
+#define R_390_TLS_TPOFF   56 /**< Offset in static TLS block. */
+#define R_390_20          57 /**< Direct 20-bit. */
+#define R_390_GOT20       58 /**< 20-bit GOT offset. */
+#define R_390_GOTPLT20    59 /**< 20-bit offset into GOT PLT. */
+#define R_390_TLS_GOTIE20 60 /**< 20-bit IE TLS GOT entry. */
+#define R_390_NUM         61 /**< Number of defined relocations. */
+/** @} */ // end of Relocation390
 
 
-
-#define R_CRIS_NONE		0
-#define R_CRIS_8		1
-#define R_CRIS_16		2
-#define R_CRIS_32		3
-#define R_CRIS_8_PCREL		4
-#define R_CRIS_16_PCREL		5
-#define R_CRIS_32_PCREL		6
-#define R_CRIS_GNU_VTINHERIT	7
-#define R_CRIS_GNU_VTENTRY	8
-#define R_CRIS_COPY		9
-#define R_CRIS_GLOB_DAT		10
-#define R_CRIS_JUMP_SLOT	11
-#define R_CRIS_RELATIVE		12
-#define R_CRIS_16_GOT		13
-#define R_CRIS_32_GOT		14
-#define R_CRIS_16_GOTPLT	15
-#define R_CRIS_32_GOTPLT	16
-#define R_CRIS_32_GOTREL	17
-#define R_CRIS_32_PLT_GOTREL	18
-#define R_CRIS_32_PLT_PCREL	19
-
-#define R_CRIS_NUM		20
-
-
-
-#define R_X86_64_NONE		0
-#define R_X86_64_64		1
-#define R_X86_64_PC32		2
-#define R_X86_64_GOT32		3
-#define R_X86_64_PLT32		4
-#define R_X86_64_COPY		5
-#define R_X86_64_GLOB_DAT	6
-#define R_X86_64_JUMP_SLOT	7
-#define R_X86_64_RELATIVE	8
-#define R_X86_64_GOTPCREL	9
-
-#define R_X86_64_32		10
-#define R_X86_64_32S		11
-#define R_X86_64_16		12
-#define R_X86_64_PC16		13
-#define R_X86_64_8		14
-#define R_X86_64_PC8		15
-#define R_X86_64_DTPMOD64	16
-#define R_X86_64_DTPOFF64	17
-#define R_X86_64_TPOFF64	18
-#define R_X86_64_TLSGD		19
-
-#define R_X86_64_TLSLD		20
-
-#define R_X86_64_DTPOFF32	21
-#define R_X86_64_GOTTPOFF	22
-
-#define R_X86_64_TPOFF32	23
-#define R_X86_64_PC64		24
-#define R_X86_64_GOTOFF64	25
-#define R_X86_64_GOTPC32	26
-#define R_X86_64_GOT64		27
-#define R_X86_64_GOTPCREL64	28
-#define R_X86_64_GOTPC64	29
-#define R_X86_64_GOTPLT64	30
-#define R_X86_64_PLTOFF64	31
-#define R_X86_64_SIZE32		32
-#define R_X86_64_SIZE64		33
-
-#define R_X86_64_GOTPC32_TLSDESC 34
-#define R_X86_64_TLSDESC_CALL   35
-
-#define R_X86_64_TLSDESC        36
-#define R_X86_64_IRELATIVE	37
-#define R_X86_64_RELATIVE64	38
-#define R_X86_64_GOTPCRELX	41
-#define R_X86_64_REX_GOTPCRELX	42
-#define R_X86_64_NUM		43
+/** @defgroup RelocationCRIS CRIS Relocation Types
+ *  Relocation types for the CRIS architecture.
+ *  @{
+ */
+#define R_CRIS_NONE           0 /**< No relocation. */
+#define R_CRIS_8              1 /**< Direct 8-bit. */
+#define R_CRIS_16             2 /**< Direct 16-bit. */
+#define R_CRIS_32             3 /**< Direct 32-bit. */
+#define R_CRIS_8_PCREL        4 /**< PC-relative 8-bit. */
+#define R_CRIS_16_PCREL       5 /**< PC-relative 16-bit. */
+#define R_CRIS_32_PCREL       6 /**< PC-relative 32-bit. */
+#define R_CRIS_GNU_VTINHERIT  7 /**< C++ inheritance info. */
+#define R_CRIS_GNU_VTENTRY    8 /**< C++ virtual table entry. */
+#define R_CRIS_COPY           9 /**< Copy symbol at runtime. */
+#define R_CRIS_GLOB_DAT      10 /**< Create GOT entry. */
+#define R_CRIS_JUMP_SLOT     11 /**< Create PLT entry. */
+#define R_CRIS_RELATIVE      12 /**< Adjust by program base. */
+#define R_CRIS_16_GOT        13 /**< 16-bit GOT entry. */
+#define R_CRIS_32_GOT        14 /**< 32-bit GOT entry. */
+#define R_CRIS_16_GOTPLT     15 /**< 16-bit GOT PLT entry. */
+#define R_CRIS_32_GOTPLT     16 /**< 32-bit GOT PLT entry. */
+#define R_CRIS_32_GOTREL     17 /**< GOT-relative 32-bit. */
+#define R_CRIS_32_PLT_GOTREL 18 /**< PLT GOT-relative 32-bit. */
+#define R_CRIS_32_PLT_PCREL  19 /**< PC-relative to PLT. */
+#define R_CRIS_NUM           20 /**< Number of defined relocations. */
+/** @} */ // end of RelocationCRIS
 
 
 
-#define R_MN10300_NONE		0
-#define R_MN10300_32		1
-#define R_MN10300_16		2
-#define R_MN10300_8		3
-#define R_MN10300_PCREL32	4
-#define R_MN10300_PCREL16	5
-#define R_MN10300_PCREL8	6
-#define R_MN10300_GNU_VTINHERIT	7
-#define R_MN10300_GNU_VTENTRY	8
-#define R_MN10300_24		9
-#define R_MN10300_GOTPC32	10
-#define R_MN10300_GOTPC16	11
-#define R_MN10300_GOTOFF32	12
-#define R_MN10300_GOTOFF24	13
-#define R_MN10300_GOTOFF16	14
-#define R_MN10300_PLT32		15
-#define R_MN10300_PLT16		16
-#define R_MN10300_GOT32		17
-#define R_MN10300_GOT24		18
-#define R_MN10300_GOT16		19
-#define R_MN10300_COPY		20
-#define R_MN10300_GLOB_DAT	21
-#define R_MN10300_JMP_SLOT	22
-#define R_MN10300_RELATIVE	23
+/** @defgroup RelocationX86_64 x86_64 Relocation Types
+ *  ELF relocation types for 64-bit x86 (AMD64 / Intel64).
+ *  @{
+ */
+#define R_X86_64_NONE             0 /**< No relocation. */
+#define R_X86_64_64               1 /**< Direct 64-bit. */
+#define R_X86_64_PC32             2 /**< PC-relative 32-bit signed. */
+#define R_X86_64_GOT32            3 /**< 32-bit GOT entry. */
+#define R_X86_64_PLT32            4 /**< 32-bit PLT address. */
+#define R_X86_64_COPY             5 /**< Copy symbol at runtime. */
+#define R_X86_64_GLOB_DAT         6 /**< Create GOT entry. */
+#define R_X86_64_JUMP_SLOT        7 /**< Create PLT entry. */
+#define R_X86_64_RELATIVE         8 /**< Adjust by program base. */
+#define R_X86_64_GOTPCREL         9 /**< PC-relative offset to GOT entry. */
+#define R_X86_64_32              10 /**< Direct 32-bit zero extended. */
+#define R_X86_64_32S             11 /**< Direct 32-bit sign extended. */
+#define R_X86_64_16              12 /**< Direct 16-bit. */
+#define R_X86_64_PC16            13 /**< PC-relative 16-bit. */
+#define R_X86_64_8               14 /**< Direct 8-bit. */
+#define R_X86_64_PC8             15 /**< PC-relative 8-bit. */
+#define R_X86_64_DTPMOD64        16 /**< TLS module index. */
+#define R_X86_64_DTPOFF64        17 /**< TLS offset in module. */
+#define R_X86_64_TPOFF64         18 /**< Offset in static TLS block. */
+#define R_X86_64_TLSGD           19 /**< TLS General Dynamic. */
+#define R_X86_64_TLSLD           20 /**< TLS Local Dynamic. */
+#define R_X86_64_DTPOFF32        21 /**< TLS offset 32-bit. */
+#define R_X86_64_GOTTPOFF        22 /**< GOT offset for TLS. */
+#define R_X86_64_TPOFF32         23 /**< Static TLS offset 32-bit. */
+#define R_X86_64_PC64            24 /**< PC-relative 64-bit. */
+#define R_X86_64_GOTOFF64        25 /**< 64-bit offset from GOT. */
+#define R_X86_64_GOTPC32         26 /**< 32-bit PC-relative to GOT. */
+#define R_X86_64_GOT64           27 /**< 64-bit GOT entry. */
+#define R_X86_64_GOTPCREL64      28 /**< PC-relative 64-bit to GOT entry. */
+#define R_X86_64_GOTPC64         29 /**< PC-relative to GOT. */
+#define R_X86_64_GOTPLT64        30 /**< GOT entry for PLT. */
+#define R_X86_64_PLTOFF64        31 /**< Offset to PLT. */
+#define R_X86_64_SIZE32          32 /**< Symbol size 32-bit. */
+#define R_X86_64_SIZE64          33 /**< Symbol size 64-bit. */
+#define R_X86_64_GOTPC32_TLSDESC 34 /**< GOT offset for TLS descriptor. */
+#define R_X86_64_TLSDESC_CALL    35 /**< Marker for TLS descriptor call. */
+#define R_X86_64_TLSDESC         36 /**< TLS descriptor. */
+#define R_X86_64_IRELATIVE       37 /**< Indirect relative relocation. */
+#define R_X86_64_RELATIVE64      38 /**< Adjust by program base (64-bit). */
+#define R_X86_64_GOTPCRELX       41 /**< Relaxed PC-relative GOT. */
+#define R_X86_64_REX_GOTPCRELX   42 /**< Relaxed GOTPCRELX with REX prefix. */
+#define R_X86_64_NUM             43 /**< Number of defined relocations. */
+/** @} */ // end of RelocationX86_64
 
-#define R_MN10300_NUM		24
 
+/**
+ * @defgroup MN10300_Relocation_Types MN10300 Relocation Types
+ * @brief Relocation type constants for the MN10300 architecture.
+ * @{
+ */
+#define R_MN10300_NONE          0  /**< No relocation. */
+#define R_MN10300_32            1  /**< Direct 32-bit relocation. */
+#define R_MN10300_16            2  /**< Direct 16-bit relocation. */
+#define R_MN10300_8             3  /**< Direct 8-bit relocation. */
+#define R_MN10300_PCREL32       4  /**< 32-bit PC-relative relocation. */
+#define R_MN10300_PCREL16       5  /**< 16-bit PC-relative relocation. */
+#define R_MN10300_PCREL8        6  /**< 8-bit PC-relative relocation. */
+#define R_MN10300_GNU_VTINHERIT 7  /**< GNU C++ vtable inheritance. */
+#define R_MN10300_GNU_VTENTRY   8  /**< GNU C++ vtable entry. */
+#define R_MN10300_24            9  /**< Direct 24-bit relocation. */
+#define R_MN10300_GOTPC32       10 /**< 32-bit PC-relative GOT offset. */
+#define R_MN10300_GOTPC16       11 /**< 16-bit PC-relative GOT offset. */
+#define R_MN10300_GOTOFF32      12 /**< 32-bit offset from GOT. */
+#define R_MN10300_GOTOFF24      13 /**< 24-bit offset from GOT. */
+#define R_MN10300_GOTOFF16      14 /**< 16-bit offset from GOT. */
+#define R_MN10300_PLT32         15 /**< 32-bit PLT entry. */
+#define R_MN10300_PLT16         16 /**< 16-bit PLT entry. */
+#define R_MN10300_GOT32         17 /**< 32-bit GOT entry. */
+#define R_MN10300_GOT24         18 /**< 24-bit GOT entry. */
+#define R_MN10300_GOT16         19 /**< 16-bit GOT entry. */
+#define R_MN10300_COPY          20 /**< Runtime copy of variable. */
+#define R_MN10300_GLOB_DAT      21 /**< Set GOT entry to data address. */
+#define R_MN10300_JMP_SLOT      22 /**< Set GOT entry to function address. */
+#define R_MN10300_RELATIVE      23 /**< Adjust by program base address. */
+#define R_MN10300_NUM           24 /**< Number of relocation types defined. */
+/** @} */
 
+/**
+ * @defgroup M32R_Relocation_Types M32R Relocation Types
+ * @brief Relocation type constants for the M32R architecture.
+ * @{
+ */
+#define R_M32R_NONE                0  /**< No relocation. */
+#define R_M32R_16                  1  /**< Direct 16-bit relocation. */
+#define R_M32R_32                  2  /**< Direct 32-bit relocation. */
+#define R_M32R_24                  3  /**< Direct 24-bit relocation. */
+#define R_M32R_10_PCREL            4  /**< 10-bit PC-relative relocation. */
+#define R_M32R_18_PCREL            5  /**< 18-bit PC-relative relocation. */
+#define R_M32R_26_PCREL            6  /**< 26-bit PC-relative relocation. */
+#define R_M32R_HI16_ULO            7  /**< Upper 16 bits, unsigned. */
+#define R_M32R_HI16_SLO            8  /**< Upper 16 bits, signed. */
+#define R_M32R_LO16                9  /**< Lower 16 bits. */
+#define R_M32R_SDA16              10  /**< Small data area 16-bit relocation. */
+#define R_M32R_GNU_VTINHERIT      11  /**< GNU C++ vtable inheritance. */
+#define R_M32R_GNU_VTENTRY        12  /**< GNU C++ vtable entry. */
 
-#define R_M32R_NONE		0
-#define R_M32R_16		1
-#define R_M32R_32		2
-#define R_M32R_24		3
-#define R_M32R_10_PCREL		4
-#define R_M32R_18_PCREL		5
-#define R_M32R_26_PCREL		6
-#define R_M32R_HI16_ULO		7
-#define R_M32R_HI16_SLO		8
-#define R_M32R_LO16		9
-#define R_M32R_SDA16		10
-#define R_M32R_GNU_VTINHERIT	11
-#define R_M32R_GNU_VTENTRY	12
+#define R_M32R_16_RELA            33  /**< RELA 16-bit relocation. */
+#define R_M32R_32_RELA            34  /**< RELA 32-bit relocation. */
+#define R_M32R_24_RELA            35  /**< RELA 24-bit relocation. */
+#define R_M32R_10_PCREL_RELA      36  /**< RELA 10-bit PC-relative relocation. */
+#define R_M32R_18_PCREL_RELA      37  /**< RELA 18-bit PC-relative relocation. */
+#define R_M32R_26_PCREL_RELA      38  /**< RELA 26-bit PC-relative relocation. */
+#define R_M32R_HI16_ULO_RELA      39  /**< RELA upper 16 bits, unsigned. */
+#define R_M32R_HI16_SLO_RELA      40  /**< RELA upper 16 bits, signed. */
+#define R_M32R_LO16_RELA          41  /**< RELA lower 16 bits. */
+#define R_M32R_SDA16_RELA         42  /**< RELA small data area. */
+#define R_M32R_RELA_GNU_VTINHERIT 43  /**< RELA GNU vtable inheritance. */
+#define R_M32R_RELA_GNU_VTENTRY   44  /**< RELA GNU vtable entry. */
+#define R_M32R_REL32              45  /**< RELA 32-bit relative relocation. */
 
-#define R_M32R_16_RELA		33
-#define R_M32R_32_RELA		34
-#define R_M32R_24_RELA		35
-#define R_M32R_10_PCREL_RELA	36
-#define R_M32R_18_PCREL_RELA	37
-#define R_M32R_26_PCREL_RELA	38
-#define R_M32R_HI16_ULO_RELA	39
-#define R_M32R_HI16_SLO_RELA	40
-#define R_M32R_LO16_RELA	41
-#define R_M32R_SDA16_RELA	42
-#define R_M32R_RELA_GNU_VTINHERIT	43
-#define R_M32R_RELA_GNU_VTENTRY	44
-#define R_M32R_REL32		45
+#define R_M32R_GOT24              48  /**< GOT entry 24-bit. */
+#define R_M32R_26_PLTREL          49  /**< 26-bit PLT-relative relocation. */
+#define R_M32R_COPY               50  /**< Runtime symbol copy. */
+#define R_M32R_GLOB_DAT           51  /**< Create GOT data entry. */
+#define R_M32R_JMP_SLOT           52  /**< Set GOT entry to function address. */
+#define R_M32R_RELATIVE           53  /**< Adjust by base address. */
+#define R_M32R_GOTOFF             54  /**< Offset from GOT. */
+#define R_M32R_GOTPC24            55  /**< PC-relative GOT entry (24-bit). */
+#define R_M32R_GOT16_HI_ULO       56  /**< GOT 16-bit upper unsigned. */
 
-#define R_M32R_GOT24		48
-#define R_M32R_26_PLTREL	49
-#define R_M32R_COPY		50
-#define R_M32R_GLOB_DAT		51
-#define R_M32R_JMP_SLOT		52
-#define R_M32R_RELATIVE		53
-#define R_M32R_GOTOFF		54
-#define R_M32R_GOTPC24		55
-#define R_M32R_GOT16_HI_ULO	56
+#define R_M32R_GOT16_HI_SLO       57  /**< GOT 16-bit upper signed. */
 
-#define R_M32R_GOT16_HI_SLO	57
+#define R_M32R_GOT16_LO           58  /**< GOT 16-bit lower. */
+#define R_M32R_GOTPC_HI_ULO       59  /**< GOT PC-relative high unsigned. */
 
-#define R_M32R_GOT16_LO		58
-#define R_M32R_GOTPC_HI_ULO	59
+#define R_M32R_GOTPC_HI_SLO       60  /**< GOT PC-relative high signed. */
 
-#define R_M32R_GOTPC_HI_SLO	60
+#define R_M32R_GOTPC_LO           61  /**< GOT PC-relative low. */
 
-#define R_M32R_GOTPC_LO		61
+#define R_M32R_GOTOFF_HI_ULO      62  /**< GOT offset high unsigned. */
 
-#define R_M32R_GOTOFF_HI_ULO	62
+#define R_M32R_GOTOFF_HI_SLO      63  /**< GOT offset high signed. */
 
-#define R_M32R_GOTOFF_HI_SLO	63
+#define R_M32R_GOTOFF_LO          64  /**< GOT offset low. */
+#define R_M32R_NUM                256 /**< Number of M32R relocation types defined. */
+/** @} */
 
-#define R_M32R_GOTOFF_LO	64
-#define R_M32R_NUM		256
+/**
+ * @defgroup MicroBlaze_Relocation_Types MicroBlaze Relocation Types
+ * @brief Relocation type constants for the Xilinx MicroBlaze architecture.
+ * @{
+ */
+#define R_MICROBLAZE_NONE            0 /**< No relocation. */
+#define R_MICROBLAZE_32              1 /**< Direct 32-bit relocation. */
+#define R_MICROBLAZE_32_PCREL        2 /**< 32-bit PC-relative relocation. */
+#define R_MICROBLAZE_64_PCREL        3 /**< 64-bit PC-relative relocation. */
+#define R_MICROBLAZE_32_PCREL_LO     4 /**< Low 32 bits of PC-relative. */
+#define R_MICROBLAZE_64              5 /**< Direct 64-bit relocation. */
+#define R_MICROBLAZE_32_LO           6 /**< Low 32 bits relocation. */
+#define R_MICROBLAZE_SRO32           7 /**< Store-relative offset 32-bit. */
+#define R_MICROBLAZE_SRW32           8 /**< Store-relative word 32-bit. */
+#define R_MICROBLAZE_64_NONE         9 /**< Reserved or unused. */
+#define R_MICROBLAZE_32_SYM_OP_SYM  10 /**< Symbol operation on another symbol. */
+#define R_MICROBLAZE_GNU_VTINHERIT  11 /**< GNU vtable inheritance. */
+#define R_MICROBLAZE_GNU_VTENTRY    12 /**< GNU vtable entry. */
+#define R_MICROBLAZE_GOTPC_64       13 /**< GOT PC-relative 64-bit. */
+#define R_MICROBLAZE_GOT_64         14 /**< GOT 64-bit entry. */
+#define R_MICROBLAZE_PLT_64         15 /**< PLT 64-bit entry. */
+#define R_MICROBLAZE_REL            16 /**< Relative relocation. */
+#define R_MICROBLAZE_JUMP_SLOT      17 /**< Set GOT entry to function address. */
+#define R_MICROBLAZE_GLOB_DAT       18 /**< Set GOT entry to data address. */
+#define R_MICROBLAZE_GOTOFF_64      19 /**< 64-bit offset from GOT. */
+#define R_MICROBLAZE_GOTOFF_32      20 /**< 32-bit offset from GOT. */
+#define R_MICROBLAZE_COPY           21 /**< Runtime copy. */
+#define R_MICROBLAZE_TLS            22 /**< TLS relocation base. */
+#define R_MICROBLAZE_TLSGD          23 /**< TLS General Dynamic model. */
+#define R_MICROBLAZE_TLSLD          24 /**< TLS Local Dynamic model. */
+#define R_MICROBLAZE_TLSDTPMOD32    25 /**< TLS module ID. */
+#define R_MICROBLAZE_TLSDTPREL32    26 /**< TLS offset from DTP. */
+#define R_MICROBLAZE_TLSDTPREL64    27 /**< 64-bit TLS offset from DTP. */
+#define R_MICROBLAZE_TLSGOTTPREL32  28 /**< GOT entry for TLS TP offset. */
+#define R_MICROBLAZE_TLSTPREL32     29 /**< TLS offset from TP. */
+/** @} */
 
-#define R_MICROBLAZE_NONE 0
-#define R_MICROBLAZE_32 1
-#define R_MICROBLAZE_32_PCREL 2
-#define R_MICROBLAZE_64_PCREL 3
-#define R_MICROBLAZE_32_PCREL_LO 4
-#define R_MICROBLAZE_64 5
-#define R_MICROBLAZE_32_LO 6
-#define R_MICROBLAZE_SRO32 7
-#define R_MICROBLAZE_SRW32 8
-#define R_MICROBLAZE_64_NONE 9
-#define R_MICROBLAZE_32_SYM_OP_SYM 10
-#define R_MICROBLAZE_GNU_VTINHERIT 11
-#define R_MICROBLAZE_GNU_VTENTRY 12
-#define R_MICROBLAZE_GOTPC_64 13
-#define R_MICROBLAZE_GOT_64 14
-#define R_MICROBLAZE_PLT_64 15
-#define R_MICROBLAZE_REL 16
-#define R_MICROBLAZE_JUMP_SLOT 17
-#define R_MICROBLAZE_GLOB_DAT 18
-#define R_MICROBLAZE_GOTOFF_64 19
-#define R_MICROBLAZE_GOTOFF_32 20
-#define R_MICROBLAZE_COPY 21
-#define R_MICROBLAZE_TLS 22
-#define R_MICROBLAZE_TLSGD 23
-#define R_MICROBLAZE_TLSLD 24
-#define R_MICROBLAZE_TLSDTPMOD32 25
-#define R_MICROBLAZE_TLSDTPREL32 26
-#define R_MICROBLAZE_TLSDTPREL64 27
-#define R_MICROBLAZE_TLSGOTTPREL32 28
-#define R_MICROBLAZE_TLSTPREL32	 29
+/** 
+ * @defgroup NIOS2_Relocation_Types NIOS II Relocation Types
+ * @brief Relocation type constants for the NIOS II architecture.
+ * @{
+ */
+#define DT_NIOS2_GP           0x70000002 /**< Global pointer value used in NIOS II dynamic linking. */
 
-#define DT_NIOS2_GP             0x70000002
+#define R_NIOS2_NONE          0  /**< No relocation. */
+#define R_NIOS2_S16           1  /**< 16-bit signed relocation. */
+#define R_NIOS2_U16           2  /**< 16-bit unsigned relocation. */
+#define R_NIOS2_PCREL16       3  /**< 16-bit PC-relative relocation. */
+#define R_NIOS2_CALL26        4  /**< 26-bit call target relocation. */
+#define R_NIOS2_IMM5          5  /**< 5-bit immediate relocation. */
+#define R_NIOS2_CACHE_OPX     6  /**< Cache operation relocation. */
+#define R_NIOS2_IMM6          7  /**< 6-bit immediate relocation. */
+#define R_NIOS2_IMM8          8  /**< 8-bit immediate relocation. */
+#define R_NIOS2_HI16          9  /**< High 16 bits of an address. */
+#define R_NIOS2_LO16          10 /**< Low 16 bits of an address. */
+#define R_NIOS2_HIADJ16       11 /**< High 16 bits adjusted relocation. */
+#define R_NIOS2_BFD_RELOC_32  12 /**< Generic 32-bit relocation. */
+#define R_NIOS2_BFD_RELOC_16  13 /**< Generic 16-bit relocation. */
+#define R_NIOS2_BFD_RELOC_8   14 /**< Generic 8-bit relocation. */
+#define R_NIOS2_GPREL         15 /**< GP-relative relocation. */
+#define R_NIOS2_GNU_VTINHERIT 16 /**< GNU C++ vtable inheritance marker. */
+#define R_NIOS2_GNU_VTENTRY   17 /**< GNU C++ vtable entry relocation. */
+#define R_NIOS2_UJMP          18 /**< Unconditional jump relocation. */
+#define R_NIOS2_CJMP          19 /**< Conditional jump relocation. */
+#define R_NIOS2_CALLR         20 /**< Register-based call relocation. */
+#define R_NIOS2_ALIGN         21 /**< Alignment filler. */
+#define R_NIOS2_GOT16         22 /**< Global Offset Table 16-bit entry. */
+#define R_NIOS2_CALL16        23 /**< Call target 16-bit relocation. */
+#define R_NIOS2_GOTOFF_LO     24 /**< GOT offset low 16 bits. */
+#define R_NIOS2_GOTOFF_HA     25 /**< GOT offset high-adjusted 16 bits. */
+#define R_NIOS2_PCREL_LO      26 /**< PC-relative low 16 bits. */
+#define R_NIOS2_PCREL_HA      27 /**< PC-relative high-adjusted 16 bits. */
+#define R_NIOS2_TLS_GD16      28 /**< TLS General Dynamic model. */
+#define R_NIOS2_TLS_LDM16     29 /**< TLS Local Dynamic model. */
+#define R_NIOS2_TLS_LDO16     30 /**< TLS Local Dynamic offset. */
+#define R_NIOS2_TLS_IE16      31 /**< TLS Initial Executable model. */
+#define R_NIOS2_TLS_LE16      32 /**< TLS Local Executable model. */
+#define R_NIOS2_TLS_DTPMOD    33 /**< TLS module ID relocation. */
+#define R_NIOS2_TLS_DTPREL    34 /**< TLS offset from DTP. */
+#define R_NIOS2_TLS_TPREL     35 /**< TLS offset from TP. */
+#define R_NIOS2_COPY          36 /**< Runtime symbol copy. */
+#define R_NIOS2_GLOB_DAT      37 /**< Set GOT entry to data address. */
+#define R_NIOS2_JUMP_SLOT     38 /**< Set GOT entry to function address. */
+#define R_NIOS2_RELATIVE      39 /**< Relative relocation. */
+#define R_NIOS2_GOTOFF        40 /**< Offset to GOT from symbol. */
+#define R_NIOS2_CALL26_NOAT   41 /**< 26-bit call without using AT register. */
+#define R_NIOS2_GOT_LO        42 /**< GOT low 16 bits. */
+#define R_NIOS2_GOT_HA        43 /**< GOT high-adjusted 16 bits. */
+#define R_NIOS2_CALL_LO       44 /**< Call target low 16 bits. */
+#define R_NIOS2_CALL_HA       45 /**< Call target high-adjusted 16 bits. */
+/** @} */
 
-#define R_NIOS2_NONE		0
-#define R_NIOS2_S16		1
-#define R_NIOS2_U16		2
-#define R_NIOS2_PCREL16		3
-#define R_NIOS2_CALL26		4
-#define R_NIOS2_IMM5		5
-#define R_NIOS2_CACHE_OPX	6
-#define R_NIOS2_IMM6		7
-#define R_NIOS2_IMM8		8
-#define R_NIOS2_HI16		9
-#define R_NIOS2_LO16		10
-#define R_NIOS2_HIADJ16		11
-#define R_NIOS2_BFD_RELOC_32	12
-#define R_NIOS2_BFD_RELOC_16	13
-#define R_NIOS2_BFD_RELOC_8	14
-#define R_NIOS2_GPREL		15
-#define R_NIOS2_GNU_VTINHERIT	16
-#define R_NIOS2_GNU_VTENTRY	17
-#define R_NIOS2_UJMP		18
-#define R_NIOS2_CJMP		19
-#define R_NIOS2_CALLR		20
-#define R_NIOS2_ALIGN		21
-#define R_NIOS2_GOT16		22
-#define R_NIOS2_CALL16		23
-#define R_NIOS2_GOTOFF_LO	24
-#define R_NIOS2_GOTOFF_HA	25
-#define R_NIOS2_PCREL_LO	26
-#define R_NIOS2_PCREL_HA	27
-#define R_NIOS2_TLS_GD16	28
-#define R_NIOS2_TLS_LDM16	29
-#define R_NIOS2_TLS_LDO16	30
-#define R_NIOS2_TLS_IE16	31
-#define R_NIOS2_TLS_LE16	32
-#define R_NIOS2_TLS_DTPMOD	33
-#define R_NIOS2_TLS_DTPREL	34
-#define R_NIOS2_TLS_TPREL	35
-#define R_NIOS2_COPY		36
-#define R_NIOS2_GLOB_DAT	37
-#define R_NIOS2_JUMP_SLOT	38
-#define R_NIOS2_RELATIVE	39
-#define R_NIOS2_GOTOFF		40
-#define R_NIOS2_CALL26_NOAT	41
-#define R_NIOS2_GOT_LO		42
-#define R_NIOS2_GOT_HA		43
-#define R_NIOS2_CALL_LO		44
-#define R_NIOS2_CALL_HA		45
+/** 
+ * @defgroup OR1K_Relocation_Types OpenRISC (OR1K) Relocation Types
+ * @brief Relocation type constants for the OpenRISC architecture.
+ * @{
+ */
+#define R_OR1K_NONE          0  /**< No relocation. */
+#define R_OR1K_32            1  /**< Direct 32-bit relocation. */
+#define R_OR1K_16            2  /**< Direct 16-bit relocation. */
+#define R_OR1K_8             3  /**< Direct 8-bit relocation. */
+#define R_OR1K_LO_16_IN_INSN 4  /**< Low 16 bits embedded in instruction. */
+#define R_OR1K_HI_16_IN_INSN 5  /**< High 16 bits embedded in instruction. */
+#define R_OR1K_INSN_REL_26   6  /**< 26-bit PC-relative relocation. */
+#define R_OR1K_GNU_VTENTRY   7  /**< GNU vtable entry. */
+#define R_OR1K_GNU_VTINHERIT 8  /**< GNU vtable inheritance. */
+#define R_OR1K_32_PCREL      9  /**< 32-bit PC-relative relocation. */
+#define R_OR1K_16_PCREL      10 /**< 16-bit PC-relative relocation. */
+#define R_OR1K_8_PCREL       11 /**< 8-bit PC-relative relocation. */
+#define R_OR1K_GOTPC_HI16    12 /**< GOT PC-relative high 16 bits. */
+#define R_OR1K_GOTPC_LO16    13 /**< GOT PC-relative low 16 bits. */
+#define R_OR1K_GOT16         14 /**< 16-bit GOT entry. */
+#define R_OR1K_PLT26         15 /**< 26-bit PLT entry. */
+#define R_OR1K_GOTOFF_HI16   16 /**< Offset to GOT high 16 bits. */
+#define R_OR1K_GOTOFF_LO16   17 /**< Offset to GOT low 16 bits. */
+#define R_OR1K_COPY          18 /**< Runtime copy of symbols. */
+#define R_OR1K_GLOB_DAT      19 /**< Create global data entry. */
+#define R_OR1K_JMP_SLOT      20 /**< Set GOT entry to function address. */
+#define R_OR1K_RELATIVE      21 /**< Relative address relocation. */
+#define R_OR1K_TLS_GD_HI16   22 /**< TLS GD model high 16 bits. */
+#define R_OR1K_TLS_GD_LO16   23 /**< TLS GD model low 16 bits. */
+#define R_OR1K_TLS_LDM_HI16  24 /**< TLS LDM model high 16 bits. */
+#define R_OR1K_TLS_LDM_LO16  25 /**< TLS LDM model low 16 bits. */
+#define R_OR1K_TLS_LDO_HI16  26 /**< TLS LDO model high 16 bits. */
+#define R_OR1K_TLS_LDO_LO16  27 /**< TLS LDO model low 16 bits. */
+#define R_OR1K_TLS_IE_HI16   28 /**< TLS IE model high 16 bits. */
+#define R_OR1K_TLS_IE_LO16   29 /**< TLS IE model low 16 bits. */
+#define R_OR1K_TLS_LE_HI16   30 /**< TLS LE model high 16 bits. */
+#define R_OR1K_TLS_LE_LO16   31 /**< TLS LE model low 16 bits. */
+#define R_OR1K_TLS_TPOFF     32 /**< Offset from TP. */
+#define R_OR1K_TLS_DTPOFF    33 /**< Offset from DTP. */
+#define R_OR1K_TLS_DTPMOD    34 /**< TLS module ID relocation. */
+/** @} */
 
-#define R_OR1K_NONE		0
-#define R_OR1K_32		1
-#define R_OR1K_16		2
-#define R_OR1K_8		3
-#define R_OR1K_LO_16_IN_INSN	4
-#define R_OR1K_HI_16_IN_INSN	5
-#define R_OR1K_INSN_REL_26	6
-#define R_OR1K_GNU_VTENTRY	7
-#define R_OR1K_GNU_VTINHERIT	8
-#define R_OR1K_32_PCREL		9
-#define R_OR1K_16_PCREL		10
-#define R_OR1K_8_PCREL		11
-#define R_OR1K_GOTPC_HI16	12
-#define R_OR1K_GOTPC_LO16	13
-#define R_OR1K_GOT16		14
-#define R_OR1K_PLT26		15
-#define R_OR1K_GOTOFF_HI16	16
-#define R_OR1K_GOTOFF_LO16	17
-#define R_OR1K_COPY		18
-#define R_OR1K_GLOB_DAT		19
-#define R_OR1K_JMP_SLOT		20
-#define R_OR1K_RELATIVE		21
-#define R_OR1K_TLS_GD_HI16	22
-#define R_OR1K_TLS_GD_LO16	23
-#define R_OR1K_TLS_LDM_HI16	24
-#define R_OR1K_TLS_LDM_LO16	25
-#define R_OR1K_TLS_LDO_HI16	26
-#define R_OR1K_TLS_LDO_LO16	27
-#define R_OR1K_TLS_IE_HI16	28
-#define R_OR1K_TLS_IE_LO16	29
-#define R_OR1K_TLS_LE_HI16	30
-#define R_OR1K_TLS_LE_LO16	31
-#define R_OR1K_TLS_TPOFF	32
-#define R_OR1K_TLS_DTPOFF	33
-#define R_OR1K_TLS_DTPMOD	34
-
-#define R_BPF_NONE		0
-#define R_BPF_MAP_FD		1
+/**
+ * @defgroup BPF_Relocation_Types BPF Relocation Types
+ * @brief Relocation type constants for eBPF programs.
+ * @{
+ */
+#define R_BPF_NONE   0 /**< No relocation. */
+#define R_BPF_MAP_FD 1 /**< Relocation for map file descriptor. */
+/** @} */
 
 /** 
  * @defgroup riscv_relocations RISC-V Relocation Types
