@@ -1,0 +1,19 @@
+<map id="Relocation Types for AArch64" name="Relocation Types for AArch64">
+<area shape="rect" id="Node000016" href="$group__BPF__Relocation__Types.html" title="Relocation type constants for eBPF programs." alt="" coords="217,5,367,31"/>
+<area shape="rect" id="Node000006" href="$group__ElfFlagsSH.html" title=" " alt="" coords="208,55,376,96"/>
+<area shape="rect" id="Node000004" href="$group__ElfIA64Flags.html" title="Flags, section types, program types, and dynamic tags for IA&#45;64 architecture." alt="" coords="223,121,361,161"/>
+<area shape="rect" id="Node000002" href="$group__ElfRelocARM.html" title="ELF relocation types for the ARM architecture." alt="" coords="221,186,363,227"/>
+<area shape="rect" id="Node000003" href="$group__ElfRelocCKCore.html" title="Relocation types for the C&#45;SKY CKCore architecture." alt="" coords="192,251,392,292"/>
+<area shape="rect" id="Node000012" href="$group__M32R__Relocation__Types.html" title="Relocation type constants for the M32R architecture." alt="" coords="213,316,371,342"/>
+<area shape="rect" id="Node000011" href="$group__MN10300__Relocation__Types.html" title="Relocation type constants for the MN10300 architecture." alt="" coords="221,366,363,407"/>
+<area shape="rect" id="Node000013" href="$group__MicroBlaze__Relocation__Types.html" title="Relocation type constants for the Xilinx MicroBlaze architecture." alt="" coords="217,431,367,472"/>
+<area shape="rect" id="Node000014" href="$group__NIOS2__Relocation__Types.html" title="Relocation type constants for the NIOS II architecture." alt="" coords="227,497,357,537"/>
+<area shape="rect" id="Node000015" href="$group__OR1K__Relocation__Types.html" title="Relocation type constants for the OpenRISC architecture." alt="" coords="195,562,389,603"/>
+<area shape="rect" id="Node000001" title="A collection of relocation types for AArch64 architecture." alt="" coords="5,465,144,505"/>
+<area shape="rect" id="Node000005" href="$group__RelocIA64.html" title=" " alt="" coords="215,627,369,652"/>
+<area shape="rect" id="Node000008" href="$group__Relocation390.html" title=" " alt="" coords="219,677,365,717"/>
+<area shape="rect" id="Node000009" href="$group__RelocationCRIS.html" title=" " alt="" coords="215,741,369,767"/>
+<area shape="rect" id="Node000007" href="$group__RelocationSH.html" title=" " alt="" coords="212,791,372,832"/>
+<area shape="rect" id="Node000010" href="$group__RelocationX86__64.html" title=" " alt="" coords="210,856,374,882"/>
+<area shape="rect" id="Node000017" href="$group__riscv__relocations.html" title="Constants for different RISC&#45;V relocation types." alt="" coords="208,905,376,931"/>
+</map>

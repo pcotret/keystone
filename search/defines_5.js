@@ -1,10 +1,19 @@
 var searchData=
 [
-  ['page_5fup_0',['PAGE_UP',['../keystone_8h.html#a1e37b551491f952ad4875a7794ab2314',1,'keystone.h']]],
-  ['pmp_5fall_5fperm_1',['PMP_ALL_PERM',['../pmp_8h.html#a25a985c82e74ba5aabfa5030079544e7',1,'pmp.h']]],
-  ['pmp_5ferror_2',['PMP_ERROR',['../pmp_8h.html#a3ce82d1fc86d061d2a99032e8d869d31',1,'pmp.h']]],
-  ['pmp_5fno_5fperm_3',['PMP_NO_PERM',['../pmp_8h.html#ade790be7d7bb8ae983d762730a74eccd',1,'pmp.h']]],
-  ['pmp_5fper_5fgroup_4',['PMP_PER_GROUP',['../pmp_8h.html#a0d1ef852b78bd2b8444128b5862b7953',1,'pmp.h']]],
-  ['pmp_5fset_5',['PMP_SET',['../pmp_8h.html#a24f6d46ac6d16b1dcc11301d5dd2300a',1,'pmp.h']]],
-  ['pmp_5funset_6',['PMP_UNSET',['../pmp_8h.html#a8e1a8954ffa3e565ce06a1b14ef48737',1,'pmp.h']]]
+  ['list_5fempty_0',['LIST_EMPTY',['../freemem_8h.html#ac157b9f1f332a4425af2f26c8e83127b',1,'freemem.h']]],
+  ['list_5finit_1',['LIST_INIT',['../freemem_8h.html#a74b9f28d71ffcd1b676161efeb328eb4',1,'freemem.h']]],
+  ['list_5fof_5fpmp_5fregs_2',['LIST_OF_PMP_REGS',['../pmp_8h.html#a65dc7ba7b3c74a3db70687fc33475a94',1,'pmp.h']]],
+  ['lituse_5falpha_5faddr_3',['LITUSE_ALPHA_ADDR',['../util_2elf_8h.html#ac6ddd3f23b1f8fd7db90f6a0716a6d27',1,'elf.h']]],
+  ['lituse_5falpha_5fbase_4',['LITUSE_ALPHA_BASE',['../util_2elf_8h.html#a4207b4c92d39a8b789c581df4e6cdf11',1,'elf.h']]],
+  ['lituse_5falpha_5fbytoff_5',['LITUSE_ALPHA_BYTOFF',['../util_2elf_8h.html#a59ea11431a3c18bf934bf43cd3ba2563',1,'elf.h']]],
+  ['lituse_5falpha_5fjsr_6',['LITUSE_ALPHA_JSR',['../util_2elf_8h.html#ab0514f74f726861cea98dc503a3cd2cb',1,'elf.h']]],
+  ['lituse_5falpha_5ftls_5fgd_7',['LITUSE_ALPHA_TLS_GD',['../util_2elf_8h.html#a90ec7fb5fc81d335635fa6d6abcb7656',1,'elf.h']]],
+  ['lituse_5falpha_5ftls_5fldm_8',['LITUSE_ALPHA_TLS_LDM',['../util_2elf_8h.html#a41d8ff19b3a5be2f5abbd720248f30f5',1,'elf.h']]],
+  ['ll_5fdelay_5fload_9',['LL_DELAY_LOAD',['../util_2elf_8h.html#abf589c5328a292ee278e688105c144da',1,'elf.h']]],
+  ['ll_5fdelta_10',['LL_DELTA',['../util_2elf_8h.html#ab53c16a95a5413fed6d39e02c13b0d78',1,'elf.h']]],
+  ['ll_5fexact_5fmatch_11',['LL_EXACT_MATCH',['../util_2elf_8h.html#accabbd2f24051b1b7aa6345be30b1a67',1,'elf.h']]],
+  ['ll_5fexports_12',['LL_EXPORTS',['../util_2elf_8h.html#ae42becea9b75bd0498d9cf8d3605115c',1,'elf.h']]],
+  ['ll_5fignore_5fint_5fver_13',['LL_IGNORE_INT_VER',['../util_2elf_8h.html#a9fe44db98b03c07fc0df87f830f2d700',1,'elf.h']]],
+  ['ll_5fnone_14',['LL_NONE',['../util_2elf_8h.html#acd7c746050b9db50b0dbe103fe5c99d1',1,'elf.h']]],
+  ['ll_5frequire_5fminor_15',['LL_REQUIRE_MINOR',['../util_2elf_8h.html#a3ef8c5ddc218d7f2fd8673641850c93f',1,'elf.h']]]
 ];

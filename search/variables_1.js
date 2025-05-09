@@ -8,10 +8,11 @@ var searchData=
   ['a5_5',['a5',['../structctx.html#a39734621176728225a0c6a3dab228bd2',1,'ctx::a5'],['../structregs.html#a3133f636c5407567c265212f8a2a2afc',1,'regs::a5']]],
   ['a6_6',['a6',['../structctx.html#aa8a354992f9bfc73dc6fdc5a23698d30',1,'ctx::a6'],['../structregs.html#a35825927a308e9e853231b59a771d33a',1,'regs::a6']]],
   ['a7_7',['a7',['../structctx.html#afc80664ddf86d17bfe7f242e3995871f',1,'ctx::a7'],['../structregs.html#a1efe5b49ce0b7df46251402df44df4e6',1,'regs::a7']]],
-  ['a_5ftype_8',['a_type',['../structElf32__auxv__t.html#ab6d0fd7066a8703da6fa658d3c0c085d',1,'Elf32_auxv_t::a_type'],['../structElf64__auxv__t.html#aa4799367aa86aa03c70a44148b14d000',1,'Elf64_auxv_t::a_type']]],
-  ['a_5fval_9',['a_val',['../structElf32__auxv__t.html#a527cb12aa61f2b93e67e72b2d9bb6312',1,'Elf32_auxv_t::a_val'],['../structElf64__auxv__t.html#ae9741865b74b4fbe872d5de874feb207',1,'Elf64_auxv_t::a_val']]],
-  ['addr_10',['addr',['../structpmp__region.html#a1a5071cdbe91881e03bb3cb1e68439fe',1,'pmp_region']]],
-  ['addrmode_11',['addrmode',['../structpmp__region.html#a87c2541458af36989ccce625ae932b40',1,'pmp_region']]],
-  ['allow_5foverlap_12',['allow_overlap',['../structpmp__region.html#a15ce526c6cf3f7734f400db02a319858',1,'pmp_region']]],
-  ['ases_13',['ases',['../structElf__MIPS__ABIFlags__v0.html#afef6cde7acaa0e6dc4cc5dc0faf6936e',1,'Elf_MIPS_ABIFlags_v0']]]
+  ['a_5ftype_8',['a_type',['../group__R__AARCH64.html#gab6d0fd7066a8703da6fa658d3c0c085d',1,'Elf32_auxv_t::a_type'],['../group__R__AARCH64.html#gaa4799367aa86aa03c70a44148b14d000',1,'Elf64_auxv_t::a_type']]],
+  ['a_5fun_9',['a_un',['../group__R__AARCH64.html#ga0c67b32ab8407223c6dd27f432a1e002',1,'Elf32_auxv_t::a_un'],['../group__R__AARCH64.html#ga12a4e9e2856f0d0bfa11b45ef3e88314',1,'Elf64_auxv_t::a_un']]],
+  ['a_5fval_10',['a_val',['../group__R__AARCH64.html#ga527cb12aa61f2b93e67e72b2d9bb6312',1,'Elf32_auxv_t::a_val'],['../group__R__AARCH64.html#gac9331e04679af9906894f85ecfd8fefa',1,'Elf32_auxv_t::@4::a_val'],['../group__R__AARCH64.html#gae9741865b74b4fbe872d5de874feb207',1,'Elf64_auxv_t::a_val'],['../group__R__AARCH64.html#gaa0deb0a9c7619998cec233fce3e09920',1,'Elf64_auxv_t::@5::a_val']]],
+  ['addr_11',['addr',['../structpmp__region.html#a1a5071cdbe91881e03bb3cb1e68439fe',1,'pmp_region']]],
+  ['addrmode_12',['addrmode',['../structpmp__region.html#a87c2541458af36989ccce625ae932b40',1,'pmp_region']]],
+  ['allow_5foverlap_13',['allow_overlap',['../structpmp__region.html#a15ce526c6cf3f7734f400db02a319858',1,'pmp_region']]],
+  ['ases_14',['ases',['../group__R__AARCH64.html#gafef6cde7acaa0e6dc4cc5dc0faf6936e',1,'Elf_MIPS_ABIFlags_v0']]]
 ];
