@@ -1,3 +1,7 @@
+/**
+ * @file page_swap.c
+ * @brief Functions for managing page swapping and randomization in memory.
+ */
 #define _GNU_SOURCE
 
 #include "../mm/page_swap.c"
@@ -58,6 +62,11 @@ paging_backing_region_size() {
   return BACKING_REGION_SIZE;
 }
 
+/**
+ * @brief Allocates a new memory page.
+ *
+ * @return The address of the newly allocated page.
+ */
 static uintptr_t
 palloc() {
   void* out = mmap(
@@ -67,15 +76,31 @@ palloc() {
   return (uintptr_t)out;
 }
 
+/**
+ * @brief Frees a previously allocated page.
+ *
+ * @param page Address of the page to free.
+ */
 static void
 pfree(uintptr_t page) {
   int res = munmap((void*)page, RISCV_PAGE_SIZE);
   assert_int_equal(res, 0);
 }
 
+/**
+ * @struct hash_s
+ * @brief Structure to hold a hash value (used for page hashing).
+ */
 typedef struct {
-  uint8_t dat[32];
+  uint8_t dat[32]; /**< Hash data (256-bit SHA-256 hash). */
 } hash_s;
+
+/**
+ * @brief Computes the SHA-256 hash of a page.
+ *
+ * @param page Address of the page to hash.
+ * @return The hash of the page.
+ */
 static hash_s
 hash_page(uintptr_t page) {
   hash_s out;
@@ -85,11 +110,26 @@ hash_page(uintptr_t page) {
   sha256_final(&sha, out.dat);
   return out;
 }
+
+/**
+ * @brief Compares two hash values.
+ *
+ * @param h1 First hash to compare.
+ * @param h2 Second hash to compare.
+ * @return True if the hashes are equal, otherwise false.
+ */
 static bool
 hash_eq(hash_s* h1, hash_s* h2) {
   return !memcmp(h1, h2, sizeof(hash_s));
 }
 
+/**
+ * @brief Computes the bit similarity between two pages.
+ *
+ * @param page1 Address of the first page.
+ * @param page2 Address of the second page.
+ * @return The average similarity between the two pages (0 to 1).
+ */
 static double
 bit_similarity(uintptr_t page1, uintptr_t page2) {
   double avg = 0;
@@ -105,6 +145,11 @@ bit_similarity(uintptr_t page1, uintptr_t page2) {
 
   return avg;
 }
+/**
+ * @brief Computes the standard deviation for the bit similarity of IID pages.
+ *
+ * @return The standard deviation value.
+ */
 static double
 bit_similarity_sd() {
   // For 2 IID pages, each bit is similar with probability 0.5.
