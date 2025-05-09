@@ -515,7 +515,7 @@ typedef struct {
   Elf32_Word	st_size;    /**< Size of the symbol. */
   unsigned char	st_info;  /**< Symbol type and binding attributes. */
   unsigned char	st_other; /**< Symbol visibility. */
-  Elf32_Section	st_shndx;
+  Elf32_Section	st_shndx; /**< Section header table index (SHN_UNDEF for undefined symbols). */
 } Elf32_Sym;
 
 /**
@@ -829,7 +829,7 @@ typedef struct {
   union {
     Elf32_Word d_val; /**< Integer value. */
     Elf32_Addr d_ptr; /**< Address value. */
-  } d_un;
+  } d_un; /**< Union holding either an integer or address value for the dynamic entry. */
 } Elf32_Dyn;
 
 /**
@@ -843,7 +843,7 @@ typedef struct {
   union {
     Elf64_Xword d_val; /**< Integer value. */
     Elf64_Addr d_ptr;  /**< Address value. */
-  } d_un;
+  } d_un; /**< Union holding either an integer or address value for the dynamic entry. */
 } Elf64_Dyn;
 
 
@@ -1141,7 +1141,7 @@ typedef struct {
   uint32_t a_type;  /**< Entry type (e.g., AT_PHDR, AT_ENTRY). */
   union {
     uint32_t a_val; /**< Integer or address value. */
-  } a_un;
+  } a_un; /**< Union holding either an integer or address value for the auxiliary entry. */
 } Elf32_auxv_t;
 
 /**
@@ -1152,7 +1152,7 @@ typedef struct {
   uint64_t a_type;  /**< Entry type (e.g., AT_PHDR, AT_ENTRY). */
   union {
     uint64_t a_val; /**< Integer or address value. */
-  } a_un;
+  } a_un; /**< Union holding either an integer or address value for the auxiliary entry. */
 } Elf64_auxv_t;
 
 
@@ -1628,11 +1628,11 @@ typedef union {
   struct {
     Elf32_Word gt_current_g_value; /**< Current GP value used. */
     Elf32_Word gt_unused;          /**< Unused. */
-  } gt_header;
+  } gt_header; /**< Header structure containing the current GP value and an unused field. */
   struct {
     Elf32_Word gt_g_value;         /**< Global pointer value. */
     Elf32_Word gt_bytes;           /**< Number of bytes associated with this GP value. */
-  } gt_entry;
+  } gt_entry;/**< Structure describing the global pointer value and its associated byte count. */
 } Elf32_gptab;
 
 
@@ -1995,594 +1995,626 @@ enum
 
 
 
+/** @name ELF Flags for PA-RISC */
+///@{
+#define EF_PARISC_TRAPNIL    0x00010000 /**< Trap nil pointer dereference */
+#define EF_PARISC_EXT        0x00020000 /**< Program uses architecture extensions */
+#define EF_PARISC_LSB        0x00040000 /**< Object uses little-endian data layout */
+#define EF_PARISC_WIDE       0x00080000 /**< Wide mode object file */
+#define EF_PARISC_NO_KABP    0x00100000 /**< Do not use kernel-assisted branch prediction */
+#define EF_PARISC_LAZYSWAP   0x00400000 /**< Lazy swap optimization enabled */
+#define EF_PARISC_ARCH       0x0000ffff /**< Architecture version mask */
+///@}
+
+
+/** @name PA-RISC Architecture Versions */
+///@{
+#define EFA_PARISC_1_0       0x020b /**< PA-RISC 1.0 architecture */
+#define EFA_PARISC_1_1       0x0210 /**< PA-RISC 1.1 architecture */
+#define EFA_PARISC_2_0       0x0214 /**< PA-RISC 2.0 architecture */
+///@}
+
+
+/** @name Special Section Indices for PA-RISC */
+///@{
+#define SHN_PARISC_ANSI_COMMON  0xff00 /**< ANSI common symbols */
+#define SHN_PARISC_HUGE_COMMON  0xff01 /**< Huge common symbols */
+///@}
+
+
+
+/** @name Section Types for PA-RISC */
+///@{
+#define SHT_PARISC_EXT       0x70000000 /**< PA-RISC extension section */
+#define SHT_PARISC_UNWIND    0x70000001 /**< Unwind information section */
+#define SHT_PARISC_DOC       0x70000002 /**< Documentation section */
+///@}
+
+
+
+/** @name Section Flags for PA-RISC */
+///@{
+#define SHF_PARISC_SHORT     0x20000000 /**< Section with short addressing */
+#define SHF_PARISC_HUGE      0x40000000 /**< Section with huge addressing */
+#define SHF_PARISC_SBP       0x80000000 /**< Static branch prediction enabled */
+///@}
+
+
+
+/** @name Symbol Types for PA-RISC */
+///@{
+#define STT_PARISC_MILLICODE  13 /**< Millicode function symbol */
+#define STT_HP_OPAQUE         (STT_LOOS + 0x1) /**< HP-specific opaque symbol */
+#define STT_HP_STUB           (STT_LOOS + 0x2) /**< HP-specific stub symbol */
+///@}
+
+
+/** @name Relocation Types for PA-RISC
+ *
+ * These constants define the various relocation types used in ELF object files for
+ * the PA-RISC (HP Precision Architecture) platform. They support different kinds
+ * of symbol and section addressing schemes, including direct, PC-relative, global
+ * pointer-relative, TLS, and others.
+ */
+///@{
+#define R_PARISC_NONE           0   /**< No relocation */
+#define R_PARISC_DIR32          1   /**< Direct 32-bit */
+#define R_PARISC_DIR21L         2   /**< Direct 21-bit left-justified */
+#define R_PARISC_DIR17R         3   /**< Direct 17-bit right-justified */
+#define R_PARISC_DIR17F         4   /**< Direct 17-bit for function calls */
+#define R_PARISC_DIR14R         6   /**< Direct 14-bit right-justified */
+
+#define R_PARISC_PCREL32        9   /**< PC-relative 32-bit */
+#define R_PARISC_PCREL21L       10  /**< PC-relative 21-bit left-justified */
+#define R_PARISC_PCREL17R       11  /**< PC-relative 17-bit right-justified */
+#define R_PARISC_PCREL17F       12  /**< PC-relative 17-bit for function calls */
+#define R_PARISC_PCREL14R       14  /**< PC-relative 14-bit right-justified */
+
+#define R_PARISC_DPREL21L       18  /**< DP-relative 21-bit left-justified */
+#define R_PARISC_DPREL14R       22  /**< DP-relative 14-bit right-justified */
+
+#define R_PARISC_GPREL21L       26  /**< GP-relative 21-bit left-justified */
+#define R_PARISC_GPREL14R       30  /**< GP-relative 14-bit right-justified */
+
+#define R_PARISC_LTOFF21L       34  /**< Load-time offset 21-bit left-justified */
+#define R_PARISC_LTOFF14R       38  /**< Load-time offset 14-bit right-justified */
+
+#define R_PARISC_SECREL32       41  /**< Section-relative 32-bit */
+
+#define R_PARISC_SEGBASE        48  /**< Segment base reference */
+#define R_PARISC_SEGREL32       49  /**< Segment-relative 32-bit */
+
+#define R_PARISC_PLTOFF21L      50  /**< PLT offset 21-bit left-justified */
+#define R_PARISC_PLTOFF14R      54  /**< PLT offset 14-bit right-justified */
+
+#define R_PARISC_LTOFF_FPTR32   57  /**< Function pointer offset 32-bit */
+#define R_PARISC_LTOFF_FPTR21L  58  /**< Function pointer offset 21-bit left-justified */
+#define R_PARISC_LTOFF_FPTR14R  62  /**< Function pointer offset 14-bit right-justified */
+
+#define R_PARISC_FPTR64         64  /**< Function pointer 64-bit */
+#define R_PARISC_PLABEL32       65  /**< Procedure label 32-bit */
+#define R_PARISC_PLABEL21L      66  /**< Procedure label 21-bit left-justified */
+#define R_PARISC_PLABEL14R      70  /**< Procedure label 14-bit right-justified */
+
+#define R_PARISC_PCREL64        72  /**< PC-relative 64-bit */
+#define R_PARISC_PCREL22F       74  /**< PC-relative 22-bit for function calls */
+#define R_PARISC_PCREL14WR      75  /**< PC-relative 14-bit word right */
+#define R_PARISC_PCREL14DR      76  /**< PC-relative 14-bit doubleword right */
+#define R_PARISC_PCREL16F       77  /**< PC-relative 16-bit function call */
+#define R_PARISC_PCREL16WF      78  /**< PC-relative 16-bit word function */
+#define R_PARISC_PCREL16DF      79  /**< PC-relative 16-bit doubleword function */
+
+#define R_PARISC_DIR64          80  /**< Direct 64-bit */
+#define R_PARISC_DIR14WR        83  /**< Direct 14-bit word right */
+#define R_PARISC_DIR14DR        84  /**< Direct 14-bit doubleword right */
+#define R_PARISC_DIR16F         85  /**< Direct 16-bit function */
+#define R_PARISC_DIR16WF        86  /**< Direct 16-bit word function */
+#define R_PARISC_DIR16DF        87  /**< Direct 16-bit doubleword function */
+
+#define R_PARISC_GPREL64        88  /**< GP-relative 64-bit */
+#define R_PARISC_GPREL14WR      91  /**< GP-relative 14-bit word right */
+#define R_PARISC_GPREL14DR      92  /**< GP-relative 14-bit doubleword right */
+#define R_PARISC_GPREL16F       93  /**< GP-relative 16-bit function */
+#define R_PARISC_GPREL16WF      94  /**< GP-relative 16-bit word function */
+#define R_PARISC_GPREL16DF      95  /**< GP-relative 16-bit doubleword function */
+
+#define R_PARISC_LTOFF64        96  /**< Load-time offset 64-bit */
+#define R_PARISC_LTOFF14WR      99  /**< Load-time offset 14-bit word right */
+#define R_PARISC_LTOFF14DR      100 /**< Load-time offset 14-bit doubleword right */
+#define R_PARISC_LTOFF16F       101 /**< Load-time offset 16-bit function */
+#define R_PARISC_LTOFF16WF      102 /**< Load-time offset 16-bit word function */
+#define R_PARISC_LTOFF16DF      103 /**< Load-time offset 16-bit doubleword function */
+
+#define R_PARISC_SECREL64       104 /**< Section-relative 64-bit */
+#define R_PARISC_SEGREL64       112 /**< Segment-relative 64-bit */
+
+#define R_PARISC_PLTOFF14WR     115 /**< PLT offset 14-bit word right */
+#define R_PARISC_PLTOFF14DR     116 /**< PLT offset 14-bit doubleword right */
+#define R_PARISC_PLTOFF16F      117 /**< PLT offset 16-bit function */
+#define R_PARISC_PLTOFF16WF     118 /**< PLT offset 16-bit word function */
+#define R_PARISC_PLTOFF16DF     119 /**< PLT offset 16-bit doubleword function */
+
+#define R_PARISC_LTOFF_FPTR64   120 /**< Function pointer offset 64-bit */
+#define R_PARISC_LTOFF_FPTR14WR 123 /**< Function pointer offset 14-bit word right */
+#define R_PARISC_LTOFF_FPTR14DR 124 /**< Function pointer offset 14-bit doubleword right */
+#define R_PARISC_LTOFF_FPTR16F  125 /**< Function pointer offset 16-bit function */
+#define R_PARISC_LTOFF_FPTR16WF 126 /**< Function pointer offset 16-bit word function */
+#define R_PARISC_LTOFF_FPTR16DF 127 /**< Function pointer offset 16-bit doubleword function */
+
+#define R_PARISC_LORESERVE      128 /**< Low-end reserved range */
 
-#define EF_PARISC_TRAPNIL	0x00010000
-#define EF_PARISC_EXT		0x00020000
-#define EF_PARISC_LSB		0x00040000
-#define EF_PARISC_WIDE		0x00080000
-#define EF_PARISC_NO_KABP	0x00100000
-
-#define EF_PARISC_LAZYSWAP	0x00400000
-#define EF_PARISC_ARCH		0x0000ffff
-
-
-
-#define EFA_PARISC_1_0		    0x020b
-#define EFA_PARISC_1_1		    0x0210
-#define EFA_PARISC_2_0		    0x0214
-
-
-
-#define SHN_PARISC_ANSI_COMMON	0xff00
-
-#define SHN_PARISC_HUGE_COMMON	0xff01
-
-
-
-#define SHT_PARISC_EXT		0x70000000
-#define SHT_PARISC_UNWIND	0x70000001
-#define SHT_PARISC_DOC		0x70000002
-
-
-
-#define SHF_PARISC_SHORT	0x20000000
-#define SHF_PARISC_HUGE		0x40000000
-#define SHF_PARISC_SBP		0x80000000
-
-
-
-#define STT_PARISC_MILLICODE	13
-
-#define STT_HP_OPAQUE		(STT_LOOS + 0x1)
-#define STT_HP_STUB		(STT_LOOS + 0x2)
-
-
-
-#define R_PARISC_NONE		0
-#define R_PARISC_DIR32		1
-#define R_PARISC_DIR21L		2
-#define R_PARISC_DIR17R		3
-#define R_PARISC_DIR17F		4
-#define R_PARISC_DIR14R		6
-#define R_PARISC_PCREL32	9
-#define R_PARISC_PCREL21L	10
-#define R_PARISC_PCREL17R	11
-#define R_PARISC_PCREL17F	12
-#define R_PARISC_PCREL14R	14
-#define R_PARISC_DPREL21L	18
-#define R_PARISC_DPREL14R	22
-#define R_PARISC_GPREL21L	26
-#define R_PARISC_GPREL14R	30
-#define R_PARISC_LTOFF21L	34
-#define R_PARISC_LTOFF14R	38
-#define R_PARISC_SECREL32	41
-#define R_PARISC_SEGBASE	48
-#define R_PARISC_SEGREL32	49
-#define R_PARISC_PLTOFF21L	50
-#define R_PARISC_PLTOFF14R	54
-#define R_PARISC_LTOFF_FPTR32	57
-#define R_PARISC_LTOFF_FPTR21L	58
-#define R_PARISC_LTOFF_FPTR14R	62
-#define R_PARISC_FPTR64		64
-#define R_PARISC_PLABEL32	65
-#define R_PARISC_PLABEL21L	66
-#define R_PARISC_PLABEL14R	70
-#define R_PARISC_PCREL64	72
-#define R_PARISC_PCREL22F	74
-#define R_PARISC_PCREL14WR	75
-#define R_PARISC_PCREL14DR	76
-#define R_PARISC_PCREL16F	77
-#define R_PARISC_PCREL16WF	78
-#define R_PARISC_PCREL16DF	79
-#define R_PARISC_DIR64		80
-#define R_PARISC_DIR14WR	83
-#define R_PARISC_DIR14DR	84
-#define R_PARISC_DIR16F		85
-#define R_PARISC_DIR16WF	86
-#define R_PARISC_DIR16DF	87
-#define R_PARISC_GPREL64	88
-#define R_PARISC_GPREL14WR	91
-#define R_PARISC_GPREL14DR	92
-#define R_PARISC_GPREL16F	93
-#define R_PARISC_GPREL16WF	94
-#define R_PARISC_GPREL16DF	95
-#define R_PARISC_LTOFF64	96
-#define R_PARISC_LTOFF14WR	99
-#define R_PARISC_LTOFF14DR	100
-#define R_PARISC_LTOFF16F	101
-#define R_PARISC_LTOFF16WF	102
-#define R_PARISC_LTOFF16DF	103
-#define R_PARISC_SECREL64	104
-#define R_PARISC_SEGREL64	112
-#define R_PARISC_PLTOFF14WR	115
-#define R_PARISC_PLTOFF14DR	116
-#define R_PARISC_PLTOFF16F	117
-#define R_PARISC_PLTOFF16WF	118
-#define R_PARISC_PLTOFF16DF	119
-#define R_PARISC_LTOFF_FPTR64	120
-#define R_PARISC_LTOFF_FPTR14WR	123
-#define R_PARISC_LTOFF_FPTR14DR	124
-#define R_PARISC_LTOFF_FPTR16F	125
-#define R_PARISC_LTOFF_FPTR16WF	126
-#define R_PARISC_LTOFF_FPTR16DF	127
-#define R_PARISC_LORESERVE	128
-#define R_PARISC_COPY		128
-#define R_PARISC_IPLT		129
-#define R_PARISC_EPLT		130
-#define R_PARISC_TPREL32	153
-#define R_PARISC_TPREL21L	154
-#define R_PARISC_TPREL14R	158
-#define R_PARISC_LTOFF_TP21L	162
-#define R_PARISC_LTOFF_TP14R	166
-#define R_PARISC_LTOFF_TP14F	167
-#define R_PARISC_TPREL64	216
-#define R_PARISC_TPREL14WR	219
-#define R_PARISC_TPREL14DR	220
-#define R_PARISC_TPREL16F	221
-#define R_PARISC_TPREL16WF	222
-#define R_PARISC_TPREL16DF	223
-#define R_PARISC_LTOFF_TP64	224
-#define R_PARISC_LTOFF_TP14WR	227
-#define R_PARISC_LTOFF_TP14DR	228
-#define R_PARISC_LTOFF_TP16F	229
-#define R_PARISC_LTOFF_TP16WF	230
-#define R_PARISC_LTOFF_TP16DF	231
-#define R_PARISC_GNU_VTENTRY	232
-#define R_PARISC_GNU_VTINHERIT	233
-#define R_PARISC_TLS_GD21L	234
-#define R_PARISC_TLS_GD14R	235
-#define R_PARISC_TLS_GDCALL	236
-#define R_PARISC_TLS_LDM21L	237
-#define R_PARISC_TLS_LDM14R	238
-#define R_PARISC_TLS_LDMCALL	239
-#define R_PARISC_TLS_LDO21L	240
-#define R_PARISC_TLS_LDO14R	241
-#define R_PARISC_TLS_DTPMOD32	242
-#define R_PARISC_TLS_DTPMOD64	243
-#define R_PARISC_TLS_DTPOFF32	244
-#define R_PARISC_TLS_DTPOFF64	245
-#define R_PARISC_TLS_LE21L	R_PARISC_TPREL21L
-#define R_PARISC_TLS_LE14R	R_PARISC_TPREL14R
-#define R_PARISC_TLS_IE21L	R_PARISC_LTOFF_TP21L
-#define R_PARISC_TLS_IE14R	R_PARISC_LTOFF_TP14R
-#define R_PARISC_TLS_TPREL32	R_PARISC_TPREL32
-#define R_PARISC_TLS_TPREL64	R_PARISC_TPREL64
-#define R_PARISC_HIRESERVE	255
-
-
-
-#define PT_HP_TLS		(PT_LOOS + 0x0)
-#define PT_HP_CORE_NONE		(PT_LOOS + 0x1)
-#define PT_HP_CORE_VERSION	(PT_LOOS + 0x2)
-#define PT_HP_CORE_KERNEL	(PT_LOOS + 0x3)
-#define PT_HP_CORE_COMM		(PT_LOOS + 0x4)
-#define PT_HP_CORE_PROC		(PT_LOOS + 0x5)
-#define PT_HP_CORE_LOADABLE	(PT_LOOS + 0x6)
-#define PT_HP_CORE_STACK	(PT_LOOS + 0x7)
-#define PT_HP_CORE_SHM		(PT_LOOS + 0x8)
-#define PT_HP_CORE_MMF		(PT_LOOS + 0x9)
-#define PT_HP_PARALLEL		(PT_LOOS + 0x10)
-#define PT_HP_FASTBIND		(PT_LOOS + 0x11)
-#define PT_HP_OPT_ANNOT		(PT_LOOS + 0x12)
-#define PT_HP_HSL_ANNOT		(PT_LOOS + 0x13)
-#define PT_HP_STACK		(PT_LOOS + 0x14)
-
-#define PT_PARISC_ARCHEXT	0x70000000
-#define PT_PARISC_UNWIND	0x70000001
-
-
-
-#define PF_PARISC_SBP		0x08000000
-
-#define PF_HP_PAGE_SIZE		0x00100000
-#define PF_HP_FAR_SHARED	0x00200000
-#define PF_HP_NEAR_SHARED	0x00400000
-#define PF_HP_CODE		0x01000000
-#define PF_HP_MODIFY		0x02000000
-#define PF_HP_LAZYSWAP		0x04000000
-#define PF_HP_SBP		0x08000000
-
-
-
-
-
-
-#define EF_ALPHA_32BIT		1
-#define EF_ALPHA_CANRELAX	2
-
-
-
-
-#define SHT_ALPHA_DEBUG		0x70000001
-#define SHT_ALPHA_REGINFO	0x70000002
-
-
-
-#define SHF_ALPHA_GPREL		0x10000000
-
-
-#define STO_ALPHA_NOPV		0x80
-#define STO_ALPHA_STD_GPLOAD	0x88
-
-
-
-#define R_ALPHA_NONE		0
-#define R_ALPHA_REFLONG		1
-#define R_ALPHA_REFQUAD		2
-#define R_ALPHA_GPREL32		3
-#define R_ALPHA_LITERAL		4
-#define R_ALPHA_LITUSE		5
-#define R_ALPHA_GPDISP		6
-#define R_ALPHA_BRADDR		7
-#define R_ALPHA_HINT		8
-#define R_ALPHA_SREL16		9
-#define R_ALPHA_SREL32		10
-#define R_ALPHA_SREL64		11
-#define R_ALPHA_GPRELHIGH	17
-#define R_ALPHA_GPRELLOW	18
-#define R_ALPHA_GPREL16		19
-#define R_ALPHA_COPY		24
-#define R_ALPHA_GLOB_DAT	25
-#define R_ALPHA_JMP_SLOT	26
-#define R_ALPHA_RELATIVE	27
-#define R_ALPHA_TLS_GD_HI	28
-#define R_ALPHA_TLSGD		29
-#define R_ALPHA_TLS_LDM		30
-#define R_ALPHA_DTPMOD64	31
-#define R_ALPHA_GOTDTPREL	32
-#define R_ALPHA_DTPREL64	33
-#define R_ALPHA_DTPRELHI	34
-#define R_ALPHA_DTPRELLO	35
-#define R_ALPHA_DTPREL16	36
-#define R_ALPHA_GOTTPREL	37
-#define R_ALPHA_TPREL64		38
-#define R_ALPHA_TPRELHI		39
-#define R_ALPHA_TPRELLO		40
-#define R_ALPHA_TPREL16		41
-
-#define R_ALPHA_NUM		46
-
-
-#define LITUSE_ALPHA_ADDR	0
-#define LITUSE_ALPHA_BASE	1
-#define LITUSE_ALPHA_BYTOFF	2
-#define LITUSE_ALPHA_JSR	3
-#define LITUSE_ALPHA_TLS_GD	4
-#define LITUSE_ALPHA_TLS_LDM	5
-
-
-#define DT_ALPHA_PLTRO		(DT_LOPROC + 0)
-#define DT_ALPHA_NUM		1
-
-
-
-
-#define EF_PPC_EMB		0x80000000
-
-
-#define EF_PPC_RELOCATABLE	0x00010000
-#define EF_PPC_RELOCATABLE_LIB	0x00008000
-
-
-
-#define R_PPC_NONE		0
-#define R_PPC_ADDR32		1
-#define R_PPC_ADDR24		2
-#define R_PPC_ADDR16		3
-#define R_PPC_ADDR16_LO		4
-#define R_PPC_ADDR16_HI		5
-#define R_PPC_ADDR16_HA		6
-#define R_PPC_ADDR14		7
-#define R_PPC_ADDR14_BRTAKEN	8
-#define R_PPC_ADDR14_BRNTAKEN	9
-#define R_PPC_REL24		10
-#define R_PPC_REL14		11
-#define R_PPC_REL14_BRTAKEN	12
-#define R_PPC_REL14_BRNTAKEN	13
-#define R_PPC_GOT16		14
-#define R_PPC_GOT16_LO		15
-#define R_PPC_GOT16_HI		16
-#define R_PPC_GOT16_HA		17
-#define R_PPC_PLTREL24		18
-#define R_PPC_COPY		19
-#define R_PPC_GLOB_DAT		20
-#define R_PPC_JMP_SLOT		21
-#define R_PPC_RELATIVE		22
-#define R_PPC_LOCAL24PC		23
-#define R_PPC_UADDR32		24
-#define R_PPC_UADDR16		25
-#define R_PPC_REL32		26
-#define R_PPC_PLT32		27
-#define R_PPC_PLTREL32		28
-#define R_PPC_PLT16_LO		29
-#define R_PPC_PLT16_HI		30
-#define R_PPC_PLT16_HA		31
-#define R_PPC_SDAREL16		32
-#define R_PPC_SECTOFF		33
-#define R_PPC_SECTOFF_LO	34
-#define R_PPC_SECTOFF_HI	35
-#define R_PPC_SECTOFF_HA	36
-
-
-#define R_PPC_TLS		67
-#define R_PPC_DTPMOD32		68
-#define R_PPC_TPREL16		69
-#define R_PPC_TPREL16_LO	70
-#define R_PPC_TPREL16_HI	71
-#define R_PPC_TPREL16_HA	72
-#define R_PPC_TPREL32		73
-#define R_PPC_DTPREL16		74
-#define R_PPC_DTPREL16_LO	75
-#define R_PPC_DTPREL16_HI	76
-#define R_PPC_DTPREL16_HA	77
-#define R_PPC_DTPREL32		78
-#define R_PPC_GOT_TLSGD16	79
-#define R_PPC_GOT_TLSGD16_LO	80
-#define R_PPC_GOT_TLSGD16_HI	81
-#define R_PPC_GOT_TLSGD16_HA	82
-#define R_PPC_GOT_TLSLD16	83
-#define R_PPC_GOT_TLSLD16_LO	84
-#define R_PPC_GOT_TLSLD16_HI	85
-#define R_PPC_GOT_TLSLD16_HA	86
-#define R_PPC_GOT_TPREL16	87
-#define R_PPC_GOT_TPREL16_LO	88
-#define R_PPC_GOT_TPREL16_HI	89
-#define R_PPC_GOT_TPREL16_HA	90
-#define R_PPC_GOT_DTPREL16	91
-#define R_PPC_GOT_DTPREL16_LO	92
-#define R_PPC_GOT_DTPREL16_HI	93
-#define R_PPC_GOT_DTPREL16_HA	94
-#define R_PPC_TLSGD		95
-#define R_PPC_TLSLD		96
-
-
-#define R_PPC_EMB_NADDR32	101
-#define R_PPC_EMB_NADDR16	102
-#define R_PPC_EMB_NADDR16_LO	103
-#define R_PPC_EMB_NADDR16_HI	104
-#define R_PPC_EMB_NADDR16_HA	105
-#define R_PPC_EMB_SDAI16	106
-#define R_PPC_EMB_SDA2I16	107
-#define R_PPC_EMB_SDA2REL	108
-#define R_PPC_EMB_SDA21		109
-#define R_PPC_EMB_MRKREF	110
-#define R_PPC_EMB_RELSEC16	111
-#define R_PPC_EMB_RELST_LO	112
-#define R_PPC_EMB_RELST_HI	113
-#define R_PPC_EMB_RELST_HA	114
-#define R_PPC_EMB_BIT_FLD	115
-#define R_PPC_EMB_RELSDA	116
-
-
-#define R_PPC_DIAB_SDA21_LO	180
-#define R_PPC_DIAB_SDA21_HI	181
-#define R_PPC_DIAB_SDA21_HA	182
-#define R_PPC_DIAB_RELSDA_LO	183
-#define R_PPC_DIAB_RELSDA_HI	184
-#define R_PPC_DIAB_RELSDA_HA	185
-
-
-#define R_PPC_IRELATIVE		248
-
-
-#define R_PPC_REL16		249
-#define R_PPC_REL16_LO		250
-#define R_PPC_REL16_HI		251
-#define R_PPC_REL16_HA		252
-
-
-
-#define R_PPC_TOC16		255
-
-
-#define DT_PPC_GOT		(DT_LOPROC + 0)
-#define DT_PPC_OPT		(DT_LOPROC + 1)
-#define DT_PPC_NUM		2
-
-#define PPC_OPT_TLS		1
-
-
-#define R_PPC64_NONE		R_PPC_NONE
-#define R_PPC64_ADDR32		R_PPC_ADDR32
-#define R_PPC64_ADDR24		R_PPC_ADDR24
-#define R_PPC64_ADDR16		R_PPC_ADDR16
-#define R_PPC64_ADDR16_LO	R_PPC_ADDR16_LO
-#define R_PPC64_ADDR16_HI	R_PPC_ADDR16_HI
-#define R_PPC64_ADDR16_HA	R_PPC_ADDR16_HA
-#define R_PPC64_ADDR14		R_PPC_ADDR14
-#define R_PPC64_ADDR14_BRTAKEN	R_PPC_ADDR14_BRTAKEN
-#define R_PPC64_ADDR14_BRNTAKEN	R_PPC_ADDR14_BRNTAKEN
-#define R_PPC64_REL24		R_PPC_REL24
-#define R_PPC64_REL14		R_PPC_REL14
-#define R_PPC64_REL14_BRTAKEN	R_PPC_REL14_BRTAKEN
-#define R_PPC64_REL14_BRNTAKEN	R_PPC_REL14_BRNTAKEN
-#define R_PPC64_GOT16		R_PPC_GOT16
-#define R_PPC64_GOT16_LO	R_PPC_GOT16_LO
-#define R_PPC64_GOT16_HI	R_PPC_GOT16_HI
-#define R_PPC64_GOT16_HA	R_PPC_GOT16_HA
-
-#define R_PPC64_COPY		R_PPC_COPY
-#define R_PPC64_GLOB_DAT	R_PPC_GLOB_DAT
-#define R_PPC64_JMP_SLOT	R_PPC_JMP_SLOT
-#define R_PPC64_RELATIVE	R_PPC_RELATIVE
-
-#define R_PPC64_UADDR32		R_PPC_UADDR32
-#define R_PPC64_UADDR16		R_PPC_UADDR16
-#define R_PPC64_REL32		R_PPC_REL32
-#define R_PPC64_PLT32		R_PPC_PLT32
-#define R_PPC64_PLTREL32	R_PPC_PLTREL32
-#define R_PPC64_PLT16_LO	R_PPC_PLT16_LO
-#define R_PPC64_PLT16_HI	R_PPC_PLT16_HI
-#define R_PPC64_PLT16_HA	R_PPC_PLT16_HA
-
-#define R_PPC64_SECTOFF		R_PPC_SECTOFF
-#define R_PPC64_SECTOFF_LO	R_PPC_SECTOFF_LO
-#define R_PPC64_SECTOFF_HI	R_PPC_SECTOFF_HI
-#define R_PPC64_SECTOFF_HA	R_PPC_SECTOFF_HA
-#define R_PPC64_ADDR30		37
-#define R_PPC64_ADDR64		38
-#define R_PPC64_ADDR16_HIGHER	39
-#define R_PPC64_ADDR16_HIGHERA	40
-#define R_PPC64_ADDR16_HIGHEST	41
-#define R_PPC64_ADDR16_HIGHESTA	42
-#define R_PPC64_UADDR64		43
-#define R_PPC64_REL64		44
-#define R_PPC64_PLT64		45
-#define R_PPC64_PLTREL64	46
-#define R_PPC64_TOC16		47
-#define R_PPC64_TOC16_LO	48
-#define R_PPC64_TOC16_HI	49
-#define R_PPC64_TOC16_HA	50
-#define R_PPC64_TOC		51
-#define R_PPC64_PLTGOT16	52
-#define R_PPC64_PLTGOT16_LO	53
-#define R_PPC64_PLTGOT16_HI	54
-#define R_PPC64_PLTGOT16_HA	55
-
-#define R_PPC64_ADDR16_DS	56
-#define R_PPC64_ADDR16_LO_DS	57
-#define R_PPC64_GOT16_DS	58
-#define R_PPC64_GOT16_LO_DS	59
-#define R_PPC64_PLT16_LO_DS	60
-#define R_PPC64_SECTOFF_DS	61
-#define R_PPC64_SECTOFF_LO_DS	62
-#define R_PPC64_TOC16_DS	63
-#define R_PPC64_TOC16_LO_DS	64
-#define R_PPC64_PLTGOT16_DS	65
-#define R_PPC64_PLTGOT16_LO_DS	66
-
-
-#define R_PPC64_TLS		67
-#define R_PPC64_DTPMOD64	68
-#define R_PPC64_TPREL16		69
-#define R_PPC64_TPREL16_LO	70
-#define R_PPC64_TPREL16_HI	71
-#define R_PPC64_TPREL16_HA	72
-#define R_PPC64_TPREL64		73
-#define R_PPC64_DTPREL16	74
-#define R_PPC64_DTPREL16_LO	75
-#define R_PPC64_DTPREL16_HI	76
-#define R_PPC64_DTPREL16_HA	77
-#define R_PPC64_DTPREL64	78
-#define R_PPC64_GOT_TLSGD16	79
-#define R_PPC64_GOT_TLSGD16_LO	80
-#define R_PPC64_GOT_TLSGD16_HI	81
-#define R_PPC64_GOT_TLSGD16_HA	82
-#define R_PPC64_GOT_TLSLD16	83
-#define R_PPC64_GOT_TLSLD16_LO	84
-#define R_PPC64_GOT_TLSLD16_HI	85
-#define R_PPC64_GOT_TLSLD16_HA	86
-#define R_PPC64_GOT_TPREL16_DS	87
-#define R_PPC64_GOT_TPREL16_LO_DS 88
-#define R_PPC64_GOT_TPREL16_HI	89
-#define R_PPC64_GOT_TPREL16_HA	90
-#define R_PPC64_GOT_DTPREL16_DS	91
-#define R_PPC64_GOT_DTPREL16_LO_DS 92
-#define R_PPC64_GOT_DTPREL16_HI	93
-#define R_PPC64_GOT_DTPREL16_HA	94
-#define R_PPC64_TPREL16_DS	95
-#define R_PPC64_TPREL16_LO_DS	96
-#define R_PPC64_TPREL16_HIGHER	97
-#define R_PPC64_TPREL16_HIGHERA	98
-#define R_PPC64_TPREL16_HIGHEST	99
-#define R_PPC64_TPREL16_HIGHESTA 100
-#define R_PPC64_DTPREL16_DS	101
-#define R_PPC64_DTPREL16_LO_DS	102
-#define R_PPC64_DTPREL16_HIGHER	103
-#define R_PPC64_DTPREL16_HIGHERA 104
-#define R_PPC64_DTPREL16_HIGHEST 105
-#define R_PPC64_DTPREL16_HIGHESTA 106
-#define R_PPC64_TLSGD		107
-#define R_PPC64_TLSLD		108
-#define R_PPC64_TOCSAVE		109
-#define R_PPC64_ADDR16_HIGH	110
-#define R_PPC64_ADDR16_HIGHA	111
-#define R_PPC64_TPREL16_HIGH	112
-#define R_PPC64_TPREL16_HIGHA	113
-#define R_PPC64_DTPREL16_HIGH	114
-#define R_PPC64_DTPREL16_HIGHA	115
-
-
-#define R_PPC64_JMP_IREL	247
-#define R_PPC64_IRELATIVE	248
-#define R_PPC64_REL16		249
-#define R_PPC64_REL16_LO	250
-#define R_PPC64_REL16_HI	251
-#define R_PPC64_REL16_HA	252
-
-#define EF_PPC64_ABI	3
-
-#define DT_PPC64_GLINK  (DT_LOPROC + 0)
-#define DT_PPC64_OPD	(DT_LOPROC + 1)
-#define DT_PPC64_OPDSZ	(DT_LOPROC + 2)
-#define DT_PPC64_OPT	(DT_LOPROC + 3)
-#define DT_PPC64_NUM	4
-
-#define PPC64_OPT_TLS		1
-#define PPC64_OPT_MULTI_TOC	2
-#define PPC64_OPT_LOCALENTRY	4
-
-#define STO_PPC64_LOCAL_BIT	5
-#define STO_PPC64_LOCAL_MASK	0xe0
-#define PPC64_LOCAL_ENTRY_OFFSET(x) (1 << (((x)&0xe0)>>5) & 0xfc)
-
-
-#define EF_ARM_RELEXEC		0x01
-#define EF_ARM_HASENTRY		0x02
-#define EF_ARM_INTERWORK	0x04
-#define EF_ARM_APCS_26		0x08
-#define EF_ARM_APCS_FLOAT	0x10
-#define EF_ARM_PIC		0x20
-#define EF_ARM_ALIGN8		0x40
-#define EF_ARM_NEW_ABI		0x80
-#define EF_ARM_OLD_ABI		0x100
-#define EF_ARM_SOFT_FLOAT	0x200
-#define EF_ARM_VFP_FLOAT	0x400
-#define EF_ARM_MAVERICK_FLOAT	0x800
-
-#define EF_ARM_ABI_FLOAT_SOFT	0x200
-#define EF_ARM_ABI_FLOAT_HARD	0x400
-
-
-#define EF_ARM_SYMSARESORTED	0x04
-#define EF_ARM_DYNSYMSUSESEGIDX	0x08
-#define EF_ARM_MAPSYMSFIRST	0x10
-#define EF_ARM_EABIMASK		0XFF000000
-
-
-#define EF_ARM_BE8	    0x00800000
-#define EF_ARM_LE8	    0x00400000
-
-#define EF_ARM_EABI_VERSION(flags)	((flags) & EF_ARM_EABIMASK)
-#define EF_ARM_EABI_UNKNOWN	0x00000000
-#define EF_ARM_EABI_VER1	0x01000000
-#define EF_ARM_EABI_VER2	0x02000000
-#define EF_ARM_EABI_VER3	0x03000000
-#define EF_ARM_EABI_VER4	0x04000000
-#define EF_ARM_EABI_VER5	0x05000000
-
-
-#define STT_ARM_TFUNC		STT_LOPROC
-#define STT_ARM_16BIT		STT_HIPROC
-
-
-#define SHF_ARM_ENTRYSECT	0x10000000
-#define SHF_ARM_COMDEF		0x80000000
-
-
-
-#define PF_ARM_SB		0x10000000
-
-#define PF_ARM_PI		0x20000000
-#define PF_ARM_ABS		0x40000000
-
-
-#define PT_ARM_EXIDX		(PT_LOPROC + 1)
-
-
-#define SHT_ARM_EXIDX		(SHT_LOPROC + 1)
-#define SHT_ARM_PREEMPTMAP	(SHT_LOPROC + 2)
-#define SHT_ARM_ATTRIBUTES	(SHT_LOPROC + 3)
+#define R_PARISC_COPY           128 /**< Copy relocation */
+#define R_PARISC_IPLT           129 /**< Indirect PLT relocation */
+#define R_PARISC_EPLT           130 /**< Explicit PLT relocation */
+
+#define R_PARISC_TPREL32        153 /**< Thread-pointer relative 32-bit */
+#define R_PARISC_TPREL21L       154 /**< Thread-pointer relative 21-bit left */
+#define R_PARISC_TPREL14R       158 /**< Thread-pointer relative 14-bit right */
+
+#define R_PARISC_LTOFF_TP21L    162 /**< Load-time offset to TP 21-bit left */
+#define R_PARISC_LTOFF_TP14R    166 /**< Load-time offset to TP 14-bit right */
+#define R_PARISC_LTOFF_TP14F    167 /**< Load-time offset to TP 14-bit function */
+
+#define R_PARISC_TPREL64        216 /**< Thread-pointer relative 64-bit */
+#define R_PARISC_TPREL14WR      219 /**< TP-relative 14-bit word right */
+#define R_PARISC_TPREL14DR      220 /**< TP-relative 14-bit doubleword right */
+#define R_PARISC_TPREL16F       221 /**< TP-relative 16-bit function */
+#define R_PARISC_TPREL16WF      222 /**< TP-relative 16-bit word function */
+#define R_PARISC_TPREL16DF      223 /**< TP-relative 16-bit doubleword function */
+
+#define R_PARISC_LTOFF_TP64     224 /**< Load-time offset to TP 64-bit */
+#define R_PARISC_LTOFF_TP14WR   227 /**< Load-time offset to TP 14-bit word right */
+#define R_PARISC_LTOFF_TP14DR   228 /**< Load-time offset to TP 14-bit doubleword right */
+#define R_PARISC_LTOFF_TP16F    229 /**< Load-time offset to TP 16-bit function */
+#define R_PARISC_LTOFF_TP16WF   230 /**< Load-time offset to TP 16-bit word function */
+#define R_PARISC_LTOFF_TP16DF   231 /**< Load-time offset to TP 16-bit doubleword function */
+
+#define R_PARISC_GNU_VTENTRY    232 /**< GNU vtable entry */
+#define R_PARISC_GNU_VTINHERIT  233 /**< GNU vtable inheritance */
+
+#define R_PARISC_TLS_GD21L      234 /**< TLS General Dynamic 21-bit left */
+#define R_PARISC_TLS_GD14R      235 /**< TLS General Dynamic 14-bit right */
+#define R_PARISC_TLS_GDCALL     236 /**< TLS General Dynamic call */
+#define R_PARISC_TLS_LDM21L     237 /**< TLS Local Dynamic 21-bit left */
+#define R_PARISC_TLS_LDM14R     238 /**< TLS Local Dynamic 14-bit right */
+#define R_PARISC_TLS_LDMCALL    239 /**< TLS Local Dynamic call */
+#define R_PARISC_TLS_LDO21L     240 /**< TLS Local Dynamic offset 21-bit left */
+#define R_PARISC_TLS_LDO14R     241 /**< TLS Local Dynamic offset 14-bit right */
+
+#define R_PARISC_TLS_DTPMOD32   242 /**< TLS module ID 32-bit */
+#define R_PARISC_TLS_DTPMOD64   243 /**< TLS module ID 64-bit */
+#define R_PARISC_TLS_DTPOFF32   244 /**< TLS offset within module 32-bit */
+#define R_PARISC_TLS_DTPOFF64   245 /**< TLS offset within module 64-bit */
+
+#define R_PARISC_TLS_LE21L      R_PARISC_TPREL21L /**< TLS Local Exec alias: 21-bit left */
+#define R_PARISC_TLS_LE14R      R_PARISC_TPREL14R /**< TLS Local Exec alias: 14-bit right */
+#define R_PARISC_TLS_IE21L      R_PARISC_LTOFF_TP21L /**< TLS Initial Exec alias: 21-bit left */
+#define R_PARISC_TLS_IE14R      R_PARISC_LTOFF_TP14R /**< TLS Initial Exec alias: 14-bit right */
+#define R_PARISC_TLS_TPREL32    R_PARISC_TPREL32 /**< Alias for TPREL32 */
+#define R_PARISC_TLS_TPREL64    R_PARISC_TPREL64 /**< Alias for TPREL64 */
+
+#define R_PARISC_HIRESERVE      255 /**< High-end reserved range */
+///@}
+
+
+
+
+#define PT_HP_TLS		(PT_LOOS + 0x0)   /**< HP TLS segment. */
+#define PT_HP_CORE_NONE		(PT_LOOS + 0x1)   /**< HP core: unused segment. */
+#define PT_HP_CORE_VERSION	(PT_LOOS + 0x2)   /**< HP core: version information. */
+#define PT_HP_CORE_KERNEL	(PT_LOOS + 0x3)   /**< HP core: kernel segment. */
+#define PT_HP_CORE_COMM		(PT_LOOS + 0x4)   /**< HP core: communication data. */
+#define PT_HP_CORE_PROC		(PT_LOOS + 0x5)   /**< HP core: process-specific segment. */
+#define PT_HP_CORE_LOADABLE	(PT_LOOS + 0x6)   /**< HP core: loadable segment. */
+#define PT_HP_CORE_STACK	(PT_LOOS + 0x7)   /**< HP core: user stack. */
+#define PT_HP_CORE_SHM		(PT_LOOS + 0x8)   /**< HP core: shared memory. */
+#define PT_HP_CORE_MMF		(PT_LOOS + 0x9)   /**< HP core: memory-mapped file. */
+#define PT_HP_PARALLEL		(PT_LOOS + 0x10)  /**< HP parallel segment. */
+#define PT_HP_FASTBIND		(PT_LOOS + 0x11)  /**< HP fast binding segment. */
+#define PT_HP_OPT_ANNOT		(PT_LOOS + 0x12)  /**< HP optional annotations. */
+#define PT_HP_HSL_ANNOT		(PT_LOOS + 0x13)  /**< HP high-level sync annotations. */
+#define PT_HP_STACK		(PT_LOOS + 0x14)  /**< HP stack segment. */
+
+
+
+#define PT_PARISC_ARCHEXT	0x70000000        /**< PA-RISC architecture extensions. */
+#define PT_PARISC_UNWIND	0x70000001        /**< PA-RISC unwind segment. */
+
+
+
+
+#define PF_PARISC_SBP		0x08000000        /**< Static branch prediction (PA-RISC). */
+
+#define PF_HP_PAGE_SIZE		0x00100000        /**< HP specific page size flag. */
+#define PF_HP_FAR_SHARED	0x00200000        /**< HP far shared memory. */
+#define PF_HP_NEAR_SHARED	0x00400000        /**< HP near shared memory. */
+#define PF_HP_CODE		0x01000000        /**< HP code segment flag. */
+#define PF_HP_MODIFY		0x02000000        /**< HP segment is modified. */
+#define PF_HP_LAZYSWAP		0x04000000        /**< HP lazy swap segment. */
+#define PF_HP_SBP		0x08000000        /**< Static branch prediction (HP). */
+
+
+
+
+
+
+#define EF_ALPHA_32BIT           1          /**< Uses 32-bit addressing. */
+#define EF_ALPHA_CANRELAX        2          /**< Code can be relaxed during linking. */
+
+#define SHT_ALPHA_DEBUG          0x70000001 /**< Alpha-specific debugging section. */
+#define SHT_ALPHA_REGINFO        0x70000002 /**< Contains Alpha register usage info. */
+
+#define SHF_ALPHA_GPREL          0x10000000 /**< Section contains GP-relative data. */
+
+#define STO_ALPHA_NOPV           0x80       /**< No procedure value: no .pv section. */
+#define STO_ALPHA_STD_GPLOAD     0x88       /**< Standard gp load method. */
+
+
+
+
+#define R_ALPHA_NONE         0   /**< No relocation. */
+#define R_ALPHA_REFLONG      1   /**< Direct 32-bit reference. */
+#define R_ALPHA_REFQUAD      2   /**< Direct 64-bit reference. */
+#define R_ALPHA_GPREL32      3   /**< GP-relative 32-bit reference. */
+#define R_ALPHA_LITERAL      4   /**< Address literal relocation. */
+#define R_ALPHA_LITUSE       5   /**< Indicates how a literal is used. */
+#define R_ALPHA_GPDISP       6   /**< GP offset for displacement calculation. */
+#define R_ALPHA_BRADDR       7   /**< Branch address. */
+#define R_ALPHA_HINT         8   /**< Hint for branch prediction. */
+#define R_ALPHA_SREL16       9   /**< PC-relative 16-bit signed offset. */
+#define R_ALPHA_SREL32       10  /**< PC-relative 32-bit signed offset. */
+#define R_ALPHA_SREL64       11  /**< PC-relative 64-bit signed offset. */
+#define R_ALPHA_GPRELHIGH    17  /**< High 16 bits of GP-relative address. */
+#define R_ALPHA_GPRELLOW     18  /**< Low 16 bits of GP-relative address. */
+#define R_ALPHA_GPREL16      19  /**< GP-relative 16-bit signed offset. */
+#define R_ALPHA_COPY         24  /**< Copy symbol at runtime. */
+#define R_ALPHA_GLOB_DAT     25  /**< Create global data. */
+#define R_ALPHA_JMP_SLOT     26  /**< Create PLT entry. */
+#define R_ALPHA_RELATIVE     27  /**< Adjust by program base. */
+#define R_ALPHA_TLS_GD_HI    28  /**< TLS General Dynamic high bits. */
+#define R_ALPHA_TLSGD        29  /**< TLS General Dynamic. */
+#define R_ALPHA_TLS_LDM      30  /**< TLS Local Dynamic. */
+#define R_ALPHA_DTPMOD64     31  /**< Module number for TLS. */
+#define R_ALPHA_GOTDTPREL    32  /**< GOT offset for DTP-relative. */
+#define R_ALPHA_DTPREL64     33  /**< DTP-relative offset. */
+#define R_ALPHA_DTPRELHI     34  /**< High 16 bits of DTP-relative offset. */
+#define R_ALPHA_DTPRELLO     35  /**< Low 16 bits of DTP-relative offset. */
+#define R_ALPHA_DTPREL16     36  /**< DTP-relative 16-bit offset. */
+#define R_ALPHA_GOTTPREL     37  /**< GOT offset for TP-relative. */
+#define R_ALPHA_TPREL64      38  /**< TP-relative offset. */
+#define R_ALPHA_TPRELHI      39  /**< High 16 bits of TP-relative offset. */
+#define R_ALPHA_TPRELLO      40  /**< Low 16 bits of TP-relative offset. */
+#define R_ALPHA_TPREL16      41  /**< TP-relative 16-bit offset. */
+
+#define R_ALPHA_NUM          46  /**< Total number of Alpha relocation types. */
+
+
+
+#define LITUSE_ALPHA_ADDR       0  /**< Literal used as an address. */
+#define LITUSE_ALPHA_BASE       1  /**< Literal used as a base address. */
+#define LITUSE_ALPHA_BYTOFF     2  /**< Literal used with byte offset. */
+#define LITUSE_ALPHA_JSR        3  /**< Literal used in JSR (jump to subroutine). */
+#define LITUSE_ALPHA_TLS_GD     4  /**< Literal used for TLS General Dynamic. */
+#define LITUSE_ALPHA_TLS_LDM    5  /**< Literal used for TLS Local Dynamic. */
+
+#define DT_ALPHA_PLTRO          (DT_LOPROC + 0) /**< Offset of .plt section relative to load address. */
+#define DT_ALPHA_NUM            1               /**< Number of Alpha-specific dynamic table entries. */
+
+#define EF_PPC_EMB              0x80000000 /**< PowerPC embedded application binary. */
+
+#define EF_PPC_RELOCATABLE      0x00010000 /**< Indicates a relocatable object. */
+#define EF_PPC_RELOCATABLE_LIB  0x00008000 /**< Indicates a relocatable library. */
+
+
+
+#define R_PPC_NONE              0  /**< No relocation. */
+#define R_PPC_ADDR32            1  /**< 32-bit absolute address relocation. */
+#define R_PPC_ADDR24            2  /**< 24-bit absolute address relocation. */
+#define R_PPC_ADDR16            3  /**< 16-bit absolute address relocation. */
+#define R_PPC_ADDR16_LO         4  /**< Lower 16 bits of an address relocation. */
+#define R_PPC_ADDR16_HI         5  /**< Higher 16 bits of an address relocation. */
+#define R_PPC_ADDR16_HA         6  /**< Highest 16 bits of an address relocation. */
+#define R_PPC_ADDR14            7  /**< 14-bit address relocation. */
+#define R_PPC_ADDR14_BRTAKEN    8  /**< 14-bit address relocation for branch taken. */
+#define R_PPC_ADDR14_BRNTAKEN   9  /**< 14-bit address relocation for branch not taken. */
+#define R_PPC_REL24             10 /**< 24-bit relative relocation. */
+#define R_PPC_REL14             11 /**< 14-bit relative relocation. */
+#define R_PPC_REL14_BRTAKEN     12 /**< 14-bit relative relocation for branch taken. */
+#define R_PPC_REL14_BRNTAKEN    13 /**< 14-bit relative relocation for branch not taken. */
+#define R_PPC_GOT16             14 /**< 16-bit GOT entry. */
+#define R_PPC_GOT16_LO          15 /**< Lower 16 bits of a GOT entry. */
+#define R_PPC_GOT16_HI          16 /**< Higher 16 bits of a GOT entry. */
+#define R_PPC_GOT16_HA          17 /**< Highest 16 bits of a GOT entry. */
+#define R_PPC_PLTREL24          18 /**< 24-bit PLT relative relocation. */
+#define R_PPC_COPY              19 /**< Copy relocation (used for data symbols). */
+#define R_PPC_GLOB_DAT          20 /**< Global data relocation (for variables). */
+#define R_PPC_JMP_SLOT          21 /**< Jump slot relocation (for function pointers). */
+#define R_PPC_RELATIVE          22 /**< Relative relocation (used for GOT/PLT). */
+#define R_PPC_LOCAL24PC         23 /**< Local 24-bit PC-relative relocation. */
+#define R_PPC_UADDR32           24 /**< 32-bit unsigned address relocation. */
+#define R_PPC_UADDR16           25 /**< 16-bit unsigned address relocation. */
+#define R_PPC_REL32             26 /**< 32-bit relative relocation. */
+#define R_PPC_PLT32             27 /**< 32-bit PLT entry relocation. */
+#define R_PPC_PLTREL32          28 /**< 32-bit PLT-relative relocation. */
+#define R_PPC_PLT16_LO          29 /**< Lower 16 bits of a PLT entry. */
+#define R_PPC_PLT16_HI          30 /**< Higher 16 bits of a PLT entry. */
+#define R_PPC_PLT16_HA          31 /**< Highest 16 bits of a PLT entry. */
+#define R_PPC_SDAREL16          32 /**< 16-bit relative relocation for static data area. */
+#define R_PPC_SECTOFF           33 /**< Section offset relocation. */
+#define R_PPC_SECTOFF_LO        34 /**< Lower bits of section offset relocation. */
+#define R_PPC_SECTOFF_HI        35 /**< Higher bits of section offset relocation. */
+#define R_PPC_SECTOFF_HA        36 /**< Highest bits of section offset relocation. */
+
+#define R_PPC_TLS               67 /**< TLS (Thread-Local Storage) relocation. */
+#define R_PPC_DTPMOD32          68 /**< 32-bit DTP module relocation. */
+#define R_PPC_TPREL16           69 /**< 16-bit TP-relative relocation. */
+#define R_PPC_TPREL16_LO        70 /**< Lower 16 bits of TP-relative relocation. */
+#define R_PPC_TPREL16_HI        71 /**< Higher 16 bits of TP-relative relocation. */
+#define R_PPC_TPREL16_HA        72 /**< Highest 16 bits of TP-relative relocation. */
+#define R_PPC_TPREL32           73 /**< 32-bit TP-relative relocation. */
+#define R_PPC_DTPREL16          74 /**< 16-bit DTP-relative relocation. */
+#define R_PPC_DTPREL16_LO       75 /**< Lower 16 bits of DTP-relative relocation. */
+#define R_PPC_DTPREL16_HI       76 /**< Higher 16 bits of DTP-relative relocation. */
+#define R_PPC_DTPREL16_HA       77 /**< Highest 16 bits of DTP-relative relocation. */
+#define R_PPC_DTPREL32          78 /**< 32-bit DTP-relative relocation. */
+#define R_PPC_GOT_TLSGD16       79 /**< 16-bit GOT TLS General Dynamic entry. */
+#define R_PPC_GOT_TLSGD16_LO    80 /**< Lower 16 bits of GOT TLS GD entry. */
+#define R_PPC_GOT_TLSGD16_HI    81 /**< Higher 16 bits of GOT TLS GD entry. */
+#define R_PPC_GOT_TLSGD16_HA    82 /**< Highest 16 bits of GOT TLS GD entry. */
+#define R_PPC_GOT_TLSLD16       83 /**< 16-bit GOT TLS Local Dynamic entry. */
+#define R_PPC_GOT_TLSLD16_LO    84 /**< Lower 16 bits of GOT TLS LD entry. */
+#define R_PPC_GOT_TLSLD16_HI    85 /**< Higher 16 bits of GOT TLS LD entry. */
+#define R_PPC_GOT_TLSLD16_HA    86 /**< Highest 16 bits of GOT TLS LD entry. */
+#define R_PPC_GOT_TPREL16       87 /**< 16-bit GOT TP-relative entry. */
+#define R_PPC_GOT_TPREL16_LO    88 /**< Lower 16 bits of GOT TP-relative entry. */
+#define R_PPC_GOT_TPREL16_HI    89 /**< Higher 16 bits of GOT TP-relative entry. */
+#define R_PPC_GOT_TPREL16_HA    90 /**< Highest 16 bits of GOT TP-relative entry. */
+#define R_PPC_GOT_DTPREL16      91 /**< 16-bit GOT DTP-relative entry. */
+#define R_PPC_GOT_DTPREL16_LO   92 /**< Lower 16 bits of GOT DTP-relative entry. */
+#define R_PPC_GOT_DTPREL16_HI   93 /**< Higher 16 bits of GOT DTP-relative entry. */
+#define R_PPC_GOT_DTPREL16_HA   94 /**< Highest 16 bits of GOT DTP-relative entry. */
+#define R_PPC_TLSGD             95 /**< TLS General Dynamic entry relocation. */
+#define R_PPC_TLSLD             96 /**< TLS Local Dynamic entry relocation. */
+
+#define R_PPC_EMB_NADDR32       101 /**< 32-bit embedded address relocation. */
+#define R_PPC_EMB_NADDR16       102 /**< 16-bit embedded address relocation. */
+#define R_PPC_EMB_NADDR16_LO    103 /**< Lower 16 bits of embedded address relocation. */
+#define R_PPC_EMB_NADDR16_HI    104 /**< Higher 16 bits of embedded address relocation. */
+#define R_PPC_EMB_NADDR16_HA    105 /**< Highest 16 bits of embedded address relocation. */
+#define R_PPC_EMB_SDAI16        106 /**< 16-bit embedded SDA index relocation. */
+#define R_PPC_EMB_SDA2I16       107 /**< 16-bit embedded SDA2 index relocation. */
+#define R_PPC_EMB_SDA2REL       108 /**< Embedded SDA2 relative relocation. */
+#define R_PPC_EMB_SDA21         109 /**< Embedded SDA21 relocation. */
+#define R_PPC_EMB_MRKREF        110 /**< Embedded marker reference relocation. */
+#define R_PPC_EMB_RELSEC16      111 /**< 16-bit embedded relocation section. */
+#define R_PPC_EMB_RELST_LO      112 /**< Lower 16 bits of embedded relocation section. */
+#define R_PPC_EMB_RELST_HI      113 /**< Higher 16 bits of embedded relocation section. */
+#define R_PPC_EMB_RELST_HA      114 /**< Highest 16 bits of embedded relocation section. */
+#define R_PPC_EMB_BIT_FLD       115 /**< Embedded bit field relocation. */
+#define R_PPC_EMB_RELSDA        116 /**< Embedded SDA relocation. */
+
+#define R_PPC_DIAB_SDA21_LO     180 /**< Lower 16 bits of DIAB SDA21 relocation. */
+#define R_PPC_DIAB_SDA21_HI     181 /**< Higher 16 bits of DIAB SDA21 relocation. */
+#define R_PPC_DIAB_SDA21_HA     182 /**< Highest 16 bits of DIAB SDA21 relocation. */
+#define R_PPC_DIAB_RELSDA_LO    183 /**< Lower 16 bits of DIAB SDA relocation. */
+#define R_PPC_DIAB_RELSDA_HI    184 /**< Higher 16 bits of DIAB SDA relocation. */
+#define R_PPC_DIAB_RELSDA_HA    185 /**< Highest 16 bits of DIAB SDA relocation. */
+
+#define R_PPC_IRELATIVE         248 /**< I-relative relocation. */
+
+#define R_PPC_REL16             249 /**< 16-bit relative relocation. */
+#define R_PPC_REL16_LO          250 /**< Lower 16 bits of 16-bit relative relocation. */
+#define R_PPC_REL16_HI          251 /**< Higher 16 bits of 16-bit relative relocation. */
+#define R_PPC_REL16_HA          252 /**< Highest 16 bits of 16-bit relative relocation. */
+
+#define R_PPC_TOC16             255 /**< 16-bit TOC (Table of Contents) entry relocation. */
+
+
+#define DT_PPC_GOT            (DT_LOPROC + 0)  /**< PPC Global Offset Table (GOT). */
+#define DT_PPC_OPT            (DT_LOPROC + 1)  /**< PPC Options. */
+#define DT_PPC_NUM            2  /**< Number of PPC-specific dynamic section entries. */
+
+#define PPC_OPT_TLS           1  /**< PPC TLS (Thread-Local Storage) option. */
+
+
+
+#define R_PPC64_NONE          R_PPC_NONE            /**< PPC64 version of R_PPC_NONE. */
+#define R_PPC64_ADDR32        R_PPC_ADDR32          /**< PPC64 version of R_PPC_ADDR32. */
+#define R_PPC64_ADDR24        R_PPC_ADDR24          /**< PPC64 version of R_PPC_ADDR24. */
+#define R_PPC64_ADDR16        R_PPC_ADDR16          /**< PPC64 version of R_PPC_ADDR16. */
+#define R_PPC64_ADDR16_LO     R_PPC_ADDR16_LO       /**< PPC64 version of R_PPC_ADDR16_LO. */
+#define R_PPC64_ADDR16_HI     R_PPC_ADDR16_HI       /**< PPC64 version of R_PPC_ADDR16_HI. */
+#define R_PPC64_ADDR16_HA     R_PPC_ADDR16_HA       /**< PPC64 version of R_PPC_ADDR16_HA. */
+#define R_PPC64_ADDR14        R_PPC_ADDR14          /**< PPC64 version of R_PPC_ADDR14. */
+#define R_PPC64_ADDR14_BRTAKEN R_PPC_ADDR14_BRTAKEN  /**< PPC64 version of R_PPC_ADDR14_BRTAKEN. */
+#define R_PPC64_ADDR14_BRNTAKEN R_PPC_ADDR14_BRNTAKEN /**< PPC64 version of R_PPC_ADDR14_BRNTAKEN. */
+#define R_PPC64_REL24         R_PPC_REL24           /**< PPC64 version of R_PPC_REL24. */
+#define R_PPC64_REL14         R_PPC_REL14           /**< PPC64 version of R_PPC_REL14. */
+#define R_PPC64_REL14_BRTAKEN R_PPC_REL14_BRTAKEN   /**< PPC64 version of R_PPC_REL14_BRTAKEN. */
+#define R_PPC64_REL14_BRNTAKEN R_PPC_REL14_BRNTAKEN /**< PPC64 version of R_PPC_REL14_BRNTAKEN. */
+#define R_PPC64_GOT16         R_PPC_GOT16           /**< PPC64 version of R_PPC_GOT16. */
+#define R_PPC64_GOT16_LO      R_PPC_GOT16_LO        /**< PPC64 version of R_PPC_GOT16_LO. */
+#define R_PPC64_GOT16_HI      R_PPC_GOT16_HI        /**< PPC64 version of R_PPC_GOT16_HI. */
+#define R_PPC64_GOT16_HA      R_PPC_GOT16_HA        /**< PPC64 version of R_PPC_GOT16_HA. */
+
+#define R_PPC64_COPY          R_PPC_COPY            /**< PPC64 version of R_PPC_COPY. */
+#define R_PPC64_GLOB_DAT      R_PPC_GLOB_DAT        /**< PPC64 version of R_PPC_GLOB_DAT. */
+#define R_PPC64_JMP_SLOT      R_PPC_JMP_SLOT        /**< PPC64 version of R_PPC_JMP_SLOT. */
+#define R_PPC64_RELATIVE      R_PPC_RELATIVE        /**< PPC64 version of R_PPC_RELATIVE. */
+
+#define R_PPC64_UADDR32       R_PPC_UADDR32         /**< PPC64 version of R_PPC_UADDR32. */
+#define R_PPC64_UADDR16       R_PPC_UADDR16         /**< PPC64 version of R_PPC_UADDR16. */
+#define R_PPC64_REL32         R_PPC_REL32           /**< PPC64 version of R_PPC_REL32. */
+#define R_PPC64_PLT32         R_PPC_PLT32           /**< PPC64 version of R_PPC_PLT32. */
+#define R_PPC64_PLTREL32      R_PPC_PLTREL32        /**< PPC64 version of R_PPC_PLTREL32. */
+#define R_PPC64_PLT16_LO      R_PPC_PLT16_LO        /**< PPC64 version of R_PPC_PLT16_LO. */
+#define R_PPC64_PLT16_HI      R_PPC_PLT16_HI        /**< PPC64 version of R_PPC_PLT16_HI. */
+#define R_PPC64_PLT16_HA      R_PPC_PLT16_HA        /**< PPC64 version of R_PPC_PLT16_HA. */
+
+#define R_PPC64_SECTOFF       R_PPC_SECTOFF         /**< PPC64 version of R_PPC_SECTOFF. */
+#define R_PPC64_SECTOFF_LO    R_PPC_SECTOFF_LO      /**< PPC64 version of R_PPC_SECTOFF_LO. */
+#define R_PPC64_SECTOFF_HI    R_PPC_SECTOFF_HI      /**< PPC64 version of R_PPC_SECTOFF_HI. */
+#define R_PPC64_SECTOFF_HA    R_PPC_SECTOFF_HA      /**< PPC64 version of R_PPC_SECTOFF_HA. */
+#define R_PPC64_ADDR30        37                     /**< PPC64 specific address relocation. */
+#define R_PPC64_ADDR64        38                     /**< PPC64 64-bit address relocation. */
+#define R_PPC64_ADDR16_HIGHER 39                     /**< PPC64 16-bit higher address relocation. */
+#define R_PPC64_ADDR16_HIGHERA 40                    /**< PPC64 16-bit higher address relocation A. */
+#define R_PPC64_ADDR16_HIGHEST 41                    /**< PPC64 16-bit highest address relocation. */
+#define R_PPC64_ADDR16_HIGHESTA 42                   /**< PPC64 16-bit highest address relocation A. */
+#define R_PPC64_UADDR64       43                     /**< PPC64 64-bit user address relocation. */
+#define R_PPC64_REL64         44                     /**< PPC64 64-bit relative relocation. */
+#define R_PPC64_PLT64         45                     /**< PPC64 64-bit PLT relocation. */
+#define R_PPC64_PLTREL64      46                     /**< PPC64 64-bit PLT relative relocation. */
+#define R_PPC64_TOC16         47                     /**< PPC64 TOC 16-bit relocation. */
+#define R_PPC64_TOC16_LO      48                     /**< PPC64 TOC 16-bit low relocation. */
+#define R_PPC64_TOC16_HI      49                     /**< PPC64 TOC 16-bit high relocation. */
+#define R_PPC64_TOC16_HA      50                     /**< PPC64 TOC 16-bit high adjusted relocation. */
+#define R_PPC64_TOC           51                     /**< PPC64 TOC relocation. */
+#define R_PPC64_PLTGOT16      52                     /**< PPC64 PLT GOT 16-bit relocation. */
+#define R_PPC64_PLTGOT16_LO   53                     /**< PPC64 PLT GOT 16-bit low relocation. */
+#define R_PPC64_PLTGOT16_HI   54                     /**< PPC64 PLT GOT 16-bit high relocation. */
+#define R_PPC64_PLTGOT16_HA   55                     /**< PPC64 PLT GOT 16-bit high adjusted relocation. */
+
+#define R_PPC64_ADDR16_DS     56                     /**< PPC64 16-bit address with DS relocation. */
+#define R_PPC64_ADDR16_LO_DS  57                     /**< PPC64 16-bit address with DS low relocation. */
+#define R_PPC64_GOT16_DS      58                     /**< PPC64 GOT 16-bit with DS relocation. */
+#define R_PPC64_GOT16_LO_DS   59                     /**< PPC64 GOT 16-bit low with DS relocation. */
+#define R_PPC64_PLT16_LO_DS   60                     /**< PPC64 PLT 16-bit low with DS relocation. */
+#define R_PPC64_SECTOFF_DS    61                     /**< PPC64 section offset with DS relocation. */
+#define R_PPC64_SECTOFF_LO_DS 62                     /**< PPC64 section offset low with DS relocation. */
+#define R_PPC64_TOC16_DS      63                     /**< PPC64 TOC 16-bit with DS relocation. */
+#define R_PPC64_TOC16_LO_DS   64                     /**< PPC64 TOC 16-bit low with DS relocation. */
+#define R_PPC64_PLTGOT16_DS   65                     /**< PPC64 PLT GOT 16-bit with DS relocation. */
+#define R_PPC64_PLTGOT16_LO_DS 66                    /**< PPC64 PLT GOT 16-bit low with DS relocation. */
+
+
+
+#define R_PPC64_TLS            67      /**< PPC64 TLS relocation. */
+#define R_PPC64_DTPMOD64       68      /**< PPC64 DTP module 64 relocation. */
+#define R_PPC64_TPREL16        69      /**< PPC64 TPREL 16-bit relocation. */
+#define R_PPC64_TPREL16_LO     70      /**< PPC64 TPREL 16-bit low relocation. */
+#define R_PPC64_TPREL16_HI     71      /**< PPC64 TPREL 16-bit high relocation. */
+#define R_PPC64_TPREL16_HA     72      /**< PPC64 TPREL 16-bit high adjusted relocation. */
+#define R_PPC64_TPREL64        73      /**< PPC64 TPREL 64-bit relocation. */
+#define R_PPC64_DTPREL16       74      /**< PPC64 DTPREL 16-bit relocation. */
+#define R_PPC64_DTPREL16_LO    75      /**< PPC64 DTPREL 16-bit low relocation. */
+#define R_PPC64_DTPREL16_HI    76      /**< PPC64 DTPREL 16-bit high relocation. */
+#define R_PPC64_DTPREL16_HA    77      /**< PPC64 DTPREL 16-bit high adjusted relocation. */
+#define R_PPC64_DTPREL64       78      /**< PPC64 DTPREL 64-bit relocation. */
+#define R_PPC64_GOT_TLSGD16    79      /**< PPC64 GOT TLSGD 16-bit relocation. */
+#define R_PPC64_GOT_TLSGD16_LO 80      /**< PPC64 GOT TLSGD 16-bit low relocation. */
+#define R_PPC64_GOT_TLSGD16_HI 81      /**< PPC64 GOT TLSGD 16-bit high relocation. */
+#define R_PPC64_GOT_TLSGD16_HA 82      /**< PPC64 GOT TLSGD 16-bit high adjusted relocation. */
+#define R_PPC64_GOT_TLSLD16    83      /**< PPC64 GOT TLSLD 16-bit relocation. */
+#define R_PPC64_GOT_TLSLD16_LO 84      /**< PPC64 GOT TLSLD 16-bit low relocation. */
+#define R_PPC64_GOT_TLSLD16_HI 85      /**< PPC64 GOT TLSLD 16-bit high relocation. */
+#define R_PPC64_GOT_TLSLD16_HA 86      /**< PPC64 GOT TLSLD 16-bit high adjusted relocation. */
+#define R_PPC64_GOT_TPREL16_DS 87      /**< PPC64 GOT TPREL 16-bit DS relocation. */
+#define R_PPC64_GOT_TPREL16_LO_DS 88   /**< PPC64 GOT TPREL 16-bit low DS relocation. */
+#define R_PPC64_GOT_TPREL16_HI 89      /**< PPC64 GOT TPREL 16-bit high relocation. */
+#define R_PPC64_GOT_TPREL16_HA 90      /**< PPC64 GOT TPREL 16-bit high adjusted relocation. */
+#define R_PPC64_GOT_DTPREL16_DS 91     /**< PPC64 GOT DTPREL 16-bit DS relocation. */
+#define R_PPC64_GOT_DTPREL16_LO_DS 92  /**< PPC64 GOT DTPREL 16-bit low DS relocation. */
+#define R_PPC64_GOT_DTPREL16_HI 93     /**< PPC64 GOT DTPREL 16-bit high relocation. */
+#define R_PPC64_GOT_DTPREL16_HA 94     /**< PPC64 GOT DTPREL 16-bit high adjusted relocation. */
+#define R_PPC64_TPREL16_DS     95      /**< PPC64 TPREL 16-bit DS relocation. */
+#define R_PPC64_TPREL16_LO_DS  96      /**< PPC64 TPREL 16-bit low DS relocation. */
+#define R_PPC64_TPREL16_HIGHER 97      /**< PPC64 TPREL 16-bit higher relocation. */
+#define R_PPC64_TPREL16_HIGHERA 98     /**< PPC64 TPREL 16-bit higher relocation A. */
+#define R_PPC64_TPREL16_HIGHEST 99     /**< PPC64 TPREL 16-bit highest relocation. */
+#define R_PPC64_TPREL16_HIGHESTA 100   /**< PPC64 TPREL 16-bit highest relocation A. */
+#define R_PPC64_DTPREL16_DS    101     /**< PPC64 DTPREL 16-bit DS relocation. */
+#define R_PPC64_DTPREL16_LO_DS 102     /**< PPC64 DTPREL 16-bit low DS relocation. */
+#define R_PPC64_DTPREL16_HIGHER 103    /**< PPC64 DTPREL 16-bit higher relocation. */
+#define R_PPC64_DTPREL16_HIGHERA 104   /**< PPC64 DTPREL 16-bit higher relocation A. */
+#define R_PPC64_DTPREL16_HIGHEST 105   /**< PPC64 DTPREL 16-bit highest relocation. */
+#define R_PPC64_DTPREL16_HIGHESTA 106  /**< PPC64 DTPREL 16-bit highest relocation A. */
+#define R_PPC64_TLSGD          107     /**< PPC64 TLSGD relocation. */
+#define R_PPC64_TLSLD          108     /**< PPC64 TLSLD relocation. */
+#define R_PPC64_TOCSAVE        109     /**< PPC64 TOCSAVE relocation. */
+#define R_PPC64_ADDR16_HIGH    110     /**< PPC64 16-bit high address relocation. */
+#define R_PPC64_ADDR16_HIGHA   111     /**< PPC64 16-bit high adjusted address relocation. */
+#define R_PPC64_TPREL16_HIGH   112     /**< PPC64 TPREL 16-bit high address relocation. */
+#define R_PPC64_TPREL16_HIGHA  113     /**< PPC64 TPREL 16-bit high adjusted relocation. */
+#define R_PPC64_DTPREL16_HIGH  114     /**< PPC64 DTPREL 16-bit high address relocation. */
+#define R_PPC64_DTPREL16_HIGHA 115     /**< PPC64 DTPREL 16-bit high adjusted address relocation. */
+
+#define R_PPC64_JMP_IREL       247     /**< PPC64 jump IREL relocation. */
+#define R_PPC64_IRELATIVE      248     /**< PPC64 IRELATIVE relocation. */
+#define R_PPC64_REL16          249     /**< PPC64 16-bit relative relocation. */
+#define R_PPC64_REL16_LO       250     /**< PPC64 16-bit relative low relocation. */
+#define R_PPC64_REL16_HI       251     /**< PPC64 16-bit relative high relocation. */
+#define R_PPC64_REL16_HA       252     /**< PPC64 16-bit relative high adjusted relocation. */
+
+
+#define EF_PPC64_ABI          3       /**< PPC64 ABI version 3. */
+
+#define DT_PPC64_GLINK        (DT_LOPROC + 0)  /**< PPC64 dynamic tag for global link. */
+#define DT_PPC64_OPD          (DT_LOPROC + 1)  /**< PPC64 dynamic tag for the OPD (exception handling). */
+#define DT_PPC64_OPDSZ        (DT_LOPROC + 2)  /**< PPC64 dynamic tag for the size of OPD. */
+#define DT_PPC64_OPT          (DT_LOPROC + 3)  /**< PPC64 dynamic tag for options. */
+#define DT_PPC64_NUM          4       /**< Number of PPC64 dynamic tags. */
+
+#define PPC64_OPT_TLS         1       /**< PPC64 option for TLS (Thread Local Storage). */
+#define PPC64_OPT_MULTI_TOC   2       /**< PPC64 option for multiple TOC (Table of Contents). */
+#define PPC64_OPT_LOCALENTRY  4       /**< PPC64 option for local entry. */
+
+#define STO_PPC64_LOCAL_BIT   5       /**< PPC64 bit indicating local symbol. */
+#define STO_PPC64_LOCAL_MASK  0xe0    /**< PPC64 mask for local symbol bits. */
+#define PPC64_LOCAL_ENTRY_OFFSET(x) (1 << (((x)&0xe0)>>5) & 0xfc) /**< PPC64 offset for local entry. */
+
+
+
+#define EF_ARM_RELEXEC         0x01    /**< ARM flag indicating relocation for executable. */
+#define EF_ARM_HASENTRY        0x02    /**< ARM flag indicating entry point is present. */
+#define EF_ARM_INTERWORK       0x04    /**< ARM flag indicating interworking is enabled. */
+#define EF_ARM_APCS_26         0x08    /**< ARM flag indicating APCS 26-bit calling convention. */
+#define EF_ARM_APCS_FLOAT      0x10    /**< ARM flag indicating use of APCS floating point. */
+#define EF_ARM_PIC             0x20    /**< ARM flag indicating position-independent code. */
+#define EF_ARM_ALIGN8          0x40    /**< ARM flag indicating 8-byte alignment. */
+#define EF_ARM_NEW_ABI         0x80    /**< ARM flag indicating new ABI (Application Binary Interface). */
+#define EF_ARM_OLD_ABI         0x100   /**< ARM flag indicating old ABI. */
+#define EF_ARM_SOFT_FLOAT      0x200   /**< ARM flag indicating use of software floating point. */
+#define EF_ARM_VFP_FLOAT       0x400   /**< ARM flag indicating use of VFP (Vector Floating Point). */
+#define EF_ARM_MAVERICK_FLOAT  0x800   /**< ARM flag indicating use of Maverick floating point. */
+
+#define EF_ARM_ABI_FLOAT_SOFT  0x200   /**< ARM flag indicating software floating point ABI. */
+#define EF_ARM_ABI_FLOAT_HARD  0x400   /**< ARM flag indicating hardware floating point ABI. */
+
+#define EF_ARM_SYMSARESORTED   0x04    /**< ARM flag indicating symbols are sorted. */
+#define EF_ARM_DYNSYMSUSESEGIDX 0x08   /**< ARM flag indicating dynamic symbols use segment index. */
+#define EF_ARM_MAPSYMSFIRST    0x10    /**< ARM flag indicating symbols should be mapped first. */
+#define EF_ARM_EABIMASK        0XFF000000 /**< ARM mask for filtering EABI (Embedded ABI) flags. */
+
+#define EF_ARM_BE8             0x00800000 /**< ARM flag indicating big-endian 8-bit encoding. */
+#define EF_ARM_LE8             0x00400000 /**< ARM flag indicating little-endian 8-bit encoding. */
+
+#define EF_ARM_EABI_VERSION(flags) ((flags) & EF_ARM_EABIMASK) /**< Extracts the EABI version from flags. */
+#define EF_ARM_EABI_UNKNOWN    0x00000000 /**< ARM flag indicating an unknown EABI version. */
+#define EF_ARM_EABI_VER1       0x01000000 /**< ARM EABI version 1. */
+#define EF_ARM_EABI_VER2       0x02000000 /**< ARM EABI version 2. */
+#define EF_ARM_EABI_VER3       0x03000000 /**< ARM EABI version 3. */
+#define EF_ARM_EABI_VER4       0x04000000 /**< ARM EABI version 4. */
+#define EF_ARM_EABI_VER5       0x05000000 /**< ARM EABI version 5. */
+
+
+
+#define STT_ARM_TFUNC        STT_LOPROC   /**< ARM symbol table entry type for target functions. */
+#define STT_ARM_16BIT        STT_HIPROC    /**< ARM symbol table entry type for 16-bit symbols. */
+
+#define SHF_ARM_ENTRYSECT    0x10000000    /**< ARM section flag indicating entry section. */
+#define SHF_ARM_COMDEF       0x80000000    /**< ARM section flag indicating common definitions. */
+
+#define PF_ARM_SB            0x10000000    /**< ARM program header flag indicating a shared library. */
+#define PF_ARM_PI            0x20000000    /**< ARM program header flag indicating position-independent code. */
+#define PF_ARM_ABS           0x40000000    /**< ARM program header flag indicating absolute addressing. */
+
+#define PT_ARM_EXIDX         (PT_LOPROC + 1) /**< ARM program header type for exception index. */
+
+#define SHT_ARM_EXIDX        (SHT_LOPROC + 1) /**< ARM section header type for exception index section. */
+#define SHT_ARM_PREEMPTMAP   (SHT_LOPROC + 2) /**< ARM section header type for preemption map section. */
+#define SHT_ARM_ATTRIBUTES   (SHT_LOPROC + 3) /**< ARM section header type for section attributes. */
+
 
 /** 
  * \defgroup R_AARCH64 Relocation Types for AArch64
@@ -2590,7 +2622,7 @@ enum
  * @{
  */
 
-#define R_AARCH64_NONE            0
+#define R_AARCH64_NONE            0  /**< No relocation. */
 /** \name P32 Relocation Types */
 #define R_AARCH64_P32_ABS32        1  /**< P32 Absolute relocation, 32-bit. */
 #define R_AARCH64_P32_COPY         180 /**< P32 Copy relocation. */
@@ -2602,17 +2634,17 @@ enum
 #define R_AARCH64_P32_TLS_TPREL    186 /**< P32 TLS TP Relocation. */
 #define R_AARCH64_P32_TLSDESC      187 /**< P32 TLS Desc relocation. */
 #define R_AARCH64_P32_IRELATIVE    188 /**< P32 I-relative relocation. */
-/** @} */
+
 /** \name Absolute Relocation Types */
 #define R_AARCH64_ABS64            257 /**< Absolute relocation, 64-bit. */
 #define R_AARCH64_ABS32            258 /**< Absolute relocation, 32-bit. */
 #define R_AARCH64_ABS16            259 /**< Absolute relocation, 16-bit. */
-/** @} */
+
 /** \name Preload Relocation Types */
 #define R_AARCH64_PREL64           260 /**< Preload relocation for 64-bit addresses. */
 #define R_AARCH64_PREL32           261 /**< Preload relocation for 32-bit addresses. */
 #define R_AARCH64_PREL16           262 /**< Preload relocation for 16-bit addresses. */
-/** @} */
+
 /** \name Move-Wide Unsigned Absolute Relocation Types */
 #define R_AARCH64_MOVW_UABS_G0     263 /**< Move Wide Unsigned Absolute relocation for G0. */
 #define R_AARCH64_MOVW_UABS_G0_NC  264 /**< Move Wide Unsigned Absolute relocation for G0, no carry. */
@@ -2621,12 +2653,12 @@ enum
 #define R_AARCH64_MOVW_UABS_G2     267 /**< Move Wide Unsigned Absolute relocation for G2. */
 #define R_AARCH64_MOVW_UABS_G2_NC  268 /**< Move Wide Unsigned Absolute relocation for G2, no carry. */
 #define R_AARCH64_MOVW_UABS_G3     269 /**< Move Wide Unsigned Absolute relocation for G3. */
-/** @} */
+
 /** \name Move-Wide Signed Absolute Relocation Types */
 #define R_AARCH64_MOVW_SABS_G0     270 /**< Move Wide Signed Absolute relocation for G0. */
 #define R_AARCH64_MOVW_SABS_G1     271 /**< Move Wide Signed Absolute relocation for G1. */
 #define R_AARCH64_MOVW_SABS_G2     272 /**< Move Wide Signed Absolute relocation for G2. */
-/** @} */
+
 /** \name Load/Store Relocation Types */
 #define R_AARCH64_LD_PREL_LO19     273 /**< Load Preload LO19 for 64-bit addresses. */
 #define R_AARCH64_ADR_PREL_LO21    274 /**< ADR Preload LO21 for 64-bit addresses. */
@@ -2634,19 +2666,19 @@ enum
 #define R_AARCH64_ADR_PREL_PG_HI21_NC 276 /**< ADR Preload PG Hi21 for 64-bit addresses, no carry. */
 #define R_AARCH64_ADD_ABS_LO12_NC  277 /**< Add Absolute relocation for low 12 bits, no carry. */
 #define R_AARCH64_LDST8_ABS_LO12_NC 278 /**< Load/Store 8-bit Absolute relocation, low 12 bits, no carry. */
-/** @} */
+
 /** \name Branch and Jump Relocation Types */
 #define R_AARCH64_TSTBR14          279 /**< Test Branch relocation for 14-bit addresses. */
 #define R_AARCH64_CONDBR19         280 /**< Conditional Branch relocation for 19-bit addresses. */
 #define R_AARCH64_JUMP26           282 /**< Jump relocation for 26-bit addresses. */
 #define R_AARCH64_CALL26           283 /**< Call relocation for 26-bit addresses. */
-/** @} */
+
 /** \name Load/Store Relocation Types */
 #define R_AARCH64_LDST16_ABS_LO12_NC 284 /**< Load/Store 16-bit Absolute relocation, low 12 bits, no carry. */
 #define R_AARCH64_LDST32_ABS_LO12_NC 285 /**< Load/Store 32-bit Absolute relocation, low 12 bits, no carry. */
 #define R_AARCH64_LDST64_ABS_LO12_NC 286 /**< Load/Store 64-bit Absolute relocation, low 12 bits, no carry. */
 #define R_AARCH64_LDST128_ABS_LO12_NC 299 /**< Load/Store 128-bit Absolute relocation, low 12 bits, no carry. */
-/** @} */
+
 /** \name Move-Wide Preload Relocation Types */
 #define R_AARCH64_MOVW_PREL_G0     287 /**< Move Wide Preload relocation for G0. */
 #define R_AARCH64_MOVW_PREL_G0_NC  288 /**< Move Wide Preload relocation for G0, no carry. */
@@ -2655,7 +2687,7 @@ enum
 #define R_AARCH64_MOVW_PREL_G2     291 /**< Move Wide Preload relocation for G2. */
 #define R_AARCH64_MOVW_PREL_G2_NC  292 /**< Move Wide Preload relocation for G2, no carry. */
 #define R_AARCH64_MOVW_PREL_G3     293 /**< Move Wide Preload relocation for G3. */
-/** @} */
+
 /** \name Global Offset Table (GOT) Relocation Types */
 #define R_AARCH64_MOVW_GOTOFF_G0   300 /**< Global Offset relocation for G0. */
 #define R_AARCH64_MOVW_GOTOFF_G0_NC 301 /**< Global Offset relocation for G0, no carry. */
@@ -2664,7 +2696,7 @@ enum
 #define R_AARCH64_MOVW_GOTOFF_G2   304 /**< Global Offset relocation for G2. */
 #define R_AARCH64_MOVW_GOTOFF_G2_NC 305 /**< Global Offset relocation for G2, no carry. */
 #define R_AARCH64_MOVW_GOTOFF_G3   306 /**< Global Offset relocation for G3. */
-/** @} */
+
 /** \name GOT Relocation Types */
 #define R_AARCH64_GOTREL64         307 /**< GOT Relative relocation for 64-bit addresses. */
 #define R_AARCH64_GOTREL32         308 /**< GOT Relative relocation for 32-bit addresses. */
@@ -2673,14 +2705,14 @@ enum
 #define R_AARCH64_ADR_GOT_PAGE     311 /**< ADR Global Offset Page relocation. */
 #define R_AARCH64_LD64_GOT_LO12_NC 312 /**< Load 64-bit Global Offset relocation, low 12 bits, no carry. */
 #define R_AARCH64_LD64_GOTPAGE_LO15 313 /**< Load 64-bit Global Offset Page relocation, low 15 bits. */
-/** @} */
+
 /** \name TLS Global Descriptor Relocation Types */
 #define R_AARCH64_TLSGD_ADR_PREL21 512 /**< TLS Global Descriptor Preload relocation for 21-bit addresses. */
 #define R_AARCH64_TLSGD_ADR_PAGE21 513 /**< TLS Global Descriptor Page Preload relocation for 21-bit addresses. */
 #define R_AARCH64_TLSGD_ADD_LO12_NC 514 /**< TLS Global Descriptor Add LO12 relocation, no carry. */
 #define R_AARCH64_TLSGD_MOVW_G1    515 /**< TLS Global Descriptor Move for G1. */
 #define R_AARCH64_TLSGD_MOVW_G0_NC 516 /**< TLS Global Descriptor Move for G0, no carry. */
-/** @} */
+
 /** \name TLS Local Descriptor Relocation Types */
 #define R_AARCH64_TLSLD_ADR_PREL21     517 /**< TLSLD Address Preload relocation for 21-bit addresses. */
 #define R_AARCH64_TLSLD_ADR_PAGE21     518 /**< TLSLD Address Page relocation for 21-bit addresses. */
@@ -2704,14 +2736,14 @@ enum
 #define R_AARCH64_TLSLD_LDST32_DTPREL_LO12_NC 536 /**< TLSLD Load/Store 32-bit DTP-relative relocation, low 12 bits, no carry. */
 #define R_AARCH64_TLSLD_LDST64_DTPREL_LO12 537 /**< TLSLD Load/Store 64-bit DTP-relative relocation, low 12 bits. */
 #define R_AARCH64_TLSLD_LDST64_DTPREL_LO12_NC 538 /**< TLSLD Load/Store 64-bit DTP-relative relocation, low 12 bits, no carry. */
-/** @} */
+
 /** \name TLS Immediate Relocation Types */
 #define R_AARCH64_TLSIE_MOVW_GOTTPREL_G1     539 /**< TLSIE Move Wide GOT TP-relative relocation for G1. */
 #define R_AARCH64_TLSIE_MOVW_GOTTPREL_G0_NC  540 /**< TLSIE Move Wide GOT TP-relative relocation for G0, no carry. */
 #define R_AARCH64_TLSIE_ADR_GOTTPREL_PAGE21  541 /**< TLSIE Address GOT TP-relative relocation for 21-bit page. */
 #define R_AARCH64_TLSIE_LD64_GOTTPREL_LO12_NC 542 /**< TLSIE Load 64-bit GOT TP-relative relocation, low 12 bits, no carry. */
 #define R_AARCH64_TLSIE_LD_GOTTPREL_PREL19   543 /**< TLSIE Load GOT TP-relative Preload relocation for 19-bit. */
-/** @} */
+
 /** \name TLS Little Endian Relocation Types */
 #define R_AARCH64_TLSLE_MOVW_TPREL_G2        544 /**< TLSLE Move Wide TPREL relocation for G2. */
 #define R_AARCH64_TLSLE_MOVW_TPREL_G1        545 /**< TLSLE Move Wide TPREL relocation for G1. */
@@ -2729,7 +2761,7 @@ enum
 #define R_AARCH64_TLSLE_LDST32_TPREL_LO12_NC 557 /**< TLSLE Load/Store 32-bit TPREL relocation, low 12 bits, no carry. */
 #define R_AARCH64_TLSLE_LDST64_TPREL_LO12    558 /**< TLSLE Load/Store 64-bit TPREL relocation, low 12 bits. */
 #define R_AARCH64_TLSLE_LDST64_TPREL_LO12_NC 559 /**< TLSLE Load/Store 64-bit TPREL relocation, low 12 bits, no carry. */
-/** @} */
+
 /** \name TLS Descriptor Relocation Types */
 #define R_AARCH64_TLSDESC_LD_PREL19         560 /**< TLSDESC Load Preload 19-bit relocation. */
 #define R_AARCH64_TLSDESC_ADR_PREL21        561 /**< TLSDESC Address Preload 21-bit relocation. */
@@ -2741,19 +2773,19 @@ enum
 #define R_AARCH64_TLSDESC_LDR               567 /**< TLSDESC Load Register relocation. */
 #define R_AARCH64_TLSDESC_ADD               568 /**< TLSDESC Add relocation. */
 #define R_AARCH64_TLSDESC_CALL              569 /**< TLSDESC Call relocation. */
-/** @} */
+
 /** \name TLS Little Endian and TLS Load Relocation Types */
 #define R_AARCH64_TLSLE_LDST128_TPREL_LO12  570 /**< TLSLE Load/Store 128-bit TPREL relocation, low 12 bits. */
 #define R_AARCH64_TLSLE_LDST128_TPREL_LO12_NC 571 /**< TLSLE Load/Store 128-bit TPREL relocation, low 12 bits, no carry. */
 #define R_AARCH64_TLSLD_LDST128_DTPREL_LO12 572 /**< TLSLD Load/Store 128-bit DTPREL relocation, low 12 bits. */
 #define R_AARCH64_TLSLD_LDST128_DTPREL_LO12_NC 573 /**< TLSLD Load/Store 128-bit DTPREL relocation, low 12 bits, no carry. */
-/** @} */
+
 /** \name General Relocation Types */
 #define R_AARCH64_COPY             1024 /**< Copy relocation. */
 #define R_AARCH64_GLOB_DAT         1025 /**< Global Data relocation. */
 #define R_AARCH64_JUMP_SLOT        1026 /**< Jump Slot relocation. */
 #define R_AARCH64_RELATIVE         1027 /**< Relative relocation. */
-/** @} */
+
 /** \name Abstract TLS Relocation Types */
 #define R_AARCH64_TLS_DTPMOD     1028 /**< Module index for dynamic TLS (generic form). */
 #define R_AARCH64_TLS_DTPMOD64   1028 /**< Module index for dynamic TLS (64-bit form). */
@@ -2762,7 +2794,7 @@ enum
 #define R_AARCH64_TLS_TPREL      1030 /**< Offset from thread pointer for static TLS (generic form). */
 #define R_AARCH64_TLS_TPREL64    1030 /**< Offset from thread pointer for static TLS (64-bit form). */
 #define R_AARCH64_TLSDESC        1031 /**< Marker relocation for TLS Descriptor used in the TLSDESC ABI. */
-/** @} */
+
 /** @} */
 
 
@@ -3611,7 +3643,8 @@ enum
 #define R_RISCV_SET16           55 /**< 16-bit set relocation */
 #define R_RISCV_SET32           56 /**< 32-bit set relocation */
 #define R_RISCV_32_PCREL        57 /**< 32-bit PC-relative relocation */
-/** @} */ // end of riscv_relocations group
+/** @} */
+
 
 #ifdef __cplusplus
 }
