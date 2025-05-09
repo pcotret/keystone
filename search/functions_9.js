@@ -1,22 +1,4 @@
 var searchData=
 [
-  ['platform_5fcreate_5fenclave_0',['platform_create_enclave',['../mpfs_2platform_8c.html#a079aafebfa02ea8e5f124709d8519617',1,'platform.c']]],
-  ['platform_5fdestroy_5fenclave_1',['platform_destroy_enclave',['../mpfs_2platform_8c.html#ad8a55b5de551b6fd77d703e8ae775695',1,'platform.c']]],
-  ['platform_5finit_5fenclave_2',['platform_init_enclave',['../mpfs_2platform_8c.html#a2e65f0078a83a169742be3733d4be45f',1,'platform.c']]],
-  ['platform_5finit_5fglobal_3',['platform_init_global',['../mpfs_2platform_8c.html#aaf2a9514b29eabee07189cf06587dedd',1,'platform.c']]],
-  ['platform_5finit_5fglobal_5fonce_4',['platform_init_global_once',['../mpfs_2platform_8c.html#a324ef36484f9b4e8b29d5377ae61caeb',1,'platform.c']]],
-  ['platform_5frandom_5',['platform_random',['../mpfs_2platform_8c.html#acecbfff590486b7cf16d46af67000bbf',1,'platform.c']]],
-  ['platform_5fswitch_5ffrom_5fenclave_6',['platform_switch_from_enclave',['../mpfs_2platform_8c.html#a4ebdf8d20fd54fc07239454de2428365',1,'platform.c']]],
-  ['platform_5fswitch_5fto_5fenclave_7',['platform_switch_to_enclave',['../mpfs_2platform_8c.html#a53411d26e8386002dda41cf97f7b23da',1,'platform.c']]],
-  ['pmp_5fdetect_5fregion_5foverlap_5fatomic_8',['pmp_detect_region_overlap_atomic',['../pmp_8h.html#af85ee2ec1393267e10e65a96c89bdd82',1,'pmp.c']]],
-  ['pmp_5finit_9',['pmp_init',['../pmp_8h.html#a73147af86a4197245e16c29bc25a079f',1,'pmp.c']]],
-  ['pmp_5fregion_5ffree_5fatomic_10',['pmp_region_free_atomic',['../pmp_8h.html#a88093214feb6bcc27606c26230e7067d',1,'pmp.c']]],
-  ['pmp_5fregion_5fget_5faddr_11',['pmp_region_get_addr',['../pmp_8h.html#abee3b8bf6d77ae67c55702976d41b8ec',1,'pmp.c']]],
-  ['pmp_5fregion_5fget_5fsize_12',['pmp_region_get_size',['../pmp_8h.html#a3d6e2b793c4a4c3f8f697a18ec5336af',1,'pmp.c']]],
-  ['pmp_5fregion_5finit_13',['pmp_region_init',['../pmp_8h.html#a66a4cb60b868fd34e7f82ef586cbe3df',1,'pmp.c']]],
-  ['pmp_5fregion_5finit_5fatomic_14',['pmp_region_init_atomic',['../pmp_8h.html#a15c5de0ade0a41ffb3d2e0229e03b906',1,'pmp.c']]],
-  ['pmp_5fset_5fglobal_15',['pmp_set_global',['../pmp_8h.html#a48efc007aab34d137eb8a5a0dbb79c90',1,'pmp.c']]],
-  ['pmp_5fset_5fkeystone_16',['pmp_set_keystone',['../pmp_8h.html#a86f16520d42a3fd2724320ecbe533f39',1,'pmp.c']]],
-  ['pmp_5funset_17',['pmp_unset',['../pmp_8h.html#a48687c2dd04e22304be638926f0accd1',1,'pmp.c']]],
-  ['pmp_5funset_5fglobal_18',['pmp_unset_global',['../pmp_8h.html#a1922677d349f262eacaee5f1da39f5b0',1,'pmp.c']]]
+  ['mock_5fassert_0',['mock_assert',['../group__cmocka__mock__assert.html#ga7f1663184edbd6120732191c4bffada2',1,'mock_assert(const int result, const char *const expression, const char *const file, const int line):&#160;cmocka.c'],['../group__cmocka__mock__assert.html#ga7f1663184edbd6120732191c4bffada2',1,'mock_assert(const int result, const char *const expression, const char *const file, const int line):&#160;cmocka.c']]]
 ];

@@ -1,0 +1,5 @@
+<map id="sha256_update" name="sha256_update">
+<area shape="rect" id="Node000001" title="Feeds data into the SHA&#45;256 hash." alt="" coords="138,5,247,31"/>
+<area shape="rect" id="Node000002" href="$test_2page__swap_8c.html#a4695e3205feaecda61d9626470c1dffa" title="Computes the SHA&#45;256 hash of a page." alt="" coords="5,5,90,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,21,90,21,90,16,122,16"/>
+</map>

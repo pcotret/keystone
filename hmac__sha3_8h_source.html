@@ -98,52 +98,59 @@ $(document).ready(function(){initNavTree('hmac__sha3_8h_source.html',''); initRe
   <div class="headertitle"><div class="title">hmac_sha3.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *  Copyright (C) 2020 Fraunhofer AISEC</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *  Authors: Benedikt Kopf &lt;benedikt.kopf@aisec.fraunhofer.de&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *           Lukas Auer &lt;lukas.auer@aisec.fraunhofer.de&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *           Mathias Morbitzer &lt;mathias.morbitzer@aisec.fraunhofer.de&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *  hmac_sha3.h</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *  All Rights Reserved. See LICENSE for license details.</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef HMAC_SHA3_H</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define HMAC_SHA3_H</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;../sha3/sha3.h&quot;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// Internal block length of sha3_512 in bytes</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define SHA3_512_BLOCK_LEN 72</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// Output hash length of sha3_512 in bytes</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define SHA3_512_HASH_LEN 64</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structhmac__sha3__ctx__t.html">   22</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_struct" href="structsha3__ctx__t.html">sha3_ctx_t</a> sha3_ctx;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> key[SHA3_512_BLOCK_LEN];</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>} <a class="code hl_struct" href="structhmac__sha3__ctx__t.html">hmac_sha3_ctx_t</a>;</div>
+<a href="hmac__sha3_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *  Copyright (C) 2020 Fraunhofer AISEC</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *  Authors: Benedikt Kopf &lt;benedikt.kopf@aisec.fraunhofer.de&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *           Lukas Auer &lt;lukas.auer@aisec.fraunhofer.de&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *           Mathias Morbitzer &lt;mathias.morbitzer@aisec.fraunhofer.de&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *  hmac_sha3.h</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *  All Rights Reserved. See LICENSE for license details.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#ifndef HMAC_SHA3_H</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#define HMAC_SHA3_H</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;../sha3/sha3.h&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// Internal block length of sha3_512 in bytes</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#define SHA3_512_BLOCK_LEN 72</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// Output hash length of sha3_512 in bytes</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#define SHA3_512_HASH_LEN 64</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structhmac__sha3__ctx__t.html">   37</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structhmac__sha3__ctx__t.html#a28b537b907cf7509e6bfca32be3ff37a">   38</a></span>    <a class="code hl_struct" href="structsha3__ctx__t.html">sha3_ctx_t</a> <a class="code hl_variable" href="structhmac__sha3__ctx__t.html#a28b537b907cf7509e6bfca32be3ff37a">sha3_ctx</a>;                </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structhmac__sha3__ctx__t.html#a65d8c063028d2e82d7c11246589c49bf">   39</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> key[SHA3_512_BLOCK_LEN]; </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>} <a class="code hl_struct" href="structhmac__sha3__ctx__t.html">hmac_sha3_ctx_t</a>;</div>
 </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keywordtype">void</span> hmac_sha3(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *key, <span class="keywordtype">int</span> key_len,</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>               <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *text, <span class="keywordtype">int</span> text_len, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *hash);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">void</span> hmac_sha3_init(<a class="code hl_struct" href="structhmac__sha3__ctx__t.html">hmac_sha3_ctx_t</a> *<a class="code hl_struct" href="structctx.html">ctx</a>,</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *key, <span class="keywordtype">int</span> key_len);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keywordtype">void</span> hmac_sha3_update(<a class="code hl_struct" href="structhmac__sha3__ctx__t.html">hmac_sha3_ctx_t</a> *<a class="code hl_struct" href="structctx.html">ctx</a>,</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                      <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *text, <span class="keywordtype">int</span> text_len);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keywordtype">void</span> hmac_sha3_final(<a class="code hl_struct" href="structhmac__sha3__ctx__t.html">hmac_sha3_ctx_t</a> *<a class="code hl_struct" href="structctx.html">ctx</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *hash);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif </span><span class="comment">/* HMAC_SHA3_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keywordtype">void</span> <a class="code hl_function" href="hmac__sha3_8h.html#ab071e260723bbe2b846b955efdc6534a">hmac_sha3</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *key, <span class="keywordtype">int</span> key_len,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>               <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *text, <span class="keywordtype">int</span> text_len, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *hash);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keywordtype">void</span> <a class="code hl_function" href="hmac__sha3_8h.html#a1bee13056bb4c4a39cb3f31e8ccafae2">hmac_sha3_init</a>(<a class="code hl_struct" href="structhmac__sha3__ctx__t.html">hmac_sha3_ctx_t</a> *<a class="code hl_struct" href="structctx.html">ctx</a>,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *key, <span class="keywordtype">int</span> key_len);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keywordtype">void</span> <a class="code hl_function" href="hmac__sha3_8h.html#a751a601c39d87ea36840f3db5a4c32d4">hmac_sha3_update</a>(<a class="code hl_struct" href="structhmac__sha3__ctx__t.html">hmac_sha3_ctx_t</a> *<a class="code hl_struct" href="structctx.html">ctx</a>,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                      <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *text, <span class="keywordtype">int</span> text_len);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keywordtype">void</span> <a class="code hl_function" href="hmac__sha3_8h.html#a9fdcf5562950d675ebd55c301abdf42e">hmac_sha3_final</a>(<a class="code hl_struct" href="structhmac__sha3__ctx__t.html">hmac_sha3_ctx_t</a> *<a class="code hl_struct" href="structctx.html">ctx</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *hash);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif </span><span class="comment">/* HMAC_SHA3_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="ahmac__sha3_8h_html_a1bee13056bb4c4a39cb3f31e8ccafae2"><div class="ttname"><a href="hmac__sha3_8h.html#a1bee13056bb4c4a39cb3f31e8ccafae2">hmac_sha3_init</a></div><div class="ttdeci">void hmac_sha3_init(hmac_sha3_ctx_t *ctx, const unsigned char *key, int key_len)</div><div class="ttdoc">Initializes the HMAC-SHA3 context.</div><div class="ttdef"><b>Definition</b> hmac_sha3.c:91</div></div>
+<div class="ttc" id="ahmac__sha3_8h_html_a751a601c39d87ea36840f3db5a4c32d4"><div class="ttname"><a href="hmac__sha3_8h.html#a751a601c39d87ea36840f3db5a4c32d4">hmac_sha3_update</a></div><div class="ttdeci">void hmac_sha3_update(hmac_sha3_ctx_t *ctx, const unsigned char *text, int text_len)</div><div class="ttdoc">Updates the HMAC-SHA3 context with more data.</div><div class="ttdef"><b>Definition</b> hmac_sha3.c:118</div></div>
+<div class="ttc" id="ahmac__sha3_8h_html_a9fdcf5562950d675ebd55c301abdf42e"><div class="ttname"><a href="hmac__sha3_8h.html#a9fdcf5562950d675ebd55c301abdf42e">hmac_sha3_final</a></div><div class="ttdeci">void hmac_sha3_final(hmac_sha3_ctx_t *ctx, unsigned char *hash)</div><div class="ttdoc">Finalizes the HMAC-SHA3 computation and produces the hash.</div><div class="ttdef"><b>Definition</b> hmac_sha3.c:137</div></div>
+<div class="ttc" id="ahmac__sha3_8h_html_ab071e260723bbe2b846b955efdc6534a"><div class="ttname"><a href="hmac__sha3_8h.html#ab071e260723bbe2b846b955efdc6534a">hmac_sha3</a></div><div class="ttdeci">void hmac_sha3(const unsigned char *key, int key_len, const unsigned char *text, int text_len, unsigned char *hash)</div><div class="ttdoc">Computes the HMAC-SHA3 hash of a message.</div><div class="ttdef"><b>Definition</b> hmac_sha3.c:70</div></div>
 <div class="ttc" id="astructctx_html"><div class="ttname"><a href="structctx.html">ctx</a></div><div class="ttdoc">Thread context.</div><div class="ttdef"><b>Definition</b> thread.h:22</div></div>
-<div class="ttc" id="astructhmac__sha3__ctx__t_html"><div class="ttname"><a href="structhmac__sha3__ctx__t.html">hmac_sha3_ctx_t</a></div><div class="ttdef"><b>Definition</b> hmac_sha3.h:22</div></div>
+<div class="ttc" id="astructhmac__sha3__ctx__t_html"><div class="ttname"><a href="structhmac__sha3__ctx__t.html">hmac_sha3_ctx_t</a></div><div class="ttdoc">Context structure for HMAC-SHA3.</div><div class="ttdef"><b>Definition</b> hmac_sha3.h:37</div></div>
+<div class="ttc" id="astructhmac__sha3__ctx__t_html_a28b537b907cf7509e6bfca32be3ff37a"><div class="ttname"><a href="structhmac__sha3__ctx__t.html#a28b537b907cf7509e6bfca32be3ff37a">hmac_sha3_ctx_t::sha3_ctx</a></div><div class="ttdeci">sha3_ctx_t sha3_ctx</div><div class="ttdef"><b>Definition</b> hmac_sha3.h:38</div></div>
 <div class="ttc" id="astructsha3__ctx__t_html"><div class="ttname"><a href="structsha3__ctx__t.html">sha3_ctx_t</a></div><div class="ttdoc">SHA-3 hashing context structure.</div><div class="ttdef"><b>Definition</b> sha3.h:40</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_bc0f242c85b520934b5dba85c72d6af4.html">sm</a></li><li class="navelem"><a class="el" href="dir_cfc62cafa00a1d6cf885ee8883644d45.html">src</a></li><li class="navelem"><a class="el" href="dir_dd276d3941e26838f252b1f6a13962e0.html">hmac_sha3</a></li><li class="navelem"><b>hmac_sha3.h</b></li>
+    <li class="navelem"><a class="el" href="dir_bc0f242c85b520934b5dba85c72d6af4.html">sm</a></li><li class="navelem"><a class="el" href="dir_cfc62cafa00a1d6cf885ee8883644d45.html">src</a></li><li class="navelem"><a class="el" href="dir_dd276d3941e26838f252b1f6a13962e0.html">hmac_sha3</a></li><li class="navelem"><a class="el" href="hmac__sha3_8h.html">hmac_sha3.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

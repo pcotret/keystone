@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="SHA&#45;3 (Keccak) cryptographic hash function interface." alt="" coords="325,5,460,31"/>
 <area shape="rect" id="Node000002" href="$crypto_8h_source.html" title=" " alt="" coords="256,87,366,112"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="371,44,325,88,321,84,367,40"/>
-<area shape="rect" id="Node000010" href="$hmac__sha3_8h_source.html" title=" " alt="" coords="391,79,559,120"/>
+<area shape="rect" id="Node000010" href="$hmac__sha3_8h.html" title="Header file for HMAC&#45;SHA3 implementation." alt="" coords="391,79,559,120"/>
 <area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="417,40,456,77,453,81,414,44"/>
 <area shape="rect" id="Node000003" href="$enclave_8h.html" title="Enclave management interface and metadata structures for the Keystone security monitor." alt="" coords="251,168,371,193"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="314,128,314,167,308,167,308,128"/>

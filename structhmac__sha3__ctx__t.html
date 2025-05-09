@@ -96,12 +96,17 @@ $(document).ready(function(){initNavTree('structhmac__sha3__ctx__t.html',''); in
   <div class="headertitle"><div class="title">hmac_sha3_ctx_t Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Context structure for HMAC-SHA3.  
+ <a href="structhmac__sha3__ctx__t.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="hmac__sha3_8h_source.html">hmac_sha3.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for hmac_sha3_ctx_t:</div>
 <div class="dyncontent">
 <div class="center"><img src="structhmac__sha3__ctx__t__coll__graph.png" border="0" usemap="#ahmac__sha3__ctx__t_coll__map" alt="Collaboration graph"/></div>
 <map name="ahmac__sha3__ctx__t_coll__map" id="ahmac__sha3__ctx__t_coll__map">
-<area shape="rect" title=" " alt="" coords="5,94,129,120"/>
+<area shape="rect" title="Context structure for HMAC&#45;SHA3." alt="" coords="5,94,129,120"/>
 <area shape="rect" href="structsha3__ctx__t.html" title="SHA&#45;3 hashing context structure." alt="" coords="25,5,109,31"/>
 <area shape="poly" title=" " alt="" coords="70,47,70,94,64,94,64,47"/>
 </map>
@@ -109,13 +114,45 @@ Collaboration diagram for hmac_sha3_ctx_t:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a28b537b907cf7509e6bfca32be3ff37a" id="r_a28b537b907cf7509e6bfca32be3ff37a"><td class="memItemLeft" align="right" valign="top"><a id="a28b537b907cf7509e6bfca32be3ff37a" name="a28b537b907cf7509e6bfca32be3ff37a"></a>
-<a class="el" href="structsha3__ctx__t.html">sha3_ctx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sha3_ctx</b></td></tr>
+<tr class="memitem:a28b537b907cf7509e6bfca32be3ff37a" id="r_a28b537b907cf7509e6bfca32be3ff37a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsha3__ctx__t.html">sha3_ctx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhmac__sha3__ctx__t.html#a28b537b907cf7509e6bfca32be3ff37a">sha3_ctx</a></td></tr>
 <tr class="separator:a28b537b907cf7509e6bfca32be3ff37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65d8c063028d2e82d7c11246589c49bf" id="r_a65d8c063028d2e82d7c11246589c49bf"><td class="memItemLeft" align="right" valign="top"><a id="a65d8c063028d2e82d7c11246589c49bf" name="a65d8c063028d2e82d7c11246589c49bf"></a>
-unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>key</b> [SHA3_512_BLOCK_LEN]</td></tr>
+<tr class="memitem:a65d8c063028d2e82d7c11246589c49bf" id="r_a65d8c063028d2e82d7c11246589c49bf"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhmac__sha3__ctx__t.html#a65d8c063028d2e82d7c11246589c49bf">key</a> [SHA3_512_BLOCK_LEN]</td></tr>
 <tr class="separator:a65d8c063028d2e82d7c11246589c49bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Context structure for HMAC-SHA3. </p>
+<p>This structure holds the SHA3 context and the key used in the HMAC operation. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a65d8c063028d2e82d7c11246589c49bf" name="a65d8c063028d2e82d7c11246589c49bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65d8c063028d2e82d7c11246589c49bf">&#9670;&#160;</a></span>key</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char hmac_sha3_ctx_t::key[SHA3_512_BLOCK_LEN]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The secret key used in HMAC, padded to the block length of SHA3-512. </p>
+
+</div>
+</div>
+<a id="a28b537b907cf7509e6bfca32be3ff37a" name="a28b537b907cf7509e6bfca32be3ff37a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28b537b907cf7509e6bfca32be3ff37a">&#9670;&#160;</a></span>sha3_ctx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsha3__ctx__t.html">sha3_ctx_t</a> hmac_sha3_ctx_t::sha3_ctx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SHA3 context for the HMAC operation. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>sm/src/hmac_sha3/<a class="el" href="hmac__sha3_8h_source.html">hmac_sha3.h</a></li>
 </ul>

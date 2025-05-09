@@ -98,30 +98,36 @@ $(document).ready(function(){initNavTree('keystone-sbi_8h_source.html',''); init
   <div class="headertitle"><div class="title">keystone-sbi.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//******************************************************************************</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Copyright (c) 2018, The Regents of the University of California (Regents).</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// All Rights Reserved. See LICENSE for license details.</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef _KEYSTONE_SBI_</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define _KEYSTONE_SBI_</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;keystone_user.h&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;sm_call.h&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;asm/sbi.h&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">struct </span>sbiret sbi_sm_create_enclave(struct keystone_sbi_create_t* args);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">struct </span>sbiret sbi_sm_destroy_enclave(unsigned long eid);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">struct </span>sbiret sbi_sm_run_enclave(unsigned long eid);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">struct </span>sbiret sbi_sm_resume_enclave(unsigned long eid);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
+<a href="keystone-sbi_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//******************************************************************************</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// Copyright (c) 2018, The Regents of the University of California (Regents).</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// All Rights Reserved. See LICENSE for license details.</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef _KEYSTONE_SBI_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define _KEYSTONE_SBI_</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;keystone_user.h&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;sm_call.h&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;asm/sbi.h&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">struct </span>sbiret <a class="code hl_function" href="keystone-sbi_8h.html#a3a6095a8815ceb92d5b40a9fa7737a61">sbi_sm_create_enclave</a>(struct keystone_sbi_create_t* args);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">struct </span>sbiret <a class="code hl_function" href="keystone-sbi_8h.html#ab43a71e8188b8cfeb8bca7d92c37960f">sbi_sm_destroy_enclave</a>(unsigned long eid);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">struct </span>sbiret <a class="code hl_function" href="keystone-sbi_8h.html#ab634feb2ac32a5503cf085a773dd72d8">sbi_sm_run_enclave</a>(unsigned long eid);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">struct </span>sbiret <a class="code hl_function" href="keystone-sbi_8h.html#a77c0ada980d51356a853ff4e74ae3e76">sbi_sm_resume_enclave</a>(unsigned long eid);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="akeystone-sbi_8h_html_a3a6095a8815ceb92d5b40a9fa7737a61"><div class="ttname"><a href="keystone-sbi_8h.html#a3a6095a8815ceb92d5b40a9fa7737a61">sbi_sm_create_enclave</a></div><div class="ttdeci">struct sbiret sbi_sm_create_enclave(struct keystone_sbi_create_t *args)</div><div class="ttdoc">Creates a new enclave via the SBI.</div><div class="ttdef"><b>Definition</b> keystone-sbi.c:3</div></div>
+<div class="ttc" id="akeystone-sbi_8h_html_a77c0ada980d51356a853ff4e74ae3e76"><div class="ttname"><a href="keystone-sbi_8h.html#a77c0ada980d51356a853ff4e74ae3e76">sbi_sm_resume_enclave</a></div><div class="ttdeci">struct sbiret sbi_sm_resume_enclave(unsigned long eid)</div><div class="ttdoc">Resumes the specified enclave.</div><div class="ttdef"><b>Definition</b> keystone-sbi.c:21</div></div>
+<div class="ttc" id="akeystone-sbi_8h_html_ab43a71e8188b8cfeb8bca7d92c37960f"><div class="ttname"><a href="keystone-sbi_8h.html#ab43a71e8188b8cfeb8bca7d92c37960f">sbi_sm_destroy_enclave</a></div><div class="ttdeci">struct sbiret sbi_sm_destroy_enclave(unsigned long eid)</div><div class="ttdoc">Destroys an existing enclave.</div><div class="ttdef"><b>Definition</b> sm-sbi.c:29</div></div>
+<div class="ttc" id="akeystone-sbi_8h_html_ab634feb2ac32a5503cf085a773dd72d8"><div class="ttname"><a href="keystone-sbi_8h.html#ab634feb2ac32a5503cf085a773dd72d8">sbi_sm_run_enclave</a></div><div class="ttdeci">struct sbiret sbi_sm_run_enclave(unsigned long eid)</div><div class="ttdoc">Runs the specified enclave.</div><div class="ttdef"><b>Definition</b> keystone-sbi.c:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c64071691636c253a6796215b920e45d.html">linux-keystone-driver</a></li><li class="navelem"><b>keystone-sbi.h</b></li>
+    <li class="navelem"><a class="el" href="dir_c64071691636c253a6796215b920e45d.html">linux-keystone-driver</a></li><li class="navelem"><a class="el" href="keystone-sbi_8h.html">keystone-sbi.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

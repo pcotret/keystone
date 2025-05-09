@@ -1,4 +1,25 @@
 var searchData=
 [
-  ['handle_5fpmp_5fipi_0',['handle_pmp_ipi',['../pmp_8h.html#ae8eae9cce3448dfb565ee9294ea9dcd3',1,'pmp.h']]]
+  ['ge_5fadd_0',['ge_add',['../ge_8h.html#aaba8d818f7db2e386f861fb60c24d19b',1,'ge.c']]],
+  ['ge_5fdouble_5fscalarmult_5fvartime_1',['ge_double_scalarmult_vartime',['../ge_8h.html#a14ba669f9e602426347a94f9ca9b5ef3',1,'ge.c']]],
+  ['ge_5ffrombytes_5fnegate_5fvartime_2',['ge_frombytes_negate_vartime',['../ge_8h.html#addcb2229f496c968355be9236ed36583',1,'ge.c']]],
+  ['ge_5fmadd_3',['ge_madd',['../ge_8h.html#ae3db09efba99fea5053dff0016c1fa60',1,'ge.c']]],
+  ['ge_5fmsub_4',['ge_msub',['../ge_8h.html#a06d711ada5eb4044ccb4108c556f8c26',1,'ge.c']]],
+  ['ge_5fp1p1_5fto_5fp2_5',['ge_p1p1_to_p2',['../ge_8h.html#afc5dc49b05b1a9b322883c77fbed0025',1,'ge.c']]],
+  ['ge_5fp1p1_5fto_5fp3_6',['ge_p1p1_to_p3',['../ge_8h.html#ac055144cb911fa47a7d16483ef0268e7',1,'ge.c']]],
+  ['ge_5fp2_5f0_7',['ge_p2_0',['../ge_8h.html#af014cc5472880ecf52dc11e1cf6e4530',1,'ge.c']]],
+  ['ge_5fp2_5fdbl_8',['ge_p2_dbl',['../ge_8h.html#a8392909e095250a64482b8240356cc54',1,'ge.c']]],
+  ['ge_5fp3_5f0_9',['ge_p3_0',['../ge_8h.html#ae9f2545f521914566a616a0988bf2d1f',1,'ge.c']]],
+  ['ge_5fp3_5fdbl_10',['ge_p3_dbl',['../ge_8h.html#ab9ee0ae7c5bca369c7d3f07f39a74d5d',1,'ge.c']]],
+  ['ge_5fp3_5fto_5fcached_11',['ge_p3_to_cached',['../ge_8h.html#ace1cf61d6a5de20fbb9f8ac8c3b16208',1,'ge.c']]],
+  ['ge_5fp3_5fto_5fp2_12',['ge_p3_to_p2',['../ge_8h.html#a0cc0c7b469a143d20417095b7aab4387',1,'ge.c']]],
+  ['ge_5fp3_5ftobytes_13',['ge_p3_tobytes',['../ge_8h.html#ad264c19be2436bc07fc88722a5abc61d',1,'ge.c']]],
+  ['ge_5fscalarmult_5fbase_14',['ge_scalarmult_base',['../ge_8h.html#ac4d168c0712af761f170649c8240fded',1,'ge.c']]],
+  ['ge_5fsub_15',['ge_sub',['../ge_8h.html#a1e2fae4da93f4643fa8442b4e83b2c7d',1,'ge.c']]],
+  ['ge_5ftobytes_16',['ge_tobytes',['../ge_8h.html#ab9bfa906772fc7ae6b568212404c8e86',1,'ge.c']]],
+  ['get_5fenclave_5fby_5fid_17',['get_enclave_by_id',['../keystone_8h.html#a362a27baf57b040f6907b583e77ffc9b',1,'keystone-enclave.c']]],
+  ['get_5fenclave_5fregion_5fbase_18',['get_enclave_region_base',['../enclave_8h.html#a994f303b6a3235021b899b58796197df',1,'enclave.c']]],
+  ['get_5fenclave_5fregion_5findex_19',['get_enclave_region_index',['../enclave_8h.html#ad55361b293626106b01e1253d2a264f8',1,'enclave.c']]],
+  ['get_5fenclave_5fregion_5fsize_20',['get_enclave_region_size',['../enclave_8h.html#a3de5d7fbd2182fe2a1fefaada22470f4',1,'enclave.c']]],
+  ['get_5fsealing_5fkey_21',['get_sealing_key',['../enclave_8h.html#ab327377ec7b88af17850f0a902577d10',1,'enclave.c']]]
 ];

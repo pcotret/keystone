@@ -1,5 +1,5 @@
 <map id="hmac_sha3_ctx_t" name="hmac_sha3_ctx_t">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,94,129,120"/>
+<area shape="rect" id="Node000001" title="Context structure for HMAC&#45;SHA3." alt="" coords="5,94,129,120"/>
 <area shape="rect" id="Node000002" href="$structsha3__ctx__t.html" title="SHA&#45;3 hashing context structure." alt="" coords="25,5,109,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,47,70,94,64,94,64,47"/>
 </map>

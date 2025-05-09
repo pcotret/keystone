@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"group__M32R__Relocation__Types.html#gadcd1fb20385982baa4a65274908db4e3":[1,0,10,6],
 "group__M32R__Relocation__Types.html#gae26995074d26cfdc15538bac2e2d974e":[1,0,10,29],
 "group__M32R__Relocation__Types.html#gae69a40ec0efee33e1c11cd64fc0d1e32":[1,0,10,15],
 "group__M32R__Relocation__Types.html#gaf85c243e207be0f103d59c75846fd7bc":[1,0,10,30],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "group__R__AARCH64.html#ga49edc7e0ce7c39e714bde1b6332df4a4":[1,0,177],
 "group__R__AARCH64.html#ga4a0feb8162591596d3653f561ee8759e":[1,0,241],
 "group__R__AARCH64.html#ga4b1119df05b7672effd0afb09b258f85":[1,0,251],
-"group__R__AARCH64.html#ga4c83e76a256ad7fe7058df7ee9493c5c":[1,0,366],
-"group__R__AARCH64.html#ga4d25edb0432aa63eda00cb607ae389eb":[1,0,234]
+"group__R__AARCH64.html#ga4c83e76a256ad7fe7058df7ee9493c5c":[1,0,366]
 };
