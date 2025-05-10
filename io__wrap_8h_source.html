@@ -108,8 +108,8 @@ $(document).ready(function(){initNavTree('io__wrap_8h_source.html',''); initResi
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>uintptr_t io_syscall_read(<span class="keywordtype">int</span> fd, <span class="keywordtype">void</span>* buf, <span class="keywordtype">size_t</span> len);</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>uintptr_t io_syscall_write(<span class="keywordtype">int</span> fd, <span class="keywordtype">void</span>* buf, <span class="keywordtype">size_t</span> len);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>uintptr_t io_syscall_writev(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="structiovec.html">iovec</a> *iov, <span class="keywordtype">int</span> iovcnt);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>uintptr_t io_syscall_readv(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="structiovec.html">iovec</a> *iov, <span class="keywordtype">int</span> iovcnt);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>uintptr_t io_syscall_writev(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keyword">struct</span> iovec *iov, <span class="keywordtype">int</span> iovcnt);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>uintptr_t io_syscall_readv(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keyword">struct</span> iovec *iov, <span class="keywordtype">int</span> iovcnt);</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>uintptr_t io_syscall_openat(<span class="keywordtype">int</span> dirfd, <span class="keywordtype">char</span>* path,</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                            <span class="keywordtype">int</span> flags, mode_t mode);</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>uintptr_t io_syscall_fstatat(<span class="keywordtype">int</span> dirfd, <span class="keywordtype">char</span> *pathname, <span class="keyword">struct</span> stat *statbuf,</div>
@@ -133,7 +133,6 @@ $(document).ready(function(){initNavTree('io__wrap_8h_source.html',''); initResi
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>uintptr_t io_syscall_umask(<span class="keywordtype">int</span> mask);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#endif </span><span class="comment">/* _IO_WRAP_H_ */</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif </span><span class="comment">/* USE_IO_SYSCALL */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="astructiovec_html"><div class="ttname"><a href="structiovec.html">iovec</a></div><div class="ttdef"><b>Definition</b> uio.h:5</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
