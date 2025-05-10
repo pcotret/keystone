@@ -1,5 +1,5 @@
 <map id="platform_create_enclave" name="platform_create_enclave">
-<area shape="rect" id="Node000001" title="Creates an enclave on the platform." alt="" coords="5,29,169,55"/>
+<area shape="rect" id="Node000001" title="Hook called when an enclave is created." alt="" coords="5,29,169,55"/>
 <area shape="rect" id="Node000002" href="$fu540__internal_8c.html#a079aafebfa02ea8e5f124709d8519617" title="Hook called when an enclave is created." alt="" coords="217,29,380,55"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,40,201,40,201,45,169,45"/>
 <area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="263,31,256,21,260,11,275,5,298,3,324,5,337,12,335,17,323,10,298,8,276,10,264,15,261,20,267,27"/>

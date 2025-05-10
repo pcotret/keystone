@@ -216,16 +216,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Implementation-defined result.</dd></dl>
-<p>Hook called when an enclave is created.</p>
-<p>This function creates a new enclave on the platform, initializing the necessary platform state and resources.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">enclave</td><td>Pointer to the enclave structure to create. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>SBI_ERR_SM_ENCLAVE_SUCCESS if successful, error code otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Implementation-defined result. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -268,15 +259,7 @@ Here is the caller graph for this function:</div>
 <p>Hook called when an enclave is destroyed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">enclave</td><td>Pointer to the destroyed enclave.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Hook called when an enclave is destroyed.</p>
-<p>This function cleans up platform-specific state associated with the provided enclave.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">enclave</td><td>Pointer to the enclave structure to destroy. </td></tr>
+    <tr><td class="paramname">enclave</td><td>Pointer to the destroyed enclave. </td></tr>
   </table>
   </dd>
 </dl>
@@ -324,15 +307,7 @@ Here is the caller graph for this function:</div>
 <p>Initialize metadata for a single enclave. Called once per enclave. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">enclave</td><td>Pointer to the enclave being initialized.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Initialize metadata for a single enclave. Called once per enclave.</p>
-<p>This function prepares the platform to create and manage an enclave, but does not create the enclave itself.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">enclave</td><td>Pointer to the enclave structure to initialize. </td></tr>
+    <tr><td class="paramname">enclave</td><td>Pointer to the enclave being initialized. </td></tr>
   </table>
   </dd>
 </dl>
@@ -376,10 +351,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Perform per-hart platform initialization. Called once per hart. </p>
-<dl class="section return"><dt>Returns</dt><dd>Implementation-defined status or capability flags.</dd></dl>
-<p>Perform per-hart platform initialization. Called once per hart.</p>
-<p>This function initializes global platform-specific state.</p>
-<dl class="section return"><dt>Returns</dt><dd>SBI_ERR_SM_ENCLAVE_SUCCESS if successful, error code otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Implementation-defined status or capability flags. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -420,10 +392,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Perform global one-time platform initialization. Runs before any other hook. </p>
-<dl class="section return"><dt>Returns</dt><dd>Implementation-defined status or capability flags.</dd></dl>
-<p>Perform global one-time platform initialization. Runs before any other hook.</p>
-<p>This function initializes platform-specific state that is required to run the system. It should be called once during system boot.</p>
-<dl class="section return"><dt>Returns</dt><dd>SBI_ERR_SM_ENCLAVE_SUCCESS if successful, error code otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Implementation-defined status or capability flags. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -510,15 +479,7 @@ Here is the caller graph for this function:</div>
 <p>Hook called when switching out of an enclave to the OS. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">enclave</td><td>Pointer to the enclave being exited.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Hook called when switching out of an enclave to the OS.</p>
-<p>This function transitions the platform's execution context from the provided enclave back to the normal execution context.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">enclave</td><td>Pointer to the enclave structure to switch from. </td></tr>
+    <tr><td class="paramname">enclave</td><td>Pointer to the enclave being exited. </td></tr>
   </table>
   </dd>
 </dl>
@@ -562,15 +523,7 @@ Here is the caller graph for this function:</div>
 <p>Hook called when switching into an enclave from the OS. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">enclave</td><td>Pointer to the enclave being entered.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Hook called when switching into an enclave from the OS.</p>
-<p>This function transitions the platform's execution context to the provided enclave. It may perform necessary platform-specific setup for the enclave.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">enclave</td><td>Pointer to the enclave structure to switch to. </td></tr>
+    <tr><td class="paramname">enclave</td><td>Pointer to the enclave being entered. </td></tr>
   </table>
   </dd>
 </dl>

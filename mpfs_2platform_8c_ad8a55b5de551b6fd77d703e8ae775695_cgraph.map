@@ -1,5 +1,5 @@
 <map id="platform_destroy_enclave" name="platform_destroy_enclave">
-<area shape="rect" id="Node000001" title="Destroys the enclave on the platform." alt="" coords="5,29,175,55"/>
+<area shape="rect" id="Node000001" title="Hook called when an enclave is destroyed." alt="" coords="5,29,175,55"/>
 <area shape="rect" id="Node000002" href="$fu540__internal_8c.html#ad8a55b5de551b6fd77d703e8ae775695" title="Hook called when an enclave is destroyed." alt="" coords="223,29,392,55"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,40,207,40,207,45,175,45"/>
 <area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="271,31,264,21,268,11,283,5,307,3,334,5,348,12,345,17,332,10,307,8,284,10,272,15,269,20,275,27"/>
