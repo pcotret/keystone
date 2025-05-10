@@ -1,3 +1,7 @@
+/**
+ * @file merkle.c
+ * @brief Mock environment for Merkle tree tests and related paging utilities.
+ */
 #define _GNU_SOURCE
 
 #include "crypto/merkle.h"
@@ -11,14 +15,33 @@
 #include "../crypto/merkle.c"
 #include "mock.h"
 
+/**
+ * @def MAX
+ * @brief Returns the maximum of two values.
+ */
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
+
+/**
+ * @def MIN
+ * @brief Returns the minimum of two values.
+ */
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
 
+/**
+ * @brief Exits the enclave with the given code (mock implementation).
+ *
+ * @param code Exit code.
+ */
 void
 sbi_exit_enclave(uintptr_t code) {
   exit(code);
 }
 
+/**
+ * @brief Allocates a 4 KiB backing page using mmap.
+ *
+ * @return A pointer (as uintptr_t) to the newly allocated memory region.
+ */
 uintptr_t
 paging_alloc_backing_page() {
   void* out = mmap(
@@ -27,9 +50,26 @@ paging_alloc_backing_page() {
   return (uintptr_t)out;
 }
 
+
+/**
+ * @def RAND_REGION_ENTRIES
+ * @brief Number of random entries in the random region.
+ */
+
 #define RAND_REGION_ENTRIES 1000
+/**
+ * @def RAND_ENTRY_SIZE
+ * @brief Size (in bytes) of each entry in the random region.
+ */
 #define RAND_ENTRY_SIZE 64
 
+/**
+ * @brief Get a pointer to a lazily initialized random region buffer.
+ *
+ * Allocates and fills a static buffer with random bytes the first time it's called.
+ *
+ * @return Pointer to the random region buffer.
+ */
 const uint8_t*
 random_region() {
   static uint8_t* random_region_buf = NULL;
@@ -42,6 +82,14 @@ random_region() {
   return random_region_buf;
 }
 
+/**
+ * @brief Generate a randomly shuffled index array of values from 0 to max-1.
+ *
+ * Uses the Fisher-Yates shuffle algorithm.
+ *
+ * @param max Number of indices.
+ * @return Pointer to an array of shuffled indices (must be freed by the caller).
+ */
 size_t*
 shuffled_idxs(size_t max) {
   size_t* shuffled_idxs = (size_t*)malloc(sizeof(size_t) * max);
@@ -56,6 +104,11 @@ shuffled_idxs(size_t max) {
   return shuffled_idxs;
 }
 
+/// Inserts randomly shuffled entries from a random region into a Merkle tree.
+/**
+ * @param root Pointer to the Merkle tree root node.
+ * @return The modified Merkle tree root after insertions.
+ */
 static merkle_node_t
 random_region_insert(merkle_node_t* root) {
   const uint8_t* region = random_region();
@@ -78,6 +131,10 @@ random_region_insert(merkle_node_t* root) {
   free(idxs);
 }
 
+/// Creates and populates a Merkle tree using the random region.
+/**
+ * @return The root of the populated Merkle tree.
+ */
 static merkle_node_t
 random_region_tree() {
   merkle_node_t root = {};
@@ -85,6 +142,12 @@ random_region_tree() {
   return root;
 }
 
+
+/// Verifies all entries in the random region against the provided Merkle tree.
+/**
+ * @param tree Pointer to the Merkle tree root.
+ * @return Number of verification failures encountered.
+ */
 static size_t
 count_verify_fails(merkle_node_t* tree) {
   size_t total_verify_fails = 0;
@@ -105,12 +168,22 @@ count_verify_fails(merkle_node_t* tree) {
   return total_verify_fails;
 }
 
+/**
+ * @struct merk_stats_s
+ * @brief Holds statistics about the Merkle tree structure.
+ */
 struct merk_stats_s {
-  size_t max_depth, min_depth;
-  size_t elems, leaves;
-  double avg_depth;
+  size_t max_depth;  /**< Maximum depth of the tree. */
+  size_t min_depth;  /**< Minimum depth of the tree. */
+  size_t elems;      /**< Total number of elements in the tree. */
+  size_t leaves;     /**< Number of leaf nodes in the tree. */
+  double avg_depth;  /**< Average depth of elements in the tree. */
 };
 
+/**
+ * @param root Pointer to the root node of the Merkle tree.
+ * @return A structure containing statistics like depth and node counts.
+ */
 struct merk_stats_s
 merk_stats(const merkle_node_t* root) {
   const merkle_node_t *left = root->left, *right = root->right;
@@ -156,6 +229,12 @@ merk_stats(const merkle_node_t* root) {
   return out;
 }
 
+/**
+ * @brief Test verifying a non-existent entry in an empty Merkle tree.
+ *
+ * This test checks that a Merkle verification fails when no elements
+ * have been inserted into the tree.
+ */
 static void
 test_verify_nonexistant() {
   merkle_node_t root = {};
@@ -163,6 +242,11 @@ test_verify_nonexistant() {
   assert_false(merk_verify(&root, 1, zeros));
 }
 
+/**
+ * @brief Test inserting a single entry and verifying it.
+ *
+ * This test inserts a hash at key 1 and verifies that it can be retrieved.
+ */
 static void
 test_insert_and_verify_1() {
   merkle_node_t root       = {};
@@ -173,6 +257,11 @@ test_insert_and_verify_1() {
   assert_true(merk_verify(&root, 1, rand_hash));
 }
 
+/**
+ * @brief Test inserting two entries and verifying both.
+ *
+ * Verifies that multiple distinct keys can be correctly inserted and validated.
+ */
 static void
 test_insert_and_verify_2() {
   merkle_node_t root         = {};
@@ -187,6 +276,12 @@ test_insert_and_verify_2() {
   assert_true(merk_verify(&root, 2, rand_hash_2));
 }
 
+/**
+ * @brief Test inserting and re-inserting many entries with no verification failures.
+ *
+ * This test verifies that re-inserting the same elements doesn't break integrity,
+ * and Merkle tree statistics remain consistent.
+ */
 static void
 test_insert_and_verify_many() {
   merkle_node_t root = random_region_tree();
@@ -200,6 +295,11 @@ test_insert_and_verify_many() {
   assert_memory_equal(&stats_0, &stats_1, sizeof(struct merk_stats_s));
 }
 
+/**
+ * @brief Test statistical properties of a tree filled with random inserts.
+ *
+ * This checks depth and element bounds for structural integrity.
+ */
 static void
 test_random_insert_stats() {
   merkle_node_t root        = random_region_tree();
@@ -211,6 +311,11 @@ test_random_insert_stats() {
   assert_true(stats.avg_depth < 2 * log2(RAND_REGION_ENTRIES));
 }
 
+/**
+ * @brief Test detection of tampered data in a Merkle tree.
+ *
+ * This test alters a hash after it has been added and ensures verification fails.
+ */
 static void
 test_poison_data() {
   merkle_node_t root        = random_region_tree();
@@ -230,11 +335,25 @@ test_poison_data() {
   assert_false(res);
 }
 
+/**
+ * @brief Flip a random bit in a given buffer.
+ *
+ * This function modifies a random byte within a buffer, flipping one random bit.
+ *
+ * @param buf Pointer to the buffer to modify.
+ * @param size Size of the buffer in bytes.
+ */
 static void
 flip_random_bit(uint8_t* buf, size_t size) {
   buf[rand() % size] ^= 1 << (rand() & 7);
 }
 
+/**
+ * @brief Test poisoning a leaf node in the Merkle tree.
+ *
+ * This test randomly walks through the Merkle tree until it reaches a leaf.
+ * Then, it simulates tampering with the leaf node's hash and checks if verification fails.
+ */
 static void
 test_poison_leaf() {
   merkle_node_t root  = random_region_tree();
@@ -261,7 +380,11 @@ test_poison_leaf() {
   bool res = merk_verify(&root, key, hash);
   assert_false(res);
 }
-
+/**
+ * @brief Test poisoning the root node of the Merkle tree.
+ *
+ * This test simulates tampering with the hash of the root node and checks if all verifications fail.
+ */
 static void
 test_poison_root() {
   merkle_node_t root = random_region_tree();
@@ -271,6 +394,12 @@ test_poison_root() {
   assert_int_equal(total_verify_fails, RAND_REGION_ENTRIES);
 }
 
+/**
+ * @brief Test inserting a corrupted leaf into the Merkle tree.
+ *
+ * This test checks that if a leaf's hash is corrupted, the verification of that leaf fails,
+ * and the `merk_insert` function does not incorrectly "validate" a corrupted hash.
+ */
 static void
 test_insert_corrupt_insert() {
   merkle_node_t root = random_region_tree();
@@ -322,6 +451,13 @@ test_insert_corrupt_insert() {
   assert_false(ok);
 }
 
+/**
+ * @brief Test key corruption in the Merkle tree.
+ *
+ * This test simulates a key swap between two nodes in the Merkle tree.
+ * After swapping the keys for two entries, it checks that verification fails
+ * for both entries, as the keys should no longer match their corresponding hashes.
+ */
 static void
 test_corrupt_key() {
   merkle_node_t root = {};
@@ -350,6 +486,16 @@ test_corrupt_key() {
   assert_false(merk_verify(&root, 2, random_region() + 32));
 }
 
+
+/**
+ * @brief Main entry point for the unit tests.
+ *
+ * This function runs a series of unit tests to verify the behavior of the Merkle
+ * tree implementation. The tests cover insertion, verification, tree corruption,
+ * and other edge cases like key swaps and tampered entries.
+ *
+ * @return Returns the result of running the test suite.
+ */
 int
 main() {
   const struct CMUnitTest tests[] = {

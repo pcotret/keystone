@@ -28,16 +28,8 @@
 
 /**************************** DATA TYPES ****************************/
 
-/**
- * @typedef BYTE
- * @brief Defines an 8-bit unsigned byte.
- */
-typedef unsigned char BYTE;  // 8-bit byte
-/**
- * @typedef WORD
- * @brief Defines a 32-bit unsigned word.
- */
-typedef unsigned int WORD;  // 32-bit word, change to "long" for 16-bit machines
+typedef unsigned char BYTE;  /**< Defines an 8-bit unsigned byte. */
+typedef unsigned int WORD;  /**< Defines a 32-bit unsigned word. */
 
 /**
  * @struct SHA256_CTX

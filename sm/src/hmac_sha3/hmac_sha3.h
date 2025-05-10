@@ -23,9 +23,19 @@
 
 #include "../sha3/sha3.h"
 
-// Internal block length of sha3_512 in bytes
+/**
+ * @def SHA3_512_BLOCK_LEN
+ * @brief Internal block length of SHA3-512 in bytes.
+ *
+ * This value defines the size of the input block processed at each step of the SHA3-512 hash function.
+ */
 #define SHA3_512_BLOCK_LEN 72
-// Output hash length of sha3_512 in bytes
+/**
+ * @def SHA3_512_HASH_LEN
+ * @brief Output hash length of SHA3-512 in bytes.
+ *
+ * This value defines the size of the final output hash produced by the SHA3-512 algorithm.
+ */
 #define SHA3_512_HASH_LEN 64
 
 /**

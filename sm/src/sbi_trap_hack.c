@@ -1,3 +1,11 @@
+/**
+ * @file sbi_trap_hack.c
+ * @brief RISC-V trap handler and error reporting in an enclave.
+ * 
+ * This file contains functions to handle and report traps (exceptions or interrupts) in a RISC-V environment,
+ * specifically within an enclave. The primary function is `sbi_trap_error()`, which provides detailed diagnostic 
+ * information for various traps, including machine exceptions and other errors.
+ */
 #include "enclave.h"
 #include <sbi/riscv_asm.h>
 #include <sbi/riscv_encoding.h>
@@ -11,6 +19,34 @@
 #include <sbi/sbi_timer.h>
 #include <sbi/sbi_trap.h>
 
+/**
+ * @brief Handle and report errors related to RISC-V trap events.
+ * 
+ * This function is called when a trap occurs, and it prints detailed 
+ * diagnostic information regarding the trap, including the cause, 
+ * the associated values (e.g., `mcause`, `mtval`), the values of 
+ * various machine registers, and other relevant state information.
+ * It also exits the enclave with a specific return code.
+ * 
+ * @param msg      A string message describing the nature of the error or trap.
+ * @param rc       The return code or error code indicating the nature of the failure.
+ * @param mcause   The cause of the exception/trap. This could be an interrupt, exception, etc.
+ * @param mtval    The value associated with the exception (e.g., address causing a fault).
+ * @param mtval2   A secondary value associated with the exception, used when supported by extensions (e.g., the 'H' extension).
+ * @param mtinst   The instruction that caused the trap, useful for debugging.
+ * @param regs     A pointer to the trap registers structure containing the state of the machine when the trap occurred.
+ * 
+ * This function prints the following information:
+ * - Function name, hart ID, and error message.
+ * - `mcause`, `mtval`, `mtval2`, `mtinst` (if applicable).
+ * - `mepc` (Machine Exception Program Counter), `mstatus` (Machine Status), and other general-purpose registers (`ra`, `sp`, `gp`, etc.).
+ * 
+ * After printing diagnostic information, the function calls `sbi_sm_exit_enclave` to exit the enclave with the specified return code.
+ * 
+ * @note This function prints detailed debugging information useful for diagnosing issues in a RISC-V environment.
+ * 
+ * @see sbi_sm_exit_enclave()
+ */
 static void sbi_trap_error(const char *msg, int rc,
 				      ulong mcause, ulong mtval, ulong mtval2,
 				      ulong mtinst, struct sbi_trap_regs *regs)
@@ -65,20 +101,9 @@ static void sbi_trap_error(const char *msg, int rc,
 
 
 /**
- * Handle trap/interrupt
+ * @brief Trap handler for enclave-related SBI calls.
  *
- * This function is called by firmware linked to OpenSBI
- * library for handling trap/interrupt. It expects the
- * following:
- * 1. The 'mscratch' CSR is pointing to sbi_scratch of current HART
- * 2. The 'mcause' CSR is having exception/interrupt cause
- * 3. The 'mtval' CSR is having additional trap information
- * 4. The 'mtval2' CSR is having additional trap information
- * 5. The 'mtinst' CSR is having decoded trap instruction
- * 6. Stack pointer (SP) is setup for current HART
- * 7. Interrupts are disabled in MSTATUS CSR
- *
- * @param regs pointer to register state
+ * @param regs Pointer to trap registers.
  */
 void sbi_trap_handler_keystone_enclave(struct sbi_trap_regs *regs)
 {

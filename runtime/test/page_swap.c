@@ -13,11 +13,27 @@
 
 #include "mock.h"
 
+
+/**
+ * @brief Exit the enclave with the given code.
+ *
+ * This is a mock implementation used for testing outside the enclave environment.
+ *
+ * @param code Exit code.
+ */
 void
 sbi_exit_enclave(uintptr_t code) {
   exit(code);
 }
 
+
+/**
+ * @brief Generate a random 64-bit value.
+ *
+ * Mock implementation using `rt_util_getrandom()` to provide randomness.
+ *
+ * @return A random 64-bit value.
+ */
 uintptr_t
 sbi_random() {
   uintptr_t out;
@@ -25,6 +41,15 @@ sbi_random() {
   return out;
 }
 
+/**
+ * @brief Fill a buffer with random bytes.
+ *
+ * Mock implementation using `rand()`, not cryptographically secure.
+ *
+ * @param vaddr Pointer to the buffer to fill.
+ * @param buflen Number of bytes to fill.
+ * @return Number of bytes filled.
+ */
 size_t
 rt_util_getrandom(void* vaddr, size_t buflen) {
   uint8_t* charbuf = (uint8_t*)vaddr;
@@ -32,21 +57,52 @@ rt_util_getrandom(void* vaddr, size_t buflen) {
   return buflen;
 }
 
+/**
+ * @brief Check whether an address is within EPM bounds.
+ *
+ * This mock version always returns true.
+ *
+ * @param addr Address to check.
+ * @return Always returns true in the mock environment.
+ */
 bool
 paging_epm_inbounds(uintptr_t addr) {
   (void)addr;
   return true;
 }
 
+/**
+ * @brief Pointer to the memory-mapped backing region used for paging.
+ *
+ * This region is lazily allocated using `mmap()` when first accessed.
+ */
 static void* backing_region;
+
+/**
+ * @def BACKING_REGION_SIZE
+ * @brief Size of the backing region used for paging (2 MiB).
+ */
 #define BACKING_REGION_SIZE (2 * 1024 * 1024)
 
+/**
+ * @brief Check if an address lies within the backing region.
+ *
+ * @param addr The address to check.
+ * @return True if @p addr is within the backing region; otherwise, false.
+ */
 bool
 paging_backpage_inbounds(uintptr_t addr) {
   return (addr >= (uintptr_t)backing_region) &&
          (addr < (uintptr_t)backing_region + BACKING_REGION_SIZE);
 }
 
+/**
+ * @brief Get the base address of the paging backing region.
+ *
+ * Lazily maps a 2 MiB region with read/write access if not already mapped.
+ *
+ * @return The base address of the backing region.
+ */
 uintptr_t
 paging_backing_region() {
   if (!backing_region) {
@@ -57,6 +113,11 @@ paging_backing_region() {
   }
   return (uintptr_t)backing_region;
 }
+/**
+ * @brief Get the size of the paging backing region.
+ *
+ * @return The size of the backing region in bytes (2 MiB).
+ */
 uintptr_t
 paging_backing_region_size() {
   return BACKING_REGION_SIZE;
@@ -161,6 +222,13 @@ bit_similarity_sd() {
   return 1.0 / sqrt(8 * RISCV_PAGE_SIZE);
 }
 
+/**
+ * @brief Test that swapped-out memory is randomized.
+ *
+ * This test allocates a front (EPM) and back (backing store) page, fills the front
+ * page with random data, swaps it out, and checks that the contents of the
+ * backing page are sufficiently uncorrelated with the original.
+ */
 void
 test_swapout_randomness() {
   pswap_init();
@@ -179,6 +247,12 @@ test_swapout_randomness() {
   pfree(front_page);
 }
 
+/**
+ * @brief Test correctness of swapping out and back in a page.
+ *
+ * This test verifies that page contents are preserved when swapping back in
+ * after randomization and hashing.
+ */
 void
 test_swap_out_in() {
   pswap_init();
@@ -210,6 +284,13 @@ test_swap_out_in() {
   pfree(front_page);
 }
 
+/**
+ * @brief Main function running all paging-related unit tests.
+ *
+ * Uses the CMocka test framework to validate swap behavior.
+ *
+ * @return Result of test execution (0 on success).
+ */
 int
 main() {
   const struct CMUnitTest tests[] = {

@@ -46,6 +46,12 @@ typedef uint16_t Elf64_Section;  /**< Section index in ELF64 */
 typedef Elf32_Half Elf32_Versym; /**< Version symbol type for ELF32 */
 typedef Elf64_Half Elf64_Versym; /**< Version symbol type for ELF64 */
 
+/**
+ * @def EI_NIDENT
+ * @brief Size of the e_ident[] identification array in the ELF header.
+ *
+ * This constant defines the number of bytes in the identification array of an ELF header.
+ */
 #define EI_NIDENT (16)
 
 /**
