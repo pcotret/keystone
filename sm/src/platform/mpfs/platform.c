@@ -23,87 +23,30 @@
 #include <sbi/sbi_string.h>
 #include <sm_assert.h>
 
-/**
- * @brief Initializes global platform state once.
- * 
- * This function initializes platform-specific state that is required to 
- * run the system. It should be called once during system boot.
- * 
- * @return SBI_ERR_SM_ENCLAVE_SUCCESS if successful, error code otherwise.
- */
 unsigned long platform_init_global_once(void){
   return SBI_ERR_SM_ENCLAVE_SUCCESS;
 }
 
-/**
- * @brief Initializes global platform state.
- * 
- * This function initializes global platform-specific state.
- * 
- * @return SBI_ERR_SM_ENCLAVE_SUCCESS if successful, error code otherwise.
- */
 unsigned long platform_init_global(void){
   return SBI_ERR_SM_ENCLAVE_SUCCESS;
 }
 
-/**
- * @brief Initializes the enclave on the platform.
- * 
- * This function prepares the platform to create and manage an enclave, 
- * but does not create the enclave itself. 
- * 
- * @param enclave Pointer to the enclave structure to initialize.
- */
 void platform_init_enclave(struct enclave* enclave){
   return;
 }
 
-/**
- * @brief Destroys the enclave on the platform.
- * 
- * This function cleans up platform-specific state associated with 
- * the provided enclave.
- * 
- * @param enclave Pointer to the enclave structure to destroy.
- */
 void platform_destroy_enclave(struct enclave* enclave){
   return;
 }
 
-/**
- * @brief Creates an enclave on the platform.
- * 
- * This function creates a new enclave on the platform, initializing 
- * the necessary platform state and resources.
- * 
- * @param enclave Pointer to the enclave structure to create.
- * @return SBI_ERR_SM_ENCLAVE_SUCCESS if successful, error code otherwise.
- */
 unsigned long platform_create_enclave(struct enclave* enclave){
   return SBI_ERR_SM_ENCLAVE_SUCCESS;
 }
 
-/**
- * @brief Switches the context to the provided enclave.
- * 
- * This function transitions the platform's execution context to 
- * the provided enclave. It may perform necessary platform-specific 
- * setup for the enclave.
- * 
- * @param enclave Pointer to the enclave structure to switch to.
- */
 void platform_switch_to_enclave(struct enclave* enclave){
   return;
 }
 
-/**
- * @brief Switches the context from the provided enclave.
- * 
- * This function transitions the platform's execution context from 
- * the provided enclave back to the normal execution context.
- * 
- * @param enclave Pointer to the enclave structure to switch from.
- */
 void platform_switch_from_enclave(struct enclave* enclave){
   return;
 }
