@@ -1,3 +1,7 @@
+/**
+ * @file sm-sbi-opensbi.h
+ * @brief Interface definitions for integrating Keystone SM with OpenSBI.
+ */
 #ifndef _SM_SBI_OPENSBI_H_
 #define _SM_SBI_OPENSBI_H_
 
@@ -10,6 +14,9 @@
 #include "sm_call.h"
 
 /* Inbound interfaces */
+/**
+ * @brief SBI ecall extension for Keystone enclave support.
+ */
 extern struct sbi_ecall_extension ecall_keystone_enclave;
 
 //int sbi_sm_interface(struct sbi_scratch *scratch, unsigned long extension_id,
