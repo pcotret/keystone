@@ -151,30 +151,31 @@ Macros</h2></td></tr>
 <tr class="separator:a369266c24eacffb87046522897a570d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74add5940ea5c87ebc08cd8194b3e220" id="r_a74add5940ea5c87ebc08cd8194b3e220"><td class="memItemLeft" align="right" valign="top"><a id="a74add5940ea5c87ebc08cd8194b3e220" name="a74add5940ea5c87ebc08cd8194b3e220"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>BACKING_REGION_SIZE</b>&#160;&#160;&#160;(2 * 1024 * 1024)</td></tr>
+<tr class="memdesc:a74add5940ea5c87ebc08cd8194b3e220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the backing region used for paging (2 MiB). <br /></td></tr>
 <tr class="separator:a74add5940ea5c87ebc08cd8194b3e220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad76203a9f49385115033b6e475af3a29" id="r_ad76203a9f49385115033b6e475af3a29"><td class="memItemLeft" align="right" valign="top"><a id="ad76203a9f49385115033b6e475af3a29" name="ad76203a9f49385115033b6e475af3a29"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sbi_exit_enclave</b> (uintptr_t code)</td></tr>
+<tr class="memitem:ad76203a9f49385115033b6e475af3a29" id="r_ad76203a9f49385115033b6e475af3a29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_2page__swap_8c.html#ad76203a9f49385115033b6e475af3a29">sbi_exit_enclave</a> (uintptr_t code)</td></tr>
+<tr class="memdesc:ad76203a9f49385115033b6e475af3a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit the enclave with the given code.  <br /></td></tr>
 <tr class="separator:ad76203a9f49385115033b6e475af3a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afae8ee0aa373c286ce7939717c98c7dc" id="r_afae8ee0aa373c286ce7939717c98c7dc"><td class="memItemLeft" align="right" valign="top"><a id="afae8ee0aa373c286ce7939717c98c7dc" name="afae8ee0aa373c286ce7939717c98c7dc"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>sbi_random</b> ()</td></tr>
+<tr class="memitem:afae8ee0aa373c286ce7939717c98c7dc" id="r_afae8ee0aa373c286ce7939717c98c7dc"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_2page__swap_8c.html#afae8ee0aa373c286ce7939717c98c7dc">sbi_random</a> ()</td></tr>
+<tr class="memdesc:afae8ee0aa373c286ce7939717c98c7dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random 64-bit value.  <br /></td></tr>
 <tr class="separator:afae8ee0aa373c286ce7939717c98c7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d79f8f7014b80282c532b8a34f8d93d" id="r_a9d79f8f7014b80282c532b8a34f8d93d"><td class="memItemLeft" align="right" valign="top"><a id="a9d79f8f7014b80282c532b8a34f8d93d" name="a9d79f8f7014b80282c532b8a34f8d93d"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>rt_util_getrandom</b> (void *vaddr, size_t buflen)</td></tr>
+<tr class="memitem:a9d79f8f7014b80282c532b8a34f8d93d" id="r_a9d79f8f7014b80282c532b8a34f8d93d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_2page__swap_8c.html#a9d79f8f7014b80282c532b8a34f8d93d">rt_util_getrandom</a> (void *vaddr, size_t buflen)</td></tr>
+<tr class="memdesc:a9d79f8f7014b80282c532b8a34f8d93d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a buffer with random bytes.  <br /></td></tr>
 <tr class="separator:a9d79f8f7014b80282c532b8a34f8d93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a212acfaf49bebc4fc8ed140ca879e130" id="r_a212acfaf49bebc4fc8ed140ca879e130"><td class="memItemLeft" align="right" valign="top"><a id="a212acfaf49bebc4fc8ed140ca879e130" name="a212acfaf49bebc4fc8ed140ca879e130"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>paging_epm_inbounds</b> (uintptr_t addr)</td></tr>
+<tr class="memitem:a212acfaf49bebc4fc8ed140ca879e130" id="r_a212acfaf49bebc4fc8ed140ca879e130"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_2page__swap_8c.html#a212acfaf49bebc4fc8ed140ca879e130">paging_epm_inbounds</a> (uintptr_t addr)</td></tr>
+<tr class="memdesc:a212acfaf49bebc4fc8ed140ca879e130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether an address is within EPM bounds.  <br /></td></tr>
 <tr class="separator:a212acfaf49bebc4fc8ed140ca879e130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3111f31c8ae25f3a792f6b6e537b2a04" id="r_a3111f31c8ae25f3a792f6b6e537b2a04"><td class="memItemLeft" align="right" valign="top"><a id="a3111f31c8ae25f3a792f6b6e537b2a04" name="a3111f31c8ae25f3a792f6b6e537b2a04"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>paging_backpage_inbounds</b> (uintptr_t addr)</td></tr>
+<tr class="memitem:a3111f31c8ae25f3a792f6b6e537b2a04" id="r_a3111f31c8ae25f3a792f6b6e537b2a04"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_2page__swap_8c.html#a3111f31c8ae25f3a792f6b6e537b2a04">paging_backpage_inbounds</a> (uintptr_t addr)</td></tr>
+<tr class="memdesc:a3111f31c8ae25f3a792f6b6e537b2a04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an address lies within the backing region.  <br /></td></tr>
 <tr class="separator:a3111f31c8ae25f3a792f6b6e537b2a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ec8c4f0dd26e11a5e84a7405e004cca" id="r_a5ec8c4f0dd26e11a5e84a7405e004cca"><td class="memItemLeft" align="right" valign="top"><a id="a5ec8c4f0dd26e11a5e84a7405e004cca" name="a5ec8c4f0dd26e11a5e84a7405e004cca"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>paging_backing_region</b> ()</td></tr>
+<tr class="memitem:a5ec8c4f0dd26e11a5e84a7405e004cca" id="r_a5ec8c4f0dd26e11a5e84a7405e004cca"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_2page__swap_8c.html#a5ec8c4f0dd26e11a5e84a7405e004cca">paging_backing_region</a> ()</td></tr>
+<tr class="memdesc:a5ec8c4f0dd26e11a5e84a7405e004cca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the base address of the paging backing region.  <br /></td></tr>
 <tr class="separator:a5ec8c4f0dd26e11a5e84a7405e004cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abed6b45a8fd1bd855ce83ad62cc73eaa" id="r_abed6b45a8fd1bd855ce83ad62cc73eaa"><td class="memItemLeft" align="right" valign="top"><a id="abed6b45a8fd1bd855ce83ad62cc73eaa" name="abed6b45a8fd1bd855ce83ad62cc73eaa"></a>
-uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>paging_backing_region_size</b> ()</td></tr>
+<tr class="memitem:abed6b45a8fd1bd855ce83ad62cc73eaa" id="r_abed6b45a8fd1bd855ce83ad62cc73eaa"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_2page__swap_8c.html#abed6b45a8fd1bd855ce83ad62cc73eaa">paging_backing_region_size</a> ()</td></tr>
+<tr class="memdesc:abed6b45a8fd1bd855ce83ad62cc73eaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the paging backing region.  <br /></td></tr>
 <tr class="separator:abed6b45a8fd1bd855ce83ad62cc73eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7675e9de607b03f8e39855fa023125ad" id="r_a7675e9de607b03f8e39855fa023125ad"><td class="memItemLeft" align="right" valign="top">static uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_2page__swap_8c.html#a7675e9de607b03f8e39855fa023125ad">palloc</a> ()</td></tr>
 <tr class="memdesc:a7675e9de607b03f8e39855fa023125ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a new memory page.  <br /></td></tr>
@@ -194,20 +195,20 @@ uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>paging_backing_r
 <tr class="memitem:a51d8c95094a7395731bf2c55b6521700" id="r_a51d8c95094a7395731bf2c55b6521700"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_2page__swap_8c.html#a51d8c95094a7395731bf2c55b6521700">bit_similarity_sd</a> ()</td></tr>
 <tr class="memdesc:a51d8c95094a7395731bf2c55b6521700"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the standard deviation for the bit similarity of IID pages.  <br /></td></tr>
 <tr class="separator:a51d8c95094a7395731bf2c55b6521700"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1670ea10d9525083086169631f04e57d" id="r_a1670ea10d9525083086169631f04e57d"><td class="memItemLeft" align="right" valign="top"><a id="a1670ea10d9525083086169631f04e57d" name="a1670ea10d9525083086169631f04e57d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>test_swapout_randomness</b> ()</td></tr>
+<tr class="memitem:a1670ea10d9525083086169631f04e57d" id="r_a1670ea10d9525083086169631f04e57d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_2page__swap_8c.html#a1670ea10d9525083086169631f04e57d">test_swapout_randomness</a> ()</td></tr>
+<tr class="memdesc:a1670ea10d9525083086169631f04e57d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test that swapped-out memory is randomized.  <br /></td></tr>
 <tr class="separator:a1670ea10d9525083086169631f04e57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49f538d927504907829f38b601bf1708" id="r_a49f538d927504907829f38b601bf1708"><td class="memItemLeft" align="right" valign="top"><a id="a49f538d927504907829f38b601bf1708" name="a49f538d927504907829f38b601bf1708"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>test_swap_out_in</b> ()</td></tr>
+<tr class="memitem:a49f538d927504907829f38b601bf1708" id="r_a49f538d927504907829f38b601bf1708"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_2page__swap_8c.html#a49f538d927504907829f38b601bf1708">test_swap_out_in</a> ()</td></tr>
+<tr class="memdesc:a49f538d927504907829f38b601bf1708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test correctness of swapping out and back in a page.  <br /></td></tr>
 <tr class="separator:a49f538d927504907829f38b601bf1708"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_2page__swap_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function running all paging-related unit tests.  <br /></td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ad60acf99a346d0324004b2ef02ac7ad5" id="r_ad60acf99a346d0324004b2ef02ac7ad5"><td class="memItemLeft" align="right" valign="top"><a id="ad60acf99a346d0324004b2ef02ac7ad5" name="ad60acf99a346d0324004b2ef02ac7ad5"></a>
-static void *&#160;</td><td class="memItemRight" valign="bottom"><b>backing_region</b></td></tr>
+<tr class="memitem:ad60acf99a346d0324004b2ef02ac7ad5" id="r_ad60acf99a346d0324004b2ef02ac7ad5"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_2page__swap_8c.html#ad60acf99a346d0324004b2ef02ac7ad5">backing_region</a></td></tr>
+<tr class="memdesc:ad60acf99a346d0324004b2ef02ac7ad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the memory-mapped backing region used for paging.  <br /></td></tr>
 <tr class="separator:ad60acf99a346d0324004b2ef02ac7ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -256,6 +257,18 @@ static void *&#160;</td><td class="memItemRight" valign="bottom"><b>backing_regi
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The average similarity between the two pages (0 to 1). </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="test_2page__swap_8c_ace0a0ebda92754e0777e01ef3e8e6dc4_icgraph.png" border="0" usemap="#atest_2page__swap_8c_ace0a0ebda92754e0777e01ef3e8e6dc4_icgraph" alt=""/></div>
+<map name="atest_2page__swap_8c_ace0a0ebda92754e0777e01ef3e8e6dc4_icgraph" id="atest_2page__swap_8c_ace0a0ebda92754e0777e01ef3e8e6dc4_icgraph">
+<area shape="rect" title="Computes the bit similarity between two pages." alt="" coords="328,5,421,31"/>
+<area shape="rect" href="test_2page__swap_8c.html#a1670ea10d9525083086169631f04e57d" title="Test that swapped&#45;out memory is randomized." alt="" coords="103,5,280,31"/>
+<area shape="poly" title=" " alt="" coords="313,21,281,21,281,16,313,16"/>
+<area shape="rect" href="test_2page__swap_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function running all paging&#45;related unit tests." alt="" coords="5,5,55,31"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -284,6 +297,18 @@ static void *&#160;</td><td class="memItemRight" valign="bottom"><b>backing_regi
 
 <p>Computes the standard deviation for the bit similarity of IID pages. </p>
 <dl class="section return"><dt>Returns</dt><dd>The standard deviation value. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="test_2page__swap_8c_a51d8c95094a7395731bf2c55b6521700_icgraph.png" border="0" usemap="#atest_2page__swap_8c_a51d8c95094a7395731bf2c55b6521700_icgraph" alt=""/></div>
+<map name="atest_2page__swap_8c_a51d8c95094a7395731bf2c55b6521700_icgraph" id="atest_2page__swap_8c_a51d8c95094a7395731bf2c55b6521700_icgraph">
+<area shape="rect" title="Computes the standard deviation for the bit similarity of IID pages." alt="" coords="328,5,442,31"/>
+<area shape="rect" href="test_2page__swap_8c.html#a1670ea10d9525083086169631f04e57d" title="Test that swapped&#45;out memory is randomized." alt="" coords="103,5,280,31"/>
+<area shape="poly" title=" " alt="" coords="312,21,281,21,281,16,312,16"/>
+<area shape="rect" href="test_2page__swap_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function running all paging&#45;related unit tests." alt="" coords="5,5,55,31"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -330,6 +355,18 @@ static void *&#160;</td><td class="memItemRight" valign="bottom"><b>backing_regi
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the hashes are equal, otherwise false. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="test_2page__swap_8c_a63ddc223257494da4541e404b7425e59_icgraph.png" border="0" usemap="#atest_2page__swap_8c_a63ddc223257494da4541e404b7425e59_icgraph" alt=""/></div>
+<map name="atest_2page__swap_8c_a63ddc223257494da4541e404b7425e59_icgraph" id="atest_2page__swap_8c_a63ddc223257494da4541e404b7425e59_icgraph">
+<area shape="rect" title="Compares two hash values." alt="" coords="274,5,344,31"/>
+<area shape="rect" href="test_2page__swap_8c.html#a49f538d927504907829f38b601bf1708" title="Test correctness of swapping out and back in a page." alt="" coords="103,5,226,31"/>
+<area shape="poly" title=" " alt="" coords="258,21,226,21,226,16,258,16"/>
+<area shape="rect" href="test_2page__swap_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function running all paging&#45;related unit tests." alt="" coords="5,5,55,31"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -379,6 +416,171 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="89,78,139,96,137,101,87,83"/>
 </map>
 </div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="test_2page__swap_8c_a4695e3205feaecda61d9626470c1dffa_icgraph.png" border="0" usemap="#atest_2page__swap_8c_a4695e3205feaecda61d9626470c1dffa_icgraph" alt=""/></div>
+<map name="atest_2page__swap_8c_a4695e3205feaecda61d9626470c1dffa_icgraph" id="atest_2page__swap_8c_a4695e3205feaecda61d9626470c1dffa_icgraph">
+<area shape="rect" title="Computes the SHA&#45;256 hash of a page." alt="" coords="274,5,358,31"/>
+<area shape="rect" href="test_2page__swap_8c.html#a49f538d927504907829f38b601bf1708" title="Test correctness of swapping out and back in a page." alt="" coords="103,5,226,31"/>
+<area shape="poly" title=" " alt="" coords="259,21,226,21,226,16,259,16"/>
+<area shape="rect" href="test_2page__swap_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function running all paging&#45;related unit tests." alt="" coords="5,5,55,31"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Main function running all paging-related unit tests. </p>
+<p>Uses the CMocka test framework to validate swap behavior.</p>
+<dl class="section return"><dt>Returns</dt><dd>Result of test execution (0 on success). </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="test_2page__swap_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" border="0" usemap="#atest_2page__swap_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" alt=""/></div>
+<map name="atest_2page__swap_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" id="atest_2page__swap_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph">
+<area shape="rect" title="Main function running all paging&#45;related unit tests." alt="" coords="5,204,55,230"/>
+<area shape="rect" href="test_2page__swap_8c.html#a49f538d927504907829f38b601bf1708" title="Test correctness of swapping out and back in a page." alt="" coords="130,179,253,204"/>
+<area shape="poly" title=" " alt="" coords="55,210,114,201,115,206,56,216"/>
+<area shape="rect" href="test_2page__swap_8c.html#a1670ea10d9525083086169631f04e57d" title="Test that swapped&#45;out memory is randomized." alt="" coords="103,228,280,254"/>
+<area shape="poly" title=" " alt="" coords="55,218,88,223,87,228,55,223"/>
+<area shape="rect" href="test_2page__swap_8c.html#a63ddc223257494da4541e404b7425e59" title="Compares two hash values." alt="" coords="383,104,453,130"/>
+<area shape="poly" title=" " alt="" coords="225,176,327,138,367,127,369,132,329,143,227,181"/>
+<area shape="rect" href="test_2page__swap_8c.html#a4695e3205feaecda61d9626470c1dffa" title="Computes the SHA&#45;256 hash of a page." alt="" coords="376,55,460,80"/>
+<area shape="poly" title=" " alt="" coords="205,176,256,133,290,110,327,89,360,77,362,82,329,94,293,114,260,138,209,180"/>
+<area shape="rect" href="test_2merkle_8c.html#a52a3f0723ead0af4bd09df957544f987" title="Allocates a 4 KiB backing page using mmap." alt="" coords="328,153,508,179"/>
+<area shape="poly" title=" " alt="" coords="253,182,312,175,313,181,254,187"/>
+<area shape="rect" href="test_2page__swap_8c.html#a7675e9de607b03f8e39855fa023125ad" title="Allocates a new memory page." alt="" coords="391,203,446,228"/>
+<area shape="poly" title=" " alt="" coords="254,195,375,208,375,214,253,201"/>
+<area shape="rect" href="test_2page__swap_8c.html#a172674299bd87a2d0f072d78d86e2cf6" title="Frees a previously allocated page." alt="" coords="393,252,443,278"/>
+<area shape="poly" title=" " alt="" coords="250,202,281,213,305,226,329,238,379,254,377,259,327,243,303,231,279,218,248,207"/>
+<area shape="rect" href="sha256_8h.html#a8f4b55bd1e49af6e4620bc9ba9549397" title="Finalizes the hash and outputs the digest." alt="" coords="564,5,658,31"/>
+<area shape="poly" title=" " alt="" coords="460,54,549,31,550,36,461,59"/>
+<area shape="rect" href="sha256_8h.html#ade6fde6ef9ea137449d72891931c77ef" title="Initializes a SHA256_CTX structure." alt="" coords="567,55,655,80"/>
+<area shape="poly" title=" " alt="" coords="461,65,552,65,552,70,461,70"/>
+<area shape="rect" href="sha256_8h.html#ac98a25de627f4cded12b7312dee1ffa0" title="Feeds data into the SHA&#45;256 hash." alt="" coords="556,104,666,130"/>
+<area shape="poly" title=" " alt="" coords="461,76,544,97,542,102,460,81"/>
+<area shape="poly" title=" " alt="" coords="248,225,279,214,303,201,327,188,344,182,346,187,329,193,305,206,281,219,250,230"/>
+<area shape="poly" title=" " alt="" coords="280,228,375,218,376,223,281,234"/>
+<area shape="poly" title=" " alt="" coords="281,248,378,258,378,263,280,253"/>
+<area shape="rect" href="test_2page__swap_8c.html#ace0a0ebda92754e0777e01ef3e8e6dc4" title="Computes the bit similarity between two pages." alt="" coords="372,351,465,376"/>
+<area shape="poly" title=" " alt="" coords="209,252,260,294,293,317,329,337,357,348,355,353,327,342,291,322,256,298,205,256"/>
+<area shape="rect" href="test_2page__swap_8c.html#a51d8c95094a7395731bf2c55b6521700" title="Computes the standard deviation for the bit similarity of IID pages." alt="" coords="361,301,475,327"/>
+<area shape="poly" title=" " alt="" coords="228,252,329,288,350,294,349,299,327,293,226,257"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5ec8c4f0dd26e11a5e84a7405e004cca" name="a5ec8c4f0dd26e11a5e84a7405e004cca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ec8c4f0dd26e11a5e84a7405e004cca">&#9670;&#160;</a></span>paging_backing_region()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t paging_backing_region </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the base address of the paging backing region. </p>
+<p>Lazily maps a 2 MiB region with read/write access if not already mapped.</p>
+<dl class="section return"><dt>Returns</dt><dd>The base address of the backing region. </dd></dl>
+
+</div>
+</div>
+<a id="abed6b45a8fd1bd855ce83ad62cc73eaa" name="abed6b45a8fd1bd855ce83ad62cc73eaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abed6b45a8fd1bd855ce83ad62cc73eaa">&#9670;&#160;</a></span>paging_backing_region_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t paging_backing_region_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the size of the paging backing region. </p>
+<dl class="section return"><dt>Returns</dt><dd>The size of the backing region in bytes (2 MiB). </dd></dl>
+
+</div>
+</div>
+<a id="a3111f31c8ae25f3a792f6b6e537b2a04" name="a3111f31c8ae25f3a792f6b6e537b2a04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3111f31c8ae25f3a792f6b6e537b2a04">&#9670;&#160;</a></span>paging_backpage_inbounds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool paging_backpage_inbounds </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if an address lies within the backing region. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">addr</td><td>The address to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if <code>addr</code> is within the backing region; otherwise, false. </dd></dl>
+
+</div>
+</div>
+<a id="a212acfaf49bebc4fc8ed140ca879e130" name="a212acfaf49bebc4fc8ed140ca879e130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a212acfaf49bebc4fc8ed140ca879e130">&#9670;&#160;</a></span>paging_epm_inbounds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool paging_epm_inbounds </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether an address is within EPM bounds. </p>
+<p>This mock version always returns true.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">addr</td><td>Address to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Always returns true in the mock environment. </dd></dl>
 
 </div>
 </div>
@@ -407,6 +609,21 @@ Here is the call graph for this function:</div>
 
 <p>Allocates a new memory page. </p>
 <dl class="section return"><dt>Returns</dt><dd>The address of the newly allocated page. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="test_2page__swap_8c_a7675e9de607b03f8e39855fa023125ad_icgraph.png" border="0" usemap="#atest_2page__swap_8c_a7675e9de607b03f8e39855fa023125ad_icgraph" alt=""/></div>
+<map name="atest_2page__swap_8c_a7675e9de607b03f8e39855fa023125ad_icgraph" id="atest_2page__swap_8c_a7675e9de607b03f8e39855fa023125ad_icgraph">
+<area shape="rect" title="Allocates a new memory page." alt="" coords="328,31,383,56"/>
+<area shape="rect" href="test_2page__swap_8c.html#a49f538d927504907829f38b601bf1708" title="Test correctness of swapping out and back in a page." alt="" coords="130,5,253,31"/>
+<area shape="poly" title=" " alt="" coords="312,40,253,30,254,25,313,34"/>
+<area shape="rect" href="test_2page__swap_8c.html#a1670ea10d9525083086169631f04e57d" title="Test that swapped&#45;out memory is randomized." alt="" coords="103,55,280,80"/>
+<area shape="poly" title=" " alt="" coords="313,52,281,57,280,52,312,47"/>
+<area shape="rect" href="test_2page__swap_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function running all paging&#45;related unit tests." alt="" coords="5,31,55,56"/>
+<area shape="poly" title=" " alt="" coords="115,33,55,42,55,37,114,28"/>
+<area shape="poly" title=" " alt="" coords="87,55,55,50,55,44,88,49"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -441,6 +658,237 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="test_2page__swap_8c_a172674299bd87a2d0f072d78d86e2cf6_icgraph.png" border="0" usemap="#atest_2page__swap_8c_a172674299bd87a2d0f072d78d86e2cf6_icgraph" alt=""/></div>
+<map name="atest_2page__swap_8c_a172674299bd87a2d0f072d78d86e2cf6_icgraph" id="atest_2page__swap_8c_a172674299bd87a2d0f072d78d86e2cf6_icgraph">
+<area shape="rect" title="Frees a previously allocated page." alt="" coords="328,31,378,56"/>
+<area shape="rect" href="test_2page__swap_8c.html#a49f538d927504907829f38b601bf1708" title="Test correctness of swapping out and back in a page." alt="" coords="130,5,253,31"/>
+<area shape="poly" title=" " alt="" coords="312,40,253,30,254,25,313,35"/>
+<area shape="rect" href="test_2page__swap_8c.html#a1670ea10d9525083086169631f04e57d" title="Test that swapped&#45;out memory is randomized." alt="" coords="103,55,280,80"/>
+<area shape="poly" title=" " alt="" coords="313,52,281,57,280,52,312,47"/>
+<area shape="rect" href="test_2page__swap_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function running all paging&#45;related unit tests." alt="" coords="5,31,55,56"/>
+<area shape="poly" title=" " alt="" coords="115,33,55,42,55,37,114,28"/>
+<area shape="poly" title=" " alt="" coords="87,55,55,50,55,44,88,49"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9d79f8f7014b80282c532b8a34f8d93d" name="a9d79f8f7014b80282c532b8a34f8d93d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d79f8f7014b80282c532b8a34f8d93d">&#9670;&#160;</a></span>rt_util_getrandom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t rt_util_getrandom </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>vaddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>buflen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fill a buffer with random bytes. </p>
+<p>Mock implementation using <code>rand()</code>, not cryptographically secure.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vaddr</td><td>Pointer to the buffer to fill. </td></tr>
+    <tr><td class="paramname">buflen</td><td>Number of bytes to fill. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes filled. </dd></dl>
+
+</div>
+</div>
+<a id="ad76203a9f49385115033b6e475af3a29" name="ad76203a9f49385115033b6e475af3a29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad76203a9f49385115033b6e475af3a29">&#9670;&#160;</a></span>sbi_exit_enclave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sbi_exit_enclave </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>code</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exit the enclave with the given code. </p>
+<p>This is a mock implementation used for testing outside the enclave environment.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>Exit code. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afae8ee0aa373c286ce7939717c98c7dc" name="afae8ee0aa373c286ce7939717c98c7dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afae8ee0aa373c286ce7939717c98c7dc">&#9670;&#160;</a></span>sbi_random()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t sbi_random </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a random 64-bit value. </p>
+<p>Generate a random value using the platform's entropy source.</p>
+<p>Mock implementation using <code>rt_util_getrandom()</code> to provide randomness.</p>
+<dl class="section return"><dt>Returns</dt><dd>A random 64-bit value. </dd></dl>
+
+</div>
+</div>
+<a id="a49f538d927504907829f38b601bf1708" name="a49f538d927504907829f38b601bf1708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49f538d927504907829f38b601bf1708">&#9670;&#160;</a></span>test_swap_out_in()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test_swap_out_in </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test correctness of swapping out and back in a page. </p>
+<p>This test verifies that page contents are preserved when swapping back in after randomization and hashing. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="test_2page__swap_8c_a49f538d927504907829f38b601bf1708_cgraph.png" border="0" usemap="#atest_2page__swap_8c_a49f538d927504907829f38b601bf1708_cgraph" alt=""/></div>
+<map name="atest_2page__swap_8c_a49f538d927504907829f38b601bf1708_cgraph" id="atest_2page__swap_8c_a49f538d927504907829f38b601bf1708_cgraph">
+<area shape="rect" title="Test correctness of swapping out and back in a page." alt="" coords="5,104,129,130"/>
+<area shape="rect" href="test_2page__swap_8c.html#a63ddc223257494da4541e404b7425e59" title="Compares two hash values." alt="" coords="232,5,302,31"/>
+<area shape="poly" title=" " alt="" coords="82,101,123,71,176,40,216,26,218,31,178,45,126,75,85,106"/>
+<area shape="rect" href="test_2page__swap_8c.html#a4695e3205feaecda61d9626470c1dffa" title="Computes the SHA&#45;256 hash of a page." alt="" coords="225,55,309,80"/>
+<area shape="poly" title=" " alt="" coords="122,101,209,79,210,84,123,106"/>
+<area shape="rect" href="test_2merkle_8c.html#a52a3f0723ead0af4bd09df957544f987" title="Allocates a 4 KiB backing page using mmap." alt="" coords="177,104,357,130"/>
+<area shape="poly" title=" " alt="" coords="129,114,161,114,161,120,129,120"/>
+<area shape="rect" href="test_2page__swap_8c.html#a7675e9de607b03f8e39855fa023125ad" title="Allocates a new memory page." alt="" coords="239,153,295,179"/>
+<area shape="poly" title=" " alt="" coords="123,128,225,153,223,158,122,133"/>
+<area shape="rect" href="test_2page__swap_8c.html#a172674299bd87a2d0f072d78d86e2cf6" title="Frees a previously allocated page." alt="" coords="242,203,292,228"/>
+<area shape="poly" title=" " alt="" coords="85,128,126,159,178,189,227,205,226,211,176,194,123,163,82,132"/>
+<area shape="rect" href="sha256_8h.html#a8f4b55bd1e49af6e4620bc9ba9549397" title="Finalizes the hash and outputs the digest." alt="" coords="413,5,506,31"/>
+<area shape="poly" title=" " alt="" coords="309,54,397,31,399,36,310,59"/>
+<area shape="rect" href="sha256_8h.html#ade6fde6ef9ea137449d72891931c77ef" title="Initializes a SHA256_CTX structure." alt="" coords="416,55,503,80"/>
+<area shape="poly" title=" " alt="" coords="309,65,401,65,401,70,309,70"/>
+<area shape="rect" href="sha256_8h.html#ac98a25de627f4cded12b7312dee1ffa0" title="Feeds data into the SHA&#45;256 hash." alt="" coords="405,104,514,130"/>
+<area shape="poly" title=" " alt="" coords="310,76,392,97,391,102,309,81"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="test_2page__swap_8c_a49f538d927504907829f38b601bf1708_icgraph.png" border="0" usemap="#atest_2page__swap_8c_a49f538d927504907829f38b601bf1708_icgraph" alt=""/></div>
+<map name="atest_2page__swap_8c_a49f538d927504907829f38b601bf1708_icgraph" id="atest_2page__swap_8c_a49f538d927504907829f38b601bf1708_icgraph">
+<area shape="rect" title="Test correctness of swapping out and back in a page." alt="" coords="103,5,226,31"/>
+<area shape="rect" href="test_2page__swap_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function running all paging&#45;related unit tests." alt="" coords="5,5,55,31"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1670ea10d9525083086169631f04e57d" name="a1670ea10d9525083086169631f04e57d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1670ea10d9525083086169631f04e57d">&#9670;&#160;</a></span>test_swapout_randomness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test_swapout_randomness </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test that swapped-out memory is randomized. </p>
+<p>This test allocates a front (EPM) and back (backing store) page, fills the front page with random data, swaps it out, and checks that the contents of the backing page are sufficiently uncorrelated with the original. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="test_2page__swap_8c_a1670ea10d9525083086169631f04e57d_cgraph.png" border="0" usemap="#atest_2page__swap_8c_a1670ea10d9525083086169631f04e57d_cgraph" alt=""/></div>
+<map name="atest_2page__swap_8c_a1670ea10d9525083086169631f04e57d_cgraph" id="atest_2page__swap_8c_a1670ea10d9525083086169631f04e57d_cgraph">
+<area shape="rect" title="Test that swapped&#45;out memory is randomized." alt="" coords="5,104,183,130"/>
+<area shape="rect" href="test_2page__swap_8c.html#ace0a0ebda92754e0777e01ef3e8e6dc4" title="Computes the bit similarity between two pages." alt="" coords="274,5,368,31"/>
+<area shape="poly" title=" " alt="" coords="114,101,166,71,230,40,258,30,260,35,232,45,168,76,117,106"/>
+<area shape="rect" href="test_2page__swap_8c.html#a51d8c95094a7395731bf2c55b6521700" title="Computes the standard deviation for the bit similarity of IID pages." alt="" coords="264,55,378,80"/>
+<area shape="poly" title=" " alt="" coords="156,101,248,81,249,86,157,106"/>
+<area shape="rect" href="test_2merkle_8c.html#a52a3f0723ead0af4bd09df957544f987" title="Allocates a 4 KiB backing page using mmap." alt="" coords="231,104,411,130"/>
+<area shape="poly" title=" " alt="" coords="183,114,215,114,215,120,183,120"/>
+<area shape="rect" href="test_2page__swap_8c.html#a7675e9de607b03f8e39855fa023125ad" title="Allocates a new memory page." alt="" coords="293,153,349,179"/>
+<area shape="poly" title=" " alt="" coords="157,128,278,154,277,160,156,133"/>
+<area shape="rect" href="test_2page__swap_8c.html#a172674299bd87a2d0f072d78d86e2cf6" title="Frees a previously allocated page." alt="" coords="296,203,346,228"/>
+<area shape="poly" title=" " alt="" coords="117,128,168,158,232,189,281,205,280,210,230,194,166,163,114,132"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="test_2page__swap_8c_a1670ea10d9525083086169631f04e57d_icgraph.png" border="0" usemap="#atest_2page__swap_8c_a1670ea10d9525083086169631f04e57d_icgraph" alt=""/></div>
+<map name="atest_2page__swap_8c_a1670ea10d9525083086169631f04e57d_icgraph" id="atest_2page__swap_8c_a1670ea10d9525083086169631f04e57d_icgraph">
+<area shape="rect" title="Test that swapped&#45;out memory is randomized." alt="" coords="103,5,280,31"/>
+<area shape="rect" href="test_2page__swap_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function running all paging&#45;related unit tests." alt="" coords="5,5,55,31"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ad60acf99a346d0324004b2ef02ac7ad5" name="ad60acf99a346d0324004b2ef02ac7ad5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad60acf99a346d0324004b2ef02ac7ad5">&#9670;&#160;</a></span>backing_region</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* backing_region</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pointer to the memory-mapped backing region used for paging. </p>
+<p>This region is lazily allocated using <code>mmap()</code> when first accessed. </p>
 
 </div>
 </div>

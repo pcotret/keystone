@@ -69,7 +69,7 @@ var annotated_dup =
     [ "ListNode", "structListNode.html", null ],
     [ "MallocBlockInfo", "unionMallocBlockInfo.html", null ],
     [ "MallocBlockInfoData", "structMallocBlockInfoData.html", null ],
-    [ "merk_stats_s", "structmerk__stats__s.html", null ],
+    [ "merk_stats_s", "structmerk__stats__s.html", "structmerk__stats__s" ],
     [ "mprv_block", "structmprv__block.html", "structmprv__block" ],
     [ "OperatorFunction", "structOperatorFunction.html", null ],
     [ "out_fct_wrap_type", "structout__fct__wrap__type.html", null ],

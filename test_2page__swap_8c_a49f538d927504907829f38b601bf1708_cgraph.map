@@ -1,0 +1,19 @@
+<map id="test_swap_out_in" name="test_swap_out_in">
+<area shape="rect" id="Node000001" title="Test correctness of swapping out and back in a page." alt="" coords="5,104,129,130"/>
+<area shape="rect" id="Node000002" href="$test_2page__swap_8c.html#a63ddc223257494da4541e404b7425e59" title="Compares two hash values." alt="" coords="232,5,302,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,101,123,71,176,40,216,26,218,31,178,45,126,75,85,106"/>
+<area shape="rect" id="Node000003" href="$test_2page__swap_8c.html#a4695e3205feaecda61d9626470c1dffa" title="Computes the SHA&#45;256 hash of a page." alt="" coords="225,55,309,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="122,101,209,79,210,84,123,106"/>
+<area shape="rect" id="Node000007" href="$test_2merkle_8c.html#a52a3f0723ead0af4bd09df957544f987" title="Allocates a 4 KiB backing page using mmap." alt="" coords="177,104,357,130"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="129,114,161,114,161,120,129,120"/>
+<area shape="rect" id="Node000008" href="$test_2page__swap_8c.html#a7675e9de607b03f8e39855fa023125ad" title="Allocates a new memory page." alt="" coords="239,153,295,179"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="123,128,225,153,223,158,122,133"/>
+<area shape="rect" id="Node000009" href="$test_2page__swap_8c.html#a172674299bd87a2d0f072d78d86e2cf6" title="Frees a previously allocated page." alt="" coords="242,203,292,228"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="85,128,126,159,178,189,227,205,226,211,176,194,123,163,82,132"/>
+<area shape="rect" id="Node000004" href="$sha256_8h.html#a8f4b55bd1e49af6e4620bc9ba9549397" title="Finalizes the hash and outputs the digest." alt="" coords="413,5,506,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="309,54,397,31,399,36,310,59"/>
+<area shape="rect" id="Node000005" href="$sha256_8h.html#ade6fde6ef9ea137449d72891931c77ef" title="Initializes a SHA256_CTX structure." alt="" coords="416,55,503,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="309,65,401,65,401,70,309,70"/>
+<area shape="rect" id="Node000006" href="$sha256_8h.html#ac98a25de627f4cded12b7312dee1ffa0" title="Feeds data into the SHA&#45;256 hash." alt="" coords="405,104,514,130"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="310,76,392,97,391,102,309,81"/>
+</map>

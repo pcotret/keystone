@@ -139,16 +139,16 @@ $(document).ready(function(){initNavTree('paging_8h_source.html',''); initResiza
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>uintptr_t</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>paging_alloc_backing_page(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><a class="code hl_function" href="test_2merkle_8c.html#a52a3f0723ead0af4bd09df957544f987">paging_alloc_backing_page</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>uintptr_t</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>paging_backing_region(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><a class="code hl_function" href="test_2page__swap_8c.html#a5ec8c4f0dd26e11a5e84a7405e004cca">paging_backing_region</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>uintptr_t</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>paging_backing_region_size(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><a class="code hl_function" href="test_2page__swap_8c.html#abed6b45a8fd1bd855ce83ad62cc73eaa">paging_backing_region_size</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keywordtype">bool</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>paging_epm_inbounds(uintptr_t addr);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><a class="code hl_function" href="test_2page__swap_8c.html#a212acfaf49bebc4fc8ed140ca879e130">paging_epm_inbounds</a>(uintptr_t addr);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keywordtype">bool</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>paging_backpage_inbounds(uintptr_t addr);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><a class="code hl_function" href="test_2page__swap_8c.html#a3111f31c8ae25f3a792f6b6e537b2a04">paging_backpage_inbounds</a>(uintptr_t addr);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif</span></div>
@@ -156,6 +156,11 @@ $(document).ready(function(){initNavTree('paging_8h_source.html',''); initResiza
 <div class="ttc" id="aregs_8h_html"><div class="ttname"><a href="regs_8h.html">regs.h</a></div><div class="ttdoc">Defines structures for storing register state and context information.</div></div>
 <div class="ttc" id="astructctx_html"><div class="ttname"><a href="structctx.html">ctx</a></div><div class="ttdoc">Thread context.</div><div class="ttdef"><b>Definition</b> thread.h:22</div></div>
 <div class="ttc" id="astructencl__ctx_html"><div class="ttname"><a href="structencl__ctx.html">encl_ctx</a></div><div class="ttdoc">Structure that extends the register state to include supervisor-specific control and status registers...</div><div class="ttdef"><b>Definition</b> regs.h:69</div></div>
+<div class="ttc" id="atest_2merkle_8c_html_a52a3f0723ead0af4bd09df957544f987"><div class="ttname"><a href="test_2merkle_8c.html#a52a3f0723ead0af4bd09df957544f987">paging_alloc_backing_page</a></div><div class="ttdeci">uintptr_t paging_alloc_backing_page()</div><div class="ttdoc">Allocates a 4 KiB backing page using mmap.</div><div class="ttdef"><b>Definition</b> merkle.c:46</div></div>
+<div class="ttc" id="atest_2page__swap_8c_html_a212acfaf49bebc4fc8ed140ca879e130"><div class="ttname"><a href="test_2page__swap_8c.html#a212acfaf49bebc4fc8ed140ca879e130">paging_epm_inbounds</a></div><div class="ttdeci">bool paging_epm_inbounds(uintptr_t addr)</div><div class="ttdoc">Check whether an address is within EPM bounds.</div><div class="ttdef"><b>Definition</b> page_swap.c:69</div></div>
+<div class="ttc" id="atest_2page__swap_8c_html_a3111f31c8ae25f3a792f6b6e537b2a04"><div class="ttname"><a href="test_2page__swap_8c.html#a3111f31c8ae25f3a792f6b6e537b2a04">paging_backpage_inbounds</a></div><div class="ttdeci">bool paging_backpage_inbounds(uintptr_t addr)</div><div class="ttdoc">Check if an address lies within the backing region.</div><div class="ttdef"><b>Definition</b> page_swap.c:94</div></div>
+<div class="ttc" id="atest_2page__swap_8c_html_a5ec8c4f0dd26e11a5e84a7405e004cca"><div class="ttname"><a href="test_2page__swap_8c.html#a5ec8c4f0dd26e11a5e84a7405e004cca">paging_backing_region</a></div><div class="ttdeci">uintptr_t paging_backing_region()</div><div class="ttdoc">Get the base address of the paging backing region.</div><div class="ttdef"><b>Definition</b> page_swap.c:107</div></div>
+<div class="ttc" id="atest_2page__swap_8c_html_abed6b45a8fd1bd855ce83ad62cc73eaa"><div class="ttname"><a href="test_2page__swap_8c.html#abed6b45a8fd1bd855ce83ad62cc73eaa">paging_backing_region_size</a></div><div class="ttdeci">uintptr_t paging_backing_region_size()</div><div class="ttdoc">Get the size of the paging backing region.</div><div class="ttdef"><b>Definition</b> page_swap.c:122</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

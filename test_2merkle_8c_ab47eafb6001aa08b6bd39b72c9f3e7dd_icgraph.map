@@ -1,0 +1,11 @@
+<map id="merk_stats" name="merk_stats">
+<area shape="rect" id="Node000001" title=" " alt="" coords="337,35,423,60"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="412,22,401,16,380,13,361,15,351,20,348,25,354,33,349,36,343,26,347,16,359,10,380,8,402,11,414,17"/>
+<area shape="rect" id="Node000002" href="$test_2merkle_8c.html#a6461f23b18689eee7cf4ef3e8abbfd35" title="Test inserting and re&#45;inserting many entries with no verification failures." alt="" coords="103,5,289,31"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="321,41,280,34,281,29,322,36"/>
+<area shape="rect" id="Node000004" href="$test_2merkle_8c.html#a22249124e7958d6d3655791fe1079a55" title="Test statistical properties of a tree filled with random inserts." alt="" coords="130,55,262,96"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="322,59,263,68,262,63,321,54"/>
+<area shape="rect" id="Node000003" href="$test_2merkle_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main entry point for the unit tests." alt="" coords="5,35,55,60"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="105,37,56,46,55,41,104,32"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="114,64,55,54,56,49,115,59"/>
+</map>

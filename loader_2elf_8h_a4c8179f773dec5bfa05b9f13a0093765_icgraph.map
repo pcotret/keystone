@@ -1,4 +1,6 @@
 <map id="elf_newFile" name="elf_newFile">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,93,55"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="62,15,58,10,49,8,41,10,37,14,38,29,33,29,32,12,38,5,49,3,60,5,66,12"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="149,29,236,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="215,16,208,10,192,8,178,10,171,14,169,20,173,28,168,30,164,21,166,11,176,5,192,3,210,5,219,12"/>
+<area shape="rect" id="Node000002" href="$loader-binary_8c.html#a109339822e97d73894cf35761a236624" title="Loads the runtime ELF file and maps memory for the enclave." alt="" coords="5,29,101,55"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="133,45,101,45,101,40,133,40"/>
 </map>

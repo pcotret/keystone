@@ -1,0 +1,30 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title="Main function running all paging&#45;related unit tests." alt="" coords="5,204,55,230"/>
+<area shape="rect" id="Node000002" href="$test_2page__swap_8c.html#a49f538d927504907829f38b601bf1708" title="Test correctness of swapping out and back in a page." alt="" coords="130,179,253,204"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,210,114,201,115,206,56,216"/>
+<area shape="rect" id="Node000011" href="$test_2page__swap_8c.html#a1670ea10d9525083086169631f04e57d" title="Test that swapped&#45;out memory is randomized." alt="" coords="103,228,280,254"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="55,218,88,223,87,228,55,223"/>
+<area shape="rect" id="Node000003" href="$test_2page__swap_8c.html#a63ddc223257494da4541e404b7425e59" title="Compares two hash values." alt="" coords="383,104,453,130"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="225,176,327,138,367,127,369,132,329,143,227,181"/>
+<area shape="rect" id="Node000004" href="$test_2page__swap_8c.html#a4695e3205feaecda61d9626470c1dffa" title="Computes the SHA&#45;256 hash of a page." alt="" coords="376,55,460,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="205,176,256,133,290,110,327,89,360,77,362,82,329,94,293,114,260,138,209,180"/>
+<area shape="rect" id="Node000008" href="$test_2merkle_8c.html#a52a3f0723ead0af4bd09df957544f987" title="Allocates a 4 KiB backing page using mmap." alt="" coords="328,153,508,179"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="253,182,312,175,313,181,254,187"/>
+<area shape="rect" id="Node000009" href="$test_2page__swap_8c.html#a7675e9de607b03f8e39855fa023125ad" title="Allocates a new memory page." alt="" coords="391,203,446,228"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="254,195,375,208,375,214,253,201"/>
+<area shape="rect" id="Node000010" href="$test_2page__swap_8c.html#a172674299bd87a2d0f072d78d86e2cf6" title="Frees a previously allocated page." alt="" coords="393,252,443,278"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="250,202,281,213,305,226,329,238,379,254,377,259,327,243,303,231,279,218,248,207"/>
+<area shape="rect" id="Node000005" href="$sha256_8h.html#a8f4b55bd1e49af6e4620bc9ba9549397" title="Finalizes the hash and outputs the digest." alt="" coords="564,5,658,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="460,54,549,31,550,36,461,59"/>
+<area shape="rect" id="Node000006" href="$sha256_8h.html#ade6fde6ef9ea137449d72891931c77ef" title="Initializes a SHA256_CTX structure." alt="" coords="567,55,655,80"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="461,65,552,65,552,70,461,70"/>
+<area shape="rect" id="Node000007" href="$sha256_8h.html#ac98a25de627f4cded12b7312dee1ffa0" title="Feeds data into the SHA&#45;256 hash." alt="" coords="556,104,666,130"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="461,76,544,97,542,102,460,81"/>
+<area shape="poly" id="edge13_Node000011_Node000008" title=" " alt="" coords="248,225,279,214,303,201,327,188,344,182,346,187,329,193,305,206,281,219,250,230"/>
+<area shape="poly" id="edge14_Node000011_Node000009" title=" " alt="" coords="280,228,375,218,376,223,281,234"/>
+<area shape="poly" id="edge15_Node000011_Node000010" title=" " alt="" coords="281,248,378,258,378,263,280,253"/>
+<area shape="rect" id="Node000012" href="$test_2page__swap_8c.html#ace0a0ebda92754e0777e01ef3e8e6dc4" title="Computes the bit similarity between two pages." alt="" coords="372,351,465,376"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="209,252,260,294,293,317,329,337,357,348,355,353,327,342,291,322,256,298,205,256"/>
+<area shape="rect" id="Node000013" href="$test_2page__swap_8c.html#a51d8c95094a7395731bf2c55b6521700" title="Computes the standard deviation for the bit similarity of IID pages." alt="" coords="361,301,475,327"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="228,252,329,288,350,294,349,299,327,293,226,257"/>
+</map>

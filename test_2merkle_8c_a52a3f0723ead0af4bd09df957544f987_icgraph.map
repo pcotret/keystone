@@ -1,0 +1,10 @@
+<map id="paging_alloc_backing_page" name="paging_alloc_backing_page">
+<area shape="rect" id="Node000001" title="Allocates a 4 KiB backing page using mmap." alt="" coords="328,31,508,56"/>
+<area shape="rect" id="Node000002" href="$test_2page__swap_8c.html#a49f538d927504907829f38b601bf1708" title="Test correctness of swapping out and back in a page." alt="" coords="130,5,253,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="313,34,253,28,254,22,313,29"/>
+<area shape="rect" id="Node000004" href="$test_2page__swap_8c.html#a1670ea10d9525083086169631f04e57d" title="Test that swapped&#45;out memory is randomized." alt="" coords="103,55,280,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="313,57,281,61,280,55,312,52"/>
+<area shape="rect" id="Node000003" href="$test_2page__swap_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function running all paging&#45;related unit tests." alt="" coords="5,31,55,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="115,33,55,42,55,37,114,28"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="87,55,55,50,55,44,88,49"/>
+</map>

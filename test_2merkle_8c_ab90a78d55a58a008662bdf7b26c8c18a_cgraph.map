@@ -1,0 +1,27 @@
+<map id="test_poison_root" name="test_poison_root">
+<area shape="rect" id="Node000001" title="Test poisoning the root node of the Merkle tree." alt="" coords="5,153,123,179"/>
+<area shape="rect" id="Node000002" href="$test_2merkle_8c.html#acfb20e507ede1092b7e9592895ef09d8" title="Verifies all entries in the random region against the provided Merkle tree." alt="" coords="366,104,488,130"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,150,170,138,264,126,350,118,350,124,264,131,171,143,115,155"/>
+<area shape="rect" id="Node000008" href="$test_2merkle_8c.html#ac53976a94ece6a7567ba980a90b15b97" title="Flip a random bit in a given buffer." alt="" coords="184,203,293,228"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="113,177,176,195,175,200,112,182"/>
+<area shape="rect" id="Node000009" href="$test_2merkle_8c.html#a54c418e553cc53bab3249f6a0d192ba2" title="Creates and populates a Merkle tree using the random region." alt="" coords="171,153,306,179"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="123,164,155,164,155,169,123,169"/>
+<area shape="rect" id="Node000003" href="$test_2merkle_8c.html#ab3b6797205b391fde618ac8eac573bd3" title="Get a pointer to a lazily initialized random region buffer." alt="" coords="549,79,655,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="488,105,533,99,534,104,489,111"/>
+<area shape="rect" id="Node000004" href="$sha256_8h.html#a8f4b55bd1e49af6e4620bc9ba9549397" title="Finalizes the hash and outputs the digest." alt="" coords="555,128,649,154"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="489,123,540,130,540,135,488,128"/>
+<area shape="rect" id="Node000005" href="$sha256_8h.html#ade6fde6ef9ea137449d72891931c77ef" title="Initializes a SHA256_CTX structure." alt="" coords="558,177,646,203"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="473,128,500,138,549,164,557,168,555,173,546,169,498,143,471,133"/>
+<area shape="rect" id="Node000006" href="$sha256_8h.html#ac98a25de627f4cded12b7312dee1ffa0" title="Feeds data into the SHA&#45;256 hash." alt="" coords="547,227,657,252"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="483,128,501,139,518,158,526,177,534,195,549,214,552,216,549,220,545,217,529,198,521,179,514,161,498,143,480,133"/>
+<area shape="rect" id="Node000007" href="$test_2merkle_8c.html#ac0d5567eaa38b76b0447bb727120572e" title="Generate a randomly shuffled index array of values from 0 to max&#45;1." alt="" coords="554,29,650,55"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="458,101,555,59,557,64,460,106"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="572,30,567,21,570,11,582,5,602,3,623,5,634,12,632,16,622,10,602,8,584,10,574,15,572,20,577,28"/>
+<area shape="rect" id="Node000010" href="$test_2merkle_8c.html#ab1d648a600d844d1ffea447839e15d34" title="Inserts randomly shuffled entries from a random region into a Merkle tree." alt="" coords="354,153,499,179"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="306,164,338,164,338,169,306,169"/>
+<area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="471,150,498,140,546,113,555,109,557,114,549,118,500,145,473,155"/>
+<area shape="poly" id="edge12_Node000010_Node000004" title=" " alt="" coords="499,153,540,147,541,152,500,158"/>
+<area shape="poly" id="edge13_Node000010_Node000005" title=" " alt="" coords="500,173,543,180,543,185,499,179"/>
+<area shape="poly" id="edge14_Node000010_Node000006" title=" " alt="" coords="461,177,556,218,554,223,459,182"/>
+<area shape="poly" id="edge15_Node000010_Node000007" title=" " alt="" coords="480,150,498,140,514,122,521,104,529,84,545,64,549,61,552,66,549,68,534,87,526,106,518,125,501,144,483,155"/>
+</map>

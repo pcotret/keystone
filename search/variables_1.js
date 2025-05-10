@@ -14,5 +14,6 @@ var searchData=
   ['addr_11',['addr',['../structpmp__region.html#a1a5071cdbe91881e03bb3cb1e68439fe',1,'pmp_region']]],
   ['addrmode_12',['addrmode',['../structpmp__region.html#a87c2541458af36989ccce625ae932b40',1,'pmp_region']]],
   ['allow_5foverlap_13',['allow_overlap',['../structpmp__region.html#a15ce526c6cf3f7734f400db02a319858',1,'pmp_region']]],
-  ['ases_14',['ases',['../group__R__AARCH64.html#gafef6cde7acaa0e6dc4cc5dc0faf6936e',1,'Elf_MIPS_ABIFlags_v0']]]
+  ['ases_14',['ases',['../group__R__AARCH64.html#gafef6cde7acaa0e6dc4cc5dc0faf6936e',1,'Elf_MIPS_ABIFlags_v0']]],
+  ['avg_5fdepth_15',['avg_depth',['../structmerk__stats__s.html#aef17f19cfa60101c010568dd3bf963ce',1,'merk_stats_s']]]
 ];

@@ -158,19 +158,21 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="enclave_8h__dep__incl.png" border="0" usemap="#asm_2src_2enclave_8hdep" alt=""/></div>
 <map name="asm_2src_2enclave_8hdep" id="asm_2src_2enclave_8hdep">
-<area shape="rect" title="Enclave management interface and metadata structures for the Keystone security monitor." alt="" coords="251,5,371,31"/>
+<area shape="rect" title="Enclave management interface and metadata structures for the Keystone security monitor." alt="" coords="308,5,428,31"/>
 <area shape="rect" href="cpu_8h.html" title="CPU context management for enclaves." alt="" coords="5,79,102,105"/>
-<area shape="poly" title=" " alt="" coords="253,38,98,81,97,76,252,33"/>
+<area shape="poly" title=" " alt="" coords="300,38,102,82,101,77,299,32"/>
 <area shape="rect" href="platform-hook_8h_source.html" title=" " alt="" coords="176,79,331,105"/>
-<area shape="poly" title=" " alt="" coords="294,45,265,80,261,77,290,41"/>
+<area shape="poly" title=" " alt="" coords="337,42,274,81,272,76,334,37"/>
 <area shape="rect" href="mpfs_2platform_8c.html" title="Platform&#45;specific functions for enclave management and random number generation." alt="" coords="84,153,229,193"/>
-<area shape="poly" title=" " alt="" coords="237,35,198,53,181,65,166,81,158,97,154,116,155,152,150,152,149,116,153,96,162,77,177,61,195,48,234,31"/>
+<area shape="poly" title=" " alt="" coords="293,24,258,30,224,41,192,57,166,81,157,97,153,116,155,152,149,152,148,115,152,95,162,77,189,53,222,36,257,25,292,19"/>
 <area shape="rect" href="fu540__internal_8c_source.html" title=" " alt="" coords="263,153,415,193"/>
-<area shape="poly" title=" " alt="" coords="330,43,345,78,349,118,346,152,340,152,344,118,340,80,325,45"/>
+<area shape="poly" title=" " alt="" coords="366,47,345,153,340,152,360,46"/>
 <area shape="rect" href="multimem_8h_source.html" title=" " alt="" coords="444,160,621,186"/>
-<area shape="poly" title=" " alt="" coords="342,38,516,158,513,162,339,42"/>
+<area shape="poly" title=" " alt="" coords="389,41,446,103,516,157,513,162,442,107,385,45"/>
 <area shape="rect" href="plugins_8h_source.html" title=" " alt="" coords="457,79,618,105"/>
-<area shape="poly" title=" " alt="" coords="365,34,500,76,498,81,363,39"/>
+<area shape="poly" title=" " alt="" coords="412,35,510,76,508,81,410,40"/>
+<area shape="rect" href="sbi__trap__hack_8c.html" title="RISC&#45;V trap handler and error reporting in an enclave." alt="" coords="642,79,798,105"/>
+<area shape="poly" title=" " alt="" coords="444,32,661,76,660,81,443,37"/>
 <area shape="poly" title=" " alt="" coords="229,117,182,154,179,150,225,113"/>
 <area shape="poly" title=" " alt="" coords="279,113,320,150,316,154,276,117"/>
 <area shape="poly" title=" " alt="" coords="538,121,536,160,530,159,533,120"/>
@@ -840,23 +842,7 @@ Here is the call graph for this function:</div>
 <p>Trap handler for enclave-related SBI calls. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">regs</td><td>Pointer to trap registers.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Handle trap/interrupt</p>
-<p>This function is called by firmware linked to OpenSBI library for handling trap/interrupt. It expects the following:</p><ol type="1">
-<li>The 'mscratch' CSR is pointing to sbi_scratch of current HART</li>
-<li>The 'mcause' CSR is having exception/interrupt cause</li>
-<li>The 'mtval' CSR is having additional trap information</li>
-<li>The 'mtval2' CSR is having additional trap information</li>
-<li>The 'mtinst' CSR is having decoded trap instruction</li>
-<li>Stack pointer (SP) is setup for current HART</li>
-<li>Interrupts are disabled in MSTATUS CSR</li>
-</ol>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">regs</td><td>pointer to register state </td></tr>
+    <tr><td class="paramname">regs</td><td>Pointer to trap registers. </td></tr>
   </table>
   </dd>
 </dl>
@@ -865,17 +851,9 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="enclave_8h_a14827ac37b1a7554b6b927bd85c5ae45_cgraph.png" border="0" usemap="#aenclave_8h_a14827ac37b1a7554b6b927bd85c5ae45_cgraph" alt=""/></div>
 <map name="aenclave_8h_a14827ac37b1a7554b6b927bd85c5ae45_cgraph" id="aenclave_8h_a14827ac37b1a7554b6b927bd85c5ae45_cgraph">
-<area shape="rect" title="Trap handler for enclave&#45;related SBI calls." alt="" coords="5,29,181,70"/>
-<area shape="poly" title=" " alt="" coords="59,29,58,19,63,10,75,5,93,3,112,5,124,11,121,16,111,10,93,8,77,10,67,14,63,20,65,28"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="enclave_8h_a14827ac37b1a7554b6b927bd85c5ae45_icgraph.png" border="0" usemap="#aenclave_8h_a14827ac37b1a7554b6b927bd85c5ae45_icgraph" alt=""/></div>
-<map name="aenclave_8h_a14827ac37b1a7554b6b927bd85c5ae45_icgraph" id="aenclave_8h_a14827ac37b1a7554b6b927bd85c5ae45_icgraph">
-<area shape="rect" title="Trap handler for enclave&#45;related SBI calls." alt="" coords="5,29,181,70"/>
-<area shape="poly" title=" " alt="" coords="121,16,111,10,93,8,77,10,67,14,63,20,65,28,59,29,58,19,63,10,75,5,93,3,112,5,124,11"/>
+<area shape="rect" title="Trap handler for enclave&#45;related SBI calls." alt="" coords="5,5,181,46"/>
+<area shape="rect" href="sbi__trap__hack_8c.html#ae33649fb6de10d718dfebd7cafcef0fe" title="Handle and report errors related to RISC&#45;V trap events." alt="" coords="229,13,329,39"/>
+<area shape="poly" title=" " alt="" coords="181,23,213,23,213,28,181,28"/>
 </map>
 </div>
 

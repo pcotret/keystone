@@ -1,0 +1,7 @@
+<map id="bit_similarity_sd" name="bit_similarity_sd">
+<area shape="rect" id="Node000001" title="Computes the standard deviation for the bit similarity of IID pages." alt="" coords="328,5,442,31"/>
+<area shape="rect" id="Node000002" href="$test_2page__swap_8c.html#a1670ea10d9525083086169631f04e57d" title="Test that swapped&#45;out memory is randomized." alt="" coords="103,5,280,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="312,21,281,21,281,16,312,16"/>
+<area shape="rect" id="Node000003" href="$test_2page__swap_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function running all paging&#45;related unit tests." alt="" coords="5,5,55,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>

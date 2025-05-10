@@ -45,5 +45,6 @@ var searchData=
   ['epm_5finit_42',['epm_init',['../keystone_8h.html#a6892e4dbc204898abf7b68db4d756c33',1,'keystone-page.c']]],
   ['epm_5fsatp_43',['epm_satp',['../keystone_8h.html#ad13a1a658a4cf6e37bc5c231a4c168ce',1,'keystone.h']]],
   ['epm_5fva_5fto_5fpa_44',['epm_va_to_pa',['../keystone_8h.html#a9f89bd8deb71a46005cd44351c1af173',1,'keystone.h']]],
-  ['exit_5fenclave_45',['exit_enclave',['../enclave_8h.html#a15eefb30de1bdabdffb68e8ee40ad619',1,'enclave.c']]]
+  ['error_5fand_5fexit_45',['error_and_exit',['../loader-binary_8c.html#a11afbf313ffb066d2a5e18520c77d725',1,'loader-binary.c']]],
+  ['exit_5fenclave_46',['exit_enclave',['../enclave_8h.html#a15eefb30de1bdabdffb68e8ee40ad619',1,'enclave.c']]]
 ];

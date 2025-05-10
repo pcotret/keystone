@@ -1,0 +1,5 @@
+<map id="map_physical_memory" name="map_physical_memory">
+<area shape="rect" id="Node000001" title="Maps the physical memory for loading." alt="" coords="149,5,302,31"/>
+<area shape="rect" id="Node000002" href="$loader-binary_8c.html#a109339822e97d73894cf35761a236624" title="Loads the runtime ELF file and maps memory for the enclave." alt="" coords="5,5,101,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,21,101,21,101,16,133,16"/>
+</map>

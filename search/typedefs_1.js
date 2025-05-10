@@ -1,5 +1,25 @@
 var searchData=
 [
-  ['paddr_5ft_0',['paddr_t',['../keystone_8h.html#a54d2176a558d887180d168504124f341',1,'keystone.h']]],
-  ['pmpreg_5fid_1',['pmpreg_id',['../pmp_8h.html#afc6109cf59f89595f7d8563f118b5b64',1,'pmp.h']]]
+  ['elf32_5faddr_0',['Elf32_Addr',['../util_2elf_8h.html#a40c6d4571e6001f443cc6a6474620158',1,'elf.h']]],
+  ['elf32_5fconflict_1',['Elf32_Conflict',['../util_2elf_8h.html#af5ec759e9054f5d14558d13c77fdb49a',1,'elf.h']]],
+  ['elf32_5fhalf_2',['Elf32_Half',['../util_2elf_8h.html#a2ff0787d7d1bae0f251192806a2974ca',1,'elf.h']]],
+  ['elf32_5foff_3',['Elf32_Off',['../util_2elf_8h.html#a655751f9b317369b93c581ea8ed84516',1,'elf.h']]],
+  ['elf32_5fsection_4',['Elf32_Section',['../util_2elf_8h.html#abaffe34cd8a7e31c8f57ebf85c17ca34',1,'elf.h']]],
+  ['elf32_5fsword_5',['Elf32_Sword',['../util_2elf_8h.html#a30ce6352cf03c667272698ada477da95',1,'elf.h']]],
+  ['elf32_5fsxword_6',['Elf32_Sxword',['../util_2elf_8h.html#a8c466fc4bdce93c75fa4f9740b1ce6c1',1,'elf.h']]],
+  ['elf32_5fversym_7',['Elf32_Versym',['../util_2elf_8h.html#a8acefd6aa26497ad5a3fe579b0c47004',1,'elf.h']]],
+  ['elf32_5fword_8',['Elf32_Word',['../util_2elf_8h.html#af5924ece606c732e86f8263a19408e45',1,'elf.h']]],
+  ['elf32_5fxword_9',['Elf32_Xword',['../util_2elf_8h.html#a06e429ed15bc1257d859cca67c4dddd9',1,'elf.h']]],
+  ['elf64_5faddr_10',['Elf64_Addr',['../util_2elf_8h.html#aeed51d08e3a950d637f8ec1f0cd4ef65',1,'elf.h']]],
+  ['elf64_5fhalf_11',['Elf64_Half',['../util_2elf_8h.html#adb6a5584018b431da3472e7c6a7fd731',1,'elf.h']]],
+  ['elf64_5foff_12',['Elf64_Off',['../util_2elf_8h.html#a6f7837bc80df7a68291fce54ff088849',1,'elf.h']]],
+  ['elf64_5fsection_13',['Elf64_Section',['../util_2elf_8h.html#acc3d34d4258f3cf91184ff97a6f8dda1',1,'elf.h']]],
+  ['elf64_5fsword_14',['Elf64_Sword',['../util_2elf_8h.html#a354f1cae9fad774a486444c12a861da5',1,'elf.h']]],
+  ['elf64_5fsxword_15',['Elf64_Sxword',['../util_2elf_8h.html#a5b450442210b3d21567662fb96ac9a02',1,'elf.h']]],
+  ['elf64_5fversym_16',['Elf64_Versym',['../util_2elf_8h.html#acdc5f76ef4cf0f090a3fe0b1b958667c',1,'elf.h']]],
+  ['elf64_5fword_17',['Elf64_Word',['../util_2elf_8h.html#aa3aa1920ed115b7ef7e99716fece4401',1,'elf.h']]],
+  ['elf64_5fxword_18',['Elf64_Xword',['../util_2elf_8h.html#a5447a48a3dae0bd24f606415268c6fe4',1,'elf.h']]],
+  ['elf_5faddr_5ftype_5ft_19',['elf_addr_type_t',['../loader_2elf_8h.html#a580c32e942cc1d0aa21934cf4394897b',1,'elf.h']]],
+  ['elf_5ft_20',['elf_t',['../loader_2elf_8h.html#a0536080676f076eca509244dbbec6f18',1,'elf.h']]],
+  ['enclave_5fid_21',['enclave_id',['../enclave_8h.html#ac91e4341d26fc4ab08c2edc8b672c5ba',1,'enclave.h']]]
 ];

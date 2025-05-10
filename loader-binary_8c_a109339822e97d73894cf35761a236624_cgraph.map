@@ -1,0 +1,28 @@
+<map id="load_runtime" name="load_runtime">
+<area shape="rect" id="Node000001" title="Loads the runtime ELF file and maps memory for the enclave." alt="" coords="5,201,101,227"/>
+<area shape="rect" id="Node000002" href="$elf_8c.html#a4c8179f773dec5bfa05b9f13a0093765" title=" " alt="" coords="185,103,273,128"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,199,101,168,147,137,169,128,171,133,150,142,104,172,70,203"/>
+<area shape="rect" id="Node000007" href="$loader-binary_8c.html#abc7bf6cb55d04bfc4118a77143ebdf9f" title="Maps the physical memory for loading." alt="" coords="152,152,306,178"/>
+<area shape="poly" id="edge11_Node000001_Node000007" title=" " alt="" coords="100,198,166,180,167,185,102,203"/>
+<area shape="rect" id="Node000008" href="$loader-binary_8c.html#aeb5d65fecd786851d7f5eec5d97b69a3" title="Maps untrusted memory into the enclave." alt="" coords="149,201,309,227"/>
+<area shape="poly" id="edge12_Node000001_Node000008" title=" " alt="" coords="101,212,133,212,133,217,101,217"/>
+<area shape="rect" id="Node000009" href="$freemem__ld_8c.html#a50b4bc7b180f06f8387a9af236f0f428" title="Get the number of available free pages." alt="" coords="179,251,279,276"/>
+<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="102,225,167,243,166,249,100,230"/>
+<area shape="rect" id="Node000010" href="$freemem__ld_8c.html#aae34c31bcb1e17e2535548edd2e80bc7" title="Initialize the simple physical allocator." alt="" coords="196,300,262,326"/>
+<area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="70,226,104,256,150,286,182,299,180,304,147,291,101,260,66,230"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="199,104,193,94,197,84,209,78,229,76,250,79,261,85,259,90,248,84,229,81,210,83,201,88,199,93,204,101"/>
+<area shape="rect" id="Node000003" href="$elf_8c.html#a34a84a8ca483afa40d9df0edb49e4f42" title=" " alt="" coords="357,103,535,128"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="273,113,342,113,342,118,273,118"/>
+<area shape="poly" id="edge10_Node000003_Node000003" title=" " alt="" coords="410,104,403,94,407,84,422,78,446,76,473,79,486,86,484,90,471,84,446,81,423,83,411,88,408,93,414,101"/>
+<area shape="rect" id="Node000004" href="$elf_8c.html#aea754dc1a54e1625d95fa88f8eba27c8" title=" " alt="" coords="634,29,733,55"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="480,100,583,64,619,54,620,59,584,69,482,105"/>
+<area shape="rect" id="Node000005" href="$elf_8c.html#a6bcd933a4740d599ecf691a1afe52002" title=" " alt="" coords="583,103,784,128"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="536,113,568,113,568,118,536,118"/>
+<area shape="rect" id="Node000006" href="$elf_8c.html#ac6909f36f4bd4f3d49d3d50cb62f8503" title=" " alt="" coords="607,176,760,202"/>
+<area shape="poly" id="edge8_Node000003_Node000006" title=" " alt="" coords="491,126,625,168,624,173,490,131"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="644,31,636,21,641,11,657,5,684,3,713,6,728,13,725,17,712,11,683,8,658,10,645,15,642,20,648,27"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="644,104,636,94,641,84,657,78,684,76,713,79,728,86,725,91,712,84,683,81,658,83,645,88,642,93,648,101"/>
+<area shape="poly" id="edge9_Node000006_Node000006" title=" " alt="" coords="644,177,636,167,641,158,657,151,684,149,713,152,728,159,725,164,712,157,683,155,658,157,645,161,642,167,648,174"/>
+<area shape="rect" id="Node000011" href="$freemem__ld_8c.html#a82ceaa9fa0697cfec7fb959f57ac2f32" title="Free a previously allocated page of memory." alt="" coords="413,300,480,326"/>
+<area shape="poly" id="edge15_Node000010_Node000011" title=" " alt="" coords="262,310,397,310,397,316,262,316"/>
+</map>

@@ -15,6 +15,7 @@ var dir_cfc62cafa00a1d6cf885ee8883644d45 =
     [ "platform-hook.h", "platform-hook_8h_source.html", null ],
     [ "pmp.h", "pmp_8h.html", "pmp_8h" ],
     [ "safe_math_util.h", "safe__math__util_8h_source.html", null ],
+    [ "sbi_trap_hack.c", "sbi__trap__hack_8c.html", "sbi__trap__hack_8c" ],
     [ "sm-sbi-opensbi.h", "sm-sbi-opensbi_8h_source.html", null ],
     [ "sm-sbi.h", "sm-sbi_8h_source.html", null ],
     [ "sm.h", "sm_8h_source.html", null ],

@@ -1,7 +1,9 @@
 <map id="elf_newFile_maybe_unsafe" name="elf_newFile_maybe_unsafe">
-<area shape="rect" id="Node000001" title=" " alt="" coords="141,29,319,55"/>
-<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="261,16,250,10,230,8,211,10,201,15,199,20,204,28,199,30,193,21,197,11,209,5,230,3,252,5,263,12"/>
-<area shape="rect" id="Node000002" href="$elf_8c.html#a4c8179f773dec5bfa05b9f13a0093765" title=" " alt="" coords="5,29,93,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,45,93,45,93,40,125,40"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="80,16,69,10,49,8,30,10,20,15,18,20,23,28,18,30,13,21,16,11,29,5,49,3,71,5,82,12"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="284,29,462,55"/>
+<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="404,16,393,10,373,8,354,10,344,15,342,20,347,28,343,30,337,21,340,11,353,5,373,3,395,5,407,12"/>
+<area shape="rect" id="Node000002" href="$elf_8c.html#a4c8179f773dec5bfa05b9f13a0093765" title=" " alt="" coords="149,29,236,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="269,45,236,45,236,40,269,40"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="215,16,208,10,192,8,178,10,171,14,169,20,173,28,168,30,164,21,166,11,176,5,192,3,210,5,219,12"/>
+<area shape="rect" id="Node000003" href="$loader-binary_8c.html#a109339822e97d73894cf35761a236624" title="Loads the runtime ELF file and maps memory for the enclave." alt="" coords="5,29,101,55"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="133,45,101,45,101,40,133,40"/>
 </map>

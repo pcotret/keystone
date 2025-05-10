@@ -126,11 +126,11 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a4a0e9dc0b88794f14396eb115981cb98" id="r_a4a0e9dc0b88794f14396eb115981cb98"><td class="memItemLeft" align="right" valign="top"><a id="a4a0e9dc0b88794f14396eb115981cb98" name="a4a0e9dc0b88794f14396eb115981cb98"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SHA3_512_BLOCK_LEN</b>&#160;&#160;&#160;72</td></tr>
+<tr class="memitem:a4a0e9dc0b88794f14396eb115981cb98" id="r_a4a0e9dc0b88794f14396eb115981cb98"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hmac__sha3_8h.html#a4a0e9dc0b88794f14396eb115981cb98">SHA3_512_BLOCK_LEN</a>&#160;&#160;&#160;72</td></tr>
+<tr class="memdesc:a4a0e9dc0b88794f14396eb115981cb98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal block length of SHA3-512 in bytes.  <br /></td></tr>
 <tr class="separator:a4a0e9dc0b88794f14396eb115981cb98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a313239e1650691feb7874a6b5ab832d5" id="r_a313239e1650691feb7874a6b5ab832d5"><td class="memItemLeft" align="right" valign="top"><a id="a313239e1650691feb7874a6b5ab832d5" name="a313239e1650691feb7874a6b5ab832d5"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SHA3_512_HASH_LEN</b>&#160;&#160;&#160;64</td></tr>
+<tr class="memitem:a313239e1650691feb7874a6b5ab832d5" id="r_a313239e1650691feb7874a6b5ab832d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hmac__sha3_8h.html#a313239e1650691feb7874a6b5ab832d5">SHA3_512_HASH_LEN</a>&#160;&#160;&#160;64</td></tr>
+<tr class="memdesc:a313239e1650691feb7874a6b5ab832d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output hash length of SHA3-512 in bytes.  <br /></td></tr>
 <tr class="separator:a313239e1650691feb7874a6b5ab832d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -151,7 +151,42 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file for HMAC-SHA3 implementation. </p>
 <p>This file defines the interface for the HMAC-SHA3 (Hashed Message Authentication Code with SHA3) cryptographic algorithm, which combines SHA3 with a secret key to provide message authentication. It includes function prototypes for initializing, updating, and finalizing the HMAC operation using the SHA3 family of hash functions. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a4a0e9dc0b88794f14396eb115981cb98" name="a4a0e9dc0b88794f14396eb115981cb98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a0e9dc0b88794f14396eb115981cb98">&#9670;&#160;</a></span>SHA3_512_BLOCK_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SHA3_512_BLOCK_LEN&#160;&#160;&#160;72</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Internal block length of SHA3-512 in bytes. </p>
+<p>This value defines the size of the input block processed at each step of the SHA3-512 hash function. </p>
+
+</div>
+</div>
+<a id="a313239e1650691feb7874a6b5ab832d5" name="a313239e1650691feb7874a6b5ab832d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a313239e1650691feb7874a6b5ab832d5">&#9670;&#160;</a></span>SHA3_512_HASH_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SHA3_512_HASH_LEN&#160;&#160;&#160;64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Output hash length of SHA3-512 in bytes. </p>
+<p>This value defines the size of the final output hash produced by the SHA3-512 algorithm. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="ab071e260723bbe2b846b955efdc6534a" name="ab071e260723bbe2b846b955efdc6534a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab071e260723bbe2b846b955efdc6534a">&#9670;&#160;</a></span>hmac_sha3()</h2>
 

@@ -1,0 +1,13 @@
+<map id="test_swapout_randomness" name="test_swapout_randomness">
+<area shape="rect" id="Node000001" title="Test that swapped&#45;out memory is randomized." alt="" coords="5,104,183,130"/>
+<area shape="rect" id="Node000002" href="$test_2page__swap_8c.html#ace0a0ebda92754e0777e01ef3e8e6dc4" title="Computes the bit similarity between two pages." alt="" coords="274,5,368,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,101,166,71,230,40,258,30,260,35,232,45,168,76,117,106"/>
+<area shape="rect" id="Node000003" href="$test_2page__swap_8c.html#a51d8c95094a7395731bf2c55b6521700" title="Computes the standard deviation for the bit similarity of IID pages." alt="" coords="264,55,378,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,101,248,81,249,86,157,106"/>
+<area shape="rect" id="Node000004" href="$test_2merkle_8c.html#a52a3f0723ead0af4bd09df957544f987" title="Allocates a 4 KiB backing page using mmap." alt="" coords="231,104,411,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="183,114,215,114,215,120,183,120"/>
+<area shape="rect" id="Node000005" href="$test_2page__swap_8c.html#a7675e9de607b03f8e39855fa023125ad" title="Allocates a new memory page." alt="" coords="293,153,349,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="157,128,278,154,277,160,156,133"/>
+<area shape="rect" id="Node000006" href="$test_2page__swap_8c.html#a172674299bd87a2d0f072d78d86e2cf6" title="Frees a previously allocated page." alt="" coords="296,203,346,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="117,128,168,158,232,189,281,205,280,210,230,194,166,163,114,132"/>
+</map>

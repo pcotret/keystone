@@ -39,7 +39,7 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
-        [ "Functions", "globals_func.html", null ],
+        [ "Functions", "globals_func.html", "globals_func" ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
@@ -53,19 +53,20 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "aes_8h_source.html",
-"group__ElfFlagsSH.html#ga8be3d2b690ebf989174d0eb6a60e27b5",
-"group__M32R__Relocation__Types.html#gadcd1fb20385982baa4a65274908db4e3",
-"group__R__AARCH64.html#ga4d25edb0432aa63eda00cb607ae389eb",
-"group__R__AARCH64.html#gafe15c8d72df394443deb40da61df3459",
-"group__RelocationX86__64.html#gab8e43d25b967795b1cc727a7da7ac710",
-"pmp_8h.html#a8e1a8954ffa3e565ce06a1b14ef48737",
-"structregs.html#a0f6c31f200c086ce1c2ce58a8cf89f9e",
-"util_2elf_8h.html#a1a6720c85c479b709d84499f813e1197",
-"util_2elf_8h.html#a4117c7f2662e3a37fd329afd73f4fbbd",
-"util_2elf_8h.html#a66801fe3ae7746ab9386537d236cd4e4",
-"util_2elf_8h.html#a901711bf3e0810e96817e3bd554a8002",
-"util_2elf_8h.html#ab77da073a07d6a452ce9e9a05d4fe17b",
-"util_2elf_8h.html#adf25336739260788665e1968f3dd416b"
+"globals_s.html",
+"group__M32R__Relocation__Types.html#ga66ceaef38e44c8438fb255075e6e7bbd",
+"group__R__AARCH64.html#ga3be7119cb89d29e99d900bcbc89f7ec2",
+"group__R__AARCH64.html#gaf13bac5685d725c2ba9930c1176f3082",
+"group__RelocationX86__64.html#ga3debe9e5a79028bbe985a47c07a011ee",
+"mprv_8h.html#ae0bef1269f94b4c27b713f69a377ffe2",
+"structge__p2.html#a8419179312b65bfc637d28675f6ef7da",
+"util_2elf_8h.html#a0a1f2967c10cdf547f180951e6df9836",
+"util_2elf_8h.html#a322030426afae1a37a8ba1ab86a39066",
+"util_2elf_8h.html#a59f767308b3539ba69f3731043d602a5",
+"util_2elf_8h.html#a828120822b0e1c2ac1541b96262166ea",
+"util_2elf_8h.html#aaac4804ef07b9da1d840d951469692f0",
+"util_2elf_8h.html#ad1817e62a60c86a7e5d94a0bd063885d",
+"util_2elf_8h.html#af7f10d7fd66afcdcec55c3355c20666c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

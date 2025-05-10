@@ -381,6 +381,7 @@ var util_2elf_8h =
     [ "EI_MAG1", "util_2elf_8h.html#a2cae3878d982911632b418680718d53b", null ],
     [ "EI_MAG2", "util_2elf_8h.html#a2884a339ef7aefee59d160ed3fbb1739", null ],
     [ "EI_MAG3", "util_2elf_8h.html#ace03d4c5e8952e27b8505581432c3b84", null ],
+    [ "EI_NIDENT", "util_2elf_8h.html#ae407130db14180c6737390604ba7c1fe", null ],
     [ "EI_OSABI", "util_2elf_8h.html#a862a7ea859a2a2bed110aedf7744d969", null ],
     [ "EI_PAD", "util_2elf_8h.html#aed24a379d553d0e36853949dd6ddd6c1", null ],
     [ "EI_VERSION", "util_2elf_8h.html#aac8694b14e6500d9dc5047ef62518845", null ],

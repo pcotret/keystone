@@ -1,0 +1,67 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title="Main entry point for the unit tests." alt="" coords="5,291,55,316"/>
+<area shape="rect" id="Node000002" href="$test_2merkle_8c.html#a132dce7d32871a8eb3af4d27f53bc49e" title="Test key corruption in the Merkle tree." alt="" coords="570,29,687,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="28,290,31,249,40,192,49,162,62,133,79,106,101,83,154,48,213,24,275,10,339,4,401,3,461,8,560,23,559,28,460,13,401,9,339,9,276,15,215,30,157,53,104,87,83,109,67,135,54,164,45,194,36,249,34,290"/>
+<area shape="rect" id="Node000004" href="$test_2merkle_8c.html#aa512c5fb19746a9b5a3f17dae68d7120" title="Test inserting a single entry and verifying it." alt="" coords="547,104,710,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="30,290,36,258,48,216,69,172,84,152,101,135,156,100,218,78,282,67,348,64,412,67,473,75,571,97,570,102,472,80,412,72,348,69,283,72,219,83,159,105,104,139,88,155,74,175,53,218,41,259,35,291"/>
+<area shape="rect" id="Node000005" href="$test_2merkle_8c.html#aaea5ed301bece457ba81aa128a5780c6" title="Test inserting two entries and verifying both." alt="" coords="337,104,499,130"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="33,289,56,238,76,210,101,185,153,156,210,136,268,123,321,117,322,122,269,129,212,141,156,161,104,190,80,213,61,241,38,292"/>
+<area shape="rect" id="Node000006" href="$test_2merkle_8c.html#a6461f23b18689eee7cf4ef3e8abbfd35" title="Test inserting and re&#45;inserting many entries with no verification failures." alt="" coords="103,200,289,226"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="40,289,66,262,101,236,116,229,118,234,104,241,70,266,44,292"/>
+<area shape="rect" id="Node000015" href="$test_2merkle_8c.html#a8dbc9a45b534c4c818a3920afb5f127c" title="Test inserting a corrupted leaf into the Merkle tree." alt="" coords="131,315,261,356"/>
+<area shape="poly" id="edge25_Node000001_Node000015" title=" " alt="" coords="56,306,117,318,116,323,55,311"/>
+<area shape="rect" id="Node000017" href="$test_2merkle_8c.html#abb9e39228de5275ab53a11a6f4a1d3e7" title="Test detection of tampered data in a Merkle tree." alt="" coords="136,480,256,506"/>
+<area shape="poly" id="edge28_Node000001_Node000017" title=" " alt="" coords="36,316,42,347,55,388,75,430,104,466,123,477,120,482,101,470,70,433,50,390,37,349,31,317"/>
+<area shape="rect" id="Node000018" href="$test_2merkle_8c.html#aa1b137e694de8af906946bc8a719a258" title="Test poisoning a leaf node in the Merkle tree." alt="" coords="138,380,254,406"/>
+<area shape="poly" id="edge34_Node000001_Node000018" title=" " alt="" coords="44,315,70,341,104,365,124,374,122,379,101,370,67,345,41,319"/>
+<area shape="rect" id="Node000019" href="$test_2merkle_8c.html#ab90a78d55a58a008662bdf7b26c8c18a" title="Test poisoning the root node of the Merkle tree." alt="" coords="137,429,255,455"/>
+<area shape="poly" id="edge37_Node000001_Node000019" title=" " alt="" coords="38,316,61,365,80,393,104,416,124,427,121,432,101,420,76,396,57,368,33,318"/>
+<area shape="rect" id="Node000020" href="$test_2merkle_8c.html#a22249124e7958d6d3655791fe1079a55" title="Test statistical properties of a tree filled with random inserts." alt="" coords="130,250,262,291"/>
+<area shape="poly" id="edge41_Node000001_Node000020" title=" " alt="" coords="55,296,114,284,115,289,56,301"/>
+<area shape="rect" id="Node000021" href="$test_2merkle_8c.html#a0e1481d29f977c50bb5ec346ae2b42e8" title="Test verifying a non&#45;existent entry in an empty Merkle tree." alt="" coords="119,529,273,555"/>
+<area shape="poly" id="edge44_Node000001_Node000021" title=" " alt="" coords="34,317,38,356,48,410,69,467,85,493,105,516,107,519,104,523,101,520,80,497,64,470,43,411,32,357,29,317"/>
+<area shape="rect" id="Node000003" href="$test_2merkle_8c.html#ab3b6797205b391fde618ac8eac573bd3" title="Get a pointer to a lazily initialized random region buffer." alt="" coords="759,319,866,344"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="662,53,688,69,712,90,749,144,776,203,796,258,808,303,802,304,791,260,771,205,744,146,708,93,685,73,659,58"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="646,128,712,197,795,304,791,308,708,200,642,132"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="445,128,775,309,772,313,443,133"/>
+<area shape="rect" id="Node000007" href="$test_2merkle_8c.html#acfb20e507ede1092b7e9592895ef09d8" title="Verifies all entries in the random region against the provided Merkle tree." alt="" coords="567,455,690,480"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="289,208,351,210,412,215,465,225,486,232,501,242,521,265,530,290,531,316,528,342,525,367,526,392,532,417,549,442,556,448,552,452,545,445,528,420,520,393,520,367,523,341,526,316,524,291,516,268,498,246,484,237,464,230,412,220,350,215,289,214"/>
+<area shape="rect" id="Node000012" href="$test_2merkle_8c.html#ab47eafb6001aa08b6bd39b72c9f3e7dd" title=" " alt="" coords="375,280,461,306"/>
+<area shape="poly" id="edge15_Node000006_Node000012" title=" " alt="" coords="251,224,290,236,376,271,374,276,288,241,250,229"/>
+<area shape="rect" id="Node000013" href="$test_2merkle_8c.html#ab1d648a600d844d1ffea447839e15d34" title="Inserts randomly shuffled entries from a random region into a Merkle tree." alt="" coords="556,405,701,431"/>
+<area shape="poly" id="edge17_Node000006_Node000013" title=" " alt="" coords="280,197,405,185,461,187,483,191,501,197,527,216,549,239,585,291,609,345,623,390,618,392,604,347,580,294,545,242,523,220,498,202,482,196,460,192,405,190,281,202"/>
+<area shape="rect" id="Node000014" href="$test_2merkle_8c.html#a54c418e553cc53bab3249f6a0d192ba2" title="Creates and populates a Merkle tree using the random region." alt="" coords="351,329,486,355"/>
+<area shape="poly" id="edge23_Node000006_Node000014" title=" " alt="" coords="269,224,291,236,308,256,316,277,323,297,339,316,343,320,340,324,335,320,318,300,311,279,304,259,287,240,267,229"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="689,452,708,441,724,424,733,407,741,388,756,367,773,352,777,356,760,371,745,391,738,409,729,427,711,446,691,457"/>
+<area shape="rect" id="Node000008" href="$sha256_8h.html#a8f4b55bd1e49af6e4620bc9ba9549397" title="Finalizes the hash and outputs the digest." alt="" coords="766,504,859,530"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="680,479,751,498,750,503,679,484"/>
+<area shape="rect" id="Node000009" href="$sha256_8h.html#ade6fde6ef9ea137449d72891931c77ef" title="Initializes a SHA256_CTX structure." alt="" coords="769,553,856,579"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="652,479,759,540,767,544,765,549,756,545,650,483"/>
+<area shape="rect" id="Node000010" href="$sha256_8h.html#ac98a25de627f4cded12b7312dee1ffa0" title="Feeds data into the SHA&#45;256 hash." alt="" coords="758,455,867,480"/>
+<area shape="poly" id="edge12_Node000007_Node000010" title=" " alt="" coords="690,465,742,465,742,470,690,470"/>
+<area shape="rect" id="Node000011" href="$test_2merkle_8c.html#ac0d5567eaa38b76b0447bb727120572e" title="Generate a randomly shuffled index array of values from 0 to max&#45;1." alt="" coords="765,405,860,431"/>
+<area shape="poly" id="edge13_Node000007_Node000011" title=" " alt="" coords="679,452,749,432,750,438,680,457"/>
+<area shape="poly" id="edge14_Node000011_Node000011" title=" " alt="" coords="781,407,775,397,779,387,792,381,812,379,835,381,846,388,844,393,833,386,812,384,793,386,783,391,781,396,786,404"/>
+<area shape="poly" id="edge16_Node000012_Node000012" title=" " alt="" coords="383,281,376,271,380,262,395,256,418,253,444,256,457,263,455,268,442,261,418,259,396,261,384,266,381,271,387,278"/>
+<area shape="poly" id="edge18_Node000013_Node000003" title=" " alt="" coords="665,402,709,384,774,350,776,355,711,389,667,407"/>
+<area shape="poly" id="edge19_Node000013_Node000008" title=" " alt="" coords="689,429,711,440,727,453,736,465,745,478,759,491,765,494,762,499,756,495,741,481,732,469,723,456,708,445,687,434"/>
+<area shape="poly" id="edge20_Node000013_Node000009" title=" " alt="" coords="694,429,711,440,730,465,737,491,743,516,760,541,762,542,758,546,756,544,738,518,732,492,726,468,708,444,692,434"/>
+<area shape="poly" id="edge21_Node000013_Node000010" title=" " alt="" coords="680,429,748,448,747,453,679,434"/>
+<area shape="poly" id="edge22_Node000013_Node000011" title=" " alt="" coords="701,416,749,416,749,421,701,421"/>
+<area shape="poly" id="edge24_Node000014_Node000013" title=" " alt="" coords="468,353,500,364,584,396,582,401,498,369,466,358"/>
+<area shape="poly" id="edge27_Node000015_Node000014" title=" " alt="" coords="261,335,335,337,335,342,261,340"/>
+<area shape="rect" id="Node000016" href="$test_2merkle_8c.html#ac53976a94ece6a7567ba980a90b15b97" title="Flip a random bit in a given buffer." alt="" coords="364,379,472,404"/>
+<area shape="poly" id="edge26_Node000015_Node000016" title=" " alt="" coords="261,349,350,372,349,377,260,354"/>
+<area shape="poly" id="edge29_Node000017_Node000003" title=" " alt="" coords="256,479,369,454,498,414,522,402,546,390,649,360,743,340,745,345,650,365,548,395,524,407,500,419,371,459,257,485"/>
+<area shape="poly" id="edge31_Node000017_Node000008" title=" " alt="" coords="258,501,290,515,305,527,315,539,323,551,338,560,391,579,438,590,480,596,520,596,604,583,709,560,767,534,769,539,711,565,605,588,521,601,480,601,437,596,390,584,336,565,320,555,310,542,302,530,288,519,256,506"/>
+<area shape="poly" id="edge32_Node000017_Node000009" title=" " alt="" coords="257,498,291,515,302,526,308,538,314,561,321,583,327,593,338,601,393,625,451,638,511,640,571,636,628,626,681,612,766,583,768,588,683,617,629,631,571,641,511,646,450,643,391,630,336,606,324,596,316,586,309,563,303,540,297,529,287,519,255,503"/>
+<area shape="poly" id="edge33_Node000017_Node000010" title=" " alt="" coords="257,500,337,509,442,515,524,514,605,506,709,490,749,482,750,487,710,496,606,512,524,519,442,520,337,514,256,505"/>
+<area shape="poly" id="edge30_Node000017_Node000014" title=" " alt="" coords="255,482,287,465,298,454,305,442,311,417,316,390,323,377,335,364,339,361,342,365,339,368,328,380,321,392,316,418,310,444,303,457,291,470,257,487"/>
+<area shape="poly" id="edge36_Node000018_Node000014" title=" " alt="" coords="254,377,343,357,344,362,255,382"/>
+<area shape="poly" id="edge35_Node000018_Node000016" title=" " alt="" coords="254,390,348,389,348,395,254,395"/>
+<area shape="poly" id="edge38_Node000019_Node000007" title=" " alt="" coords="255,443,552,461,552,466,255,448"/>
+<area shape="poly" id="edge40_Node000019_Node000014" title=" " alt="" coords="254,430,288,416,302,404,311,391,320,377,335,364,344,359,347,364,339,368,324,381,315,394,306,407,290,421,256,435"/>
+<area shape="poly" id="edge39_Node000019_Node000016" title=" " alt="" coords="254,426,348,405,349,410,255,432"/>
+<area shape="poly" id="edge42_Node000020_Node000012" title=" " alt="" coords="263,274,360,284,359,290,262,280"/>
+<area shape="poly" id="edge43_Node000020_Node000014" title=" " alt="" coords="257,289,338,316,358,322,356,327,336,321,256,294"/>
+</map>

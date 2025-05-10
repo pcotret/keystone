@@ -1,0 +1,5 @@
+<map id="sbi_trap_error" name="sbi_trap_error">
+<area shape="rect" id="Node000001" title="Handle and report errors related to RISC&#45;V trap events." alt="" coords="229,13,329,39"/>
+<area shape="rect" id="Node000002" href="$sbi__trap__hack_8c.html#a14827ac37b1a7554b6b927bd85c5ae45" title="Trap handler for enclave&#45;related SBI calls." alt="" coords="5,5,181,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,28,181,28,181,23,213,23"/>
+</map>
