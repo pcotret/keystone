@@ -1,0 +1,6 @@
+<map id="platform_create_enclave" name="platform_create_enclave">
+<area shape="rect" id="Node000001" title="Hook called when an enclave is created." alt="" coords="163,29,326,55"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="276,16,265,10,244,8,225,10,215,15,213,20,218,27,213,30,207,21,211,11,224,5,244,3,267,5,278,12"/>
+<area shape="rect" id="Node000002" href="$enclave_8c.html#acc219d9a95270fbbaabbb4f4491791f0" title="Create a new enclave." alt="" coords="5,29,115,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,45,115,45,115,40,147,40"/>
+</map>

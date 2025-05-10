@@ -14,12 +14,13 @@ var searchData=
   ['e_5fshstrndx_11',['e_shstrndx',['../group__R__AARCH64.html#ga3b3070ccd7d971e8cb6ea58d4c6fab09',1,'Elf32_Ehdr::e_shstrndx'],['../group__R__AARCH64.html#gae8289d7705794be744876f6246242b9b',1,'Elf64_Ehdr::e_shstrndx']]],
   ['e_5ftype_12',['e_type',['../group__R__AARCH64.html#ga49e40a791813c06e3b6ebcb53aef1bb8',1,'Elf32_Ehdr::e_type'],['../group__R__AARCH64.html#ga031210e6571dad798c4ed66b85631d58',1,'Elf64_Ehdr::e_type']]],
   ['e_5fversion_13',['e_version',['../group__R__AARCH64.html#gaa27627bda53281221325df4dd782e800',1,'Elf32_Ehdr::e_version'],['../group__R__AARCH64.html#ga3855471cf08a9e4cd4b898e9a1e11fa4',1,'Elf64_Ehdr::e_version']]],
-  ['eid_14',['eid',['../structcpu__state.html#a850bb8f48bbab47748600f713639a71e',1,'cpu_state::eid'],['../structenclave.html#a8e26eca8ba1d3a21fa5c7c219343f7cc',1,'enclave::eid'],['../structenclave.html#af047078fb0063095cdc69d5f8b5d988b',1,'enclave::eid']]],
-  ['elems_15',['elems',['../structmerk__stats__s.html#af272965466ad0db6c11d9f4bdc077f9a',1,'merk_stats_s']]],
-  ['elfclass_16',['elfClass',['../structelf.html#aae4bc973b0966b1e1be804fae7ac6635',1,'elf']]],
-  ['elffile_17',['elfFile',['../structelf.html#a51781bcfff3700e97ca8547a2ad15c30',1,'elf']]],
-  ['elfsize_18',['elfSize',['../structelf.html#a5a88e53e1de2298c32310558bcdcce9b',1,'elf']]],
-  ['encl_5fsatp_19',['encl_satp',['../structenclave.html#a04fedd103e239d76e893b6ec20891e26',1,'enclave']]],
-  ['enclave_20',['enclave',['../structreport.html#aa754d0cffa449e9618d0ae0554a186be',1,'report']]],
-  ['epm_21',['epm',['../structenclave.html#a5bc03df499d969a152c8709ba919a9ef',1,'enclave']]]
+  ['ecall_5fkeystone_5fenclave_14',['ecall_keystone_enclave',['../sm-sbi-opensbi_8h.html#a5a6580dde1ba8dcb8ce4c8f7f9ce9b09',1,'sm-sbi-opensbi.c']]],
+  ['eid_15',['eid',['../structenclave.html#af047078fb0063095cdc69d5f8b5d988b',1,'enclave::eid'],['../structenclave.html#a8e26eca8ba1d3a21fa5c7c219343f7cc',1,'enclave::eid'],['../structcpu__state.html#a850bb8f48bbab47748600f713639a71e',1,'cpu_state::eid']]],
+  ['elems_16',['elems',['../structmerk__stats__s.html#af272965466ad0db6c11d9f4bdc077f9a',1,'merk_stats_s']]],
+  ['elfclass_17',['elfClass',['../structelf.html#aae4bc973b0966b1e1be804fae7ac6635',1,'elf']]],
+  ['elffile_18',['elfFile',['../structelf.html#a51781bcfff3700e97ca8547a2ad15c30',1,'elf']]],
+  ['elfsize_19',['elfSize',['../structelf.html#a5a88e53e1de2298c32310558bcdcce9b',1,'elf']]],
+  ['encl_5fsatp_20',['encl_satp',['../structenclave.html#a04fedd103e239d76e893b6ec20891e26',1,'enclave']]],
+  ['enclave_21',['enclave',['../structreport.html#aa754d0cffa449e9618d0ae0554a186be',1,'report']]],
+  ['epm_22',['epm',['../structenclave.html#a5bc03df499d969a152c8709ba919a9ef',1,'enclave']]]
 ];

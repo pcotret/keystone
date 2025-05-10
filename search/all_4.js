@@ -7,5 +7,5 @@ var searchData=
   ['bit_5fsimilarity_5fsd_4',['bit_similarity_sd',['../test_2page__swap_8c.html#a51d8c95094a7395731bf2c55b6521700',1,'page_swap.c']]],
   ['bitlen_5',['bitlen',['../structSHA256__CTX.html#a7971befc0fa37b07350552d3a949634a',1,'SHA256_CTX']]],
   ['bpf_20relocation_20types_6',['BPF Relocation Types',['../group__BPF__Relocation__Types.html',1,'']]],
-  ['byte_7',['BYTE',['../sha256_8h.html#a4ae1dab0fb4b072a66584546209e7d58',1,'sha256.h']]]
+  ['byte_7',['byte',['../crypto_8h.html#a0c8186d9b9b7880309c27230bbb5e69d',1,'byte:&#160;crypto.h'],['../sha256_8h.html#a4ae1dab0fb4b072a66584546209e7d58',1,'BYTE:&#160;sha256.h']]]
 ];

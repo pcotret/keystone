@@ -1,6 +1,6 @@
 <map id="sm/src/cpu.h" name="sm/src/cpu.h">
 <area shape="rect" id="Node000001" title="CPU context management for enclaves." alt="" coords="807,5,903,31"/>
-<area shape="rect" id="Node000002" href="$sm_8h_source.html" title=" " alt="" coords="869,153,918,178"/>
+<area shape="rect" id="Node000002" href="$sm_8h.html" title="Main interface for Keystone Secure Monitor (SM) core functionality." alt="" coords="869,153,918,178"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="861,31,889,137,884,138,856,32"/>
 <area shape="rect" id="Node000011" href="$enclave_8h.html" title="Enclave management interface and metadata structures for the Keystone security monitor." alt="" coords="780,79,856,105"/>
 <area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="851,32,833,66,829,64,846,30"/>
@@ -8,7 +8,7 @@
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="869,171,798,175,706,185,619,203,586,214,563,228,552,244,544,262,538,300,533,299,539,260,547,241,560,224,584,210,618,198,706,180,798,170,869,165"/>
 <area shape="rect" id="Node000004" href="$pmp_8h.html" title="Physical Memory Protection (PMP) management interface." alt="" coords="1119,234,1175,260"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="919,172,999,193,1096,224,1106,228,1104,233,1094,229,997,198,918,177"/>
-<area shape="rect" id="Node000006" href="$sm-sbi_8h_source.html" title=" " alt="" coords="665,234,736,260"/>
+<area shape="rect" id="Node000006" href="$sm-sbi_8h.html" title="SBI call interface for Keystone Secure Monitor (SM) services." alt="" coords="665,234,736,260"/>
 <area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="869,180,745,230,743,225,867,175"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="760,234,899,260"/>
 <area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="886,180,851,223,847,220,882,177"/>
@@ -26,7 +26,7 @@
 <area shape="poly" id="edge14_Node000011_Node000004" title=" " alt="" coords="845,103,1108,224,1109,224,1107,229,1106,229,843,108"/>
 <area shape="rect" id="Node000012" href="$thread_8h.html" title="Thread management and context switching for enclaves." alt="" coords="573,234,641,260"/>
 <area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="803,107,637,227,634,223,800,103"/>
-<area shape="rect" id="Node000013" href="$crypto_8h_source.html" title=" " alt="" coords="239,153,306,178"/>
+<area shape="rect" id="Node000013" href="$crypto_8h.html" title="Cryptographic interface using SHA3, Ed25519, and HKDF with SHA3&#45;512." alt="" coords="239,153,306,178"/>
 <area shape="poly" id="edge18_Node000011_Node000013" title=" " alt="" coords="779,101,321,161,320,155,779,96"/>
 <area shape="poly" id="edge16_Node000012_Node000003" title=" " alt="" coords="598,262,559,305,555,301,594,258"/>
 <area shape="poly" id="edge17_Node000012_Node000007" title=" " alt="" coords="620,258,662,302,658,305,616,262"/>

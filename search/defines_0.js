@@ -43,5 +43,6 @@ var searchData=
   ['at_5fsysinfo_5fehdr_40',['AT_SYSINFO_EHDR',['../util_2elf_8h.html#af7f10d7fd66afcdcec55c3355c20666c',1,'elf.h']]],
   ['at_5fucachebsize_41',['AT_UCACHEBSIZE',['../util_2elf_8h.html#aa0c962f5eb01ff333912cc3dd7fce630',1,'elf.h']]],
   ['at_5fuid_42',['AT_UID',['../util_2elf_8h.html#a7bc508a179d0a308a8e4b47b97bcf2a3',1,'elf.h']]],
-  ['attest_5fdata_5fmaxlen_43',['ATTEST_DATA_MAXLEN',['../enclave_8h.html#af64a9d5d20f94768757e084bdf0d23b7',1,'enclave.h']]]
+  ['attest_5fdata_5fmaxlen_43',['ATTEST_DATA_MAXLEN',['../enclave_8h.html#af64a9d5d20f94768757e084bdf0d23b7',1,'enclave.h']]],
+  ['attestation_5fkey_5flength_44',['ATTESTATION_KEY_LENGTH',['../sm_8h.html#a5f75b2a082f2686deb8fea08a4487d0f',1,'sm.h']]]
 ];

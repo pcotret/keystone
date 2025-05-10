@@ -1,0 +1,9 @@
+<map id="sm/src/page.h" name="sm/src/page.h">
+<area shape="rect" id="Node000001" title="Header file defining page table entry (PTE) and related constants for RISC&#45;V architecture." alt="" coords="155,5,259,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,113,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,34,99,74,97,69,181,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="137,79,277,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,31,210,63,204,63,204,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="300,79,413,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="233,29,318,70,316,74,231,34"/>
+</map>

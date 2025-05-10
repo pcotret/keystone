@@ -1,17 +1,17 @@
 <map id="sm/src/enclave.h" name="sm/src/enclave.h">
 <area shape="rect" id="Node000001" title="Enclave management interface and metadata structures for the Keystone security monitor." alt="" coords="443,5,563,31"/>
-<area shape="rect" id="Node000002" href="$sm_8h_source.html" title=" " alt="" coords="279,79,328,105"/>
+<area shape="rect" id="Node000002" href="$sm_8h.html" title="Main interface for Keystone Secure Monitor (SM) core functionality." alt="" coords="279,79,328,105"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="470,34,343,79,342,74,468,29"/>
 <area shape="rect" id="Node000004" href="$pmp_8h.html" title="Physical Memory Protection (PMP) management interface." alt="" coords="40,160,97,186"/>
 <area shape="poly" id="edge12_Node000001_Node000004" title=" " alt="" coords="443,34,359,54,267,82,187,116,110,155,109,155,106,151,107,150,185,111,265,76,357,49,442,29"/>
 <area shape="rect" id="Node000011" href="$thread_8h.html" title="Thread management and context switching for enclaves." alt="" coords="624,160,692,186"/>
 <area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="517,30,637,147,633,151,513,33"/>
-<area shape="rect" id="Node000012" href="$crypto_8h_source.html" title=" " alt="" coords="853,79,919,105"/>
+<area shape="rect" id="Node000012" href="$crypto_8h.html" title="Cryptographic interface using SHA3, Ed25519, and HKDF with SHA3&#45;512." alt="" coords="853,79,919,105"/>
 <area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="564,28,838,79,837,84,563,33"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="604,241,712,267"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="329,92,375,96,435,106,500,123,563,150,588,167,609,187,643,227,639,230,606,191,584,171,561,155,499,128,434,111,374,101,328,97"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="279,100,197,122,97,155,95,156,94,151,96,150,196,117,278,95"/>
-<area shape="rect" id="Node000006" href="$sm-sbi_8h_source.html" title=" " alt="" coords="316,160,386,186"/>
+<area shape="rect" id="Node000006" href="$sm-sbi_8h.html" title="SBI call interface for Keystone Secure Monitor (SM) services." alt="" coords="316,160,386,186"/>
 <area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="313,104,338,146,334,148,308,106"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="411,160,550,186"/>
 <area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="329,102,441,151,438,156,327,107"/>

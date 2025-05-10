@@ -4,7 +4,7 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="371,46,371,79,366,79,366,46"/>
 <area shape="rect" id="Node000003" href="$cpu_8h.html" title="CPU context management for enclaves." alt="" coords="5,153,102,178"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="300,111,102,156,101,151,299,106"/>
-<area shape="rect" id="Node000004" href="$platform-hook_8h_source.html" title=" " alt="" coords="176,153,331,178"/>
+<area shape="rect" id="Node000004" href="$platform-hook_8h.html" title="Platform&#45;specific hook declarations for enclave lifecycle and system integration." alt="" coords="176,153,331,178"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="337,116,274,154,272,150,334,111"/>
 <area shape="rect" id="Node000005" href="$mpfs_2platform_8c.html" title="Platform&#45;specific functions for enclave management and random number generation." alt="" coords="84,226,229,267"/>
 <area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="293,98,258,104,224,114,192,131,166,154,157,171,153,190,155,226,149,226,148,189,152,169,162,151,189,126,222,109,257,98,292,92"/>

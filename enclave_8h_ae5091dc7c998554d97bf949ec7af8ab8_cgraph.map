@@ -1,0 +1,9 @@
+<map id="create_enclave" name="create_enclave">
+<area shape="rect" id="Node000001" title="Create a new enclave." alt="" coords="5,67,115,92"/>
+<area shape="rect" id="Node000002" href="$fu540__internal_8c.html#a079aafebfa02ea8e5f124709d8519617" title="Hook called when an enclave is created." alt="" coords="166,29,329,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,66,164,56,165,61,116,71"/>
+<area shape="rect" id="Node000003" href="$fu540__internal_8c.html#ad8a55b5de551b6fd77d703e8ae775695" title="Hook called when an enclave is destroyed." alt="" coords="163,103,332,128"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="116,87,162,96,161,102,115,93"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="216,30,210,21,213,11,226,5,247,3,270,5,282,12,279,16,268,10,247,8,228,10,217,15,215,20,220,27"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="216,104,210,94,213,84,226,78,247,76,270,79,282,85,279,90,268,84,247,81,228,83,217,88,215,93,220,101"/>
+</map>

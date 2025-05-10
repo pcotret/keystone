@@ -1,0 +1,22 @@
+<map id="sm/src/crypto.h" name="sm/src/crypto.h">
+<area shape="rect" id="Node000001" title="Cryptographic interface using SHA3, Ed25519, and HKDF with SHA3&#45;512." alt="" coords="313,5,423,31"/>
+<area shape="rect" id="Node000002" href="$enclave_8h.html" title="Enclave management interface and metadata structures for the Keystone security monitor." alt="" coords="308,79,428,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="371,46,371,79,366,79,366,46"/>
+<area shape="rect" id="Node000003" href="$cpu_8h.html" title="CPU context management for enclaves." alt="" coords="5,153,102,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="300,111,102,156,101,151,299,106"/>
+<area shape="rect" id="Node000004" href="$platform-hook_8h.html" title="Platform&#45;specific hook declarations for enclave lifecycle and system integration." alt="" coords="176,153,331,178"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="337,116,274,154,272,150,334,111"/>
+<area shape="rect" id="Node000005" href="$mpfs_2platform_8c.html" title="Platform&#45;specific functions for enclave management and random number generation." alt="" coords="84,226,229,267"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="293,98,258,104,224,114,192,131,166,154,157,171,153,190,155,226,149,226,148,189,152,169,162,151,189,126,222,109,257,98,292,92"/>
+<area shape="rect" id="Node000006" href="$fu540__internal_8c_source.html" title=" " alt="" coords="263,226,415,267"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="366,120,345,226,340,225,360,119"/>
+<area shape="rect" id="Node000007" href="$multimem_8h_source.html" title=" " alt="" coords="444,234,621,260"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="389,115,446,176,516,231,513,235,442,180,385,118"/>
+<area shape="rect" id="Node000008" href="$plugins_8h_source.html" title=" " alt="" coords="457,153,618,178"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="412,109,510,150,508,155,410,114"/>
+<area shape="rect" id="Node000009" href="$sbi__trap__hack_8c.html" title="RISC&#45;V trap handler and error reporting in an enclave." alt="" coords="642,153,798,178"/>
+<area shape="poly" id="edge11_Node000002_Node000009" title=" " alt="" coords="444,106,661,149,660,155,443,111"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="229,190,182,228,179,224,225,186"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="279,187,320,224,316,228,276,191"/>
+<area shape="poly" id="edge10_Node000008_Node000007" title=" " alt="" coords="538,194,536,233,530,233,533,194"/>
+</map>

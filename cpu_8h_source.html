@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('cpu_8h_source.html',''); initResizable
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef __CPU_H__</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define __CPU_H__</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;sm.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="sm_8h.html">sm.h</a>&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="enclave_8h.html">enclave.h</a>&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">/* hart state for regulating SBI */</span></div>
@@ -131,6 +131,7 @@ $(document).ready(function(){initNavTree('cpu_8h_source.html',''); initResizable
 <div class="ttc" id="acpu_8h_html_ab20a0934fd7fcb164fd79a6cb3bbc465"><div class="ttname"><a href="cpu_8h.html#ab20a0934fd7fcb164fd79a6cb3bbc465">cpu_get_enclave_id</a></div><div class="ttdeci">int cpu_get_enclave_id(void)</div><div class="ttdoc">Retrieves the enclave ID of the current context.</div><div class="ttdef"><b>Definition</b> cpu.c:22</div></div>
 <div class="ttc" id="aenclave_8h_html"><div class="ttname"><a href="enclave_8h.html">enclave.h</a></div><div class="ttdoc">Enclave management interface and metadata structures for the Keystone security monitor.</div></div>
 <div class="ttc" id="aenclave_8h_html_ac91e4341d26fc4ab08c2edc8b672c5ba"><div class="ttname"><a href="enclave_8h.html#ac91e4341d26fc4ab08c2edc8b672c5ba">enclave_id</a></div><div class="ttdeci">unsigned int enclave_id</div><div class="ttdoc">Alias for enclave identifiers.</div><div class="ttdef"><b>Definition</b> enclave.h:50</div></div>
+<div class="ttc" id="asm_8h_html"><div class="ttname"><a href="sm_8h.html">sm.h</a></div><div class="ttdoc">Main interface for Keystone Secure Monitor (SM) core functionality.</div></div>
 <div class="ttc" id="astructcpu__state_html"><div class="ttname"><a href="structcpu__state.html">cpu_state</a></div><div class="ttdoc">Represents the CPU state for enclave context tracking.</div><div class="ttdef"><b>Definition</b> cpu.h:24</div></div>
 <div class="ttc" id="astructcpu__state_html_a81bc227ea824b4fe20b8ddebcecef659"><div class="ttname"><a href="structcpu__state.html#a81bc227ea824b4fe20b8ddebcecef659">cpu_state::is_enclave</a></div><div class="ttdeci">int is_enclave</div><div class="ttdef"><b>Definition</b> cpu.h:25</div></div>
 <div class="ttc" id="astructcpu__state_html_a850bb8f48bbab47748600f713639a71e"><div class="ttname"><a href="structcpu__state.html#a850bb8f48bbab47748600f713639a71e">cpu_state::eid</a></div><div class="ttdeci">enclave_id eid</div><div class="ttdef"><b>Definition</b> cpu.h:26</div></div>

@@ -35,5 +35,6 @@ var searchData=
   ['operatorfunction_32',['OperatorFunction',['../structOperatorFunction.html',1,'']]],
   ['or1k_20relocation_20types_33',['OpenRISC (OR1K) Relocation Types',['../group__OR1K__Relocation__Types.html',1,'']]],
   ['order_34',['order',['../structepm.html#ae05c24eefecc0485d0d6bdbf0a55991d',1,'epm::order'],['../structutm.html#af372e395e9f528306be1959cc93549ff',1,'utm::order']]],
-  ['ordering_35',['Call Ordering',['../group__cmocka__call__order.html',1,'']]]
+  ['ordering_35',['Call Ordering',['../group__cmocka__call__order.html',1,'']]],
+  ['osm_5fpmp_5fset_36',['osm_pmp_set',['../sm_8h.html#a83c1d95e0a11045651b2464bde124157',1,'sm.c']]]
 ];

@@ -101,19 +101,19 @@ $(document).ready(function(){initNavTree('mpfs_2platform_8c.html',''); initResiz
 
 <p>Platform-specific functions for enclave management and random number generation.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;platform-hook.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="platform-hook_8h_source.html">platform-hook.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="enclave_8h_source.html">enclave.h</a>&quot;</code><br />
 <code>#include &lt;mss_sys_services.h&gt;</code><br />
 <code>#include &lt;sbi/riscv_locks.h&gt;</code><br />
 <code>#include &lt;sbi/sbi_string.h&gt;</code><br />
-<code>#include &lt;sm_assert.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="sm__assert_8h_source.html">sm_assert.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for platform.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="mpfs_2platform_8c__incl.png" border="0" usemap="#asm_2src_2platform_2mpfs_2platform_8c" alt=""/></div>
 <map name="asm_2src_2platform_2mpfs_2platform_8c" id="asm_2src_2platform_2mpfs_2platform_8c">
 <area shape="rect" title="Platform&#45;specific functions for enclave management and random number generation." alt="" coords="659,5,804,46"/>
-<area shape="rect" href="platform-hook_8h_source.html" title=" " alt="" coords="401,94,512,120"/>
+<area shape="rect" href="platform-hook_8h.html" title="Platform&#45;specific hook declarations for enclave lifecycle and system integration." alt="" coords="401,94,512,120"/>
 <area shape="poly" title=" " alt="" coords="663,49,514,92,513,87,662,44"/>
 <area shape="rect" href="enclave_8h.html" title="Enclave management interface and metadata structures for the Keystone security monitor." alt="" coords="465,168,541,193"/>
 <area shape="poly" title=" " alt="" coords="668,49,621,69,575,96,545,125,521,156,517,153,541,122,572,92,618,64,666,44"/>
@@ -123,21 +123,21 @@ Include dependency graph for platform.c:</div>
 <area shape="poly" title=" " alt="" coords="752,45,788,81,784,84,748,48"/>
 <area shape="rect" title=" " alt="" coords="892,94,1000,120"/>
 <area shape="poly" title=" " alt="" coords="786,44,900,86,898,91,784,49"/>
-<area shape="rect" href="sm__assert_8h_source.html" title=" " alt="" coords="1024,94,1116,120"/>
+<area shape="rect" href="sm__assert_8h.html" title="Assertion macro for Keystone SM with platform&#45;specific failure handling." alt="" coords="1024,94,1116,120"/>
 <area shape="poly" title=" " alt="" coords="805,41,1009,89,1008,94,804,47"/>
 <area shape="poly" title=" " alt="" coords="466,118,489,153,485,156,462,121"/>
-<area shape="rect" href="sm_8h_source.html" title=" " alt="" coords="279,241,328,267"/>
+<area shape="rect" href="sm_8h.html" title="Main interface for Keystone Secure Monitor (SM) core functionality." alt="" coords="279,241,328,267"/>
 <area shape="poly" title=" " alt="" coords="470,196,343,241,342,236,468,191"/>
 <area shape="rect" href="pmp_8h.html" title="Physical Memory Protection (PMP) management interface." alt="" coords="40,323,97,348"/>
 <area shape="poly" title=" " alt="" coords="465,192,374,212,267,244,187,278,110,317,109,318,106,313,107,313,185,273,265,239,372,207,464,187"/>
 <area shape="rect" href="thread_8h.html" title="Thread management and context switching for enclaves." alt="" coords="624,323,692,348"/>
 <area shape="poly" title=" " alt="" coords="517,192,637,309,633,313,513,196"/>
-<area shape="rect" href="crypto_8h_source.html" title=" " alt="" coords="853,241,919,267"/>
+<area shape="rect" href="crypto_8h.html" title="Cryptographic interface using SHA3, Ed25519, and HKDF with SHA3&#45;512." alt="" coords="853,241,919,267"/>
 <area shape="poly" title=" " alt="" coords="542,186,838,241,837,247,541,192"/>
 <area shape="rect" title=" " alt="" coords="604,404,712,429"/>
 <area shape="poly" title=" " alt="" coords="329,254,375,258,435,268,500,285,563,313,588,330,609,350,643,389,639,393,606,353,584,334,561,317,499,290,434,273,374,263,328,259"/>
 <area shape="poly" title=" " alt="" coords="279,263,197,284,97,318,95,318,94,313,96,312,196,279,278,257"/>
-<area shape="rect" href="sm-sbi_8h_source.html" title=" " alt="" coords="316,323,386,348"/>
+<area shape="rect" href="sm-sbi_8h.html" title="SBI call interface for Keystone Secure Monitor (SM) services." alt="" coords="316,323,386,348"/>
 <area shape="poly" title=" " alt="" coords="313,266,338,308,334,311,308,269"/>
 <area shape="rect" title=" " alt="" coords="411,323,550,348"/>
 <area shape="poly" title=" " alt="" coords="329,264,441,313,438,318,327,269"/>
@@ -230,7 +230,7 @@ static struct <a class="el" href="structrandom.html">random</a>&#160;</td><td cl
 <tr class="memdesc:abeea5f744caede57382b935bd1d3a8f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global random state structure. <br /></td></tr>
 <tr class="separator:abeea5f744caede57382b935bd1d3a8f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43db30caa7cbfa23ad215c0e8cff9370" id="r_a43db30caa7cbfa23ad215c0e8cff9370"><td class="memItemLeft" align="right" valign="top"><a id="a43db30caa7cbfa23ad215c0e8cff9370" name="a43db30caa7cbfa23ad215c0e8cff9370"></a>
-byte&#160;</td><td class="memItemRight" valign="bottom"><b>dev_public_key</b> [PUBLIC_KEY_SIZE]</td></tr>
+<a class="el" href="crypto_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dev_public_key</b> [<a class="el" href="crypto_8h.html#aaff5ff96341a022e23eba53e487042e5">PUBLIC_KEY_SIZE</a>]</td></tr>
 <tr class="memdesc:a43db30caa7cbfa23ad215c0e8cff9370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Developer's public key. <br /></td></tr>
 <tr class="separator:a43db30caa7cbfa23ad215c0e8cff9370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -261,6 +261,7 @@ byte&#160;</td><td class="memItemRight" valign="bottom"><b>dev_public_key</b> [P
 </div><div class="memdoc">
 
 <p>Creates an enclave on the platform. </p>
+<p>Hook called when an enclave is created.</p>
 <p>This function creates a new enclave on the platform, initializing the necessary platform state and resources.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -269,6 +270,17 @@ byte&#160;</td><td class="memItemRight" valign="bottom"><b>dev_public_key</b> [P
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SBI_ERR_SM_ENCLAVE_SUCCESS if successful, error code otherwise. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="mpfs_2platform_8c_a079aafebfa02ea8e5f124709d8519617_cgraph.png" border="0" usemap="#ampfs_2platform_8c_a079aafebfa02ea8e5f124709d8519617_cgraph" alt=""/></div>
+<map name="ampfs_2platform_8c_a079aafebfa02ea8e5f124709d8519617_cgraph" id="ampfs_2platform_8c_a079aafebfa02ea8e5f124709d8519617_cgraph">
+<area shape="rect" title="Creates an enclave on the platform." alt="" coords="5,29,169,55"/>
+<area shape="rect" href="fu540__internal_8c.html#a079aafebfa02ea8e5f124709d8519617" title="Hook called when an enclave is created." alt="" coords="217,29,380,55"/>
+<area shape="poly" title=" " alt="" coords="169,40,201,40,201,45,169,45"/>
+<area shape="poly" title=" " alt="" coords="263,31,256,21,260,11,275,5,298,3,324,5,337,12,335,17,323,10,298,8,276,10,264,15,261,20,267,27"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -289,6 +301,7 @@ byte&#160;</td><td class="memItemRight" valign="bottom"><b>dev_public_key</b> [P
 </div><div class="memdoc">
 
 <p>Destroys the enclave on the platform. </p>
+<p>Hook called when an enclave is destroyed.</p>
 <p>This function cleans up platform-specific state associated with the provided enclave.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -296,6 +309,17 @@ byte&#160;</td><td class="memItemRight" valign="bottom"><b>dev_public_key</b> [P
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="mpfs_2platform_8c_ad8a55b5de551b6fd77d703e8ae775695_cgraph.png" border="0" usemap="#ampfs_2platform_8c_ad8a55b5de551b6fd77d703e8ae775695_cgraph" alt=""/></div>
+<map name="ampfs_2platform_8c_ad8a55b5de551b6fd77d703e8ae775695_cgraph" id="ampfs_2platform_8c_ad8a55b5de551b6fd77d703e8ae775695_cgraph">
+<area shape="rect" title="Destroys the enclave on the platform." alt="" coords="5,29,175,55"/>
+<area shape="rect" href="fu540__internal_8c.html#ad8a55b5de551b6fd77d703e8ae775695" title="Hook called when an enclave is destroyed." alt="" coords="223,29,392,55"/>
+<area shape="poly" title=" " alt="" coords="175,40,207,40,207,45,175,45"/>
+<area shape="poly" title=" " alt="" coords="271,31,264,21,268,11,283,5,307,3,334,5,348,12,345,17,332,10,307,8,284,10,272,15,269,20,275,27"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -316,6 +340,7 @@ byte&#160;</td><td class="memItemRight" valign="bottom"><b>dev_public_key</b> [P
 </div><div class="memdoc">
 
 <p>Initializes the enclave on the platform. </p>
+<p>Initialize metadata for a single enclave. Called once per enclave.</p>
 <p>This function prepares the platform to create and manage an enclave, but does not create the enclave itself.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -323,6 +348,17 @@ byte&#160;</td><td class="memItemRight" valign="bottom"><b>dev_public_key</b> [P
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="mpfs_2platform_8c_a2e65f0078a83a169742be3733d4be45f_cgraph.png" border="0" usemap="#ampfs_2platform_8c_a2e65f0078a83a169742be3733d4be45f_cgraph" alt=""/></div>
+<map name="ampfs_2platform_8c_a2e65f0078a83a169742be3733d4be45f_cgraph" id="ampfs_2platform_8c_a2e65f0078a83a169742be3733d4be45f_cgraph">
+<area shape="rect" title="Initializes the enclave on the platform." alt="" coords="5,29,150,55"/>
+<area shape="rect" href="fu540__internal_8c.html#a2e65f0078a83a169742be3733d4be45f" title="Initialize metadata for a single enclave. Called once per enclave." alt="" coords="198,29,342,55"/>
+<area shape="poly" title=" " alt="" coords="150,40,182,40,182,45,150,45"/>
+<area shape="poly" title=" " alt="" coords="238,30,231,21,235,11,248,5,270,3,294,5,306,12,303,17,292,10,270,8,250,10,239,15,237,20,242,27"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -343,8 +379,20 @@ byte&#160;</td><td class="memItemRight" valign="bottom"><b>dev_public_key</b> [P
 </div><div class="memdoc">
 
 <p>Initializes global platform state. </p>
+<p>Perform per-hart platform initialization. Called once per hart.</p>
 <p>This function initializes global platform-specific state.</p>
 <dl class="section return"><dt>Returns</dt><dd>SBI_ERR_SM_ENCLAVE_SUCCESS if successful, error code otherwise. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="mpfs_2platform_8c_aaf2a9514b29eabee07189cf06587dedd_cgraph.png" border="0" usemap="#ampfs_2platform_8c_aaf2a9514b29eabee07189cf06587dedd_cgraph" alt=""/></div>
+<map name="ampfs_2platform_8c_aaf2a9514b29eabee07189cf06587dedd_cgraph" id="ampfs_2platform_8c_aaf2a9514b29eabee07189cf06587dedd_cgraph">
+<area shape="rect" title="Initializes global platform state." alt="" coords="5,29,139,55"/>
+<area shape="rect" href="fu540__internal_8c.html#a378c1e78e4834662f7dce7039f5ef867" title="Perform per&#45;hart platform initialization. Called once per hart." alt="" coords="187,29,320,55"/>
+<area shape="poly" title=" " alt="" coords="139,40,171,40,171,45,139,45"/>
+<area shape="poly" title=" " alt="" coords="223,30,217,21,220,11,233,5,253,3,275,5,287,12,284,16,274,10,253,8,234,10,224,15,222,20,227,28"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -365,8 +413,20 @@ byte&#160;</td><td class="memItemRight" valign="bottom"><b>dev_public_key</b> [P
 </div><div class="memdoc">
 
 <p>Initializes global platform state once. </p>
+<p>Perform global one-time platform initialization. Runs before any other hook.</p>
 <p>This function initializes platform-specific state that is required to run the system. It should be called once during system boot.</p>
 <dl class="section return"><dt>Returns</dt><dd>SBI_ERR_SM_ENCLAVE_SUCCESS if successful, error code otherwise. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="mpfs_2platform_8c_a324ef36484f9b4e8b29d5377ae61caeb_cgraph.png" border="0" usemap="#ampfs_2platform_8c_a324ef36484f9b4e8b29d5377ae61caeb_cgraph" alt=""/></div>
+<map name="ampfs_2platform_8c_a324ef36484f9b4e8b29d5377ae61caeb_cgraph" id="ampfs_2platform_8c_a324ef36484f9b4e8b29d5377ae61caeb_cgraph">
+<area shape="rect" title="Initializes global platform state once." alt="" coords="5,29,174,55"/>
+<area shape="rect" href="fu540__internal_8c.html#a7c7a78d92dcb3c6d14152b346ee30d8f" title="Perform global one&#45;time platform initialization. Runs before any other hook." alt="" coords="222,29,390,55"/>
+<area shape="poly" title=" " alt="" coords="174,40,206,40,206,45,174,45"/>
+<area shape="poly" title=" " alt="" coords="270,31,263,21,267,11,282,5,306,3,332,5,346,12,343,17,331,10,306,8,283,10,271,15,268,20,274,27"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -387,6 +447,7 @@ byte&#160;</td><td class="memItemRight" valign="bottom"><b>dev_public_key</b> [P
 </div><div class="memdoc">
 
 <p>Retrieves a 64-bit random value. </p>
+<p>Returns 64 bits of random data. Must never fail.</p>
 <p>This function fetches a 64-bit random value, possibly using platform-specific services. If the random state buffer is empty, it requests a new set of random words.</p>
 <dl class="section return"><dt>Returns</dt><dd>A 64-bit random number. </dd></dl>
 
@@ -409,6 +470,7 @@ byte&#160;</td><td class="memItemRight" valign="bottom"><b>dev_public_key</b> [P
 </div><div class="memdoc">
 
 <p>Switches the context from the provided enclave. </p>
+<p>Hook called when switching out of an enclave to the OS.</p>
 <p>This function transitions the platform's execution context from the provided enclave back to the normal execution context.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -416,6 +478,17 @@ byte&#160;</td><td class="memItemRight" valign="bottom"><b>dev_public_key</b> [P
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="mpfs_2platform_8c_a4ebdf8d20fd54fc07239454de2428365_cgraph.png" border="0" usemap="#ampfs_2platform_8c_a4ebdf8d20fd54fc07239454de2428365_cgraph" alt=""/></div>
+<map name="ampfs_2platform_8c_a4ebdf8d20fd54fc07239454de2428365_cgraph" id="ampfs_2platform_8c_a4ebdf8d20fd54fc07239454de2428365_cgraph">
+<area shape="rect" title="Switches the context from the provided enclave." alt="" coords="5,29,152,70"/>
+<area shape="rect" href="fu540__internal_8c.html#a4ebdf8d20fd54fc07239454de2428365" title="Hook called when switching out of an enclave to the OS." alt="" coords="200,29,346,70"/>
+<area shape="poly" title=" " alt="" coords="152,47,185,47,185,52,152,52"/>
+<area shape="poly" title=" " alt="" coords="236,29,234,19,240,10,253,5,273,3,294,5,307,11,304,16,293,10,273,8,254,10,243,15,239,20,241,28"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -436,6 +509,7 @@ byte&#160;</td><td class="memItemRight" valign="bottom"><b>dev_public_key</b> [P
 </div><div class="memdoc">
 
 <p>Switches the context to the provided enclave. </p>
+<p>Hook called when switching into an enclave from the OS.</p>
 <p>This function transitions the platform's execution context to the provided enclave. It may perform necessary platform-specific setup for the enclave.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -443,6 +517,17 @@ byte&#160;</td><td class="memItemRight" valign="bottom"><b>dev_public_key</b> [P
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="mpfs_2platform_8c_a53411d26e8386002dda41cf97f7b23da_cgraph.png" border="0" usemap="#ampfs_2platform_8c_a53411d26e8386002dda41cf97f7b23da_cgraph" alt=""/></div>
+<map name="ampfs_2platform_8c_a53411d26e8386002dda41cf97f7b23da_cgraph" id="ampfs_2platform_8c_a53411d26e8386002dda41cf97f7b23da_cgraph">
+<area shape="rect" title="Switches the context to the provided enclave." alt="" coords="5,29,137,70"/>
+<area shape="rect" href="fu540__internal_8c.html#a53411d26e8386002dda41cf97f7b23da" title="Hook called when switching into an enclave from the OS." alt="" coords="185,29,316,70"/>
+<area shape="poly" title=" " alt="" coords="137,47,169,47,169,52,137,52"/>
+<area shape="poly" title=" " alt="" coords="216,29,214,19,220,10,232,5,250,3,270,5,282,11,279,16,268,10,250,8,234,10,223,14,220,20,221,28"/>
+</map>
+</div>
 
 </div>
 </div>

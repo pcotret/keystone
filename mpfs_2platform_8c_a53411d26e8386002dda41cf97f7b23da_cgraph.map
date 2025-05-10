@@ -1,0 +1,6 @@
+<map id="platform_switch_to_enclave" name="platform_switch_to_enclave">
+<area shape="rect" id="Node000001" title="Switches the context to the provided enclave." alt="" coords="5,29,137,70"/>
+<area shape="rect" id="Node000002" href="$fu540__internal_8c.html#a53411d26e8386002dda41cf97f7b23da" title="Hook called when switching into an enclave from the OS." alt="" coords="185,29,316,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,47,169,47,169,52,137,52"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="216,29,214,19,220,10,232,5,250,3,270,5,282,11,279,16,268,10,250,8,234,10,223,14,220,20,221,28"/>
+</map>

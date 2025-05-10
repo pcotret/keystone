@@ -1,0 +1,6 @@
+<map id="platform_init_enclave" name="platform_init_enclave">
+<area shape="rect" id="Node000001" title="Initializes the enclave on the platform." alt="" coords="5,29,150,55"/>
+<area shape="rect" id="Node000002" href="$fu540__internal_8c.html#a2e65f0078a83a169742be3733d4be45f" title="Initialize metadata for a single enclave. Called once per enclave." alt="" coords="198,29,342,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,40,182,40,182,45,150,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="238,30,231,21,235,11,248,5,270,3,294,5,306,12,303,17,292,10,270,8,250,10,239,15,237,20,242,27"/>
+</map>

@@ -102,28 +102,28 @@ $(document).ready(function(){initNavTree('enclave_8h.html',''); initResizable();
 
 <p>Enclave management interface and metadata structures for the Keystone security monitor.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;sm.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="sm_8h_source.html">sm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pmp_8h_source.html">pmp.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="thread_8h_source.html">thread.h</a>&quot;</code><br />
-<code>#include &lt;crypto.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="crypto_8h_source.html">crypto.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for enclave.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="enclave_8h__incl.png" border="0" usemap="#asm_2src_2enclave_8h" alt=""/></div>
 <map name="asm_2src_2enclave_8h" id="asm_2src_2enclave_8h">
 <area shape="rect" title="Enclave management interface and metadata structures for the Keystone security monitor." alt="" coords="443,5,563,31"/>
-<area shape="rect" href="sm_8h_source.html" title=" " alt="" coords="279,79,328,105"/>
+<area shape="rect" href="sm_8h.html" title="Main interface for Keystone Secure Monitor (SM) core functionality." alt="" coords="279,79,328,105"/>
 <area shape="poly" title=" " alt="" coords="470,34,343,79,342,74,468,29"/>
 <area shape="rect" href="pmp_8h.html" title="Physical Memory Protection (PMP) management interface." alt="" coords="40,160,97,186"/>
 <area shape="poly" title=" " alt="" coords="443,34,359,54,267,82,187,116,110,155,109,155,106,151,107,150,185,111,265,76,357,49,442,29"/>
 <area shape="rect" href="thread_8h.html" title="Thread management and context switching for enclaves." alt="" coords="624,160,692,186"/>
 <area shape="poly" title=" " alt="" coords="517,30,637,147,633,151,513,33"/>
-<area shape="rect" href="crypto_8h_source.html" title=" " alt="" coords="853,79,919,105"/>
+<area shape="rect" href="crypto_8h.html" title="Cryptographic interface using SHA3, Ed25519, and HKDF with SHA3&#45;512." alt="" coords="853,79,919,105"/>
 <area shape="poly" title=" " alt="" coords="564,28,838,79,837,84,563,33"/>
 <area shape="rect" title=" " alt="" coords="604,241,712,267"/>
 <area shape="poly" title=" " alt="" coords="329,92,375,96,435,106,500,123,563,150,588,167,609,187,643,227,639,230,606,191,584,171,561,155,499,128,434,111,374,101,328,97"/>
 <area shape="poly" title=" " alt="" coords="279,100,197,122,97,155,95,156,94,151,96,150,196,117,278,95"/>
-<area shape="rect" href="sm-sbi_8h_source.html" title=" " alt="" coords="316,160,386,186"/>
+<area shape="rect" href="sm-sbi_8h.html" title="SBI call interface for Keystone Secure Monitor (SM) services." alt="" coords="316,160,386,186"/>
 <area shape="poly" title=" " alt="" coords="313,104,338,146,334,148,308,106"/>
 <area shape="rect" title=" " alt="" coords="411,160,550,186"/>
 <area shape="poly" title=" " alt="" coords="329,102,441,151,438,156,327,107"/>
@@ -161,7 +161,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <area shape="rect" title="Enclave management interface and metadata structures for the Keystone security monitor." alt="" coords="308,5,428,31"/>
 <area shape="rect" href="cpu_8h.html" title="CPU context management for enclaves." alt="" coords="5,79,102,105"/>
 <area shape="poly" title=" " alt="" coords="300,38,102,82,101,77,299,32"/>
-<area shape="rect" href="platform-hook_8h_source.html" title=" " alt="" coords="176,79,331,105"/>
+<area shape="rect" href="platform-hook_8h.html" title="Platform&#45;specific hook declarations for enclave lifecycle and system integration." alt="" coords="176,79,331,105"/>
 <area shape="poly" title=" " alt="" coords="337,42,274,81,272,76,334,37"/>
 <area shape="rect" href="mpfs_2platform_8c.html" title="Platform&#45;specific functions for enclave management and random number generation." alt="" coords="84,153,229,193"/>
 <area shape="poly" title=" " alt="" coords="293,24,258,30,224,41,192,57,166,81,157,97,153,116,155,152,149,152,148,115,152,95,162,77,189,53,222,36,257,25,292,19"/>
@@ -513,6 +513,20 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, error code otherwise. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="enclave_8h_ae5091dc7c998554d97bf949ec7af8ab8_cgraph.png" border="0" usemap="#aenclave_8h_ae5091dc7c998554d97bf949ec7af8ab8_cgraph" alt=""/></div>
+<map name="aenclave_8h_ae5091dc7c998554d97bf949ec7af8ab8_cgraph" id="aenclave_8h_ae5091dc7c998554d97bf949ec7af8ab8_cgraph">
+<area shape="rect" title="Create a new enclave." alt="" coords="5,67,115,92"/>
+<area shape="rect" href="fu540__internal_8c.html#a079aafebfa02ea8e5f124709d8519617" title="Hook called when an enclave is created." alt="" coords="166,29,329,55"/>
+<area shape="poly" title=" " alt="" coords="115,66,164,56,165,61,116,71"/>
+<area shape="rect" href="fu540__internal_8c.html#ad8a55b5de551b6fd77d703e8ae775695" title="Hook called when an enclave is destroyed." alt="" coords="163,103,332,128"/>
+<area shape="poly" title=" " alt="" coords="116,87,162,96,161,102,115,93"/>
+<area shape="poly" title=" " alt="" coords="216,30,210,21,213,11,226,5,247,3,270,5,282,12,279,16,268,10,247,8,228,10,217,15,215,20,220,27"/>
+<area shape="poly" title=" " alt="" coords="216,104,210,94,213,84,226,78,247,76,270,79,282,85,279,90,268,84,247,81,228,83,217,88,215,93,220,101"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -540,6 +554,17 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, error code otherwise. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="enclave_8h_a80edf4241ec69a638b52b43e39c5e314_cgraph.png" border="0" usemap="#aenclave_8h_a80edf4241ec69a638b52b43e39c5e314_cgraph" alt=""/></div>
+<map name="aenclave_8h_a80edf4241ec69a638b52b43e39c5e314_cgraph" id="aenclave_8h_a80edf4241ec69a638b52b43e39c5e314_cgraph">
+<area shape="rect" title="Destroy an existing enclave." alt="" coords="5,29,121,55"/>
+<area shape="rect" href="fu540__internal_8c.html#ad8a55b5de551b6fd77d703e8ae775695" title="Hook called when an enclave is destroyed." alt="" coords="169,29,338,55"/>
+<area shape="poly" title=" " alt="" coords="121,40,153,40,153,45,121,45"/>
+<area shape="poly" title=" " alt="" coords="221,30,215,21,219,11,232,5,253,3,276,5,288,12,286,16,275,10,253,8,233,10,223,15,220,20,226,27"/>
+</map>
+</div>
 
 </div>
 </div>

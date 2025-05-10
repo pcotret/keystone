@@ -135,17 +135,17 @@ $(document).ready(function(){initNavTree('vm_8h_source.html',''); initResizable(
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">static</span> <span class="keyword">inline</span> pte pte_create(uintptr_t ppn, <span class="keywordtype">int</span> type)</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordflow">return</span> (pte)((ppn &lt;&lt; PTE_PPN_SHIFT) | PTE_V | (type &amp; PTE_FLAG_MASK) );</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordflow">return</span> (pte)((ppn &lt;&lt; <a class="code hl_define" href="page_8h.html#a5b5b713a1ec901153c786686d5962574">PTE_PPN_SHIFT</a>) | <a class="code hl_define" href="page_8h.html#a9a3c738182007bee471e44aae04c386f">PTE_V</a> | (type &amp; PTE_FLAG_MASK) );</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">static</span> <span class="keyword">inline</span> pte pte_create_invalid(uintptr_t ppn, <span class="keywordtype">int</span> type)</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordflow">return</span> (pte)((ppn &lt;&lt; PTE_PPN_SHIFT) | (type &amp; PTE_FLAG_MASK &amp; ~PTE_V));</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordflow">return</span> (pte)((ppn &lt;&lt; <a class="code hl_define" href="page_8h.html#a5b5b713a1ec901153c786686d5962574">PTE_PPN_SHIFT</a>) | (type &amp; PTE_FLAG_MASK &amp; ~<a class="code hl_define" href="page_8h.html#a9a3c738182007bee471e44aae04c386f">PTE_V</a>));</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">static</span> <span class="keyword">inline</span> pte ptd_create(uintptr_t ppn)</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordflow">return</span> pte_create(ppn, PTE_V);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordflow">return</span> pte_create(ppn, <a class="code hl_define" href="page_8h.html#a9a3c738182007bee471e44aae04c386f">PTE_V</a>);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">static</span> <span class="keyword">inline</span> uintptr_t ppn(uintptr_t pa)</div>
@@ -161,10 +161,12 @@ $(document).ready(function(){initNavTree('vm_8h_source.html',''); initResizable(
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">static</span> <span class="keyword">inline</span> uintptr_t pte_ppn(pte pte)</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>{</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordflow">return</span> pte &gt;&gt; PTE_PPN_SHIFT;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordflow">return</span> pte &gt;&gt; <a class="code hl_define" href="page_8h.html#a5b5b713a1ec901153c786686d5962574">PTE_PPN_SHIFT</a>;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="apage_8h_html_a5b5b713a1ec901153c786686d5962574"><div class="ttname"><a href="page_8h.html#a5b5b713a1ec901153c786686d5962574">PTE_PPN_SHIFT</a></div><div class="ttdeci">#define PTE_PPN_SHIFT</div><div class="ttdef"><b>Definition</b> page.h:41</div></div>
+<div class="ttc" id="apage_8h_html_a9a3c738182007bee471e44aae04c386f"><div class="ttname"><a href="page_8h.html#a9a3c738182007bee471e44aae04c386f">PTE_V</a></div><div class="ttdeci">#define PTE_V</div><div class="ttdef"><b>Definition</b> page.h:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

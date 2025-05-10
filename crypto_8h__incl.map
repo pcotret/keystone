@@ -1,0 +1,16 @@
+<map id="sm/src/crypto.h" name="sm/src/crypto.h">
+<area shape="rect" id="Node000001" title="Cryptographic interface using SHA3, Ed25519, and HKDF with SHA3&#45;512." alt="" coords="133,5,244,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,168,113,193"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,29,84,47,62,61,44,80,37,98,37,117,48,154,43,155,32,117,32,97,39,78,58,57,81,42,132,24"/>
+<area shape="rect" id="Node000003" href="$sha3_8h.html" title="SHA&#45;3 (Keccak) cryptographic hash function interface." alt="" coords="211,87,302,112"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,30,238,73,234,76,197,33"/>
+<area shape="rect" id="Node000006" href="$ed25519_8h_source.html" title=" " alt="" coords="54,87,187,112"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="180,33,143,76,139,73,176,30"/>
+<area shape="rect" id="Node000007" href="$hkdf__sha3__512_8h_source.html" title=" " alt="" coords="326,79,464,120"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="221,29,330,71,328,76,219,34"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="179,168,243,193"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="252,114,228,155,223,153,247,111"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="267,168,334,193"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="265,111,289,153,284,155,261,114"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="113,114,80,157,76,154,109,111"/>
+</map>

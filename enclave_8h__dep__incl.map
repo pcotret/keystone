@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="Enclave management interface and metadata structures for the Keystone security monitor." alt="" coords="308,5,428,31"/>
 <area shape="rect" id="Node000002" href="$cpu_8h.html" title="CPU context management for enclaves." alt="" coords="5,79,102,105"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="300,38,102,82,101,77,299,32"/>
-<area shape="rect" id="Node000003" href="$platform-hook_8h_source.html" title=" " alt="" coords="176,79,331,105"/>
+<area shape="rect" id="Node000003" href="$platform-hook_8h.html" title="Platform&#45;specific hook declarations for enclave lifecycle and system integration." alt="" coords="176,79,331,105"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="337,42,274,81,272,76,334,37"/>
 <area shape="rect" id="Node000004" href="$mpfs_2platform_8c.html" title="Platform&#45;specific functions for enclave management and random number generation." alt="" coords="84,153,229,193"/>
 <area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="293,24,258,30,224,41,192,57,166,81,157,97,153,116,155,152,149,152,148,115,152,95,162,77,189,53,222,36,257,25,292,19"/>

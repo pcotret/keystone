@@ -1,0 +1,5 @@
+<map id="ptd_create" name="ptd_create">
+<area shape="rect" id="Node000001" title="Create a page table descriptor pointing to a next&#45;level page table." alt="" coords="5,5,88,31"/>
+<area shape="rect" id="Node000002" href="$riscv64_8h.html#a2024ad555bc6069cfac80a823934b9f9" title="Create a page table entry." alt="" coords="136,5,218,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,16,120,16,120,21,88,21"/>
+</map>

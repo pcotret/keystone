@@ -1,0 +1,6 @@
+<map id="platform_init_global_once" name="platform_init_global_once">
+<area shape="rect" id="Node000001" title="Perform global one&#45;time platform initialization. Runs before any other hook." alt="" coords="117,29,285,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="228,16,219,10,201,8,184,10,175,15,173,20,177,28,173,30,168,21,171,11,182,5,201,3,221,5,231,12"/>
+<area shape="rect" id="Node000002" href="$sm_8c.html#a9c2cd24e275b1bd0f99d3103281fcda1" title="Initialize the Secure Monitor." alt="" coords="5,29,69,55"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="101,45,69,45,69,40,101,40"/>
+</map>

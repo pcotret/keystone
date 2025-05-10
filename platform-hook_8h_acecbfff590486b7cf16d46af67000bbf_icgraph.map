@@ -1,0 +1,6 @@
+<map id="platform_random" name="platform_random">
+<area shape="rect" id="Node000001" title="Returns 64 bits of random data. Must never fail." alt="" coords="167,29,285,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="253,16,244,10,226,8,209,10,200,15,198,20,202,28,198,30,193,21,196,11,207,5,226,3,246,5,256,12"/>
+<area shape="rect" id="Node000002" href="$sm-sbi_8c.html#a6b4513e300cd2ec8e8551e4f707ca7a9" title="Generate a cryptographically secure random number." alt="" coords="5,29,119,55"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="151,45,119,45,119,40,151,40"/>
+</map>

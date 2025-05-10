@@ -68,5 +68,6 @@ var searchData=
   ['at_5fuid_65',['AT_UID',['../util_2elf_8h.html#a7bc508a179d0a308a8e4b47b97bcf2a3',1,'elf.h']]],
   ['attest_5fdata_5fmaxlen_66',['ATTEST_DATA_MAXLEN',['../enclave_8h.html#af64a9d5d20f94768757e084bdf0d23b7',1,'enclave.h']]],
   ['attest_5fenclave_67',['attest_enclave',['../enclave_8h.html#a58fc83f00a9a446c9494aa629dc7ddd3',1,'enclave.c']]],
-  ['avg_5fdepth_68',['avg_depth',['../structmerk__stats__s.html#aef17f19cfa60101c010568dd3bf963ce',1,'merk_stats_s']]]
+  ['attestation_5fkey_5flength_68',['ATTESTATION_KEY_LENGTH',['../sm_8h.html#a5f75b2a082f2686deb8fea08a4487d0f',1,'sm.h']]],
+  ['avg_5fdepth_69',['avg_depth',['../structmerk__stats__s.html#aef17f19cfa60101c010568dd3bf963ce',1,'merk_stats_s']]]
 ];
